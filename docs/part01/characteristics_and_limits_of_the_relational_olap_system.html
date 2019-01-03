@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.1. Characteristics and limits of the relational OLAP system &mdash; metatron-doc-user  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3.2. Multidimensional OLAP system and Druid engine" href="multidimensional_olap_system_and_druid_engine.html" />
+    <link rel="prev" title="3. Relational OLAP vs. Multidimensional OLAP" href="relational_olap_vs_multidimensional_olap.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> metatron-doc-user
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Part 1. Discovery Outline</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="advantages_of_metatron_discovery.html">1. Advantages of metatron Discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_of_metatron_discovery.html">2. Structure of metatron Discovery</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="relational_olap_vs_multidimensional_olap.html">3. Relational OLAP vs. Multidimensional OLAP</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1. Characteristics and limits of the relational OLAP system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="multidimensional_olap_system_and_druid_engine.html">3.2. Multidimensional OLAP system and Druid engine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">metatron-doc-user</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Part 1. Discovery Outline</a> &raquo;</li>
+        
+          <li><a href="relational_olap_vs_multidimensional_olap.html">3. Relational OLAP vs. Multidimensional OLAP</a> &raquo;</li>
+        
+      <li>3.1. Characteristics and limits of the relational OLAP system</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/part01/characteristics_and_limits_of_the_relational_olap_system.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="characteristics-and-limits-of-the-relational-olap-system">
+<h1>3.1. Characteristics and limits of the relational OLAP system<a class="headerlink" href="#characteristics-and-limits-of-the-relational-olap-system" title="Permalink to this headline">¶</a></h1>
+<p>A relational OLAP system is the most popular method of collecting and managing data.
+The figure below indicates an example of the star schema structure, the most
+frequently used structure in a relational OLAP system.</p>
+<div class="figure">
+<img alt="Example star schema structure" src="../_images/example_star_schema_structure.png" />
+</div>
+<p>As shown in the figure, a basic star schema is composed of many dimension tables
+and a small number of fact tables.</p>
+<ul class="simple">
+<li>Detailed data on each dimension of the schema is stored in the dimension table.
+In the example shown in the figure above, the three dimension tables each contain
+data relating to the product, the employee, and the customer. Each of these is
+called a “dimension” because you can use them as a standard for data classification
+(e.g., quantity sold by each employee and quantity purchased by each customer).</li>
+<li>In the fact table, a record containing the details of the event is added one at
+a time whenever a new event occurs. In this case, a connection is made to each
+dimension table using the reference ID as mediator.</li>
+</ul>
+<p>The figure below summarizes an example of simple table based on the schema structure
+above to aid in understanding.</p>
+<div class="figure">
+<img alt="Example table based on the schema structure" src="../_images/example_table_based_on_the_schema_structure.png" />
+</div>
+<p>Although the products sold, the sales staff, and the customer making the purchase
+are recorded as a simple ID in each record of the fact table, each of these IDs
+can be used for searching detailed information if necessary, since they are connected
+with a unique dimension table. For example, if we search the product table, the
+P2 product in the first record indicates that the applicable product type is pencil,
+the unit price for sale is 200 KRW, the unit price for supply is 100 KRW, and the
+supplier is Supplier 1. Using such data collection method offers the advantage of
+being able to use the storage area effectively by storing only the minimum amount
+of data in the fact table.</p>
+<p>When trying to analyze data stacked this way, however, the reference ID of the
+relational OLAP actually becomes the cause of decreasing data accessibility and
+speed. This is because the original data connected to all of the reference IDs
+included in each record used for analysis in the fact table must be loaded one
+by one into each dimension table. If there are 100,000 records for analysis,
+and 4 reference IDs per record, this must go through a data loading process of
+100,000 x 4 times, causing that amount of load on the data processing device.
+Moreover, there are only a limited number of skilled people who understand the
+schema structure of the database properly, meaning only they are able to use such
+a data load query.</p>
+<p>The multi-dimensional OLAP system described in the next section overcomes the
+limitations of such a legacy structure by saving all data into one or a small
+number of tables.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="multidimensional_olap_system_and_druid_engine.html" class="btn btn-neutral float-right" title="3.2. Multidimensional OLAP system and Druid engine" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="relational_olap_vs_multidimensional_olap.html" class="btn btn-neutral" title="3. Relational OLAP vs. Multidimensional OLAP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
