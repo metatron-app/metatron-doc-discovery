@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1. Advantages of metatron Discovery &mdash; metatron-doc-user  documentation</title>
+  <title>1. Management overview &mdash; metatron-doc-user  documentation</title>
   
 
   
@@ -28,8 +28,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. Structure of metatron Discovery" href="structure_of_metatron_discovery.html" />
-    <link rel="prev" title="Part 1. Discovery Outline" href="index.html" /> 
+    <link rel="prev" title="Part 2. Management" href="index.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -80,17 +79,11 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Part 1. Discovery Outline</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1. Advantages of metatron Discovery</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#architecture-and-advantages-of-metatron-based-technology">1.1. Architecture and advantages of metatron-Based Technology</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#architecture-and-advantages-of-the-metatron-discovery-module">1.2. Architecture and advantages of the metatron Discovery module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Part 1. Discovery Outline</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Part 2. Management</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1. Management overview</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="structure_of_metatron_discovery.html">2. Structure of metatron Discovery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="relational_olap_vs_multidimensional_olap.html">3. Relational OLAP vs. Multidimensional OLAP</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Part 2. Management</a></li>
 </ul>
 
             
@@ -136,15 +129,15 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">Part 1. Discovery Outline</a> &raquo;</li>
+          <li><a href="index.html">Part 2. Management</a> &raquo;</li>
         
-      <li>1. Advantages of metatron Discovery</li>
+      <li>1. Management overview</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/part01/advantages_of_metatron_discovery.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/part02/management_overview.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -157,24 +150,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="advantages-of-metatron-discovery">
-<h1>1. Advantages of metatron Discovery<a class="headerlink" href="#advantages-of-metatron-discovery" title="Permalink to this headline">¶</a></h1>
-<p>metatron Discovery is a product for Single Solution Data Discovery, supporting
-end-to-end functions for massive data from preparing to searching data based on
-visualization and advanced analysis. The following figure summarizes the architecture
-and main advantages of metatron.</p>
-<div class="section" id="architecture-and-advantages-of-metatron-based-technology">
-<h2>1.1. Architecture and advantages of metatron-Based Technology<a class="headerlink" href="#architecture-and-advantages-of-metatron-based-technology" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="management-overview">
+<h1>1. Management overview<a class="headerlink" href="#management-overview" title="Permalink to this headline">¶</a></h1>
 <div class="figure">
-<img alt="Architecture and advantages of metatron-Based Technology" src="../_images/architecture_and_advantages_of_metatron_based_tech.png" />
+<img alt="Management Overview" src="../_images/management_overview.png" />
 </div>
-</div>
-<div class="section" id="architecture-and-advantages-of-the-metatron-discovery-module">
-<h2>1.2. Architecture and advantages of the metatron Discovery module<a class="headerlink" href="#architecture-and-advantages-of-the-metatron-discovery-module" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="Architecture and advantages of metatron-Based Technology" src="../_images/architecture_and_advantages_of_metatron_discovery_module.png" />
-</div>
-</div>
+<p>As shown above, data used by the three Discovery modules (Workbook, Notebook, and Workbench) is prepared from various types of source data, engines, and storages. For these operations, data flows need to be standardized and managed, and different types of source data must be linked.</p>
+<p>The Management menu is to manage the processes colored in black above. These processes can be accessed from the four sub-menus below:</p>
+<ul class="simple">
+<li><strong>Chapter 2 Data Storage (Data Source, Data Connection)</strong>: Metatron performs analytics and visualization over a data table either established as a “Druid data source” or imported through a “database connection.” This chapter describes how to create and manage data sources and database connections.</li>
+<li><strong>Chapter 3 Data Preparation (Datasets, Data Flows, Data Snapshots)</strong>: This chapter describes how to prepare imported datasets before they are ingested as Druid data sources.</li>
+<li><strong>Chapter 4 Notebook management</strong>: A notebook works in connection with a Jupyter or Zeppelin server. This chapter describes how to set up and manage connections with these servers.</li>
+<li><strong>Chapter 5 Data Monitoring (Log Statistics, Job Log, Data Lineage)</strong>: This chapter describes how to monitor and track data usage.</li>
+</ul>
 </div>
 
 
@@ -185,10 +173,8 @@ and main advantages of metatron.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="structure_of_metatron_discovery.html" class="btn btn-neutral float-right" title="2. Structure of metatron Discovery" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="index.html" class="btn btn-neutral" title="Part 1. Discovery Outline" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Part 2. Management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
