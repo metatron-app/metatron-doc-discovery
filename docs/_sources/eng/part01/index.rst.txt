@@ -9,6 +9,6 @@ Overview
    :caption: Table of Contents
    :maxdepth: 4
 
-   /eng/part01/advantages_of_metatron_discovery
-   /eng/part01/structure_of_metatron_discovery
-   /eng/part01/relational_olap_vs_multidimensional_olap
+   /eng/part01/features
+   /eng/part01/structure
+   /eng/part01/engine

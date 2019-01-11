@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Data Connection" href="data_connection.html" />
-    <link rel="prev" title="Data source details" href="data_source_details.html" /> 
+    <link rel="next" title="Manage data sources" href="manage_data_sources.html" />
+    <link rel="prev" title="Dimension and measures" href="dimension_and_measures.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -92,15 +92,13 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">English 영문</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../part01/index.html">Overview</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Data Management</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="management_overview.html">Management overview</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="data_storage_management.html">Data Storage management</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="data_management_overview.html">Data management overview</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="data_storage.html">Data Storage</a><ul class="current">
 <li class="toctree-l4 current"><a class="reference internal" href="data_source.html">Data Source</a></li>
 <li class="toctree-l4"><a class="reference internal" href="data_connection.html">Data Connection</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="data_preparation_management.html">Data Preparation Management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notebook_management.html">Notebook Management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_monitoring_management.html">Data Monitoring Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_monitoring.html">Data Monitoring</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
@@ -159,7 +157,7 @@
         
           <li><a href="index.html">Data Management</a> &raquo;</li>
         
-          <li><a href="data_storage_management.html">Data Storage management</a> &raquo;</li>
+          <li><a href="data_storage.html">Data Storage</a> &raquo;</li>
         
           <li><a href="data_source.html">Data Source</a> &raquo;</li>
         
@@ -303,16 +301,16 @@
 <li>Rollup: Rollup merges events include the same dimension values. A summarization rule might be summing up all values in each column or applying a set of expressions such as “profit = sales - expenses.” This rollup option helps to ingest data more effectively.</li>
 <li>Advanced setting (Opt): Configures how to ingest data. The ingestion tuning option helps to ingest data effectively. Type in the text box in the JSON format. Example:</li>
 </ul>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
-        maxRowsInMemory : 75000,
-        maxOccupationInMemory : -1,
-        maxShardLength : -2147483648,
-        leaveIntermediate : false,
-        cleanupOnFailure : true,
-        overwriteFiles : false,
-        ignoreInvalidRows : false,
-        assumeTimeSorted : false
-}
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+        <span class="nt">&quot;maxRowsInMemory&quot;</span> <span class="p">:</span> <span class="mi">75000</span><span class="p">,</span>
+        <span class="nt">&quot;maxOccupationInMemory&quot;</span> <span class="p">:</span> <span class="mi">-1</span><span class="p">,</span>
+        <span class="nt">&quot;maxShardLength&quot;</span> <span class="p">:</span> <span class="mi">-2147483648</span><span class="p">,</span>
+        <span class="nt">&quot;leaveIntermediate&quot;</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;cleanupOnFailure&quot;</span> <span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;overwriteFiles&quot;</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;ignoreInvalidRows&quot;</span> <span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;vassumeTimeSorted&quot;</span> <span class="p">:</span> <span class="kc">false</span>
+<span class="p">}</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="6">
@@ -421,10 +419,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="data_connection.html" class="btn btn-neutral float-right" title="Data Connection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="manage_data_sources.html" class="btn btn-neutral float-right" title="Manage data sources" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="data_source_details.html" class="btn btn-neutral" title="Data source details" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="dimension_and_measures.html" class="btn btn-neutral" title="Dimension and measures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

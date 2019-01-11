@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Management overview" href="management_overview.html" />
-    <link rel="prev" title="Multidimensional OLAP system and Druid engine" href="../part01/multidimensional_olap_system_and_druid_engine.html" /> 
+    <link rel="next" title="Data management overview" href="data_management_overview.html" />
+    <link rel="prev" title="Metatron engine compared to stock druid" href="../part01/metatron_engine_compared_to_stock_druid.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -92,11 +92,9 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">English 영문</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../part01/index.html">Overview</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Data Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="management_overview.html">Management overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_storage_management.html">Data Storage management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_preparation_management.html">Data Preparation Management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="notebook_management.html">Notebook Management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_monitoring_management.html">Data Monitoring Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_management_overview.html">Data management overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_monitoring.html">Data Monitoring</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
@@ -174,42 +172,35 @@
             
   <div class="section" id="data-management">
 <h1>Data Management<a class="headerlink" href="#data-management" title="Permalink to this headline">¶</a></h1>
-<div class="figure">
-<img alt="Part02_index" src="../../_images/index1.png" />
-</div>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="management_overview.html">Management overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_storage_management.html">Data Storage management</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="data_management_overview.html">Data management overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="data_source.html">Data Source</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_source_management_home.html">Data source management home</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data_source_details.html">Data source details</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="data_source_details.html#common-top-area">Common top area</a></li>
-<li class="toctree-l4"><a class="reference internal" href="data_source_details.html#information-tab">Information tab</a></li>
-<li class="toctree-l4"><a class="reference internal" href="data_source_details.html#grid-data-tab">Grid data tab</a></li>
-<li class="toctree-l4"><a class="reference internal" href="data_source_details.html#column-details-tab">Column details tab</a></li>
-<li class="toctree-l4"><a class="reference internal" href="data_source_details.html#monitoring-tab">Monitoring tab</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="dimension_and_measures.html">Dimension and measures</a></li>
 <li class="toctree-l3"><a class="reference internal" href="create_a_data_source.html">Create a data source</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="create_a_data_source.html#create-a-data-source-from-a-file">Create a data source from a file</a></li>
 <li class="toctree-l4"><a class="reference internal" href="create_a_data_source.html#create-a-data-source-from-a-database-or-staging-db">Create a data source from a database or staging DB</a></li>
 <li class="toctree-l4"><a class="reference internal" href="create_a_data_source.html#migrate-a-data-source-from-metatron-engine-v1-0">Migrate a data source from Metatron engine (v1.0)</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="manage_data_sources.html">Manage data sources</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="data_connection.html">Data Connection</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="data_connection_management_home.html">data_connection_management_home</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_a_new_data_connection.html">create_a_new_data_connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_connection.html#create-a-data-connection">Create a data connection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_connection.html#add-a-new-db-type">Add a new DB type</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data_preparation_management.html">Data Preparation Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="notebook_management.html">Notebook Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_monitoring_management.html">Data Monitoring Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_monitoring.html">Data Monitoring</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="log_statistics.html">Log statistics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="job_log.html">Job log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_lineage.html">Data lineage</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -222,10 +213,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="management_overview.html" class="btn btn-neutral float-right" title="Management overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="data_management_overview.html" class="btn btn-neutral float-right" title="Data management overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../part01/multidimensional_olap_system_and_druid_engine.html" class="btn btn-neutral" title="Multidimensional OLAP system and Druid engine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../part01/metatron_engine_compared_to_stock_druid.html" class="btn btn-neutral" title="Metatron engine compared to stock druid" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

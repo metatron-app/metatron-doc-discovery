@@ -9,5 +9,5 @@
    :caption: Table of Contents
    :maxdepth: 4
 
-   /kor/part01/olap
-   /kor/part01/apache_druid
+   /kor/part01/relational_olap_vs_multidimensional_olap
+   /kor/part01/metatron_engine_compared_to_stock_druid

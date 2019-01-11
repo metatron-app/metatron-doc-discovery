@@ -92,14 +92,14 @@ This area is used to edit attributes of a column selected from the column list.
 .. code-block:: json
 
 	{
-		maxRowsInMemory : 75000,
-		maxOccupationInMemory : -1,
-		maxShardLength : -2147483648,
-		leaveIntermediate : false,
-		cleanupOnFailure : true,
-		overwriteFiles : false,
-		ignoreInvalidRows : false,
-		assumeTimeSorted : false
+		"maxRowsInMemory" : 75000,
+		"maxOccupationInMemory" : -1,
+		"maxShardLength" : -2147483648,
+		"leaveIntermediate" : false,
+		"cleanupOnFailure" : true,
+		"overwriteFiles" : false,
+		"ignoreInvalidRows" : false,
+		"vassumeTimeSorted" : false
 	}
 
 6. Confirm the information about the data set from the imported file, enter a name and description, and click Done to create a data source. It may take a few seconds or minutes depending on the amount of data as the source data is ingested into the internal Metatron engine (Druid).

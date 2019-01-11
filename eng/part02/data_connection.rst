@@ -7,9 +7,8 @@ Metatron Discovery can connect to an external database directly. To connect to a
 
 - Workbench use: Connects to the database when used loaded in a workbench (See Part 6 Workbench).
 
-.. toctree::
-   :caption: Table of Contents
-   :maxdepth: 1
+Create a data connection
+=========================================================
 
-   /eng/part02/data_connection_management_home
-   /eng/part02/create_a_new_data_connection
+Add a new DB type
+=========================================================

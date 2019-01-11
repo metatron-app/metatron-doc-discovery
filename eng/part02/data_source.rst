@@ -5,9 +5,8 @@ In Metatron Discovery, a “data source” refers to a Druid database table into
 
 .. toctree::
    :caption: Table of Contents
-   :maxdepth: 1
+   :maxdepth: 4
 
-   /eng/part02/data_source_management_home
-   /eng/part02/data_source_details
+   /eng/part02/dimension_and_measures
    /eng/part02/create_a_data_source
-
+   /eng/part02/manage_data_sources
