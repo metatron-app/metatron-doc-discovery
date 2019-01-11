@@ -1,0 +1,13 @@
+Data Source
+------------
+
+In Metatron Discovery, a “data source” refers to a Druid database table into which data is ingested. Workbooks and notebooks perform data analytics and visualization over these data sources.
+
+.. toctree::
+   :caption: Table of Contents
+   :maxdepth: 1
+
+   /eng/part02/data_source_management_home
+   /eng/part02/data_source_details
+   /eng/part02/create_a_data_source
+

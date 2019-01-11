@@ -1,16 +1,15 @@
-Part 1. Discovery Outline
+Overview
 ---------------------------
 
 .. figure:: /_static/img/part01/index.png
    :alt: Part01_index
 
+
 .. toctree::
-   :numbered:
    :caption: Table of Contents
    :maxdepth: 1
 
    /part01/advantages_of_metatron_discovery
    /part01/structure_of_metatron_discovery
    /part01/relational_olap_vs_multidimensional_olap
-
 

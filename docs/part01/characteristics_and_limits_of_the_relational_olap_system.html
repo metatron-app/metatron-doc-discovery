@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3.1. Characteristics and limits of the relational OLAP system &mdash; metatron-doc-user  documentation</title>
+  <title>Characteristics and limits of the relational OLAP system &mdash; metatron discovery docs  documentation</title>
   
 
   
@@ -26,10 +26,12 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/layout.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.2. Multidimensional OLAP system and Druid engine" href="multidimensional_olap_system_and_druid_engine.html" />
-    <link rel="prev" title="3. Relational OLAP vs. Multidimensional OLAP" href="relational_olap_vs_multidimensional_olap.html" /> 
+    <link rel="next" title="Multidimensional OLAP system and Druid engine" href="multidimensional_olap_system_and_druid_engine.html" />
+    <link rel="prev" title="Relational OLAP vs. Multidimensional OLAP" href="relational_olap_vs_multidimensional_olap.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -48,9 +50,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> metatron-doc-user
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -80,17 +85,17 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Part 1. Discovery Outline</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="advantages_of_metatron_discovery.html">1. Advantages of metatron Discovery</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structure_of_metatron_discovery.html">2. Structure of metatron Discovery</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="relational_olap_vs_multidimensional_olap.html">3. Relational OLAP vs. Multidimensional OLAP</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1. Characteristics and limits of the relational OLAP system</a></li>
-<li class="toctree-l3"><a class="reference internal" href="multidimensional_olap_system_and_druid_engine.html">3.2. Multidimensional OLAP system and Druid engine</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Overview</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="advantages_of_metatron_discovery.html">Advantages of metatron Discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure_of_metatron_discovery.html">Structure of metatron Discovery</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="relational_olap_vs_multidimensional_olap.html">Relational OLAP vs. Multidimensional OLAP</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Characteristics and limits of the relational OLAP system</a></li>
+<li class="toctree-l3"><a class="reference internal" href="multidimensional_olap_system_and_druid_engine.html">Multidimensional OLAP system and Druid engine</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Part 2. Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Management</a></li>
 </ul>
 
             
@@ -105,7 +110,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">metatron-doc-user</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -136,11 +141,11 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">Part 1. Discovery Outline</a> &raquo;</li>
+          <li><a href="index.html">Overview</a> &raquo;</li>
         
-          <li><a href="relational_olap_vs_multidimensional_olap.html">3. Relational OLAP vs. Multidimensional OLAP</a> &raquo;</li>
+          <li><a href="relational_olap_vs_multidimensional_olap.html">Relational OLAP vs. Multidimensional OLAP</a> &raquo;</li>
         
-      <li>3.1. Characteristics and limits of the relational OLAP system</li>
+      <li>Characteristics and limits of the relational OLAP system</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -160,7 +165,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="characteristics-and-limits-of-the-relational-olap-system">
-<h1>3.1. Characteristics and limits of the relational OLAP system<a class="headerlink" href="#characteristics-and-limits-of-the-relational-olap-system" title="Permalink to this headline">¶</a></h1>
+<h1>Characteristics and limits of the relational OLAP system<a class="headerlink" href="#characteristics-and-limits-of-the-relational-olap-system" title="Permalink to this headline">¶</a></h1>
 <p>A relational OLAP system is the most popular method of collecting and managing data.
 The figure below indicates an example of the star schema structure, the most
 frequently used structure in a relational OLAP system.</p>
@@ -216,10 +221,10 @@ number of tables.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="multidimensional_olap_system_and_druid_engine.html" class="btn btn-neutral float-right" title="3.2. Multidimensional OLAP system and Druid engine" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="multidimensional_olap_system_and_druid_engine.html" class="btn btn-neutral float-right" title="Multidimensional OLAP system and Druid engine" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="relational_olap_vs_multidimensional_olap.html" class="btn btn-neutral" title="3. Relational OLAP vs. Multidimensional OLAP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="relational_olap_vs_multidimensional_olap.html" class="btn btn-neutral" title="Relational OLAP vs. Multidimensional OLAP" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -228,7 +233,7 @@ number of tables.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2018, metatron team
+        &copy; Copyright 2019, metatron team
 
     </p>
   </div>

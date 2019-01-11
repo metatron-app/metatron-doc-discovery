@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data source details &mdash; metatron discovery docs  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Create a data source" href="create_a_data_source.html" />
+    <link rel="prev" title="Data source management home" href="data_source_management_home.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Management</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="management_overview.html">Management overview</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="data_storage_management.html">Data Storage management</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="data_source.html">Data Source</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="data_source_management_home.html">Data source management home</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Data source details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_a_data_source.html">Create a data source</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="data_connection.html">Data Connection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_preparation_management.html">Data Preparation Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="notebook_management.html">Notebook Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_monitoring_management.html">Data Monitoring Management</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Management</a> &raquo;</li>
+        
+          <li><a href="data_storage_management.html">Data Storage management</a> &raquo;</li>
+        
+          <li><a href="data_source.html">Data Source</a> &raquo;</li>
+        
+      <li>Data source details</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/part02/data_source_details.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-source-details">
+<h1>Data source details<a class="headerlink" href="#data-source-details" title="Permalink to this headline">¶</a></h1>
+<p>Click a data source listed in the data source management home to view various attributes of that data source. The following subsections describe each area of the data source details. Note that a data source represents a Druid database table stored in Metatron and as a time-series table necessarily includes a timestamp column.</p>
+<div class="section" id="common-top-area">
+<h2>Common top area<a class="headerlink" href="#common-top-area" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="common_top_area" src="../_images/common_top_area.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Name</strong>: Name of the data source. Click on it if you want modify it.</li>
+<li><strong>Description</strong>: Description of the data source. Click on it if you want modify it.</li>
+<li><strong>Last updated stamp</strong>: Shows who and when last updated the data source.</li>
+<li><strong>Delete</strong>: Click this icon to display a menu that allows you to delete the data source.</li>
+<li><strong>Tab selection</strong>: Each tab displays a specific set of attributes of the data source. Depending upon the type of data source, not all of the four tabs may be displayed. For details on each tab, refer to the relevant subsection below.</li>
+</ol>
+</div>
+<div class="section" id="information-tab">
+<h2>Information tab<a class="headerlink" href="#information-tab" title="Permalink to this headline">¶</a></h2>
+<p>In the information tab, you can view details of the data source and modify some basic settings. This tab is composed of the areas of Data information, Permission, and Ingestion information.</p>
+<p><strong>Data information area</strong>
+This area displays basic information of the data source.</p>
+<div class="figure">
+<img alt="data_information_area" src="../_images/data_information_area.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Data type</strong>: Type of the imported source data from which the data source has been created.</li>
+<li><strong>Status</strong>: Displays the availability of the data source.</li>
+<li><strong>Size</strong>: Displays the size of the data source.</li>
+<li><strong>Duration</strong>: Displays the time range of the timestamps included in the data source.</li>
+<li><dl class="first docutils">
+<dt><strong>Granularity settings</strong>: Displays the granularities defined when the data source was created.</dt>
+<dd><ul class="first last">
+<li>Segment Granularity: In Druid, a data source is stored into multiple segments to be processed over multiple nodes in the distributed cluster environment. This granularity setting defines the time intervals into which the data source is partitioned.</li>
+<li>Query Granularity: Defines the minimum time period by which data is queried. This ensures faster returns by aggregating data per granularity interval.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><strong>Histogram</strong>: A graph displaying the size of the data stored within each time interval in Kbytes. The reason why this histogram can be rendered is that the Druid engine timestamps every single row in the table.</li>
+</ol>
+<p><strong>Permission area</strong>
+In this area, you can check and set which workspaces have access to the data source.</p>
+<div class="figure">
+<img alt="permission_area" src="../_images/permission_area.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Allow all workspaces to use this data source</strong>: Select this check box to make the data source available to all workspaces.</li>
+<li><strong>Edit</strong>: Used to allow specific workspaces to access the data source. This button will disappear if the data source is set as open data.</li>
+<li><strong>Number of sharing workspaces</strong>: Displays how many workspaces have access to the data source.</li>
+</ol>
+<p><strong>Ingestion information area</strong>
+This area displays information on the master data from which the data source has been created.</p>
+<div class="figure">
+<img alt="Ingestion_information_area" src="../_images/Ingestion_information_area.png" />
+</div>
+</div>
+<div class="section" id="grid-data-tab">
+<h2>Grid data tab<a class="headerlink" href="#grid-data-tab" title="Permalink to this headline">¶</a></h2>
+<p>The grid data tab displays the elements in the data source.</p>
+<div class="figure">
+<img alt="grid_data_tab" src="../_images/grid_data_tab.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Search data</strong>: Searches the table by the value you type in.</li>
+<li><strong>Role</strong>: Displays all, dimension, or measure columns.</li>
+<li><strong>Type</strong>: Displays the columns whose data type is selected.</li>
+<li><strong>Rows</strong>: Displays the number of records registered in the data table.</li>
+<li><strong>Download CSV</strong>: Downloads the displayed data into a CSV file.</li>
+</ol>
+</div>
+<div class="section" id="column-details-tab">
+<h2>Column details tab<a class="headerlink" href="#column-details-tab" title="Permalink to this headline">¶</a></h2>
+<p>In the column details tab, you can view details of each column of the data source table.</p>
+<p><strong>Column view/settings</strong>
+The top section of the column details tab provides a user interface to filter columns by the criteria you define. Columns that meet the criteria are displayed on the left. You can also edit column settings.</p>
+<div class="figure">
+<img alt="Column_search_setting" src="../_images/column_search_setting.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Search data</strong>: Searches for columns by the column name you type in.</li>
+<li><strong>Role</strong>: Displays all, dimension, or measure columns.</li>
+<li><strong>Type</strong>: Displays the columns whose data type is selected.</li>
+<li><strong>View all</strong>: Clears all filter settings in the Search data, Role, and Type options and returns to view all columns.</li>
+<li><strong>Configure schema</strong>: Click this button to open a window where you can edit the current column settings.</li>
+<li><strong>Data source name</strong>: Displays the name of the data source (Druid database table).</li>
+<li><strong>Column list</strong>: Lists table columns.</li>
+</ol>
+<p><strong>Column basic information area</strong>
+This area displays some basic information of the selected column.</p>
+<div class="figure">
+<img alt="column_basic_information_area" src="../_images/column_basic_information_area.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Schema information</strong>: Displays attributes of the selected column.</li>
+<li><strong>Display setting</strong>: Displays the metadata of the selected column.</li>
+<li><strong>Summary</strong>: Displays information about the values contained in the selected column.</li>
+<li><strong>Statistics</strong>: Displays aggregations over the values contained in the selected column, including max, min, avg, and stdev.</li>
+</ol>
+<p><strong>Histogram area</strong>
+A graph displaying the size of the data stored within each time interval in Kbytes. The reason why this histogram can be rendered is that the Druid engine timestamps every table record.</p>
+<div class="figure">
+<img alt="histogram_area" src="../_images/histogram_area.png" />
+</div>
+</div>
+<div class="section" id="monitoring-tab">
+<h2>Monitoring tab<a class="headerlink" href="#monitoring-tab" title="Permalink to this headline">¶</a></h2>
+<p>The Monitoring tab reports the usage of the data source.</p>
+<p><strong>Change of transaction area</strong>
+Displays the trend of data source transactions over time.</p>
+<div class="figure">
+<img alt="transaction_change_area" src="../_images/transaction_change_area.png" />
+</div>
+<p><strong>Change of data size area</strong>
+Displays the trend of the data source size over time.</p>
+<div class="figure">
+<img alt="data_size_change_area" src="../_images/data_size_change_area.png" />
+</div>
+<p><strong>Query distribution area</strong>
+Displays information on queries performed for the data source.</p>
+<div class="figure">
+<img alt="query_distribution_area" src="../_images/query_distribution_area.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Query distribution by user (during the last week)</strong>: Displays a pie chart of query percentages by user for the past week.</li>
+<li><strong>Query distribution by elapsed time (during the last week)</strong>: Displays a pie chart of query percentages by execution time for the past week.</li>
+</ol>
+<p><strong>Query log area</strong>
+Used to view a detailed history of each performed query.</p>
+<div class="figure">
+<img alt="query_log_area" src="../_images/query_log_area.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Query date</strong>: Set a time range to display only those queries that were last executed within this time range.</li>
+<li><strong>Query type</strong>: Filters the performed queries by type.</li>
+<li><strong>Result</strong>: Displays all, succeeded, or failed queries.</li>
+<li><strong>Query list</strong>: Lists queries filtered by specified criteria.</li>
+<li><strong>Detail</strong>: Click on it to view the query statement.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create_a_data_source.html" class="btn btn-neutral float-right" title="Create a data source" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data_source_management_home.html" class="btn btn-neutral" title="Data source management home" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
