@@ -4,6 +4,11 @@ This repository is for documenting about [metatron-discovery](https://github.com
 # How to Build
 * Requirements
   * Python 3 + [pip](https://pypi.org/project/pip/)
+  
+* Clone this repository
+  ```sh
+     git clone https://github.com/metatron-app/metatron-doc-discovery.git
+  ```
 * Install packages
   ```sh
     pip install -r requirements.txt
