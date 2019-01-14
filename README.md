@@ -19,7 +19,7 @@ This repository is for documenting about [metatron-discovery](https://github.com
   ```
 * Edit the contents
    * Every document is written in rst file. Follow the reStructedText syntax to edit the contents.
-   * Location for all the image files is */_static/img/*
+   * Location for all the image files is `/_static/img/`
   
 * Build documents using [Sphinx](http://sphinx-doc.org/)
   ```sh
