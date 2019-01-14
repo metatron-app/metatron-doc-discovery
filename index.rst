@@ -3,8 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to metatron-discovery's documentation!
+Welcome to metatron-discovery docs!
 ===============================================
+
+Select the language you are using:
 
 .. toctree::
    :maxdepth: 1
