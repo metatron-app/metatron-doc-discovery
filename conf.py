@@ -34,8 +34,8 @@ release = ''
 def setup(app):
     app.add_stylesheet('css/layout.css')
 
-def setup(app):
-    app.add_javascript('js/customjs.js')
+#def setup(app):
+#    app.add_javascript('js/customjs.js')
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
