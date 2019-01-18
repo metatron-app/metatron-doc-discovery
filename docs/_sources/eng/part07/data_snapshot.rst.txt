@@ -1,4 +1,4 @@
-Data snapshot
+View data snapshot
 ----------------------------------------
 
 Ingest to metatron engine
