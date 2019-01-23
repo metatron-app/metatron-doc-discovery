@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"3.1 Basic information section","url":"metatron_3.0_Discovery/xml/098_Basicinformationarea.html"},{"type":"item","name":"3.2 Schema and table section","url":"metatron_3.0_Discovery/xml/099_Schemaandtablearea.html"},{"type":"item","name":"3.3 Query editor section","url":"metatron_3.0_Discovery/xml/100_Queryeditorarea.html"},{"type":"item","name":"3.4 Query results section","url":"metatron_3.0_Discovery/xml/101_Queryresultarea.html"},{"type":"book","name":"3.5 Extra tools section","key":"toc33","url":"metatron_3.0_Discovery/xml/102_Extratoolsarea.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();
