@@ -7,5 +7,6 @@
 
    /kor/part05/register_a_notebook_server
    /kor/part05/create_a_notebook
-   /kor/part05/use_a_jupyter_notebook
+   /kor/part05/use_a_notebook
+.. /kor/part05/use_a_jupyter_notebook 
    /kor/part05/use_a_zeppelin_notebook

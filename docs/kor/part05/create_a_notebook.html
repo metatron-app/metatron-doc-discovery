@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="주피터 노트북 사용하기" href="use_a_jupyter_notebook.html" />
+    <link rel="next" title="노트북 활용하기" href="use_a_notebook.html" />
     <link rel="prev" title="노트북 서버 등록하기" href="register_a_notebook_server.html" /> 
 
   
@@ -98,8 +98,7 @@
 <li class="toctree-l3 current"><a class="reference internal" href="manage_notebooks.html">노트북 관리하기</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="register_a_notebook_server.html">노트북 서버 등록하기</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">신규 노트북 생성하기</a></li>
-<li class="toctree-l4"><a class="reference internal" href="use_a_jupyter_notebook.html">주피터 노트북 사용하기</a></li>
-<li class="toctree-l4"><a class="reference internal" href="use_a_zeppelin_notebook.html">제플린 노트북 사용하기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="use_a_notebook.html">노트북 활용하기</a></li>
 </ul>
 </li>
 </ul>
@@ -181,6 +180,39 @@
             
   <div class="section" id="id1">
 <h1>신규 노트북 생성하기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>노트북 서버 설정이 완료되면, 노트북을 생성할 수 있습니다. 노트북 생성 절차는 다음과 같습니다.</p>
+<div class="section" id="id2">
+<h2>1. 데이터 타입 선택<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>노트북에서 분석하고자 하는 데이터셋 타입을 선택합니다. 메타트론 디스커버리에서 사용하는 데이터 단위인 “데이터 소스”, “대시보드”, “차트” 그리고 “데이터 없음” 중 에서 선택할 수 있습니다. 단, Zeppelin 으로 분석하기를 원한다면, “데이터 없음” 을 선택합니다.</p>
+<div class="figure align-center" id="id6">
+<img alt="그림 1. 노트북 새로 만들기 – 타입 선택" src="../../_images/create_a_notebook_01.png" />
+<p class="caption"><span class="caption-text">그림 1. 노트북 새로 만들기 – 타입 선택</span></p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>2. 데이터 선택<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>“데이터 소스”, “대시보드”, “차트” 를 선택하면, 현재 메타트론 디스커버리에 등록된 데이터 목록을 조회할 수 있습니다. 분석 대상 데이터를 선택한 후 다음 버튼을 클릭합니다.</p>
+<div class="figure align-center" id="id7">
+<img alt="그림 2. 노트북 새로 만들기 – 데이터 소스 상세 정보" src="../../_images/create_a_notebook_02.png" />
+<p class="caption"><span class="caption-text">그림 2. 노트북 새로 만들기 – 데이터 소스 상세 정보</span></p>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>3. 노트북 정보 등록<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>데이터를 분석하고자 하는 노트북 정보를 입력합니다. 초기 노트북 서버 설정에서 연결해 둔 노트북 서버에 한해서만 “서버 유형” 을 선택할 수 있습니다. Jupyter 선택 시 “R” 또는 “Python” 언어를, Zeppelin 선택 시 “Spark” (scala) 언어를 선택하여 분석할 수 있게 됩니다.</p>
+<div class="figure align-center" id="id8">
+<img alt="그림 3. 노트북 새로 만들기 - 설정 요약 및 생성" src="../../_images/create_a_notebook_03.png" />
+<p class="caption"><span class="caption-text">그림 3. 노트북 새로 만들기 - 설정 요약 및 생성</span></p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>4. 노트북 목록 조회<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>노트북 생성이 완료되면, 해당 워크스페이스 화면에서 다음과 같이 확인할 수 있습니다.</p>
+<div class="figure align-center" id="id9">
+<img alt="그림 4. 노트북 목록" src="../../_images/create_a_notebook_04.png" />
+<p class="caption"><span class="caption-text">그림 4. 노트북 목록</span></p>
+</div>
+</div>
 </div>
 
 
@@ -191,7 +223,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="use_a_jupyter_notebook.html" class="btn btn-neutral float-right" title="주피터 노트북 사용하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="use_a_notebook.html" class="btn btn-neutral float-right" title="노트북 활용하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="register_a_notebook_server.html" class="btn btn-neutral" title="노트북 서버 등록하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
