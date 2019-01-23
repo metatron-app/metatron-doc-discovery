@@ -200,7 +200,7 @@
 </div>
 <div class="section" id="api">
 <h2>3. 노트북 API 등록하기<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h2>
-<p>작성한 노트북은 REST API 를 호출하여 결과값을 반환할 수 있습니다. 리턴 타입에서 “HTML”을 선택하면, 노트북 스크립트 전체 실행 결과 화면을 HTML 로 반환하고, “JSON”을 선택하면, 노트북 스크립트에 작성된 사용자가 정의한 포맷의 JSON 객체를 결과로 반환합니다. 이 때 메타트론 디스커버리에서 제공하는 response.write(...) 함수를 사용합니다. “Void”를 선택하면, 노트북 스크립트를 실행하되 반환값은 제공하지 않습니다.</p>
+<p>작성한 노트북은 REST API 를 호출하여 결과값을 반환할 수 있습니다. 리턴 타입에서 “HTML”을 선택하면, 노트북 스크립트 전체 실행 결과 화면을 HTML 로 반환하고, “JSON”을 선택하면, 노트북 스크립트에 작성된 사용자가 정의한 포맷의 JSON 객체를 결과로 반환합니다. 이 때 메타트론 디스커버리에서 제공하는 response.write(…) 함수를 사용합니다. “Void”를 선택하면, 노트북 스크립트를 실행하되 반환값은 제공하지 않습니다.</p>
 <div class="figure align-center" id="id6">
 <img alt="그림 3. 노트북 API 등록 팝업" src="../../_images/use_a_notebook_03.png" />
 <p class="caption"><span class="caption-text">그림 3. 노트북 API 등록 팝업</span></p>
@@ -209,7 +209,7 @@
 <dt>response.write 함수 사용 예시 코드는 다음과 같습니다.</dt>
 <dd><ul class="first last simple">
 <li>R 기반 노트북 : response.write(list(coefficient = 2, intercept = 0))</li>
-<li>Python 기반 노트북 : response.write({&#8216;coefficient&#8217; : 2.5, &#8216;intercept&#8217; : 0})</li>
+<li>Python 기반 노트북 : response.write({‘coefficient’ : 2.5, ‘intercept’ : 0})</li>
 </ul>
 </dd>
 </dl>
@@ -262,20 +262,11 @@
 
     
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'',
-              LANGUAGE:'None',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
 
   
