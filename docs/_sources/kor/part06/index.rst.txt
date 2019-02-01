@@ -1,10 +1,10 @@
-Workbench
+워크벤치
 ---------------------------
 
 .. toctree::
    :caption: Table of Contents
    :maxdepth: 4
 
-   /kor/part06/workbench_overview
-   /kor/part06/create_a_workbench
-   /kor/part06/use_a_workbench
+   /kor/part06/06_01-workbench_overview
+   /kor/part06/06_02-create_a_workbench
+   /kor/part06/06_03-use_a_workbench
