@@ -1,7 +1,7 @@
 워크스페이스 소개
 -------------------------------------
 
-.. figure:: /_static/img/part03/workspace_overview_01.png
+.. figure:: /_static/img/part03/workspace_overview.png
   :alt: 워크스페이스 개요
   :align: center
 
@@ -14,7 +14,7 @@
 
 본 단원은 다음과 같이 구성되어 있습니다.
 
-**2장** **워크스페이스 관리 홈**
+**2장** **워크스페이스 홈 구성**
       워크스페이스 홈 화면 구성과 UI에 대해 설명합니다.
 
 **3장** **공유 워크스페이스 리스트**
