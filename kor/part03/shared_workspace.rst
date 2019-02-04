@@ -1,5 +1,6 @@
 공유 워크스페이스
 ------------------------------------------
+.. _my-reference-label:
 
 .. toctree::
    :caption: Table of Contents
