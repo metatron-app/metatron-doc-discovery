@@ -1,4 +1,4 @@
-Workspace
+워크스페이스(Workspace)
 ---------------------------
 
 .. toctree::
