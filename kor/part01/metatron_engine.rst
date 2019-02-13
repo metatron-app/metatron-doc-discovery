@@ -1,4 +1,4 @@
-Metatron Engine (Druid) 소개
+Metatron Engine 소개
 ------------------------------------------------
 
 Overview
