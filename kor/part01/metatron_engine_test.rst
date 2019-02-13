@@ -15,7 +15,6 @@ Druid 개발진의 자체 평가
 Druid 개발진이 2014년 발표한 백서 ‘Druid: A Real-time Analytical Data Store’2의 Chapter 6. Performance에서는 Druid의 query 및 ingestion latency를 다방면에서 평가한 결과를 상세하게 설명하고 있다. 본 절에서는 이 중에서 Druid의 성능을 직관적으로 살펴볼 수 있는 지표 위주로 간단히 소개한다.
 
 Query latency 성능
---------------------------------
 
 Druid의 query latency 성능에 대해 백서에서는 현장에서 실제 사용되는 데이터셋 8종과 TPC-H 데이터셋에 대한 쿼리 결과를 기준으로 평가하였는데, 여기서는 TPC-H 데이터셋에 대한 쿼리 결과를 소개한다. TPC-H 데이터셋에 대한 query latency는 MySQL과의 비교 평가 방식으로 진행하였고, 이때 사용한 클러스터 사양은 다음과 같았다.
 
@@ -31,7 +30,6 @@ Druid의 query latency 성능에 대해 백서에서는 현장에서 실제 사�
 모든 쿼리가 linear scalability를 달성하지는 않았으나 상대적으로 단순한 쿼리들의 경우에는 거의 코어 수에 정비례하는 처리 속도 증대를 보여주었다. (SK텔레콤 metatron에서는 더욱 뚜렷한 linear scalability를 달성할 수 있도록 기능을 보강하였다.)
 
 Ingestion latency 성능
---------------------------------
 
 Druid의 ingestion 성능에 대해서도 평가하였는데, 이때 사용된 클러스터 환경은 다음과 같았다.
 
@@ -48,7 +46,6 @@ SK텔레콤의 Druid 성능 평가
 SK텔레콤에서는 다음과 같이 Druid의 query latency와 ingestion latency를 측정하였다.
 
 Query latency 테스트
---------------------------------
 
 Query latency를 측정하는 조건은 다음과 같았다.
 * 데이터: TPC-H 100G dataset (9억 rows)
@@ -61,7 +58,6 @@ Query latency를 측정하는 조건은 다음과 같았다.
 
 
 Ingestion latency 테스트
---------------------------------
 
 Ingestion latency를 측정하는 조건은 다음과 같았다.
 * Ingestion data size: 1일 30억 rows, 10 columns
@@ -80,7 +76,6 @@ Druid에 대한 제3자의 평가
 ======================================
 
 Outlier의 Druid 평가
---------------------------------
 
 다음은 Outlier 블로그에 2016년 8월 26일에 게재된 Top 10 Time Series Databases라는 포스트9에서는 20개의 주요 오픈소스 시계열 데이터베이스 시스템을 평가하였다. 기고자인 Steven Acreman이 개인적으로 매긴 성능 랭킹에서 Druid는 20개 중 9위를 차지하였는데, 여기서 밝힌 Druid의 주요 성능은 다음과 같다.
 
@@ -129,7 +124,7 @@ Druid를 Apache Spark와 비교하는 것은 상당히 의미 있는 작업이�
 여러 가지 조건에 따라 결과는 달라질 수 있지만, 한 가지 분명한 것은 시간 파티셔닝(time partitioning) 또는 차원 술어(dimensional predicates)를 포함하는 쿼리는 Druid에서 현저히 빠르게 처리한다는 것이다.
 
 시사점
---------------------------------
+
 이러한 테스트 결과는 Druid의 초고속 쿼리 처리 능력과 Spark의 고급 분석 기능을 결합하면 아주 훌륭한 시너지 효과를 기대할 수 있음을 시사한다. Druid를 통해 신속하고 효율적으로 분석에 필요한 데이터만 추려낸 후 Spark의 풍부한 프로그래밍 API들을 활용하여 심층적인 분석을 실시하는 것이다. 이렇게 함으로써 강력하고 유연하며 쿼리 latency가 매우 낮은 분석 솔루션을 구축할 수 있다.
 
 
