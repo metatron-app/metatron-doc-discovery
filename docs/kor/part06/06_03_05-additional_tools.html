@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>전역 변수 &mdash; metatron discovery docs  documentation</title>
+  <title>추가 도구 영역 &mdash; metatron discovery docs  documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="기본 정보 영역" href="06_03_05_01-global_variables.html" />
+    <link rel="next" title="스키마 브라우저" href="06_03_06-schema_browser.html" />
     <link rel="prev" title="쿼리 결과 영역" href="06_03_04-query_result.html" /> 
 
   
@@ -102,7 +102,7 @@
 <li class="toctree-l4"><a class="reference internal" href="06_03_02-schema_and_table.html">스키마 및 테이블 영역</a></li>
 <li class="toctree-l4"><a class="reference internal" href="06_03_03-query_editor.html">쿼리 에디터 영역</a></li>
 <li class="toctree-l4"><a class="reference internal" href="06_03_04-query_result.html">쿼리 결과 영역</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">전역 변수</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">추가 도구 영역</a></li>
 <li class="toctree-l4"><a class="reference internal" href="06_03_06-schema_browser.html">스키마 브라우저</a></li>
 </ul>
 </li>
@@ -163,7 +163,7 @@
         
           <li><a href="06_03-use_a_workbench.html">워크벤치 사용하기</a> &raquo;</li>
         
-      <li>전역 변수</li>
+      <li>추가 도구 영역</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,12 +183,34 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>전역 변수<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Table of Contents</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="06_03_05_01-global_variables.html">기본 정보 영역</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_03_05_02-workbench_navigation.html">워크벤치 네이게이션</a></li>
+<h1>추가 도구 영역<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>추가 도구 영역은 워크벤치 활용에 도움을 주는 유용한 기능들로 구성되어 있습니다.</p>
+<ul class="simple">
+<li>반복 사용 구문에 대한 전역 변수 설정 (<a class="reference internal" href="#global-variable">전역변수(Global variable) 편집 기능</a> 참조)</li>
+<li>다른 워크벤치로 이동하기 위한 네비게이션 기능 (<a class="reference internal" href="#id2">워크벤치 네비게이션</a> 참조)</li>
+</ul>
+<div class="section" id="global-variable">
+<h2>전역변수(Global variable) 편집 기능<a class="headerlink" href="#global-variable" title="Permalink to this headline">¶</a></h2>
+<p>어떤 구문이 반복적으로 사용되고 그 내용을 계속 바꿔가면서 쿼리를 실행해야 할 경우, 그 구문을 ‘전역 변수’로 지정해서 사용하면 편리합니다.</p>
+<div class="figure align-center">
+<img alt="../../_images/workbench_global_variable.png" src="../../_images/workbench_global_variable.png" />
+</div>
+<ul class="simple">
+<li><strong>변수 타입</strong>: 전역 변수 타입으로는 달력과 텍스트가 제공합니다.</li>
+<li><strong>새 변수 추가</strong>: 원하는 변수 종류를 선택한 뒤 새 변수 추가 버튼을 누릅니다. 쿼리 에디터 영역에 해당 전역변수가 추가됩니다.</li>
+<li><strong>이름</strong>: 변수 이름을 입력합니다.</li>
+<li><strong>변수 값</strong>: 달력은 날짜를 선택, 텍스트는 값을 입력하여 사용할 수 있습니다.</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>워크벤치 네비게이션<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>다른 워크벤치로 이동하는 기능을 제공합니다. 이동하기를 원하는 워크벤치를 클릭하면 해당 워크벤치로 이동합니다.</p>
+<div class="figure align-center">
+<img alt="../../_images/workbench_navigation.png" src="../../_images/workbench_navigation.png" />
+</div>
+<ul class="simple">
+<li><strong>워크벤치 검색</strong>: 워크스페이스에 저장된 워크벤치를 검색합니다.</li>
+<li><strong>워크벤치 목록</strong>: 워크스페이스에 저장된 모든 워크벤치를 보여줍니다. 나열된 워크벤치 중 하나를 클릭하면 해당 워크벤치로 이동됩니다.</li>
 </ul>
 </div>
 </div>
@@ -201,7 +223,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="06_03_05_01-global_variables.html" class="btn btn-neutral float-right" title="기본 정보 영역" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="06_03_06-schema_browser.html" class="btn btn-neutral float-right" title="스키마 브라우저" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="06_03_04-query_result.html" class="btn btn-neutral" title="쿼리 결과 영역" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

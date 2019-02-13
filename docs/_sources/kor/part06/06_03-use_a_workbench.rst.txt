@@ -3,7 +3,7 @@
 
 .. toctree::
    :caption: Table of Contents
-   :maxdepth: 4
+   :maxdepth: 5
 
    /kor/part06/06_03_01-basic_information
    /kor/part06/06_03_02-schema_and_table

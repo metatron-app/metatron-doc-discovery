@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="데이터 프리퍼레이션 룰" href="manage_rule.html" />
+    <link rel="next" title="데이터셋 추가하기" href="add_datasets.html" />
     <link rel="prev" title="데이터셋 만들기" href="create_a_dataset.html" /> 
 
   
@@ -99,7 +99,9 @@
 <li class="toctree-l3"><a class="reference internal" href="data_preparation_overview.html">데이터 프리퍼레이션 소개</a></li>
 <li class="toctree-l3"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">데이터 플로우 관리하기</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="manage_rule.html">데이터 프리퍼레이션 룰</a></li>
+<li class="toctree-l4"><a class="reference internal" href="add_datasets.html">데이터셋 추가하기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="edit_rules.html">룰 편집</a></li>
+<li class="toctree-l4"><a class="reference internal" href="rule_kinds.html">룰의 종류</a></li>
 <li class="toctree-l4"><a class="reference internal" href="create_a_datasnapshot.html">데이터 스냅샷 만들기</a></li>
 </ul>
 </li>
@@ -182,10 +184,41 @@
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Table of Contents</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="manage_rule.html">데이터 프리퍼레이션 룰</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="manage_rule.html#id2">룰의 종류</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manage_rule.html#id3">룰 생성하기</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manage_rule.html#id4">룰 작업 변경하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_datasets.html">데이터셋 추가하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_datasets.html#id4">빈 데이터 플로우를 먼저 생성한 후, 데이터셋 추가</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_datasets.html#id6">데이터셋 상세화면에서 바로 데이터 플로우 만들기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="edit_rules.html">룰 편집</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="edit_rules.html#id2">룰 생성하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit_rules.html#id3">생성된 룰 편집하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit_rules.html#id4">룰의 종류</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rule_kinds.html">룰의 종류</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#drop">drop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#header">header</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#settype">settype</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#setformat">setformat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#rename">rename</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#keep">keep</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#delete">delete</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#replace">replace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#set">set</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#derive">derive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#split">split</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#merge">merge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#extract">extract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#countpattern">countpattern</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#nest">nest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#unnest">unnest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#flatten">flatten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#aggregate">aggregate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#pivot">pivot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#unpivot">unpivot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#join">join</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#union">union</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html#window">window</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="create_a_datasnapshot.html">데이터 스냅샷 만들기</a></li>
@@ -201,7 +234,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="manage_rule.html" class="btn btn-neutral float-right" title="데이터 프리퍼레이션 룰" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="add_datasets.html" class="btn btn-neutral float-right" title="데이터셋 추가하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="create_a_dataset.html" class="btn btn-neutral" title="데이터셋 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
