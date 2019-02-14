@@ -3,7 +3,7 @@
 
 .. toctree::
    :caption: Table of Contents
-   :maxdepth: 4
+   :maxdepth: 5
 
    /kor/part06/06_01-workbench_overview
    /kor/part06/06_02-create_a_workbench
