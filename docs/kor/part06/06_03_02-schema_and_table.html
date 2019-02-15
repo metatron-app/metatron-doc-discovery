@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>스키마 및 테이블 영역 &mdash; metatron discovery docs  documentation</title>
+  <title>2. 스키마 및 테이블 영역 &mdash; metatron discovery docs  documentation</title>
   
 
   
@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="쿼리 에디터 영역" href="06_03_03-query_editor.html" />
-    <link rel="prev" title="기본 정보 영역" href="06_03_01-basic_information.html" /> 
+    <link rel="next" title="3. 쿼리 에디터 영역" href="06_03_03-query_editor.html" />
+    <link rel="prev" title="1. 기본 정보 영역" href="06_03_01-basic_information.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -91,19 +91,19 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../part01/index.html">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스(Workspace)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">워크벤치</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="06_01-workbench_overview.html">워크벤치 소개</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_02-create_a_workbench.html">워크벤치 만들기</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="06_03-use_a_workbench.html">워크벤치 사용하기</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="06_03_01-basic_information.html">기본 정보 영역</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">스키마 및 테이블 영역</a></li>
-<li class="toctree-l4"><a class="reference internal" href="06_03_03-query_editor.html">쿼리 에디터 영역</a></li>
-<li class="toctree-l4"><a class="reference internal" href="06_03_04-query_result.html">쿼리 결과 영역</a></li>
-<li class="toctree-l4"><a class="reference internal" href="06_03_05-additional_tools.html">전역 변수</a></li>
-<li class="toctree-l4"><a class="reference internal" href="06_03_06-schema_browser.html">스키마 브라우저</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06_03_01-basic_information.html">1. 기본 정보 영역</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">2. 스키마 및 테이블 영역</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06_03_03-query_editor.html">3. 쿼리 에디터 영역</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06_03_04-query_result.html">4. 쿼리 결과 영역</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06_03_05-additional_tools.html">5. 추가 도구 영역</a></li>
+<li class="toctree-l4"><a class="reference internal" href="06_03_06-schema_browser.html">6. 스키마 브라우저</a></li>
 </ul>
 </li>
 </ul>
@@ -163,7 +163,7 @@
         
           <li><a href="06_03-use_a_workbench.html">워크벤치 사용하기</a> &raquo;</li>
         
-      <li>스키마 및 테이블 영역</li>
+      <li>2. 스키마 및 테이블 영역</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,7 +183,18 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>스키마 및 테이블 영역<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>2. 스키마 및 테이블 영역<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>원하는 데이터베이스, 테이블, 컬럼을 손쉽게 쿼리 에디터에 입력할 수 있는 UI 기능입니다.</p>
+<div class="figure align-center">
+<img alt="../../_images/workbench_lnb.png" src="../../_images/workbench_lnb.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>데이터베이스 이름</strong>: 현재 선택된 데이터베이스의 이름을 출력해줍니다. 해당 워크벤치에 등록된 데이터 커넥션의 첫 번째 데이터베이스를 기본적으로 선택됩니다. 클릭하면 데이터 커넥션에 포함된 모든 데이터베이스가 조회되며, 그 중에 하나를 선택하면 해당 데이터베이스로 변경됩니다.</li>
+<li><strong>스키마 브라우저</strong>: 선택된 데이터베이스의 테이블 목록과 각 테이블에 속한 모든 컬럼 및 레코드 정보를 확인할 수 있는 스키마 브라우저 화면이 팝업됩니다.</li>
+<li><strong>테이블 검색</strong>: 선택된 데이터베이스에 등록된 테이블을 이름으로 검색합니다.</li>
+<li><strong>테이블 이름</strong>: 필요한 데이터를 담은 테이블을 선택하면, 오른쪽 쿼리 에디터에 해당 테이블에 대한 SELECT * FROM {테이블명} 쿼리가 자동으로 입력됩니다.</li>
+<li><strong>컬럼 목록</strong>: 해당 테이블에 속한 모든 컬럼 이름과 각각의 데이터 타입이 나타납니다. 컬럼 이름을 클릭하면 쿼리 에디터에 자동으로 삽입됩니다.</li>
+</ol>
 </div>
 
 
@@ -194,10 +205,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="06_03_03-query_editor.html" class="btn btn-neutral float-right" title="쿼리 에디터 영역" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="06_03_03-query_editor.html" class="btn btn-neutral float-right" title="3. 쿼리 에디터 영역" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="06_03_01-basic_information.html" class="btn btn-neutral" title="기본 정보 영역" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="06_03_01-basic_information.html" class="btn btn-neutral" title="1. 기본 정보 영역" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
