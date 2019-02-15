@@ -56,6 +56,8 @@ settype
 - 필수 인자
     - 컬럼: 대상 컬럼 리스트
     - 새로운 타입: Long, Double, String, Boolean, Timestamp 중 택 1
+- 선택 인자
+    - 포멧 지정: Timestamp의 경우 format string (Joda time)
 - 상세설명
     - 선택된 컬럼들의 타입을 바꿉니다.
     - Type mismatch가 발생할 수 있으나, 룰은 성공합니다.
@@ -324,9 +326,67 @@ unpivot
 join
 =================
 
+.. figure:: /_static/img/part07/rule_kinds_join_1.png
+
+join은 다른 룰들과는 달리, 별도의 팝업창을 갖습니다.
+
+- 필수 인자 (팝업에서 선택하거나 입력)
+    - join 대상 데이터셋: 같은 데이터 플로우 내의 Wrangled 데이터셋
+    - join 결과로 나올 컬럼들 (토글)
+    - join 키: 여러 개 입력 가능
+    - join 타입: 현재 내부조인만 지원
+- 상세설명
+    - 대상 데이터셋과 연결해서 컬럼들을 만들어 냅니다.
+    - 기본적으로 관계형 데이터베이스의 join과 같습니다.
+    - 결과보기 버튼으로 실제 룰적용 전에 join 결과를 볼 수 있습니다.
+- 주의사항
+    - 결과로 나올 컬럼에 join 키가 꼭 포함되어있어야 합니다.
+
+.. figure:: /_static/img/part07/rule_kinds_join_2.png
+
+
 union
 =================
 
+.. figure:: /_static/img/part07/rule_kinds_union_1.png
+
+union 역시 join처럼 별도의 팝업창을 갖습니다.
+
+- 필수 인자 (팝업에서 선택)
+    - union 대상 데이터셋: 다수 선택가능
+- 상세설명
+    - 지정된 데이터셋의 내용도 함께 처리합니다.
+    - 기본적으로 관계형 데이터베이스의 union all과 같습니다.
+- 주의사항
+    - 대상 데이터셋은 union을 수행하는 데이터셋과 컬럼명과 타입, 그리고 컬럼 개수가 일치해야합니다.
+
+.. figure:: /_static/img/part07/rule_kinds_union_2.png
+
 window
 =================
+
+.. figure:: /_static/img/part07/rule_kinds_window_1.png
+
+.. figure:: /_static/img/part07/rule_kinds_window_2.png
+
+- 필수 인자
+    - 수식: Window 함수 리스트
+    - 그룹화 기준: 이 그룹안에서 행의 순서가 만들어짐. 없으면 그냥 전체적으로 정렬 기준 적용
+    - 정렬 기준: 이 컬럼의 순서로 전후 관계가 만들어짐. 없으면 그냥 데이터가 입력되는 순서
+- 상세설명
+    - 앞의 행, 뒤의 행의 내용을 토대로 수식을 계산해서 컬럼값을 생성합니다.
+    - 그룹화 기준내에서 정렬 기준으로 순서를 정합니다.
+        - 예를 들어, 위의 예시에서는 주(state)별로 앞뒤 3개씩의 행을 포함해서 평균값을 계산합니다.
+        - 화면상에서는 바로 앞에 보인다고 해도, 주가 같지 않으면 더 앞의 행을 보게됩니다.
+    - 현재 지원하는 Window 함수는 다음과 같습니다.
+        - row_number()
+        - lead(*colname*, *int*)
+        - lag(*colname*, *int*)
+        - rolling_sum(*colname*, *int*, *int*)
+        - rolling_avg(*colname*, *int*, *int*)
+    - Window 함수와 더불어 Aggregation 함수도 사용할 수 있습니다.
+- 주의사항
+    - Window 함수 사용시, 인자 수가 부족하거나 한 상황에 대해 적절한 에러메시지가 제공되지 않습니다. 유의하시기 바랍니다.
+        - Window 함수 확장과 더불어 곧 수정될 내용입니다.
+
 
