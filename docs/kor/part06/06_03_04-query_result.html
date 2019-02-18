@@ -89,11 +89,11 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스(Workspace)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">문서 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">노트북</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">워크벤치</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="06_01-workbench_overview.html">워크벤치 소개</a></li>
 <li class="toctree-l3"><a class="reference internal" href="06_02-create_a_workbench.html">워크벤치 만들기</a></li>
@@ -108,7 +108,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
@@ -194,33 +194,21 @@
 <li><strong>쿼리 결과 탭</strong>: 다중 쿼리 수행시 쿼리당 하나의 결과 탭이 생성되며 쿼리 수행 중인 탭일 경우 탭 제목에 “Loading” 메시지가 표시됩니다.</li>
 <li><strong>쿼리 로그</strong>: 쿼리 수행 로그를 보여주는 영역입니다. Hive 타입의 커넥션일 경우 Hive Job Log가 추가적으로 표시됩니다.</li>
 <li><strong>쿼리 수행 취소</strong>: 수행중인 쿼리를 취소합니다. DB 타입별 취소에 걸리는 시간이 다소 차이날 수 있습니다.</li>
-<li><strong>쿼리 수행 단계</strong>: 쿼리 수행의 총 5가지 단계 중 현재 단계를 표시합니다.</li>
 </ol>
-<blockquote>
-<div><ul class="simple">
-<li>Getting connetion</li>
-<li>Creating statement</li>
-<li>Executing query</li>
-<li>Getting resultset</li>
-<li>Done!</li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="5">
-<li><strong>다중 쿼리 순서 표시</strong>: 다중 쿼리 수행시 현재 몇번째 쿼리를 수행중인지 표시합니다.</li>
-<li><strong>표시 전환 탭</strong>: 쿼리 수행 로그 탭과 쿼리 결과 탭을 전환하는 버튼입니다.</li>
-<li><strong>쿼리 수행 상태</strong>: 3가지 쿼리 수행 상태를 표시합니다.</li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li>쿼리 수행중</li>
-<li>쿼리 수행 실패</li>
-<li>쿼리 수행 취소</li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="8">
-<li><strong>쿼리 수행 시작 시각</strong>: 쿼리 수행 시작 시각을 표시합니다.</li>
-<li><strong>쿼리 수행 경과 시간</strong>: 쿼리 수행 경과 시간을 표시합니다.</li>
-</ol>
+<p>4. <strong>쿼리 수행 단계</strong>: 쿼리 수행의 총 5가지 단계 중 현재 단계를 표시합니다.
+* Getting connetion
+* Creating statement
+* Executing query
+* Getting resultset
+* Done!
+5. <strong>다중 쿼리 순서 표시</strong>: 다중 쿼리 수행시 현재 몇번째 쿼리를 수행중인지 표시합니다.
+6. <strong>표시 전환 탭</strong>: 쿼리 수행 로그 탭과 쿼리 결과 탭을 전환하는 버튼입니다.
+7. <strong>쿼리 수행 상태</strong>: 3가지 쿼리 수행 상태를 표시합니다.
+* 쿼리 수행중
+* 쿼리 수행 실패
+* 쿼리 수행 취소
+8. <strong>쿼리 수행 시작 시각</strong>: 쿼리 수행 시작 시각을 표시합니다.
+9. <strong>쿼리 수행 경과 시간</strong>: 쿼리 수행 경과 시간을 표시합니다.</p>
 </div>
 <div class="section" id="id3">
 <h2>4.2. 쿼리 수행 후<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
@@ -285,11 +273,20 @@
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
 
   

@@ -1,9 +1,5 @@
-Overview
+문서 개요
 ---------------------------
-
-.. figure:: /_static/img/part01/index.png
-   :alt: Part01_index
-
 
 .. toctree::
    :caption: Table of Contents

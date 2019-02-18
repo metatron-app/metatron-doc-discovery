@@ -89,11 +89,11 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스(Workspace)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">Notebook</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">문서 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">노트북</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="notebook_overview.html">노트북 소개</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="manage_notebooks.html">노트북 관리하기</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="register_a_notebook_server.html">노트북 서버 등록하기</a></li>
@@ -104,7 +104,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
@@ -155,7 +155,7 @@
         
           <li><a href="../index.html">Korean 한글</a> &raquo;</li>
         
-          <li><a href="index.html">Notebook</a> &raquo;</li>
+          <li><a href="index.html">노트북</a> &raquo;</li>
         
           <li><a href="manage_notebooks.html">노트북 관리하기</a> &raquo;</li>
         
@@ -205,14 +205,9 @@
 <img alt="그림 3. 노트북 API 등록 팝업" src="../../_images/use_a_notebook_03.png" />
 <p class="caption"><span class="caption-text">그림 3. 노트북 API 등록 팝업</span></p>
 </div>
-<dl class="docutils">
-<dt>response.write 함수 사용 예시 코드는 다음과 같습니다.</dt>
-<dd><ul class="first last simple">
-<li>R 기반 노트북 : response.write(list(coefficient = 2, intercept = 0))</li>
-<li>Python 기반 노트북 : response.write({‘coefficient’ : 2.5, ‘intercept’ : 0})</li>
-</ul>
-</dd>
-</dl>
+<p>response.write 함수 사용 예시 코드는 다음과 같습니다.
+* R 기반 노트북 : response.write(list(coefficient = 2, intercept = 0))
+* Python 기반 노트북 : response.write({‘coefficient’ : 2.5, ‘intercept’ : 0})</p>
 <p>최종 “Done” 버튼을 클릭하면, API 생성이 완료되고 아래와 같이 REST API URL 을 확인할 수 있습니다. “Result” 버튼을 클릭하면, URL 실행 결과값을 팝업으로 조회할 수 있습니다.</p>
 <div class="figure align-center" id="id7">
 <img alt="그림 4. API 상세" src="../../_images/use_a_notebook_04.png" />
@@ -262,11 +257,20 @@
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
 
   

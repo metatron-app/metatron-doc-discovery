@@ -1,5 +1,5 @@
-Data Preparation
----------------------------
+데이터 프리퍼레이션
+---------------------------------------
 
 .. toctree::
    :caption: Table of Contents

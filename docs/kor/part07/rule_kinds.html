@@ -89,13 +89,13 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스(Workspace)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">문서 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">노트북</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">Data Preparation</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="data_preparation_overview.html">데이터 프리퍼레이션 소개</a></li>
 <li class="toctree-l3"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="manage_dataflow.html">데이터 플로우 관리하기</a><ul class="current">
@@ -158,7 +158,7 @@
         
           <li><a href="../index.html">Korean 한글</a> &raquo;</li>
         
-          <li><a href="index.html">Data Preparation</a> &raquo;</li>
+          <li><a href="index.html">데이터 프리퍼레이션</a> &raquo;</li>
         
           <li><a href="manage_dataflow.html">데이터 플로우 관리하기</a> &raquo;</li>
         
@@ -269,6 +269,14 @@
 <dd><ul class="first last">
 <li>컬럼: 대상 컬럼 리스트</li>
 <li>새로운 타입: Long, Double, String, Boolean, Timestamp 중 택 1</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>선택 인자</dt>
+<dd><ul class="first last">
+<li>포멧 지정: Timestamp의 경우 format string (Joda time)</li>
 </ul>
 </dd>
 </dl>
@@ -948,12 +956,147 @@
 </div>
 <div class="section" id="join">
 <h2>join<a class="headerlink" href="#join" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="../../_images/rule_kinds_join_1.png" src="../../_images/rule_kinds_join_1.png" />
+</div>
+<p>join은 다른 룰들과는 달리, 별도의 팝업창을 갖습니다.</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>필수 인자 (팝업에서 선택하거나 입력)</dt>
+<dd><ul class="first last">
+<li>join 대상 데이터셋: 같은 데이터 플로우 내의 Wrangled 데이터셋</li>
+<li>join 결과로 나올 컬럼들 (토글)</li>
+<li>join 키: 여러 개 입력 가능</li>
+<li>join 타입: 현재 내부조인만 지원</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>상세설명</dt>
+<dd><ul class="first last">
+<li>대상 데이터셋과 연결해서 컬럼들을 만들어 냅니다.</li>
+<li>기본적으로 관계형 데이터베이스의 join과 같습니다.</li>
+<li>결과보기 버튼으로 실제 룰적용 전에 join 결과를 볼 수 있습니다.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>주의사항</dt>
+<dd><ul class="first last">
+<li>결과로 나올 컬럼에 join 키가 꼭 포함되어있어야 합니다.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/rule_kinds_join_2.png" src="../../_images/rule_kinds_join_2.png" />
+</div>
 </div>
 <div class="section" id="union">
 <h2>union<a class="headerlink" href="#union" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="../../_images/rule_kinds_union_1.png" src="../../_images/rule_kinds_union_1.png" />
+</div>
+<p>union 역시 join처럼 별도의 팝업창을 갖습니다.</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>필수 인자 (팝업에서 선택)</dt>
+<dd><ul class="first last">
+<li>union 대상 데이터셋: 다수 선택가능</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>상세설명</dt>
+<dd><ul class="first last">
+<li>지정된 데이터셋의 내용도 함께 처리합니다.</li>
+<li>기본적으로 관계형 데이터베이스의 union all과 같습니다.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>주의사항</dt>
+<dd><ul class="first last">
+<li>대상 데이터셋은 union을 수행하는 데이터셋과 컬럼명과 타입, 그리고 컬럼 개수가 일치해야합니다.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/rule_kinds_union_2.png" src="../../_images/rule_kinds_union_2.png" />
+</div>
 </div>
 <div class="section" id="window">
 <h2>window<a class="headerlink" href="#window" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="../../_images/rule_kinds_window_1.png" src="../../_images/rule_kinds_window_1.png" />
+</div>
+<div class="figure">
+<img alt="../../_images/rule_kinds_window_2.png" src="../../_images/rule_kinds_window_2.png" />
+</div>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>필수 인자</dt>
+<dd><ul class="first last">
+<li>수식: Window 함수 리스트</li>
+<li>그룹화 기준: 이 그룹안에서 행의 순서가 만들어짐. 없으면 그냥 전체적으로 정렬 기준 적용</li>
+<li>정렬 기준: 이 컬럼의 순서로 전후 관계가 만들어짐. 없으면 그냥 데이터가 입력되는 순서</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>상세설명</dt>
+<dd><ul class="first last">
+<li>앞의 행, 뒤의 행의 내용을 토대로 수식을 계산해서 컬럼값을 생성합니다.</li>
+<li><dl class="first docutils">
+<dt>그룹화 기준내에서 정렬 기준으로 순서를 정합니다.</dt>
+<dd><ul class="first last">
+<li>예를 들어, 위의 예시에서는 주(state)별로 앞뒤 3개씩의 행을 포함해서 평균값을 계산합니다.</li>
+<li>화면상에서는 바로 앞에 보인다고 해도, 주가 같지 않으면 더 앞의 행을 보게됩니다.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>현재 지원하는 Window 함수는 다음과 같습니다.</dt>
+<dd><ul class="first last">
+<li>row_number()</li>
+<li>lead(<em>colname</em>, <em>int</em>)</li>
+<li>lag(<em>colname</em>, <em>int</em>)</li>
+<li>rolling_sum(<em>colname</em>, <em>int</em>, <em>int</em>)</li>
+<li>rolling_avg(<em>colname</em>, <em>int</em>, <em>int</em>)</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Window 함수와 더불어 Aggregation 함수도 사용할 수 있습니다.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>주의사항</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>Window 함수 사용시, 인자 수가 부족하거나 한 상황에 대해 적절한 에러메시지가 제공되지 않습니다. 유의하시기 바랍니다.</dt>
+<dd><ul class="first last">
+<li>Window 함수 확장과 더불어 곧 수정될 내용입니다.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
 </div>
 </div>
 
@@ -998,11 +1141,20 @@
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
 
   

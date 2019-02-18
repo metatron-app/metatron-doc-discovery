@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Create a data source &mdash; metatron discovery docs  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../kor/index.html">메타트론 디스커버리 사용자 가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../kor/index.html#indices-and-tables">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../eng/index.html">Welcome to metatron-discovery’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../eng/index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Create a data source</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/part02/create_a_data_source.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="create-a-data-source">
+<h1>Create a data source<a class="headerlink" href="#create-a-data-source" title="Permalink to this headline">¶</a></h1>
+<p>Click the “+ Create a new data source” button in the top-right of the data source management home to create a new data source. First, select a type of source data.</p>
+<div class="figure">
+<img alt="../_images/Create_a_data_source.png" src="../_images/Create_a_data_source.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>File</strong>: Creates a data source from a file stored on your local PC. Only comma-separated files such as xls, xlsx and csv can be imported (for details, see Subsection A).</li>
+<li><strong>Database</strong>: Creates a data source from an external database. The databases currently supported by Metatron Discovery include Oracle, MySQL, Hive, presto, and TIBERO (for details, see Subsection B).</li>
+<li><strong>Staging DB</strong>: Creates a data source from Metatron’s internal Hive database.</li>
+<li><strong>Real-time</strong>: This function is not currently supported.</li>
+<li><strong>Data snapshot</strong>: This function is not currently supported.</li>
+<li><strong>Metatron engine</strong>: Migrates a data source stored in Metatron version 1.0.</li>
+</ol>
+<div class="section" id="create-a-data-source-from-a-file">
+<h2>Create a data source from a file<a class="headerlink" href="#create-a-data-source-from-a-file" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>On the source data type selection page, select “File.”</li>
+<li>Select a file to be used as a data source from your local PC. You can either click the Import button and select the file, or drag and drop a file to the box. Once a file is selected, click Next.</li>
+</ol>
+<div class="figure">
+<img alt="part02/_static/img/part02/Create_a_data_source_with_file_1.png" src="part02/_static/img/part02/Create_a_data_source_with_file_1.png" />
+</div>
+<ol class="arabic simple" start="3">
+<li>From the file, select the sheet to be included in the data source.</li>
+</ol>
+<div class="figure">
+<img alt="part02/_static/img/part02/Create_a_data_source_with_file_2.png" src="part02/_static/img/part02/Create_a_data_source_with_file_2.png" />
+</div>
+<p>4. Configure the schema of the data source.
+<strong>Filter columns by criteria</strong></p>
+<div class="figure">
+<img alt="part02/_static/img/part02/Search_columns_that_meet_the_criteria.png" src="part02/_static/img/part02/Search_columns_that_meet_the_criteria.png" />
+</div>
+<p><strong>Edit or delete columns in a batch</strong></p>
+<p>In the data column list section, you can edit or delete columns in a batch. Select the check boxes of the columns you want to delete or edit to apply another data type, set actions and click on “Apply.” Each setting is described below:</p>
+<div class="figure">
+<img alt="part02/_static/img/part02/Edit_and_delete_columns_in_a_batch.png" src="part02/_static/img/part02/Edit_and_delete_columns_in_a_batch.png" />
+</div>
+<p><strong>Edit attributes of an individual column</strong></p>
+<p>This area is used to edit attributes of a column selected from the column list.</p>
+<div class="figure">
+<img alt="part02/_static/img/part02/Edit_attributes_of_an_individual_column.png" src="part02/_static/img/part02/Edit_attributes_of_an_individual_column.png" />
+</div>
+<ol class="arabic simple" start="5">
+<li>Configure data source ingestion and click Next.</li>
+</ol>
+<div class="figure">
+<img alt="part02/_static/img/part02/Create_a_data_source_with_file_3.png" src="part02/_static/img/part02/Create_a_data_source_with_file_3.png" />
+</div>
+<ol class="arabic simple" start="6">
+<li>Confirm the information about the data set from the imported file, enter a name and description, and click Done to create a data source. It may take a few seconds or minutes depending on the amount of data as the source data is ingested into the internal Metatron engine (Druid).</li>
+</ol>
+<div class="figure">
+<img alt="part02/_static/img/part02/Create_a_data_source_with_file_4.png" src="part02/_static/img/part02/Create_a_data_source_with_file_4.png" />
+</div>
+<ol class="arabic simple" start="7">
+<li>On the data source management home, you will find a new data source having been created. While ingestion is in progress, the status is marked as Preparing. Once it is finished, the status is changed to Enabled and the data source becomes available.</li>
+</ol>
+<div class="figure">
+<img alt="part02/_static/img/part02/Create_a_data_source_with_file_5.png" src="part02/_static/img/part02/Create_a_data_source_with_file_5.png" />
+</div>
+</div>
+<div class="section" id="create-a-data-source-from-a-database-or-staging-db">
+<h2>Create a data source from a database or staging DB<a class="headerlink" href="#create-a-data-source-from-a-database-or-staging-db" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>On the source data type selection page, select “Database” or “Staging DB.”</li>
+<li>If you select “Database,” load an already established data connection or enter connection information for a new database on the data connection setting page below. This step is skipped if you select Staging DB.</li>
+</ol>
+<div class="figure">
+<img alt="part02/_static/img/part02/Create_a_data_source_using_a_database_or_Staging_DB.png" src="part02/_static/img/part02/Create_a_data_source_using_a_database_or_Staging_DB.png" />
+</div>
+<ol class="arabic simple" start="3">
+<li>Select data. You can either select a table from the connected database, or write a query yourself. When using the staging DB, you can only select an existing table to create a data source.</li>
+</ol>
+<p><strong>Table</strong></p>
+<p>Select a database and a table to display the table’s data in the lower section. Confirm the data and click Next.</p>
+<div class="figure">
+<img alt="part02/_static/img/part02/Create_a_data_source_table.png" src="part02/_static/img/part02/Create_a_data_source_table.png" />
+</div>
+<ol class="arabic simple">
+<li>Select database: Select a database represented by the selected data connection.</li>
+<li>Select schema: Select a table in the selected database.</li>
+</ol>
+<p><strong>Query</strong></p>
+<p>Write a query to import the data you want, and click Run to display the data in the lower section. Confirm the data and click Next.</p>
+<div class="figure">
+<img alt="part02/_static/img/part02/Create_a_data_source_query_1.png" src="part02/_static/img/part02/Create_a_data_source_query_1.png" />
+</div>
+<ol class="arabic simple" start="4">
+<li>The subsequent steps are the same as those to import data from a file. See Step 3 and onwards in Section 2.1.3 A. However, when creating a data source from a database, you must configure additional ingestion settings.</li>
+</ol>
+<div class="figure">
+<img alt="part02/_static/img/part02/Create_a_data_source_query_2.png" src="part02/_static/img/part02/Create_a_data_source_query_2.png" />
+</div>
+</div>
+<div class="section" id="migrate-a-data-source-from-metatron-engine-v1-0">
+<h2>Migrate a data source from Metatron engine (v1.0)<a class="headerlink" href="#migrate-a-data-source-from-metatron-engine-v1-0" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>On the source data type selection page, select “Metatron engine.”</li>
+<li>When data sources created in Metatron V1.0 are listed on the left as shown below, select the check boxes of the data sources you want to migrate to the current version.</li>
+</ol>
+<div class="figure">
+<img alt="part02/_static/img/part02/metatron_engine_(v1.0)_data_source_migration.png" src="part02/_static/img/part02/metatron_engine_(v1.0)_data_source_migration.png" />
+</div>
+<ol class="arabic simple" start="3">
+<li>Click Done to migrate the selected data sources.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
