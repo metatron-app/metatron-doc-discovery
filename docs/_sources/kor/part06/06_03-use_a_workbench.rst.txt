@@ -10,7 +10,6 @@
 
 .. toctree::
    :maxdepth: 1
-   :numbered:
 
    /kor/part06/06_03_01-basic_information
    /kor/part06/06_03_02-schema_and_table

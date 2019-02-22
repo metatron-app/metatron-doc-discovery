@@ -11,4 +11,4 @@
    /kor/part04/pivoting
    /kor/part04/chart_types
    /kor/part04/chart_style
-   /kor/part04/analyze_with_map_chart   
+.. /kor/part04/analyze_with_map_chart   
