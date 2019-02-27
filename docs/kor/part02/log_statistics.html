@@ -96,7 +96,6 @@
 <li class="toctree-l3 current"><a class="reference internal" href="data_monitoring.html">데이터 모니터링</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">로그 통계</a></li>
 <li class="toctree-l4"><a class="reference internal" href="job_log.html">잡 로그</a></li>
-<li class="toctree-l4"><a class="reference internal" href="data_lineage.html">데이터 리니지</a></li>
 </ul>
 </li>
 </ul>
@@ -181,6 +180,21 @@
             
   <div class="section" id="id1">
 <h1>로그 통계<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>로그 통계에서는 Metatron Discovery 내 쿼리 수행과 관련된 각종 통계치를 모아서 보여줍니다. 여기에서는 아래와 같이 총 9가지의 기본 통계를 조회할 수 있습니다.</p>
+<div class="figure">
+<img alt="../../_images/log-statistics.png" src="../../_images/log-statistics.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>쿼리 성공/실패율:</strong> metatron에서 실행된 쿼리들의 성공률과 실패율이 나타납니다.</li>
+<li><strong>사용자 별 쿼리 빈도 수:</strong> 쿼리를 수행한 사용자별 빈도수를 나타낸 그래프입니다. 표시된 막대 중 하나를 클릭하면 해당 사용자가 실행한 Job Log를 볼 수 있습니다.</li>
+<li><strong>오래 걸리는 순:</strong> 수행한 쿼리들이 작업시간이 긴 순서대로 정렬되어 나타납니다.</li>
+<li><strong>스캔 데이터량:</strong> 수행한 쿼리들이 데이터를 제일 많이 스캔한 순서대로 정렬되어 나타납니다.</li>
+<li><strong>성공한 쿼리 빈도:</strong> 수행한 쿼리들이 성공한 빈도가 높은 순서대로 정렬되어 나타납니다.</li>
+<li><strong>실패한 쿼리 빈도:</strong> 수행한 쿼리들이 실패한 빈도가 높은 순서대로 정렬되어 나타납니다.</li>
+<li><strong>총 메모리 사용량:</strong> 수행한 쿼리들이 총 메모리 사용량이 큰 순서대로 정렬되어 나타납니다.</li>
+<li><strong>총 CPU 사용량:</strong> 수행한 쿼리들이 총 CPU 사용량이 큰 순서대로 정렬되어 나타납니다.</li>
+<li><strong>Queue별 리소스 사용량:</strong> Hadoop 환경의 각 YARN queue에서 소모되는 리소스량을 보여줍니다.</li>
+</ol>
 </div>
 
 
