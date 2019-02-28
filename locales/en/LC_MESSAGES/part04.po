@@ -1,0 +1,1239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-28 13:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../part04/add_a_custom_column.rst:2
+msgid "사용자 컬럼 추가"
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:4
+msgid ""
+"데이터 소스 컬럼 목록에서   + 버튼을 클릭하면 사용자 컬럼 추가를 위한 대화 상자가 열립니다. 여기서는 데이터 소스에 있는 기존"
+" 컬럼들에 각종 공식을 적용하여 차트를 만드는 데 필요한 새로 운 컬럼을 만들 수 있습니다."
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:8
+msgid "**컬럼 명:** 사용자 컬럼의 이름을 적는 란입니다."
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:11
+msgid ""
+"**코드 영역:** 사용자 컬럼을 만들기 위한 코드를 적는 란입니다. 아래의 컬럼 및 공식 목록에서 원하는 목록을 클릭하면 이 "
+"영역에 자동으로 타이핑 됩니다."
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:14
+msgid ""
+"**컬럼 추가:** 데이터 소스에 주어진 기존 컬럼 목록입니다. 목록에 제시된 컬럼 항목 중 하나를 클릭하면 해당 컬럼이 코드 "
+"영역에 자동으로 타이핑됩니다."
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:17
+msgid ""
+"**공식 추가:** metatron에서 지원하는 공식 목록입니다. 목록에 제시된 공식 중 하나를 클릭하면 해당 공식이 코드 영역에 "
+"자동으로 타아핑되고 타이핑 커서가 파라미터를 입력하는 부분으로 자동 이동됩니다. 각 공식의 용도와 사용법, 예제에 관해서는 화면 "
+"우측의 도움말 상자를 참조하세요."
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:22
+msgid "차원값과 측정값"
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:24
+msgid ""
+"대시보드에 연동된 데이터 소스의 컬럼들은 아래와 같이 차원값 컬럼과 측정값 컬럼으로 구분됩 니다. Discovery의 차트 기능을 "
+"온전히 활용하기 위해서는 차원값과 측정값의 개념을 명확하게 이해해야 합니다."
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:29
+msgid "차원값(Dimension) 컬럼"
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:30
+msgid "범주형 데이터 커러럼을 가리키며, 특징은 아래와 같습니다."
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:32
+msgid "집계 보다는 분류에 의미가 있는 데이타 필드 (ex> Category, Region, Organization 등)"
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:33
+msgid "측정값을 표시하는데 기준이 됨."
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:36
+msgid "측정값(Measure)컬럼"
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:37
+msgid "수량적 데이터 필드를 가리키며, 특징은 아래와 같습니다."
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:39
+msgid "집계할 수 있거나 양적인 정보를 포함하는 필드(ex> Sales등)"
+msgstr ""
+
+#: ../../part04/add_a_custom_column.rst:40
+msgid "차원값에 의해 제시된 기준을 토대로 차트에 표현되는 데이터"
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:2
+#: ../../part04/dashboard_overview.rst:14
+msgid "대시보드 크기와 레이아웃 변경하기"
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:4
+msgid ""
+"대시보드 기본 화면에서 ‘대시보드 편집’ 버튼을 클릭하면 해당 대시보드의 구성을 편집할 수 있는 화면으로 이동합니다. 여기서는 위젯"
+" 추가 기능을 포함하여 대시보드의 편집 및 계층 구조 설정, 레이아웃 변경 기능을 사용할 수 있습니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:6
+msgid "**대시보드 위젯 배열 설정**"
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:10
+msgid "위젯 위치 변경: 위젯 제목 부분을 드래그하여 위젯의 위치를 변경할 수 있습니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:11
+msgid "위젯 너비 조정: 위젯과 위젯의 사이를 움직여 위젯의 너비를 조정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:12
+msgid ""
+"화면에 위젯 추가: 우측 패널에 있는 위젯 목록에서 원하는 위젯을 좌측 위젯 레이아웃 영역으로 드래그하면 해당 위젯이 레이아웃 "
+"영역에 추가됩니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:13
+msgid "화면에서 위젯 삭제: 위젯 레이아웃 영역에 표시된 각 위젯에서 X 버튼을 클릭하면 해당 위젯이 레이아웃 영역에서 제거됩니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:15
+msgid "**차트 위젯 패널**"
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:17
+msgid "차트 위젯 패널에서는 대시보드 내 차트의 추가, 수정, 삭제 등이 가능합니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:24
+msgid "차트 위젯 수: 현재 대시보드에 등록된 차트 위젯의 개수를 나타냅니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:25
+msgid "차트 위젯 추가: 대시보드 내에 새로운 차트 위젯을 생성할 수 있습니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:26
+msgid ""
+"차트 위젯 목록: 현재 대시보드에 등록된 차트 위젯들이 열거됩니다. 수정 또는 삭제를 원하는 위젯 항목에 마우스를 오버하면 이를 "
+"위한 아이콘이 나타납니다. 또한 위젯 항목을 위젯 레이아웃 영역으로 드래그하면 해당 위젯이 레이아웃 영역에 표시됩니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:27
+msgid ""
+"차트 계층 구조 설정: 대시보드 내 차트 간 상하 관계를 설정할 수 있습니다. 부모 차트에서 데이터 항목을 하나 선택하면 자식 "
+"차트가 그 항목을 기준으로 필터링됩니다. 계층 구조를 설정하려면 하위 관계로 설정할 차트를 드래그하여 원하는 상위 관계 차트 밑으로"
+" 옮기면 됩니다. 차트 계층 구조 설정이 완료되면 차트 메뉴 상에서도 구조가 변경된 것을 확인할 수 있습니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:29
+msgid "**텍스트 위젯 패널**"
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:31
+msgid "텍스트 위젯 패널에서는 대시보드 내 텍스트 위젯의 추가, 수정, 삭제 등이 가능합니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:35
+msgid "텍스트 위젯 수: 현재 대시보드에 등록된 텍스트 위젯의 개수를 나타냅니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:36
+msgid "텍스트 위젯 추가: 대시보드 내에 새로운 텍스트 위젯을 생성할 수 있습니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:37
+msgid ""
+"텍스트 위젯 목록: 현재 대시보드에 등록된 텍스트 위젯들이 열거됩니다. 수정 또는 삭제를 원하는 위젯 항목에 마우스를 오버하면 이를"
+" 위한 아이콘이 나타납니다. 또한 위젯 항목을 위젯 레이아웃 영역으로 드래그하면 해당 위젯이 레이아웃 영역에 표시됩니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:39
+msgid "**레이아웃 패널**"
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:41
+msgid "레이아웃 패널에서는 위젯 레이아웃 영역에서 위젯의 배열과 개별 위젯 표시 방법에 관하여 몇 가지 설정을 설정합니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:47
+msgid "보드 높이 설정"
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:47
+msgid "화면 고정: 보드의 높이를 화면에 맞춥니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:48
+msgid "높이 고정: 보드의 높이를 고유한 픽셀 값으로 설정합니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:49
+msgid "위젯 사이 간격: 위젯 레이아웃 영역에 표시되는 위젯 간의 간격을 지정합니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:50
+msgid "차트 제목: 위젯 레이아웃 영역 내 차트 및 필터 위젯들의 제목 표시 여부를 일괄 설정합니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:51
+msgid "범례: 위젯 레이아웃 영역 내 차트 위젯들의 범례 표시 여부를 일괄 설정합니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:52
+msgid "미니맵: 위젯 레이아웃 영역 내 차트 위젯들의 미니맵 표시 여부를 일괄 설정합니다."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:54
+msgid ""
+"**데이터소스 패널** 데이터 소스 패널에서는 연동된 데이터 소스의 정보를 열람·수정하고, 컬럼 필터를 간편하게 추가할 수 "
+"있습니다. 각 차원값 또는 측정값 우측의 필터 아이콘을 눌러서 필터를 추가해보세요."
+msgstr ""
+
+#: ../../part04/change_dashboard_layout_and_size.rst:59
+msgid ""
+"단, 여기서 지정/해제하는 필터는 대시보드 전체에 적용되는 글로벌 필터이고, 차트 에디터에서 지정/해제하는 필터는 차트 내 필터임을"
+" 유의하십시오."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:2
+msgid "차트 필터"
+msgstr ""
+
+#: ../../part04/chart_filter.rst:4
+msgid ""
+"차트 필터는 각 컬럼별로 차트에 나타낼 데이터의 범위를 한정 짓는 기능을 합니다. 본 챕터에서는 차트 필터를 지정하고 활용하는 "
+"방법에 대해 설명합니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:7
+msgid "자동으로 포함되는 필터들"
+msgstr ""
+
+#: ../../part04/chart_filter.rst:9
+msgid "다음에 해당하는 컬럼들의 필터는 별도의 차트 필터를 추가하지 않아도 자동으로 포함됩니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:11
+msgid "**타임스탬프 컬럼 필터:** 메타트론 엔진의 시계열 특성 때문에 시간 조건 필터링이 필수적으로 사용됩니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:12
+msgid "**추천 필터:** 데이터 소스 등록할 때 \"추천 필터\"로 지정된 컬럼 필터들입니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:13
+msgid "**글로벌 필터가 적용된 대시보드:** 해당 대시보드에 등록된 모든 차트에 공통적으로 적용되는 필터입니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:17
+msgid "차트 필터 패널"
+msgstr ""
+
+#: ../../part04/chart_filter.rst:19
+msgid "차트 홈 화면 우측에는 차트 필터 패널이 있습니다. 이 패널에서는 등록된 필터를 간단하게 조회·설정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:23
+msgid "**필터 수:** 차트 패널 이름 옆에는 현재 적용된 차트가 몇 개인지 표시됩니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:24
+msgid "**필터 추가/변경:** 우측 상단에 \"+\" 버튼을 누르면 새로운 필터를 추가하거나 기존 필터를 세부 설정하는 팝업이 나타납니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:25
+msgid "**필터 대상 컬럼:** 개별 필터의 상단에는 필터가 적용되는 컬럼 정보를 보여줍니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:26
+msgid "**필터 상세 설정:** 개별 필터 우측 상단에 햄버거 메뉴를 누르면 필터를 초기화하거나 상세 설정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:30
+msgid "차트 필터 대화 상자"
+msgstr ""
+
+#: ../../part04/chart_filter.rst:32
+msgid ""
+"차트 필터 패널 상단에서 버튼을 클릭하거나 각 필터 영역에서 버튼을 클릭하면 차트 필터 대화 상자를 열 수 있습니다. 이 대화 "
+"상자에서는 새로운 필터를 추가하거나 기존 필터를 세부적으로 설정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:34
+msgid "차트 필터 대화 상자는 다음과 같이 차원값과 측정값 영역으로 구성됩니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:40
+msgid "차원값 필터링"
+msgstr ""
+
+#: ../../part04/chart_filter.rst:41
+msgid "해당 차트와 연동된 데이터 소스의 차원값을 필터로 지정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:45
+msgid "**범위 선택:** 선택한 필터의 컬럼에 들어있는 데이터 범주 중 필터링하여 차트에 표시할 범위를 선택합니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:47
+msgid "**단건:** 하나의 데이터 범주만 선택하여 차트에서 표시할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:48
+msgid "**다건:** 여러 개의 데이터 범주를 선택하여 차트에 표시할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:50
+msgid "**검색:** 컬럼 속성 값이 너무 많은 경우, 원하는 결과만 볼 수 있도록 제한할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:52
+msgid "**이름으로 검색:** 컬럼의 속성값 이름으로 검색할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:53
+msgid ""
+"**속성 필터링:** 속성 값 이름을 정규식이나 와일드 카드로 매칭하거나, 측정값의 범위를 기준으로 조건을 걸어서 속성을 선별할 수"
+" 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:58
+msgid ""
+"**Defined value:** 컬럼에 들어있지 않은 속성값을 필터 조건으로 추가하는 데 사용합니다. 현재 데이터 소스에는 없지만"
+" 추후에 들어올 수 있는 데이터를 미리 예측하여 필터를 생성하는 기능입니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:62
+msgid "타임스탬프 컬럼 필터 설정"
+msgstr ""
+
+#: ../../part04/chart_filter.rst:63
+msgid ""
+"시간 아이콘이 표시된 차원값은 타임스탬프 타입이며 해당 차원값은 타임스탬프 필터를 설정할 수 있습니다. 기본적으로 전체 시간(All"
+" time)으로 설정되어 있으며, 특정 기간의 데이터만 차트에 표출하고 싶은 경우 Relative 또는 Specific을 선택하여 "
+"설정합니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:65
+msgid "Relative는 현재 시점을 기준으로 상대적인 기간을 설정하여 해당 기간 동안의 데이터만 차트에 표출하도록 합니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:69
+msgid "Specific은 데이터의 특정 기간을 직접 설정하여 해당 기간 동안의 데이터만 차트에 표출하도록 합니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:75
+msgid "측정값 필터링"
+msgstr ""
+
+#: ../../part04/chart_filter.rst:76
+msgid "해당 차트와 연동된 데이터 소스의 측정값을 필터로 지정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_filter.rst:80
+msgid "필터로 설정할 측정값을 선택했으면 필터링할 값의 범위를 지정합니다."
+msgstr ""
+
+#: ../../part04/chart_overview.rst:2
+msgid "차트소개"
+msgstr ""
+
+#: ../../part04/chart_overview.rst:4
+msgid ""
+"기본적으로 워크북 내 각 대시보드는 분석한 데이터를 시각화하여 보여주는 다양한 차트로 구성됩니다. 본 절에서는 데이터 분석 목적에 "
+"맞게 차트를 만들기 위해 필수적으로 알아야할 몇 가지 개념과 Discovery의 차트 구성 UI에 대해 설명합니다."
+msgstr ""
+
+#: ../../part04/chart_overview.rst:7
+msgid "차트 홈 화면 개관"
+msgstr ""
+
+#: ../../part04/chart_overview.rst:9
+msgid "차트 홈 화면은 다음과 같이 세 영역으로 구분됩니다."
+msgstr ""
+
+#: ../../part04/chart_overview.rst:13
+msgid ""
+"**컬럼/차트 선택 영역:** 차트를 만들기 위해 필수적으로 행해야 하는 액션의 순서대로 UI가 구성되어 있습니다. Data(데이터"
+" 컬럼 리스트)선택을 통해 차트를 피봇팅할 수 있으며, Chart(차트 종류 리스트)를 선택하여 데이터를 시각화할 수 있습니다. "
+"또한 Analytics(분석)을 통해 원하는 분석 조건을 차트에 탑재할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_overview.rst:16
+msgid ""
+"**시각화 영역:** 피봇팅할 수 있는 선반영역과 실제 차트가 그려지는 시각화 영역으로 구성됩니다. 컬럼/차트 선택 영역에서 차트를"
+" 그릴 수 있는 데이터와 차트가 선택되면 이 곳에서 차트가 나타납니다."
+msgstr ""
+
+#: ../../part04/chart_overview.rst:19
+msgid ""
+"**옵션 영역:** 차트를 보기 좋게 꾸미고, 차트가 보여지는 방식을 사용자의 기호에 맞게 선택할 수 있습니다. 옵션 영역은 필터,"
+" 파레트, 축, 숫자표현, 차트표현으로 이루어져 있습니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:2
+msgid "차트 스타일 속성"
+msgstr ""
+
+#: ../../part04/chart_style.rst:4
+msgid ""
+"데이터를 피봇팅하고 나면 우측에 차트 스타일을 설정할 수 있는 옵션 메뉴가 나타납니다. 메뉴의 구성은 각 차트의 종류별로 다르게 "
+"나타납니다. 모든 차트 유형에 일반적으로 적용되는 설정 항목을 설명하고, 차트 유형별로 고유한 ‘공통 설정’ 유형에 대해서 "
+"설명합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:9
+msgid "차트 스타일 설정 메뉴"
+msgstr ""
+
+#: ../../part04/chart_style.rst:11
+msgid ""
+"차트 스타일 설정 메뉴를 구성하는 각 항목별로 설정 방식을 설명합니다. 사용하는 차트 유형에 따라 아래 제시된 항목 중 일부가 "
+"사용되지 않을 수 있음을 유의하십시오."
+msgstr ""
+
+#: ../../part04/chart_style.rst:13
+msgid "**색상 설정**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:15
+msgid "차트에 들어가는 각종 색상을 정의합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:17
+msgid "그래프 색상 설정: 그래프에서 데이터 표시 항목별 색상을 구분하는 기준을 정한 후 색상 테마를 선택합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:19
+msgid "Series: 측정값의 종류에 따라 색상을 구분합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:20
+msgid "Dimension: 차원값의 종류에 따라 색상을 구분합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:21
+msgid "Measure: 측정값의 크기에 따라 색상을 구분합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:23
+msgid "글자색: 차원값의 텍스트 색상을 선택합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:24
+msgid "영역색: 표 배경 색상을 선택합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:25
+msgid ""
+"색상범위 설정: 데이터 표시 색상 구분 기준을 ‘Measure’로 선택할 때 나오는 항목으로서, ON으로 설정하면 측정값의 범위에 "
+"따라 색상을 다르게 나타낼 수 있습니다. 색상범위는 최저 구간부터 시작해서 원하는 개수만큼 세분화할 수 있는데, 새로운 구간을 "
+"추가하려면 현재의 마지막 구간의 최댓값을 먼저 조정한 다음 ‘새 범위 추가’ 버튼을 클릭해야 합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:33
+msgid "**숫자 포멧**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:35
+msgid ""
+"차트 내 그래프에 텍스트로 나타나는 데이터값 의 표시 형식을 정의합니다. 이 기능을 사용하려면 데이터 레이블 설정 메뉴에서 레이블 "
+"표시 기능을 먼저 켜주십시오."
+msgstr ""
+
+#: ../../part04/chart_style.rst:37
+msgid "표시 형식: 데이터 값을 숫자, 통화, 퍼센트, 지수 중 어떤 형식으로 표시할지 선택합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:38
+msgid "소수점 자리 설정: 데이터 값을 소수점 몇 번째 자리까지 표시할지 결정합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:39
+msgid ""
+"수치표시 약어 설정: 데이터 값의 자릿수가 클 경우 천 단위(K), 백만 단위(M), 십억 단위(B) 중 하나를 약어로 설정할 수 "
+"있습니다. ‘자동 조정’을 선택하면, 데이터 값들의 자릿수에 가장 적절한 단위가 자동으로 결정됩니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:40
+msgid "천단위 구분자 사용: 데이터 값들을 천단위 구분자를 사용하여 표시할 것인지 선택합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:41
+msgid "사용자 기호 설정: 데이터 값들의 앞/뒤에 사용자가 원하는 텍스트를 삽입하여 표시할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:42
+msgid "미리 보기: 정의한 숫자 형식에 따른 결과를 예시로 보여줍니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:48
+msgid "**Y축 설정(차트 유형 세로형 기준)**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:50
+msgid "공통 설정 항목에서 차트 유형을 ‘가로형’으로 바꾸면 X축과 Y축 설 정 항목이 뒤바뀝니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:52
+msgid "축 제목 입력: 차트의 Y축에 제목을 입력할 수 있습니다. 해당 기능을 사용하지 않으면 Y축에 제목이 나타나지 않게 됩니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:53
+msgid ""
+"레이블 표시: 차트의 Y축에 데이터 레이블을 표시할 것인지 선택합니다. 해당 기능을 사용하지 않으면 Y축에 데이터 레이블은 나타나지"
+" 않게 됩니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:55
+msgid ""
+"레이블 설정: Y축 데이터 레이블에 표시되는 숫자의 형식을 지정합니다. 자동으로 설정하면 ‘숫자 포멧’ 항목의 설정값이 동일하게 "
+"반영되며, 수동으로 설정하면 Y축 데이터 레이블만의 고유한 형식을 지정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:62
+msgid "**X축 설정(차트 유형 세로형 기준)**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:64
+msgid ""
+"여기서는 차트의 X축 표시 방식을 정의합니다. 공통 설정 항목에서 차트 유형을 ‘가로형’으로 바꾸면 X축과 Y축 설 정 항목이 "
+"뒤바뀝니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:66
+msgid "축 제목 입력: 차트의 X축에 제목을 입력할 수 있습니다. 해당 기능을 사용하지 않으면 X축에 제목이 나타나지 않게 됩니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:67
+msgid ""
+"레이블 표시: 차트의 X축에 데이터 레이블을 표시할 것인지 선택합니다. 해당 기능을 사용하지 않으면 X축에 데이터 레이블은 나타나지"
+" 않게 됩니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:69
+msgid "레이블 회전: 차트의 X축에 나타나는 데이터 레이블을 0도/45도/90도 중 어떤 각도로 표시할 것인지 선택합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:75
+msgid "**데이터 레이블 설정**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:77
+msgid "차트 내 그래프에 데이터 값을 표시할 것인지 여부를 선택합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:85
+msgid "차트 유형별 공통 설정 항목"
+msgstr ""
+
+#: ../../part04/chart_style.rst:86
+msgid ""
+"가장 보편적으로 사용되는 상위 6개 차트(막대형 차트, 표, 선형 차트, 분산형 차트, 히 트맵, 원형 차트)의 스타일 설정 방법에"
+" 대해 설명합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:92
+msgid "**막대형 차트**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:94
+msgid "차원값 컬럼을 구성하는 각 범주 항목에 속한 데이터 값이 막대 모양으로 표시됩니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:96 ../../part04/chart_style.rst:111
+#: ../../part04/chart_style.rst:128 ../../part04/chart_style.rst:159
+msgid "차트 유형"
+msgstr ""
+
+#: ../../part04/chart_style.rst:98
+msgid "세로형: 차원값 축이 세로를 기준으로 하여 데이터 값 막대가 세로로 나타납니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:99
+msgid "가로형: 차원값 축이 가로를 기준으로 하여 데이터 값 막대가 가로로 나타납니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:100
+msgid "병렬형: 측정값을 2개 이상 선택했을 때 측정값별로 각각 다른 막대로 병렬하여 나타냅니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:101
+msgid "중첩형: 측정값을 2개 이상 선택했을 때 모든 측정값을 한 막대에 중첩시켜 나타냅니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:103
+msgid "Limitation: 차트에 나타나는 컬럼의 개수를 결정합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:107
+msgid "**표**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:109
+msgid ""
+"열/행 선반에 올려놓은 차원값 컬럼들의 범주 항목을 토대로 표 블록이 형성되며 그에 상응하는 측정값이 교차 영역에 텍스트로 "
+"표시됩니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:113
+msgid ""
+"피봇 데이터: 분류 기준이 되는 차원값 범주가 동일한 측정값끼리는 한 셀에 집계(SUM, MIN, MAX 등)되는 방식으로 "
+"보여집니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:114
+msgid "원본 데이터: 원본 측정값이 집계되지 않은 채로 특정한 차원값 컬럼을 기준으로 전부 출력됩니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:115
+msgid "세로보기: 측정값의 데이터를 표에서 세로로 표시합니다. 원본 데이터 유형으로 표를 나타낼 때는 사용할 수 없습니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:116
+msgid "가로보기: 피봇데이터 유형으로 표를 나타낼 경우 표를 가로보기 할 수 있습니다. 측정값의 데이터를 표에서 가로로 표시합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:118
+msgid ""
+"Show Head Colum: 헤드 칼럼에 표시되는 텍스트 정렬 방식을 가로와 세로 별로 설정할 수 있습니다. 원본 데이터로 표시할"
+" 경우에는 헤드 칼럼은 필수로 표시됩니다. 피봇 데이터 유형일 경우에 헤드 칼럼을 사용하지 않을 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:124
+msgid "**선형 차트**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:126
+msgid ""
+"차원값 컬럼을 구성하는 각 범주 항목에 속한 데이터 값이 점 모양으로 표시됩니다. 인접하는 범주 항목의 점끼리는 서로 연결되어 변화"
+" 추이를 확인할 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:130
+msgid "선형: 측정값을 기준점으로 선을 이어서 차트를 나타냅니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:131
+msgid "면적형: 선으로 이어진 면적에 색상을 입혀 차트를 나타냅니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:132
+msgid "라인&포인트: 측정값을 기준점으로 한 점과 그 점을 연결한 선을 함께 나타냅니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:133
+msgid "포인트: 포인트는 측정값을 기준으로 한 점만 나타냅니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:134
+msgid "라인: 선의 연결만을 나타냅니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:135
+msgid "기본형: 측정값을 그대로 차트에 나타냅니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:136
+msgid "누적형: 측정값을 누적한 값을 차트에 나타냅니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:140
+msgid "**분산형 차트**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:142
+msgid "차원값 컬럼을 구성하는 각 범주 항목에 속한 데이터 값이 정의된 기호 모양으로 표시됩니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:144
+msgid "기호 유형: 차트에 표시되는 기호의 모양을 설정합니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:145
+msgid "기호 투명도: 차트에 표시되는 기호의 투명도를 설정합니다. 단색/반투명 중 선택하여 나타낼 수 있습니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:149
+msgid "**히트맵**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:151
+msgid ""
+"교차선반에 올려진 측정값 컬럼의 각 데이터 값이 색상으로 표시됩니다. 데이터 값이 클수록 색상 농도가 짙어집니다. 히트맵의 공통 "
+"설정 항목에는 설정할 사항이 없습니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:155
+msgid "**원형 차트**"
+msgstr ""
+
+#: ../../part04/chart_style.rst:157
+msgid "차원값 컬럼의 각 범주 항목별로 차지하는 비중을 시각화하는 차트입니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:161
+msgid "부채꼴형: 차트가 원형으로 나타납니다."
+msgstr ""
+
+#: ../../part04/chart_style.rst:162
+msgid "도넛형: 차트가 도넛형으로 나타납니다."
+msgstr ""
+
+#: ../../part04/chart_types.rst:2
+msgid "차트 타입"
+msgstr ""
+
+#: ../../part04/chart_types.rst:4
+msgid ""
+"20여가지의 차트를 제공하고 있습니다. 차트를 선택하기 전에 먼저 컬럼들을 선반에 올려놓으면 그에 어울리는 차트들이 보라색으로 "
+"강조됩니다."
+msgstr ""
+
+#: ../../part04/chart_types.rst:6
+msgid "아래 표는 각 차트별 생성조건과 사용 속성, 사용 유형, 사용 예시에 대해 정리한 것입니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:2
+msgid "데이터 컬럼 리스트"
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:5
+msgid "데이터 컬럼 목록 구성"
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:7
+msgid "데이터 컬럼 목록에서는 연동된 데이터 소스들의 정보를 열람·수정하고, 컬럼 필터를 간편하게 추가하거나 제거할 수 있습니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:11
+msgid "**데이터 소스 선택/설정:** 데이터 소스를 선택하거나 해당 데이터 소스의 연결/join 관계를 설정합니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:14
+msgid "**데이터 상세:** 클릭하면 새 대화 상자를 통해 선택된 데이터 소스에 관한 정보를 보여줍니다"
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:17
+msgid "**컬럼 이름으로 검색:** 데이터 소스 내 컬럼을 이름으로 검색합니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:20
+msgid ""
+"**사용자 컬럼 추가:** 클릭하면 데이터 소스에 있는 컬럼들을 조합·가공하여 새로운 컬럼을 만들 수 있는 대화 상자가 열립니다. "
+"추가된 사용자 컬럼은 대시보드 전체에서 사용할 수 있습니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:23
+msgid ""
+"**필터 지정/해제:** 이 버튼은 해당 컬럼에 마우스를 오버하면 생기며, 클릭 시 해당 컬럼을 차트 필터로 지정하고 다시 한번 "
+"클릭하면 지정된 차트 필터가 해제됩니다. 필터로 지정된 컬럼 항목에는   아이콘이 마우스 오버와 상관 없이 표시됩니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:26
+msgid "**더 보기:** 이 버튼은 해당 컬럼에 마우스를 오버하면 생기며, 컬럼에 대한 추가적인 정보를 확인하고 별칭을 지정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:29
+msgid "클릭하면 새 대화 상자가 나타나면서 해당 컬럼의 요약 정보와 데이터 값들을 보여줍니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:30
+msgid "Logical column name: 해당 컬럼의 논리적 컬럼명을 보여줍니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:31
+msgid "Logical type: 해당 컬럼의 논리적 데이터 타입을 보여줍니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:32
+msgid ""
+"Alias: 해당 컬럼에 대한 별칭을 지정할 수 있습니다. 정식 컬럼명은 영숫자와 몇 가지 특수문자로 제한되며 공백도 포함할 수 "
+"없기 때문에 보다 구분하기 편한 별칭을 등록하면 분석 시 편의를 도모할 수 있습니다. 지정된 별칭은 대시보드 전체에 적용됩니다."
+msgstr ""
+
+#: ../../part04/composition_of_the_data_column_list.rst:33
+msgid "값별칭:해당컬럼에포함된각데이터값에대해서도별칭을지정할수있습니다. 지정된 별칭은 대시보드 전체에 적용됩니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:2 ../../part04/dashboard_overview.rst:13
+msgid "대시보드 만들기"
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:4
+msgid "대시보드 생성 절차는 다음과 같습니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:6
+msgid "데이터 소스를 추가할 수 있도록 ‘+ 데이터소스 추가’를 클릭합니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:11
+msgid ""
+"해당 워크스페이스에 공개된 데이터 소스 목록에서 대시보드에 연결할 마스터 데이터 소스들을 선택합니다. 이후 단계에서는 여기서 "
+"선택하는 마스터 데이터 소스들에 join시킬 다른 데이터 소스를 추가적으로 선택할 수 있습니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:16
+msgid "데이터 소스 이름 검색: 해당 워크스페이스에 허용된 데이터 소스를 이름으로 검색합니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:17
+msgid "오픈 데이터만 보기: ‘오픈 데이터 소스’로 지정된 데이터 소스만 선별하여 볼 수 있습니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:18
+msgid "타입: 데이터 소스를 연결형 또는 수집형으로 선별하여 볼 수 있습니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:19
+msgid "데이터 소스 목록: 설정한 선별 조건에 맞는 데이터 소스들을 보여줍니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:20
+msgid "데이터 소스 정보: 목록에서 선택한 데이터 소스의 정보를 간략하게 보여줍니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:22
+msgid ""
+"둘 이상의 데이터 소스를 선택할 경우에는 한 데이터 소스를 다른 데이터 소스로 드래그함으로써 둘을 연결시킬 수 있습니다. 연결된 "
+"데이터 소스끼리는 상호간 필터링이 가능합니다. 데이터 소스 연결이 필요 없으시다면 ‘마침’ 버튼을 클릭하십시오."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:27
+msgid ""
+"한 데이터 소스를 다른 데이터 소스로 드래그하면 데이터 소스 연결을 설정할 수 있는 새 창이 열리게 됩니다. 양 테이블에서 상호간 "
+"필터링을 할 수 있는 연결 키로 사용할 컬럼을 하나씩 선택한 후 ‘마침’을 클릭하십시오."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:32
+msgid ""
+"아래 설명을 참조하여 데이터 소스 연결을 재설정하거나, 앞에서 선택한 최상위 데이터소스에 조인시킬 다른 데이터 소스들을 추가합니다."
+" 원하는 결과물을 도출하였으면 ‘다음’버튼을 클릭하십시오."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:37
+msgid "마스터 데이터 소스 추가: 클릭하면 새 마스터 데이터 소스를 추가할 수 있습니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:38
+msgid "연결 수정: 클릭하면 데이터 소스 연결 설정을 수정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:39
+msgid ""
+"데이터 소스 연결: 현재 설정된 데이터 연결을 보여줍니다. 데이터 소스 하나를 클릭하면 패널이 열리는데, 여기서는 해당 데이터 "
+"소스를 미리 보거나 삭제하거나 join 관계를 설정할 수 있습니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:40
+msgid ""
+"탭 - 데이터 미리보기: 데이터 소스 join에 따른 결과 테이블을 보여줍니다. - 스키마 관리: 선택한 데이터 소스의 join "
+"관계를 관리할 수 있습니다. - 데이터 소스 삭제: 클릭하면 선택한 데이터 소스가 삭제됩니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:44
+msgid "패널 닫기: 클릭하면 선택한 데이터 소스에 대한 패널이 닫힙니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:45
+msgid "데이터 소스 트리: 데이터 소스끼리의 join 관계를 트리 구조로 보여줍니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:50
+msgid "마스터 데이터 소스: 새로 join시키고자 하는 데이터 소스의 마스터 데이터 소스에 관한 정보를 보여줍니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:51
+msgid "조인할 데이터 소스: 마스터 데이터 소스에 조인할 데이터 소스를 선택합니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:52
+msgid ""
+"조인 키 추가: ‘조인 키’는 마스터 데이터 소스와 조인할 데이터 소스 간의 컬럼별 조인 관계를 정의하기 위한 키입니다. 두 데이터"
+" 소스에서 서로 연결시킬 컬럼을 하나씩 선택한 후 이 버튼을 클릭하면 새로운 조인 키가 추가됩니다. 이때 각각의 데이터 소스의 "
+"컬럼에 정의된 데이터 타입이 일치해야 합니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:53
+msgid "조인 타입: 데이터 소스를 어떻게 조인하여 변형할 것인지를 선택합니다. 각 조인 타입을 설명하겠습니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:59
+msgid "**조인 (join)**"
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:56
+msgid ""
+"Inner: 조인 키 컬럼 내 데이터 값을 기준으로 마스터 데이터 소스와 조인할 데이터 소스에 공통적으로 해당하는 레코드만 결과 "
+"테이블에 반영합니다. (두 데이터 소스의 교집합)"
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:57
+msgid ""
+"Left: 왼쪽 데이터 소스(마스터 데이터 소스)의 조인 키 컬럼 내 데이터 값을 기준으로 오른쪽 데이터 소스(조인할 데이터 "
+"소스)의 데이터를 가져와 조인한 뒤, 결과 테이블에 반영합니다. 오른쪽 데이터 소스의 레코드 중에서 왼쪽 데이터 소스에 없는 조인 "
+"키 컬럼 데이터 값을 가진 레코드는 버려집니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:58
+msgid ""
+"Right: 오른쪽 데이터 소스(조인할 데이터 소스)의 조인 키 컬럼 내 데이터 값을 기준으로 왼쪽 데이터 소스(마스터 데이터 "
+"소스)의 데이터를 가져와 조인한 뒤, 결과 테이블에 반영합니다. 왼쪽 데이터 소스의 레코드 중에서 오른쪽 데이터 소스에 없는 조인 "
+"키 컬럼 데이터 값을 가진 레코드는 버려집니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:59
+msgid ""
+"Full Outer: 조인 키 컬럼 내 데이터 값을 기준으로 양쪽 데이터 소스의 모든 데이터를 가져와 조인한 뒤, 결과 테이블에 "
+"반영합니다. (두 데이터 소스의 합집합)"
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:61
+msgid ""
+"대시보드를 생성하기 위해 불러온 데이터 소스들에 관한 정보를 확인한 뒤, 이름과 설명을 입력하고 ‘마침’ 버튼을 누르면 새로운 "
+"대시보드가 생성됩니다."
+msgstr ""
+
+#: ../../part04/create_a_dashboard.rst:66
+msgid "새로 생성된 대시보드는 워크북 홈 화면에 추가됩니다. 클릭하면 해당 대시보드에 관한 화면이 표시됩니다."
+msgstr ""
+
+#: ../../part04/create_a_workbook.rst:2
+msgid "워크북 만들기"
+msgstr ""
+
+#: ../../part04/create_a_workbook.rst:4
+msgid ""
+"Metatron Discovery에서 ‘워크북’은 하나의 독립적인 데이터 분석 보고서로서 기능을 합니다. 하나의 워크북을 생성하면 "
+"그 안에 여러 ‘대시보드’ 슬라이드를 담아서 적절한 순서대로 보여줄 수 있습니다."
+msgstr ""
+
+#: ../../part04/create_a_workbook.rst:6
+msgid "워크북 생성 절차는 다음과 같습니다."
+msgstr ""
+
+#: ../../part04/create_a_workbook.rst:8
+msgid "워크스페이스 하단에 있는 +워크북 버튼을 클릭하면 워크북을 생성할 수 있는 화면이 나타납니다."
+msgstr ""
+
+#: ../../part04/create_a_workbook.rst:13
+msgid ""
+"생성하고자 하는 워크북의 이름(필수 사항)과 설명을 입력하고 마침 버튼을 누릅니다. ‘Continue to create a "
+"dashboard of a new workbook’ 박스에 체크하면 워크북 생성과 동시에 ‘대시보드 생성하기’ 화면으로 넘어갑니다."
+" 워크북은 그 안에 대시보드가 있어야 비로소 기능을 할 수 있기 때문에 이렇게 연결되는 것입니다."
+msgstr ""
+
+#: ../../part04/create_a_workbook.rst:18
+msgid ""
+"대시보드를 생성하는 절차는 3창을 참조하십시오. 데이터소스를 추가합니다. 화면 가운데의 '+ 데이터소스 추가' 버튼을 클릭 후, "
+"데이터소스를 선택하여 대시보드를 생성합니다"
+msgstr ""
+
+#: ../../part04/create_a_workbook.rst:26
+msgid ""
+"새로 생성된 워크북은 아래와 같이 워크스페이스 화면에서 확인할 수 있습니다. 클릭하면 해당 워크북을 사용할 수 있는 화면이 "
+"나타납니다."
+msgstr ""
+
+#: ../../part04/dashboard_overview.rst:2
+msgid "대시보드 소개"
+msgstr ""
+
+#: ../../part04/dashboard_overview.rst:4
+msgid ""
+"대시보드는 워크북 안에 보관되며 특정한 데이터 소스를 사용자의 필요에 맞게 분석하고 시각화하는 기능을 제공합니다. 따라서 대시보드 "
+"생성 절차는 주로 데이터 소스를 연결하는 것부터 시작됩니다."
+msgstr ""
+
+#: ../../part04/dashboard_overview.rst:6
+msgid ""
+"여러 데이터 소스를 기반으로 차트와 텍스트 기반의 시각화 분석에 더해, 피봇, 맵차트, 필터링 기능으로 사용자만의 "
+"Customize한 분석을 진행할 수 있습니다"
+msgstr ""
+
+#: ../../part04/dashboard_overview.rst:11
+msgid "본 장은 다음과 같이 구성되어 있습니다"
+msgstr ""
+
+#: ../../part04/dashboard_overview.rst:15
+#: ../../part04/display_a_data_source.rst:2
+msgid "대시보드 내에 데이터소스 확인하기"
+msgstr ""
+
+#: ../../part04/dashboard_overview.rst:16
+#: ../../part04/present_the_dashboard.rst:2
+msgid "대시보드 프리젠테이션 하기"
+msgstr ""
+
+#: ../../part04/dashboard_overview.rst:17
+#: ../../part04/give_new_column_name(alias).rst:3
+msgid "컬럼에 새로운 이름 부여하기"
+msgstr ""
+
+#: ../../part04/dashboard_overview.rst:18
+msgid "공간 데이터로 분석하기"
+msgstr ""
+
+#: ../../part04/display_a_data_source.rst:4
+msgid ""
+"대시보드 기본 화면에서 버튼을 클릭하면 해당 대시보드에서 사용하는 데이터 소스들의 정보 를 보여주는 대화 상자가 나타납니다. 좌측 "
+"상단에서 확인하고자 하는 데이터 소스를 선택할 수 있 습니다. 이 대화 상자는 크게 3가지 탭(데이터 그리드, 컬럼 상세 탭, "
+"대시보드 데이터 정보)으로 구 성됩니다."
+msgstr ""
+
+#: ../../part04/display_a_data_source.rst:6
+msgid "**데이터 그리드 탭**"
+msgstr ""
+
+#: ../../part04/display_a_data_source.rst:8
+msgid "해당 데이터 소스의 레코드 값이 모두 표시됩니다."
+msgstr ""
+
+#: ../../part04/display_a_data_source.rst:13
+msgid "**컬럼 상세 탭**"
+msgstr ""
+
+#: ../../part04/display_a_data_source.rst:15
+msgid "해당 데이터 소스를 구성하는 각 컬럼에 관한 정보를 상세히 보여줍니다."
+msgstr ""
+
+#: ../../part04/display_a_data_source.rst:20
+msgid "**대시보드 데이터 정보 탭**"
+msgstr ""
+
+#: ../../part04/display_a_data_source.rst:22
+msgid "해당 데이터 소스 전체에 대한 요약 정보를 보여줍니다."
+msgstr ""
+
+#: ../../part04/filters.rst:2
+msgid "필터"
+msgstr ""
+
+#: ../../part04/filters.rst:4
+msgid ""
+"필터는 대시보드와 차트를 구성할 때 조건에 일치하는 데이터만 표출하도록 설정하는 기능입니다. 차트의 종류는 차트 필터, 글로벌 필터"
+" 두 가지로 구성됩니다. 차트 필터는 개별 차트에 적용되는 필터이고, 글로벌 필터는 하나의 대시보드 전체에 적용되는 필터입니다."
+msgstr ""
+
+#: ../../part04/give_new_column_name(alias).rst:5
+msgid ""
+"대시보드 편집모드의 데이터소스 패널에서 컬럼명에 마우스를 올린 후, 우측의 항목을 클릭하면 해당 컬럼의 Alias 값을 확인할 수 "
+"있습니다."
+msgstr ""
+
+#: ../../part04/give_new_column_name(alias).rst:9
+msgid ""
+"Alias 항목에 마우스를 올리면 새로운 컬럼명을 입력할 수 있는 창이 열리며, 입력 후 적용을 누르면 반영된 것을 확인할 수 "
+"있습니다."
+msgstr ""
+
+#: ../../part04/global_filter.rst:2
+msgid "글로벌 필터"
+msgstr ""
+
+#: ../../part04/global_filter.rst:4
+msgid "글로벌 필터는 대시보드에 속한 모든 차트에 적용되는 데이터 표출 조건으로, 대시보드 편집 창의 필터 패널에서 추가할 수 있습니다."
+msgstr ""
+
+#: ../../part04/global_filter.rst:6
+msgid "**대시보드 필터 패널**"
+msgstr ""
+
+#: ../../part04/global_filter.rst:8
+msgid "대시보드 필터 패널에서는 대시보드 내 필터 위젯의 추가, 수정, 삭제 등이 가능합니다."
+msgstr ""
+
+#: ../../part04/global_filter.rst:12
+msgid "**필터 위젯 수:** 글로벌 필터 제목 옆에 현재 대시보드에 등록된 필터 위젯의 개수가 나타납니다."
+msgstr ""
+
+#: ../../part04/global_filter.rst:13
+msgid ""
+"**필터 위젯 추가:** 우측 상단 \"+\"를 클릭하면 대시보드 내에 새로운 필터 위젯을 생성할 수 있습니다. 필터 생성 팝업 및"
+" 생성 방법은 직전 챕터의 차트 필터 생성 절차와 동일합니다."
+msgstr ""
+
+#: ../../part04/global_filter.rst:14
+msgid ""
+"**필터 위젯 목록:** 현재 대시보드에 등록된 필터 위젯들이 열거됩니다. 수정 또는 삭제를 원하는 위젯 항목에 마우스를 오버하면 "
+"이를 위한 아이콘이 나타납니다. 또한 위젯 항목을 위젯 레이아웃 영역으로 드래그하면 위젯이 위젯 레이아웃 영역에 표시됩니다."
+msgstr ""
+
+#: ../../part04/global_filter.rst:16
+msgid ""
+"전체 대시보드에 적용된 글로벌 필터는 차트 생성 시 개별 필터를 만들 때에 함께 조회됩니다. 또한 글로벌 필터 생성 시에도 개별 "
+"차트 필터가 있다면 어떤 칼럼에 생성되었는지 직관적으로 알려줍니다."
+msgstr ""
+
+#: ../../part04/index.rst:2
+msgid "워크북"
+msgstr ""
+
+#: ../../part04/manage_charts.rst:2
+msgid "차트"
+msgstr ""
+
+#: ../../part04/manage_dashboards.rst:2
+msgid "대시보드"
+msgstr ""
+
+#: ../../part04/pivoting.rst:2
+msgid "차트 그리기(pivoting)"
+msgstr ""
+
+#: ../../part04/pivoting.rst:4
+msgid ""
+"Pivoting이란 주어진 테이블을 특정 컬럼들을 기준으로 그룹화하는 과정을 의미하며, 이를 통해 분석가는 원천 데이터의 특정한 "
+"측면을 그래픽 또는 도표로 확인할 수 있습니다. 이러한 과정에는 의미 있는 데이터를 포함하는 컬럼들을 열/행/교차 선반에 배치하는 "
+"것을 포함합니다."
+msgstr ""
+
+#: ../../part04/pivoting.rst:9
+msgid ""
+"위 그림은 두 개의 차원값 컬럼을 열선반에 배치하고 하나의 측정값 컬럼을 교차선반에 배치 한 상태를 보여주고 있습니다. 차트에는 "
+"이렇게 선반에 올려놓은 컬럼들의 데이터가 표시됩니다."
+msgstr ""
+
+#: ../../part04/pivoting.rst:12
+msgid ""
+"차트 유형별로 선반별 필수/권장 컬럼 유형이 다르며, 컬럼들을 선반에 올려놓기 전에 먼저 차트 유형을 선택하면 선반에 필요한 컬럼 "
+"유형이 제시됩니다."
+msgstr ""
+
+#: ../../part04/pivoting.rst:17
+msgid "열/행/교차 선반의 개념"
+msgstr ""
+
+#: ../../part04/pivoting.rst:19
+msgid ""
+"열/행/교차 선반의 개념은 Excel의 구조를 생각하면 쉽게 이해할 수 있습니다. 아래 그림과 같이 열/행은 블록을 정의하는 역할을"
+" 하고, 교차는 블록 안에 들어갈 값을 정하는 역할을 합니다."
+msgstr ""
+
+#: ../../part04/pivoting.rst:23
+msgid ""
+"Excel에서 데이터를 열/행/교차를 2차원 값인 그리드에 표현한 다면, Metatron은 OLAP Data Discovery "
+"도구로서, OLAP Cube를 통해 다차원에서 데이터를 조회합니다. 아래의 차트는 metatron에서 3차원 큐브로 나타낸 "
+"열/행/교차 값의 축 그림 입니다."
+msgstr ""
+
+#: ../../part04/pivoting.rst:28
+msgid ""
+"Excel 그리드의 값을 3차원 차트에서 표현한다면 그리드의 교차값이 막대바 형태로 여러 개 세워 지게 될 수 있습니다. "
+"Metatron에서는 2차원 단면으로 차트가 보여지기 때문에 열과 행 기준으로 막대 바를 쌓아 올려서 표현하게 됩니다. 결국 아래 "
+"그 림의 회색 부분과 같은 2차원 형태의 차트로 나타납니다."
+msgstr ""
+
+#: ../../part04/present_the_dashboard.rst:6
+msgid "프리젠테이션 뷰 들어가기"
+msgstr ""
+
+#: ../../part04/present_the_dashboard.rst:10
+msgid ""
+"대시보드 기본 화면에서 ‘프레젠테이션 뷰’ 버튼을 클릭하면 워크북의 대시보드들을 프레젠테이션에 적합한 UI로 열람할 수 있습니다. "
+"이를 통해 사용자는 데이터 분석 결과를 쉽게 보고하고 공유할 수 있습니다."
+msgstr ""
+
+#: ../../part04/present_the_dashboard.rst:16
+msgid "프리젠테이션 뷰 상세"
+msgstr ""
+
+#: ../../part04/present_the_dashboard.rst:20
+msgid "**이름:** 현재 표시 중인 대시보드의 이름입니다."
+msgstr ""
+
+#: ../../part04/present_the_dashboard.rst:22
+msgid ""
+"**슬라이드 네비게이션:** 각 동그라미는 워크북 내 대시보드 각각을 가리킵니다. 예를 들어 네 번째 동그라미를 클릭하면 네 번째 "
+"대시보드 슬라이드로 이동하고 해당 동그라미가 강조됩니다."
+msgstr ""
+
+#: ../../part04/present_the_dashboard.rst:24
+msgid ""
+"**자동 슬라이드 쇼 설정:** 시간 간격 선택 후 PLAY 버튼을 클릭하면, 자동 슬라이드 쇼가 시작되어 선택한 시간 간격을 "
+"주기로 슬라이드가 넘어갑니다."
+msgstr ""
+
+#: ../../part04/present_the_dashboard.rst:26
+msgid "**나가기:** 프레젠테이션 뷰를 종료하고 워크북/대시보드 기본 화면으로 돌아갑니다."
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:2
+msgid "워크북 소개"
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:7
+msgid ""
+"워크북은 Metatron Discovery의 Druid 엔진을 기반으로 하는 비주얼 데이터 분석 모듈입니다. 기본적인 특징은 다음과"
+" 같습니다."
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:9
+msgid "시계열 기반의 다차원 데이터 소스를 이용하여 신속하고 유연한 데이터 분석 가능."
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:10
+msgid "각 대시보드에서 각종 차트와 텍스트 등의 시각화 위젯을 배치함으로써 프레젠테이션 형식의 보고서로 활용 가능."
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:11
+msgid "클러스터링, 예측선, 추세선 등의 자주 쓰는 알고리즘을 GUI(Graphical User Interface)로 구현 가능."
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:13
+msgid "본 단원은 다음과 같이 구성되어 있습니다"
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:15
+msgid ""
+"2장 워크북 생성하기: ‘워크북’은 하나의 독립된 보고서로서 기능을 합니다. 여기서는 새로운 워크북을 생성하는 절차에 대해 "
+"설명합니다."
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:16
+msgid ""
+"3장 대시보드 관리하기: 대시보드는 워크북을 구성하는 각 슬라이드에 해당합니다. 여기서는 워크북 내에서 새로운 대시보드를 생성하고 "
+"그 대시보드에 데이터 소스를 연결하며 이를 관리하는 절차에 대하여 설명합니다."
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:17
+msgid ""
+"4장 차트 관리하기: 차트도 대시보드를 구성하는 위젯 중 한 유형이지만, 별도로 알아야 할 개 념과 다루어야 할 UI 메뉴가 많아서"
+" 본 절에서 따로 설명합니다."
+msgstr ""
+
+#: ../../part04/workbook_overview.rst:18
+msgid "5장 필터링: 차트와 대시보드에서 필터링을 사용하는 방법에 대하여 설명합니다"
+msgstr ""
+

@@ -1,0 +1,1583 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-28 13:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../part07/add_datasets.rst:2
+msgid "데이터셋 추가하기"
+msgstr ""
+
+#: ../../part07/add_datasets.rst:4
+msgid ""
+"데이터 플로우는 데이터셋을 처리하는 단위입니다. 한 데이터 플로우는 다수의 데이터셋들을 가져와서 연관지어서 변형을 가할 수 "
+"있습니다. 즉, 어떤 데이터셋이 변형 규칙을 가지려면 반드시 한 데이터 플로우에 속해야 합니다."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:7
+msgid ""
+"각 데이터셋은 서로 다른 데이터셋에 대해 join, union 등의 관계를 가질 수 있습니다. 어떤 데이터셋에 대해 그것이 의존하는"
+" 다른 데이터셋을 상위 스트림 데이터셋 (upstream dataset) 이라고 부릅니다. 아래처럼, 데이터 플로우 상세화면에서는 "
+"해당 데이터 플로우의 모든 데이터셋과 더불어 각 데이터셋이 어떤 상위 스트림의 영향을 받는지도 함께 볼 수 있습니다."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:13
+msgid "데이터 플로우 생성에는 다음의 두가지 방법이 있습니다."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:15
+msgid "`빈 데이터 플로우를 먼저 생성한 후, 데이터셋 추가 <add_datasets.html#id2>`_"
+msgstr ""
+
+#: ../../part07/add_datasets.rst:16
+msgid "`데이터셋 상세화면에서 바로 데이터 플로우 만들기 <add_datasets.html#id3>`_"
+msgstr ""
+
+#: ../../part07/add_datasets.rst:20
+msgid "빈 데이터 플로우를 먼저 생성한 후, 데이터셋 추가"
+msgstr ""
+
+#: ../../part07/add_datasets.rst:22
+msgid "전체 메뉴 - MANAGEMENT - 데이터 프리퍼레이션 - 데이터 플로우을 선택합니다."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:23
+msgid "데이터 플로우 리스트 우상단에 위치한 ``데이터 플로우 추가`` 를 누르면 아래와 같은 팝업창이 뜹니다."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:27
+msgid "데이터 플로우 이름 및 설명을 입력하고 ``완료`` 를 누르면 아래처럼 빈 데이터 플로우가 생성됩니다."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:31
+msgid "이제 중앙의 ``이 데이터플로우에 데이터셋 추가`` 를 누릅니다."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:35
+msgid "추가할 데이터셋들을 고릅니다."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:39
+msgid ""
+"선택한 Imported Dataset과 그에 상응하는 Wrangled Dataset이 생성되었습니다. 이제 ``룰 편집`` 을 "
+"누르면 룰 편집이 시작됩니다. 이에 대한 내용은 `데이터 프리퍼레이션 룰 <manage_rule.html>`_ 을 참고하세요."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:43
+msgid "데이터셋 상세화면에서 바로 데이터 플로우 만들기"
+msgstr ""
+
+#: ../../part07/add_datasets.rst:45
+msgid ""
+"데이터셋 상세화면에는 ``이 데이터셋으로 새로운 데이터플로우 생성`` 이라는 버튼이 있습니다. 이것을 누르면 자동으로 데이터 "
+"플로우를 만들고 **룰 편집** 직전의 단계까지 진행합니다."
+msgstr ""
+
+#: ../../part07/add_datasets.rst:49
+msgid "참고로, 데이터 플로우의 이름은 데이터셋 이름을 기반해서 자동으로 지어집니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:2
+msgid "데이터셋 만들기"
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:4
+msgid ""
+"데이터셋은 데이터 프리퍼레이션의 가장 기본이 되는 단위로 데이터 연산의 대상이 되는 개체를 말합니다. Imported "
+"Dataset과 Wrangled Dataset의 두 가지 종류로 존재합니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:7
+msgid ""
+"Imported Dataset은 출처가 되는 가장 초기 형태의 실제 데이터 개체입니다. Wrangled Dataset은 작업의 "
+"대상이 되는 데이터 개체 입니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:10
+msgid ""
+"Wrangled Dataset은 룰 편집을 위해서 Dataflow 안에서 생성됩니다. 그러므로 우리는 데이터 프리퍼레이션에 데이터를"
+" 제공하기 위하여 Imported Dataset만을 생성하게 됩니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:13
+msgid "다음과 같은 과정을 통해 (Imported) 데이터셋을 만들 수 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:18
+msgid "데이터셋을 만들기 위해서는 메인 화면 좌측 탭에서 'WORKSPACE - MANAGEMENT - 데이터 프리퍼레이션' 이동을 합니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:22
+msgid "'데이터 셋' 탭의 데이터셋 목록 화면에서 '새로운 데이터셋 생성' 버튼을 사용하면 데이터셋을 만들 수 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:27
+msgid "데이터셋은 3가지 종류로 생성할 수 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:30
+msgid "Import Type의 종류"
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:32
+msgid "File : 사용자가 소유한 파일 또는 URI(곧 지원 예정)를 이용하여 Import"
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:33
+msgid "Database : Database 접속 정보와 쿼리를 이용하여 Import"
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:34
+msgid "Staging DB : 메타트론 구동시 설정된 Staging DB의 정보를 이용하여 Import"
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:39
+msgid "File 타입 데이터셋 생성하기"
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:41
+msgid "파일 타입을 선택하고 진행하면 파일을 업로드 할 수 있는 탭이 표시됩니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:45
+msgid "드래그&드롭 또는 Import 링크를 클릭하여 파일을 선택합니다. (cvs, json, excel 형식이 지원됩니다.)"
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:49
+msgid "업로드 된 파일의 그리드 형태를 확인하고 컬럼 구분자를 지정할 수 있으며, 문제가 없다면 다음으로 넘어갑니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:53
+msgid "데이터 셋의 이름과 설명을 기술합니다. 이름은 사용자가 식별하기 위한 표기이므로 중복을 허용하며 설명은 없어도 무방합니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:58 ../../part07/create_a_dataset.rst:91
+#: ../../part07/create_a_dataset.rst:116
+msgid "데이터셋 생성이 완료되면 데이터셋 목록 화면으로 자동으로 이동합니다. 방금 생성한 데이터셋을 확인할 수 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:64
+msgid "Database 타입 데이터셋 생성하기"
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:66
+msgid "Database 타입의 데이터셋을 생성하기 위해서는 선행적으로 커넥션이 생성되어 있어야 합니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:70
+msgid ""
+"데이터 커넥션이 만들어져 있지 않다면 'WORKSPACE - MANAGEMENT - 데이터 스토리지 - `데이터 커넥션 "
+"<../part02/data_connection.html>`_'을 통하여 데이터셋을 생성하여야 합니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:74
+msgid "연결하길 원하는 커넥션이 생성되어 있다면 해당 커넥션을 선택하고 테스트 버튼을 눌러 유효한 커넥션임을 확인합니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:78
+msgid "DB명과 테이블명을 선택하여 데이터셋을 생성할 수 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:82
+msgid "또는 쿼리를 직접 입력하여 데이터셋을 생성할 수도 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:86
+msgid ""
+"모든 정보가 설정되었다면 데이터셋 이름과 설명을 기술하고 완료합니다. 이름은 사용자가 식별하기 위한 표기이므로 중복을 허용하며 "
+"설명은 없어도 무방합니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:97
+msgid "Staging DB 타입 데이터셋 생성하기"
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:99
+msgid ""
+"Staging DB 타입의 데이터셋은 데이터 커넥션을 지정할 필요가 없다는 것을 제외하면 Database 타입의 데이터셋과 "
+"동일합니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:103
+msgid "Staging DB의 정보가 기본으로 사용되므로 데이터 커넥션 선택 없이 바로 테이블을 선택할 수 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:107
+msgid "또는 쿼리를 직접 입력하여 데이터셋을 생성할 수 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_dataset.rst:111
+msgid "데이터셋 이름과 설명을 기술하고 완료합니다. 이름은 사용자가 식별하기 위한 표기이므로 중복을 허용하며 설명은 없어도 무방합니다."
+msgstr ""
+
+#: ../../part07/create_a_datasnapshot.rst:2
+msgid "데이터 스냅샷 만들기"
+msgstr ""
+
+#: ../../part07/create_a_datasnapshot.rst:4
+msgid ""
+"데이터 플로우에서 룰 편집이 완료된 데이터셋은 \"데이터 스냅샷\"을 찍어서 로컬 PC에 파일로 다운로드 받거나, 메타트론 엔진으로"
+" 즉시 적재할 수 있습니다. 데이터 스냅샷을 실행하면 최대 10,000개 rows를 가진 샘플 데이터에만 적용된 룰을 전체 데이터에"
+" 대해 적용하게 됩니다."
+msgstr ""
+
+#: ../../part07/create_a_datasnapshot.rst:6
+msgid ""
+"스냅샷을 만드는 방법은 매우 간단합니다. 그저 `룰 편집 <../part02/data_connection.html>`_ 창 우측 "
+"상단에 위치한 \"데이터 스냅샷\" 버튼을 클릭하세요."
+msgstr ""
+
+#: ../../part07/create_a_datasnapshot.rst:10
+msgid "스냅샷 생성을 위한 팝업이 보여집니다. 스냅샷은 FILE과 STAGING_DB 중 생성위치를 지정할 수 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_datasnapshot.rst:14
+msgid "FILE 경로로 스냅샷의 위치를 지정하는 경우 CSV 또는 JSON의 포맷으로 생성할 수 있습니다."
+msgstr ""
+
+#: ../../part07/create_a_datasnapshot.rst:18
+msgid ""
+"STAGING_DB가 설정되어 있지 않다면 HIVE 옵션은 비활성화 됩니다. HIVE 옵션이 활성화 되어있다면 STAGING_DB에"
+" 스냅샷을 생성할 수 있습니다. 스키마명과 테이블명을 지정하면 해당 테이블에 스냅샷이 생성됩니다."
+msgstr ""
+
+#: ../../part07/create_a_datasnapshot.rst:22
+msgid "스냅샷을 생성하면 동일한 창에서 스냅샷 생성 상태와 정보를 조회할 수 있습니다."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:2
+msgid "데이터 프리퍼레이션 소개"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:4
+msgid ""
+"데이터 프리퍼레이션은 파일, 테이블 등의 데이터셋에 대해, 간편하게 변형 규칙을 생성해내고, 그 결과를 HDFS, Hive 등으로 "
+"저장하는 툴입니다."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:8
+msgid ""
+"사용자는 위와 같이 GUI를 통해 Step-by-Step으로 변형 규칙을 생성해낼 수 있습니다. 매 변형 결과는 데이터 분포도와 "
+"함께 메모리에 저장되기 때문에, 사용자는 이전 스텝 결과를 마우스 클릭만으로 간단히 확인할 수 있을 뿐 아니라, 마치 텍스트 "
+"편집기를 쓰는 것처럼 **undo**, **redo** 도 간단히 할 수 있습니다. 또한, 보통 변형 규칙 하나를 추가하려면 "
+"프로그래밍을 필요로 하거나, 최소한 SQL문을 작성해야하지만, 데이터 프리퍼레이션을 활용하면 몇 번의 마우스 클릭이나 타이핑 만으로"
+" 변형 규칙을 간편히 만들어 낼 수 있습니다. 이로써 일반적으로 많은 시간이 소요되는 데이터 정제 작업을 손쉽게 그리고 빠르게 "
+"처리해낼 수 있습니다."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:15
+msgid "입력 (Source)"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:19
+msgid "파일"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:18
+#: ../../part07/data_preparation_overview.rst:68
+#: ../../part07/data_preparation_overview.rst:71
+msgid "CSV 파일"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:19
+#: ../../part07/data_preparation_overview.rst:69
+#: ../../part07/data_preparation_overview.rst:72
+msgid "JSON 파일"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:20
+msgid "마이크로소프트 엑셀 파일"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:28
+#: ../../part07/data_preparation_overview.rst:74
+msgid "테이블"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:22
+msgid "Oracle"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:23
+msgid "MySQL"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:24
+msgid "Hive"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:25
+msgid "PostgreSQL"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:26
+msgid "Presto"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:27
+msgid "Tibero"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:28
+#: ../../part07/data_preparation_overview.rst:74
+msgid "Staging DB"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:30
+msgid "참고로, Staging DB는 시스템 관리자가 설정하는 데이터베이스입니다. 보통은 클러스터 내 Hive로 설정됩니다."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:32
+msgid "데이터 프리퍼레이션의 입력에 대한 보다 자세한 내용은 `데이터셋 만들기 <create_a_dataset.html>`_ 를 참조하세요."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:35
+msgid "변형 (Transform)"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:37
+msgid "``drop``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:38
+msgid "``settype``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:39
+msgid "``setformat``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:40
+msgid "``header``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:41
+msgid "``keep``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:42
+msgid "``delete``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:43
+msgid "``replace``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:44
+msgid "``set``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:45
+msgid "``derive``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:46
+msgid "``split``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:47
+msgid "``merge``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:48
+msgid "``extract``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:49
+msgid "``countpattern``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:50
+msgid "``nest``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:51
+msgid "``unnest``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:52
+msgid "``flatten``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:53
+msgid "``aggregate``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:54
+msgid "``pivot``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:55
+msgid "``unpivot``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:56
+msgid "``join``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:57
+msgid "``union``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:58
+msgid "``window``"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:60
+msgid "데이터 프리퍼레이션은 위와 함께 각종 수식 함수를 제공함으로써, 일반적인 데이터 정제에 필요한 대부분의 기능들을 지원하고 있습니다."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:62
+msgid "각각의 변형 룰에 대한 자세한 설명은 `데이터 플로우 관리하기 <manage_dataflow.html>`_ 를 참조하세요."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:65
+msgid "출력 (Destination)"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:68
+msgid "로컬 파일"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:71
+msgid "HDFS 파일"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:76
+msgid ""
+"데이터 프리퍼레이션의 변형 결과는 데이터 스냅샷이라 불리우고, 위와 같은 형태들을 지원합니다. 이에 대한 보다 자세한 내용은 "
+"`데이터 스냅샷 만들기 <create_a_datasnapshot.html>`_ 및 `데이터 스냅샷 결과 보기 "
+"<data_snapshot.html>`_ 를 찹조하세요."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:80
+msgid "장점 (Benefits)"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:81
+msgid "프로그래밍이나 데이터 처리에 대해 잘 몰라도, 스스로 원하는 형태의 결과를 얻을 수 있습니다."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:82
+msgid "데이터 처리에 능숙하다해도, GUI를 통해 효율적으로 **탐색적 변형** 이 가능합니다."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:83
+msgid ""
+"기본적으로 수반되는 데이터 변형을 자동으로 수행합니다. 예를 들어, 명백히 숫자로 보이는 컬럼에 대해 알아서 형변환 규칙을 "
+"적용해줍니다. 물론 이것은 언제나 **undo** 또는 룰 삭제가 용이하기 때문에 가능한 일입니다."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:84
+msgid "다양한 데이터 형태를 결합하여 원하는 형태로 바꿔놓을 수 있습니다. (eg. 기준 파일 + 팩트 테이블)"
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:85
+msgid "만들어 둔 데이터 정제 결과를 다른 사람들과 공유함으로써, 물리적인 데이터를 주고 받는 부담을 줄여줍니다."
+msgstr ""
+
+#: ../../part07/data_preparation_overview.rst:86
+msgid ""
+"실제 데이터는 지우고, 그것을 만드는 방법만 유지함으로써 저장 공간을 아끼고, **ILM (Information Life "
+"Cycle)** 을 줄일 수 있습니다. 다시 필요할 때 실데이터를 만들어내는데에 부담이 줄어들기 때문입니다."
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:2
+msgid "데이터 스냅샷 결과 보기"
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:4
+msgid "스냅샷의 생성 단계는 [성공, 실패, 처리중]의 3가지 경우가 있습니다."
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:6
+msgid "성공 = SUCCEEDED"
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:7
+msgid "실패 = FAILED"
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:8
+msgid "처리중 = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING"
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:10
+msgid "스냅샷의 상세한 처리 결과는 다음 2가지 경로를 통해 확인할 수 있습니다."
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:12
+msgid ""
+"'WORKSPACE - MANAGEMENT - 데이터 프리퍼레이션 - 데이터 스냅샷'의 스냅샷 목록을 통해서 상세 보기를 할 수 "
+"있습니다."
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:16
+msgid "'데이터플로우'의 우측 영역 '스냅샷 탭'을 통해서 상세 보기를 할 수 있습니다."
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:20
+msgid "스냅샷 상세 보기 화면으로 들어가면 스냅샷의 처리 결과와 기타 정보를 확인할 수 있습니다."
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:22
+msgid "생성 성공한 데이터 스냅샷의 예시"
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:26
+msgid ""
+"스냅샷의 각종 정보와 함께 데이터의 유효성 비율과 생성된 스냅샷의 그리드를 확인할 수 있고, 스냅샷 결과를 CSV 파일로 다운로드 "
+"할 수 있습니다."
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:28
+msgid "생성 실패한 데이터 스냅샷의 예시"
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:32
+msgid "유효한 데이터가 생성되지 못하였을 경우, 실패를 발생시킨 예외의 로그를 표시합니다."
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:36
+msgid "메타트론 엔진으로 적재하기"
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:38
+msgid "(개발예정)"
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:42
+msgid "CSV파일로 다운로드 받기"
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:46
+msgid "생성에 성공한 스냅샷의 상세 보기에서는 'CSV로 다운로드'가 가능합니다."
+msgstr ""
+
+#: ../../part07/data_snapshot.rst:50
+msgid "다운로드한 파일은 표준 CSV 형식으로, 'comma'로 구분되고 'new line'으로 개행합니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:2
+msgid "룰 편집"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:3
+msgid ""
+"데이터 프리퍼레이션을 통해 하고자 하는 일은 결국 데이터를 변형하는 (주로 정제) 규칙을 만들어내는 것입니다. 이 변형 규칙과 "
+"입출력 명세를 합쳐서 우리는 실제 데이터에 적용하거나, 또 비슷한 다른 데이터에 적용하거나, 이런 작업들을 스케쥴링합니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:6
+msgid "이제 룰을 만들고, 결과를 확인하고, 룰을 다시 변경하거나 삭제하는 일에 대한 설명을 하겠습니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:8
+msgid "먼저 룰 편집 화면의 구성은 다음과 같습니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:12
+msgid "컬럼 타입, 이름, 메뉴 버튼"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:13
+msgid "룰 간편 생성을 위한 메뉴"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:14
+msgid "적용된 룰 리스트 및 중간 삽입 버튼 (룰 사이에 마우스를 갖다대면 나옴)"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:15
+msgid "Undo, redo가 가능한 경우 활성화"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:16
+msgid "룰 세부 내용 입력 창"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:17
+msgid "컬럼 값 분포 및 distinct count, type mismatch 또는 null value 관련 정보 등"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:20
+msgid "룰 생성하기"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:31
+msgid "컬럼 헤더 메뉴를 이용하는 방법"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:25
+msgid "컬럼 헤더를 클릭해서 대상 컬럼을 고릅니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:24
+msgid "기능 키를 이용해서 다수의 컬럼을 고를 수 있습니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:25
+msgid "OS에 따라 ^ 또는 ⌘ 키를 누른 채 클릭을 하면 해당 컬럼이 선택/해제됩니다. (토글)"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:26
+msgid "Shift 키를 누른 채 클릭을 하면 범위가 선택됩니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:27
+msgid "선택된 컬럼 중 아무 것이나 컬럼 헤더 메뉴 클릭해서 엽니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:28
+msgid "변환 명령을 선택합니다. drop, settype 등은 즉시 실행됩니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:29
+msgid "추가 입력이 필요한 경우, 하단 명령 입력창을 통해 내용을 입력합니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:31
+msgid "분포도를 선택해서 명령을 수행할 수도 있습니다. (이에 적합한 룰에 한하여)"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:31
+msgid "분포도의 막대를 클릭하면 해당 범위를 조건으로 필터링 등을 할 수 있습니다. (토글)"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:32
+msgid "Type mismatch, null value 그래프를 클릭해서 해당 값들에 대해 조건을 걸 수도 있습니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:36
+msgid "하단 명령 입력창을 이용하는 방법"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:34
+msgid "하단 명령 입력창에서 변환 룰(커맨드)을 선택합니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:35
+msgid "추가 입력이 필요한 경우 내용을 더 입력합니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:36
+msgid "대상 컬럼을 고르는 입력창이 있지만, 이 경우에도 컬럼 헤더를 클릭해서 컬럼을 지정할 수도 있습니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:37
+msgid "``추가`` 버튼을 누릅니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:42
+msgid "룰 리스트 중간에 삽입하는 방법"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:39
+msgid "룰 리스트 중간에 마우스를 갖다대면 룰 추가를 위한 버튼이 생깁니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:42
+msgid "해당 버튼을 클릭하면 위의 하단 명령 입력창을 이용하는 것과 똑같은 방법으로 룰을 생성할 수 있습니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:41
+msgid "이렇게 룰을 중간에 삽입하면, 삽입된 위치 이후의 모든 스텝이 영향을 받습니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:42
+msgid "이 때 정상적으로 수행될 수 없는 룰이 생기면, 빨간 색으로 표시되고, 해당 스텝은 이전 스텝의 결과를 그대로 갖게됩니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:45
+msgid "생성된 룰 편집하기"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:50
+msgid "룰 수정"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:48
+msgid "변환 룰 리스트에 마우스를 갖다대면 편집 버튼이 생깁니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:49
+msgid "해당 버튼을 누르고 룰의 내용을 수정합니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:50
+msgid "편집 완료를 누르면 바뀐 룰이 적용됩니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:51
+msgid "중간 삽입처럼 해당 룰 이후의 모든 스텝들이 영향을 받습니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:53
+msgid "룰 삭제"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:53
+msgid "변환 룰 리스트에 마우스를 갖다대면 삭제 버튼이 생깁니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:54
+msgid "해당 버튼을 클릭하면 그 룰이 제거되고, 마찬가지로 이후 모든 룰이 모두 영향을 받습니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:59
+msgid "Undo 및 redo"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:56
+msgid "어떤 명령 수행 후, 직전의 상태로 되돌리고자 할 때엔 ``undo`` 버튼을 클릭합니다. (위 스크린샷에서 (4) 좌측 화살표)"
+msgstr ""
+
+#: ../../part07/edit_rules.rst:57
+msgid "데이터셋에 대한 변형 (룰 생성, 수정, 삭제 모두 포함) 직전의 상태로 되돌립니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:58
+msgid "해당 변형의 영향을 받은 모든 스텝들도 직전의 상태가 됩니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:59
+msgid "다시 그 명령을 수행하고자 할 때엔 ``redo`` 버튼을 클릭합니다."
+msgstr ""
+
+#: ../../part07/edit_rules.rst:60
+msgid "해당 명령을 그대로 다시 수행하는 것보단 ``redo`` 를 이용하는 것이 더 빠릅니다. 그 결과가 메모리에 저장되어있기 때문입니다."
+msgstr ""
+
+#: ../../part07/index.rst:2
+msgid "데이터 프리퍼레이션"
+msgstr ""
+
+#: ../../part07/manage_dataflow.rst:2
+msgid "데이터 플로우 관리하기"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:2
+msgid "룰의 종류"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:4
+msgid "각 룰은 다음의 항목으로 구분되어 설명됩니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:6
+msgid "룰 이름"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:7 ../../part07/rule_kinds.rst:42
+#: ../../part07/rule_kinds.rst:63 ../../part07/rule_kinds.rst:77
+#: ../../part07/rule_kinds.rst:92 ../../part07/rule_kinds.rst:104
+#: ../../part07/rule_kinds.rst:115 ../../part07/rule_kinds.rst:132
+#: ../../part07/rule_kinds.rst:153 ../../part07/rule_kinds.rst:172
+#: ../../part07/rule_kinds.rst:185 ../../part07/rule_kinds.rst:199
+#: ../../part07/rule_kinds.rst:213 ../../part07/rule_kinds.rst:228
+#: ../../part07/rule_kinds.rst:245 ../../part07/rule_kinds.rst:260
+#: ../../part07/rule_kinds.rst:271 ../../part07/rule_kinds.rst:291
+#: ../../part07/rule_kinds.rst:318 ../../part07/rule_kinds.rst:337
+#: ../../part07/rule_kinds.rst:404
+msgid "필수 인자"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:8 ../../part07/rule_kinds.rst:65
+#: ../../part07/rule_kinds.rst:136 ../../part07/rule_kinds.rst:157
+#: ../../part07/rule_kinds.rst:216 ../../part07/rule_kinds.rst:231
+msgid "선택 인자"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:9 ../../part07/rule_kinds.rst:46
+#: ../../part07/rule_kinds.rst:57 ../../part07/rule_kinds.rst:71
+#: ../../part07/rule_kinds.rst:80 ../../part07/rule_kinds.rst:96
+#: ../../part07/rule_kinds.rst:107 ../../part07/rule_kinds.rst:119
+#: ../../part07/rule_kinds.rst:138 ../../part07/rule_kinds.rst:161
+#: ../../part07/rule_kinds.rst:174 ../../part07/rule_kinds.rst:188
+#: ../../part07/rule_kinds.rst:201 ../../part07/rule_kinds.rst:218
+#: ../../part07/rule_kinds.rst:234 ../../part07/rule_kinds.rst:249
+#: ../../part07/rule_kinds.rst:262 ../../part07/rule_kinds.rst:273
+#: ../../part07/rule_kinds.rst:301 ../../part07/rule_kinds.rst:322
+#: ../../part07/rule_kinds.rst:341 ../../part07/rule_kinds.rst:369
+#: ../../part07/rule_kinds.rst:387 ../../part07/rule_kinds.rst:416
+msgid "상세설명"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:10 ../../part07/rule_kinds.rst:83
+#: ../../part07/rule_kinds.rst:143 ../../part07/rule_kinds.rst:178
+#: ../../part07/rule_kinds.rst:192 ../../part07/rule_kinds.rst:206
+#: ../../part07/rule_kinds.rst:222 ../../part07/rule_kinds.rst:238
+#: ../../part07/rule_kinds.rst:266 ../../part07/rule_kinds.rst:276
+#: ../../part07/rule_kinds.rst:306 ../../part07/rule_kinds.rst:326
+#: ../../part07/rule_kinds.rst:344 ../../part07/rule_kinds.rst:372
+#: ../../part07/rule_kinds.rst:390 ../../part07/rule_kinds.rst:421
+msgid "주의사항"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:12
+msgid "현재 데이터 프리퍼레이션에서 지원하는 룰 종류는 다음과 같습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:14
+msgid "`drop`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:15
+msgid "`header`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:16
+msgid "`settype`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:17
+msgid "`setformat`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:18
+msgid "`rename`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:19
+msgid "`keep`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:20
+msgid "`delete`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:21
+msgid "`replace`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:22
+msgid "`set`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:23
+msgid "`derive`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:24
+msgid "`split`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:25
+msgid "`merge`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:26
+msgid "`extract`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:27
+msgid "`countpattern`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:28
+msgid "`nest`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:29
+msgid "`unnest`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:30
+msgid "`flatten`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:31
+msgid "`aggregate`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:32
+msgid "`pivot`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:33
+msgid "`unpivot`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:34
+msgid "`join`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:35
+msgid "`union`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:36
+msgid "`window`_"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:40
+msgid "drop"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:43 ../../part07/rule_kinds.rst:63
+#: ../../part07/rule_kinds.rst:77 ../../part07/rule_kinds.rst:127
+#: ../../part07/rule_kinds.rst:151 ../../part07/rule_kinds.rst:184
+#: ../../part07/rule_kinds.rst:198 ../../part07/rule_kinds.rst:212
+#: ../../part07/rule_kinds.rst:228 ../../part07/rule_kinds.rst:244
+msgid "컬럼: 대상 컬럼 리스트"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:45
+msgid "선택된 컬럼들을 삭제합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:49
+msgid "header"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:51
+msgid "필수 인자: 컬럼명을 담고 있는 행 번호 (1-base)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:53
+msgid "지정된 행의 내용을 컬럼명으로 설정합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:54
+msgid "첫 행에 컬럼명이 있는 CSV 파일을 읽어들일 때에 유용합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:57
+msgid "특별한 설정이 없는 한, 데이터 프리퍼레이션은 자동으로 ``header`` 를 수행합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:56
+msgid "자동적용된 ``header`` 의 결과를 원치 않는 경우, 해당 룰을 삭제하면 됩니다만, 보통 그런 일은 흔치 않습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:60
+msgid "settype"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:64
+msgid "새로운 타입: Long, Double, String, Boolean, Timestamp 중 택 1"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:66
+msgid "포멧 지정: Timestamp의 경우 format string (Joda time)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:68
+msgid "선택된 컬럼들의 타입을 바꿉니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:71
+msgid "Type mismatch가 발생할 수 있으나, 룰은 성공합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:70
+msgid "즉, type mismatch는 이후 따로 해결해주어야 합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:74
+msgid "setformat"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:78
+msgid "포멧 지정: Jodatime의 포맷 스트링"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:80
+msgid "Timestamp 컬럼의 화면 표시 형식을 바꿉니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:81
+msgid "대상 컬럼이 반드시 Timestamp 타입이어야 합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:83
+msgid ""
+"포멧 지정 입력창은 아래처럼 입력에 따라 제시되는 리스트가 변합니다. 원하는 포멧을 앞에서부터 치다보면 리스트에 나오는 후보가 점점"
+" 좁혀집니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:89
+msgid "rename"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:92 ../../part07/rule_kinds.rst:260
+#: ../../part07/rule_kinds.rst:272
+msgid "컬럼: 대상 컬럼 (1개)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:93
+msgid "새로운 컬럼 이름: 새로운 이름"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:95
+msgid "선택된 컬럼의 이름을 변경합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:96
+msgid ""
+"2개 이상의 컬럼들에 대해 한번에 rename을 수행하고자 할 때엔 하단 명령 입력창에 있는 ``전체 컬럼 변경`` 버튼을 클릭하면"
+" 다음과 같은 팝업창이 뜹니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:102
+msgid "keep"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:105 ../../part07/rule_kinds.rst:116
+msgid "조건: Boolean이 결과로 나오는 조건식"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:107
+msgid "조건식을 참으로 하는 행만 남기고 나머지 행을 지웁니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:113
+msgid "delete"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:118
+msgid "조건식을 참으로 하는 행을 모두 지웁니다. keep와 정반대로 동작합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:122
+msgid "replace"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:129
+msgid "패턴: 갈아치울 대상 문자열 패턴"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:129
+msgid "상수 문자열인 경우: ``'`` 로 감싸져 있는 경우 (``'seoul'``, ``'서울'``, ``'서울 특별시'`` 등)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:130
+msgid "정규식인 경우: ``/`` 로 감싸져 있는 경우 (``/[ ,_]+/``, ``/\\s+$/`` 등)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:132
+msgid "새로운 값: 새롭게 놓일 문자열 수식"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:132
+msgid "상수 문자열"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:133
+msgid "정규식의 그룹을 이용한 문자열 수식: ``$1_$2_$3`` 등"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:135 ../../part07/rule_kinds.rst:216
+#: ../../part07/rule_kinds.rst:231
+msgid "다음 문자 사이 무시: 이 안에 입력된 문자 사이 내용에 대해서는 치환을 하지 않습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:136
+msgid "모든 항목 일치 여부: 단어의 모든 문자가 일치해야하는지 여부"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:137 ../../part07/rule_kinds.rst:217
+#: ../../part07/rule_kinds.rst:232
+msgid "대소문자 구분 무시: 대소문자를 동일하게 취급할지 여부"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:139
+msgid "선택된 컬럼들에 대하여, 문자열 변환을 수행합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:141
+msgid "**새로운 값** 에는 ``'`` 이나 ``/`` 를 사용하지 않습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:142
+msgid ""
+"**새로운 값** 에 다른 컬럼의 값을 이용할 수 없습니다. **replace** 는 순수히 해당 컬럼 내용안에서의 **문자열** "
+"변환입니다. (cf. `set`_ 룰)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:146
+msgid "set"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:153
+msgid "수식: 대상 컬럼의 값이 될 수식. 다른 컬럼값을 참조할 수 있습니다. (cf. `replace`_ 룰)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:153
+msgid "여러 컬럼을 대상으로 하는 경우, ``$col`` 이라고 쓰면 각 컬럼에 대해 변환을 할 때, 그 대상 컬럼을 가리키도록 치환됩니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:154
+msgid ""
+"즉, ``column1`` , ``column2`` 에 대해 **set** 명령을 사용하는 경우, ``column1`` 에 대해 "
+"변환을 할 때엔 ``$col`` 이 ``column1`` 이 되고, ``column2`` 에 대해 변환을 할 때엔 ``$col`` "
+"이 ``column2`` 가 됩니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:157
+msgid "다음 조건에서만 수행"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:157
+msgid "이 조건을 만족하는 행에 대해서만 **set** 룰을 적용합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:158
+msgid "SQL문에서 **WHERE** 와 같다고 생각하면됩니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:160
+msgid "해당 컬럼의 값을 주어진 수식의 결과값으로 대체합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:161
+msgid "복잡한 수식을 사용하는 경우 ``고급 편집기`` 를 클릭하면 다음과 같은 팝업창이 뜹니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:165
+msgid ""
+"``고급 편집기`` 를 활용하면 컬럼의 리스트와 함수의 리스트 및 각 설명, 예시를 보면서 넓은 창에서 수식을 편집할 수 있고, "
+"실제로 룰을 실행하기 전에 수식의 유효성을 체크해볼 수 있습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:169
+msgid "derive"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:172
+msgid "수식: 새로운 컬럼의 값이 될 수식. `set`_ 룰과 마찬가지로 다른 컬럼값을 참조할 수 있습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:173 ../../part07/rule_kinds.rst:200
+#: ../../part07/rule_kinds.rst:246
+msgid "새로운 컬럼 이름"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:175
+msgid "`set`_ 룰과 비슷하지만, 어떤 컬럼의 값을 대체하는 것이 아니라 새로운 컬럼을 만들어냅니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:177
+msgid "수식에 등장하는 컬럼 중에 제일 마지막 컬럼 뒤로 삽입됩니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:181
+msgid "split"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:185
+msgid "패턴: split의 기준이 되는 문자열 수식. `replace`_ 룰과 같이 정규식을 허용합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:186
+msgid "횟수: 몇 개의 컬럼으로 나눌 것인지 여부입니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:188
+msgid "각 행에 대해 주어진 **횟수 - 1** 만큼 split을 합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:189
+msgid "컬럼 내용에 패턴이 더 이상 없을 경우 `null` 값을 가진 컬럼을 만들어냅니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:191
+msgid "**횟수** 에 해당하는 개수의 컬럼이 생기게 된다는 것에 유의하세요. (조속히 레이블을 고치겠습니다.)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:195
+msgid "merge"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:199
+msgid "구분자: 컬럼들을 이을 상수 문자열"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:202
+msgid "대상 컬럼들을 **구분자** 로 이어서 새로운 컬럼을 만듭니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:206
+msgid "`replace`_ 룰도 마찬가지지만, ``'`` 로 감싸는 것은 생략할 수 있습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:205
+msgid "즉, ``/`` 로도, ``'`` 로도 감싸지지 않는 문자열이 입력되었을시, 알아서 ``'`` 로 감싸서 전달되게 되어있습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:209
+msgid "extract"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:213
+msgid "패턴: 추출할 문자열 패턴. `replace`_ 룰과 마찬가지로 정규식을 허용합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:214
+msgid "횟수: 추출할 횟수"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:219
+msgid "패턴에 매치되는 내용으로 새로운 컬럼을 만듭니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:221
+msgid "여러 개의 대상 컬럼이 있는 경우, 추출의 결과는 각 컬럼의 뒤로 붙습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:225
+msgid "countpattern"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:229
+msgid "패턴: 찾아낼 문자열 패턴. `replace`_ 룰과 마찬가지로 정규식을 허용합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:234
+msgid "패턴에 매치되는 내용이 몇 군데에 있는지 세어서, 그 숫자로 새 컬럼을 만듭니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:235
+msgid "`extract`_ 와 상당히 비슷합니다. 내용을 추출하는 것이 아니라, 그 숫자를 세는 것만 다를 뿐입니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:237
+msgid "여러 개의 대상 컬럼이 있는 경우, 추출의 결과는 각각 컬럼의 뒤로 붙습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:241
+msgid "nest"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:245
+msgid "타입: Map 또는 Array"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:248
+msgid "대상 컬럼을 주어진 타입으로 묶습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:249
+msgid "다음은 각각 Array, Map으로 묶여진 경우입니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:255
+msgid "unnest"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:261
+msgid "선택할 요소: Array의 경우 *0-base* index, Map의 경우 key값"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:263
+msgid "Array 또는 Map에서 지정된 요소를 빼서 새 컬럼으로 만듭니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:265
+msgid "대상 컬럼은 반드시 Array 또는 Map 타입이어야 합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:269
+msgid "flatten"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:274
+msgid "Array의 각각 원소를 해당 컬럼의 값으로 삼는 행을 만들어냅니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:276
+msgid "대상 컬럼은 반드시 Array 타입이어야 합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:280
+msgid ""
+"위와 같이 Array 컬럼에 4개의 원소가 있는 경우, 각 원소의 값에 대해 1개씩 행이 생깁니다. 이 때 대상 Array 컬럼을 "
+"제외한 모든 컬럼들의 값은 동일하게 됩니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:286
+msgid "aggregate"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:291
+msgid "수식: Aggregation 함수 리스트"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:292 ../../part07/rule_kinds.rst:319
+msgid "그룹화 기준: Group By에 쓰일 컬럼 리스트"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:294
+msgid "그룹화 기준 컬럼들 각 조합에 대해 Group By 연산을 수행한 결과를 새로운 컬럼으로 추가합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:295
+msgid "각 수식 당 한 컬럼씩 생깁니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:296
+msgid "예를 들어, 평균값과 카운트를 수식으로 지정하였을 경우, 2개의 컬럼이 생깁니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:301
+msgid "현재 지원하는 Aggregation 함수는 다음과 같습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:298
+msgid "count()"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:299
+msgid "sum(*colname*)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:300
+msgid "avg(*colname*)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:301
+msgid "min(*colname*)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:302
+msgid "max(*colname*)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:304
+msgid "샘플링된 결과에 대해서만 연산을 수행합니다. 때문에 전체 데이터에 대한 결과, 즉 스냅샷은 달라질 수 있습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:306
+msgid "count함수 사용시 ``()`` 를 꼭 붙여야 하는 것에 유의하세요."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:306
+msgid "count(*colname*)은 현재 지원하지 않습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:312
+msgid "pivot"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:317
+msgid "컬럼: 피봇 대상 컬럼 리스트"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:318
+msgid "수식: 컬럼의 값이 될 수식 리스트 (Aggregation 함수만 가능)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:321
+msgid ""
+"대상 컬럼들과 그룹화 기준 컬럼들 각 조합에 대해 Group By 연산을 수행하고, 그 결과를 새로운 컬럼값으로 하는 데이터셋을 "
+"만듭니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:322
+msgid "각 수식에 대해 컬럼 세트들이 생깁니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:323
+msgid ""
+"예를 들어, 평균값과 카운트를 수식으로 지정하였을 경우, 피봇 대상 컬럼들의 값이 결국 10개의 그룹으로 나뉠 경우, 20개의 "
+"컬럼이 생겨나게 됩니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:325
+msgid "최소 2개의 컬럼에 대한 복합 Group By를 할 때에 사용됩니다. (피봇 대상 1개, 그룹화 기준 1개)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:326
+msgid "일반적으로 컬럼명이 길어지기 때문에, 뒤이어 전체 rename을 필요로하는 경우가 많습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:332
+msgid "unpivot"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:337
+msgid "컬럼: 컬럼값으로 내릴 대상 컬럼들 리스트"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:338
+msgid "그룹 수: 결과 컬럼 숫자 (기본적으로 1)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:340
+msgid "선택된 컬럼들에 대해 컬럼 이름과 컬럼의 값을 내용으로 하는 컬럼 2개를 만듭니다. (그룹 수가 1인 경우)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:341
+msgid "그룹 수가 선택된 컬럼 숫자와 같은 경우, 각 컬럼 이름과 값에 해당하는 컬럼들을 만듭니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:342
+msgid "즉, 10개 컬럼에 대해 그룹 수 10으로 unpivot을 하면, 총 20개 컬럼이 생깁니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:344
+msgid "그룹 수가 대상 컬럼 수의 약수인 경우는 곧 지원할 예정입니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:346
+msgid "<그룹 수가 1인 경우>"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:350
+msgid "<그룹 수가 컬럼 수와 같은 경우>"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:356
+msgid "join"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:360
+msgid "join은 다른 룰들과는 달리, 별도의 팝업창을 갖습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:365
+msgid "필수 인자 (팝업에서 선택하거나 입력)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:363
+msgid "join 대상 데이터셋: 같은 데이터 플로우 내의 Wrangled 데이터셋"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:364
+msgid "join 결과로 나올 컬럼들 (토글)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:365
+msgid "join 키: 여러 개 입력 가능"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:366
+msgid "join 타입: 현재 내부조인만 지원"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:368
+msgid "대상 데이터셋과 연결해서 컬럼들을 만들어 냅니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:369
+msgid "기본적으로 관계형 데이터베이스의 join과 같습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:370
+msgid "결과보기 버튼으로 실제 룰적용 전에 join 결과를 볼 수 있습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:372
+msgid "결과로 나올 컬럼에 join 키가 꼭 포함되어있어야 합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:378
+msgid "union"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:382
+msgid "union 역시 join처럼 별도의 팝업창을 갖습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:384
+msgid "필수 인자 (팝업에서 선택)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:385
+msgid "union 대상 데이터셋: 다수 선택가능"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:387
+msgid "지정된 데이터셋의 내용도 함께 처리합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:388
+msgid "기본적으로 관계형 데이터베이스의 union all과 같습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:390
+msgid "대상 데이터셋은 union을 수행하는 데이터셋과 컬럼명과 타입, 그리고 컬럼 개수가 일치해야합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:396
+msgid "window"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:403
+msgid "수식: Window 함수 리스트"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:404
+msgid "그룹화 기준: 이 그룹안에서 행의 순서가 만들어짐. 없으면 그냥 전체적으로 정렬 기준 적용"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:405
+msgid "정렬 기준: 이 컬럼의 순서로 전후 관계가 만들어짐. 없으면 그냥 데이터가 입력되는 순서"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:407
+msgid "앞의 행, 뒤의 행의 내용을 토대로 수식을 계산해서 컬럼값을 생성합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:409
+msgid "그룹화 기준내에서 정렬 기준으로 순서를 정합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:409
+msgid "예를 들어, 위의 예시에서는 주(state)별로 앞뒤 3개씩의 행을 포함해서 평균값을 계산합니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:410
+msgid "화면상에서는 바로 앞에 보인다고 해도, 주가 같지 않으면 더 앞의 행을 보게됩니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:415
+msgid "현재 지원하는 Window 함수는 다음과 같습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:412
+msgid "row_number()"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:413
+msgid "lead(*colname*, *int*)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:414
+msgid "lag(*colname*, *int*)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:415
+msgid "rolling_sum(*colname*, *int*, *int*)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:416
+msgid "rolling_avg(*colname*, *int*, *int*)"
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:417
+msgid "Window 함수와 더불어 Aggregation 함수도 사용할 수 있습니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:421
+msgid "Window 함수 사용시, 인자 수가 부족하거나 한 상황에 대해 적절한 에러메시지가 제공되지 않습니다. 유의하시기 바랍니다."
+msgstr ""
+
+#: ../../part07/rule_kinds.rst:420
+msgid "Window 함수 확장과 더불어 곧 수정될 내용입니다."
+msgstr ""
+

@@ -1,0 +1,472 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-28 13:54+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: ../../part06/06_01-workbench_overview.rst:2
+msgid "워크벤치 소개"
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:6
+msgid ""
+"Metatron Discovery 워크벤치는 SQL을 기반으로 하는 데이터 전처리 및 분석 환경을 제공합니다. 주요 기능은 다음과 "
+"같습니다."
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:8
+msgid "다양한 외부 데이터베이스를 한꺼번에 작업공간에 조회 가능"
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:9
+msgid "연동된 데이터베이스의 테이블과 컬럼을 쉽게 조회/선택하며 상세 정보 열람 가능"
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:13
+msgid "쿼리 편집 도구가 내장되어 있으며 쿼리 결과를 실시간으로 확인하고 다양하게 활용 가능:"
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:11
+msgid "쿼리결과를 로컬 파일로 다운로드 또는 온라인 엑셀로 출력"
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:12
+msgid "쿼리 결과를 즉시 시각화함으로써 쿼리 결과로 출력된 데이터 형태를 쉽게 파악"
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:13
+msgid "쿼리 결과를 데이터 소스로 저장하여 워크북이나 노트북에서 분석에 활용 가능"
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:15
+msgid "본 단원은 다음과 같이 구성되어 있습니다."
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:19
+msgid "**워크벤치 생성하기:**"
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:18
+msgid ""
+"SQL 기반 분석 쿼리를 보관하는 각각의 문서를 ‘워크벤치’라고 부릅 니다. 이 장에서는 워크벤치를 생성하고 분석할 데이터 커넥션을"
+" 연계하는 절차에 대해 소개합니다."
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:21
+msgid "**워크벤치 활용하기:**"
+msgstr ""
+
+#: ../../part06/06_01-workbench_overview.rst:22
+msgid "생성된 노트북에서 쿼리를 작성·실행하고 그 결과물을 시각화하는 절차에 대해 소개합니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:2
+msgid "워크벤치 만들기"
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:4
+msgid ""
+"해당 워크스페이스에서 워크벤치를 사용하기 위해서는 워크벤치용 데이터 커넥션이 설정되어 있 어야 합니다. 이에 관한 자세한 내용은 "
+"‘2부 운영관리’에서 ‘2.2 데이터 커넥션’을 참조하시기 바 랍니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:7
+msgid "워크벤치 생성 절차는 다음과 같습니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:9
+msgid ""
+"워크스페이스 하단에 있는 ‘+ 워크벤치’ 버튼을 클릭하면 워크벤치에서 데이터 분석에 사용할 데이터 커넥션을 연결할 수 있는 화면이 "
+"나타납니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:13
+msgid "사용자가 연결하여 사용하고자하는 워크벤치용 데이터 커넥션을 선택한 후 ‘다음’ 버튼을 클릭합니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:17
+msgid "데이터 커넥션 이름으로 검색: 해당 워크스페이스에 허용된 데이터 커넥션을 이름으로 검색합니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:18
+msgid ""
+"DB Type: 데이터 커넥션을 데이터베이스 타입(Oracle/MySQL/Hive/presto/Tibero)별로 선별하여 볼 수 "
+"있습니다. ‘모두’로 선택하면 모든 DB타입의 데이터 커넥션을 볼 수 있습니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:19
+msgid ""
+"계정 타입: 데이터 커넥션을 설정된 계정 타입(관리자 직접 입력/사용자의 계정 사용/워크벤치 접속 시 직접 입력)별로 선별하여 볼 "
+"수 있습니다. ‘All’로 선택하면 모든 계정 타입의 데이터 커넥션을 볼 수 있습니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:20
+msgid "데이터 커넥션: 설정한 선별 조건에 맞는 데이터 커넥션들을 보여줍니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:22
+msgid "선택한 데이터 커넥션의 정보를 확인하고 이름과 설명을 입력하면 워크벤치가 생성됩니다."
+msgstr ""
+
+#: ../../part06/06_02-create_a_workbench.rst:26
+msgid "워크벤치 생성이 완료되면, 생성된 워크벤치를 바로 확인할 수 있습니다."
+msgstr ""
+
+#: ../../part06/06_03-use_a_workbench.rst:2
+msgid "워크벤치 사용하기"
+msgstr ""
+
+#: ../../part06/06_03-use_a_workbench.rst:5
+msgid ""
+"워크벤치에서는 SQL 데이터베이스 편집 및 관리가 용이하며 쿼리 결과를 다양한 형태로 시각화 하여 저장할 수 있습니다. 워크벤치의 "
+"화면은 다음과 같은 5개의 영역으로 나뉘어 집니다."
+msgstr ""
+
+#: ../../part06/06_03_01-basic_information.rst:2
+msgid "기본 정보 영역"
+msgstr ""
+
+#: ../../part06/06_03_01-basic_information.rst:4
+msgid "현재 작업하는 워크벤치에 관한 정보가 나타나는 영역입니다."
+msgstr ""
+
+#: ../../part06/06_03_01-basic_information.rst:9
+msgid "**이름**: 워크벤치의 이름입니다. 클릭하여 이름을 변경할 수 있습니다."
+msgstr ""
+
+#: ../../part06/06_03_01-basic_information.rst:10
+msgid "**데이터 커넥션**: 해당 워크벤치와 연결되어 있는 데이터 커넥션의 이름입니다. 'i' 아이콘을 클릭하면 자세한 정보가 나타납니다."
+msgstr ""
+
+#: ../../part06/06_03_01-basic_information.rst:11
+msgid "패널을 접고 펼치는 UI 버튼입니다"
+msgstr ""
+
+#: ../../part06/06_03_02-schema_and_table.rst:2
+msgid "스키마 및 테이블 영역"
+msgstr ""
+
+#: ../../part06/06_03_02-schema_and_table.rst:4
+msgid "원하는 데이터베이스, 테이블, 컬럼을 손쉽게 쿼리 에디터에 입력할 수 있는 UI 기능입니다."
+msgstr ""
+
+#: ../../part06/06_03_02-schema_and_table.rst:9
+msgid ""
+"**데이터베이스 이름**: 현재 선택된 데이터베이스의 이름을 출력해줍니다. 해당 워크벤치에 등록된 데이터 커넥션의 첫 번째 "
+"데이터베이스를 기본적으로 선택됩니다. 클릭하면 데이터 커넥션에 포함된 모든 데이터베이스가 조회되며, 그 중에 하나를 선택하면 해당 "
+"데이터베이스로 변경됩니다."
+msgstr ""
+
+#: ../../part06/06_03_02-schema_and_table.rst:10
+msgid ""
+"**스키마 브라우저**: 선택된 데이터베이스의 테이블 목록과 각 테이블에 속한 모든 컬럼 및 레코드 정보를 확인할 수 있는 스키마 "
+"브라우저 화면이 팝업됩니다."
+msgstr ""
+
+#: ../../part06/06_03_02-schema_and_table.rst:11
+msgid "**테이블 검색**: 선택된 데이터베이스에 등록된 테이블을 이름으로 검색합니다."
+msgstr ""
+
+#: ../../part06/06_03_02-schema_and_table.rst:12
+msgid ""
+"**테이블 이름**: 필요한 데이터를 담은 테이블을 선택하면, 오른쪽 쿼리 에디터에 해당 테이블에 대한 SELECT * FROM "
+"{테이블명} 쿼리가 자동으로 입력됩니다."
+msgstr ""
+
+#: ../../part06/06_03_02-schema_and_table.rst:13
+msgid ""
+"**컬럼 목록**: 해당 테이블에 속한 모든 컬럼 이름과 각각의 데이터 타입이 나타납니다. 컬럼 이름을 클릭하면 쿼리 에디터에 "
+"자동으로 삽입됩니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:2
+msgid "쿼리 에디터 영역"
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:4
+msgid "쿼리를 작성하고 실행할 수 있는 에디터 화면입니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:9
+msgid "탭이 너무 많을 경우 탭 영역을 좌우로 스크롤 할수 있는 버튼입니다. 탭의 개수가 많지 않은 경우 나타나지 않습니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:10
+msgid ""
+"**탭**: 쿼리 관리를 위해 여러 개의 탭으로 나누어서 쿼리를 실행하거나 저장할 수 있습니다. 우측 버튼을 클릭 시 탭 제목의 "
+"수정과 탭 삭제가 가능합니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:11
+msgid "**탭 추가**: 이 버튼을 클릭하면 새로운 탭이 추가됩니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:12
+msgid "**전체화면**: 이 버튼을 클릭하면 쿼리 에디터 영역을 전체화면으로 확장하거나 축소 할 수 있습니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:13
+msgid "**쿼리 행**: 쿼리 코드의 행 번호를 보여줍니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:14
+msgid ""
+"**에디터 화면**: 이 곳에 쿼리 문을 작성합니다. 멀티 쿼리의 실행 및 단일 쿼리의 실행이 가능합니다. ‘;’을 쿼리 문 끝날 "
+"때마다 삽입하면 쿼리를 나눠서 실행이 가능합니다. 자동완성 기능이 제공됩니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:15
+msgid "**쿼리 전체 실행**: 쿼리 에디터에 작성된 전체 쿼리를 실행합니다. (단축키: Ctrl + Enter)"
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:16
+msgid ""
+"**쿼리 부분 실행**: 쿼리 문 안에서 마우스가 위치된 특정 쿼리 또는 드래그하여 선택된 영역만 쿼리를 실행합니다. (단축키: "
+"Command + Enter)"
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:17
+msgid "**CLEAR SQL**: 쿼리 문을 모두 삭제 합니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:18
+msgid "**SQL BEAUTIFIER**: 이 버튼을 클릭하면 작성된 쿼리 문이 쿼리 문법 표준에 맞게"
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:19
+msgid "**Query History**: 쿼리 에디터에서 수행한 과거 목록을 조회할수 있으 쿼리 선택시 쿼리문이 쿼리 에디터에 추가됩니다."
+msgstr ""
+
+#: ../../part06/06_03_03-query_editor.rst:20
+msgid "**Query Editor 단축키**: 쿼리 에디터에서 사용가능한 단축키 목록입니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:2
+msgid "쿼리 결과 영역"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:4
+msgid ""
+"쿼리가 실행되면 그 결과가 쿼리 결과 탭에 나타납니다. 모든 쿼리 결과는 계속 누적되지만, 원하는 결과 탭을 자유롭게 삭제할 수 "
+"있습니다. 쿼리 결과는 텍스트 그리드 형태로 제공되며, 차트 미리보기, 데이터소스 저장, 다운로드 CSV 기능이 지원됩니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:7
+msgid "쿼리 수행 중"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:12
+#: ../../part06/06_03_04-query_result.rst:37
+msgid ""
+"**쿼리 결과 탭**: 다중 쿼리 수행시 쿼리당 하나의 결과 탭이 생성되며 쿼리 수행 중인 탭일 경우 탭 제목에 "
+"\"Loading\" 메시지가 표시됩니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:13
+msgid ""
+"**쿼리 로그**: 쿼리 수행 로그를 보여주는 영역입니다. Hive 타입의 커넥션일 경우 Hive Job Log가 추가적으로 "
+"표시됩니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:14
+msgid "**쿼리 수행 취소**: 수행중인 쿼리를 취소합니다. DB 타입별 취소에 걸리는 시간이 다소 차이날 수 있습니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:19
+msgid "**쿼리 수행 단계**: 쿼리 수행의 총 5가지 단계 중 현재 단계를 표시합니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:16
+msgid "Getting connetion"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:17
+msgid "Creating statement"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:18
+msgid "Executing query"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:19
+msgid "Getting resultset"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:20
+msgid "Done!"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:21
+msgid "**다중 쿼리 순서 표시**: 다중 쿼리 수행시 현재 몇번째 쿼리를 수행중인지 표시합니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:22
+#: ../../part06/06_03_04-query_result.rst:39
+msgid "**표시 전환 탭**: 쿼리 수행 로그 탭과 쿼리 결과 탭을 전환하는 버튼입니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:25
+msgid "**쿼리 수행 상태**: 3가지 쿼리 수행 상태를 표시합니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:24
+msgid "쿼리 수행중"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:25
+msgid "쿼리 수행 실패"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:26
+msgid "쿼리 수행 취소"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:27
+#: ../../part06/06_03_04-query_result.rst:45
+msgid "**쿼리 수행 시작 시각**: 쿼리 수행 시작 시각을 표시합니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:28
+#: ../../part06/06_03_04-query_result.rst:47
+msgid "**쿼리 수행 경과 시간**: 쿼리 수행 경과 시간을 표시합니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:32
+msgid "쿼리 수행 후"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:38
+msgid "**데이터 내역**: 쿼리 실행에 의해 출력된 데이터 내역입니다. 출력된 데이터는 클립보드에 복사하여 활용할 수도 있습니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:40
+msgid "**컬럼 데이터 검색**: 결과 내 컬럼 및 값을 검색할 수 있습니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:41
+msgid ""
+"**차트 미리보기**: 쿼리 결과를 이용하여 차트를 가상으로 그려볼 수 있습니다. 시각화를 위해 그려지는 것이고, 실제 워크스페이스"
+" 내용에 반영되지는 않습니다. (자세한 조작 방식은 ‘워크북’에서 ‘차트' 항목 참조)"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:42
+msgid ""
+"**데이터 소스 저장**: 쿼리 결과를 이용하여 워크스페이스 내 데이터 소스로 저장할 수 있습니다. 데이터 소스 생성 팝업이 "
+"나타나며, 데이터 커넥션 선택 및 테이블 선택 등의 과정은 워크벤치 결과 내용으로 대체됩니다. 따라서 스키마 정의 및 "
+"ingestion 주기 등의 과정이 곧바로 진행되게 됩니다. (자세한 절차는 ‘3부 운영관리’에서 2.1.3절 참조)"
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:43
+msgid "**다운로드 CSV**: 쿼리 결과를 로컬 파일(csv)로 다운로드가 가능합니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:44
+msgid "**데이터 페이징**: 1000건의 이상의 데이터일 경우 Prev, Next 버튼을 이용해 페이지 넘김이 가능합니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:46
+msgid "**쿼리 수행 종료 시각간**: 쿼리 수행 종료 시각을 표시합니다."
+msgstr ""
+
+#: ../../part06/06_03_04-query_result.rst:48
+msgid "**쿼리 Row 정보**: 쿼리 결과의 Row 숫자와 현재 페이지 정보를 표시합니다."
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:2
+msgid "추가 도구 영역"
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:4
+msgid "추가 도구 영역은 워크벤치 활용에 도움을 주는 유용한 기능들로 구성되어 있습니다."
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:6
+msgid "반복 사용 구문에 대한 전역 변수 설정 (`전역변수(Global variable) 편집 기능`_ 참조)"
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:7
+msgid "다른 워크벤치로 이동하기 위한 네비게이션 기능 (`워크벤치 네비게이션`_ 참조)"
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:11
+msgid "전역변수(Global variable) 편집 기능"
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:13
+msgid ""
+"어떤 구문이 반복적으로 사용되고 그 내용을 계속 바꿔가면서 쿼리를 실행해야 할 경우, 그 구문을 ‘전역 변수’로 지정해서 사용하면 "
+"편리합니다."
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:18
+msgid "**변수 타입**: 전역 변수 타입으로는 달력과 텍스트가 제공합니다."
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:19
+msgid "**새 변수 추가**: 원하는 변수 종류를 선택한 뒤 새 변수 추가 버튼을 누릅니다. 쿼리 에디터 영역에 해당 전역변수가 추가됩니다."
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:20
+msgid "**이름**: 변수 이름을 입력합니다."
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:21
+msgid "**변수 값**: 달력은 날짜를 선택, 텍스트는 값을 입력하여 사용할 수 있습니다."
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:25
+msgid "워크벤치 네비게이션"
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:27
+msgid "다른 워크벤치로 이동하는 기능을 제공합니다. 이동하기를 원하는 워크벤치를 클릭하면 해당 워크벤치로 이동합니다."
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:32
+msgid "**워크벤치 검색**: 워크스페이스에 저장된 워크벤치를 검색합니다."
+msgstr ""
+
+#: ../../part06/06_03_05-additional_tools.rst:33
+msgid ""
+"**워크벤치 목록**: 워크스페이스에 저장된 모든 워크벤치를 보여줍니다. 나열된 워크벤치 중 하나를 클릭하면 해당 워크벤치로 "
+"이동됩니다."
+msgstr ""
+
+#: ../../part06/06_03_06-schema_browser.rst:2
+msgid "스키마 브라우저"
+msgstr ""
+
+#: ../../part06/06_03_06-schema_browser.rst:4
+msgid "선택된 데이터베이스의 테이블 목록과 각 테이블에 속한 컬럼 및 레코드 정보를 확인할 수 있습니다."
+msgstr ""
+
+#: ../../part06/06_03_06-schema_browser.rst:8
+msgid "컬럼 : 선택한 테이블의 모든 컬럼의 이름과 속성을 보여줍니다."
+msgstr ""
+
+#: ../../part06/06_03_06-schema_browser.rst:9
+msgid "인포메이션 : 선택한 테이블의 속성을 보여줍니다."
+msgstr ""
+
+#: ../../part06/06_03_06-schema_browser.rst:10
+msgid "데이터 : 선택한 테이블의 데이터를 보여줍니다. 최대 50건의 데이터만 조회할 수 있습니다."
+msgstr ""
+
+#: ../../part06/index.rst:2
+msgid "워크벤치"
+msgstr ""
+
