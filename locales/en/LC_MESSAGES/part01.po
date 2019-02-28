@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../../part01/engine.rst:2
 msgid "메타트론 엔진"
-msgstr ""
+msgstr "Metatron Engine"
 
 #: ../../part01/index.rst:2
 msgid "메타트론 디스커버리 소개"
