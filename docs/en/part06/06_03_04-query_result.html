@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>쿼리 결과 영역 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="추가 도구 영역" href="06_03_05-additional_tools.html" />
+    <link rel="prev" title="쿼리 에디터 영역" href="06_03_03-query_editor.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">워크벤치</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="06_01-workbench_overview.html">워크벤치 소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_02-create_a_workbench.html">워크벤치 만들기</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="06_03-use_a_workbench.html">워크벤치 사용하기</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="06_03_01-basic_information.html">기본 정보 영역</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_03_02-schema_and_table.html">스키마 및 테이블 영역</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_03_03-query_editor.html">쿼리 에디터 영역</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">쿼리 결과 영역</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">쿼리 수행 중</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">쿼리 수행 후</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="06_03_05-additional_tools.html">추가 도구 영역</a></li>
+<li class="toctree-l3"><a class="reference internal" href="06_03_06-schema_browser.html">스키마 브라우저</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">워크벤치</a> &raquo;</li>
+        
+          <li><a href="06_03-use_a_workbench.html">워크벤치 사용하기</a> &raquo;</li>
+        
+      <li>쿼리 결과 영역</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/part06/06_03_04-query_result.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>쿼리 결과 영역<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>쿼리가 실행되면 그 결과가 쿼리 결과 탭에 나타납니다. 모든 쿼리 결과는 계속 누적되지만, 원하는 결과 탭을 자유롭게 삭제할 수 있습니다. 쿼리 결과는 텍스트 그리드 형태로 제공되며, 차트 미리보기, 데이터소스 저장, 다운로드 CSV 기능이 지원됩니다.</p>
+<div class="section" id="id2">
+<h2>쿼리 수행 중<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../_images/workbench_query_result_ing.png" src="../_images/workbench_query_result_ing.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>쿼리 결과 탭</strong>: 다중 쿼리 수행시 쿼리당 하나의 결과 탭이 생성되며 쿼리 수행 중인 탭일 경우 탭 제목에 “Loading” 메시지가 표시됩니다.</li>
+<li><strong>쿼리 로그</strong>: 쿼리 수행 로그를 보여주는 영역입니다. Hive 타입의 커넥션일 경우 Hive Job Log가 추가적으로 표시됩니다.</li>
+<li><strong>쿼리 수행 취소</strong>: 수행중인 쿼리를 취소합니다. DB 타입별 취소에 걸리는 시간이 다소 차이날 수 있습니다.</li>
+<li><dl class="first docutils">
+<dt><strong>쿼리 수행 단계</strong>: 쿼리 수행의 총 5가지 단계 중 현재 단계를 표시합니다.</dt>
+<dd><ul class="first last">
+<li>Getting connetion</li>
+<li>Creating statement</li>
+<li>Executing query</li>
+<li>Getting resultset</li>
+<li>Done!</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><strong>다중 쿼리 순서 표시</strong>: 다중 쿼리 수행시 현재 몇번째 쿼리를 수행중인지 표시합니다.</li>
+<li><strong>표시 전환 탭</strong>: 쿼리 수행 로그 탭과 쿼리 결과 탭을 전환하는 버튼입니다.</li>
+<li><dl class="first docutils">
+<dt><strong>쿼리 수행 상태</strong>: 3가지 쿼리 수행 상태를 표시합니다.</dt>
+<dd><ul class="first last">
+<li>쿼리 수행중</li>
+<li>쿼리 수행 실패</li>
+<li>쿼리 수행 취소</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><strong>쿼리 수행 시작 시각</strong>: 쿼리 수행 시작 시각을 표시합니다.</li>
+<li><strong>쿼리 수행 경과 시간</strong>: 쿼리 수행 경과 시간을 표시합니다.</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>쿼리 수행 후<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../_images/workbench_query_result_complete.png" src="../_images/workbench_query_result_complete.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>쿼리 결과 탭</strong>: 다중 쿼리 수행시 쿼리당 하나의 결과 탭이 생성되며 쿼리 수행 중인 탭일 경우 탭 제목에 “Loading” 메시지가 표시됩니다.</li>
+<li><strong>데이터 내역</strong>: 쿼리 실행에 의해 출력된 데이터 내역입니다. 출력된 데이터는 클립보드에 복사하여 활용할 수도 있습니다.</li>
+<li><strong>표시 전환 탭</strong>: 쿼리 수행 로그 탭과 쿼리 결과 탭을 전환하는 버튼입니다.</li>
+<li><strong>컬럼 데이터 검색</strong>: 결과 내 컬럼 및 값을 검색할 수 있습니다.</li>
+<li><strong>차트 미리보기</strong>: 쿼리 결과를 이용하여 차트를 가상으로 그려볼 수 있습니다. 시각화를 위해 그려지는 것이고, 실제 워크스페이스 내용에 반영되지는 않습니다. (자세한 조작 방식은 ‘워크북’에서 ‘차트’ 항목 참조)</li>
+<li><strong>데이터 소스 저장</strong>: 쿼리 결과를 이용하여 워크스페이스 내 데이터 소스로 저장할 수 있습니다. 데이터 소스 생성 팝업이 나타나며, 데이터 커넥션 선택 및 테이블 선택 등의 과정은 워크벤치 결과 내용으로 대체됩니다. 따라서 스키마 정의 및 ingestion 주기 등의 과정이 곧바로 진행되게 됩니다. (자세한 절차는 ‘3부 운영관리’에서 2.1.3절 참조)</li>
+<li><strong>다운로드 CSV</strong>: 쿼리 결과를 로컬 파일(csv)로 다운로드가 가능합니다.</li>
+<li><strong>데이터 페이징</strong>: 1000건의 이상의 데이터일 경우 Prev, Next 버튼을 이용해 페이지 넘김이 가능합니다.</li>
+<li><strong>쿼리 수행 시작 시각</strong>: 쿼리 수행 시작 시각을 표시합니다.</li>
+<li><strong>쿼리 수행 종료 시각간</strong>: 쿼리 수행 종료 시각을 표시합니다.</li>
+<li><strong>쿼리 수행 경과 시간</strong>: 쿼리 수행 경과 시간을 표시합니다.</li>
+<li><strong>쿼리 Row 정보</strong>: 쿼리 결과의 Row 숫자와 현재 페이지 정보를 표시합니다.</li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="06_03_05-additional_tools.html" class="btn btn-neutral float-right" title="추가 도구 영역" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="06_03_03-query_editor.html" class="btn btn-neutral" title="쿼리 에디터 영역" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
