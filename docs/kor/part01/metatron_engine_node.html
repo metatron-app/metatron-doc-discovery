@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>메타트론 엔진 노드 &mdash; metatron discovery docs  documentation</title>
+  <title>메타트론 엔진 노드 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="메타트론 엔진만의 강점" href="metatron_engine_strength.html" />
     <link rel="prev" title="메타트론 엔진이란?" href="metatron_engine.html" /> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../index.html">
           
 
           
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.1
+                0.4.2
               </div>
             
           
@@ -88,28 +88,30 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">메타트론 디스커버리</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="overview.html">메타트론 디스커버리 개요</a></li>
-<li class="toctree-l3"><a class="reference internal" href="structure.html">구조</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="engine.html">메타트론 엔진</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="metatron_engine.html">메타트론 엔진이란?</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">메타트론 엔진 노드</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metatron_engine_strength.html">메타트론 엔진만의 강점</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metatron_engine_test.html">메타트론 엔진의 성능 평가</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">메타트론 디스커버리 소개</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">메타트론 디스커버리 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">메타트론 디스커버리 구성</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="engine.html">메타트론 엔진</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="metatron_engine.html">메타트론 엔진이란?</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">메타트론 엔진 노드</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#real-time">Real-time 노드</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#historical">Historical 노드</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#broker">Broker 노드</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#coordinator">Coordinator 노드</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="metatron_engine_strength.html">메타트론 엔진만의 강점</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metatron_engine_test.html">메타트론 엔진의 성능 평가</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">워크북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">노트북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 
             
@@ -124,7 +126,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">metatron discovery docs</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -153,11 +155,9 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../index.html">Korean 한글</a> &raquo;</li>
-        
-          <li><a href="index.html">메타트론 디스커버리</a> &raquo;</li>
+          <li><a href="index.html">메타트론 디스커버리 소개</a> &raquo;</li>
         
           <li><a href="engine.html">메타트론 엔진</a> &raquo;</li>
         
@@ -181,13 +181,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>메타트론 엔진 노드<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>메타트론 엔진 노드<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>Druid 클러스터는 여러 유형의 노드군으로 구성되며, 각 유형의 노드군별로 고유의 역할을 수행한다.</p>
 <div class="figure align-center">
 <img alt="그림 1. 메타트론 노드 아키텍쳐" src="../../_images/druid_node_architecture.png" />
 </div>
 <div class="section" id="real-time">
-<h2>Real-time 노드<a class="headerlink" href="#real-time" title="Permalink to this headline">¶</a></h2>
+<h2>Real-time 노드<a class="headerlink" href="#real-time" title="제목 주소">¶</a></h2>
 <p>real-time 노드군은 이벤트 스트림을 ingestion하고 쿼리하는 기능을 한다. 이 노드들은 최근 발생한 짧은 시간 범위 내 이벤트들만을 처리하며, 주기적으로 이들을 딥 스토리지로 넘기는데, 그 절차는 다음과 같다.</p>
 <ol class="arabic simple">
 <li>유입되는 이벤트들은 메모리에 인덱싱되면서 즉시 쿼리에 사용될 수 있다.</li>
@@ -198,23 +198,23 @@
 <p>이런 식으로 real-time 노드로 ingestion된 모든 이벤트는 디스크 저장 전후를 막론하고 on-heap 또는 off-heap 메모리 상에 존재하므로 쿼리가 가능한 상태를 유지한다(쿼리는 메모리 상의 인덱스와 디스크에 저장된 인덱스 모두에 전달된다). 이러한 real-time 노드 기능을 통해 Druid는 실시간 데이터 ingestion을 수행할 수 있다. 즉, 이벤트들이 발생하면 곧 이어서 쿼리 대상이 된다. 그리고 이러한 과정에서 데이터 손실이 발생하지 않는다. real-time 노드는 Druid 클러스터 내 다른 노드들과의 유기적인 동작을 위해 자신의 온라인 상태와 처리 중인 데이터를 Zookeeper(Druid 클러스터의 외부 종속 모듈, 3.7.5절 참조)에 보고한다.</p>
 </div>
 <div class="section" id="historical">
-<h2>Historical 노드<a class="headerlink" href="#historical" title="Permalink to this headline">¶</a></h2>
+<h2>Historical 노드<a class="headerlink" href="#historical" title="제목 주소">¶</a></h2>
 <p>historical 노드군은 real-time 노드가 생성한 읽기 전용 데이터 블록(세그먼트)을 로드하고 처리하는 기능을 한다. 이 노드들은 딥 스토리지에서 읽기 전용 세그먼트를 다운로드하고 이에 대한 쿼리를 처리한다(예: 데이터 집계/필터링). 이 노드들은 shared-nothing 아키텍쳐에 기반하며 동작이 단순하다. 이들 간에는 경합이 발생하지 않으며 단순히 Zookeeper의 지시에 따라 세그먼트를 로드, 드롭, 처리할 뿐이다. historical 노드가 쿼리를 처리하는 프로세스는 다음과 같다.</p>
 <p>쿼리를 받으면 historical 노드는 우선 자신에게 이미 어떤 세그먼트가 존재하는지에 관한 정보를 보관하는 로컬 캐시를 확인한다. 어떤 세그먼트에 관한 정보가 캐시에 없으면 노드는 딥 스토리지에서 해당 세그먼트를 다운로드한다. 그런 다음, 해당 세그먼트는 Zookeeper에서 선언되어 쿼리가 가능한 대상이 되며, 노드는 이 세그먼트에 대해 요청된 쿼리를 수행한다.
 historical 노드는 읽기 전용 데이터만을 다루므로 read consistency를 보장할 수 있다. 읽기 전용 데이터 블록들은 또한 단순한 병렬 모델을 가능케 한다. 즉, historical 노드들은 읽기 전용 데이터 블록들을 서로 간섭하지 않고 동시에 스캔·집계할 수 있다. real-time 노드와 마찬가지로 historical 노드들도 자신들의 온라인 상태와 처리 중인 데이터를 Zookeeper에 보고한다.</p>
 </div>
 <div class="section" id="broker">
-<h2>Broker 노드<a class="headerlink" href="#broker" title="Permalink to this headline">¶</a></h2>
+<h2>Broker 노드<a class="headerlink" href="#broker" title="제목 주소">¶</a></h2>
 <p>broker 노드군은 Zookeeper에 보고된 메타데이터를 통해 어떤 세그먼트들이 쿼리 가능한지와 이 세그먼트들이 각각 어디에 저장되어 있는지를 파악한다. broker 노드들은 입력된 쿼리들의 경로를 지정함으로써 각 쿼리가 올바른 historical 또는 real-time 노드에 도달되게끔 한다. 그런 다음 historical 및 real-time 노드 각각에서 산출된 결과들을 취합하여 최종 쿼리 결과를 호출자에게 반환한다.
 broker 노드는 리소스 효율성을 높이기 위해 다음과 같이 캐시를 사용한다.</p>
 <p>어떤 쿼리가 여러 세그먼트를 포괄할 경우 broker 노드는 캐시에 이미 존재하는 세그먼트들을 우선 확인한다. 그리고 캐시에 없는 세그먼트들에 대해서는 그것이 보관된 historical 및 real-time 노드로 쿼리를 전달한다. historical 노드들이 결과를 반환하면, broker 노드는 이 결과를 나중에 사용할 수 있도록 세그먼트별로 캐시에 저장한다. real-time 노드의 데이터는 캐시에 저장되지 않으며, 따라서 real-time 데이터에 대한 요청은 항상 real-time 노드로 전달된다. real-time 노드의 데이터는 가변적이기 때문에 그 결과를 캐시에 저장하는 것은 안정적이지 않기 때문이다.</p>
 </div>
 <div class="section" id="coordinator">
-<h2>Coordinator 노드<a class="headerlink" href="#coordinator" title="Permalink to this headline">¶</a></h2>
+<h2>Coordinator 노드<a class="headerlink" href="#coordinator" title="제목 주소">¶</a></h2>
 <p>coordinator 노드군은 주로 historical 노드 데이터의 관리 및 분산을 담당한다. coordinator 노드는 어떤 historical 노드가 어떤 세그먼트에 대해 쿼리를 수행할지 결정하고 이들에게 새 데이터를 로드하고, 기한이 지난 데이터를 드롭하고, 데이터를 복제하고, 데이터를 이동하여 부하 밸런스를 맞추도록 지시한다. 이렇게 함으로써 분산형 historical 노드 그룹에서 빠르고 효율적이며 안정으로 데이터를 처리할 수 있다.
 다른 모든 Druid 노드와 마찬가지로, coordinator 노드들도 Zookeeper 연결을 유지함으로써 클러스터의 현황을 파악한다. coordinator 노드들은 MySQL 데이터베이스와의 연결도 유지하는데, 이 데이터베이스에서는 클러스터 내 세그먼트의 생성, 소멸, 복제 규칙과 같은 추가적인 연산 매개변수 및 구성 정보를 관리한다. Druid 클러스터의 안정성을 위해 coordinator 노드는 이중화되며 일반적으로 하나의 coordinator 노드만 활성 상태를 유지한다.</p>
 <div class="section" id="id2">
-<h3>1. 외부 종속 모듈<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3>1. 외부 종속 모듈<a class="headerlink" href="#id2" title="제목 주소">¶</a></h3>
 <p>Druid는 클러스터 동작을 위해 몇 가지 외부 종속 모듈을 사용한다.</p>
 <ul class="simple">
 <li><strong>Zookeeper</strong>: Druid는 Zookeeper를 통해 클러스터 내부 통신을 한다.</li>
@@ -223,11 +223,11 @@ broker 노드는 리소스 효율성을 높이기 위해 다음과 같이 캐시
 </ul>
 </div>
 <div class="section" id="high-availability">
-<h3>2. High Availability 특성<a class="headerlink" href="#high-availability" title="Permalink to this headline">¶</a></h3>
+<h3>2. High Availability 특성<a class="headerlink" href="#high-availability" title="제목 주소">¶</a></h3>
 <p>Druid는 어느 한 노드가 고장난다고 해서 클러스터의 동작이 중단되지 않도록 설계되었다. 또한 서로 다른 유형의 노드군끼리도 상호 간에 상당히 독립적이기 때문에, 클러스터 내부에 통신 장애가 생겨도 데이터 가용성에는 최소한의 영향을 미친다. Druid 클러스터에서 highly availability를 확보하려면, 노드군별로 2개 이상의 노드가 구성되어야 한다.</p>
 </div>
 <div class="section" id="id3">
-<h3>3. 아키텍처 확장성<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>3. 아키텍처 확장성<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
 <div class="figure align-center">
 <img alt="Druid의 확장 아키텍처 예시" src="../../_images/intro-to-druid.png" />
 </div>
@@ -277,11 +277,22 @@ broker 노드는 리소스 효율성을 높이기 위해 다음과 같이 캐시
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>차트 스타일 속성 &mdash; metatron discovery docs  documentation</title>
+  <title>차트 스타일 속성 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -28,9 +28,9 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="맵 차트로 분석하기" href="analyze_with_map_chart.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="필터" href="filters.html" />
     <link rel="prev" title="차트 타입" href="chart_types.html" /> 
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../index.html">
           
 
           
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.1
+                0.4.2
               </div>
             
           
@@ -88,34 +88,33 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="workbook_overview.html">워크북 소개</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
-<li class="toctree-l3"><a class="reference internal" href="manage_dashboards.html">대시보드</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="manage_charts.html">차트</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="chart_overview.html">차트소개</a></li>
-<li class="toctree-l4"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a></li>
-<li class="toctree-l4"><a class="reference internal" href="add_a_custom_column.html">사용자 컬럼 추가</a></li>
-<li class="toctree-l4"><a class="reference internal" href="add_a_custom_column.html#id2">차원값과 측정값</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pivoting.html">차트 그리기(pivoting)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="chart_types.html">차트 타입</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">차트 스타일 속성</a></li>
-<li class="toctree-l4"><a class="reference internal" href="analyze_with_map_chart.html">맵 차트로 분석하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="workbook_overview.html">워크북 소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dashboards.html">대시보드</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_charts.html">차트</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="chart_overview.html">차트소개</a></li>
+<li class="toctree-l3"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_a_custom_column.html">사용자 컬럼 추가</a></li>
+<li class="toctree-l3"><a class="reference internal" href="add_a_custom_column.html#id2">차원값과 측정값</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pivoting.html">차트 그리기(pivoting)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart_types.html">차트 타입</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">차트 스타일 속성</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">차트 스타일 설정 메뉴</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">차트 유형별 공통 설정 항목</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="filters.html">필터</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">노트북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html">필터</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 
             
@@ -130,7 +129,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">metatron discovery docs</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -159,9 +158,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../index.html">Korean 한글</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
           <li><a href="index.html">워크북</a> &raquo;</li>
         
@@ -187,11 +184,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>차트 스타일 속성<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>차트 스타일 속성<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>데이터를 피봇팅하고 나면 우측에 차트 스타일을 설정할 수 있는 옵션 메뉴가 나타납니다. 메뉴의 구성은 각 차트의 종류별로 다르게 나타납니다.
 모든 차트 유형에 일반적으로 적용되는 설정 항목을 설명하고, 차트 유형별로 고유한 ‘공통 설정’ 유형에 대해서 설명합니다.</p>
 <div class="section" id="id2">
-<h2>차트 스타일 설정 메뉴<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>차트 스타일 설정 메뉴<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
 <p>차트 스타일 설정 메뉴를 구성하는 각 항목별로 설정 방식을 설명합니다. 사용하는 차트 유형에 따라 아래 제시된 항목 중 일부가 사용되지 않을 수 있음을 유의하십시오.</p>
 <p><strong>색상 설정</strong></p>
 <p>차트에 들어가는 각종 색상을 정의합니다.</p>
@@ -272,7 +269,7 @@ ON으로 설정하면 측정값의 범위에 따라 색상을 다르게 나타�
 </div>
 </div>
 <div class="section" id="id3">
-<h2>차트 유형별 공통 설정 항목<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>차트 유형별 공통 설정 항목<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
 <p>가장 보편적으로 사용되는 상위 6개 차트(막대형 차트, 표, 선형 차트, 분산형 차트, 히 트맵, 원형 차트)의 스타일 설정 방법에 대해 설명합니다.</p>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/Chart_Style.12.png"><img alt="../../_images/Chart_Style.12.png" src="../../_images/Chart_Style.12.png" style="width: 304.0px; height: 236.0px;" /></a>
@@ -382,7 +379,7 @@ ON으로 설정하면 측정값의 범위에 따라 색상을 다르게 나타�
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="analyze_with_map_chart.html" class="btn btn-neutral float-right" title="맵 차트로 분석하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="filters.html" class="btn btn-neutral float-right" title="필터" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="chart_types.html" class="btn btn-neutral" title="차트 타입" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -415,11 +412,22 @@ ON으로 설정하면 측정값의 범위에 따라 색상을 다르게 나타�
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

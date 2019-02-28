@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>공유 워크스페이스 접근 권한 설정 &mdash; metatron discovery docs  documentation</title>
+  <title>공유 워크스페이스 접근 권한 설정 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -28,9 +28,9 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Workbook" href="../part04/index.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="워크북" href="../part04/index.html" />
     <link rel="prev" title="공유 워크스페이스 생성" href="shared_workspace_creation.html" /> 
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../index.html">
           
 
           
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.1
+                0.4.2
               </div>
             
           
@@ -88,27 +88,27 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">워크스페이스(Workspace)</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="workspace_overview.html">워크스페이스 소개</a></li>
-<li class="toctree-l3"><a class="reference internal" href="workspace_management.html">워크스페이스 홈</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="shared_workspace.html">공유 워크스페이스</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="shared_workspace_list.html">공유 워크스페이스 목록</a></li>
-<li class="toctree-l4"><a class="reference internal" href="shared_workspace_creation.html">공유 워크스페이스 생성</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">공유 워크스페이스 접근 권한 설정</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">워크스페이스</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="workspace_overview.html">워크스페이스 소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workspace_management.html">워크스페이스 홈</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="shared_workspace.html">공유 워크스페이스</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="shared_workspace_list.html">공유 워크스페이스 목록</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shared_workspace_creation.html">공유 워크스페이스 생성</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">공유 워크스페이스 접근 권한 설정</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">권한 스키마 설정</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">공유 멤버 및 그룹 설정</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 
             
@@ -123,7 +123,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">metatron discovery docs</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -152,11 +152,9 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../index.html">Korean 한글</a> &raquo;</li>
-        
-          <li><a href="index.html">워크스페이스(Workspace)</a> &raquo;</li>
+          <li><a href="index.html">워크스페이스</a> &raquo;</li>
         
           <li><a href="shared_workspace.html">공유 워크스페이스</a> &raquo;</li>
         
@@ -180,23 +178,23 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>공유 워크스페이스 접근 권한 설정<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>공유 워크스페이스 접근 권한 설정<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>공유 워크스페이스 접근 권한 설정은 기본적으로 다음과 같은 두 단계로 이루어집니다.</p>
 <ul class="simple">
 <li>사용자 역할별 접근 권한 정의 (<a class="reference internal" href="#id2">권한 스키마 설정</a> 참조)</li>
 <li>개별 사용자 또는 사용자 그룹 각각에게 적합한 사용자 역할 부여 (<a class="reference internal" href="#id5">공유 멤버 및 그룹 설정</a> 참조)</li>
 </ul>
 <div class="section" id="id2">
-<h2>권한 스키마 설정<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>권한 스키마 설정<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
 <div class="section" id="id3">
-<h3>권한 스키마 조회하기<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>공유 워크스페이스 홈 화면 우측 상단에 있는 더 보기 버톤을 클릭한 후, ‘권한 스키마 설정’을 누르면 아래와 같이 현재 정의된
+<h3>권한 스키마 조회하기<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
+<p>공유 워크스페이스 홈 화면 우측 상단에 있는 더 보기 버톤을 클릭한 후, '권한 스키마 설정'을 누르면 아래와 같이 현재 정의된
 권한 스키마를 보여줍니다.</p>
 <div class="figure align-center">
 <img alt="공유 워크스페이스 권한 스키마 조회 화면" src="../../_images/shared_workspace_permission_schema_view.png" />
 </div>
 <p>위 예시 그림에서는 사용자 역할(User role)로서 Manager, Editor, Watcher, Guest가 정의되어 있습니다.
-‘권한 스키마’란, 이와 같이 각각 고유한 접근 권한이 정의된 사용자 역할들의 집합을 일컫는 말입니다.</p>
+'권한 스키마'란, 이와 같이 각각 고유한 접근 권한이 정의된 사용자 역할들의 집합을 일컫는 말입니다.</p>
 <p>각 사용자 역할에 대한 컬럼별 속성은 다음과 같습니다.</p>
 <dl class="docutils">
 <dt><strong>Default role</strong></dt>
@@ -217,28 +215,28 @@
 </dl>
 </div>
 <div class="section" id="id4">
-<h3>권한 스키마 설정 바꾸기<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>권한 스키마 조회 화면에서 ‘스키마 변경’ 버튼을 클릭하면 아래와 같이 기존에 정의된 권한 스키마를 변경할 수 있는 화면이 나타납니다.</p>
+<h3>권한 스키마 설정 바꾸기<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
+<p>권한 스키마 조회 화면에서 '스키마 변경' 버튼을 클릭하면 아래와 같이 기존에 정의된 권한 스키마를 변경할 수 있는 화면이 나타납니다.</p>
 <div class="figure align-center">
 <img alt="공유 워크스페이스 권한 스키마 변경 화면 #1" src="../../_images/shared_workspace_permission_schema_change01.png" />
 </div>
 <p>화면 우측에 있는 ‘Select Role Set’ 콤보박스를 클릭하면 관리자가 정의해놓은 스키마들이 제시되고, 목록 맨 아래에는 새로운
-사용자 역할을 정의할 수 있는 ‘커스텀 스키마’ 항목이 있습니다. 이중 하나를 선택하면 아래와 같은 화면이 나타납니다.
-(‘커스텀 스키마’ 항목을 선택했을 경우 사용자 역할별 권한부터 정의해야 합니다. New schema 우측의 ‘수정’ 버튼을 눌러 권한
+사용자 역할을 정의할 수 있는 '커스텀 스키마' 항목이 있습니다. 이중 하나를 선택하면 아래와 같은 화면이 나타납니다.
+('커스텀 스키마' 항목을 선택했을 경우 사용자 역할별 권한부터 정의해야 합니다. New schema 우측의 '수정' 버튼을 눌러 권한
 설정 화면으로 이동한 후 <a class="reference internal" href="#id3">권한 스키마 조회하기</a> 절의 설명을 참조하여 사용자 역할별로 권한을 설정하십시오.)</p>
 <div class="figure align-center">
 <img alt="공유 워크스페이스 권한 스키마 변경 화면 #2" src="../../_images/shared_workspace_permission_schema_change02.png" />
 </div>
 <p>여기서는 현 권한 스키마의 각 사용자 역할을 새로운 권한 스키마에 정의된 사용자 역할로 치환하는 작업을 합니다. 각 사용자
-역할 이름 옆에 있는 아이콘에 마우스를 오버하면 해당 사용자 역할에 할당된 권한이 나타납니다. ‘마침’ 버튼을 누르면 권한 스키마
+역할 이름 옆에 있는 아이콘에 마우스를 오버하면 해당 사용자 역할에 할당된 권한이 나타납니다. '마침' 버튼을 누르면 권한 스키마
 설정이 완료됩니다.</p>
 </div>
 </div>
 <div class="section" id="id5">
-<h2>공유 멤버 및 그룹 설정<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>공유 워크스페이스 홈 화면 우측 상단에 있는 더보기 아이콘을 클릭한 후 ‘공유 멤버 및 그룹 설정’을 누르면 아래와 같이 공유
+<h2>공유 멤버 및 그룹 설정<a class="headerlink" href="#id5" title="제목 주소">¶</a></h2>
+<p>공유 워크스페이스 홈 화면 우측 상단에 있는 더보기 아이콘을 클릭한 후 '공유 멤버 및 그룹 설정'을 누르면 아래와 같이 공유
 멤버 및 그룹 설정 화면이 나타납니다. 여기서는 권한 스키마에서 정의된 각 사용자 역할을 개별 사용자 또는 사용자 그룹에
-할당하는 작업을 합니다. 아래 설명을 참조하여 사용자 역할을 할당한 후 ‘마침’ 버튼을 누르면 워크스페이스 접근 권한 설정이
+할당하는 작업을 합니다. 아래 설명을 참조하여 사용자 역할을 할당한 후 '마침' 버튼을 누르면 워크스페이스 접근 권한 설정이
 완료됩니다.</p>
 <div class="figure align-center">
 <img alt="공유 워크스페이스 권한 스키마 변경 화면 #2" src="../../_images/shared_workspace_shared_member_group_setting.png" />
@@ -270,7 +268,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../part04/index.html" class="btn btn-neutral float-right" title="Workbook" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../part04/index.html" class="btn btn-neutral float-right" title="워크북" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="shared_workspace_creation.html" class="btn btn-neutral" title="공유 워크스페이스 생성" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -303,11 +301,22 @@
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

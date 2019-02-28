@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터셋 추가하기 &mdash; metatron discovery docs  documentation</title>
+  <title>데이터셋 추가하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="룰 편집" href="edit_rules.html" />
     <link rel="prev" title="데이터 플로우 관리하기" href="manage_dataflow.html" /> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../index.html">
           
 
           
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.1
+                0.4.2
               </div>
             
           
@@ -88,29 +88,29 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">워크북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">노트북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="data_preparation_overview.html">데이터 프리퍼레이션 소개</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="manage_dataflow.html">데이터 플로우 관리하기</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">데이터셋 추가하기</a></li>
-<li class="toctree-l4"><a class="reference internal" href="edit_rules.html">룰 편집</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rule_kinds.html">룰의 종류</a></li>
-<li class="toctree-l4"><a class="reference internal" href="create_a_datasnapshot.html">데이터 스냅샷 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="data_preparation_overview.html">데이터 프리퍼레이션 소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_dataflow.html">데이터 플로우 관리하기</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">데이터셋 추가하기</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">빈 데이터 플로우를 먼저 생성한 후, 데이터셋 추가</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">데이터셋 상세화면에서 바로 데이터 플로우 만들기</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="data_snapshot.html">데이터 스냅샷 결과 보기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_rules.html">룰 편집</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rule_kinds.html">룰의 종류</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_a_datasnapshot.html">데이터 스냅샷 만들기</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">데이터 스냅샷 결과 보기</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
 </ul>
 
             
@@ -125,7 +125,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">metatron discovery docs</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -154,9 +154,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../index.html">Korean 한글</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
           <li><a href="index.html">데이터 프리퍼레이션</a> &raquo;</li>
         
@@ -182,7 +180,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>데이터셋 추가하기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>데이터셋 추가하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>데이터 플로우는 데이터셋을 처리하는 단위입니다. 한 데이터 플로우는 다수의 데이터셋들을 가져와서 연관지어서 변형을 가할 수 있습니다.
 즉, 어떤 데이터셋이 변형 규칙을 가지려면 반드시 한 데이터 플로우에 속해야 합니다.</p>
 <p>각 데이터셋은 서로 다른 데이터셋에 대해 join, union 등의 관계를 가질 수 있습니다.
@@ -197,7 +195,7 @@
 <li><a class="reference external" href="add_datasets.html#id3">데이터셋 상세화면에서 바로 데이터 플로우 만들기</a></li>
 </ul>
 <div class="section" id="id4">
-<h2>빈 데이터 플로우를 먼저 생성한 후, 데이터셋 추가<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>빈 데이터 플로우를 먼저 생성한 후, 데이터셋 추가<a class="headerlink" href="#id4" title="제목 주소">¶</a></h2>
 <ol class="arabic simple">
 <li>전체 메뉴 - MANAGEMENT - 데이터 프리퍼레이션 - 데이터 플로우을 선택합니다.</li>
 <li>데이터 플로우 리스트 우상단에 위치한 <code class="docutils literal notranslate"><span class="pre">데이터</span> <span class="pre">플로우</span> <span class="pre">추가</span></code> 를 누르면 아래와 같은 팝업창이 뜹니다.</li>
@@ -228,7 +226,7 @@
 </ol>
 </div>
 <div class="section" id="id6">
-<h2>데이터셋 상세화면에서 바로 데이터 플로우 만들기<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h2>데이터셋 상세화면에서 바로 데이터 플로우 만들기<a class="headerlink" href="#id6" title="제목 주소">¶</a></h2>
 <p>데이터셋 상세화면에는 <code class="docutils literal notranslate"><span class="pre">이</span> <span class="pre">데이터셋으로</span> <span class="pre">새로운</span> <span class="pre">데이터플로우</span> <span class="pre">생성</span></code> 이라는 버튼이 있습니다. 이것을 누르면 자동으로 데이터 플로우를 만들고 <strong>룰 편집</strong> 직전의 단계까지 진행합니다.</p>
 <div class="figure">
 <img alt="../../_images/add_datasets_6.png" src="../../_images/add_datasets_6.png" />
@@ -278,11 +276,22 @@
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

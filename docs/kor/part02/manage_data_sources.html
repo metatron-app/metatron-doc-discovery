@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터소스 확인하기 &mdash; metatron discovery docs  documentation</title>
+  <title>데이터소스 확인하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="데이터 모니터링" href="data_monitoring.html" />
     <link rel="prev" title="데이터 소스 만들기" href="create_a_data_source.html" /> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../index.html">
           
 
           
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.1
+                0.4.2
               </div>
             
           
@@ -88,27 +88,31 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">데이터 관리</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="data_management_overview.html">데이터 관리 소개</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="data_storage.html">데이터 스토리지</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="data_storage_overview.html">데이터 스토리지 소개</a></li>
-<li class="toctree-l4"><a class="reference internal" href="data_connection.html">데이터 커넥션</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="data_source.html">데이터 소스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 관리</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="data_management_overview.html">데이터 관리 소개</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="data_storage.html">데이터 스토리지</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="data_storage_overview.html">데이터 스토리지 소개</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_connection.html">데이터 커넥션</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="data_source.html">데이터 소스</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="dimension_and_measures.html">차원값과 측정값</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_a_data_source.html">데이터 소스 만들기</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">데이터소스 확인하기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#publish">데이터소스에 Publish 권한주기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">데이터 스키마 변경하기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">데이터 통계 분석하기</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="data_monitoring.html">데이터 모니터링</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">워크북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">노트북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_monitoring.html">데이터 모니터링</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 
             
@@ -123,7 +127,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">metatron discovery docs</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -152,9 +156,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../index.html">Korean 한글</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
           <li><a href="index.html">데이터 관리</a> &raquo;</li>
         
@@ -182,7 +184,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>데이터소스 확인하기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>데이터소스 확인하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>metatron Discovery에서 ‘데이터 소스’는 Druid 엔진에 수집되는 데이터 단위를 의미합니다. 각 데이터 소스는 Druid 데이터베이스에서 하나의 테이블로서 저장됩니다. 이러한 데이터 소스들은 ‘워크북’
 이나 ‘노트북’에서 분석·시각화하는 데 사용됩니다.</p>
 <p><strong>데이터 소스 관리 홈 화면</strong></p>
@@ -261,7 +263,7 @@
 </ol>
 </div>
 <div class="section" id="publish">
-<h1>데이터소스에 Publish 권한주기<a class="headerlink" href="#publish" title="Permalink to this headline">¶</a></h1>
+<h1>데이터소스에 Publish 권한주기<a class="headerlink" href="#publish" title="제목 주소">¶</a></h1>
 <p>이 영역에서는 해당 데이터 소스를 어느 워크스페이스에서 사용할 수 있는지를 확인·설정합니다.</p>
 <div class="figure">
 <img alt="../../_images/manage_data_source_04.png" src="../../_images/manage_data_source_04.png" />
@@ -273,7 +275,7 @@
 </ol>
 </div>
 <div class="section" id="id2">
-<h1>데이터 스키마 변경하기<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<h1>데이터 스키마 변경하기<a class="headerlink" href="#id2" title="제목 주소">¶</a></h1>
 <p>컬럼 상세 탭의 상단부는 원하는 조건으로 컬럼을 선별하는 사용자 인터페이스를 제공합니다. 조건에 맞게 선별된 컬럼들은 좌측 영역에 조회됩니다. 또한 여기서는 컬럼 설정값을 수정할 수도 있습니다.</p>
 <p><strong>컬럼 조회/설정 기능</strong></p>
 <div class="figure">
@@ -305,7 +307,7 @@
 </ol>
 </div>
 <div class="section" id="id3">
-<h1>데이터 통계 분석하기<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
+<h1>데이터 통계 분석하기<a class="headerlink" href="#id3" title="제목 주소">¶</a></h1>
 <p>모니터링 탭에서는 데이터 소스가 사용된 로그를 볼 수 있습니다.</p>
 <p><strong>트랙잭션 변경</strong></p>
 <p>해당 데이터 소스의 시간에 따른 트랜잭션량 추이를 보여줍니다.</p>
@@ -380,11 +382,22 @@
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

@@ -1,8 +1,7 @@
-메타트론 디스커버리
+메타트론 디스커버리 소개
 ---------------------------
 
 .. toctree::
-   :caption: Table of Contents
    :maxdepth: 4
 
    /kor/part01/overview

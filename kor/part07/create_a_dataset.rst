@@ -13,6 +13,7 @@ Wrangled Dataset은 룰 편집을 위해서 Dataflow 안에서 생성됩니다.
 다음과 같은 과정을 통해 (Imported) 데이터셋을 만들 수 있습니다.
  
 .. figure:: /_static/img/part07/create_a_dataset_1.png
+   :scale: 50 %
 
 데이터셋을 만들기 위해서는 메인 화면 좌측 탭에서 'WORKSPACE - MANAGEMENT - 데이터 프리퍼레이션' 이동을 합니다.
 
@@ -21,6 +22,7 @@ Wrangled Dataset은 룰 편집을 위해서 Dataflow 안에서 생성됩니다.
 '데이터 셋' 탭의 데이터셋 목록 화면에서 '새로운 데이터셋 생성' 버튼을 사용하면 데이터셋을 만들 수 있습니다.
 
 .. figure:: /_static/img/part07/create_a_dataset_3.png
+   :scale: 50 %
 
 데이터셋은 3가지 종류로 생성할 수 있습니다.
 

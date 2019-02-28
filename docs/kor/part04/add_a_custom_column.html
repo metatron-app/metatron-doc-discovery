@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>사용자 컬럼 추가 &mdash; metatron discovery docs  documentation</title>
+  <title>사용자 컬럼 추가 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="차트 그리기(pivoting)" href="pivoting.html" />
     <link rel="prev" title="데이터 컬럼 리스트" href="composition_of_the_data_column_list.html" /> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../index.html">
           
 
           
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.1
+                0.4.2
               </div>
             
           
@@ -88,34 +88,33 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="workbook_overview.html">워크북 소개</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
-<li class="toctree-l3"><a class="reference internal" href="manage_dashboards.html">대시보드</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="manage_charts.html">차트</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="chart_overview.html">차트소개</a></li>
-<li class="toctree-l4"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">사용자 컬럼 추가</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id2">차원값과 측정값</a></li>
-<li class="toctree-l4"><a class="reference internal" href="pivoting.html">차트 그리기(pivoting)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="chart_types.html">차트 타입</a></li>
-<li class="toctree-l4"><a class="reference internal" href="chart_style.html">차트 스타일 속성</a></li>
-<li class="toctree-l4"><a class="reference internal" href="analyze_with_map_chart.html">맵 차트로 분석하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="workbook_overview.html">워크북 소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dashboards.html">대시보드</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_charts.html">차트</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="chart_overview.html">차트소개</a></li>
+<li class="toctree-l3"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">사용자 컬럼 추가</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">차원값과 측정값</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dimension">차원값(Dimension) 컬럼</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#measure">측정값(Measure)컬럼</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="filters.html">필터</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pivoting.html">차트 그리기(pivoting)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart_types.html">차트 타입</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart_style.html">차트 스타일 속성</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">노트북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html">필터</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 
             
@@ -130,7 +129,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">metatron discovery docs</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -159,9 +158,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../index.html">Korean 한글</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
           <li><a href="index.html">워크북</a> &raquo;</li>
         
@@ -187,7 +184,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>사용자 컬럼 추가<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>사용자 컬럼 추가<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>데이터 소스 컬럼 목록에서   + 버튼을 클릭하면 사용자 컬럼 추가를 위한 대화 상자가 열립니다. 여기서는 데이터 소스에 있는 기존 컬럼들에 각종 공식을 적용하여 차트를 만드는 데 필요한 새로 운 컬럼을 만들 수 있습니다.</p>
 <div class="figure">
 <img alt="../../_images/part04-chart03.png" src="../../_images/part04-chart03.png" />
@@ -202,13 +199,13 @@
 metatron에서 지원하는 공식 목록입니다. 목록에 제시된 공식 중 하나를 클릭하면 해당 공식이 코드 영역에 자동으로 타아핑되고 타이핑 커서가 파라미터를 입력하는 부분으로 자동 이동됩니다. 각 공식의 용도와 사용법, 예제에 관해서는 화면 우측의 도움말 상자를 참조하세요.</p>
 </div>
 <div class="section" id="id2">
-<h1>차원값과 측정값<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<h1>차원값과 측정값<a class="headerlink" href="#id2" title="제목 주소">¶</a></h1>
 <p>대시보드에 연동된 데이터 소스의 컬럼들은 아래와 같이 차원값 컬럼과 측정값 컬럼으로 구분됩 니다. Discovery의 차트 기능을 온전히 활용하기 위해서는 차원값과 측정값의 개념을 명확하게 이해해야 합니다.</p>
 <div class="figure">
 <img alt="../../_images/part04-chart04.png" src="../../_images/part04-chart04.png" />
 </div>
 <div class="section" id="dimension">
-<h2>차원값(Dimension) 컬럼<a class="headerlink" href="#dimension" title="Permalink to this headline">¶</a></h2>
+<h2>차원값(Dimension) 컬럼<a class="headerlink" href="#dimension" title="제목 주소">¶</a></h2>
 <p>범주형 데이터 커러럼을 가리키며, 특징은 아래와 같습니다.</p>
 <ul class="simple">
 <li>집계 보다는 분류에 의미가 있는 데이타 필드 (ex&gt; Category, Region, Organization 등)</li>
@@ -216,7 +213,7 @@ metatron에서 지원하는 공식 목록입니다. 목록에 제시된 공식 �
 </ul>
 </div>
 <div class="section" id="measure">
-<h2>측정값(Measure)컬럼<a class="headerlink" href="#measure" title="Permalink to this headline">¶</a></h2>
+<h2>측정값(Measure)컬럼<a class="headerlink" href="#measure" title="제목 주소">¶</a></h2>
 <p>수량적 데이터 필드를 가리키며, 특징은 아래와 같습니다.</p>
 <ul class="simple">
 <li>집계할 수 있거나 양적인 정보를 포함하는 필드(ex&gt; Sales등)</li>
@@ -266,11 +263,22 @@ metatron에서 지원하는 공식 목록입니다. 목록에 제시된 공식 �
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

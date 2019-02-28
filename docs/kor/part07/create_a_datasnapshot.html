@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터 스냅샷 만들기 &mdash; metatron discovery docs  documentation</title>
+  <title>데이터 스냅샷 만들기 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="데이터 스냅샷 결과 보기" href="data_snapshot.html" />
     <link rel="prev" title="룰의 종류" href="rule_kinds.html" /> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../index.html">
           
 
           
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.1
+                0.4.2
               </div>
             
           
@@ -88,29 +88,25 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">워크북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">노트북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="data_preparation_overview.html">데이터 프리퍼레이션 소개</a></li>
-<li class="toctree-l3"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="manage_dataflow.html">데이터 플로우 관리하기</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="add_datasets.html">데이터셋 추가하기</a></li>
-<li class="toctree-l4"><a class="reference internal" href="edit_rules.html">룰 편집</a></li>
-<li class="toctree-l4"><a class="reference internal" href="rule_kinds.html">룰의 종류</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">데이터 스냅샷 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="data_preparation_overview.html">데이터 프리퍼레이션 소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_dataflow.html">데이터 플로우 관리하기</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="add_datasets.html">데이터셋 추가하기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_rules.html">룰 편집</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rule_kinds.html">룰의 종류</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">데이터 스냅샷 만들기</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="data_snapshot.html">데이터 스냅샷 결과 보기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">데이터 스냅샷 결과 보기</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
 </ul>
 
             
@@ -125,7 +121,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">metatron discovery docs</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -154,9 +150,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../index.html">Korean 한글</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
           <li><a href="index.html">데이터 프리퍼레이션</a> &raquo;</li>
         
@@ -182,9 +176,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>데이터 스냅샷 만들기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>데이터 플로우에서 룰 편집이 완료된 데이터셋은 “데이터 스냅샷”을 찍어서 로컬 PC에 파일로 다운로드 받거나, 메타트론 엔진으로 즉시 적재할 수 있습니다. 데이터 스냅샷을 실행하면 최대 10,000개 rows를 가진 샘플 데이터에만 적용된 룰을 전체 데이터에 대해 적용하게 됩니다.</p>
-<p>스냅샷을 만드는 방법은 매우 간단합니다. 그저 <a class="reference external" href="../part02/data_connection.html">룰 편집</a> 창 우측 상단에 위치한 “데이터 스냅샷” 버튼을 클릭하세요.</p>
+<h1>데이터 스냅샷 만들기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>데이터 플로우에서 룰 편집이 완료된 데이터셋은 &quot;데이터 스냅샷&quot;을 찍어서 로컬 PC에 파일로 다운로드 받거나, 메타트론 엔진으로 즉시 적재할 수 있습니다. 데이터 스냅샷을 실행하면 최대 10,000개 rows를 가진 샘플 데이터에만 적용된 룰을 전체 데이터에 대해 적용하게 됩니다.</p>
+<p>스냅샷을 만드는 방법은 매우 간단합니다. 그저 <a class="reference external" href="../part02/data_connection.html">룰 편집</a> 창 우측 상단에 위치한 &quot;데이터 스냅샷&quot; 버튼을 클릭하세요.</p>
 <div class="figure">
 <img alt="../../_images/create_a_datasnapshot_1.png" src="../../_images/create_a_datasnapshot_1.png" />
 </div>
@@ -247,11 +241,22 @@
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

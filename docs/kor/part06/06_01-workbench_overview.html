@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>워크벤치 소개 &mdash; metatron discovery docs  documentation</title>
+  <title>워크벤치 소개 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="워크벤치 만들기" href="06_02-create_a_workbench.html" />
     <link rel="prev" title="워크벤치" href="index.html" /> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../index.html">
           
 
           
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.1
+                0.4.2
               </div>
             
           
@@ -88,22 +88,18 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../part01/index.html">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">워크벤치</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">워크벤치 소개</a></li>
-<li class="toctree-l3"><a class="reference internal" href="06_02-create_a_workbench.html">워크벤치 만들기</a></li>
-<li class="toctree-l3"><a class="reference internal" href="06_03-use_a_workbench.html">워크벤치 사용하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">워크벤치</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">워크벤치 소개</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_02-create_a_workbench.html">워크벤치 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_03-use_a_workbench.html">워크벤치 사용하기</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 
             
@@ -118,7 +114,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">metatron discovery docs</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -147,9 +143,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
-          <li><a href="../index.html">Korean 한글</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
           <li><a href="index.html">워크벤치</a> &raquo;</li>
         
@@ -173,25 +167,31 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>워크벤치 소개<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>워크벤치 소개<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <div class="figure">
 <img alt="../../_images/workbench_overview.png" src="../../_images/workbench_overview.png" />
 </div>
-<p>metatron Discovery 워크벤치는 SQL을 기반으로 하는 데이터 전처리 및 분석 환경을 제공합니다. 주요 기능은 다음과 같습니다.</p>
+<p>Metatron Discovery 워크벤치는 SQL을 기반으로 하는 데이터 전처리 및 분석 환경을 제공합니다. 주요 기능은 다음과 같습니다.</p>
 <ul class="simple">
 <li>다양한 외부 데이터베이스를 한꺼번에 작업공간에 조회 가능</li>
 <li>연동된 데이터베이스의 테이블과 컬럼을 쉽게 조회/선택하며 상세 정보 열람 가능</li>
-<li>쿼리 편집 도구가 내장되어 있으며 쿼리 결과를 실시간으로 확인하고 다양하게 활용 가능:
-- 쿼리결과를 로컬 파일로 다운로드 또는 온라인 엑셀로 출력
-- 쿼리 결과를 즉시 시각화함으로써 쿼리 결과로 출력된 데이터 형태를 쉽게 파악
-- 쿼리 결과를 데이터 소스로 저장하여 워크북이나 노트북에서 분석에 활용 가능</li>
+<li><dl class="first docutils">
+<dt>쿼리 편집 도구가 내장되어 있으며 쿼리 결과를 실시간으로 확인하고 다양하게 활용 가능:</dt>
+<dd><ul class="first last">
+<li>쿼리결과를 로컬 파일로 다운로드 또는 온라인 엑셀로 출력</li>
+<li>쿼리 결과를 즉시 시각화함으로써 쿼리 결과로 출력된 데이터 형태를 쉽게 파악</li>
+<li>쿼리 결과를 데이터 소스로 저장하여 워크북이나 노트북에서 분석에 활용 가능</li>
+</ul>
+</dd>
+</dl>
+</li>
 </ul>
 <p>본 단원은 다음과 같이 구성되어 있습니다.</p>
 <dl class="docutils">
-<dt>2장 워크벤치 생성하기:</dt>
+<dt><strong>워크벤치 생성하기:</strong></dt>
 <dd>SQL 기반 분석 쿼리를 보관하는 각각의 문서를 ‘워크벤치’라고 부릅 니다. 이 장에서는 워크벤치를 생성하고
 분석할 데이터 커넥션을 연계하는 절차에 대해 소개합니다.</dd>
-<dt>3장 워크벤치 활용하기:</dt>
+<dt><strong>워크벤치 활용하기:</strong></dt>
 <dd>생성된 노트북에서 쿼리를 작성·실행하고 그 결과물을 시각화하는 절차에 대해 소개합니다.</dd>
 </dl>
 </div>
@@ -237,11 +237,22 @@
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

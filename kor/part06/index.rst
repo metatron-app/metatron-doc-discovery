@@ -2,7 +2,6 @@
 ------------------------------------------
 
 .. toctree::
-   :caption: Table of Contents
    :maxdepth: 5
 
    /kor/part06/06_01-workbench_overview

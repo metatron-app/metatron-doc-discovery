@@ -1,2 +1,0 @@
-Dimension and measures
---------------------------

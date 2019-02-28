@@ -1,14 +1,14 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>메타트론 엔진의 성능 평가 &mdash; metatron discovery docs  documentation</title>
+  <title>메타트론 엔진의 성능 평가 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -28,8 +28,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="데이터 관리" href="../part02/index.html" />
     <link rel="prev" title="메타트론 엔진만의 강점" href="metatron_engine_strength.html" /> 
 
@@ -50,7 +50,7 @@
           
 
           
-            <a href="../../index.html">
+            <a href="../index.html">
           
 
           
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.1
+                0.4.2
               </div>
             
           
@@ -88,28 +88,30 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Korean 한글</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="index.html">메타트론 디스커버리</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="overview.html">메타트론 디스커버리 개요</a></li>
-<li class="toctree-l3"><a class="reference internal" href="structure.html">구조</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="engine.html">메타트론 엔진</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="metatron_engine.html">메타트론 엔진이란?</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metatron_engine_node.html">메타트론 엔진 노드</a></li>
-<li class="toctree-l4"><a class="reference internal" href="metatron_engine_strength.html">메타트론 엔진만의 강점</a></li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">메타트론 엔진의 성능 평가</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">메타트론 디스커버리 소개</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">메타트론 디스커버리 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">메타트론 디스커버리 구성</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="engine.html">메타트론 엔진</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="metatron_engine.html">메타트론 엔진이란?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metatron_engine_node.html">메타트론 엔진 노드</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metatron_engine_strength.html">메타트론 엔진만의 강점</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">메타트론 엔진의 성능 평가</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#druid">Druid 개발진의 자체 평가</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sk-druid">SK텔레콤의 Druid 성능 평가</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#druid-3">Druid에 대한 제3자의 평가</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">시사점</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">워크북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">노트북</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../eng/index.html">English 영문</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 </ul>
 
             
@@ -124,7 +126,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../index.html">metatron discovery docs</a>
+          <a href="../index.html">metatron discovery docs</a>
         
       </nav>
 
@@ -153,11 +155,9 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
+      <li><a href="../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="../index.html">Korean 한글</a> &raquo;</li>
-        
-          <li><a href="index.html">메타트론 디스커버리</a> &raquo;</li>
+          <li><a href="index.html">메타트론 디스커버리 소개</a> &raquo;</li>
         
           <li><a href="engine.html">메타트론 엔진</a> &raquo;</li>
         
@@ -181,7 +181,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>메타트론 엔진의 성능 평가<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>메타트론 엔진의 성능 평가<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>Druid는 ‘실시간’ 탐색이 가능한 데이터 스토어를 지향하는 만큼 수치화된 성능을 평가함에 있어서는 다음의 두 가지 측면에 초점이 맞춰진다.</p>
 <ul class="simple">
 <li>Query latency</li>
@@ -189,10 +189,10 @@
 </ul>
 <p>쿼리 처리와 ingestion에서 소요되는 시간을 최소화하는 것이 ‘실시간’을 이루는 핵심이 되기 때문이다. 지금까지 Druid 개발진을 비롯한 여러 기관 및 개인이 이러한 기준으로 Druid 성능을 평가한 benchmark들을 산출하고 그 밖의 지표를 통해 Druid를 다른 데이터베이스 관리 시스템들과 비교한 결과를 공개하였다.</p>
 <div class="section" id="druid">
-<h2>Druid 개발진의 자체 평가<a class="headerlink" href="#druid" title="Permalink to this headline">¶</a></h2>
+<h2>Druid 개발진의 자체 평가<a class="headerlink" href="#druid" title="제목 주소">¶</a></h2>
 <p>Druid 개발진이 2014년 발표한 백서 ‘Druid: A Real-time Analytical Data Store’2의 Chapter 6. Performance에서는 Druid의 query 및 ingestion latency를 다방면에서 평가한 결과를 상세하게 설명하고 있다. 본 절에서는 이 중에서 Druid의 성능을 직관적으로 살펴볼 수 있는 지표 위주로 간단히 소개한다.</p>
 <div class="section" id="query-latency">
-<h3>Query latency 성능<a class="headerlink" href="#query-latency" title="Permalink to this headline">¶</a></h3>
+<h3>Query latency 성능<a class="headerlink" href="#query-latency" title="제목 주소">¶</a></h3>
 <p>Druid의 query latency 성능에 대해 백서에서는 현장에서 실제 사용되는 데이터셋 8종과 TPC-H 데이터셋에 대한 쿼리 결과를 기준으로 평가하였는데, 여기서는 TPC-H 데이터셋에 대한 쿼리 결과를 소개한다. TPC-H 데이터셋에 대한 query latency는 MySQL과의 비교 평가 방식으로 진행하였고, 이때 사용한 클러스터 사양은 다음과 같았다.</p>
 <ul class="simple">
 <li><strong>Druid historical 노드</strong>: Amazon EC2 m3.2xlarge instance types (Intel® Xeon® E5-2680 v2 &#64; 2.80GHz)</li>
@@ -211,7 +211,7 @@
 <p>모든 쿼리가 linear scalability를 달성하지는 않았으나 상대적으로 단순한 쿼리들의 경우에는 거의 코어 수에 정비례하는 처리 속도 증대를 보여주었다. (SK텔레콤 metatron에서는 더욱 뚜렷한 linear scalability를 달성할 수 있도록 기능을 보강하였다.)</p>
 </div>
 <div class="section" id="ingestion-latency">
-<h3>Ingestion latency 성능<a class="headerlink" href="#ingestion-latency" title="Permalink to this headline">¶</a></h3>
+<h3>Ingestion latency 성능<a class="headerlink" href="#ingestion-latency" title="제목 주소">¶</a></h3>
 <p>Druid의 ingestion 성능에 대해서도 평가하였는데, 이때 사용된 클러스터 환경은 다음과 같았다.</p>
 <ul class="simple">
 <li>6개 노드, 총 메모리 360GB 및 96개 코어(12 x Intel® Xeon® E5-2670)</li>
@@ -224,10 +224,10 @@
 </div>
 </div>
 <div class="section" id="sk-druid">
-<h2>SK텔레콤의 Druid 성능 평가<a class="headerlink" href="#sk-druid" title="Permalink to this headline">¶</a></h2>
+<h2>SK텔레콤의 Druid 성능 평가<a class="headerlink" href="#sk-druid" title="제목 주소">¶</a></h2>
 <p>SK텔레콤에서는 다음과 같이 Druid의 query latency와 ingestion latency를 측정하였다.</p>
 <div class="section" id="id2">
-<h3>Query latency 테스트<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<h3>Query latency 테스트<a class="headerlink" href="#id2" title="제목 주소">¶</a></h3>
 <p>Query latency를 측정하는 조건은 다음과 같았다.
 * 데이터: TPC-H 100G dataset (9억 rows)
 * Pre-aggregation 기준: day
@@ -243,7 +243,7 @@
 </ul>
 </div>
 <div class="section" id="id3">
-<h3>Ingestion latency 테스트<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>Ingestion latency 테스트<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
 <p>Ingestion latency를 측정하는 조건은 다음과 같았다.</p>
 <ul class="simple">
 <li>Ingestion data size: 1일 30억 rows, 10 columns</li>
@@ -258,9 +258,9 @@
 </div>
 </div>
 <div class="section" id="druid-3">
-<h2>Druid에 대한 제3자의 평가<a class="headerlink" href="#druid-3" title="Permalink to this headline">¶</a></h2>
+<h2>Druid에 대한 제3자의 평가<a class="headerlink" href="#druid-3" title="제목 주소">¶</a></h2>
 <div class="section" id="outlier-druid">
-<h3>Outlier의 Druid 평가<a class="headerlink" href="#outlier-druid" title="Permalink to this headline">¶</a></h3>
+<h3>Outlier의 Druid 평가<a class="headerlink" href="#outlier-druid" title="제목 주소">¶</a></h3>
 <p>다음은 Outlier 블로그에 2016년 8월 26일에 게재된 Top 10 Time Series Databases라는 포스트9에서는 20개의 주요 오픈소스 시계열 데이터베이스 시스템을 평가하였다. 기고자인 Steven Acreman이 개인적으로 매긴 성능 랭킹에서 Druid는 20개 중 9위를 차지하였는데, 여기서 밝힌 Druid의 주요 성능은 다음과 같다.</p>
 <p><strong>1. DB-Engines의 Druid 평가</strong>
 온라인 웹사이트 DB Engines10에서는 다양한 데이터베이스 관리 시스템(DBMS)의 시장 인기도를 매달 평가하며, 이때 다음과 같은 지표를 사용한다.</p>
@@ -305,7 +305,7 @@ Druid를 Apache Spark와 비교하는 것은 상당히 의미 있는 작업이�
 </div>
 </div>
 <div class="section" id="id4">
-<h2>시사점<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>시사점<a class="headerlink" href="#id4" title="제목 주소">¶</a></h2>
 <p>이러한 테스트 결과는 Druid의 초고속 쿼리 처리 능력과 Spark의 고급 분석 기능을 결합하면 아주 훌륭한 시너지 효과를 기대할 수 있음을 시사한다. Druid를 통해 신속하고 효율적으로 분석에 필요한 데이터만 추려낸 후 Spark의 풍부한 프로그래밍 API들을 활용하여 심층적인 분석을 실시하는 것이다. 이렇게 함으로써 강력하고 유연하며 쿼리 latency가 매우 낮은 분석 솔루션을 구축할 수 있다.</p>
 </div>
 </div>
@@ -351,11 +351,22 @@ Druid를 Apache Spark와 비교하는 것은 상당히 의미 있는 작업이�
 
     
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   

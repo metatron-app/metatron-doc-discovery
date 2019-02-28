@@ -3,12 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Korean 한글
+메타트론 디스커버리 사용자 문서
 ===============================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Contents:
 
    /kor/part01/index
    /kor/part02/index

@@ -4,7 +4,6 @@
 데이터 모니터링은 Metatron Workbench에서 유저가 Staging DB(내부 Hive DB) 및 Metatron과 연결된 외부 데이터베이스에 질의하는 모든 로그를 관측하는 기능입니다.
 
 .. toctree::
-   :caption: Table of Contents
    :maxdepth: 4
 
    /kor/part02/log_statistics

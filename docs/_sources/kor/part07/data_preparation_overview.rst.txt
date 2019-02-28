@@ -34,28 +34,28 @@
 변형 (Transform)
 ========================
 
-- drop
-- settype
-- setformat
-- header
-- keep
-- delete
-- replace
-- set
-- derive
-- split
-- merge
-- extract
-- countpattern
-- nest
-- unnest
-- flatten
-- aggregate
-- pivot
-- unpivot
-- join
-- union
-- window
+- ``drop``
+- ``settype``
+- ``setformat``
+- ``header``
+- ``keep``
+- ``delete``
+- ``replace``
+- ``set``
+- ``derive``
+- ``split``
+- ``merge``
+- ``extract``
+- ``countpattern``
+- ``nest``
+- ``unnest``
+- ``flatten``
+- ``aggregate``
+- ``pivot``
+- ``unpivot``
+- ``join``
+- ``union``
+- ``window``
 
 데이터 프리퍼레이션은 위와 함께 각종 수식 함수를 제공함으로써, 일반적인 데이터 정제에 필요한 대부분의 기능들을 지원하고 있습니다.
 

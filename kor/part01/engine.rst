@@ -2,7 +2,6 @@
 -----------------
 
 .. toctree::
-   :caption: Table of Contents
    :maxdepth: 1
 
    /kor/part01/metatron_engine

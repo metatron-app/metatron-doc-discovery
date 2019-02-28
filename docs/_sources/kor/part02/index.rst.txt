@@ -2,7 +2,6 @@
 --------------------------------------------
 
 .. toctree::
-   :caption: Table of Contents
    :maxdepth: 4
 
    /kor/part02/data_management_overview
