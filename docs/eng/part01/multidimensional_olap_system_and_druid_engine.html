@@ -1,0 +1,318 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Multidimensional OLAP system and Druid engine &mdash; metatron discovery docs  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Metatron engine compared to stock druid" href="metatron_engine_compared_to_stock_druid.html" />
+    <link rel="prev" title="Characteristics and limits of the relational OLAP system" href="characteristics_and_limits_of_the_relational_olap_system.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../kor/index.html">Korean 한글</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">English 영문</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Overview</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structure.html">Structure</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="engine.html">Metatron Engine</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="relational_olap_vs_multidimensional_olap.html">Relational OLAP vs. Multidimensional OLAP</a></li>
+<li class="toctree-l4"><a class="reference internal" href="metatron_engine_compared_to_stock_druid.html">Metatron engine compared to stock druid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">English 영문</a> &raquo;</li>
+        
+          <li><a href="index.html">Overview</a> &raquo;</li>
+        
+          <li><a href="engine.html">Metatron Engine</a> &raquo;</li>
+        
+          <li><a href="relational_olap_vs_multidimensional_olap.html">Relational OLAP vs. Multidimensional OLAP</a> &raquo;</li>
+        
+      <li>Multidimensional OLAP system and Druid engine</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/eng/part01/multidimensional_olap_system_and_druid_engine.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="multidimensional-olap-system-and-druid-engine">
+<h1>Multidimensional OLAP system and Druid engine<a class="headerlink" href="#multidimensional-olap-system-and-druid-engine" title="Permalink to this headline">¶</a></h1>
+<p>Unlike the star-schema-based relational OLAP system described earlier, the multidimensional
+OLAP system uses one or a small number of multidimensional tables. metatron Discovery
+implements the OLAP system using a Druid engine. Below is a Druid data table using the
+same objects as the data used in the relational OLAP system discussed in the previous
+section.</p>
+<div class="figure">
+<img alt="Example Druid data table" src="../../_images/example_druid_data_table.png" />
+</div>
+<p>In a Druid engine-based multidimensional table, a new record is added each time an
+event occurs in the same way as with the fact table of the star schema system.
+The time is also recorded as a time stamp. As shown in the example above, however,
+all data items are saved to one table at once without using the IDs that refer to
+specific dimension tables. Since the time stamp is also considered to be a dimension
+(time dimension), the data mart above has a total of 4 dimensions.</p>
+<p>Although data capacity is increased since duplicated data is increased if this
+storage method is selected (for example, the same product name is mentioned repeatedly
+in many records), it enables faster and more effective operation when it comes to
+analysis for the following reasons:</p>
+<ul class="simple">
+<li>Since all data is stored in one or a small number of tables, and can be extracted
+by simply selecting only the columns required for analysis at the time, there is
+far less data load compared to the relational structure.</li>
+<li>The cost required for understanding reference relations between tables and filling
+out/executing the query is reduced accordingly.</li>
+<li>In particular, since it is easy to store and process the data mart by distributing
+it over many nodes (based on Hadoop cluster in the case of Druid engines), data
+can be processed and analyzed in terabyte units very promptly and effectively.</li>
+</ul>
+<p>We are now going to provide you with more information on how data analysis takes
+place in a multidimensional OLAP system. A three-dimension cube model is sometimes
+used for understanding multi-dimensional data mart analysis.</p>
+<div class="figure">
+<img alt="Three-dimension cube model" src="../../_images/three-dimension_cube_model.png" />
+</div>
+<p>Each axis of the cube represents each dimension of the OLAP-type data mart.
+As cases in which there is a limit of three dimensions are rare in the actual data mart,
+such a cube model is merely for illustrating the process of analyzing the data mart
+simplified into three dimensions; it cannot express the data mart from the reality
+of four dimensions or more.</p>
+<p>Although the data mart used as an example in this section is also composed of a total
+of four dimensions, we will use only three dimensions by ignoring the &#8220;employee&#8221; dimension
+for convenience in order to explain the fundamentals of the analysis process using such
+a three-dimensional cube model. The following is an analysis process for checking the
+sales of a specific product for a specific customer during a specific period.</p>
+<ol class="arabic simple">
+<li>First, pick out only the data with product type &#8220;pencil&#8221; from the data mart.</li>
+</ol>
+<div class="figure">
+<img alt="Pick &quot;pencil&quot;" src="../../_images/dimension_example_pick_pencil.png" />
+</div>
+<ol class="arabic simple" start="2">
+<li>Then select the purchases of Corp. A.</li>
+</ol>
+<div class="figure">
+<img alt="Select Corp. A." src="../../_images/dimension_example_select_corp_a.png" />
+</div>
+<p>3. Finally, select data in 2018. The following example indicates Corp. A purchased
+16 units of Product A on June 9, 2018, and 2 units on October 16, 2018.</p>
+<div class="figure">
+<img alt="Select data in 2018" src="../../_images/dimension_example_select_data_in_2018.png" />
+</div>
+<p>metatron Discovery provides many functions for analysis of multi-dimensional data
+with an intuitive GUI.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="metatron_engine_compared_to_stock_druid.html" class="btn btn-neutral float-right" title="Metatron engine compared to stock druid" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="characteristics_and_limits_of_the_relational_olap_system.html" class="btn btn-neutral" title="Characteristics and limits of the relational OLAP system" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

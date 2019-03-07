@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Features &mdash; metatron discovery docs  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Structure" href="structure.html" />
+    <link rel="prev" title="Overview" href="index.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../kor/index.html">Korean 한글</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">English 영문</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Overview</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structure.html">Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="engine.html">Metatron Engine</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">English 영문</a> &raquo;</li>
+        
+          <li><a href="index.html">Overview</a> &raquo;</li>
+        
+      <li>Features</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/eng/part01/features.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="features">
+<h1>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h1>
+<p>Metatron Discovery imports data from a data source ingested in the Metatron operation
+server or other external data sources, analyzes it using various advanced analysis
+functions, and outputs the result as various charts and reports. To utilize this
+module, you must understand the overall structure shown below.</p>
+<div class="figure">
+<img alt="Structure of metatron Discovery" src="../../_images/structure_of_metatron_discovery.png" />
+</div>
+<p><strong>Source Data</strong></p>
+<p>Data imported when creating the data source. The current metatron version supports
+file type, databases, and staging DB type.</p>
+<p><strong>Data Preparation &amp; Ingestiona</strong></p>
+<p>Refines and processes imports from source data, and then ingests them to metatron’s
+Hive storage or exports them into local files.</p>
+<p><strong>Data Storagea</strong></p>
+<p>Saves data to the Druid engine of metatron based on multi-dimensional OLAP.
+Data saved as this type facilitates easy visualization and analysis.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">See Section 3.2 for more information.</p>
+</div>
+<p><strong>Data Analytics &amp; Visualization</strong></p>
+<p>Searches, analyzes and visualizes data stored in data storage.</p>
+<ul class="simple">
+<li><strong>Workspace</strong>: Space to create and manages workbooks, workbenches, and notebooks.</li>
+<li><strong>Workbook</strong>: Analyzes multi-dimensional, time-stamped data sources stored in
+the Druid engine and visualizes and reports the results.</li>
+<li><strong>Notebook</strong>: Able to perform advanced analysis such as deep learning or machine
+learning by linking external analytics tools including R, Python, and Scala.</li>
+<li><strong>Workbench</strong>: Performs an SQL-based analysis.</li>
+</ul>
+<p><strong>Data monitoring</strong></p>
+<p>Monitors various data logs generated in metatron’s Staging DB (internal Hive DB)
+and workbench (external DB).</p>
+<p><strong>User Permission and Account</strong></p>
+<p>Adds and deletes metatron Discovery users, or manages user permission.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="structure.html" class="btn btn-neutral float-right" title="Structure" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'',
+              LANGUAGE:'None',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

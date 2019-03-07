@@ -267,9 +267,9 @@
 <li>지정된 행의 내용을 컬럼명으로 설정합니다.</li>
 <li>첫 행에 컬럼명이 있는 CSV 파일을 읽어들일 때에 유용합니다.</li>
 <li><dl class="first docutils">
-<dt>특별한 설정이 없는 한, 데이터 프리퍼레이션은 자동으로 <code class="docutils literal notranslate"><span class="pre">header</span></code> 를 수행합니다.</dt>
+<dt>특별한 설정이 없는 한, 데이터 프리퍼레이션은 자동으로 <code class="docutils literal"><span class="pre">header</span></code> 를 수행합니다.</dt>
 <dd><ul class="first last">
-<li>자동적용된 <code class="docutils literal notranslate"><span class="pre">header</span></code> 의 결과를 원치 않는 경우, 해당 룰을 삭제하면 됩니다만, 보통 그런 일은 흔치 않습니다.</li>
+<li>자동적용된 <code class="docutils literal"><span class="pre">header</span></code> 의 결과를 원치 않는 경우, 해당 룰을 삭제하면 됩니다만, 보통 그런 일은 흔치 않습니다.</li>
 </ul>
 </dd>
 </dl>
@@ -368,7 +368,7 @@
 <dt>상세설명</dt>
 <dd><ul class="first last">
 <li>선택된 컬럼의 이름을 변경합니다.</li>
-<li>2개 이상의 컬럼들에 대해 한번에 rename을 수행하고자 할 때엔 하단 명령 입력창에 있는 <code class="docutils literal notranslate"><span class="pre">전체</span> <span class="pre">컬럼</span> <span class="pre">변경</span></code> 버튼을 클릭하면 다음과 같은 팝업창이 뜹니다.</li>
+<li>2개 이상의 컬럼들에 대해 한번에 rename을 수행하고자 할 때엔 하단 명령 입력창에 있는 <code class="docutils literal"><span class="pre">전체</span> <span class="pre">컬럼</span> <span class="pre">변경</span></code> 버튼을 클릭하면 다음과 같은 팝업창이 뜹니다.</li>
 </ul>
 </dd>
 </dl>
@@ -436,8 +436,8 @@
 <li><dl class="first docutils">
 <dt>패턴: 갈아치울 대상 문자열 패턴</dt>
 <dd><ul class="first last">
-<li>상수 문자열인 경우: <code class="docutils literal notranslate"><span class="pre">'</span></code> 로 감싸져 있는 경우 (<code class="docutils literal notranslate"><span class="pre">'seoul'</span></code>, <code class="docutils literal notranslate"><span class="pre">'서울'</span></code>, <code class="docutils literal notranslate"><span class="pre">'서울</span> <span class="pre">특별시'</span></code> 등)</li>
-<li>정규식인 경우: <code class="docutils literal notranslate"><span class="pre">/</span></code> 로 감싸져 있는 경우 (<code class="docutils literal notranslate"><span class="pre">/[</span> <span class="pre">,_]+/</span></code>, <code class="docutils literal notranslate"><span class="pre">/\s+$/</span></code> 등)</li>
+<li>상수 문자열인 경우: <code class="docutils literal"><span class="pre">'</span></code> 로 감싸져 있는 경우 (<code class="docutils literal"><span class="pre">'seoul'</span></code>, <code class="docutils literal"><span class="pre">'서울'</span></code>, <code class="docutils literal"><span class="pre">'서울</span> <span class="pre">특별시'</span></code> 등)</li>
+<li>정규식인 경우: <code class="docutils literal"><span class="pre">/</span></code> 로 감싸져 있는 경우 (<code class="docutils literal"><span class="pre">/[</span> <span class="pre">,_]+/</span></code>, <code class="docutils literal"><span class="pre">/\s+$/</span></code> 등)</li>
 </ul>
 </dd>
 </dl>
@@ -446,7 +446,7 @@
 <dt>새로운 값: 새롭게 놓일 문자열 수식</dt>
 <dd><ul class="first last">
 <li>상수 문자열</li>
-<li>정규식의 그룹을 이용한 문자열 수식: <code class="docutils literal notranslate"><span class="pre">$1_$2_$3</span></code> 등</li>
+<li>정규식의 그룹을 이용한 문자열 수식: <code class="docutils literal"><span class="pre">$1_$2_$3</span></code> 등</li>
 </ul>
 </dd>
 </dl>
@@ -476,7 +476,7 @@
 <li><dl class="first docutils">
 <dt>주의사항</dt>
 <dd><ul class="first last">
-<li><strong>새로운 값</strong> 에는 <code class="docutils literal notranslate"><span class="pre">'</span></code> 이나 <code class="docutils literal notranslate"><span class="pre">/</span></code> 를 사용하지 않습니다.</li>
+<li><strong>새로운 값</strong> 에는 <code class="docutils literal"><span class="pre">'</span></code> 이나 <code class="docutils literal"><span class="pre">/</span></code> 를 사용하지 않습니다.</li>
 <li><strong>새로운 값</strong> 에 다른 컬럼의 값을 이용할 수 없습니다. <strong>replace</strong> 는 순수히 해당 컬럼 내용안에서의 <strong>문자열</strong> 변환입니다. (cf. <a class="reference internal" href="#set">set</a> 룰)</li>
 </ul>
 </dd>
@@ -497,8 +497,8 @@
 <li><dl class="first docutils">
 <dt>수식: 대상 컬럼의 값이 될 수식. 다른 컬럼값을 참조할 수 있습니다. (cf. <a class="reference internal" href="#replace">replace</a> 룰)</dt>
 <dd><ul class="first last">
-<li>여러 컬럼을 대상으로 하는 경우, <code class="docutils literal notranslate"><span class="pre">$col</span></code> 이라고 쓰면 각 컬럼에 대해 변환을 할 때, 그 대상 컬럼을 가리키도록 치환됩니다.</li>
-<li>즉, <code class="docutils literal notranslate"><span class="pre">column1</span></code> , <code class="docutils literal notranslate"><span class="pre">column2</span></code> 에 대해 <strong>set</strong> 명령을 사용하는 경우, <code class="docutils literal notranslate"><span class="pre">column1</span></code> 에 대해 변환을 할 때엔 <code class="docutils literal notranslate"><span class="pre">$col</span></code> 이 <code class="docutils literal notranslate"><span class="pre">column1</span></code> 이 되고, <code class="docutils literal notranslate"><span class="pre">column2</span></code> 에 대해 변환을 할 때엔 <code class="docutils literal notranslate"><span class="pre">$col</span></code> 이 <code class="docutils literal notranslate"><span class="pre">column2</span></code> 가 됩니다.</li>
+<li>여러 컬럼을 대상으로 하는 경우, <code class="docutils literal"><span class="pre">$col</span></code> 이라고 쓰면 각 컬럼에 대해 변환을 할 때, 그 대상 컬럼을 가리키도록 치환됩니다.</li>
+<li>즉, <code class="docutils literal"><span class="pre">column1</span></code> , <code class="docutils literal"><span class="pre">column2</span></code> 에 대해 <strong>set</strong> 명령을 사용하는 경우, <code class="docutils literal"><span class="pre">column1</span></code> 에 대해 변환을 할 때엔 <code class="docutils literal"><span class="pre">$col</span></code> 이 <code class="docutils literal"><span class="pre">column1</span></code> 이 되고, <code class="docutils literal"><span class="pre">column2</span></code> 에 대해 변환을 할 때엔 <code class="docutils literal"><span class="pre">$col</span></code> 이 <code class="docutils literal"><span class="pre">column2</span></code> 가 됩니다.</li>
 </ul>
 </dd>
 </dl>
@@ -527,7 +527,7 @@
 <dt>상세설명</dt>
 <dd><ul class="first last">
 <li>해당 컬럼의 값을 주어진 수식의 결과값으로 대체합니다.</li>
-<li>복잡한 수식을 사용하는 경우 <code class="docutils literal notranslate"><span class="pre">고급</span> <span class="pre">편집기</span></code> 를 클릭하면 다음과 같은 팝업창이 뜹니다.</li>
+<li>복잡한 수식을 사용하는 경우 <code class="docutils literal"><span class="pre">고급</span> <span class="pre">편집기</span></code> 를 클릭하면 다음과 같은 팝업창이 뜹니다.</li>
 </ul>
 </dd>
 </dl>
@@ -536,7 +536,7 @@
 <div class="figure">
 <img alt="../_images/rule_kinds_set_2.png" src="../_images/rule_kinds_set_2.png" />
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">고급</span> <span class="pre">편집기</span></code> 를 활용하면 컬럼의 리스트와 함수의 리스트 및 각 설명, 예시를 보면서 넓은 창에서 수식을 편집할 수 있고, 실제로 룰을 실행하기 전에 수식의 유효성을 체크해볼 수 있습니다.</p>
+<p><code class="docutils literal"><span class="pre">고급</span> <span class="pre">편집기</span></code> 를 활용하면 컬럼의 리스트와 함수의 리스트 및 각 설명, 예시를 보면서 넓은 창에서 수식을 편집할 수 있고, 실제로 룰을 실행하기 전에 수식의 유효성을 체크해볼 수 있습니다.</p>
 </div>
 <div class="section" id="derive">
 <h2>derive<a class="headerlink" href="#derive" title="제목 주소">¶</a></h2>
@@ -625,9 +625,9 @@
 <dt>주의사항</dt>
 <dd><ul class="first last">
 <li><dl class="first docutils">
-<dt><a class="reference internal" href="#replace">replace</a> 룰도 마찬가지지만, <code class="docutils literal notranslate"><span class="pre">'</span></code> 로 감싸는 것은 생략할 수 있습니다.</dt>
+<dt><a class="reference internal" href="#replace">replace</a> 룰도 마찬가지지만, <code class="docutils literal"><span class="pre">'</span></code> 로 감싸는 것은 생략할 수 있습니다.</dt>
 <dd><ul class="first last">
-<li>즉, <code class="docutils literal notranslate"><span class="pre">/</span></code> 로도, <code class="docutils literal notranslate"><span class="pre">'</span></code> 로도 감싸지지 않는 문자열이 입력되었을시, 알아서 <code class="docutils literal notranslate"><span class="pre">'</span></code> 로 감싸서 전달되게 되어있습니다.</li>
+<li>즉, <code class="docutils literal"><span class="pre">/</span></code> 로도, <code class="docutils literal"><span class="pre">'</span></code> 로도 감싸지지 않는 문자열이 입력되었을시, 알아서 <code class="docutils literal"><span class="pre">'</span></code> 로 감싸서 전달되게 되어있습니다.</li>
 </ul>
 </dd>
 </dl>
@@ -862,7 +862,7 @@
 <dd><ul class="first last">
 <li>샘플링된 결과에 대해서만 연산을 수행합니다. 때문에 전체 데이터에 대한 결과, 즉 스냅샷은 달라질 수 있습니다.</li>
 <li><dl class="first docutils">
-<dt>count함수 사용시 <code class="docutils literal notranslate"><span class="pre">()</span></code> 를 꼭 붙여야 하는 것에 유의하세요.</dt>
+<dt>count함수 사용시 <code class="docutils literal"><span class="pre">()</span></code> 를 꼭 붙여야 하는 것에 유의하세요.</dt>
 <dd><ul class="first last">
 <li>count(<em>colname</em>)은 현재 지원하지 않습니다.</li>
 </ul>
@@ -1175,7 +1175,7 @@
         <script type="text/javascript" src="../_static/underscore.js"></script>
         <script type="text/javascript" src="../_static/doctools.js"></script>
         <script type="text/javascript" src="../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
   
