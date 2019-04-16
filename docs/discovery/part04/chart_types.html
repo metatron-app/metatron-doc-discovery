@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>차트 타입 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>차트 타입 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="차트 스타일 속성" href="chart_style.html" />
     <link rel="prev" title="차트 그리기(pivoting)" href="pivoting.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -94,11 +97,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="workbook_overview.html">워크북 소개</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manage_dashboards.html">대시보드</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="manage_charts.html">차트</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="chart_overview.html">차트소개</a></li>
 <li class="toctree-l3"><a class="reference internal" href="create_a_chart.html">차트 만들기</a></li>
 <li class="toctree-l3"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a></li>
 <li class="toctree-l3"><a class="reference internal" href="add_a_custom_column.html">사용자 컬럼 추가</a></li>
@@ -193,13 +194,13 @@
 <h1>차트 타입<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>20여가지의 차트를 제공하고 있습니다. 차트를 선택하기 전에 먼저 컬럼들을 선반에 올려놓으면 그에 어울리는 차트들이 보라색으로 강조됩니다.</p>
 <p>아래 표는 각 차트별 생성조건과 사용 속성, 사용 유형, 사용 예시에 대해 정리한 것입니다.</p>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../../_images/Chart_Types.01.png" src="../../_images/Chart_Types.01.png" />
 </div>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../../_images/Chart_Types.02.png" src="../../_images/Chart_Types.02.png" />
 </div>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../../_images/Chart_Types.03.png" src="../../_images/Chart_Types.03.png" />
 </div>
 </div>
@@ -215,7 +216,7 @@
         <a href="chart_style.html" class="btn btn-neutral float-right" title="차트 스타일 속성" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pivoting.html" class="btn btn-neutral" title="차트 그리기(pivoting)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pivoting.html" class="btn btn-neutral float-left" title="차트 그리기(pivoting)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -241,37 +242,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

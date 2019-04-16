@@ -15,7 +15,7 @@ Metatron Discovery에서 ‘워크북’은 하나의 독립적인 데이터 분
 .. figure:: /_static/img/discovery/part04/create_a_workbook_02.png
   :align: center
 
-3. 대시보드를 생성하는 절차는 3창을 참조하십시오. 데이터소스를 추가합니다. 화면 가운데의 '+ 데이터소스 추가' 버튼을 클릭 후, 데이터소스를 선택하여 대시보드를 생성합니다
+3. 대시보드를 생성하는 절차는 3창을 참조하십시오. 데이터 소스를 추가합니다. 화면 가운데의 '+ 데이터 소스 추가' 버튼을 클릭 후, 데이터 소스를 선택하여 대시보드를 생성합니다
 
 .. figure:: /_static/img/discovery/part04/create_a_workbook_03.png
   :align: center

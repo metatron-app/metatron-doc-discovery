@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터 스냅샷 결과 보기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>데이터 스냅샷 결과 이용하기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="메타트론 어노말리 소개" href="../../anomaly/part01/index.html" />
     <link rel="prev" title="데이터 스냅샷 만들기" href="create_a_datasnapshot.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -97,11 +100,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="data_preparation_overview.html">데이터 프리퍼레이션 소개</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
-<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">데이터 플로우 관리하기</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">데이터 스냅샷 결과 보기</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">메타트론 엔진으로 적재하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">데이터플로우 관리하기</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">데이터 스냅샷 결과 이용하기</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snapshot-result-check">데이터 스냅샷 결과 확인하기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metatron">Metatron 엔진으로 적재하기</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#csv">CSV파일로 다운로드 받기</a></li>
 </ul>
 </li>
@@ -161,7 +164,7 @@
         
           <li><a href="index.html">데이터 프리퍼레이션</a> &raquo;</li>
         
-      <li>데이터 스냅샷 결과 보기</li>
+      <li>데이터 스냅샷 결과 이용하기</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,55 +184,69 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>데이터 스냅샷 결과 보기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
-<p>스냅샷의 생성 단계는 [성공, 실패, 처리중]의 3가지 경우가 있습니다.</p>
-<ul class="simple">
-<li>성공 = SUCCEEDED</li>
-<li>실패 = FAILED</li>
-<li>처리중 = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING</li>
+<h1>데이터 스냅샷 결과 이용하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>데이터플로우를 통해 생성된 <strong>데이터 스냅샷</strong>은 다음과 같이 활용할 수 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#snapshot-result-check"><span class="std std-ref">데이터 스냅샷 결과 확인하기</span></a></p></li>
+<li><p><a class="reference internal" href="#snapshot-into-druid"><span class="std std-ref">Metatron 엔진으로 적재하기</span></a></p></li>
+<li><p><a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">CSV파일로 다운로드 받기</span></a></p></li>
 </ul>
+</div></blockquote>
+<div class="section" id="snapshot-result-check">
+<span id="id2"></span><h2>데이터 스냅샷 결과 확인하기<a class="headerlink" href="#snapshot-result-check" title="제목 주소">¶</a></h2>
+<p>스냅샷의 생성 단계는 다음과 같은 3가지 경우로 분류됩니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>성공</strong> = SUCCEEDED</p></li>
+<li><p><strong>실패</strong> = FAILED</p></li>
+<li><p><strong>처리중</strong> = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING</p></li>
+</ul>
+</div></blockquote>
 <p>스냅샷의 상세한 처리 결과는 다음 2가지 경로를 통해 확인할 수 있습니다.</p>
-<ul class="simple">
-<li>'WORKSPACE - MANAGEMENT - 데이터 프리퍼레이션 - 데이터 스냅샷'의 스냅샷 목록을 통해서 상세 보기를 할 수 있습니다.</li>
-</ul>
-<div class="figure">
+<blockquote>
+<div><ul>
+<li><p><strong>MANAGEMENT</strong> &gt; <strong>데이터 프리퍼레이션</strong> &gt; <strong>데이터 스냅샷</strong>의 스냅샷 목록을 통해서 확인</p>
+<blockquote>
+<div><div class="figure align-center">
 <img alt="../../_images/data_snapshot_1.png" src="../../_images/data_snapshot_1.png" />
 </div>
-<ul class="simple">
-<li>'데이터플로우'의 우측 영역 '스냅샷 탭'을 통해서 상세 보기를 할 수 있습니다.</li>
-</ul>
-<div class="figure">
+</div></blockquote>
+</li>
+<li><p><strong>데이터플로우</strong>의 <a class="reference internal" href="edit_rules.html"><span class="doc">룰 편집</span></a> 화면 우측에서 <strong>스냅샷(#)</strong> 탭을 클릭</p>
+<blockquote>
+<div><div class="figure align-center">
 <img alt="../../_images/data_snapshot_2.png" src="../../_images/data_snapshot_2.png" />
 </div>
-<p>스냅샷 상세 보기 화면으로 들어가면 스냅샷의 처리 결과와 기타 정보를 확인할 수 있습니다.</p>
-<ul class="simple">
-<li>생성 성공한 데이터 스냅샷의 예시</li>
+</div></blockquote>
+</li>
 </ul>
-<div class="figure">
+</div></blockquote>
+<p>생성에 성공한 스냅샷의 상세 보기 화면으로 들어가면, 데이터의 유효성 비율, 생성된 스냅샷의 그리드 등을 확인할 수 있고, 스냅샷 결과를 <a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">CSV 파일로 다운로드</span></a>할 수 있습니다.</p>
+<div class="figure align-center">
 <img alt="../../_images/data_snapshot_3.png" src="../../_images/data_snapshot_3.png" />
 </div>
-<p>스냅샷의 각종 정보와 함께 데이터의 유효성 비율과 생성된 스냅샷의 그리드를 확인할 수 있고, 스냅샷 결과를 CSV 파일로 다운로드 할 수 있습니다.</p>
-<ul class="simple">
-<li>생성 실패한 데이터 스냅샷의 예시</li>
-</ul>
-<div class="figure">
+<p>유효한 데이터가 생성되지 못한 스냅샷의 상세 보기 화면으로 들어가면, 실패를 발생시킨 예외의 로그가 표시됩니다.</p>
+<div class="figure align-center">
 <img alt="../../_images/data_snapshot_4.png" src="../../_images/data_snapshot_4.png" />
 </div>
-<p>유효한 데이터가 생성되지 못하였을 경우, 실패를 발생시킨 예외의 로그를 표시합니다.</p>
-<div class="section" id="id2">
-<h2>메타트론 엔진으로 적재하기<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+</div>
+<div class="section" id="metatron">
+<span id="snapshot-into-druid"></span><h2>Metatron 엔진으로 적재하기<a class="headerlink" href="#metatron" title="제목 주소">¶</a></h2>
 <p>(개발예정)</p>
 </div>
 <div class="section" id="csv">
-<h2>CSV파일로 다운로드 받기<a class="headerlink" href="#csv" title="제목 주소">¶</a></h2>
-<div class="figure">
+<span id="snapshot-into-csv"></span><h2>CSV파일로 다운로드 받기<a class="headerlink" href="#csv" title="제목 주소">¶</a></h2>
+<p>생성에 성공한 스냅샷의 상세 보기에서는 <strong>CSV로 다운로드</strong>가 가능합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
 <img alt="../../_images/data_snapshot_5.png" src="../../_images/data_snapshot_5.png" />
 </div>
-<p>생성에 성공한 스냅샷의 상세 보기에서는 'CSV로 다운로드'가 가능합니다.</p>
-<div class="figure">
+</div></blockquote>
+<p>다운로드한 파일은 표준 CSV 형식으로, 'comma'로 구분되고 'new line'으로 개행합니다.</p>
+<div class="figure align-center">
 <img alt="../../_images/data_snapshot_6.png" src="../../_images/data_snapshot_6.png" />
 </div>
-<p>다운로드한 파일은 표준 CSV 형식으로, 'comma'로 구분되고 'new line'으로 개행합니다.</p>
 </div>
 </div>
 
@@ -244,7 +261,7 @@
         <a href="../../anomaly/part01/index.html" class="btn btn-neutral float-right" title="메타트론 어노말리 소개" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="create_a_datasnapshot.html" class="btn btn-neutral" title="데이터 스냅샷 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="create_a_datasnapshot.html" class="btn btn-neutral float-left" title="데이터 스냅샷 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -270,37 +287,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

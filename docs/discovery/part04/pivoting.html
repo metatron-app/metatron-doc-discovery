@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>차트 그리기(pivoting) &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>차트 그리기(pivoting) &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="차트 타입" href="chart_types.html" />
     <link rel="prev" title="사용자 컬럼 추가" href="add_a_custom_column.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -94,11 +97,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="workbook_overview.html">워크북 소개</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manage_dashboards.html">대시보드</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="manage_charts.html">차트</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="chart_overview.html">차트소개</a></li>
 <li class="toctree-l3"><a class="reference internal" href="create_a_chart.html">차트 만들기</a></li>
 <li class="toctree-l3"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a></li>
 <li class="toctree-l3"><a class="reference internal" href="add_a_custom_column.html">사용자 컬럼 추가</a></li>
@@ -196,29 +197,29 @@
 <h1>차트 그리기(pivoting)<a class="headerlink" href="#pivoting" title="제목 주소">¶</a></h1>
 <p>Pivoting이란 주어진 테이블을 특정 컬럼들을 기준으로 그룹화하는 과정을 의미하며, 이를 통해 분석가는 원천 데이터의 특정한 측면을 그래픽 또는 도표로 확인할 수 있습니다.
 이러한 과정에는 의미 있는 데이터를 포함하는 컬럼들을 열/행/교차 선반에 배치하는 것을 포함합니다.</p>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../../_images/pivoting.01.png" src="../../_images/pivoting.01.png" />
 </div>
 <p>위 그림은 두 개의 차원값 컬럼을 열선반에 배치하고 하나의 측정값 컬럼을 교차선반에 배치 한 상태를 보여주고 있습니다.
 차트에는 이렇게 선반에 올려놓은 컬럼들의 데이터가 표시됩니다.</p>
 <p>차트 유형별로 선반별 필수/권장 컬럼 유형이 다르며, 컬럼들을 선반에 올려놓기 전에 먼저 차트 유형을 선택하면 선반에 필요한 컬럼 유형이 제시됩니다.</p>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../../_images/pivoting.02.png" src="../../_images/pivoting.02.png" />
 </div>
 <div class="section" id="id1">
 <h2>열/행/교차 선반의 개념<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
 <p>열/행/교차 선반의 개념은 Excel의 구조를 생각하면 쉽게 이해할 수 있습니다. 아래 그림과 같이 열/행은 블록을 정의하는 역할을 하고, 교차는 블록 안에 들어갈 값을 정하는 역할을 합니다.</p>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../../_images/pivoting.03.png" src="../../_images/pivoting.03.png" />
 </div>
 <p>Excel에서 데이터를 열/행/교차를 2차원 값인 그리드에 표현한 다면, Metatron은 OLAP Data Discovery 도구로서, OLAP Cube를 통해 다차원에서 데이터를 조회합니다.
 아래의 차트는 metatron에서 3차원 큐브로 나타낸 열/행/교차 값의 축 그림 입니다.</p>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../../_images/pivoting.04.png" src="../../_images/pivoting.04.png" />
 </div>
 <p>Excel 그리드의 값을 3차원 차트에서 표현한다면 그리드의 교차값이 막대바 형태로 여러 개 세워 지게 될 수 있습니다. Metatron에서는 2차원 단면으로 차트가 보여지기 때문에 열과 행 기준으로 막대 바를 쌓아 올려서 표현하게 됩니다.
 결국 아래 그 림의 회색 부분과 같은 2차원 형태의 차트로 나타납니다.</p>
-<div class="figure">
+<div class="figure align-center">
 <img alt="../../_images/pivoting.05.png" src="../../_images/pivoting.05.png" />
 </div>
 </div>
@@ -235,7 +236,7 @@
         <a href="chart_types.html" class="btn btn-neutral float-right" title="차트 타입" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="add_a_custom_column.html" class="btn btn-neutral" title="사용자 컬럼 추가" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="add_a_custom_column.html" class="btn btn-neutral float-left" title="사용자 컬럼 추가" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -261,37 +262,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
