@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>룰 편집 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>룰 편집 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -17,21 +17,13 @@
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
+  
+  
     
 
   
+
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -40,16 +32,21 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="룰의 종류" href="rule_kinds.html" />
     <link rel="prev" title="데이터셋 추가하기" href="add_datasets.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -66,7 +63,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -196,58 +193,58 @@
 이 변형 규칙과 입출력 명세를 합쳐서 우리는 실제 데이터에 적용하거나, 또 비슷한 다른 데이터에 적용하거나, 이런 작업들을 스케쥴링합니다.</p>
 <p>이제 룰을 만들고, 결과를 확인하고, 룰을 다시 변경하거나 삭제하는 일에 대한 설명을 하겠습니다.</p>
 <p>먼저 룰 편집 화면의 구성은 다음과 같습니다.</p>
-<div class="figure align-center">
+<div class="figure">
 <img alt="../../_images/edit_rules_1.png" src="../../_images/edit_rules_1.png" />
 </div>
 <ol class="upperalpha simple">
-<li><p>컬럼 타입, 이름, 메뉴 버튼</p></li>
-<li><p>룰 간편 생성을 위한 메뉴</p></li>
-<li><p>적용된 룰 리스트 및 중간 삽입 버튼 (룰 사이에 마우스를 갖다대면 나옴)</p></li>
-<li><p>Undo, redo가 가능한 경우 활성화</p></li>
-<li><p>룰 세부 내용 입력 패널</p></li>
-<li><p>컬럼 값 분포 및 distinct count, type mismatch 또는 null value 관련 정보 등</p></li>
+<li>컬럼 타입, 이름, 메뉴 버튼</li>
+<li>룰 간편 생성을 위한 메뉴</li>
+<li>적용된 룰 리스트 및 중간 삽입 버튼 (룰 사이에 마우스를 갖다대면 나옴)</li>
+<li>Undo, redo가 가능한 경우 활성화</li>
+<li>룰 세부 내용 입력 패널</li>
+<li>컬럼 값 분포 및 distinct count, type mismatch 또는 null value 관련 정보 등</li>
 </ol>
 <div class="section" id="id2">
 <h2>룰 생성하기<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
 <div class="section" id="id3">
 <h3>컬럼 헤더 메뉴를 이용하는 방법<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
 <ol class="arabic">
-<li><p>컬럼 헤더를 클릭해서 대상 컬럼을 고릅니다.</p>
+<li><p class="first">컬럼 헤더를 클릭해서 대상 컬럼을 고릅니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>기능 키를 이용해서 다수의 컬럼을 고를 수 있습니다.</p></li>
-<li><p>OS에 따라 ^ 또는 ⌘ 키를 누른 채 클릭을 하면 해당 컬럼이 선택/해제됩니다. (토글)</p></li>
-<li><p>Shift 키를 누른 채 클릭을 하면 범위가 선택됩니다.</p></li>
+<li>기능 키를 이용해서 다수의 컬럼을 고를 수 있습니다.</li>
+<li>OS에 따라 ^ 또는 ⌘ 키를 누른 채 클릭을 하면 해당 컬럼이 선택/해제됩니다. (토글)</li>
+<li>Shift 키를 누른 채 클릭을 하면 범위가 선택됩니다.</li>
 </ul>
-<div class="figure align-center">
+<div class="figure">
 <img alt="../../_images/edit_rules_2.png" src="../../_images/edit_rules_2.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>선택된 컬럼 중 하나의 헤더에서 <img alt="header_menu" src="../../_images/header_menu.png" /> 아이콘을 클릭해서 헤더 메뉴를 연 후, 변환 명령을 선택합니다.</p>
+<li><p class="first">선택된 컬럼 중 하나의 헤더에서 <img alt="header_menu" src="../../_images/header_menu.png" /> 아이콘을 클릭해서 헤더 메뉴를 연 후, 변환 명령을 선택합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>이 중에서 <strong>drop</strong>, <strong>settype</strong> 등은 즉시 실행됩니다.</p></li>
+<li>이 중에서 <strong>drop</strong>, <strong>settype</strong> 등은 즉시 실행됩니다.</li>
 </ul>
-<div class="figure align-center">
+<div class="figure">
 <img alt="../../_images/edit_rules_3.png" src="../../_images/edit_rules_3.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>추가 입력이 필요한 경우, 하단 명령 입력 패널을 통해 내용을 입력한 후 <strong>추가</strong> 버튼을 누릅니다.</p>
+<li><p class="first">추가 입력이 필요한 경우, 하단 명령 입력 패널을 통해 내용을 입력한 후 <strong>추가</strong> 버튼을 누릅니다.</p>
 <blockquote>
-<div><div class="figure align-center">
+<div><div class="figure">
 <img alt="../../_images/edit_rules_4.png" src="../../_images/edit_rules_4.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>몇몇 룰의 경우에는 분포도 막대를 선택해서 명령을 수행할 수도 있습니다.</p>
+<li><p class="first">몇몇 룰의 경우에는 분포도 막대를 선택해서 명령을 수행할 수도 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>분포도의 막대를 클릭하면 해당 범위를 조건으로 필터링 등을 실시할 수 있습니다(토글).</p></li>
-<li><p>Type mismatch, null value 그래프를 클릭해서 해당 값들에 대해 조건을 걸 수도 있습니다.</p></li>
+<li>분포도의 막대를 클릭하면 해당 범위를 조건으로 필터링 등을 실시할 수 있습니다(토글).</li>
+<li>Type mismatch, null value 그래프를 클릭해서 해당 값들에 대해 조건을 걸 수도 있습니다.</li>
 </ul>
-<div class="figure align-center">
+<div class="figure">
 <img alt="../../_images/edit_rules_13.png" src="../../_images/edit_rules_13.png" />
 </div>
 </div></blockquote>
@@ -257,19 +254,19 @@
 <div class="section" id="id4">
 <h3>하단 명령 입력 패널을 이용하는 방법<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
 <ol class="arabic">
-<li><p>화면 하단 명령 입력 패널에서 변환 룰(커맨드)을 선택합니다.</p>
+<li><p class="first">화면 하단 명령 입력 패널에서 변환 룰(커맨드)을 선택합니다.</p>
 <blockquote>
-<div><div class="figure align-center">
+<div><div class="figure">
 <img alt="../../_images/edit_rules_5.png" src="../../_images/edit_rules_5.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>추가 입력이 필요한 경우 내용을 더 입력한 후 <strong>추가</strong> 버튼을 누릅니다.</p>
+<li><p class="first">추가 입력이 필요한 경우 내용을 더 입력한 후 <strong>추가</strong> 버튼을 누릅니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>대상 컬럼을 고르는 입력 패널이 있지만, 이 경우에도 컬럼 헤더를 클릭해서 컬럼을 지정할 수도 있습니다.</p></li>
+<li>대상 컬럼을 고르는 입력 패널이 있지만, 이 경우에도 컬럼 헤더를 클릭해서 컬럼을 지정할 수도 있습니다.</li>
 </ul>
-<div class="figure align-center">
+<div class="figure">
 <img alt="../../_images/edit_rules_6.png" src="../../_images/edit_rules_6.png" />
 </div>
 </div></blockquote>
@@ -279,20 +276,20 @@
 <div class="section" id="id5">
 <h3>룰 리스트 중간에 삽입하는 방법<a class="headerlink" href="#id5" title="제목 주소">¶</a></h3>
 <ol class="arabic">
-<li><p>화면 우측의 변환 룰 리스트에서 새 룰을 삽입하고자 하는 룰 경계에 마우스를 갖다대면 <strong>+ 룰 추가</strong> 버튼이 생깁니다. 이 버튼을 누르십시오.</p>
+<li><p class="first">화면 우측의 변환 룰 리스트에서 새 룰을 삽입하고자 하는 룰 경계에 마우스를 갖다대면 <strong>+ 룰 추가</strong> 버튼이 생깁니다. 이 버튼을 누르십시오.</p>
 <blockquote>
-<div><div class="figure align-center">
+<div><div class="figure">
 <img alt="../../_images/edit_rules_7.png" src="../../_images/edit_rules_7.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>화면 하단 명령 입력 패널에서 변환 룰(커맨드)를 선택하고 추가 내용을 입력한 후, <strong>추가</strong> 버튼을 누릅니다.</p>
+<li><p class="first">화면 하단 명령 입력 패널에서 변환 룰(커맨드)를 선택하고 추가 내용을 입력한 후, <strong>추가</strong> 버튼을 누릅니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>이렇게 룰을 중간에 삽입하면, 삽입된 위치 이후의 모든 룰이 영향을 받습니다.</p></li>
-<li><p>이 때 정상적으로 수행될 수 없는 룰이 생기면, 빨간 색으로 표시되고 해당 스텝은 이전 스텝의 결과를 그대로 갖게 됩니다.</p></li>
+<li>이렇게 룰을 중간에 삽입하면, 삽입된 위치 이후의 모든 룰이 영향을 받습니다.</li>
+<li>이 때 정상적으로 수행될 수 없는 룰이 생기면, 빨간 색으로 표시되고 해당 스텝은 이전 스텝의 결과를 그대로 갖게 됩니다.</li>
 </ul>
-<div class="figure align-center">
+<div class="figure">
 <img alt="../../_images/edit_rules_6.png" src="../../_images/edit_rules_6.png" />
 </div>
 </div></blockquote>
@@ -305,19 +302,19 @@
 <div class="section" id="id7">
 <h3>룰 수정<a class="headerlink" href="#id7" title="제목 주소">¶</a></h3>
 <ol class="arabic">
-<li><p>화면 우측의 변환 룰 리스트에서 수정하고자 하는 룰 위에 마우스를 갖다대면 <img alt="edit" src="../../_images/icon_edit.png" /> 버튼이 생깁니다. 이 버튼을 누르십시오.</p>
+<li><p class="first">화면 우측의 변환 룰 리스트에서 수정하고자 하는 룰 위에 마우스를 갖다대면 <img alt="edit" src="../../_images/icon_edit.png" /> 버튼이 생깁니다. 이 버튼을 누르십시오.</p>
 <blockquote>
-<div><div class="figure align-center">
+<div><div class="figure">
 <img alt="../../_images/edit_rules_8.png" src="../../_images/edit_rules_8.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>화면 하단 명령 입력 패널에서 변환 룰 내용을 수정한 후, <strong>완료</strong> 버튼을 누릅니다.</p>
+<li><p class="first">화면 하단 명령 입력 패널에서 변환 룰 내용을 수정한 후, <strong>완료</strong> 버튼을 누릅니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>룰이 수정되면 그 이후의 모든 룰이 영향을 받습니다.</p></li>
+<li>룰이 수정되면 그 이후의 모든 룰이 영향을 받습니다.</li>
 </ul>
-<div class="figure align-center">
+<div class="figure">
 <img alt="../../_images/edit_rules_12.png" src="../../_images/edit_rules_12.png" />
 </div>
 </div></blockquote>
@@ -329,9 +326,9 @@
 <p>화면 우측의 변환 룰 리스트에서 삭제하고자 하는 룰 위에 마우스를 갖다대면 <img alt="delete" src="../../_images/icon_delete.png" /> 버튼이 생깁니다. 이 버튼을 누르십시오.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>선택한 룰이 제거되면 그 이후 모든 룰이 모두 영향을 받습니다.</p></li>
+<li>선택한 룰이 제거되면 그 이후 모든 룰이 모두 영향을 받습니다.</li>
 </ul>
-<div class="figure align-center">
+<div class="figure">
 <img alt="../../_images/edit_rules_10.png" src="../../_images/edit_rules_10.png" />
 </div>
 </div></blockquote>
@@ -340,21 +337,21 @@
 <h3>undo 및 redo<a class="headerlink" href="#undo-redo" title="제목 주소">¶</a></h3>
 <p>화면 우측의 변환 룰 리스트 상단에는 <strong>undo</strong> 및 <strong>redo</strong> 동작을 수행할 수 있는 아이콘이 있습니다.</p>
 <blockquote>
-<div><div class="figure align-center">
+<div><div class="figure">
 <img alt="../../_images/edit_rules_11.png" src="../../_images/edit_rules_11.png" />
 </div>
 </div></blockquote>
 <p>어떤 명령 수행 후, 직전의 상태로 되돌리고자 할 때엔 <img alt="undo" src="../../_images/icon_undo.png" /> 버튼을 클릭하십시오.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>데이터셋에 대한 변형(룰 생성, 수정, 삭제 모두 포함)이 직전의 상태로 되돌아갑니다.</p></li>
-<li><p>해당 변형의 영향을 받은 다른 모든 룰도 직전의 상태가 됩니다.</p></li>
+<li>데이터셋에 대한 변형(룰 생성, 수정, 삭제 모두 포함)이 직전의 상태로 되돌아갑니다.</li>
+<li>해당 변형의 영향을 받은 다른 모든 룰도 직전의 상태가 됩니다.</li>
 </ul>
 </div></blockquote>
 <p>다시 그 명령을 수행하고자 할 때엔 <img alt="redo" src="../../_images/icon_redo.png" /> 버튼을 클릭하십시오.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>해당 명령을 그대로 다시 수행하는 것보다는 <img alt="redo" src="../../_images/icon_redo.png" />를 이용하는 것이 더 빠릅니다. 그 결과가 메모리에 저장되어있기 때문입니다.</p></li>
+<li>해당 명령을 그대로 다시 수행하는 것보다는 <img alt="redo" src="../../_images/icon_redo.png" />를 이용하는 것이 더 빠릅니다. 그 결과가 메모리에 저장되어있기 때문입니다.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -372,7 +369,7 @@
         <a href="rule_kinds.html" class="btn btn-neutral float-right" title="룰의 종류" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="add_datasets.html" class="btn btn-neutral float-left" title="데이터셋 추가하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="add_datasets.html" class="btn btn-neutral" title="데이터셋 추가하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -398,16 +395,37 @@
   
 
 
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

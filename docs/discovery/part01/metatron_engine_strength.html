@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>메타트론 엔진만의 강점 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>메타트론 엔진만의 강점 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -17,21 +17,13 @@
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
+  
+  
     
 
   
+
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -40,16 +32,21 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="메타트론 엔진의 성능 평가" href="metatron_engine_test.html" />
     <link rel="prev" title="메타트론 엔진 노드" href="metatron_engine_node.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -66,7 +63,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -223,15 +220,15 @@ Metatron은 Druid의 이러한 특성을 활용하여 데이터 수집, 저장, 
 <h3>오픈소스 Druid의 한계<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
 <p>기존의 오픈소스 Druid의 한계는 다음과 같다.</p>
 <ul class="simple">
-<li><p>Druid는 데이터 테이블 join에 제약이 많다. 이런 이유로 metatron은 데이터 전처리를 위해 다른 SQL 엔진으로 사용한다.</p></li>
-<li><p>Druid는 SQL 쿼리를 부분적으로만 지원한다.</p></li>
-<li><p>데이터 레이크용으로는 기존의 SQL 엔진을 사용하는 편이 더 낫다.</p></li>
-<li><p>이미 인덱싱된 세그먼트를 수정하거나 행을 추가할 수 없다. 물론 incremental ingestion과 같은 특수한 상황에는 가능하지만 일반적이지 않다.</p></li>
-<li><p>null 값이 지원되지 않는다.</p></li>
-<li><p>측정값에 대한 필터링이 지원되지 않는다.</p></li>
-<li><p>Linear scalability가 보장되지 않는다. 서버의 수를 늘려도 성능이 크게 개선되지 않는다.</p></li>
-<li><p>Druid에서 지원하는 자료형은 제한적이며 추가하기가 어렵다.</p></li>
-<li><p>관리 및 모니터링 도구가 성능이 우수하지 않다.</p></li>
+<li>Druid는 데이터 테이블 join에 제약이 많다. 이런 이유로 metatron은 데이터 전처리를 위해 다른 SQL 엔진으로 사용한다.</li>
+<li>Druid는 SQL 쿼리를 부분적으로만 지원한다.</li>
+<li>데이터 레이크용으로는 기존의 SQL 엔진을 사용하는 편이 더 낫다.</li>
+<li>이미 인덱싱된 세그먼트를 수정하거나 행을 추가할 수 없다. 물론 incremental ingestion과 같은 특수한 상황에는 가능하지만 일반적이지 않다.</li>
+<li>null 값이 지원되지 않는다.</li>
+<li>측정값에 대한 필터링이 지원되지 않는다.</li>
+<li>Linear scalability가 보장되지 않는다. 서버의 수를 늘려도 성능이 크게 개선되지 않는다.</li>
+<li>Druid에서 지원하는 자료형은 제한적이며 추가하기가 어렵다.</li>
+<li>관리 및 모니터링 도구가 성능이 우수하지 않다.</li>
 </ul>
 </div>
 <div class="section" id="id5">
@@ -239,43 +236,43 @@ Metatron은 Druid의 이러한 특성을 활용하여 데이터 수집, 저장, 
 <p>Metatron은 Druid에서 미비한 기능들을 다음과 같이 보강하였다.</p>
 <p><strong>1. 쿼리 성능 개선</strong></p>
 <ul class="simple">
-<li><p>groupBy 쿼리 성능 개선</p></li>
-<li><p>기타 쿼리 성능 소폭 개선</p></li>
+<li>groupBy 쿼리 성능 개선</li>
+<li>기타 쿼리 성능 소폭 개선</li>
 </ul>
 <p><strong>2. 기능 추가</strong></p>
 <ul class="simple">
-<li><p>가상 컬럼(map, expression 등)</p></li>
-<li><p>측정값 자료형 확장(double, string, array 등)</p></li>
-<li><p>계산식 기능 확장</p></li>
-<li><p>Druid 쿼리 결과를 HDFS 또는 파일로 내보낼 수 있음</p></li>
-<li><p>데이터 테이블에 대한 메타 정보 및 통계용 쿼리 추가</p></li>
-<li><p>집계 기능 추가(분산, 상관관계 등)</p></li>
-<li><p>(제한적) 관계형 DB의 window 기능들 구현(lead, lar, running aggregations 등)</p></li>
-<li><p>(제한적) join 기능 강화</p></li>
-<li><p>(제한적) 서브 쿼리 추가</p></li>
-<li><p>임시 데이터 소스</p></li>
-<li><p>복합 쿼리 추가(데이터 소스 summarization, 데이터 소스 간 상관관계, k-평균 등)</p></li>
-<li><p>사용자 정의 컬럼 grouping 지원</p></li>
-<li><p>GIS(지도-GEO서버 연계 adaptor 제공) 기능 지원</p></li>
-<li><p>컬럼별 histogram 제공</p></li>
-<li><p>Bit-slice indexing 지원</p></li>
+<li>가상 컬럼(map, expression 등)</li>
+<li>측정값 자료형 확장(double, string, array 등)</li>
+<li>계산식 기능 확장</li>
+<li>Druid 쿼리 결과를 HDFS 또는 파일로 내보낼 수 있음</li>
+<li>데이터 테이블에 대한 메타 정보 및 통계용 쿼리 추가</li>
+<li>집계 기능 추가(분산, 상관관계 등)</li>
+<li>(제한적) 관계형 DB의 window 기능들 구현(lead, lar, running aggregations 등)</li>
+<li>(제한적)&nbsp;join 기능 강화</li>
+<li>(제한적)&nbsp;서브 쿼리 추가</li>
+<li>임시 데이터 소스</li>
+<li>복합 쿼리 추가(데이터 소스 summarization, 데이터 소스 간 상관관계, k-평균 등)</li>
+<li>사용자 정의 컬럼 grouping 지원</li>
+<li>GIS(지도-GEO서버 연계 adaptor 제공) 기능 지원</li>
+<li>컬럼별 histogram 제공</li>
+<li>Bit-slice indexing 지원</li>
 </ul>
 <p><strong>3. 인덱스 구조 개선</strong></p>
 <ul class="simple">
-<li><p>측정값 필터링용 히스토그램</p></li>
-<li><p>텍스트 필터링용 lucene 포맷 지원</p></li>
+<li>측정값 필터링용 히스토그램</li>
+<li>텍스트 필터링용 lucene 포맷 지원</li>
 </ul>
 <p><strong>4. 다른 시스템들과의 연동 지원</strong></p>
 <ul class="simple">
-<li><p>Hive 저장소 핸들러</p></li>
-<li><p>Hive 테이블 ingestion(Hive 메타 스토어와 연결)</p></li>
-<li><p>ORC 포맷 ingestion</p></li>
-<li><p>JDBC를 통한 RDBMS 데이터 ingestion</p></li>
-<li><p>(제한적) Backport된 SQL 지원</p></li>
+<li>Hive 저장소 핸들러</li>
+<li>Hive 테이블 ingestion(Hive 메타 스토어와 연결)</li>
+<li>ORC 포맷 ingestion</li>
+<li>JDBC를 통한 RDBMS 데이터 ingestion</li>
+<li>(제한적) Backport된 SQL 지원</li>
 </ul>
 <p><strong>5. 기타 개선사항</strong></p>
 <ul class="simple">
-<li><p>버그 수정(50건 이상), 기능 추가 및 기타 경미한 사항들 개선</p></li>
+<li>버그 수정(50건 이상), 기능 추가 및 기타 경미한 사항들 개선</li>
 </ul>
 </div>
 </div>
@@ -292,7 +289,7 @@ Metatron은 Druid의 이러한 특성을 활용하여 데이터 수집, 저장, 
         <a href="metatron_engine_test.html" class="btn btn-neutral float-right" title="메타트론 엔진의 성능 평가" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="metatron_engine_node.html" class="btn btn-neutral float-left" title="메타트론 엔진 노드" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="metatron_engine_node.html" class="btn btn-neutral" title="메타트론 엔진 노드" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -318,16 +315,37 @@ Metatron은 Druid의 이러한 특성을 활용하여 데이터 수집, 저장, 
   
 
 
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

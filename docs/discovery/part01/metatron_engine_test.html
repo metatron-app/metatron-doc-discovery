@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>메타트론 엔진의 성능 평가 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>메타트론 엔진의 성능 평가 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -17,21 +17,13 @@
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
+  
+  
     
 
   
+
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -40,16 +32,21 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="데이터 관리" href="../part02/index.html" />
     <link rel="prev" title="메타트론 엔진만의 강점" href="metatron_engine_strength.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -66,7 +63,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -196,8 +193,8 @@
 <h1>메타트론 엔진의 성능 평가<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>Druid는 ‘실시간’ 탐색이 가능한 데이터 스토어를 지향하는 만큼 수치화된 성능을 평가함에 있어서는 다음의 두 가지 측면에 초점이 맞춰진다.</p>
 <ul class="simple">
-<li><p>Query latency</p></li>
-<li><p>Ingestion latency</p></li>
+<li>Query latency</li>
+<li>Ingestion latency</li>
 </ul>
 <p>쿼리 처리와 ingestion에서 소요되는 시간을 최소화하는 것이 ‘실시간’을 이루는 핵심이 되기 때문이다. 지금까지 Druid 개발진을 비롯한 여러 기관 및 개인이 이러한 기준으로 Druid 성능을 평가한 benchmark들을 산출하고 그 밖의 지표를 통해 Druid를 다른 데이터베이스 관리 시스템들과 비교한 결과를 공개하였다.</p>
 <div class="section" id="druid">
@@ -207,9 +204,9 @@
 <h3>Query latency 성능<a class="headerlink" href="#query-latency" title="제목 주소">¶</a></h3>
 <p>Druid의 query latency 성능에 대해 백서에서는 현장에서 실제 사용되는 데이터셋 8종과 TPC-H 데이터셋에 대한 쿼리 결과를 기준으로 평가하였는데, 여기서는 TPC-H 데이터셋에 대한 쿼리 결과를 소개한다. TPC-H 데이터셋에 대한 query latency는 MySQL과의 비교 평가 방식으로 진행하였고, 이때 사용한 클러스터 사양은 다음과 같았다.</p>
 <ul class="simple">
-<li><p><strong>Druid historical 노드</strong>: Amazon EC2 m3.2xlarge instance types (Intel® Xeon® E5-2680 v2 &#64; 2.80GHz)</p></li>
-<li><p><strong>Druid broker 노드</strong>: c3.2xlarge instances (Intel® Xeon® E5-2670 v2 &#64; 2.50GHz)</p></li>
-<li><p><strong>MySQL Amazon RDS instance</strong> (Druid와 동일한 m3.2xlarge instance type)</p></li>
+<li><strong>Druid historical 노드</strong>: Amazon EC2 m3.2xlarge instance types (Intel® Xeon® E5-2680 v2 &#64; 2.80GHz)</li>
+<li><strong>Druid broker 노드</strong>: c3.2xlarge instances (Intel® Xeon® E5-2670 v2 &#64; 2.50GHz)</li>
+<li><strong>MySQL Amazon RDS instance</strong> (Druid와 동일한 m3.2xlarge instance type)</li>
 </ul>
 <p>아래는 단일 노드에서의 1GB 및 100GB TPC-H 데이터셋에 대한 Druid와 MySQL의 query latency를 비교한 결과를 정리한 그래프이다.</p>
 <div class="figure align-center">
@@ -226,7 +223,7 @@
 <h3>Ingestion latency 성능<a class="headerlink" href="#ingestion-latency" title="제목 주소">¶</a></h3>
 <p>Druid의 ingestion 성능에 대해서도 평가하였는데, 이때 사용된 클러스터 환경은 다음과 같았다.</p>
 <ul class="simple">
-<li><p>6개 노드, 총 메모리 360GB 및 96개 코어(12 x Intel® Xeon® E5-2670)</p></li>
+<li>6개 노드, 총 메모리 360GB 및 96개 코어(12 x Intel® Xeon® E5-2670)</li>
 </ul>
 <p>ingestion 대상으로는 현장에서 실제 사용되는 데이터 소스 8종이었으며 데이터 소스 각각의 특징과 ingestion 결과는 아래와 같았다. 참고로 ingestion 측정을 하는 기간 동안 해당 클러스터에서는 그 외 다른 데이터 소스에 대한 ingestion 동작도 병행해서 실시하였다.</p>
 <div class="figure align-center">
@@ -251,20 +248,20 @@
 <img alt="Druid와 MySQL 벤치마크(100GB TPC-H 데이터셋)" src="../../_images/druid-mysql-benchmark2.png" />
 </div>
 <ul class="simple">
-<li><p>Hive의 benchmark가 현저하게 떨어지는 원인 중 일부는 Thrift로 측정한 것과 partition없이 test set이 구성되어 있기 때문임</p></li>
+<li>Hive의 benchmark가 현저하게 떨어지는 원인 중 일부는 Thrift로 측정한 것과 partition없이 test set이 구성되어 있기 때문임</li>
 </ul>
 </div>
 <div class="section" id="id3">
 <h3>Ingestion latency 테스트<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
 <p>Ingestion latency를 측정하는 조건은 다음과 같았다.</p>
 <ul class="simple">
-<li><p>Ingestion data size: 1일 30억 rows, 10 columns</p></li>
-<li><p>메모리: 512 GB</p></li>
-<li><p>CPU: Intel (R) Xeon (R) Gold 5120 CPU &#64; 2.20 GHz (core 56개)</p></li>
-<li><p>Historical 노드 개수: 100개</p></li>
-<li><p>Broker 노드 개수: 2개</p></li>
-<li><p>총 10개의 middle manager 노드 중 3개에서 job 수행</p></li>
-<li><p>Ingestion 도구: Apache Kafka</p></li>
+<li>Ingestion data size: 1일 30억 rows, 10 columns</li>
+<li>메모리: 512 GB</li>
+<li>CPU: Intel (R) Xeon (R) Gold 5120 CPU &#64; 2.20 GHz (core 56개)</li>
+<li>Historical 노드 개수: 100개</li>
+<li>Broker 노드 개수: 2개</li>
+<li>총 10개의 middle manager 노드 중 3개에서 job 수행</li>
+<li>Ingestion 도구: Apache Kafka</li>
 </ul>
 <p>이와 같은 조건으로 data ingestion을 100회 수행하였고 평균 ingestion latency는 1.623439초였다. 여기서 ingestion latency는 아래 도식화한 것과 같이 Kaka ingestion, Druid ingestion, Druid query 처리에 소요되는 시간을 모두 합산한 것이다.</p>
 </div>
@@ -277,30 +274,30 @@
 <p><strong>1. DB-Engines의 Druid 평가</strong>
 온라인 웹사이트 DB Engines10에서는 다양한 데이터베이스 관리 시스템(DBMS)의 시장 인기도를 매달 평가하며, 이때 다음과 같은 지표를 사용한다.</p>
 <ul class="simple">
-<li><p>인터넷에서 언급되는 횟수: Google, Bing, Yandex에서의 검색 결과로 측정</p></li>
-<li><p>일반적인 관심: Google Trends에서의 검색 빈도를 기준으로 측정</p></li>
-<li><p>기술 토론 빈도: 유명 IT 관련 Q&amp;A 사이트인 Stack Overflow 및 DBA Stack Exchange 포스팅 현황을 기준으로 측정</p></li>
-<li><p>구인 게시글 수: Indeed 및 Simply Hired의 게시글을 기준으로 측정</p></li>
-<li><p>해당 커리어를 지닌 인재의 수: LinkedIn 및 Upwork에 게시된 프로필을 기준으로 측정</p></li>
-<li><p>SNS에서의 언급 수: Twitter의 트윗수를 기준으로 측정</p></li>
+<li>인터넷에서 언급되는 횟수: Google, Bing, Yandex에서의 검색 결과로 측정</li>
+<li>일반적인 관심: Google Trends에서의 검색 빈도를 기준으로 측정</li>
+<li>기술 토론 빈도: 유명 IT 관련 Q&amp;A 사이트인 Stack Overflow 및 DBA Stack Exchange 포스팅 현황을 기준으로 측정</li>
+<li>구인 게시글 수: Indeed 및 Simply Hired의 게시글을 기준으로 측정</li>
+<li>해당 커리어를 지닌 인재의 수: LinkedIn 및 Upwork에 게시된 프로필을 기준으로 측정</li>
+<li>SNS에서의 언급 수: Twitter의 트윗수를 기준으로 측정</li>
 </ul>
 <p>그 결과 Druid는 2018년 7월 기준으로 총 343개 시스템 중에서 118위를 차지하였고, 그 중 시계열 데이터베이스 시스템만을 두고 집계했을 때 총 25개 시스템 중 7위를 차지하였다.</p>
 <p><strong>2. Apache Spark와의 비교</strong>
 Druid를 Apache Spark와 비교하는 것은 상당히 의미 있는 작업이다. 둘 다 차세대 대용량 데이터 분석 솔루션으로 각광 받고 있으며, 서로 다른 장점을 가지고 있어 매우 상호보완적으로 조합이 가능하기 때문이다. metatron에서도 Druid를 데이터 저장/처리용 엔진으로 사용하고 Spark를 고급 분석용 모듈로 사용함으로써 이들 간의 시너지를 잘 활용하고 있다.
 여기서는 Sparkline Data Inc.의 창업자 Harish Butani가 공개한 Druid vs Spark 성능 비교 보고서7-8의 내용을 간단히 소개한다. 보고서에서는 애초에 두 솔루션이 경쟁 관계에 있다기 보다는 상보적인 역할을 한다고 상정을 하고 성능 비교를 시작한다.</p>
 <ol class="arabic simple">
-<li><dl class="simple">
-<dt>Apache Spark의 특징</dt><dd><p>Apache Spark는 오픈소스 클러스터 컴퓨팅 프레임워크로서 Java, Scala, Python, R 언어로 이루어진 다양한 API를 제공한다. Spark의 프로그래밍 모델은 SQL, 머신러닝, 그래프 프로세싱을 결합한 분석 솔루션을 구축하는 것이다. Spark는 규모가 크거나 복잡한 데이터를 가공할 수 있도록 강력한 기능들을 지원하지만, Druid와 같은 interactive한 쿼리 처리에 최적화되지는 않았다.</p>
-</dd>
+<li><dl class="first docutils">
+<dt>Apache Spark의 특징</dt>
+<dd>Apache Spark는 오픈소스 클러스터 컴퓨팅 프레임워크로서 Java, Scala, Python, R 언어로 이루어진 다양한 API를 제공한다. Spark의 프로그래밍 모델은 SQL, 머신러닝, 그래프 프로세싱을 결합한 분석 솔루션을 구축하는 것이다. Spark는 규모가 크거나 복잡한 데이터를 가공할 수 있도록 강력한 기능들을 지원하지만, Druid와 같은 interactive한 쿼리 처리에 최적화되지는 않았다.</dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt>데이터셋, 쿼리, 성능 비교 결과</dt><dd><p>본 성능 비교를 위한 데이터셋으로 TPCH 10G benchmark data set을 이용했다. 본래 이 데이터셋은 관계형 데이터베이스에 적합한 스타 스키마 구조를 갖기 때문에 이를 역정규화시킨 후 Druid와 Spark에서 처리할 수 있도록 재구성하였다. 이러한 처리를 거친 데이터셋의 크기는 각각 다음과 같았다.</p>
-<ul class="simple">
-<li><p>TPCH Flat TSV: 46.80GB</p></li>
-<li><p>Druid Index in HDFS: 17.04GB</p></li>
-<li><p>TPCH Flat Parquet: 11.38GB</p></li>
-<li><p>TPCH Flat Parquet Partition by Month: 11.56GB</p></li>
+<li><dl class="first docutils">
+<dt>데이터셋, 쿼리, 성능 비교 결과</dt>
+<dd>본 성능 비교를 위한 데이터셋으로 TPCH 10G benchmark data set을 이용했다. 본래 이 데이터셋은 관계형 데이터베이스에 적합한 스타 스키마 구조를 갖기 때문에 이를 역정규화시킨 후 Druid와 Spark에서 처리할 수 있도록 재구성하였다. 이러한 처리를 거친 데이터셋의 크기는 각각 다음과 같았다.<ul class="last">
+<li>TPCH Flat TSV: 46.80GB</li>
+<li>Druid Index in HDFS: 17.04GB</li>
+<li>TPCH Flat Parquet: 11.38GB</li>
+<li>TPCH Flat Parquet Partition by Month: 11.56GB</li>
 </ul>
 </dd>
 </dl>
@@ -309,9 +306,9 @@ Druid를 Apache Spark와 비교하는 것은 상당히 의미 있는 작업이�
 <p>그런 다음 두 솔루션의 쿼리 처리 속도를 다각도에서 분석할 수 있는 여러 쿼리를 아래와 같이 구성하였다.</p>
 <p>테스트 결과는 다음과 같았다.</p>
 <ul class="simple">
-<li><p>Filters + Ship Date 쿼리는 Druid에 특화된 slice-and-dice 성능을 테스트하는 것이었고, 예상대로 무려 50배 이상 속도 상에 우위를 보였다. 마찬가지로 TPCH Q7 쿼리를 처리하는 데도 Druid에서 수 밀리초가 소요된 반면, Spark에서는 수초가 소요되었다.</p></li>
-<li><p>TPCH Q3, Q5, Q8 쿼리의 경우에는 Druid가 위 경우와 같은 극대화된 효율성을 보여주지 못했다. OrderDate 술어는 Druid에서 JavaScript 필터로 번역이 되는데, 이는 네이티브 Java 필터에 비해 현저히 느리기 때문이다.</p></li>
-<li><p>Basic Aggregation 및 TPCH Q1 쿼리의 경우에도 Druid에서 훨씬 빠른 처리 속도를 보여주었다. Druid에서는 Count-Distinct 동작이 cardinality aggregator로 번역이 되는데, 이는 approximate count에 해당한다. 이러한 장점 덕에 Druid는 cardinality가 큰 차원들을 탐색할 때 유리하다.</p></li>
+<li>Filters + Ship Date 쿼리는 Druid에 특화된 slice-and-dice 성능을 테스트하는 것이었고, 예상대로 무려 50배 이상 속도 상에 우위를 보였다. 마찬가지로 TPCH Q7 쿼리를 처리하는 데도 Druid에서 수 밀리초가 소요된 반면, Spark에서는 수초가 소요되었다.</li>
+<li>TPCH Q3, Q5, Q8 쿼리의 경우에는 Druid가 위 경우와 같은 극대화된 효율성을 보여주지 못했다. OrderDate 술어는 Druid에서 JavaScript 필터로 번역이 되는데, 이는 네이티브 Java 필터에 비해 현저히 느리기 때문이다.</li>
+<li>Basic Aggregation 및 TPCH Q1 쿼리의 경우에도 Druid에서 훨씬 빠른 처리 속도를 보여주었다. Druid에서는 Count-Distinct 동작이 cardinality aggregator로 번역이 되는데, 이는 approximate count에 해당한다. 이러한 장점 덕에 Druid는 cardinality가 큰 차원들을 탐색할 때 유리하다.</li>
 </ul>
 <p>여러 가지 조건에 따라 결과는 달라질 수 있지만, 한 가지 분명한 것은 시간 파티셔닝(time partitioning) 또는 차원 술어(dimensional predicates)를 포함하는 쿼리는 Druid에서 현저히 빠르게 처리한다는 것이다.</p>
 </div>
@@ -333,7 +330,7 @@ Druid를 Apache Spark와 비교하는 것은 상당히 의미 있는 작업이�
         <a href="../part02/index.html" class="btn btn-neutral float-right" title="데이터 관리" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="metatron_engine_strength.html" class="btn btn-neutral float-left" title="메타트론 엔진만의 강점" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="metatron_engine_strength.html" class="btn btn-neutral" title="메타트론 엔진만의 강점" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -359,16 +356,37 @@ Druid를 Apache Spark와 비교하는 것은 상당히 의미 있는 작업이�
   
 
 
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
