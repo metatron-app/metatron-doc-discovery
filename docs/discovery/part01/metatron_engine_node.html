@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>메타트론 엔진 노드 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>메타트론 엔진 노드 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="메타트론 엔진만의 강점" href="metatron_engine_strength.html" />
     <link rel="prev" title="메타트론 엔진이란?" href="metatron_engine.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -199,10 +202,10 @@
 <h2>Real-time 노드<a class="headerlink" href="#real-time" title="제목 주소">¶</a></h2>
 <p>real-time 노드군은 이벤트 스트림을 ingestion하고 쿼리하는 기능을 한다. 이 노드들은 최근 발생한 짧은 시간 범위 내 이벤트들만을 처리하며, 주기적으로 이들을 딥 스토리지로 넘기는데, 그 절차는 다음과 같다.</p>
 <ol class="arabic simple">
-<li>유입되는 이벤트들은 메모리에 인덱싱되면서 즉시 쿼리에 사용될 수 있다.</li>
-<li>메모리 상의 데이터는 정기적으로 디스크에 저장되면서 수정 불가능한(읽기 전용) 컬럼형 포맷으로 변환된다.</li>
-<li>저장된 데이터는 off-heap 메모리로 로드되기 때문에 쿼리 가능한 상태가 유지된다.</li>
-<li>디스크에 저장된 인덱스들을 주기적으로 병합되어 데이터 ‘세그먼트’를 구성한 후 딥 스토리지로 이관된다.</li>
+<li><p>유입되는 이벤트들은 메모리에 인덱싱되면서 즉시 쿼리에 사용될 수 있다.</p></li>
+<li><p>메모리 상의 데이터는 정기적으로 디스크에 저장되면서 수정 불가능한(읽기 전용) 컬럼형 포맷으로 변환된다.</p></li>
+<li><p>저장된 데이터는 off-heap 메모리로 로드되기 때문에 쿼리 가능한 상태가 유지된다.</p></li>
+<li><p>디스크에 저장된 인덱스들을 주기적으로 병합되어 데이터 ‘세그먼트’를 구성한 후 딥 스토리지로 이관된다.</p></li>
 </ol>
 <p>이런 식으로 real-time 노드로 ingestion된 모든 이벤트는 디스크 저장 전후를 막론하고 on-heap 또는 off-heap 메모리 상에 존재하므로 쿼리가 가능한 상태를 유지한다(쿼리는 메모리 상의 인덱스와 디스크에 저장된 인덱스 모두에 전달된다). 이러한 real-time 노드 기능을 통해 Druid는 실시간 데이터 ingestion을 수행할 수 있다. 즉, 이벤트들이 발생하면 곧 이어서 쿼리 대상이 된다. 그리고 이러한 과정에서 데이터 손실이 발생하지 않는다. real-time 노드는 Druid 클러스터 내 다른 노드들과의 유기적인 동작을 위해 자신의 온라인 상태와 처리 중인 데이터를 Zookeeper(Druid 클러스터의 외부 종속 모듈, 3.7.5절 참조)에 보고한다.</p>
 </div>
@@ -226,9 +229,9 @@ broker 노드는 리소스 효율성을 높이기 위해 다음과 같이 캐시
 <h3>1. 외부 종속 모듈<a class="headerlink" href="#id2" title="제목 주소">¶</a></h3>
 <p>Druid는 클러스터 동작을 위해 몇 가지 외부 종속 모듈을 사용한다.</p>
 <ul class="simple">
-<li><strong>Zookeeper</strong>: Druid는 Zookeeper를 통해 클러스터 내부 통신을 한다.</li>
-<li><strong>메타데이터 스토리지</strong>: Druid는 메타데이터 스토리지를 통해 데이터 세그먼트 및 구성에 관한 메타데이터를 저장한다. 메타데이터 스토리지로는 주로 MySQL과 PostgreSQL이 사용된다.</li>
-<li><strong>딥 스토리지</strong>: Druid 세그먼트들을 영구적으로 백업 저장하는 공간이다. Druid에 ingestion되는 데이터는 세그먼트 형태로 딥 스토리지에 업로드되고, historical 노드들이 필요한 세그먼트를 여기서 다운로드한다. 딥 스토리지로는 주로 S3 및 HDFS가 사용된다.</li>
+<li><p><strong>Zookeeper</strong>: Druid는 Zookeeper를 통해 클러스터 내부 통신을 한다.</p></li>
+<li><p><strong>메타데이터 스토리지</strong>: Druid는 메타데이터 스토리지를 통해 데이터 세그먼트 및 구성에 관한 메타데이터를 저장한다. 메타데이터 스토리지로는 주로 MySQL과 PostgreSQL이 사용된다.</p></li>
+<li><p><strong>딥 스토리지</strong>: Druid 세그먼트들을 영구적으로 백업 저장하는 공간이다. Druid에 ingestion되는 데이터는 세그먼트 형태로 딥 스토리지에 업로드되고, historical 노드들이 필요한 세그먼트를 여기서 다운로드한다. 딥 스토리지로는 주로 S3 및 HDFS가 사용된다.</p></li>
 </ul>
 </div>
 <div class="section" id="high-availability">
@@ -256,7 +259,7 @@ broker 노드는 리소스 효율성을 높이기 위해 다음과 같이 캐시
         <a href="metatron_engine_strength.html" class="btn btn-neutral float-right" title="메타트론 엔진만의 강점" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="metatron_engine.html" class="btn btn-neutral" title="메타트론 엔진이란?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="metatron_engine.html" class="btn btn-neutral float-left" title="메타트론 엔진이란?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -282,37 +285,16 @@ broker 노드는 리소스 효율성을 높이기 위해 다음과 같이 캐시
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

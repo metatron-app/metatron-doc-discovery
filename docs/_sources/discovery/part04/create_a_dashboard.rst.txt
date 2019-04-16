@@ -3,7 +3,7 @@
 
 대시보드 생성 절차는 다음과 같습니다.
 
-1. 데이터 소스를 추가할 수 있도록 ‘+ 데이터소스 추가’를 클릭합니다.
+1. 데이터 소스를 추가할 수 있도록 ‘+ 데이터 소스 추가’를 클릭합니다.
 
 .. figure:: /_static/img/discovery/part04/dashboard.01.png
   :align: center
@@ -29,7 +29,7 @@
 .. figure:: /_static/img/discovery/part04/dashboard.04.png
   :align: center
 
-5. 아래 설명을 참조하여 데이터 소스 연결을 재설정하거나, 앞에서 선택한 최상위 데이터소스에 조인시킬 다른 데이터 소스들을 추가합니다. 원하는 결과물을 도출하였으면 ‘다음’버튼을 클릭하십시오.
+5. 아래 설명을 참조하여 데이터 소스 연결을 재설정하거나, 앞에서 선택한 최상위 데이터 소스에 조인시킬 다른 데이터 소스들을 추가합니다. 원하는 결과물을 도출하였으면 ‘다음’버튼을 클릭하십시오.
 
 .. figure:: /_static/img/discovery/part04/dashboard.05.png
   :align: center

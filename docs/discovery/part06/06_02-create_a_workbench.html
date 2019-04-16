@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>워크벤치 만들기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>워크벤치 만들기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -31,22 +39,17 @@
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="워크벤치 사용하기" href="06_03-use_a_workbench.html" />
-    <link rel="prev" title="워크벤치 소개" href="06_01-workbench_overview.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
+    <link rel="prev" title="워크벤치" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -96,7 +99,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">워크벤치</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="06_01-workbench_overview.html">워크벤치 소개</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">워크벤치 만들기</a></li>
 <li class="toctree-l2"><a class="reference internal" href="06_03-use_a_workbench.html">워크벤치 사용하기</a></li>
 </ul>
@@ -178,34 +180,37 @@
   <div class="section" id="id1">
 <h1>워크벤치 만들기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>해당 워크스페이스에서 워크벤치를 사용하기 위해서는 워크벤치용 데이터 커넥션이 설정되어 있 어야 합니다.
-이에 관한 자세한 내용은 ‘2부 운영관리’에서 ‘2.2 데이터 커넥션’을 참조하시기 바 랍니다.</p>
+이에 관한 자세한 내용은 <a class="reference internal" href="../part02/data_connection.html"><span class="doc">데이터 커넥션</span></a>을 참조하시기 바 랍니다.</p>
 <p>워크벤치 생성 절차는 다음과 같습니다.</p>
-<ol class="arabic simple">
-<li>워크스페이스 하단에 있는 ‘+ 워크벤치’ 버튼을 클릭하면 워크벤치에서 데이터 분석에 사용할 데이터 커넥션을 연결할 수 있는 화면이 나타납니다.</li>
-</ol>
-<div class="figure">
+<ol class="arabic">
+<li><p>워크스페이스 하단에 있는 ‘+ 워크벤치’ 버튼을 클릭하면 워크벤치에서 데이터 분석에 사용할 데이터 커넥션을 연결할 수 있는 화면이 나타납니다.</p>
+<blockquote>
+<div><div class="figure align-center">
 <img alt="../../_images/workbench_creation_01.png" src="../../_images/workbench_creation_01.png" />
 </div>
-<ol class="arabic simple" start="2">
-<li>사용자가 연결하여 사용하고자하는 워크벤치용 데이터 커넥션을 선택한 후 ‘다음’ 버튼을 클릭합니다.</li>
-</ol>
-<div class="figure">
+</div></blockquote>
+</li>
+<li><p>사용자가 연결하여 사용하고자하는 워크벤치용 데이터 커넥션을 선택한 후 ‘다음’ 버튼을 클릭합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
 <img alt="../../_images/workbench_creation_02.png" src="../../_images/workbench_creation_02.png" />
 </div>
-<ol class="arabic simple">
-<li>데이터 커넥션 이름으로 검색: 해당 워크스페이스에 허용된 데이터 커넥션을 이름으로 검색합니다.</li>
-<li>DB Type: 데이터 커넥션을 데이터베이스 타입(Oracle/MySQL/Hive/presto/Tibero)별로 선별하여 볼 수 있습니다. ‘모두’로 선택하면 모든 DB타입의 데이터 커넥션을 볼 수 있습니다.</li>
-<li>계정 타입: 데이터 커넥션을 설정된 계정 타입(관리자 직접 입력/사용자의 계정 사용/워크벤치 접속 시 직접 입력)별로 선별하여 볼 수 있습니다. ‘All’로 선택하면 모든 계정 타입의 데이터 커넥션을 볼 수 있습니다.</li>
-<li>데이터 커넥션: 설정한 선별 조건에 맞는 데이터 커넥션들을 보여줍니다.</li>
-</ol>
-<ol class="arabic simple" start="3">
-<li>선택한 데이터 커넥션의 정보를 확인하고 이름과 설명을 입력하면 워크벤치가 생성됩니다.</li>
-</ol>
-<div class="figure">
+<ul class="simple">
+<li><p><strong>데이터 커넥션 이름으로 검색</strong>: 해당 워크스페이스에 허용된 데이터 커넥션을 이름으로 검색합니다.</p></li>
+<li><p><strong>DB Type</strong>: 데이터 커넥션을 데이터베이스 타입(Oracle/MySQL/Hive/presto/Tibero)별로 선별하여 볼 수 있습니다. ‘모두’로 선택하면 모든 DB타입의 데이터 커넥션을 볼 수 있습니다.</p></li>
+<li><p><strong>계정 타입</strong>: 데이터 커넥션을 설정된 계정 타입(관리자 직접 입력/사용자의 계정 사용/워크벤치 접속 시 직접 입력)별로 선별하여 볼 수 있습니다. ‘All’로 선택하면 모든 계정 타입의 데이터 커넥션을 볼 수 있습니다.</p></li>
+<li><p><strong>데이터 커넥션</strong>: 설정한 선별 조건에 맞는 데이터 커넥션들을 보여줍니다.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>선택한 데이터 커넥션의 정보를 확인하고 이름과 설명을 입력하면 워크벤치가 생성됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
 <img alt="../../_images/workbench_creation_02.png" src="../../_images/workbench_creation_02.png" />
 </div>
-<ol class="arabic simple" start="4">
-<li>워크벤치 생성이 완료되면, 생성된 워크벤치를 바로 확인할 수 있습니다.</li>
+</div></blockquote>
+</li>
+<li><p>워크벤치 생성이 완료되면, 생성된 워크벤치를 바로 확인할 수 있습니다.</p></li>
 </ol>
 </div>
 
@@ -220,7 +225,7 @@
         <a href="06_03-use_a_workbench.html" class="btn btn-neutral float-right" title="워크벤치 사용하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="06_01-workbench_overview.html" class="btn btn-neutral" title="워크벤치 소개" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="워크벤치" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -246,37 +251,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

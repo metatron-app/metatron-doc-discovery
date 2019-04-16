@@ -31,12 +31,12 @@ Metatron Discovery는 metatron 운용 서버에 적재된 데이터 소스나 �
 
 .. figure:: /_static/img/discovery/part01/datasource.png
    :align: center
-   :alt: 데이터소스 상세 화면
+   :alt: 데이터 소스 상세 화면
 
 
 .. figure:: /_static/img/discovery/part01/datasource2.png
    :align: center
-   :alt: 데이터소스 생성 화면
+   :alt: 데이터 소스 생성 화면
 
 ---------------------------------------------------
 
