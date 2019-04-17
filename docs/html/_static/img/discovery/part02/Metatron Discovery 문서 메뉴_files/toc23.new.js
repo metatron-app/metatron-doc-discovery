@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"4.2.1 Dashboard - basic page","url":"metatron_3.0_Discovery/xml/065_Dashboard-Basicscreen.html"},{"type":"item","name":"4.2.2 Dashboard - data source information dialog box","url":"metatron_3.0_Discovery/xml/066_Dashboard-datasource.html"},{"type":"item","name":"4.2.3 Dashboard - presentation view page","url":"metatron_3.0_Discovery/xml/067_Dashboard-presentationviewscreen.html"},{"type":"item","name":"4.2.4 Dashboard - edit page","url":"metatron_3.0_Discovery/xml/068_Dashboard-Editscreen.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

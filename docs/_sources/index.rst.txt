@@ -22,7 +22,7 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Metatron Anomaly
+   :caption: EX-pack for Anomaly Detection
 
    /anomaly/part01/index
    /anomaly/part02/index
