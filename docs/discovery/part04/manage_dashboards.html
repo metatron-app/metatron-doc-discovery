@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>대시보드 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>대시보드 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="대시보드 만들기" href="create_a_dashboard.html" />
     <link rel="prev" title="워크북 만들기" href="create_a_workbook.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -89,8 +92,8 @@
             
               <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 시작하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
@@ -113,7 +116,7 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">메타트론 어노말리 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
@@ -185,22 +188,31 @@
             
   <div class="section" id="id1">
 <h1>대시보드<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
-<p>대시보드는 워크북 안에 보관되며 특정한 데이터 소스를 사용자의 필요에 맞게 분석하고 시각화하는 기능을 제공합니다. 따라서 대시보드 생성 절차는 주로 데이터 소스를 연결하는 것부터 시작됩니다.</p>
-<p>여러 데이터 소스를 기반으로 차트와 텍스트 기반의 시각화 분석에 더해, 피봇, 맵차트, 필터링 기능으로 사용자만의 Customize한 분석을 진행할 수 있습니다</p>
-<div class="figure align-center">
+<p><strong>대시보드</strong>는 워크북 안에 보관되며 특정한 데이터 소스를 사용자의 필요에 맞게 분석하고 시각화하는 기능을 제공합니다. 따라서 대시보드 생성 절차는 주로 데이터 소스를 연결하는 것부터 시작됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
 <img alt="../../_images/dashboard_overview_01.png" src="../../_images/dashboard_overview_01.png" />
 </div>
-<p>본 장은 다음과 같이 구성되어 있습니다</p>
+</div></blockquote>
+<p>여러 데이터 소스를 기반으로 차트와 텍스트 기반의 시각화 분석에 더해, 피봇, 맵차트, 필터링 기능을 통해 분석 작업을 커스터마이징할 수 있습니다.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="create_a_dashboard.html">대시보드 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="change_dashboard_layout_and_size.html">대시보드 크기와 레이아웃 변경하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="display_a_data_source.html">대시보드 내에 데이터 소스 확인하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="present_the_dashboard.html">대시보드 프리젠테이션 하기</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="present_the_dashboard.html#id2">프리젠테이션 뷰 들어가기</a></li>
-<li class="toctree-l2"><a class="reference internal" href="present_the_dashboard.html#id3">프리젠테이션 뷰 상세</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change_dashboard_layout_and_size.html">대시보드 크기와 레이아웃 변경하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="change_dashboard_layout_and_size.html#id2">대시보드 위젯 배열 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change_dashboard_layout_and_size.html#id3">차트 위젯 패널</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change_dashboard_layout_and_size.html#id4">텍스트 위젯 패널</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change_dashboard_layout_and_size.html#id5">레이아웃 패널</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change_dashboard_layout_and_size.html#id6">데이터 소스 패널</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="display_a_data_source.html">대시보드 내에 데이터 소스 확인하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="display_a_data_source.html#id2">데이터 그리드 탭</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display_a_data_source.html#id3">컬럼 상세 탭</a></li>
+<li class="toctree-l2"><a class="reference internal" href="display_a_data_source.html#id4">대시보드 데이터 정보 탭</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="present_the_dashboard.html">대시보드 프리젠테이션 하기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="give_new_column_name(alias).html">컬럼에 새로운 이름 부여하기</a></li>
 </ul>
 </div>
@@ -217,7 +229,7 @@
         <a href="create_a_dashboard.html" class="btn btn-neutral float-right" title="대시보드 만들기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="create_a_workbook.html" class="btn btn-neutral" title="워크북 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="create_a_workbook.html" class="btn btn-neutral float-left" title="워크북 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -243,37 +255,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

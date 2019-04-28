@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>디스커버리 시작하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>디스커버리 퀵가이드 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="Step1. 데이터 소스 만들기" href="step1.html" />
     <link rel="prev" title="메타트론 사용자 문서" href="../../index.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -89,13 +92,13 @@
             
               <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">디스커버리 시작하기</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">디스커버리 퀵가이드</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="step1.html">Step1. 데이터 소스 만들기</a></li>
 <li class="toctree-l2"><a class="reference internal" href="step2.html">Step2. 워크북 만들기</a></li>
 <li class="toctree-l2"><a class="reference internal" href="step3.html">Step3. 대시보드 구성하기</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
@@ -105,7 +108,7 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">메타트론 어노말리 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
@@ -154,7 +157,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>디스커버리 시작하기</li>
+      <li>디스커버리 퀵가이드</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -174,34 +177,37 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>디스커버리 시작하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<h1>디스커버리 퀵가이드<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>Metatron Discovery는 대용량 데이터를 동일한 환경에서 적재, 전처리, 분석까지 빠르게 처리할 수 있는 툴입니다. 데이터 분석을 위한 기술적인 지식이 없는 비즈니스 현업 사용자도 Metatron Discovery를 이용하면 직접 데이터를 다뤄보고 빠르게 시각화해 보면서 인사이트를 얻을 수 있습니다.</p>
 <p>Metatron Discovery로 즉시 데이터 분석을 시작할 수 있는 방법은 두 가지가 있습니다.</p>
-<ol class="arabic">
-<li><p class="first"><a class="reference external" href="https://metatron.app">Metatron Discovery 데모 사이트</a> 를 실행하세요. 데모를 위한 <strong>ID</strong> 와 <strong>password</strong> 는 <code class="docutils literal notranslate"><span class="pre">metatron</span></code> 으로 제공됩니다.</p>
-</li>
-<li><p class="first">싱글 모드용 Metatron Discovery를 로컬 PC에 다운로드 받으세요. <a class="reference external" href="https://metatron.app/download/">다운로드</a> 는 세 가지 방법으로 제공됩니다.</p>
+<blockquote>
+<div><ul>
+<li><p><strong>방법 1:</strong> <a class="reference external" href="https://metatron.app">Metatron Discovery 데모 사이트</a>를 실행하세요. ID와 password는 'metatron'이라고 입력하면 됩니다.</p></li>
+<li><p><strong>방법 2:</strong> 싱글 모드용 Metatron Discovery를 로컬 PC에 다운로드 받으세요. <a class="reference external" href="https://metatron.app/download/">다운로드</a>는 세 가지 방법으로 제공됩니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference external" href="https://metatron.app/download/installation-guide-custom-install/">Custom install</a> : Github 레파지토리로부터 소스코드를 다운받거나 빌드 파일을 직접 실행하세요.</li>
-<li><a class="reference external" href="https://metatron.app/download/guide_vm/">Virtual machine</a> : 가상 머신 이미지로 바로 실행하세요. Windows OS에서도 사용할 수 있습니다.</li>
-<li><a class="reference external" href="https://metatron.app/download/installation-guide-docker/">Docker</a> : Docker 이미지로 빠르게 설치하고 즉시 실행할 수 있습니다.</li>
+<li><p><a class="reference external" href="https://metatron.app/download/installation-guide-custom-install/">Custom install</a>: Github 레파지토리로부터 소스코드를 다운받거나 빌드 파일을 직접 실행하세요.</p></li>
+<li><p><a class="reference external" href="https://metatron.app/download/guide_vm/">Virtual machine</a>: 가상 머신 이미지로 바로 실행하세요. Windows OS에서도 사용할 수 있습니다.</p></li>
+<li><p><a class="reference external" href="https://metatron.app/download/installation-guide-docker/">Docker</a>: Docker 이미지로 빠르게 설치하고 즉시 실행할 수 있습니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
-</ol>
-<div class="figure align-center">
+</ul>
+</div></blockquote>
+<p>아래와 같은 화면을 보고 계신가요? 축하합니다! 이제부터 메타트론 디스커버리와 함께 쉽고 빠르게 데이터 분석을 시작해보세요.</p>
+<blockquote>
+<div><div class="figure align-center">
 <img alt="Metatron Discovery main page" src="../../_images/discovery-main.png" />
 </div>
-<p>위와 같은 화면을 보고 계신가요? 축하합니다! 이제부터 메타트론 디스커버리와 함께 쉽고 빠르게 데이터 분석을 시작해보세요.</p>
+</div></blockquote>
 <p>빠른 시작을 위해서 아래의 세 단계의 스텝으로 튜토리얼을 진행해보세요.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="step1.html">Step1. 데이터 소스 만들기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="step2.html">Step2. 워크북 만들기</a></li>
 <li class="toctree-l1"><a class="reference internal" href="step3.html">Step3. 대시보드 구성하기</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="step3.html#kpi">KPI 차트 만들기</a></li>
-<li class="toctree-l2"><a class="reference internal" href="step3.html#id1">라인 차트 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="step3.html#id1">핵심지표 차트 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="step3.html#id2">선형 차트 만들기</a></li>
 </ul>
 </li>
 </ul>
@@ -219,7 +225,7 @@
         <a href="step1.html" class="btn btn-neutral float-right" title="Step1. 데이터 소스 만들기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../../index.html" class="btn btn-neutral" title="메타트론 사용자 문서" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../../index.html" class="btn btn-neutral float-left" title="메타트론 사용자 문서" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -245,37 +251,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

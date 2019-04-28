@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>공유 워크스페이스 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>공유 워크스페이스 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,36 +17,39 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" />
-    <link rel="next" title="공유 워크스페이스 목록" href="shared_workspace_list.html" />
+    <link rel="next" title="워크북" href="../part04/index.html" />
     <link rel="prev" title="워크스페이스 홈" href="workspace_management.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -89,15 +92,19 @@
             
               <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 시작하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">워크스페이스</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="workspace_management.html">워크스페이스 홈</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">공유 워크스페이스</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="shared_workspace_list.html">공유 워크스페이스 목록</a></li>
-<li class="toctree-l3"><a class="reference internal" href="shared_workspace_creation.html">공유 워크스페이스 생성</a></li>
-<li class="toctree-l3"><a class="reference internal" href="shared_workspace_permission.html">공유 워크스페이스 접근 권한 설정</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shared-workspace-list">공유 워크스페이스 목록</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shared-workspace-creation">공유 워크스페이스 생성</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shared-workspace-permission">공유 워크스페이스 접근 권한 설정</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#permission-schema-setup">권한 스키마 설정</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shared-members-setup">공유 멤버 및 그룹 설정</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -109,7 +116,7 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">메타트론 어노말리 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
@@ -181,21 +188,136 @@
             
   <div class="section" id="id1">
 <h1>공유 워크스페이스<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
-<p>다른 사용자와 공유하는 워크스페이스를 조회하고 생성하는 법을 설명합니다. 또한, 공유 워크스페이스에 접근 가능한 사용자나 그룹을 설정할 수 있는 권한 스키마에 대해서도 살펴봅니다.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="shared_workspace_list.html">공유 워크스페이스 목록</a></li>
-<li class="toctree-l1"><a class="reference internal" href="shared_workspace_creation.html">공유 워크스페이스 생성</a></li>
-<li class="toctree-l1"><a class="reference internal" href="shared_workspace_permission.html">공유 워크스페이스 접근 권한 설정</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="shared_workspace_permission.html#id2">권한 스키마 설정</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="shared_workspace_permission.html#id3">권한 스키마 조회하기</a></li>
-<li class="toctree-l3"><a class="reference internal" href="shared_workspace_permission.html#id4">권한 스키마 설정 바꾸기</a></li>
+<p>공유 워크스페이스는 여러 사용자가 함께 열람하고 사용하는 워크스페이스입니다. 아래 각 절에서는 공유 워크스페이스를 조회하고 생성하는 법을 설명하고, 공유 워크스페이스에 접근 가능한 사용자나 그룹을 설정할 수 있는 권한 스키마에 대해서 살펴봅니다.</p>
+<div class="section" id="shared-workspace-list">
+<span id="id2"></span><h2>공유 워크스페이스 목록<a class="headerlink" href="#shared-workspace-list" title="제목 주소">¶</a></h2>
+<p>공유 워크스페이스 목록 화면에서는 로그인한 사용자가 접근할 수 있는 모든 공유 워크스페이스의 목록을 열람하고 원하는
+워크스페이스로 이동할 수 있습니다. 이 화면은 다음과 같은 두 가지 방식으로 접근할 수 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Discovery 화면 좌측 상단에서 메인 메뉴 버튼을 클릭하여 메인 패널을 연 후 <strong>워크스페이스 목록 &gt;&gt;</strong>을 클릭합니다.</p></li>
+<li><p>워크스페이스 홈 화면 우측 상단의 <strong>워크스페이스 목록</strong> 버튼을 클릭합니다.</p></li>
 </ul>
+</div></blockquote>
+<p>공유 워크스페이스 목록 화면은 다음과 같이 구성됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 목록 화면" src="../../_images/shared_workspace_list.png" />
+</div>
+<ol class="arabic simple">
+<li><p><strong>공유 워크스페이스 개수:</strong> 목록에 나열된 공유 워크스페이스의 개수가 나타납니다.</p></li>
+<li><p><strong>공유 워크스페이스 추가:</strong> 이 버튼을 클릭하면 공유 워크스페이스를 추가하는 화면으로 이동합니다. (구체적인 절차는 <a class="reference internal" href="#shared-workspace-creation"><span class="std std-ref">공유 워크스페이스 생성</span></a> 참조)</p></li>
+<li><p><strong>개인 워크스페이스:</strong> 이 버튼을 클릭하면 로그인한 사용자의 개인 워크스페이스로 이동합니다.</p></li>
+<li><p><strong>검색:</strong> 공유 워크스페이스를 이름으로 검색합니다.</p></li>
+<li><p><strong>즐겨찾기:</strong> 즐겨찾기로 지정된 워크스페이스만 선별합니다.</p></li>
+<li><p><strong>오직 공개만 보기:</strong> 전체 공개 설정된 워크스페이스만 선별합니다.</p></li>
+<li><p><strong>소유자만 보기:</strong> 로그인한 사용자가 관리자로 설정되어 있는 워크스페이스 목록이 나타납니다.</p></li>
+<li><p><strong>이름 내림차순/오름차순:</strong> 공유 워크스페이스 이름을 내림차순/오름차순으로 정렬합니다.</p></li>
+<li><p><strong>워크스페이스 목록:</strong> 설정한 선별 조건에 맞는 워크스페이스들을 보여줍니다. 이 중 하나를 클릭하면 해당 워크스페이스에 입장합니다.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="shared-workspace-creation">
+<span id="id3"></span><h2>공유 워크스페이스 생성<a class="headerlink" href="#shared-workspace-creation" title="제목 주소">¶</a></h2>
+<p>다음의 순서로 새 공유 워크스페이스를 생성할 수 있습니다.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>공유 워크스페이스 목록에서 <img alt="icon_plus" src="../../_images/icon_plus.png" /> 버튼을 클릭하면 새 공유 워크스페이스를 생성하는 화면이 나타납니다.</p></li>
+<li><p><strong>이름</strong>과 <strong>설명</strong>을 입력한 후, 아래 설명을 참조하여 <strong>Permission schema</strong>를 설정합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 생성 화면" src="../../_images/shared_workspace_creation.png" />
+</div>
+<ul class="simple">
+<li><p><strong>스키마 프리셋 사용</strong>: 관리자가 기존에 정의해놓은 권한 스키마를 불러옵니다.</p></li>
+<li><p><strong>커스텀 프리셋 사용</strong>: 새 권한 스키마를 정의합니다. (새 권한 스키마를 정의하는 방식은 <a class="reference internal" href="#shared-workspace-permission"><span class="std std-ref">공유 워크스페이스 접근 권한 설정</span></a> 참조)</p></li>
+</ul>
+</div></blockquote>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="shared_workspace_permission.html#id5">공유 멤버 및 그룹 설정</a></li>
+<li><p><strong>마침</strong> 버튼을 눌러 워크스페이스 생성을 완료합니다.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="shared-workspace-permission">
+<span id="id4"></span><h2>공유 워크스페이스 접근 권한 설정<a class="headerlink" href="#shared-workspace-permission" title="제목 주소">¶</a></h2>
+<p>공유 워크스페이스 접근 권한 설정은 기본적으로 다음과 같은 두 단계로 이루어집니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>사용자 역할별 접근 권한 정의 (<a class="reference internal" href="#permission-schema-setup"><span class="std std-ref">권한 스키마 설정</span></a> 참조)</p></li>
+<li><p>개별 사용자 또는 사용자 그룹 각각에게 적합한 사용자 역할 부여 (<a class="reference internal" href="#shared-members-setup"><span class="std std-ref">공유 멤버 및 그룹 설정</span></a> 참조)</p></li>
 </ul>
+</div></blockquote>
+<div class="section" id="permission-schema-setup">
+<span id="id5"></span><h3>권한 스키마 설정<a class="headerlink" href="#permission-schema-setup" title="제목 주소">¶</a></h3>
+<div class="section" id="permission-schema-view">
+<span id="id6"></span><h4>권한 스키마 조회하기<a class="headerlink" href="#permission-schema-view" title="제목 주소">¶</a></h4>
+<p>공유 워크스페이스 홈 화면 우측 상단에 있는 <strong>더 보기</strong> 버튼을 클릭한 후, <strong>권한 스키마 설정</strong>을 누르면 아래와 같이 현재 정의된 권한 스키마를 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 권한 스키마 조회 화면" src="../../_images/shared_workspace_permission_schema_view.png" />
+</div>
+</div></blockquote>
+<p>위 예시 그림에서는 사용자 역할(User role)로서 Manager, Editor, Watcher, Guest가 정의되어 있습니다. '권한 스키마'란, 이와 같이 각각 고유한 접근 권한이 정의된 사용자 역할들의 집합을 일컫는 말입니다.</p>
+<p>각 사용자 역할에 대한 컬럼별 속성은 다음과 같습니다.</p>
+<blockquote>
+<div><p><strong>Default role</strong></p>
+<p>새롭게 추가되는 개별 사용자나 사용자 그룹에게는 Default role로 지정된 사용자 역할이 기본적으로 부여됨</p>
+<p><strong>워크북/노트북/워크벤치 개체 타입별 권한</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>View:</strong> 해당 타입의 개체에 접근하여 데이터를 열람할 수 있음</p></li>
+<li><p><strong>Create:</strong> 해당 타입의 개체를 생성, 수정, 삭제할 수 있음</p></li>
+<li><p><strong>Edit any:</strong> 다른 사용자가 생성한 해당 타입의 개체를 수정, 삭제할 수 있음</p></li>
+</ul>
+</div></blockquote>
+<p><strong>워크스페이스 권한</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Create folders: 워크스페이스 내 폴더를 생성, 수정, 삭제할 수 있음</p></li>
+<li><p>Set config.: 워크스페이스의 이름과 설명을 수정하고 워크스페이스 권한 스키마를 바꿀 수 있음</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h4>권한 스키마 설정 바꾸기<a class="headerlink" href="#id7" title="제목 주소">¶</a></h4>
+<p>권한 스키마 조회 화면에서 <strong>스키마 변경</strong> 버튼을 클릭하면 아래와 같이 기존에 정의된 권한 스키마를 변경할 수 있는 화면이 나타납니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 권한 스키마 변경 화면 #1" src="../../_images/shared_workspace_permission_schema_change01.png" />
+</div>
+</div></blockquote>
+<p>화면 우측에 있는 <strong>Select Role Set</strong> 콤보박스를 클릭하면 관리자가 정의해놓은 스키마들이 제시되고, 목록 맨 아래에는 새로운 사용자 역할을 정의할 수 있는 <strong>커스텀 스키마</strong> 항목이 있습니다. 이중 하나를 선택하면 아래와 같은 화면이 나타납니다. (<strong>커스텀 스키마</strong> 항목을 선택했을 경우 사용자 역할별 권한부터 정의해야 합니다. New schema 우측의 <strong>수정</strong> 버튼을 눌러 권한 설정 화면으로 이동한 후 <a class="reference internal" href="#permission-schema-view"><span class="std std-ref">권한 스키마 조회하기</span></a> 항목의 설명을 참조하여 사용자 역할별로 권한을 설정하십시오.)</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 권한 스키마 변경 화면 #2" src="../../_images/shared_workspace_permission_schema_change02.png" />
+</div>
+</div></blockquote>
+<p>여기서는 현 권한 스키마의 각 사용자 역할을 새로운 권한 스키마에 정의된 사용자 역할로 치환하는 작업을 합니다. 각 사용자 역할 이름 옆에 있는 아이콘에 마우스를 오버하면 해당 사용자 역할에 할당된 권한이 나타납니다. <strong>마침</strong> 버튼을 누르면 권한 스키마 설정이 완료됩니다.</p>
+</div>
+</div>
+<div class="section" id="shared-members-setup">
+<span id="id8"></span><h3>공유 멤버 및 그룹 설정<a class="headerlink" href="#shared-members-setup" title="제목 주소">¶</a></h3>
+<p>공유 워크스페이스 홈 화면 우측 상단에 있는 더보기 아이콘을 클릭한 후 <strong>공유 멤버 및 그룹 설정</strong>을 누르면 아래와 같이 공유 멤버 및 그룹 설정 화면이 나타납니다. 여기서는 권한 스키마에서 정의된 각 사용자 역할을 개별 사용자 또는 사용자 그룹에 할당하는 작업을 합니다. 아래 설명을 참조하여 사용자 역할을 할당한 후 <strong>마침</strong> 버튼을 누르면 워크스페이스 접근 권한 설정이 완료됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 권한 스키마 변경 화면 #2" src="../../_images/shared_workspace_shared_member_group_setting.png" />
+</div>
+<ol class="arabic">
+<li><p><strong>사용자 역할 할당 단위 선택</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>멤버 탭</strong>: 사용자 역할을 개별 사용자 단위로 할당합니다.</p></li>
+<li><p><strong>그룹 탭</strong>: 사용자 역할을 사용자 그룹 단위로 할당합니다. (사용자 그룹은 관리자 권한으로 지정할 수 있습니다.)</p></li>
+</ul>
+</div></blockquote>
 </li>
-</ul>
+<li><p><strong>사용자 역할:</strong> 클릭하면 권한 스키마(사용자 역할별 권한 정의) 정보가 팝업 창으로 나타납니다.</p></li>
+<li><p><strong>멤버/그룹 목록:</strong> Discovery에 등록된 사용자들(그룹 탭에서는 그룹들)이 나열됩니다. 목록에 있는 사용자(그룹) 중 하나를 클릭하면 우측 역할 부여 영역에 추가됩니다. 이미 추가된 사용자(그룹)을 클릭하면 해당 사용자(그룹)가 우측 영역에서 제거됩니다.</p></li>
+<li><p><strong>사용자 역할 할당:</strong> 이 콤보박스를 클릭하면 현재 적용 중인 권한 스키마에 정의된 사용자 역할들이 나타납니다. 이중에서 해당 사용자(그룹)에게 할당하고자 하는 역할을 선택하면 됩니다.</p></li>
+</ol>
+</div></blockquote>
+</div>
 </div>
 </div>
 
@@ -207,10 +329,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="shared_workspace_list.html" class="btn btn-neutral float-right" title="공유 워크스페이스 목록" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../part04/index.html" class="btn btn-neutral float-right" title="워크북" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="workspace_management.html" class="btn btn-neutral" title="워크스페이스 홈" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="workspace_management.html" class="btn btn-neutral float-left" title="워크스페이스 홈" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -236,37 +358,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

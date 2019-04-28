@@ -2,7 +2,7 @@
 --------------------------------------------
 
 .. figure:: /_static/img/discovery/part02/datasource_management.png
-  :align: center
+	:align: center
 
 위 그림과 같이 Metatron Discovery의 3가지 분석 모듈(워크북, 노트북, 워크벤치)에서 사용하는 데이터는 다양한 원천 데이터 유형과 여러 엔진 및 저장소를 통해 마련됩니다. 따라서 이러한 데이터 흐름을 정형화 및 관리하고 여러 원천 데이터를 연결시켜주는 작업이 반드시 필요합니다.
 

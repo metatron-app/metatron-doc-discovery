@@ -1,0 +1,9 @@
+평가 기준,Druid의 성능
+쓰기 성능 - 단일 노드,"25k metrics/sec
+:raw-html:`<br />`
+출처: https://groups.google.com/forum/#!searchin/druid-user/benchmark%7Csort:relevance/druid-user/90BMCxz22Ko/73D8HidLCgAJ"
+쓰기 성능 - 5개 노드 클러스터,100k metrics/sec (추산 결과)
+쿼리 성능,양호
+개발 수준,안정적인 제품을 제공하는 단계에 이름
+장점,"괜찮은 데이터 모델이면서 좋은 분석 도구 기능들을 갖추고 있음. 주로 batch 로드된 대량 데이터셋에 대해 신속하게 쿼리하는 데 사용되도록 설계되었으며, 이 점에서 탁월한 성능을 보임."
+단점,시스템 운용이 힘듦. 쓰기 처리 속도가 아주 빠르지는 않음. 실시간 ingestion 셋업이 까다로움

@@ -36,8 +36,8 @@
 
 데이터셋 상세 화면에서 **이 데이터셋으로 새로운 데이터플로우 생성** 버튼을 누르면, 자동으로 데이터플로우를 만들고 **룰 편집** 직전의 단계까지 진행합니다.
 
-.. figure:: /_static/img/discovery/part07/add_datasets_6.png
+	.. figure:: /_static/img/discovery/part07/add_datasets_6.png
 
-.. note::
-	데이터플로우의 이름은 데이터셋 이름을 기반해서 자동으로 지어집니다.
+	.. note::
+		데이터플로우의 이름은 데이터셋 이름을 기반해서 자동으로 지어집니다.
 

@@ -7,14 +7,14 @@
 
 먼저 룰 편집 화면의 구성은 다음과 같습니다.
 
-.. figure:: /_static/img/discovery/part07/edit_rules_1.png
+	.. figure:: /_static/img/discovery/part07/edit_rules_1.png
 
-A. 컬럼 타입, 이름, 메뉴 버튼
-B. 룰 간편 생성을 위한 메뉴
-C. 적용된 룰 리스트 및 중간 삽입 버튼 (룰 사이에 마우스를 갖다대면 나옴)
-D. Undo, redo가 가능한 경우 활성화
-E. 룰 세부 내용 입력 패널
-F. 컬럼 값 분포 및 distinct count, type mismatch 또는 null value 관련 정보 등
+	#. 컬럼 타입, 이름, 메뉴 버튼
+	#. 룰 간편 생성을 위한 메뉴
+	#. 적용된 룰 리스트 및 중간 삽입 버튼 (룰 사이에 마우스를 갖다대면 나옴)
+	#. Undo, redo가 가능한 경우 활성화
+	#. 룰 세부 내용 입력 패널
+	#. 컬럼 값 분포 및 distinct count, type mismatch 또는 null value 관련 정보 등
 
 룰 생성하기
 ===================================

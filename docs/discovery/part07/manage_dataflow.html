@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터플로우 관리하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>데이터플로우 관리하기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="데이터셋 추가하기" href="add_datasets.html" />
     <link rel="prev" title="데이터셋 만들기" href="create_a_dataset.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -89,8 +92,8 @@
             
               <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 시작하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">메타트론 디스커버리 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
@@ -111,7 +114,7 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">메타트론 어노말리 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
@@ -186,14 +189,18 @@
 <p><strong>데이터플로우</strong>는 <strong>데이터셋</strong>을 처리하는 단위입니다. 한 데이터플로우는 다수의 데이터셋들을 가져와 연관지어서 변형을 가할 수 있습니다.
 다시 말해, 어떤 데이터셋이 변형 룰을 가지려면 반드시 한 데이터플로우에 속해야 하며, 그 안의 다른 데이터셋들과 join, union 등의 관계를 가질 수 있습니다.</p>
 <p>아래와 같이 데이터플로우 상세 화면에서는 해당 데이터플로우에 속한 모든 데이터셋과 이들 간의 의존 관계, 그리고 각 데이터셋에 적용된 변형 룰들을 보여줍니다.</p>
-<div class="figure">
+<blockquote>
+<div><div class="figure align-center">
 <img alt="../../_images/add_datasets_1.png" src="../../_images/add_datasets_1.png" />
 </div>
+</div></blockquote>
 <p>아래 각 하위 단원에서는 이러한 데이터플로우를 정의하기 위해 <strong>데이터셋을 추가</strong>하고, <strong>변형 룰들을 편집</strong>하고, <strong>변형 결과물을 데이터 스냅샷으로 출력</strong>하는 과정을 살펴봅니다.</p>
 <p>데이터플로우 메뉴는 메인 화면 좌측 패널에서 <strong>MANAGEMENT</strong> &gt; <strong>데이터 프리퍼레이션</strong> &gt; <strong>데이터플로우</strong>를 통해 진입할 수 있습니다.</p>
-<div class="figure align-center">
+<blockquote>
+<div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/create_a_dataset_1.png"><img alt="../../_images/create_a_dataset_1.png" src="../../_images/create_a_dataset_1.png" style="width: 270.0px; height: 511.0px;" /></a>
 </div>
+</div></blockquote>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="add_datasets.html">데이터셋 추가하기</a><ul>
@@ -258,7 +265,7 @@
         <a href="add_datasets.html" class="btn btn-neutral float-right" title="데이터셋 추가하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="create_a_dataset.html" class="btn btn-neutral" title="데이터셋 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="create_a_dataset.html" class="btn btn-neutral float-left" title="데이터셋 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -284,37 +291,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

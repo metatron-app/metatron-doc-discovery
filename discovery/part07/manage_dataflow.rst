@@ -6,15 +6,15 @@
 
 아래와 같이 데이터플로우 상세 화면에서는 해당 데이터플로우에 속한 모든 데이터셋과 이들 간의 의존 관계, 그리고 각 데이터셋에 적용된 변형 룰들을 보여줍니다.
 
-.. figure:: /_static/img/discovery/part07/add_datasets_1.png
+	.. figure:: /_static/img/discovery/part07/add_datasets_1.png
 
 아래 각 하위 단원에서는 이러한 데이터플로우를 정의하기 위해 **데이터셋을 추가**\하고, **변형 룰들을 편집**\하고, **변형 결과물을 데이터 스냅샷으로 출력**\하는 과정을 살펴봅니다.
 
 데이터플로우 메뉴는 메인 화면 좌측 패널에서 **MANAGEMENT** > **데이터 프리퍼레이션** > **데이터플로우**\를 통해 진입할 수 있습니다.
 
-.. figure:: /_static/img/discovery/part07/create_a_dataset_1.png
-   :scale: 50 %
-   :align: center
+	.. figure:: /_static/img/discovery/part07/create_a_dataset_1.png
+	   :scale: 50 %
+	   :align: center
 
 .. toctree::
    :maxdepth: 4

@@ -5,7 +5,7 @@
 
 **Metatron Discovery 데이터 프리퍼레이션의 장점**
 
-.. figure:: /_static/img/discovery/part07/data_preparation_overview_1.png
+	.. figure:: /_static/img/discovery/part07/data_preparation_overview_1.png
 
 사용자는 위와 같이 GUI를 통해 Step-by-Step으로 변형 룰을 생성해낼 수 있습니다. 매 Step의 변형 결과가 데이터 분포도와 함께 메모리에 저장되기 때문에, 사용자는 이전 스텝 결과를 마우스 클릭만으로 쉽게 확인할 수 있을 뿐 아니라, 마치 텍스트 편집기를 쓰는 것처럼 **undo**, **redo** 등의 동작도 간단히 실행할 수 있습니다.
 
@@ -20,7 +20,7 @@
 
 **Metatron Discovery 데이터 프리퍼레이션의 구조**
 	
-.. figure:: /_static/img/discovery/part07/preparation_overview.png	
+	.. figure:: /_static/img/discovery/part07/preparation_overview.png	
 
 위 그림과 같이 데이터 프리퍼레이션은 정제할 대상 데이터를 참조하는 **데이터셋**, 지정된 데이터셋의 변형 룰들을 정의하는 **데이터플로우**, 그리고 그러한 룰들에 의해 변형된 결과물을 출력하는 **데이터 스냅샷**\으로 구성됩니다.
 

@@ -30,11 +30,11 @@
 
 생성에 성공한 스냅샷의 상세 보기 화면으로 들어가면, 데이터의 유효성 비율, 생성된 스냅샷의 그리드 등을 확인할 수 있고, 스냅샷 결과를 :ref:`CSV 파일로 다운로드 <snapshot_into_csv>`\할 수 있습니다.
 
-.. figure:: /_static/img/discovery/part07/data_snapshot_3.png
+	.. figure:: /_static/img/discovery/part07/data_snapshot_3.png
 
 유효한 데이터가 생성되지 못한 스냅샷의 상세 보기 화면으로 들어가면, 실패를 발생시킨 예외의 로그가 표시됩니다.
 
-.. figure:: /_static/img/discovery/part07/data_snapshot_4.png
+	.. figure:: /_static/img/discovery/part07/data_snapshot_4.png
 
 .. _snapshot_into_druid:
 
@@ -54,4 +54,4 @@ CSV파일로 다운로드 받기
 
 다운로드한 파일은 표준 CSV 형식으로, 'comma'로 구분되고 'new line'으로 개행합니다. 
 
-.. figure:: /_static/img/discovery/part07/data_snapshot_6.png
+	.. figure:: /_static/img/discovery/part07/data_snapshot_6.png
