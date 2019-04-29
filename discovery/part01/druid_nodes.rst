@@ -4,6 +4,7 @@ Druid 기본 클러스터 아키텍쳐
 Druid 클러스터는 여러 유형의 노드군으로 구성되며, 각 유형의 노드군별로 고유의 역할을 수행합니다.
 
 	.. figure:: /_static/img/discovery/part01/druid_node_architecture.png
+		:scale: 50%
 		:align: center
 		:alt: Metatron 노드 아키텍쳐
 

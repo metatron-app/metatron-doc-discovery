@@ -5,18 +5,17 @@
 .. |icon_folding| image:: /_static/img/discovery/part06/icon_folding.png
 .. |icon_arrow| image:: /_static/img/discovery/part06/icon_arrow.png
 
-워크벤치에서는 SQL 데이터베이스 편집 및 관리가 용이하며 쿼리 결과를 다양한 형태로 시각화하여 저장할 수 있습니다. 워크벤치의 화면은 다음과 같은 5개의 영역으로 나뉘어 집니다.
+워크벤치에서는 SQL 데이터베이스 편집 및 관리가 용이하며 쿼리 결과를 다양한 형태로 시각화하여 저장할 수 있습니다. 워크벤치의 화면은 다음과 같은 5개의 영역으로 나뉘며, 추가적으로 스키마 브라우저를 열 수 있습니다.
 
 	.. figure:: /_static/img/discovery/part06/workbench_basic.png
 		:align: center
 
-.. 그림 다시
-  
-	* 기본 정보 영역(:ref:`workbench_use_1` 참조)
-	* 스키마 및 테이블 영역(:ref:`workbench_use_2` 참조)
-	* 쿼리 에디터 영역(:ref:`workbench_use_3` 참조)
-	* 쿼리 결과 영역(:ref:`workbench_use_4` 참조)
-	* 추가 도구 영역(:ref:`workbench_use_5` 참조)
+	#. 기본 정보 영역(:ref:`workbench_use_1` 참조)
+	#. 스키마 및 테이블 영역(:ref:`workbench_use_2` 참조)
+	#. 쿼리 에디터 영역(:ref:`workbench_use_3` 참조)
+	#. 쿼리 결과 영역(:ref:`workbench_use_4` 참조)
+	#. 추가 도구 영역(:ref:`workbench_use_5` 참조)
+	#. 스키마 브라우저(:ref:`workbench_use_6` 참조)
 
 .. _workbench_use_1:
 

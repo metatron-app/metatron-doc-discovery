@@ -27,3 +27,4 @@ Metatron Discovery에서 **워크북**\은 하나의 독립적인 데이터 분�
 
 		.. figure:: /_static/img/discovery/part04/create_a_workbook_05.png
 			:align: center
+			:scale: 70%

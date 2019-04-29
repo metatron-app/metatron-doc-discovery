@@ -21,6 +21,7 @@
 
 #. 선택한 데이터 커넥션의 정보를 확인하고 이름과 설명을 입력하면 워크벤치가 생성됩니다.
 
-	.. figure:: /_static/img/discovery/part06/workbench_creation_02.png
+	.. figure:: /_static/img/discovery/part06/workbench_creation_03.png
+		:scale: 50%
 
 #. 워크벤치 생성이 완료되면, 생성된 워크벤치를 바로 확인할 수 있습니다.
