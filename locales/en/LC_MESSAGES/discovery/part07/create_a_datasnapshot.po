@@ -1,0 +1,63 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 22dd842e1b3c4f188d55ac920b3787ef
+#: ../../discovery/part07/create_a_datasnapshot.rst:2
+msgid "데이터 스냅샷 만들기"
+msgstr "Creating a data snapshot"
+
+# ab62b292f4df488a8b6bd77b2e4ffe8d
+#: ../../discovery/part07/create_a_datasnapshot.rst:4
+msgid ""
+"데이터플로우에서 룰 편집이 완료된 데이터셋은 '데이터 스냅샷'을 찍어서 로컬 PC에 파일로 다운로드 받거나, Metatron "
+"엔진으로 즉시 적재할 수 있습니다. 데이터 스냅샷을 실행하면 10,000개 행 이하의 샘플 데이터에만 적용된 룰을 전체 데이터에 "
+"대해 적용하게 됩니다."
+msgstr "When rule editing is complete, you can create a data snapshot of the finalized dataset, which can then be downloaded to your local PC or ingested into the Metatron engine. Running the data snapshot expands the rules applied to a sample dataset of less than 10,000 rows to the entire data."
+
+# 3fa4756e33314ac6bbe929f10e4761f0
+#: ../../discovery/part07/create_a_datasnapshot.rst:6
+msgid "스냅샷을 만드는 방법은 다음과 같습니다."
+msgstr "Below are instructions on creating a snapshot."
+
+# 6744b48b1a414a00b26f8e22f14dae88
+#: ../../discovery/part07/create_a_datasnapshot.rst:8
+msgid ":doc:`룰 편집 <edit_rules>` 창 우측 상단에 위치한 **데이터 스냅샷** 버튼을 클릭합니다."
+msgstr "Click the **Data Snapshot** button on the upper right of the :doc:`룰 편집 <edit_rules>` window."
+
+# 56c487b9ea7f4089b733b9aabf13732d
+#: ../../discovery/part07/create_a_datasnapshot.rst:12
+msgid "스냅샷 생성을 위한 팝업이 나타나면, 스냅샷 생성 위치를 FILE과 HIVE(STAGING_DB) 중에서 지정합니다."
+msgstr "When a popup is displayed to set snapshot options, select either FileSystem or HIVE (STAGING_DB) under snapshot type. "
+
+# 7bc784c67c4b402f89e7617ab71df52a
+#: ../../discovery/part07/create_a_datasnapshot.rst:16
+msgid "FILE 경로로 스냅샷의 위치를 지정하는 경우, **CSV** 또는 **JSON**\\의 포맷으로 생성할 수 있습니다."
+msgstr "If FileSystem is selected as the snapshot location, the snapshot will be created as **CSV** or **JSON**."
+
+# b373293c87da4c0b8ace993cf51ee969
+#: ../../discovery/part07/create_a_datasnapshot.rst:20
+msgid "HIVE 옵션은 STAGING_DB가 설정된 경우에만 활성화됩니다. 스키마명과 테이블명을 지정하면 해당 테이블에 스냅샷이 생성됩니다."
+msgstr "The HIVE option is enabled only when STAGING_DB is activated. A snapshot is created in the table when you designate a schema name and table name."
+
+# cf4ab57b65f4425ebd6c679a209cf99c
+#: ../../discovery/part07/create_a_datasnapshot.rst:24
+msgid "스냅샷을 생성하면 동일한 창에서 스냅샷 생성 상태와 정보를 조회할 수 있습니다."
+msgstr "When the snapshot is created, you can view the snapshot status and related information in the same window."
+

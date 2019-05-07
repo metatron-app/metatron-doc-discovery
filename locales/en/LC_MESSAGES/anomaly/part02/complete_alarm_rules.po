@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 8ea7c889ee4c4c6caccfa50224626b5c
+#: ../../anomaly/part02/complete_alarm_rules.rst:2
+msgid "알람 룰 만들기 완성"
+msgstr ""
+
+# 50ad942337bd45d5bdf314dba950e0c3
+#: ../../anomaly/part02/complete_alarm_rules.rst:3
+msgid ""
+"알람룰의 이름을 기입하여  알람룰 생성을 완료한다. 생성된 알람룰은 알람룰 리스트의 최상단에 노출되고 첫 수행이 있기 전까지 "
+"prepare 상태로 표시된다."
+msgstr ""
+
+# b4d5ea528fec4b91b33e0bef9efb9746
+#: ../../anomaly/part02/complete_alarm_rules.rst:11
+msgid "Figure 1. write alarm rule name"
+msgstr ""
+
+# 25a2ea51e74c4d4980e2335c7a88c828
+#: ../../anomaly/part02/complete_alarm_rules.rst:18
+msgid "Figure 2. alarm rule list"
+msgstr ""
+

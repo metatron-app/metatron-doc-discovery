@@ -1,0 +1,107 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 83b40991ccb54c779568bdbbf51a0ec7
+#: ../../discovery/part05/use_a_notebook.rst:2
+msgid "노트북 활용하기"
+msgstr "Using Notebook"
+
+# ab4f319506a04691989f0778bf6f19fb
+#: ../../discovery/part05/use_a_notebook.rst:4
+msgid "노트북을 생성하였으면, 스크립트를 작성하고 REST API를 통해 서비스할 수 있습니다. 노트북 활용 절차는 다음과 같습니다."
+msgstr "In the newly created notebook, you can write a script and serve is through a REST API. A notebook can be used as follows:"
+
+# ae764506f88b45b9aeebc6a3c09979f6
+#: ../../discovery/part05/use_a_notebook.rst:7
+msgid "노트북 상세 조회"
+msgstr "Detailed notebook page"
+
+# b993fae1bdd541b2b894f4931a4c52a1
+#: ../../discovery/part05/use_a_notebook.rst:9
+msgid ""
+"워크스페이스 화면에서 분석하고자 하는 노트북을 선택하면, 아래와 같은 상세 화면이 나타납니다. 노트북 생성 시 입력했던 데이터 "
+"타입과 데이터 소스 이름, 개발 언어, 코드를 조회할 수 있습니다."
+msgstr "On the workspace screen, select the notebook you want to use as an analytics tool. Then, the following screen with detailed information appears. You&rsquo;ll see basic information on the notebook: data type, data source name, development language, and analytic code, etc."
+
+# b6b887348b3d40a68b1b69bb9b44256d
+#: ../../discovery/part05/use_a_notebook.rst:16
+msgid "노트북 코딩"
+msgstr "Notebook coding"
+
+# cffd59e3d5e14f7c9d349338de47dc85
+#: ../../discovery/part05/use_a_notebook.rst:18
+msgid ""
+"노트북 상세 조회 화면에서 코드 란의 **상세**\\를 클릭하면, 노트북 페이지가 나타납니다. 노트북 페이지 상단에는 데이터셋을 "
+"로딩하는 코드가 삽입되어 있으며, 해당 셀을 실행하면 dataset 객체에 JSON 포맷의 데이터셋이 로딩됩니다."
+msgstr "Click **Detail** on the notebook page to pop up a new window for coding in the notebook. At the top of this window, a code to load a dataset is inserted; executing this cell loads a JSON dataset as the dataset object."
+
+# a5ab82d44a4846d49cd63e89c3a1b07b
+#: ../../discovery/part05/use_a_notebook.rst:24
+msgid ""
+"위 화면은 Zeppeline을 선택한 경우에 나타나며, 생성 시 선택한 데이터의 로딩을 위한 셀이 삽입되어 있습니다. 3번째 셀부터"
+" 프로그램 코딩 작업을 수행한 후 개발이 완료되면 **저장** 버튼을 클릭하십시오."
+msgstr "The screen above appears when Zeppelin is selected and includes a cell for loading the data selected when the notebook was created. After coding the program starting from the third cell, click **Save** when you are finished."
+
+# d374aa3c151f4bfe9cacd35455a2d289
+#: ../../discovery/part05/use_a_notebook.rst:28
+msgid "노트북 API 등록하기"
+msgstr "Registering a Notebook API"
+
+# 29426c545f0b4d74afe5449284db5d35
+#: ../../discovery/part05/use_a_notebook.rst:30
+msgid ""
+"작성한 노트북은 REST API 를 호출하여 결과값을 반환할 수 있습니다. 아래 설명을 참조하여 **리턴타입**\\을 선택한 후 "
+"**이름**\\과 **설명**\\을 기입하십시오."
+msgstr "The notebook created can load a REST API to return the results. Select a **Return type** by referring to the descriptions below, and enter a **Name** and **Description**."
+
+# 45473c739fc74bc199ab6a68b9da66a5
+#: ../../discovery/part05/use_a_notebook.rst:36
+msgid "**HTML**: 노트북 스크립트 전체 실행 결과 화면을 HTML로 반환합니다."
+msgstr "**HTML**: The results of running the notebook script are returned in HTML."
+
+# cd6165c5bd7c4871a1ba2ec9098aa9b5
+#: ../../discovery/part05/use_a_notebook.rst:37
+msgid ""
+"**JSON**: 노트북 스크립트에 작성된 사용자가 정의한 포맷의 JSON 객체를 결과로 반환합니다. 이 때 Metatron "
+"Discovery에서 제공하는 ``response.write(...)`` 함수를 사용하며, 예시 코드는 다음과 같습니다."
+msgstr "**JSON**: The results of running the notebook script are returned in a custom JSON format. In this case, the ``response.write(...)`` function provided by Metatron Discovery will be used. The following is an example code for using the response.write function:"
+
+# cb047d88186845d8ab5375a368fe91e9
+#: ../../discovery/part05/use_a_notebook.rst:39
+msgid "R 기반 노트북: ``response.write(list(coefficient = 2, intercept = 0))``"
+msgstr "R-based notebook: ``response.write(list(coefficient = 2, intercept = 0))``"
+
+# f3dfaecfef0a4a77833bc764049f4d32
+#: ../../discovery/part05/use_a_notebook.rst:40
+msgid "Python 기반 노트북: ``response.write({'coefficient' : 2.5, 'intercept' : 0})``"
+msgstr "Python-based notebook: ``response.write({'coefficient' : 2.5, 'intercept' : 0})``"
+
+# b602adc36b4d4f869294c3e19b8c33d1
+#: ../../discovery/part05/use_a_notebook.rst:42
+msgid "**없음**: 노트북 스크립트를 실행하되 반환값은 제공하지 않습니다."
+msgstr "**Node**: Runs the notebook script but does not provide returns."
+
+# 64bff672503b44b7a37fbc0ef3be747f
+#: ../../discovery/part05/use_a_notebook.rst:45
+msgid ""
+"API 정보를 모두 입력한 후 **마침** 버튼을 클릭하면 API생성이 완료되고 아래와 같은 REST API URL을 확인할 수 "
+"있습니다. **Result** 버튼을 클릭하면 URL 실행 결과값을 팝업으로 조회할 수 있습니다."
+msgstr "Once you enter API information and click **Done**, the API is created to provide a REST API URL as shown below. Click **Result** to view the URL execution results in a popup window."
+

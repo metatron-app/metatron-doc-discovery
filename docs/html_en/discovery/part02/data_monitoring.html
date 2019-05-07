@@ -1,0 +1,303 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Monitoring &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Workspace" href="../part03/index.html" />
+    <link rel="prev" title="Data Connection" href="data_connection.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Management</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="data_source.html">Data Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_connection.html">Data Connection</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Data Monitoring</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Log Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Job Log</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Detailed query information</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data preparation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Data Management</a> &raquo;</li>
+        
+      <li>Data Monitoring</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../html_ko/discovery/part02/data_monitoring.html" rel="nofollow"> 한국어로 보기</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Data Monitoring<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Data monitoring is a function for monitoring the logs of all queries submitted by the user in Metatron Workbench to the staging database (internal Hive database) and external database connected to Metatron.</p>
+<p>The data monitoring menu can be accessed in <strong>MANAGEMENT</strong> &gt; <strong>DATA STORAGE</strong> &gt; <strong>DATA MONITORING</strong> on the panel on the left-hand side of the main screen.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_monitoring_menu.png" src="../../_images/data_monitoring_menu.png" />
+</div>
+</div></blockquote>
+<div class="section" id="id2">
+<h2>Log Statistics<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>This page gathers and reports various statistics related to the performance of queries in Metatron Discovery. You can search the following nine types of basic statistics.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/log-statistics.png" src="../../_images/log-statistics.png" />
+</div>
+<ol class="arabic simple">
+<li><p><strong>Query success/failure rate:</strong> Displays the daily success/failure rates of queries performed in Metatron.</p></li>
+<li><p><strong>Query frequency by user:</strong> Graph indicating how many queries were performed by each user. Click a bar to view the job log for the user.</p></li>
+<li><p><strong>In order of longest:</strong> Displays the performed queries in the order of the longest running time.</p></li>
+<li><p><strong>Amount of scan data:</strong> Displays the performed queries in the order of the highest amount of scanned data.</p></li>
+<li><p><strong>Frequency of successful queries:</strong> Displays the performed queries in the order of the highest frequency of success.</p></li>
+<li><p><strong>Frequency of failed queries:</strong> Displays the performed queries in the order of the highest frequency of failure.</p></li>
+<li><p><strong>Total memory usage:</strong> Displays the performed queries in the order of the largest memory usage in total.</p></li>
+<li><p><strong>Total CPU usage:</strong> Displays the performed queries in the order of the largest CPU usage in total.</p></li>
+<li><p><strong>Resource usage by queue:</strong> Displays the resource usage in each YARN queue in the Hadoop environment.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2>Job Log<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>This page reports the history of all queries performed in Metatron. You can easily see a history of previous jobs by searching the history of queries with the desired conditions. The following are the job conditions that can be searched.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/job-logs.png" src="../../_images/job-logs.png" />
+</div>
+<ol class="arabic simple">
+<li><p><strong>Status:</strong> Filters queries by whether they were successful or failed.</p></li>
+<li><p><strong>Limited elapsed time:</strong> Filters queries by long running time. You can set a reference time for this filtering.</p></li>
+<li><p><strong>Performed start time:</strong> Determines a time range by which to filter queries. This time range is based on when each query started running.</p></li>
+<li><p><strong>Search by job or application:</strong> Searches the query history by query statement or application ID.</p></li>
+<li><p><strong>Number of entries:</strong> Displays how many queries are returned in the list.</p></li>
+<li><p><strong>Job list:</strong> Lists queries filtered by specified criteria. Click an entry in the list to view its details.</p></li>
+</ol>
+</div></blockquote>
+<div class="section" id="id4">
+<h3>Detailed query information<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Click a query listed in the job log home to view details on that query. The following information can be searched in the detailed history.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/job-log-detail.png" src="../../_images/job-log-detail.png" />
+</div>
+<ol class="arabic simple">
+<li><p><strong>Status:</strong> Displays whether the query was successful or failed.</p></li>
+<li><p><strong>Job name:</strong> Statement used to perform the query.</p></li>
+<li><p><strong>Start time:</strong> Time when the query started running.</p></li>
+<li><p><strong>Elapsed time:</strong> Time taken to perform the query.</p></li>
+<li><p><strong>User:</strong> User ID who performed the query.</p></li>
+<li><p><strong>Connection:</strong> For a query performed in a workbench, the connection information of the database is displayed.</p></li>
+<li><p><strong>Recent history of the same connection:</strong> For a query performed in a workbench, the latest five queries performed in the database and their results are displayed. Click Detail to pop up a window showing the query statement.</p></li>
+<li><p><strong>Plan:</strong> Implements the query plan.</p></li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part03/index.html" class="btn btn-neutral float-right" title="Workspace" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data_connection.html" class="btn btn-neutral float-left" title="Data Connection" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

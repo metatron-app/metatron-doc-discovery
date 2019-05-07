@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 3d301cfd777b46e7a575102ba3bd3ac6
+#: ../../anomaly/part02/set_alarm_rules.rst:2
+msgid "알람 룰 설정하기"
+msgstr ""
+
+# dab7c3820d70496eae9cfcdea4c25b94
+#: ../../anomaly/part02/set_alarm_rules.rst:3
+msgid "알람이 동작하기 위한 조건들을 설정한다."
+msgstr ""
+
+# 42c0fa03ae734da38768ef4a5893a859
+#: ../../anomaly/part02/set_alarm_rules.rst:8
+msgid "Set Alarm Interval"
+msgstr ""
+
+# 2381a3461cf74abd9c94c8a069e4956c
+#: ../../anomaly/part02/set_alarm_rules.rst:9
+msgid "알람의 주기, 시작 시점등을 설정한다."
+msgstr ""
+
+# 7e3cbd1c0fa44f06b8c0257ae1645376
+#: ../../anomaly/part02/set_alarm_rules.rst:15
+msgid "Figure 1. set alarm interval"
+msgstr ""
+
+# ad261bd4109540a9acdb76a2de3136c2
+#: ../../anomaly/part02/set_alarm_rules.rst:19
+msgid "Set Alarm Condition"
+msgstr ""
+
+# 7ddc712dbe514066ac3d0803726085d0
+#: ../../anomaly/part02/set_alarm_rules.rst:20
+msgid "알람이 발생의 조건, 알람의 중요도등을 설정한다."
+msgstr ""
+
+# e71782c6994d498392eeea0c97d9033d
+#: ../../anomaly/part02/set_alarm_rules.rst:26
+msgid "Figure 2. set alarm condition"
+msgstr ""
+
+# 15580cdc819e4d7488b664b49f40c7a2
+#: ../../anomaly/part02/set_alarm_rules.rst:29
+msgid "Set Alarm Notification User"
+msgstr ""
+
+# b12572d2d73c4df1a62c27e364c24785
+#: ../../anomaly/part02/set_alarm_rules.rst:30
+msgid "알람 발생시 노티를 받는 대상 및 방법을 설정한다."
+msgstr ""
+
+# f37b5addb7db4d07b29815c479d5d701
+#: ../../anomaly/part02/set_alarm_rules.rst:36
+msgid "Figure 3. set alarm noti"
+msgstr ""
+
+# 3d34896dadcc4dc1910e739cc0161906
+#: ../../anomaly/part02/set_alarm_rules.rst:42
+msgid "Figure 4. set alarm noti detail"
+msgstr ""
+

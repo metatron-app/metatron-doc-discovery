@@ -1,0 +1,774 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 6168a20de2704b9da82d340f1b8d22b2
+#: ../../discovery/part01/druid_tests.rst:2
+msgid "Druid 성능 평가"
+msgstr "Druid performance assessments"
+
+# df138583c66440d08512617176d1f23c
+#: ../../discovery/part01/druid_tests.rst:7
+msgid ""
+"Druid는 '실시간' 탐색이 가능한 데이터 스토어를 지향하는 만큼 수치화된 성능을 평가함에 있어서는 다음의 두 가지 측면에 초점이"
+" 맞춰집니다."
+msgstr "With Druid being a data store that supports real-time data exploration, its quantitative assessments are focused on two key aspects:"
+
+# 41fc9581031640c8aa824e0a73312341
+#: ../../discovery/part01/druid_tests.rst:9
+msgid "Query latency"
+msgstr "Query latency"
+
+# a0a17b6cdf2e44e98116e8a1aff0d94b
+#: ../../discovery/part01/druid_tests.rst:10
+msgid "Ingestion latency"
+msgstr "Ingestion latency"
+
+# ec532de5b41343909ef0f5841cf2e4d0
+#: ../../discovery/part01/druid_tests.rst:12
+msgid ""
+"쿼리 처리와 ingestion에서 소요되는 시간을 최소화하는 것이 '실시간'을 이루는 핵심이 되기 때문입니다. 지금까지 Druid "
+"개발진을 비롯한 여러 기관 및 개인이 이러한 기준으로 Druid 성능을 평가한 benchmark들을 산출하고 그 밖의 지표를 통해 "
+"Druid를 다른 데이터베이스 관리 시스템들과 비교한 결과를 공개하였습니다."
+msgstr "This is because the key to achieving &ldquo;real-time&rdquo; performance is to minimize the time spent on query processing and ingestion. A number of organizations and individuals, including the developers of Druid, have established benchmarks for Druid performance assessment based on the two key aspects, and shared how Druid compares to other database management systems."
+
+# 9e384f8dd528495bbb71b46f79a63b90
+#: ../../discovery/part01/druid_tests.rst:16
+msgid "Druid 개발진의 자체 평가"
+msgstr "Self-assessment by Druid developers"
+
+# 55eef697f1fd4e59bca334bff65eb885
+#: ../../discovery/part01/druid_tests.rst:18
+msgid ""
+"Druid 개발진이 2014년 발표한 백서 'Druid: A Real-time Analytical Data "
+"Store'[#f1]_\\의 Chapter 6 Performance에서는 Druid의 query 및 ingestion "
+"latency를 다방면에서 평가한 결과를 상세하게 설명하고 있습니다. 본 절에서는 이 중에서 Druid의 성능을 직관적으로 살펴볼 "
+"수 있는 지표 위주로 간단히 소개합니다."
+msgstr "Druid: A Real-time Analytical Data Store\\ [#f1]_ was published by the developers in 2014. Chapter 6. Performance contains details of Druid assessment, with a particular focus on query and ingestion latencies. The benchmarks of Druid performance are briefly introduced in the following sections."
+
+# 32f452900ea946b389399c9bfce78954
+#: ../../discovery/part01/druid_tests.rst:21
+msgid "Query latency 성능"
+msgstr "Query latency"
+
+# 52954cb57f04431e9f542a201f2a1e4b
+#: ../../discovery/part01/druid_tests.rst:23
+msgid ""
+"Druid의 query latency 성능에 대해 백서에서는 현장에서 실제 사용되는 데이터셋 8종과 TPC-H 데이터셋에 대한 쿼리"
+" 결과를 기준으로 평가하였는데, 여기서는 TPC-H 데이터셋에 대한 쿼리 결과를 소개합니다. TPC-H 데이터셋에 대한 query "
+"latency는 MySQL과의 비교 평가 방식으로 진행하였고, 이때 사용한 클러스터 사양은 다음과 같았습니다."
+msgstr "Regarding Druid&rsquo;s query latency, the paper discusses two performance assessments&mdash;one was conducted on eight data sources that had been most queried at Metamarkets and the other was on TPC-H datasets. In this section, we review the latter assessment. The latencies from querying on TPC-H datasets were measured by comparing with MySQL, and the cluster environment was as follows:"
+
+# 223377643c3f405da1b0820d18a4664e
+#: ../../discovery/part01/druid_tests.rst:25
+msgid ""
+"**Druid historical 노드:** Amazon EC2 m3.2xlarge instance types (Intel® "
+"Xeon® E5-2680 v2 @ 2.80GHz)"
+msgstr "**Druid historical nodes:** Amazon EC2 m3.2xlarge instance types (Intel® Xeon® E5-2680 v2 @ 2.80GHz)"
+
+# fe69cb912842482dacb89f1090ccc85f
+#: ../../discovery/part01/druid_tests.rst:26
+msgid ""
+"**Druid broker 노드:** c3.2xlarge instances (Intel® Xeon® E5-2670 v2 @ "
+"2.50GHz)"
+msgstr "**Druid broker nodes:** c3.2xlarge instances (Intel® Xeon® E5-2670 v2 @ 2.50GHz)"
+
+# 6e68f466fa7345cbb2b07c3f80fd5700
+#: ../../discovery/part01/druid_tests.rst:27
+msgid "**MySQL Amazon RDS instance** (Druid와 동일한 m3.2xlarge instance type)"
+msgstr "**Pledged mountain draw converting** (subtract soft a3.2analysed repurchase pairs)"
+
+# bd9fb20cf3cf43c2ba90c09bdcaec0c5
+#: ../../discovery/part01/druid_tests.rst:29
+msgid ""
+"아래는 단일 노드에서의 1GB 및 100GB TPC-H 데이터셋에 대한 Druid와 MySQL의 query latency를 비교한 "
+"결과를 정리한 그래프입니다."
+msgstr "The figure below shows the query latencies resulting from Druid and MySQL when tested on the 1GB and 100GB TPC-H datasets:"
+
+# a33d9fa8697d428c97d7e6a1cd68a6cf
+# 0deae0e621824ac087a5de9100accaf0
+# 3c29695c31484e48b350c1bb998c9395
+#: ../../discovery/part01/druid_tests.rst:35
+#: ../../discovery/part01/druid_tests.rst:45
+#: ../../discovery/part01/druid_tests.rst:62
+msgid "Source: Druid: A Real-time Analytical Data Store"
+msgstr "Source: Druid: A Real-time Analytical Data Store"
+
+# 5711d0d877fc49bb88e22f727e4859df
+#: ../../discovery/part01/druid_tests.rst:37
+msgid "이러한 결과는 Druid의 도입으로 기존 관계형 데이터베이스 시스템에 비해 획기적으로 빠른 쿼리 속도를 낼 수 있음을 시사합니다."
+msgstr "By showcasing these results, the paper suggests that Druid is capable of extremely faster query returns compared to legacy relational database systems."
+
+# 3ea58d34fda74cad877c8cd3a2d230d8
+#: ../../discovery/part01/druid_tests.rst:39
+msgid ""
+"또한 여러 노드를 엮어서 클러스터를 구성할 경우 쿼리 처리 속도가 어느 정도 향상되는지도 측정하였습니다. 쿼리 대상 데이터셋으로서 "
+"100GB TPC-H를 사용하였으며 단일 노드(8개 코어)와 6개 노드 클러스터(48개 코어) 간의 성능 차이는 다음과 같았습니다."
+msgstr "The Druid paper also presents how faster query returns are achieved when multiple nodes are joined together in a cluster. When tested on the TPC-H 100 GB dataset, the performance difference between a single node (8 cores) and six-node cluster (48 cores) was as follows:"
+
+# 0eaae66632fd424da18da1e363035ed0
+#: ../../discovery/part01/druid_tests.rst:47
+msgid ""
+"모든 쿼리가 linear scalability를 달성하지는 않았으나 상대적으로 단순한 쿼리들의 경우에는 거의 코어 수에 정비례하는 "
+"처리 속도 증대를 보여주었습니다(SK텔레콤 Metatron에서는 더욱 뚜렷한 linear scalability를 달성할 수 있도록 "
+"기능을 보강하였습니다)."
+msgstr "It was observed that not all types of queries achieve linear scaling, but the simpler aggregation queries do, ensuring a speed increment almost proportional to the number of the cores (SK Telecom&rsquo;s Metatron has made improvements to achieve much more obvious linear scalability)."
+
+# 07d4145ca8a3448d954e4fcd2145cf9f
+#: ../../discovery/part01/druid_tests.rst:50
+msgid "Ingestion latency 성능"
+msgstr "Ingestion latency"
+
+# 1bdc58d7a0184655a750520a4c6f8ce7
+#: ../../discovery/part01/druid_tests.rst:52
+msgid "Druid의 ingestion 성능에 대해서도 평가하였는데, 이때 사용된 클러스터 환경은 다음과 같았습니다."
+msgstr "The paper also assessed Druid&rsquo;s data ingestion latency on a production ingestion setup consisting of:"
+
+# 323e1397ea60434f9bd2322e97e4aa68
+#: ../../discovery/part01/druid_tests.rst:54
+msgid "6개 노드, 총 메모리 360GB 및 96개 코어(12 x Intel® Xeon® E5-2670)"
+msgstr "6 nodes, totalling 360GB of RAM and 96 cores (12 x Intel®Xeon®E5-2670)."
+
+# 9562e3980dd449e4b474a24482f86578
+#: ../../discovery/part01/druid_tests.rst:56
+msgid ""
+"ingestion 대상으로는 현장에서 실제 사용되는 데이터 소스 8종이었으며 데이터 소스 각각의 특징과 ingestion 결과는 "
+"아래와 같았습니다. 참고로 ingestion 측정을 하는 기간 동안 해당 클러스터에서는 그 외 다른 데이터 소스에 대한 "
+"ingestion 동작도 병행해서 실시하였습니다."
+msgstr "A total of eight production data sources were selected for this assessment. The characteristics of each data source and their ingestion results are shown below. Note that in this setup, several other data sources were being ingested and many other Druid related ingestion tasks were running concurrently on the machines."
+
+# a83293f735b24077a7b6309035361294
+#: ../../discovery/part01/druid_tests.rst:64
+msgid ""
+"데이터 ingestion 속도는 데이터의 복잡성 등 여러 가지 변수의 영향을 받지만, 측정 결과를 놓고 볼 때 대체로 "
+"'interactivity'라는 Druid의 개발 목표에 부합한다고 할 수 있습니다."
+msgstr "Druid&rsquo;s data ingestion latency is heavily dependent on the complexity of the dataset being ingested, but the latency measurements present here are sufficient to demonstrate that Druid well addresses the stated problems of interactivity."
+
+# e7d88e6e072841999015a07ae78c22f9
+#: ../../discovery/part01/druid_tests.rst:68
+msgid "SK텔레콤의 Druid 성능 평가"
+msgstr "Druid performance assessment by SK Telecom"
+
+# f442b7358e974458b01e37893d676810
+#: ../../discovery/part01/druid_tests.rst:70
+msgid "SK텔레콤에서는 다음과 같이 Druid의 query latency와 ingestion latency를 측정하였습니다."
+msgstr "SK Telecom also measured the query and ingestion latencies of Druid as detailed below:"
+
+# 64a65350e4ba441d9c9b2f2dcb96d5d2
+#: ../../discovery/part01/druid_tests.rst:73
+msgid "Query latency 테스트"
+msgstr "Query latency test"
+
+# 45b9fcc52f6a4b8f9c35967bf90d363e
+#: ../../discovery/part01/druid_tests.rst:75
+msgid "Query latency를 측정하는 조건은 다음과 같았습니다."
+msgstr "The conditions of query latency measurement were as follows:"
+
+# 5fd7e71189e344d2ad818ea2239f587c
+#: ../../discovery/part01/druid_tests.rst:77
+msgid "데이터: TPC-H 100G dataset (9억 rows)"
+msgstr "데이터: TPC-H 100G dataset (900 million rows)"
+
+# 4c8084c9733c477f90a76c909399cd4a
+#: ../../discovery/part01/druid_tests.rst:78
+msgid "Pre-aggregation 기준: day"
+msgstr "Pre-aggregation granularity: day"
+
+# 78a1d32212994112ab3b006beeeea909
+#: ../../discovery/part01/druid_tests.rst:79
+msgid "서버: r3.4xlarge nodes, (2.5GHz * 16, 122G, 320G SSD) * 6"
+msgstr "Servers: r3.4xlarge nodes, (2.5GHz * 16, 122G, 320G SSD) * 6"
+
+# 9de64aaf72484a94bd31e5e3fdd941f9
+#: ../../discovery/part01/druid_tests.rst:80
+msgid "Historical 노드 개수: 6개"
+msgstr "No. of historical nodes: 6"
+
+# fe64b371436f48d4a1be92e5b2457cbe
+#: ../../discovery/part01/druid_tests.rst:81
+msgid "Broker 노드 개수: 1개"
+msgstr "No. of broker nodes: 1"
+
+# 8e6d663121f64e309f1f3f2634733c23
+#: ../../discovery/part01/druid_tests.rst:83
+msgid ""
+"그 결과 TPC-H 100G dataset의 5개 쿼리의 반환 속도는 다음과 같았습니다(Hive의 쿼리 처리 속도도 참조용으로 함께"
+" 측정하였습니다)."
+msgstr "The query times for five queries of the TPC-H 100G dataset were as follows (the query times in Hive were also measured as a reference):"
+
+# c6582f0b4348409a919b83a191a5ecf3
+# 3f1b64e66baa46e6b4a66c97a7987079
+#: ../../discovery/part01/druid_tests.rst:89
+#: ../../discovery/part01/druid_tests.rst:113
+msgid "Source: SK Telecom T-DE WIKI Metatron Project"
+msgstr "Source: SK Telecom T-DE WIKI Metatron Project"
+
+# 422a9a2d8bf44a95a18b0024d20814d3
+#: ../../discovery/part01/druid_tests.rst:92
+msgid ""
+"Hive의 benchmark가 현저하게 떨어지는 원인 중 일부는 Thrift로 측정한 것과 partition없이 test set이 "
+"구성되어 있기 때문입니다."
+msgstr "The reasons why the Hive benchmark performed poorly include that some processes were performed through Thrift and the dataset wasn&rsquo;t partitioned."
+
+# 93a3cf7c22584678a19331a995d99faf
+#: ../../discovery/part01/druid_tests.rst:95
+msgid "Ingestion latency 테스트"
+msgstr "Ingestion latency test"
+
+# cdca47df928e49bb89a33bb954fbaf84
+#: ../../discovery/part01/druid_tests.rst:97
+msgid "Ingestion latency를 측정하는 조건은 다음과 같았습니다."
+msgstr "The conditions of ingestion latency measurement were as follows:"
+
+# 9c3bd92feeae42889f711739cd70c5ea
+#: ../../discovery/part01/druid_tests.rst:99
+msgid "Ingestion data size: 1일 30억 rows, 10 columns"
+msgstr "Ingestion data size: 30 million rows/day, 10 columns"
+
+# 399e4aabb6fd47bf93ff8e29a7dcce27
+#: ../../discovery/part01/druid_tests.rst:100
+msgid "메모리: 512 GB"
+msgstr "Memory: 512 GB"
+
+# 5c06e223e75a4b2b883bb2869fa5dad7
+#: ../../discovery/part01/druid_tests.rst:101
+msgid "CPU: Intel (R) Xeon (R) Gold 5120 CPU @ 2.20 GHz (core 56개)"
+msgstr "CPU: Intel (R) Xeon (R) Gold 5120 CPU @ 2.20 GHz (56 cores)"
+
+# 8ffb49fa3af146c587c074f15602066b
+#: ../../discovery/part01/druid_tests.rst:102
+msgid "Historical 노드 개수: 100개"
+msgstr "No. of historical nodes: 100"
+
+# 2fca31ed63c345e2a1613c1c56613657
+#: ../../discovery/part01/druid_tests.rst:103
+msgid "Broker 노드 개수: 2개"
+msgstr "No. of broker nodes: 2"
+
+# 2191c853536e4c118170e41d00718444
+#: ../../discovery/part01/druid_tests.rst:104
+msgid "총 10개의 middle manager 노드 중 3개에서 job 수행"
+msgstr "Jobs performed by three out of ten middle-manager nodes"
+
+# 7e50a617f56c434b9d9c78c9d2960785
+#: ../../discovery/part01/druid_tests.rst:105
+msgid "Ingestion 도구: Apache Kafka"
+msgstr "Ingestion tool: Apache Kafka"
+
+# 0e6112de17cf44b4bb1f04b834222886
+#: ../../discovery/part01/druid_tests.rst:107
+msgid ""
+"이와 같은 조건으로 data ingestion을 100회 수행하였고 평균 ingestion latency는 "
+"1.623439초였습니다. 여기서 ingestion latency는 아래 도식화한 것과 같이 Kaka ingestion, Druid"
+" ingestion, Druid query 처리에 소요되는 시간을 모두 합산한 것입니다."
+msgstr "Data ingestion was performed 100 times under the conditions specified above, and the average ingestion latency was 1.623439 seconds. As illustrated below, ingestion latency was computed as the sum of Kafka ingestion latency, Druid ingestion latency, and Druid query latency."
+
+# 9f8de7c635ee4107926a162016b5bdc3
+#: ../../discovery/part01/druid_tests.rst:116
+msgid "Druid에 대한 제3자의 평가"
+msgstr "Druid assessments by third parties"
+
+# 3adb7055292f4f4cbb612b25aee29eb7
+#: ../../discovery/part01/druid_tests.rst:119
+msgid "Outlier의 Druid 평가"
+msgstr "Druid assessment by Outlyer"
+
+# 6cffec090d644616a829a2bd25ef1f3a
+#: ../../discovery/part01/druid_tests.rst:121
+msgid ""
+"다음은 Outlier 블로그에 2016년 8월 26일에 게재된 Top 10 Time Series Databases라는 포스트\\ "
+"[#f2]_\\에서는 20개의 주요 오픈소스 시계열 데이터베이스 시스템을 평가하였습니다. 기고자인 Steven Acreman이 "
+"개인적으로 매긴 성능 랭킹에서 Druid는 20개 중 9위를 차지하였는데, 여기서 밝힌 Druid의 주요 성능은 다음과 같습니다."
+msgstr "In the Outlyer blog, twenty open source time-series database systems were assessed in a post\\ [#f2]_ titled Top 10 Time Series Databases and published on August 26, 2016. The author Steven Acreman ranked Druid in the 8th place, and his set of criteria was as follows:"
+
+# 3e2d76b7acd2464691b1ca2e07fa86ed
+#: ../../discovery/part01/druid_tests.rst:123
+msgid "Outlier의 주요 Druid 평가 내용"
+msgstr "A summary of Druid assessment by Outlyer"
+
+# ebe7175a46774906be38c52705192598
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "평가 기준"
+msgstr "Items"
+
+# 0e40e64e8b674a4cb373d1dc03fe3237
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "Druid의 성능"
+msgstr "Druid performance"
+
+# 244a9567185f4e99aa8ec42fb78733bf
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "쓰기 성능 - 단일 노드"
+msgstr "Write performance - single node"
+
+# d9f2f0c25dac48c1bedbf9d9861f38ac
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid ""
+"25k metrics/sec :raw-html:`<br />` 출처: "
+"https://groups.google.com/forum/#!searchin/druid-"
+"user/benchmark%7Csort:relevance/druid-user/90BMCxz22Ko/73D8HidLCgAJ"
+msgstr "25k metrics/sec :raw-html:`<br />` Source: https://groups.google.com/forum/#!searchin/druid-user/benchmark%7Csort:relevance/druid-user/90BMCxz22Ko/73D8HidLCgAJ"
+
+# a3101a172f294b5e9bc18994bf9b40a9
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "쓰기 성능 - 5개 노드 클러스터"
+msgstr "Write performance - 5-node cluster"
+
+# 2675473f21c941099017b8b5b120969d
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "100k metrics/sec (추산 결과)"
+msgstr "100k metrics / sec (calculated)"
+
+# c60463326c434f1692a0553fa08544db
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "쿼리 성능"
+msgstr "Query performance"
+
+# 55237ace867146e984e597240697fbf2
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "양호"
+msgstr "Moderate"
+
+# ce876b5a65534603ad4ab0e9c4b64fbd
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "개발 수준"
+msgstr "Maturity"
+
+# cbda3d2323624da1a23fb9018198a8b6
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "안정적인 제품을 제공하는 단계에 이름"
+msgstr "Stable"
+
+# f30c2c0c298c4291a50751fe01adc66e
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "장점"
+msgstr "Pro's"
+
+# 7669a89e4a3742d3bd473ecc0104f2a5
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid ""
+"괜찮은 데이터 모델이면서 좋은 분석 도구 기능들을 갖추고 있음. 주로 batch 로드된 대량 데이터셋에 대해 신속하게 쿼리하는 데 "
+"사용되도록 설계되었으며, 이 점에서 탁월한 성능을 보임."
+msgstr "Good data model and cool set of analytics features. Mostly designed for fast queries over large batch loaded datasets which it's great at."
+
+# 8f44f48b81ab4a7a90db766ac65f09ac
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "단점"
+msgstr "Con's"
+
+# f7ad557360364df1bc9e2ab31b28bc89
+#: ../../discovery/part01/Assessment_by_Outlyer.csv:1
+msgid "시스템 운용이 힘듦. 쓰기 처리 속도가 아주 빠르지는 않음. 실시간 ingestion 셋업이 까다로움"
+msgstr "Painful to operate, not very fast write throughput. Real time ingestion is tricky to setup."
+
+# ccf8f523aa4547218e5fce4b66c0a138
+#: ../../discovery/part01/druid_tests.rst:129
+msgid "DB-Engines의 Druid 평가"
+msgstr "Druid assessment by DB-Engines"
+
+# 5d40fa669d874c0f99d0285903a0d4a7
+#: ../../discovery/part01/druid_tests.rst:131
+msgid ""
+"온라인 웹사이트 DB Engines\\ [#f3]_\\에서는 다양한 데이터베이스 관리 시스템(DBMS)의 시장 인기도를 매달 "
+"평가하며, 이때 다음과 같은 지표를 사용합니다."
+msgstr "DB-Engines\\ [#f3]_, an online website, publishes a list of database management systems ranked by their current popularity every months. To measure the popularity of a system, it uses the following parameters:"
+
+# 6d691c45313e4f359dcd9bcb73a6cd2b
+#: ../../discovery/part01/druid_tests.rst:133
+msgid "인터넷에서 언급되는 횟수: Google, Bing, Yandex에서의 검색 결과로 측정"
+msgstr "Number of mentions of the system on websites: It is measured as the number of results in queries of the search engines Google, Bing and Yandex."
+
+# 2e3cbaa9249242c5afbe00dbf53ea5dc
+#: ../../discovery/part01/druid_tests.rst:134
+msgid "일반적인 관심: Google Trends에서의 검색 빈도를 기준으로 측정"
+msgstr "General interest in the system: For this measurement, the frequency of searches in Google Trends is used."
+
+# c98322257843479b9a0c16e14709d8ab
+#: ../../discovery/part01/druid_tests.rst:135
+msgid ""
+"기술 토론 빈도: 유명 IT 관련 Q&A 사이트인 Stack Overflow 및 DBA Stack Exchange 포스팅 현황을 "
+"기준으로 측정"
+msgstr "Frequency of technical discussions about the system: The ranking list uses the number of related questions and the number of interested users on the well-known IT-related Q&A sites Stack Overflow and DBA Stack Exchange."
+
+# c0494dd3b7cc45cabb3148fc0e8cf0d0
+#: ../../discovery/part01/druid_tests.rst:136
+msgid "구인 게시글 수: Indeed 및 Simply Hired의 게시글을 기준으로 측정"
+msgstr "Number of job offers, in which the system is mentioned: The ranking list uses the number of offers on the leading job search engines Indeed and Simply Hired."
+
+# 105d785d19ed4be3af1ee3d798451e64
+#: ../../discovery/part01/druid_tests.rst:137
+msgid "해당 커리어를 지닌 인재의 수: LinkedIn 및 Upwork에 게시된 프로필을 기준으로 측정"
+msgstr "Number of profiles in professional networks, in which the system is mentioned: The ranking list uses the internationally most popular professional networks LinkedIn and Upwork."
+
+# 4a8a90bbac2142eda1a93f2ca1b29511
+#: ../../discovery/part01/druid_tests.rst:138
+msgid "SNS에서의 언급 수: Twitter의 트윗수를 기준으로 측정"
+msgstr "Relevance in social networks. The ranking list counts the number of Twitter tweets, in which the system is mentioned."
+
+# 7e6d2f09dee94433b64dafdb75bc0f83
+#: ../../discovery/part01/druid_tests.rst:140
+msgid ""
+"그 결과 Druid는 2018년 7월 기준으로 총 343개 시스템 중에서 118위를 차지하였고, 그 중 시계열 데이터베이스 "
+"시스템만을 두고 집계했을 때 총 25개 시스템 중 7위를 차지하였습니다."
+msgstr "As of July 2018, Druid ranked 118th out of a total of 343 systems, and 7th out of 25 time-series database systems."
+
+# c9cbbaf02dfa45b1822b5dc2064de201
+#: ../../discovery/part01/druid_tests.rst:143
+msgid "Apache Spark와의 비교"
+msgstr "Comparison with Apache Spark"
+
+# 45943b4d655747d6a4678c9a1dec4089
+#: ../../discovery/part01/druid_tests.rst:145
+msgid ""
+"Druid를 Apache Spark와 비교하는 것은 상당히 의미 있는 작업입니다. 둘 다 차세대 대용량 데이터 분석 솔루션으로 각광"
+" 받고 있으며, 서로 다른 장점을 가지고 있어 매우 상호보완적으로 조합이 가능하기 때문입니다. Metatron에서도 Druid를 "
+"데이터 저장/처리용 엔진으로 사용하고 Spark를 고급 분석용 모듈로 사용함으로써 이들 간의 시너지를 잘 활용하고 있습니다."
+msgstr "Comparing Druid with Apache Spark is meaningful because both technologies are emerging as next-generation solutions for large-scale analytics and their different advantages make them very complementary when combined together. Metatron also makes use of this combination: Druid as the data storage/processing engine and Spark as an advanced analytics module."
+
+# b760a920b7df4a28a44ccdbd3e3d9a39
+#: ../../discovery/part01/druid_tests.rst:147
+msgid ""
+"여기서는 Sparkline Data Inc.의 창업자 Harish Butani가 공개한 Druid vs Spark 성능 비교 "
+"보고서\\ [#f4]_\\ [#f5]_\\의 내용을 간단히 소개합니다. 보고서에서는 애초에 두 솔루션이 경쟁 관계에 있다기 보다는 "
+"상보적인 역할을 한다고 상정을 하고 성능 비교를 시작합니다."
+msgstr "This section briefly introduces a report comparing the performance of Druid and Spark\\ [#f4]_\\ [#f5]_ published by Harish Butani, the founder of Sparkline Data Inc. Prior to the performance comparison, the report states that the two solutions are in complementary relations, rather than competitors."
+
+# 6ff215a9cf704daaa2ae88c181e94fd0
+#: ../../discovery/part01/druid_tests.rst:150
+msgid "Apache Spark의 특징"
+msgstr "Apache Spark characteristics"
+
+# e0703d4ba3724e97873aaffc00e0961d
+#: ../../discovery/part01/druid_tests.rst:152
+msgid ""
+"Apache Spark는 오픈소스 클러스터 컴퓨팅 프레임워크로서 Java, Scala, Python, R 언어로 이루어진 다양한 "
+"API를 제공합니다. Spark의 프로그래밍 모델은 SQL, 머신러닝, 그래프 프로세싱을 결합한 분석 솔루션을 구축하는 것입니다. "
+"Spark는 규모가 크거나 복잡한 데이터를 가공할 수 있도록 강력한 기능들을 지원하지만, Druid와 같은 interactive한 "
+"쿼리 처리에 최적화되지는 않았습니다."
+msgstr "Apache Spark is an open-source cluster computing framework providing rich APIs in Java, Scala, Python, and R. Spark&rsquo;s programming model is used to build analytical solutions that combine SQL, machine learning, and graph processing. Spark supports powerful functions to process large-scale and/or complex data manipulation workflows, but it isn&rsquo;t necessarily optimized for interactive queries."
+
+# c616cad47d3e4c90ba409df28875e518
+#: ../../discovery/part01/druid_tests.rst:155
+msgid "데이터셋, 쿼리, 성능 비교 결과"
+msgstr "Dataset, queries, performance results"
+
+# 93103bea9e36433393f91090b6c1f5b3
+#: ../../discovery/part01/druid_tests.rst:157
+msgid ""
+"본 성능 비교를 위한 데이터셋으로 TPCH 10G benchmark data set을 이용했습니다. 본래 이 데이터셋은 관계형 "
+"데이터베이스에 적합한 스타 스키마 구조를 갖기 때문에 이를 역정규화시킨 후 Druid와 Spark에서 처리할 수 있도록 "
+"재구성하였습니다. 이러한 처리를 거친 데이터셋의 크기는 각각 다음과 같았습니다."
+msgstr "For the benchmark, the 10G TPC-H dataset was used. The 10G star schema was converted into a flattened (denormalized) transaction dataset and reorganized to be queryable in Druid and Spark. The sizes of the resulting datasets were:"
+
+# 47eb99f1a8c6403dbc8cda21eb7177b8
+#: ../../discovery/part01/druid_tests.rst:159
+msgid "TPCH Flat TSV: 46.80GB"
+msgstr "TPCH Flat TSV: 46.80GB"
+
+# 89c81c8b27e747849cd31d58d3444da6
+#: ../../discovery/part01/druid_tests.rst:160
+msgid "Druid Index in HDFS: 17.04GB"
+msgstr "Druid Index in HDFS: 17.04GB"
+
+# 383dc873bfa44b38a121fe5cf4752d18
+#: ../../discovery/part01/druid_tests.rst:161
+msgid "TPCH Flat Parquet: 11.38GB"
+msgstr "TPCH Flat Parquet: 11.38GB"
+
+# 4447913b74964878b401fbd559844822
+#: ../../discovery/part01/druid_tests.rst:162
+msgid "TPCH Flat Parquet Partition by Month: 11.56GB"
+msgstr "TPCH Flat Parquet Partition by Month: 11.56GB"
+
+# 825a01be8d9e4a5ca93a2fef46238f06
+#: ../../discovery/part01/druid_tests.rst:164
+msgid "그런 다음 두 솔루션의 쿼리 처리 속도를 다각도에서 분석할 수 있는 여러 쿼리를 아래와 같이 구성하였습니다."
+msgstr "And then, a number of queries were chosen to test the performance differences in various aspects as shown below:"
+
+# db8573cb27c948dc9775ea6e01cb5d58
+#: ../../discovery/part01/druid_tests.rst:166
+msgid "Druid와 Apache Spark의 query latency 비교 평가에 사용된 쿼리 내역"
+msgstr "Queries used for query latency comparison between Druid and Apache Spark"
+
+# 08405bdd5d7b4106937e9bb81f0d1a47
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Query"
+msgstr "Query"
+
+# c9ba4e1c81b747ed823dd6dc6cf59ba4
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Interval"
+msgstr "Interval"
+
+# 585ed1437bdf4c5b9d45b5f50a330e52
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Filters"
+msgstr "Filters"
+
+# adff448ea04d4b1b96b88cc55f101100
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Group By"
+msgstr "Group By"
+
+# 69ece72f481c430f8ccbf11e239f3419
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Aggregations"
+msgstr "Aggregations"
+
+# 23995273fb66403cb8619b94df24f4d2
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Basic Aggregation."
+msgstr "Basic Aggregation."
+
+# dcdbfabaa6ef4dd795f7f01fc67e8cc1
+# a74b7f5ce16c47f9800c681acad903e5
+# 22d76bccc72147f5a06601299f67c116
+# 7d362dc7141e472190165637a680ccb5
+# dee0b0652a09406081bb48489b7454d3
+# 39cf33bc12274f48944e2a493b8b7bed
+# e4daf8ab48604a0daaa8db9156c93aa8
+# e7b7956fd7fd410bb80aab0d353422d7
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "None"
+msgstr "None"
+
+# cc89a0d90f1f452a83ec3619f91af022
+# 1475f53cafeb4e6f99537e6f1f141929
+# dc1577f9b1814aedbd44b9bc1468a02a
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "ReturnFlag :raw-html:`<br />` LineStatus"
+msgstr "ReturnFlag :raw-html:`<br />` LineStatus"
+
+# 9e1e5279f3d54618ac28dbdb46520539
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Count(*) :raw-html:`<br />` Sum(exdPrice) :raw-html:`<br />` Avg(avlQty)"
+msgstr "Count(*) :raw-html:`<br />` Sum(exdPrice) :raw-html:`<br />` Avg(avlQty)"
+
+# 7fd15fd71d614bac82a336128ad73d14
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Ship Date Range"
+msgstr "Ship Date Range"
+
+# 54d964d49bb94b839dd286264526672d
+# 341b9292aaf64931ac30f39c95f8f55d
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "1995-12/1997-09"
+msgstr "1995-12/1997-09"
+
+# 8d20b2288f47469ab3d77ddfd1a79e49
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Count(*)"
+msgstr "Count(*)"
+
+# 0a5c116aecce47d984612b99a035f996
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "SubQry :raw-html:`<br />` Nation, pType :raw-html:`<br />` ShpDt Range"
+msgstr "SubQry :raw-html:`<br />` Nation, pType :raw-html:`<br />` ShpDt Range"
+
+# c3316f199be74f2687a819c95d5c5a40
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "P_Type :raw-html:`<br />` S_Nation + :raw-html:`<br />` C_Nation"
+msgstr "P_Type :raw-html:`<br />` S_Nation + :raw-html:`<br />` C_Nation"
+
+# a54bca809f874cf492782fea087c89b4
+# b63ed09896fc4b6f98a46cd87648b138
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "S_Nation"
+msgstr "S_Nation"
+
+# 83f640e4cc154a1fa8b15b1df226d531
+# e85f6dae95bb4b8cb419c9e09aedd277
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid ""
+"Count(*) :raw-html:`<br />` Sum(exdPrice) :raw-html:`<br />` Max(sCost) "
+":raw-html:`<br />` Avg(avlQty) :raw-html:`<br />` Count(Distinct oKey)"
+msgstr "Count(*) :raw-html:`<br />` Sum(exdPrice) :raw-html:`<br />` Max(sCost) :raw-html:`<br />` Avg(avlQty) :raw-html:`<br />` Count(Distinct oKey)"
+
+# 03e549f5c0174e6dbf05667eea88ed35
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "TPCH Q1"
+msgstr "TPCH Q1"
+
+# d09604b8eb064670914fde338bd9fbcc
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "TPCH Q3"
+msgstr "TPCH Q3"
+
+# 33281d869b924df79faa9dc7437f45dc
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "1995-03-15-"
+msgstr "1995-03-15-"
+
+# 7b11ce61fe1b42a18623dfc474cbdcbc
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "O_Date :raw-html:`<br />` MktSegment"
+msgstr "O_Date :raw-html:`<br />` MktSegment"
+
+# 4bd6bd0dc85b4d34993d4955e9d012ab
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Okey :raw-html:`<br />` Odate :raw-html:`<br />` ShipPri"
+msgstr "Okey :raw-html:`<br />` Odate :raw-html:`<br />` ShipPri"
+
+# 5dbd6c0a5daa4654b42a0974aa35af74
+# 806df890d018403790d58a1f9f79e2ff
+# e1cf4c3d82544aaaa6dcb8351dc5b07d
+# 9e598958e0d848629da4b9e8465e98cb
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Sum(exdPrice)"
+msgstr "Sum(exdPrice)"
+
+# 9c4ed37565ce4fa3bbdced0682e31eff
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "TPCH Q5"
+msgstr "TPCH Q5"
+
+# 675a47f45dd64806884c845b9abdb709
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "O_Date :raw-html:`<br />` Region"
+msgstr "O_Date :raw-html:`<br />` Region"
+
+# 01fc39653c354051b3825401bb99d0a2
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "TPCH Q7"
+msgstr "TPCH Q7"
+
+# b7f68812ac3640be83e7ac1f16f810ce
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "S_Nation + :raw-html:`<br />` C_Nation"
+msgstr "S_Nation + :raw-html:`<br />` C_Nation"
+
+# 12b9dfbaf3c649dc855da7e0b2e9a773
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "S_Nation :raw-html:`<br />` C_Nation :raw-html:`<br />` ShipDate.Year"
+msgstr "S_Nation :raw-html:`<br />` C_Nation :raw-html:`<br />` ShipDate.Year"
+
+# 0cbbd02fef2541739a37817429546e7b
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "TPCH Q8"
+msgstr "TPCH Q8"
+
+# c854668eb3224133a9494ede793b7272
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "Region :raw-html:`<br />` Type :raw-html:`<br />` O_Date"
+msgstr "Region :raw-html:`<br />` Type :raw-html:`<br />` O_Date"
+
+# ff2d2676883f4ad49989ec2e25284808
+#: ../../discovery/part01/comparison_with_Apache_Spark.csv:1
+msgid "ODate.Year"
+msgstr "ODate.Year"
+
+# 8769bbe780cf4c1fb665ac951ef825d2
+#: ../../discovery/part01/druid_tests.rst:171
+msgid "테스트 결과는 다음과 같았습니다."
+msgstr "The test results are as follows:"
+
+# 86e7dece1fde477382e18c8d83efc74a
+#: ../../discovery/part01/druid_tests.rst:177
+msgid ""
+"Source: Combining Druid and Spark: Interactive and Flexible Analytics at "
+"Scale"
+msgstr "Source: Combining Druid and Spark: Interactive and Flexible Analytics at Scale"
+
+# bebc52e3951945288e441ce1421cb3a6
+#: ../../discovery/part01/druid_tests.rst:179
+msgid ""
+"Filters + Ship Date 쿼리는 Druid에 특화된 slice-and-dice 성능을 테스트하는 것이었고, 예상대로 무려"
+" 50배 이상 속도 상에 우위를 보였습니다. 마찬가지로 TPCH Q7 쿼리를 처리하는 데도 Druid에서 수 밀리초가 소요된 반면,"
+" Spark에서는 수초가 소요되었습니다."
+msgstr "The Filters + Ship Date query provides the greatest performance gain (over 50 times over Spark) when Druid is used. This is not surprising as this query is a typical slice-and-dice query tailor-made for Druid. Along the same lines, TPCH Q7 shows a significant performance boost when running on Druid: milliseconds on Druid vs. 10s of seconds on Spark."
+
+# a97b39ee161b43a19e0be861d74b5d49
+#: ../../discovery/part01/druid_tests.rst:180
+msgid ""
+"TPCH Q3, Q5, Q8 쿼리의 경우에는 Druid가 위 경우와 같은 극대화된 효율성을 보여주지 못했습니다. OrderDate "
+"술어는 Druid에서 JavaScript 필터로 번역이 되는데, 이는 네이티브 Java 필터에 비해 현저히 느리기 때문입니다."
+msgstr "For TPCH Q3, Q5, and Q8 there is an improvement, but not to the same level as Q7. This is because the OrderDate predicate is translated to a JavaScript filter in Druid, which is significantly slower than a native Java filter."
+
+# 9463e2206f1f4977a5fc3f9d2eeed44d
+#: ../../discovery/part01/druid_tests.rst:181
+msgid ""
+"Basic Aggregation 및 TPCH Q1 쿼리의 경우에도 Druid에서 훨씬 빠른 처리 속도를 보여주었습니다. "
+"Druid에서는 Count-Distinct 동작이 cardinality aggregator로 번역이 되는데, 이는 "
+"approximate count에 해당합니다. 이러한 장점 덕에 Druid는 cardinality가 큰 차원들을 탐색할 때 "
+"유리합니다."
+msgstr "The Basic Aggregation and TPCH Q1 queries definitely show improvement. The Count-Distinct operation is translated to a cardinality aggregator in Druid, which is an approximate count. This is definitely an advantage for Druid, especially for large cardinality dimensions."
+
+# 8526856c113e460694d6c96d17b179d3
+#: ../../discovery/part01/druid_tests.rst:183
+msgid ""
+"여러 가지 조건에 따라 결과는 달라질 수 있지만, 한 가지 분명한 것은 시간 파티셔닝(time partitioning) 또는 차원 "
+"술어(dimensional predicates)를 포함하는 쿼리는 Druid에서 현저히 빠르게 처리한다는 것입니다."
+msgstr "These results can vary with testing conditions, but one thing is clear: Queries that have time partitioning or dimensional predicates (like those commonly found in OLAP workflows) are significantly faster in Druid."
+
+# 18d58a31292f40f9951e63f9f19db7dd
+#: ../../discovery/part01/druid_tests.rst:187
+msgid "시사점"
+msgstr "Implications"
+
+# e69c25a8524c420cb2afb8933f9e4162
+#: ../../discovery/part01/druid_tests.rst:189
+msgid ""
+"이러한 테스트 결과는 Druid의 초고속 쿼리 처리 능력과 Spark의 고급 분석 기능을 결합하면 아주 훌륭한 시너지 효과를 기대할"
+" 수 있음을 시사합니다. Druid를 통해 신속하고 효율적으로 분석에 필요한 데이터만 추려낸 후 Spark의 풍부한 프로그래밍 "
+"API들을 활용하여 심층적인 분석을 실시하는 것입니다. 이렇게 함으로써 강력하고 유연하며 쿼리 latency가 매우 낮은 분석 "
+"솔루션을 구축할 수 있습니다."
+msgstr "The testing results showcase that combining the analytic capabilities with Spark and the OLAP and low latency capabilities of Druid can create great synergy. Druid ingests, explores, filters, and aggregates data efficiently and interactively, while the rich programming APIs of Spark enable in-depth analytics. By leveraging these different capabilities, we can build a more powerful, flexible, and extremely low latency analytics solution."
+
+# 37c8def71c7e4cfd87864aba56bb5320
+#: ../../discovery/part01/druid_tests.rst:192
+msgid "참고자료"
+msgstr "References"
+
+# 17d68ddf99254adba70fbed7f89990e7
+#: ../../discovery/part01/druid_tests.rst:193
+msgid ""
+"Yang, E. Tschetter, X. Léauté, N. Ray, G. Merlino, and D. Ganguli. "
+"(2014). `Druid: a real-time analytical data store`. Retrieved from "
+"http://druid.io/docs/0.12.1/design/index.html."
+msgstr "Yang, E. Tschetter, X. L&eacute;aut&eacute;, N. Ray, G. Merlino, and D. Ganguli. (2014). `Druid: a real-time analytical data store`. Retrieved from http://druid.io/docs/0.12.1/design/index.html."
+
+# 231af7d75826483693de0a2071f5072d
+#: ../../discovery/part01/druid_tests.rst:194
+msgid ""
+"Steven Acreman. (2016, Aug 26). `Top 10 Time Series Databases`. Retrieved"
+" from https://blog.outlyer.com/top10-open-source-time-series-databases."
+msgstr "Steven Acreman. (2016, Aug 26). `Top 10 Time Series Databases`. Retrieved from https://blog.outlyer.com/top10-open-source-time-series-databases."
+
+# bce23ef228854e1db7c19f7f01197ad8
+#: ../../discovery/part01/druid_tests.rst:195
+msgid "DB-Engines website. https://db-engines.com, July 2018."
+msgstr "DB-Engines website. https://db-engines.com, July 2018."
+
+# 39b218da0b9a4aa88279dccde9564f2c
+#: ../../discovery/part01/druid_tests.rst:196
+msgid ""
+"Harish Butani. (2018, Sep 18). Combining Druid and Spark: Interactive and"
+" Flexible Analytics at Scale. Retrieved from "
+"https://www.linkedin.com/pulse/combining-druid-spark-interactiveflexible-"
+"analytics-scale-butani."
+msgstr "Harish Butani. (2018, Sep 18). Combining Druid and Spark: Interactive and Flexible Analytics at Scale. Retrieved from https://www.linkedin.com/pulse/combining-druid-spark-interactiveflexible-analytics-scale-butani."
+
+# 4904e9ce79ea4d4499584eb0af92db1b
+#: ../../discovery/part01/druid_tests.rst:197
+msgid ""
+"Harish Butani. (2015, Aug 28). TPCH Benchmark. Retrieved from "
+"https://github.com/SparklineData/spark-druid-"
+"olap/blob/master/docs/benchmark/BenchMarkDetails.pdf."
+msgstr "Harish Butani. (2015, Aug 28). TPCH Benchmark. Retrieved from https://github.com/SparklineData/spark-druid-olap/blob/master/docs/benchmark/BenchMarkDetails.pdf."
+

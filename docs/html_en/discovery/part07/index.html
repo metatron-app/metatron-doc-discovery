@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data preparation &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Creating a dataset" href="create_a_dataset.html" />
+    <link rel="prev" title="Use a workbench" href="../part06/06_03-use_a_workbench.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data preparation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">Creating a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">Managing a dataflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">Using the data snapshot results</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Data preparation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../html_ko/discovery/part07/index.html" rel="nofollow"> 한국어로 보기</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Data preparation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><strong>Data preparation</strong> is a tool that creates transformation rules to transform files and tables for more convenient analysis of datasets, and saves the results as HDFS or Hive.</p>
+<p><strong>Advantages of data preparationin Metatron Discovery</strong></p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_preparation_overview_1.png" src="../../_images/data_preparation_overview_1.png" />
+</div>
+</div></blockquote>
+<p>Users can create transformation rules by following the step-by-step process as shown in the above GUI. Since the transformation results from each step are stored together with the data distribution in the memory, users can easily check the results through the simple click of a button, and perform operations such as <strong>undo</strong> and <strong>redo</strong>, just like using a text editor.</p>
+<p>Based on these characteristics, the data preparation tools offers the following advantages.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Users unfamiliar with programming or data processing can obtain the desired results.</p></li>
+<li><p>Adding a transformation rule usually involves programming or writing an SQL query. However, data preparation through the GUI utilizes <strong>exploratory transformation</strong> to create transformation rules simply by clicking a button or typing.</p></li>
+<li><p>Basic data transformation is performed automatically. For instance, type conversion is automatically applied to columns comprised of numbers. This is made possible by the <strong>undo</strong> and rule deletion functions.</p></li>
+<li><p>Data of different forms can be combined as desired (e.g. reference file + fact table).</p></li>
+<li><p>The results of data refinement can be shared with others, thus reducing the burden of exchanging physical data.</p></li>
+<li><p>Storage space is saved and <strong>Information Life Cycle (ILM)</strong> shortened by deleting the actual data and retaining only the methods involved. The actual data can be easily created when needed.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Structure of data preparation in Metatron Discovery</strong></p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/preparation_overview.png" src="../../_images/preparation_overview.png" />
+</div>
+</div></blockquote>
+<p>As shown in the above figure, data preparation is comprised of a <strong>dataset</strong> built from the target data, a <strong>dataflow</strong> that defines transformation rules for the designated dataset, and a <strong>data snapshot</strong> that shows the transformation results.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="create_a_dataset.html">Creating a dataset</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html#create-a-dataset-of-file">Creating a file-type dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html#create-a-dataset-of-database">Creating a database-type dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html#staging-db">Creating a Staging DB dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manage_dataflow.html">Managing a dataflow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_datasets.html">Adding a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit_rules.html">Editing rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html">Types of rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_datasnapshot.html">Creating a data snapshot</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_snapshot.html">Using the data snapshot results</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html#snapshot-result-check">Checking the data snapshot results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html#metatron">Ingesting into the Metatron engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html#csv">Download as a CSV file</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create_a_dataset.html" class="btn btn-neutral float-right" title="Creating a dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../part06/06_03-use_a_workbench.html" class="btn btn-neutral float-left" title="Use a workbench" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

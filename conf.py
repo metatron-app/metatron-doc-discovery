@@ -108,7 +108,8 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 html_theme_options = {
-    'logo_only': True
+    'logo_only': True,
+	'display_version': True
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -127,8 +128,6 @@ html_static_path = ['_static']
 # html_sidebars = {}
 
 html_logo = "./_static/img/metatron-docs-logo.png"
-
-
 
 # -- Options for HTMLHelp output ---------------------------------------------
 

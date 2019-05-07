@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Metatron powered by Druid &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Data Management" href="../part02/index.html" />
+    <link rel="prev" title="Druid performance assessments" href="druid_tests.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Introduction of Metatron Discovery</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview of Metatron Discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Components of Metatron Discovery</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="engine.html">Metatron engine: Druid</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="druid_background.html">Background of Druid development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_features.html">Druid features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_nodes.html">Druid cluster architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_tests.html">Druid performance assessments</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Metatron powered by Druid</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Metatron development background and Druid integration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Druid functions reinforced in Metatron</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data preparation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Introduction of Metatron Discovery</a> &raquo;</li>
+        
+          <li><a href="engine.html">Metatron engine: Druid</a> &raquo;</li>
+        
+      <li>Metatron powered by Druid</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../html_ko/discovery/part01/druid_to_metatron.html" rel="nofollow"> 한국어로 보기</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="metatron-druid">
+<h1>Metatron powered by Druid<a class="headerlink" href="#metatron-druid" title="Permalink to this headline">¶</a></h1>
+<p>As explained previously, Metatron employs Druid as its underlying engine and has made developments and improvements of Druid for its own uses. This section introduces the background, progress, and results of the adoption of Druid to Metatron.</p>
+<div class="section" id="id1">
+<h2>Metatron development background and Druid integration<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="metatron">
+<h3>Metatron as a big data analytics solution<a class="headerlink" href="#metatron" title="Permalink to this headline">¶</a></h3>
+<p>As a telecommunications service provider with the most number of subscribers in South Korea, SK Telecom has exerted significant efforts to establish a stable network environment through by using the mass amounts of network data logs generated by its users.</p>
+<p>Due to the limitations of existing IT infrastructure in mass data processing, SK Telecom needed a big-data warehousing system (Apache Hadoop) and a big-data analytics solution compatible with the system. The company built its own Hadoop infrastructure to store mass amounts of data at low cost, but faced the following limitations:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Network data generated by the countless users could not be analyzed in real time. Although it was possible to store and process big data, visualizations could be implemented only with a sampled subset of data in the same way as on legacy systems.</p></li>
+<li><p>Having different solutions and different managers support each stage of data analytics, such as ETL, DW, and BI, not only involved significant time and costs, but also resulted in poor data accessibility. An end-to-end solution was needed to analyze all stages at once in a simple and quick manner.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="druid">
+<h3>Why the Druid engine<a class="headerlink" href="#druid" title="Permalink to this headline">¶</a></h3>
+<p>Druid was the optimal engine for the Metatron solution because it fulfilled the aforementioned needs with the features below:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Druid collects mass amounts of data in real time and indexes them into a queryable format, ensuring very fast data aggregations (a few seconds at the slowest) based on distributed processing.</p></li>
+<li><p>Druid&amp;rsquo;s OLAP time-series data format enables analysts to perform data exploration, filtering, and visualization as desired. Such free and flexible data exploration is essential for users to intuitively select the required data and determine correlations between different dimensions on it.</p></li>
+<li><p>Druid&amp;rsquo;s extensible architecture allows modules to be easily added.</p></li>
+</ul>
+</div></blockquote>
+<p>Built on this architecture, Metatron is an end-to-end solution that embraces all layers of data collection, storage, processing, analysis, and visualization.</p>
+</div>
+<div class="section" id="id2">
+<h3>Druid engine integration<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>The Druid engine was integrated in Metatron as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>With Druid as the basic engine for processing/analytics, the GUI was designed to support users in different professional domains and big-data analysts in data-related tasks such as data preparation, analytics, and visualization, as well as the sharing of results.</p></li>
+<li><p>IT administrators can manage/monitor data sources in Druid, and they can establish data preparation rules if data sources of higher quality are required.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Druid functions reinforced in Metatron<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>The open-source Druid, despite its strengths in data collection and processing, had to be improved for Metatron to properly function as an end-to-end solution. This section examines the limitations of the open-source Druid and the functions reinforced in Metatron.</p>
+<div class="section" id="id4">
+<h3>Limitations of the open-source Druid<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>The open-source Druid has the following limitations:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Since Druid does not yet have full support for joins, Metatron uses another SQL engine for data preparation.</p></li>
+<li><p>Druid supports only a subset of SQL queries.</p></li>
+<li><p>For a data lake, a traditional SQL engine is more appropriate.</p></li>
+<li><p>Druid cannot append to or update already indexed segments, except for in some unusual cases.</p></li>
+<li><p>Nulls are not allowed.</p></li>
+<li><p>Filtering is not supported for metric columns.</p></li>
+<li><p>Linear scalability is not ensured. Increasing the number of servers doesn&amp;rsquo;t improve the performance as much.</p></li>
+<li><p>Only a few data types are supported and it is difficult to add a new one.</p></li>
+<li><p>The management and monitoring tools are not powerful enough.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h3>Druid functions reinforced in Metatron<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>The following functions of Druid were strengthened in Metatron:</p>
+<p><strong>Query functionality improvements</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Improved the functionality of the GroupBy query type.</p></li>
+<li><p>Slightly improved the functionality of other types of queries.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Features added</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Virtual columns (map, expression. etc.)</p></li>
+<li><p>New metric types (double, string, array, etc.)</p></li>
+<li><p>New expression functions</p></li>
+<li><p>Druid query results can be stored on the HDFS or exported into a file.</p></li>
+<li><p>Queries for meta information and statistics</p></li>
+<li><p>New aggregate functions (variance, correlation, etc.)</p></li>
+<li><p>(Limited) Window functions (lead, lar, running aggregations, etc.)</p></li>
+<li><p>(Limited)&amp;nbsp;Joins</p></li>
+<li><p>(Limited)&amp;nbsp;Sub-queries</p></li>
+<li><p>Temporary data sources</p></li>
+<li><p>Complex queries (data source summarization, correlation between data sources, k-means, etc.)</p></li>
+<li><p>Custom columns grouping</p></li>
+<li><p>Geographic information system (GIS) supported</p></li>
+<li><p>Columnar histograms</p></li>
+<li><p>Bit-slice indexing</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Index structure improvements</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Histograms for filtering on metrics</p></li>
+<li><p>Lucene format supported for text filtering</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Connectability with other systems</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Hive storage handler</p></li>
+<li><p>Ingestion into Hive tables (based on connection with the Hive metastore)</p></li>
+<li><p>Ingestion into the ORC format</p></li>
+<li><p>RDBMS data ingestion via based on JDBC</p></li>
+<li><p>(Limited) SQL support backported</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Miscellaneous improvements</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Bug fixes (+50) and minor improvements</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part02/index.html" class="btn btn-neutral float-right" title="Data Management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="druid_tests.html" class="btn btn-neutral float-left" title="Druid performance assessments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

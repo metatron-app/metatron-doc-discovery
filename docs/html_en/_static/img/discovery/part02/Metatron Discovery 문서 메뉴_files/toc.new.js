@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"book","name":"Part 1. Discovery Overview","key":"toc1","url":"metatron_3.0_Discovery/xml/001_DiscoveryOutline.html"},{"type":"book","name":"Part 2. Management","key":"toc3","url":"metatron_3.0_Discovery/xml/007_Management.html"},{"type":"book","name":"Part 3. Workspace","key":"toc17","url":"metatron_3.0_Discovery/xml/044_UsingWorkspace.html"},{"type":"book","name":"Part 4. Workbook","key":"toc21","url":"metatron_3.0_Discovery/xml/058_UsingWorkbook.html"},{"type":"book","name":"Part 5. Notebook","key":"toc29","url":"metatron_3.0_Discovery/xml/086_UsingNotebook.html"},{"type":"book","name":"Part 6. Workbench","key":"toc31","url":"metatron_3.0_Discovery/xml/094_UsingWorkbench.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

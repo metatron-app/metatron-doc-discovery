@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# bba8db640ef344f2bf4edad300029ee4
+#: ../../anomaly/part03/alarm_detail.rst:2
+msgid "알람 상세"
+msgstr ""
+
+# 0bfcbd42554a49c99f86cf098b94cd75
+#: ../../anomaly/part03/alarm_detail.rst:3
+msgid "발생한 알람의 중요도, 발생시기, 발생 규칙, 다른 알람들의 이력, 발생에 이유 등을 상세하게 표현한다."
+msgstr ""
+
+# f3da4c85aeda4e9b870681058abef7cb
+#: ../../anomaly/part03/alarm_detail.rst:9
+msgid "Figure 1. alarm detail"
+msgstr ""
+
+# 752208c4d7a44aa597341ac15be8cf0f
+#: ../../anomaly/part03/alarm_detail.rst:16
+msgid "Figure 2. alarm detail table view"
+msgstr ""
+

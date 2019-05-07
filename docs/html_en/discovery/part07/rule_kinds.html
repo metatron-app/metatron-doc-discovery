@@ -1,0 +1,982 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Types of rules &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Creating a data snapshot" href="create_a_datasnapshot.html" />
+    <link rel="prev" title="Editing rules" href="edit_rules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data preparation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">Creating a dataset</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_dataflow.html">Managing a dataflow</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="add_datasets.html">Adding a dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_rules.html">Editing rules</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Types of rules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#drop">drop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#header">header</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#settype">settype</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setformat">setformat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rename">rename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#keep">keep</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#delete">delete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#replace">replace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#derive">derive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#split">split</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#merge">merge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#extract">extract</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#countpattern">countpattern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nest">nest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unnest">unnest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flatten">flatten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#aggregate">aggregate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#pivot">pivot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unpivot">unpivot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#join">join</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#union">union</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#window">window</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="create_a_datasnapshot.html">Creating a data snapshot</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">Using the data snapshot results</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Data preparation</a> &raquo;</li>
+        
+          <li><a href="manage_dataflow.html">Managing a dataflow</a> &raquo;</li>
+        
+      <li>Types of rules</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../html_ko/discovery/part07/rule_kinds.html" rel="nofollow"> 한국어로 보기</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Types of rules<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>This section describes each rule in terms of the following.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Name of rule</p></li>
+<li><p>Required parameter</p></li>
+<li><p>Optional parameter</p></li>
+<li><p>Detailed description</p></li>
+<li><p>Precaution</p></li>
+</ul>
+</div></blockquote>
+<p>The types of rules supported in data preparation are as follows.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#drop">drop</a></p></li>
+<li><p><a class="reference internal" href="#header">header</a></p></li>
+<li><p><a class="reference internal" href="#settype">settype</a></p></li>
+<li><p><a class="reference internal" href="#setformat">setformat</a></p></li>
+<li><p><a class="reference internal" href="#rename">rename</a></p></li>
+<li><p><a class="reference internal" href="#keep">keep</a></p></li>
+<li><p><a class="reference internal" href="#delete">delete</a></p></li>
+<li><p><a class="reference internal" href="#replace">replace</a></p></li>
+<li><p><a class="reference internal" href="#set">set</a></p></li>
+<li><p><a class="reference internal" href="#derive">derive</a></p></li>
+<li><p><a class="reference internal" href="#split">split</a></p></li>
+<li><p><a class="reference internal" href="#merge">merge</a></p></li>
+<li><p><a class="reference internal" href="#extract">extract</a></p></li>
+<li><p><a class="reference internal" href="#countpattern">countpattern</a></p></li>
+<li><p><a class="reference internal" href="#nest">nest</a></p></li>
+<li><p><a class="reference internal" href="#unnest">unnest</a></p></li>
+<li><p><a class="reference internal" href="#flatten">flatten</a></p></li>
+<li><p><a class="reference internal" href="#aggregate">aggregate</a></p></li>
+<li><p><a class="reference internal" href="#pivot">pivot</a></p></li>
+<li><p><a class="reference internal" href="#unpivot">unpivot</a></p></li>
+<li><p><a class="reference internal" href="#join">join</a></p></li>
+<li><p><a class="reference internal" href="#union">union</a></p></li>
+<li><p><a class="reference internal" href="#window">window</a></p></li>
+</ul>
+</div></blockquote>
+<p>In addition to these rules, Data Preparation provides various expressions, thereby supporting almost every function required for general data preprocessing.</p>
+<div class="section" id="drop">
+<h2>drop<a class="headerlink" href="#drop" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column list</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Deletes the selected columns.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="header">
+<h2>header<a class="headerlink" href="#header" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter: Detailed description in row number (1-base) containing column name</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This rule sets the content in the designated row as the column name.</p></li>
+<li><p>This is useful for reading CSV files with column names in the first row.</p></li>
+<li><p>Unless otherwise specified, data preparation automatically performs <strong>header</strong>. This rule may be deleted if <strong>header</strong> results are not desired, but such cases are not common.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="settype">
+<h2>settype<a class="headerlink" href="#settype" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column list</p></li>
+<li><p>New type: Select one out of Long, Double, String, Boolean, Timestamp</p></li>
+</ul>
+</div></blockquote>
+<p>Optional parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Format designation: Format string (Joda time) in the case of Timestamp</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This rule changes the type of the selected columns.</p></li>
+<li><p>The rule is considered successful even if the result is a type mismatch, which should be separately addressed.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="setformat">
+<h2>setformat<a class="headerlink" href="#setformat" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column list</p></li>
+<li><p>Format designation: Format string of Jodatime</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>This rule changes the display format of the Timestamp column.</p></li>
+<li><p>The target column must be of the Timestamp type.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul>
+<li><p>As shown below, the format designation input field proposes different lists depending on the input. The candidate lists are narrowed as more values are entered.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_setformat_1.png" src="../../_images/rule_kinds_setformat_1.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="rename">
+<h2>rename<a class="headerlink" href="#rename" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column (1 column)</p></li>
+<li><p>New column name: New name</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul>
+<li><p>This rule changes the name of the selected column.</p></li>
+<li><p>To <strong>rename</strong> two or more columns at once, click the <strong>Rename all columns</strong> button at the bottom of the command input window to display the following popup.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_rename_1.png" src="../../_images/rule_kinds_rename_1.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="keep">
+<h2>keep<a class="headerlink" href="#keep" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Condition: Result to be in the form of a conditional Boolean expression</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul>
+<li><p>All rows are deleted except the row that returns true for the conditional expression.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_keep_1.png" src="../../_images/rule_kinds_keep_1.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="delete">
+<h2>delete<a class="headerlink" href="#delete" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Condition: Result to be in the form of a conditional Boolean expression</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>All rows that return true for the conditional expression are deleted. This is the opposite of <a class="reference internal" href="#keep">keep</a>.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="replace">
+<h2>replace<a class="headerlink" href="#replace" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_replace_1.png" src="../../_images/rule_kinds_replace_1.png" />
+</div>
+<p>Required parameter</p>
+<blockquote>
+<div><ul>
+<li><p>Column: Target column list</p></li>
+<li><p>Pattern: String pattern to be placed</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>In the case of a string constant: Characters enclosed inside <code class="docutils literal notranslate"><span class="pre">'</span></code> (<code class="docutils literal notranslate"><span class="pre">'seoul'</span></code>, <code class="docutils literal notranslate"><span class="pre">'서울'</span></code>, <code class="docutils literal notranslate"><span class="pre">'서울</span> <span class="pre">특별시'</span></code> etc.)</p></li>
+<li><p>In the case of a regular string: Characters enclosed inside <code class="docutils literal notranslate"><span class="pre">/</span></code> (<code class="docutils literal notranslate"><span class="pre">/[</span> <span class="pre">,_]+/</span></code>, <code class="docutils literal notranslate"><span class="pre">/\s+$/</span></code>, etc.)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>New value: New string to be inserted</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String constant</p></li>
+<li><p>String expression based on regular expression groups: <code class="docutils literal notranslate"><span class="pre">$1_$2_$3</span></code>, etc.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Optional parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ignore between characters: Does not make any replacement for content between the input characters</p></li>
+<li><p>Match for all items: Whether all characters in a word must match</p></li>
+<li><p>Ignore upper/lower case: Whether upper case should be regarded the same as lower case</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String conversion is performed for the selected columns.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Do not use <code class="docutils literal notranslate"><span class="pre">'</span></code> or <code class="docutils literal notranslate"><span class="pre">/</span></code> in a <strong>new value</strong>.</p></li>
+<li><p>Do not use values from other columns in a <strong>new value</strong>. <strong>Replace</strong> performs <strong>string</strong> conversion for content in the selected column only. (cf. <a class="reference internal" href="#set">set</a> rule)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="set">
+<h2>set<a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_set_1.png" src="../../_images/rule_kinds_set_1.png" />
+</div>
+<p>Required parameter</p>
+<blockquote>
+<div><ul>
+<li><p>Column: Target column list</p></li>
+<li><p>Expression: Expression to be used as value of target column. Values from other column may serve as a reference. (cf. <a class="reference internal" href="#replace">replace</a> rule)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>When multiple columns are involved, <code class="docutils literal notranslate"><span class="pre">$col</span></code> is substituted by the target column during the respective conversions.</p></li>
+<li><p>That is, when applying the <strong>set</strong> command on <code class="docutils literal notranslate"><span class="pre">column1</span></code> and <code class="docutils literal notranslate"><span class="pre">column2</span></code>, <code class="docutils literal notranslate"><span class="pre">$col</span></code> becomes <code class="docutils literal notranslate"><span class="pre">column1</span></code> during conversion of <code class="docutils literal notranslate"><span class="pre">column1</span></code>, and <code class="docutils literal notranslate"><span class="pre">$col</span></code> becomes <code class="docutils literal notranslate"><span class="pre">column2</span></code> during conversion of <code class="docutils literal notranslate"><span class="pre">column2</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Optional parameter</p>
+<blockquote>
+<div><ul>
+<li><p>Performed only under the following conditions</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The <strong>set</strong> rule is applied only to rows satisfying this condition.</p></li>
+<li><p>This rule may be regarded the same as the WHERE clause in SQL.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul>
+<li><p>This rule replaces the values in the selected column with results returned by the expression.</p></li>
+<li><p>When using a complex expression, click the <strong>Advanced Editor</strong> to display the following popup.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_set_2.png" src="../../_images/rule_kinds_set_2.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>In the <strong>Advanced Editor</strong>, you can edit expressions in a larger window while viewing column lists and descriptions, and also run a validity check before implementation.</p>
+</div>
+<div class="section" id="derive">
+<h2>derive<a class="headerlink" href="#derive" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Expression: Expressed to be used as value of new column. Similar to the <a class="reference internal" href="#set">set</a> rule, values from other column may serve as a reference.</p></li>
+<li><p>New column name</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>While similar to the <a class="reference internal" href="#set">set</a> rule, this rule creates a new column instead of replacing an existing one.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The new column is inserted after the last existing column in the expression.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="split">
+<h2>split<a class="headerlink" href="#split" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column list</p></li>
+<li><p>Pattern: String expression that serves as basis for split. Permits regular expressions as is the case for the <a class="reference internal" href="#replace">replace</a> rule.</p></li>
+<li><p>Number: Number of columns to be divided into.</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Each row is split by <strong>number - 1</strong>.</p></li>
+<li><p>When the pattern is no longer detected, a column with a <cite>null</cite> value is created.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Note that the number of columns created is the same as <strong>number</strong>.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="merge">
+<h2>merge<a class="headerlink" href="#merge" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column list</p></li>
+<li><p>Separator: String constant to connect columns</p></li>
+<li><p>New column name</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The target columns are connected with a <strong>separator</strong> to create a new column.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Similar to the <a class="reference internal" href="#replace">replace</a> rule, enclosing with a <code class="docutils literal notranslate"><span class="pre">'</span></code> may be dropped. That is, strings not enclosed by <code class="docutils literal notranslate"><span class="pre">/</span></code> or <code class="docutils literal notranslate"><span class="pre">'</span></code> are automatically enclosed by <code class="docutils literal notranslate"><span class="pre">'</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="extract">
+<h2>extract<a class="headerlink" href="#extract" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column list</p></li>
+<li><p>Pattern: String pattern to be extracted. Permits regular expressions as is the case for the <a class="reference internal" href="#replace">replace</a> rule.</p></li>
+<li><p>Number: Number of times to be extracted</p></li>
+</ul>
+</div></blockquote>
+<p>Optional parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ignore between characters: Does not make any replacement for content between the input characters</p></li>
+<li><p>Ignore upper/lower case: Whether upper case should be regarded the same as lower case</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>A new column with content matching the given pattern is created.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>When there are multiple target columns, the results of extraction are inserted after each column.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="countpattern">
+<h2>countpattern<a class="headerlink" href="#countpattern" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column list</p></li>
+<li><p>Pattern: String pattern to be detected. Permits regular expressions as is the case for the <a class="reference internal" href="#replace">replace</a> rule.</p></li>
+</ul>
+</div></blockquote>
+<p>Optional parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ignore between characters: Does not make any replacement for content between the input characters</p></li>
+<li><p>Ignore upper/lower case: Whether upper case should be regarded the same as lower case</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>New columns are created based on the number of matches with the pattern.</p></li>
+<li><p>This is highly similar to <a class="reference internal" href="#extract">extract</a>. The only difference is that it counts the number of matches, rather than extracting the content.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>When there are multiple target columns, the results of extraction are inserted after each column.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="nest">
+<h2>nest<a class="headerlink" href="#nest" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column list</p></li>
+<li><p>Type: Map or Array</p></li>
+<li><p>New column name</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul>
+<li><p>The target columns are grouped into the given type.</p></li>
+<li><p>Below are examples of grouping columns into an array and map, respectively.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_nest_1.png" src="../../_images/rule_kinds_nest_1.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="unnest">
+<h2>unnest<a class="headerlink" href="#unnest" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_unnest_1.png" src="../../_images/rule_kinds_unnest_1.png" />
+</div>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column (1 column)</p></li>
+<li><p>Parameter to be selected: <em>0-base</em>index for an array, or key value for a map</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>A new column is created after removing the designated parameter from an array or a map.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The target column must be of the array or map type.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="flatten">
+<h2>flatten<a class="headerlink" href="#flatten" title="Permalink to this headline">¶</a></h2>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column (1 column)</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Rows are created with elements in an array as column values.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul>
+<li><p>The target column must be of the array type.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_flatten_1.png" src="../../_images/rule_kinds_flatten_1.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p>As shown in the above example, if the array column has four elements, one row is created for each element. All columns except the array column assume the same values.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_flatten_2.png" src="../../_images/rule_kinds_flatten_2.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="aggregate">
+<h2>aggregate<a class="headerlink" href="#aggregate" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_aggregate_1.png" src="../../_images/rule_kinds_aggregate_1.png" />
+</div>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Expression: Aggregation function list</p></li>
+<li><p>Grouping basis: Column list to be used in Group B</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul>
+<li><p>A new column is added using results of running Group By on each combination of columns included in the grouping basis.</p></li>
+<li><p>A column is created for each expression. For example, two columns are created when average value and count are designated as expressions.</p></li>
+<li><p>The available aggregation functions are as follows.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>count()</p></li>
+<li><p>sum(<em>colname</em>)</p></li>
+<li><p>avg(<em>colname</em>)</p></li>
+<li><p>min(<em>colname</em>)</p></li>
+<li><p>max(<em>colname</em>)</p></li>
+</ul>
+<p>Precaution</p>
+</div></blockquote>
+</li>
+<li><p>Calculations are performed only for sampling results. The results for the entire data, that is, the snapshot, may be different.</p></li>
+<li><p>Note that <code class="docutils literal notranslate"><span class="pre">()</span></code> must be inserted when using the count function.</p></li>
+<li><p>count(<em>colname</em>)is currently not available.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_aggregate_2.png" src="../../_images/rule_kinds_aggregate_2.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="pivot">
+<h2>pivot<a class="headerlink" href="#pivot" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_pivot_1.png" src="../../_images/rule_kinds_pivot_1.png" />
+</div>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Column list serving as pivot target</p></li>
+<li><p>Expression: Expression list to be used as column values (for aggregation functions only)</p></li>
+<li><p>Grouping basis: Column list to be used in Group B</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Group By is performed for target columns and each combination of columns included in the grouping basis. A dataset having the results as column values is created.</p></li>
+<li><p>A set of columns is created for each expression. For example, if average value and count are designated as expressions, the values in the pivot target columns are divided into ten groups, resulting in 20 columns.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul>
+<li><p>This is used when performing Group By on at least two columns. (1 pivot target, 1 grouping basis)</p></li>
+<li><p>Here, the Rename All function is useful as column names tend to get longer.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_pivot_2.png" src="../../_images/rule_kinds_pivot_2.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="unpivot">
+<h2>unpivot<a class="headerlink" href="#unpivot" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_unpivot_1.png" src="../../_images/rule_kinds_unpivot_1.png" />
+</div>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Column: Target column list to be used as column values</p></li>
+<li><p>Number of groups: Column number (default is 1)</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Two column are created using the column names and values of selected columns. (Where the number of groups is 1)</p></li>
+<li><p>If the number of groups is the same as the number of selected columns, the resulting columns correspond to the column names and values. That is, 20 columns are created when 10 columns are unpivoted to 10 groups.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul>
+<li><p>Cases where the number of groups is a factor of the number of columns will soon be supported.</p>
+<blockquote>
+<div><p>&lt;Where the number of groups is 1&gt;</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_unpivot_2.png" src="../../_images/rule_kinds_unpivot_2.png" />
+</div>
+</div></blockquote>
+<p>&lt;Where the number of groups is the same as the number of columns&gt;</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_unpivot_3.png" src="../../_images/rule_kinds_unpivot_3.png" />
+</div>
+</div></blockquote>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="join">
+<h2>join<a class="headerlink" href="#join" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_join_1.png" src="../../_images/rule_kinds_join_1.png" />
+</div>
+<p>Unlike other rules, join has a separate popup.</p>
+<p>Required parameter (select in popup or enter value)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Target dataset of join: Wrangled dataset in the same dataflow</p></li>
+<li><p>Columns to be displayed in join results (toggle)</p></li>
+<li><p>Join key: Multiple values may be entered</p></li>
+<li><p>Join type: Only internal join supported</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Columns are connected by joining to the target dataset.</p></li>
+<li><p>This rule is the same as “join” in a relational database.</p></li>
+<li><p>The results before implementing the rule can be viewed by clicking the View Results button.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul>
+<li><p>The join key must be included in columns to be displayed as results.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_join_2.png" src="../../_images/rule_kinds_join_2.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="union">
+<h2>union<a class="headerlink" href="#union" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_union_1.png" src="../../_images/rule_kinds_union_1.png" />
+</div>
+<p>Similar to <a class="reference internal" href="#join">join</a>, <strong>union</strong> has a separate popup.</p>
+<p>Required parameter (select in popup)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Target dataset of union: More than one may be selected</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The content of the designated dataset is also processed.</p></li>
+<li><p>This rule is the same as “union all” in a relational database.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul>
+<li><p>The target dataset must coincide with the dataset to which <strong>union</strong> is performed in terms of column name, type, and number of columns.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_union_2.png" src="../../_images/rule_kinds_union_2.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="window">
+<h2>window<a class="headerlink" href="#window" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_window_1.png" src="../../_images/rule_kinds_window_1.png" />
+</div>
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_window_2.png" src="../../_images/rule_kinds_window_2.png" />
+</div>
+<p>Required parameter</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Expression: Window function list</p></li>
+<li><p>Grouping basis: Row order created within this group. Alignment criteria applied if grouping basis is not available.</p></li>
+<li><p>Alignment criteria: Creates before and after relations based on the selected column. Order of data input applied if alignment criteria is not available.</p></li>
+</ul>
+</div></blockquote>
+<p>Detailed description</p>
+<blockquote>
+<div><ul>
+<li><p>Column values are created using content of preceding and following rules.</p></li>
+<li><p>The order is determined based on the alignment criteria within the grouping basis.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>In the above example, the average value is calculated by state using the three preceding and following rows.</p></li>
+<li><p>If an immediately preceding row does not have the same state, earlier rows are searched.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The currently available Window functions are as follows.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>row_number()</p></li>
+<li><p>lead(<em>colname</em>, <em>int</em>)</p></li>
+<li><p>lag(<em>colname</em>, <em>int</em>)</p></li>
+<li><p>rolling_sum(<em>colname</em>, <em>int</em>, <em>int</em>)</p></li>
+<li><p>rolling_avg(<em>colname</em>, <em>int</em>, <em>int</em>)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>In addition to Window functions, Aggregation functions may be used.</p></li>
+</ul>
+</div></blockquote>
+<p>Precaution</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>When using Window functions, note that error messages may not be properly displayed in the event of insufficient parameters.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create_a_datasnapshot.html" class="btn btn-neutral float-right" title="Creating a data snapshot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="edit_rules.html" class="btn btn-neutral float-left" title="Editing rules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

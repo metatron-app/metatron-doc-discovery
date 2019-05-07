@@ -1,0 +1,335 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Components of Metatron Discovery &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Metatron engine: Druid" href="engine.html" />
+    <link rel="prev" title="Overview of Metatron Discovery" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Introduction of Metatron Discovery</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview of Metatron Discovery</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Components of Metatron Discovery</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Data Preparation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Data Storage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Data Analysis and Visualization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Workspace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Workbook, Dashboard, Chart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Notebook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Workbench</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Data monitoring</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">User permission and account management</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="engine.html">Metatron engine: Druid</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data preparation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Introduction of Metatron Discovery</a> &raquo;</li>
+        
+      <li>Components of Metatron Discovery</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../html_ko/discovery/part01/structure.html" rel="nofollow"> 한국어로 보기</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="metatron-discovery">
+<h1>Components of Metatron Discovery<a class="headerlink" href="#metatron-discovery" title="Permalink to this headline">¶</a></h1>
+<p>Metatron Discovery retrieves data from data sources loaded into the server or other external sources, performs advanced analytics, and outputs results in the form of charts and reports. To utilize this system, you must understand its overall structure shown below:</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Metatron Discovery 기능도" src="../../_images/diagram.png" />
+</div>
+</div></blockquote>
+<div class="section" id="id1">
+<h2>Data Preparation<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Data preparation refines data from data sources to be loaded into Metatron. See <a class="reference internal" href="../part07/index.html"><span class="doc">Data preparation</span></a> for more details on data preparation.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="프리퍼레이션 화면" src="../../_images/prep.png" />
+</div>
+<div class="figure align-center">
+<img alt="데이터 스냅샷 상세 화면" src="../../_images/prep2.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h2>Data Storage<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Data storage manages data loaded into the Metatron engine for analysis and visualization. See <a class="reference internal" href="../part02/index.html"><span class="doc">Data Management</span></a> for more details on the data management function.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="데이터 소스 상세 화면" src="../../_images/datasource.png" />
+</div>
+<div class="figure align-center">
+<img alt="데이터 소스 생성 화면" src="../../_images/datasource2.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2>Data Analysis and Visualization<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Each module below allows users to perform visualization-based search and analysis of stored data.</p>
+<div class="section" id="id4">
+<h3>Workspace<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Workspace can be managed according to user access to workbook, workbench, and notebook within an organization. See <a class="reference internal" href="../part03/index.html"><span class="doc">Workspace</span></a> for more details on the workspace function.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="워크스페이스 화면" src="../../_images/workspace.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id5">
+<h3>Workbook, Dashboard, Chart<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Workbook is a module that supports sharing and presentation of dashboards and charts. See <a class="reference internal" href="../part04/index.html"><span class="doc">Workbook</span></a> for more details on the workbook function.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="대시보드 화면" src="../../_images/dashboard.png" />
+</div>
+<div class="figure align-center">
+<img alt="차트 화면" src="../../_images/chart.png" />
+</div>
+<div class="figure align-center">
+<img alt="맵 차트 화면" src="../../_images/map.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h3>Notebook<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>In notebook, you can perform advanced analytics based on machine learning. See <a class="reference internal" href="../part05/index.html"><span class="doc">Notebook</span></a> for more details on the notebook function.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="맵 차트 화면" src="../../_images/notebook_intro.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h3>Workbench<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Enables SQL data analytics. See <a class="reference internal" href="../part06/index.html"><span class="doc">Workbench</span></a> for more details on the workbench function.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="워크벤치 화면" src="../../_images/sql.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>Data monitoring<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>This function monitors data use based on data query statistics and query logs. See <a class="reference internal" href="../part02/data_monitoring.html"><span class="doc">Data Monitoring</span></a> for more details on the data monitoring function.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="모니터링 화면" src="../../_images/monitoring.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id9">
+<h2>User permission and account management<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>You can add/delete users or manage user permission.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="engine.html" class="btn btn-neutral float-right" title="Metatron engine: Druid" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="overview.html" class="btn btn-neutral float-left" title="Overview of Metatron Discovery" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

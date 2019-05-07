@@ -1,0 +1,564 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# bee3017de9c8424f8e0bd1b45c1625bc
+#: ../../discovery/part04/chart_types.rst:2
+msgid "차트 유형 선택"
+msgstr "Selecting the Chart Type"
+
+# 34fa3d63eb31421abd2a144e2581be0d
+#: ../../discovery/part04/chart_types.rst:22
+msgid ""
+"Metatron Discovery는 20여 가지의 차트를 제공하고 있습니다. 차트를 선택하기 전에 먼저 컬럼들을 선반에 올려놓으면 "
+"그에 어울리는 차트들이 보라색으로 강조됩니다."
+msgstr "Metatron Discovery provides 20 types of charts. If you places columns on shelves before selecting a chart, suitable charts are highlighted in purple."
+
+# c4784cc7cb3e4fe48179f212c4d35e1b
+#: ../../discovery/part04/chart_types.rst:26
+msgid "아래 표는 각 차트별 생성조건과 사용 속성, 사용 유형, 사용 예시에 대해 정리한 것입니다."
+msgstr "The table below summarizes conditions to create, uses, and examples for each chart."
+
+# f0bee129157a48b9878d1651705a37b6
+#: ../../discovery/part04/chart_types.csv:1
+msgid "차트명/아이콘"
+msgstr "Chart name/icon"
+
+# b6ec470f102d4d1892f2c43ef3bc7241
+#: ../../discovery/part04/chart_types.csv:1
+msgid "생성 조건"
+msgstr "Conditions to create"
+
+# 56824741bdc74bc8b307773ac44dc498
+#: ../../discovery/part04/chart_types.csv:1
+msgid "사용 속성"
+msgstr "Characteristics"
+
+# fc0429f923094204804608a69782dfd8
+#: ../../discovery/part04/chart_types.csv:1
+msgid "사용 유형"
+msgstr "Uses"
+
+# f41fa89e4db240adaa8d11001272bf92
+#: ../../discovery/part04/chart_types.csv:1
+msgid "사용 예시"
+msgstr "Examples"
+
+# 96c8129166d949f38dac6dc694e8a063
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon01|"
+msgstr "|icon01|"
+
+# a7c9f798a6ca49ae801e8499a22fd50a
+#: ../../discovery/part04/chart_types.csv:3
+msgid "막대형 차트"
+msgstr "Bar chart"
+
+# 6faac36cfcff444098a03406432d4eaf
+# ba522d082d224a10b6b0c629a337c950
+#: ../../discovery/part04/chart_types.csv:1
+msgid "열: 차원값 1개 이상 & 교차: 측정값 1개 이상"
+msgstr "Column: 1 or more dimensions / Cross: 1 or more measures"
+
+# 379af60eddfd49bb971c5ad75802d198
+#: ../../discovery/part04/chart_types.csv:1
+msgid "개별 항목의 값 비교"
+msgstr "Compares the value of each item."
+
+# 6b7338a6a44f4713ac5c4396f6bad1d0
+#: ../../discovery/part04/chart_types.csv:1
+msgid "그룹들을 비교할 때 사용하거나 시간에 따른 변화 추이를 보고 싶을 때 사용합니다. 변화 추이가 클 때 사용하면 효과적입니다."
+msgstr "Used to compare groups or view trends over time. Very effective when the trend is significantly fluctuating."
+
+# e8a5918400b14003857c488b048554f7
+#: ../../discovery/part04/chart_types.csv:1
+msgid "제품별 매출 및 수익 비교"
+msgstr "Comparison between products regarding their sales and profits"
+
+# 62c8f46e8ff24798886ecdb7a4c32af0
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon02|"
+msgstr "|icon02|"
+
+# 0c73b5c80e7d438ba6f0688214766a00
+#: ../../discovery/part04/chart_types.csv:3
+msgid "표"
+msgstr "Table"
+
+# 346a4e783c2b4555a7a15fb1a8d9021a
+# 918daae3874a4ffaaa95afcddec3ec04
+#: ../../discovery/part04/chart_types.csv:1
+msgid "열 또는 행: 차원값 1개 이상 & 교차: 측정값 1개 이상"
+msgstr "Column or row: 1 or more dimensions / Cross: 1 or more measures"
+
+# 681d929f51f74275b87269997f03cc04
+#: ../../discovery/part04/chart_types.csv:1
+msgid "항목별 교차 데이터를 텍스트로 표시"
+msgstr "Displays the values of crossings between two dimensions as text."
+
+# 99be49a9a6904703bb56e699dde2d00f
+#: ../../discovery/part04/chart_types.csv:1
+msgid "특정 기준에 따른 측정 값을 보고싶을 때 사용합니다. 시각화보다는 자세한 데이터와 정확한 값을 보려는 경우에 사용합니다."
+msgstr "Used to view measure values aggregated by certain criteria. Useful to check exact values rather than a visualization of them."
+
+# 6da9eaeb99c54d05a6b0223fb5547a1f
+#: ../../discovery/part04/chart_types.csv:1
+msgid "연도별 매출 상세"
+msgstr "Sales details by year"
+
+# 758828787cb24eb6a66bf4dd2ac26bc5
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon03|"
+msgstr "|icon03|"
+
+# dcebc2b870344450ad82832e7523481f
+#: ../../discovery/part04/chart_types.csv:3
+msgid "선형 차트"
+msgstr "Line chart"
+
+# f7a3ac1686cd412fbb129679443da26d
+#: ../../discovery/part04/chart_types.csv:1
+msgid "시간의 흐름에 따른 데이터 변화"
+msgstr "Displays data changes over time."
+
+# e19f1c41a799477baad93de0be9720da
+#: ../../discovery/part04/chart_types.csv:1
+msgid "시간에 따른 변화 추이를 보고 싶을 때 사용합니다. 변화 추이가 작을 때는 막대형 차트보다 선형 차트를 사용하는 것이 효과적입니다."
+msgstr "Used to view trends over time. If changes are moderate, a line chart is more effective than a bar chart."
+
+# ff7724904ca64e1490e7ca038512806a
+#: ../../discovery/part04/chart_types.csv:1
+msgid "월별 매출 추이"
+msgstr "Monthly sales trend"
+
+# f99bcb753c98472bae8b50c0b360f26b
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon04|"
+msgstr "|icon04|"
+
+# c94138a6405546338a9e6ece5e93f7a9
+#: ../../discovery/part04/chart_types.csv:3
+msgid "분산형 차트"
+msgstr "Scatter chart"
+
+# 8fd3f80845b746af894837806f0c9c90
+#: ../../discovery/part04/chart_types.csv:1
+msgid "열: 측정값 1개 & 행: 측정값 1개 & 교차: 차원값 1개 이상"
+msgstr "Column: 1 measure / Row: 1 measure / Cross: 1 or more dimensions"
+
+# a2a5b22862df474596ceacabb0fb6dc4
+#: ../../discovery/part04/chart_types.csv:1
+msgid "관련된 여러 항목의 연관관계 표시"
+msgstr "Displays relations between items."
+
+# 109b33e408934412b286201a5b2a5a7d
+#: ../../discovery/part04/chart_types.csv:1
+msgid "두 변수 간의 관계를 정의하고 싶을 때 사용합니다."
+msgstr "Used to define relations between two parameters."
+
+# 11da5d4b56f140e7a283a7bddbab9b9c
+#: ../../discovery/part04/chart_types.csv:1
+msgid "제품의 매출과 수익의 관계"
+msgstr "Relations between product sales and profits"
+
+# 21776e986808467ba4355ef526ce93f1
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon05|"
+msgstr "|icon05|"
+
+# 350e750abe0345829f6e77d85035d0d9
+#: ../../discovery/part04/chart_types.csv:3
+msgid "히트맵"
+msgstr "Heatmap"
+
+# 35ec6ad0b20947539c7d435fdf74f444
+#: ../../discovery/part04/chart_types.csv:1
+msgid "항목별 교차 데이터를 색상 분포 형태로 표시"
+msgstr "Displays the values of crossings between two dimensions in colors and sizes at different points."
+
+# b8d260933f484494bbf79f6e1110a5a1
+#: ../../discovery/part04/chart_types.csv:1
+msgid "색과 크기를 이용해 두 변수를 직관적으로 비교할 때 사용합니다. 표 차트에서 시각적 요소를 강조하기 위해 사용합니다."
+msgstr "Used to provide an intuitive view of relations between two dimensions represented by colors and sizes. Similar to a table chart, but more of a visual type."
+
+# b6f9d0e30c634575a6ab723df71fc64a
+#: ../../discovery/part04/chart_types.csv:1
+msgid "지역별 각 제품 판매량"
+msgstr "Sales of each product by region"
+
+# 12516ac364f1475492edbb769d9bf8e4
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon06|"
+msgstr "|icon06|"
+
+# 917e7f88729c4317b8222469d472c7ea
+#: ../../discovery/part04/chart_types.csv:3
+msgid "원형 차트"
+msgstr "Pie chart"
+
+# 7ddaedb7fd3447098a17d5259fb6c951
+#: ../../discovery/part04/chart_types.csv:1
+msgid "교차: 차원값 1개 이상, 측정값 1개 이상"
+msgstr "Cross: 1 or more dimensions, 1 or more measures"
+
+# 6e4e77e180a74b699ab2ea5e91eb5bcb
+#: ../../discovery/part04/chart_types.csv:1
+msgid "전체 대비 각 항목이 차지하는 비율"
+msgstr "Shows how much each item accounts for."
+
+# f980b0e8c18e43508dd53256c33e50b0
+#: ../../discovery/part04/chart_types.csv:1
+msgid "전체를 이루는 부분들을 비교할 때 사용합니다."
+msgstr "Used to compare the compositions of something."
+
+# ad0996e4da314099852d73557f34e8f0
+#: ../../discovery/part04/chart_types.csv:1
+msgid "웹 브라우저의 마켓 쉐어 비교"
+msgstr "Comparison between web browsers regarding their market share"
+
+# a7986e7526eb4fe298f705e673b1d4ef
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon07|"
+msgstr "|icon07|"
+
+# 9dcd0eec64464fd39583e7cdfe72d4fd
+#: ../../discovery/part04/chart_types.csv:3
+msgid "맵뷰"
+msgstr "Map view"
+
+# 3b721d31581b4aa589b347ccd7967fb0
+#: ../../discovery/part04/chart_types.csv:1
+msgid "레이어 선반 : 차원값(위치속성), 차원값 1개이상 , 측정값 1개이상"
+msgstr "Layer shelf : Dimension (location attribute), one or more dimension, one or more measure"
+
+# aee0ee3ba1ab42bda57c7136cee22e94
+#: ../../discovery/part04/chart_types.csv:1
+msgid "지도 상 각 위치 값에 해당하는 데이터를 표시"
+msgstr "Displays the data for each location on the map"
+
+# dbcd36f57ab04e088c2904814fedbe9a
+#: ../../discovery/part04/chart_types.csv:1
+msgid "지역별 색을 이용한 변수의 직관적 비교에 사용. 시각적 요소를 강조하기 위해 사용"
+msgstr "Used for intuitive comparisons of variables by using colors for each region. Used to emphasize visual elements"
+
+# 2ff9de4bb248421ba08231e1da6c82a9
+#: ../../discovery/part04/chart_types.csv:1
+msgid "지역별 각 제품 판매량 비교"
+msgstr "Compare sales of each product by region"
+
+# 834040a28ad54ba09b0cb946638b0960
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon08|"
+msgstr "|icon08|"
+
+# 1228f2e16ee644399f19b06c1c19ad8f
+#: ../../discovery/part04/chart_types.csv:3
+msgid "핵심지표"
+msgstr "Core indicators"
+
+# 9d883a8112cd42d8bea6c6948b908fbd
+#: ../../discovery/part04/chart_types.csv:1
+msgid "교차: 측정값 1개 이상"
+msgstr "Cross: 1 or more measures"
+
+# 1043c3b780644be8846dc06c23f10240
+#: ../../discovery/part04/chart_types.csv:1
+msgid "주요 지표를 추세와 함께 표시"
+msgstr "Displays main indicators along with their trends."
+
+# cb40a76e38ff4a10b0f95bb7a70947d3
+#: ../../discovery/part04/chart_types.csv:1
+msgid "조직의 현재 성과에 대한 정보를 빠르게 전달하기 위해 사용합니다."
+msgstr "Used to quickly convey information on an organization&rsquo;s current achievement."
+
+# 94796358a154455781c0a82f1d7c6a60
+#: ../../discovery/part04/chart_types.csv:1
+msgid "올 해 이입된 고객 수 혹은 조직의 성과 지표"
+msgstr "An organization&rsquo;s performance index, such as how many customers have been brought in this year"
+
+# 614f6406bca24634b51b6a173ae22b40
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon09|"
+msgstr "|icon09|"
+
+# d28d516c5155403e8c29bbd3e2bb2d92
+#: ../../discovery/part04/chart_types.csv:3
+msgid "박스플롯"
+msgstr "Box plot"
+
+# b444feb2ec2e451e8c03dcc9c90e5a33
+#: ../../discovery/part04/chart_types.csv:1
+msgid "열: 차원값1개 이상, 행: 차원값1개, 교차: 측정값 1개"
+msgstr "Column: 1 or more dimensions / Row: 1 dimension / Cross: 1 measure"
+
+# cd2821247bcb43aea5de47e821fc0bec
+#: ../../discovery/part04/chart_types.csv:1
+msgid "값의 상승과 하락을 표시"
+msgstr "Indicates increase and decrease in value."
+
+# 63fdb81cb2d64594b50a78b0e9e132a2
+#: ../../discovery/part04/chart_types.csv:1
+msgid "각 그룹들의 분포를 비교할 때 사용하거나 특정 값의 목표치를 나타낼 때 사용합니다."
+msgstr "Used to compare groups regarding their share."
+
+# 83e57a9579b04d15b854a3c94679647d
+#: ../../discovery/part04/chart_types.csv:1
+msgid "비행기 기종 별 지연 시간 분포 비교"
+msgstr "Proportion of flight delay accounted for by each airplane model"
+
+# 6b3cc4b7a28a48aa95484350a371add1
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon10|"
+msgstr "|icon10|"
+
+# 074474b432bd429bbfd055714da59612
+#: ../../discovery/part04/chart_types.csv:3
+msgid "폭포 차트"
+msgstr "Waterfall chart"
+
+# 40294be3d10d43fa80e2e6ca786eb61d
+#: ../../discovery/part04/chart_types.csv:1
+msgid "열: 시간속성의 차원값 1개 & 교차: 측정값 1개"
+msgstr "Column: 1 time-dimension / Cross: 1 measure"
+
+# 02b2b736af1b4728a7bb64d89a83dfca
+#: ../../discovery/part04/chart_types.csv:1
+msgid "값을 더하거나 뺄 때의 누계를 표시"
+msgstr "Displays cumulative changes resulting from the increase or decrease in value for each time interval."
+
+# 3e38eeacc9664166b3e5bbe6325e5cb0
+#: ../../discovery/part04/chart_types.csv:1
+msgid "시간에 따른 값의 증가와 감소를 강조할 때 사용합니다."
+msgstr "Used to emphasize increase and decrease in value over time."
+
+# 3b00a31e13de44ebb33d09c6079b9b9e
+#: ../../discovery/part04/chart_types.csv:1
+msgid "일정 기간 동안 조직의 팀원 수 변화 관찰 혹은 주식"
+msgstr "Changes in the number of team members for a certain period; stock price trends"
+
+# c896e69ca055467ebb9884302caea961
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon11|"
+msgstr "|icon11|"
+
+# f04e002a7dde46fd851461bb03b95b4e
+#: ../../discovery/part04/chart_types.csv:3
+msgid "워드클라우드"
+msgstr "Word cloud"
+
+# 5cfab0cde1064d928da6ffe25d650c5c
+#: ../../discovery/part04/chart_types.csv:1
+msgid "교차: 차원값 1개 이상, 측정값 1개"
+msgstr "Cross: 1 or more dimensions, 1 measure"
+
+# 342f7326a63e43138f2e2c0ae6b07a88
+#: ../../discovery/part04/chart_types.csv:1
+msgid "출현 빈도에 비례한 크기로 텍스트를 표시"
+msgstr "Displays words sized in proportion to the number of mentions."
+
+# d1f28230253e4d09ae5f1102013dea83
+#: ../../discovery/part04/chart_types.csv:1
+msgid "중요한 단어들을 강조해서 요약하고 싶을 때 사용합니다."
+msgstr "Used to summarize and emphasize important words."
+
+# a245ad9ec532400faa153a2294828b0f
+#: ../../discovery/part04/chart_types.csv:1
+msgid "고객들의 코멘트 요약"
+msgstr "Summary of the voices of customers"
+
+# 74e2ff4ad44c4ea393c4b3ccdef8a2bc
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon12|"
+msgstr "|icon12|"
+
+# 96cd51672e8c490c80372ec01ee4cfb4
+#: ../../discovery/part04/chart_types.csv:3
+msgid "결합 차트"
+msgstr "Combination chart"
+
+# 3d80b556ccc54885ae1beeb75199665a
+#: ../../discovery/part04/chart_types.csv:1
+msgid "열: 차원값 1개 이상 & 교차: 측정값 2개 이상, 4개 이하"
+msgstr "Column: 1 or more dimensions / Cross: 2&ndash;4 measures"
+
+# 9d4526ef3c724550a155ef2a58aa74cb
+#: ../../discovery/part04/chart_types.csv:1
+msgid "막대와 라인 차트를 결합하여 데이터를 비교"
+msgstr "Compares data by combining bar and line charts."
+
+# d1d9e2479a2b4efbbfcabb0a024ecbff
+#: ../../discovery/part04/chart_types.csv:1
+msgid "서로 다른 종류의 정보를 강조하기 위해 사용합니다."
+msgstr "Used to visualize different types of data simultaneously."
+
+# f147e93fec1c4e8abd22e756f96f538a
+#: ../../discovery/part04/chart_types.csv:1
+msgid "제품별 가격과 판매량을 동시 관찰"
+msgstr "Simultaneous monitoring of product price and sales"
+
+# 51b0a400bc024d3299242d0456405d60
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon13|"
+msgstr "|icon13|"
+
+# 1595cacb91074f42aa3ce84685f4a4fb
+#: ../../discovery/part04/chart_types.csv:3
+msgid "트리맵"
+msgstr "TreeMap"
+
+# b6be5601e96e4bd6a2a9048d9662d242
+#: ../../discovery/part04/chart_types.csv:1
+msgid "열: 차원값 1개 & 행: 차원값 1개 이상 & 교차: 측정값 1개"
+msgstr "Column: 1 dimension / Row: 1 or more dimensions / Cross: 1 measure"
+
+# 9ca9e06533c4418aa7b00695645a9657
+#: ../../discovery/part04/chart_types.csv:1
+msgid "계층 데이터를 중첩된 사각형 집합으로 표시"
+msgstr "Displays hierarchical data using nested rectangles."
+
+# d364d9ec264d44a4b2465e12f849e3f0
+#: ../../discovery/part04/chart_types.csv:1
+msgid "계층 구조를 갖는 데이터를 시각화하기 위해 사용합니다."
+msgstr "Used to visualize hierarchical data."
+
+# a7989275942344db8a3029b851c22133
+#: ../../discovery/part04/chart_types.csv:1
+msgid "제품별(대분류-중분류-소분류) 매출 관찰"
+msgstr "Monitoring of sales of products classified into major, medium, and minor categories."
+
+# 3b57b7b785444eee98f7b5c11e098672
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon14|"
+msgstr "|icon14|"
+
+# 768680d3124645bbbe17cb02adcd5837
+#: ../../discovery/part04/chart_types.csv:3
+msgid "레이더 차트"
+msgstr "Radar chart"
+
+# 78e4bd55441e476aac536aec24712a39
+#: ../../discovery/part04/chart_types.csv:1
+msgid "교차: 차원값 1개, 측정값 1개 이상"
+msgstr "Cross: 1 dimension, 1 or more measures"
+
+# 28e7453816164d468b7178a91046593e
+#: ../../discovery/part04/chart_types.csv:1
+msgid "중심점을 기준으로 다양한 평가요소를 표시"
+msgstr "Displays different quantitative variables on axes starting from the same point."
+
+# a0f9a93b3477497e9b0cd99cd045a836
+#: ../../discovery/part04/chart_types.csv:1
+msgid "여러 측정 목표를 직관적으로 비교할 때 사용합니다."
+msgstr "Used for a visual comparison among different quantitative variables."
+
+# 9206079f8c41402197c59b4909ea6e02
+#: ../../discovery/part04/chart_types.csv:1
+msgid "품질을 5요인으로 나누어 평가한 제품들 비교"
+msgstr "Product quality evaluation in five aspects."
+
+# cf177d6ac5824c4090a9f660ddae6dd3
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon15|"
+msgstr "|icon15|"
+
+# e3dd3d0d32da410c9f65f015ae047389
+#: ../../discovery/part04/chart_types.csv:3
+msgid "네트워크 다이어그램"
+msgstr "Network diagram"
+
+# 3d4d59cd9c0d472ea7c19b937bb617e9
+#: ../../discovery/part04/chart_types.csv:1
+msgid "주체 선반: 차원값 1개 & 대상 선반: 차원값 1개 & 연결 선반: 측정값 1개"
+msgstr "Subject shelf: 1 dimension / Target shelf: 1 dimension / Connecting shelf: 1 measure"
+
+# c9392ee07f944657a593670bbd860b2a
+#: ../../discovery/part04/chart_types.csv:1
+msgid "의존관계가 있는 요소들을 표현하는 연결 다이어그램"
+msgstr "Diagram connecting elements in dependence relations"
+
+# f6a9e850eed04c4da21f87add93154d8
+#: ../../discovery/part04/chart_types.csv:1
+msgid "데이터의 발생 순서 흐름을 보고 싶을 때 사용합니다."
+msgstr "Used to view data flows regarding where data elements are generated."
+
+# 066dc2f46d6b43629951c04c28c054ce
+#: ../../discovery/part04/chart_types.csv:1
+msgid "프로젝트 태스크 흐름을 관찰"
+msgstr "Monitoring the task flows of a project"
+
+# 3c7837a9615e49d4a4074a72f0e81774
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon16|"
+msgstr "|icon16|"
+
+# 95b70a2d4a214890a0a2e0e38ccf3fcc
+#: ../../discovery/part04/chart_types.csv:3
+msgid "측정 차트"
+msgstr "Measurement chart"
+
+# aae3c5e075ea48ddb3ed0865ff0736a7
+#: ../../discovery/part04/chart_types.csv:1
+msgid "열: 행: 차원값 1개 이상 & 교차: 측정값 1개"
+msgstr "Column: Row: 1 or more dimensions / Cross: 1 measure"
+
+# 9ca44acb94974827bb661a714be1a95a
+#: ../../discovery/part04/chart_types.csv:1
+msgid "설정된 목표에 대한 성능을 시각화하여 표시"
+msgstr "Displays a visualization of performance regarding the set goals"
+
+# de329dabab5541e6908829a6134a850e
+#: ../../discovery/part04/chart_types.csv:1
+msgid "데이터가 어떤 비율로 구성되어 있는지 보고 싶을 때 사용합니다."
+msgstr "Used to view the proportions of data elements."
+
+# 325b34d300b6495a9c4158f024513ab2
+#: ../../discovery/part04/chart_types.csv:1
+msgid "지역별 수익 관찰"
+msgstr "Monitor profits by region"
+
+# c854bfdb8e9d464e98e913f394366c23
+#: ../../discovery/part04/chart_types.csv:1
+msgid "|icon17|"
+msgstr "|icon17|"
+
+# 9b567760a3e745948e2c24fb881f4a47
+#: ../../discovery/part04/chart_types.csv:3
+msgid "생키 다이어그램"
+msgstr "Sankey diagram"
+
+# 5275cb3f1d04439481acc683c81f24c6
+#: ../../discovery/part04/chart_types.csv:1
+msgid "열: 차원값 3개 이상 & 교차: 측정값 1개"
+msgstr "Column: 3 or more dimensions / Cross: 1 measure"
+
+# c9ac26cb981045f58b50aeafecff7b9c
+#: ../../discovery/part04/chart_types.csv:1
+msgid "연결선의 너비로 흐름의 양을 비율적으로 표시"
+msgstr "Displays the proportion of each data flow by the width of the connection line."
+
+# 002fe2e488724ff198990dff21744d81
+#: ../../discovery/part04/chart_types.csv:1
+msgid "데이터의 양적인 흐름을 관찰할 때 사용합니다."
+msgstr "Used to monitor data flows and their respective sizes."
+
+# ffd0750a98ad40bf95d0b81f9b9ae8e7
+#: ../../discovery/part04/chart_types.csv:1
+msgid "공장의 에너지 흐름 관찰"
+msgstr "Monitoring energy flows in a factory"
+

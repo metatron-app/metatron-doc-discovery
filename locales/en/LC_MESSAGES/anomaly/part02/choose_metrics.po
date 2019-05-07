@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# b1c0bbec25c34c38b8cc80897535bd82
+#: ../../anomaly/part02/choose_metrics.rst:2
+msgid "모니터링할 지표 선택하기"
+msgstr ""
+
+# dea59b08412c44059f2492178e7ac0a8
+#: ../../anomaly/part02/choose_metrics.rst:7
+msgid "Select Measure"
+msgstr ""
+
+# 2a513ef89e9948e0a3782f79d2907dbd
+#: ../../anomaly/part02/choose_metrics.rst:8
+msgid ""
+"알람을 걸고자하는 대상 값을 선정하고 그에 대한 aggregation을 선택한다. 클릭으로 선택할 수 있고 선택시 선반으로 "
+"표현된다. 선반에서 aggregation type을 선택할 수 있다. 필요에 따라서 사용자 컬럼 기능을 활용해서 새로운 값도 생성할"
+" 수 있다. measure를 dimension으로 분할하는 기능을 제공한다."
+msgstr ""
+
+# c2dc01a96f944b00b4374c61ff028f39
+#: ../../anomaly/part02/choose_metrics.rst:17
+msgid "Figure 1. select measure"
+msgstr ""
+
+# 5301b1e56a1447c0be249e0407a3e136
+#: ../../anomaly/part02/choose_metrics.rst:24
+msgid "Figure 2. select aggregation type"
+msgstr ""
+
+# 923e0242889b41c695db57163759090e
+#: ../../anomaly/part02/choose_metrics.rst:31
+msgid "Figure 3. make custem measure"
+msgstr ""
+
+# f2763bd479014dcc8d06105b7537cc36
+#: ../../anomaly/part02/choose_metrics.rst:38
+msgid "Figure 4. make custem measure rule"
+msgstr ""
+
+# b613cc5458bc435ca182717c0c08f958
+#: ../../anomaly/part02/choose_metrics.rst:45
+msgid "Figure 5. splite measure by dimension"
+msgstr ""
+
+# 62c570629566409bb69c063ef170477a
+#: ../../anomaly/part02/choose_metrics.rst:51
+msgid "Add Filter"
+msgstr ""
+
+# 980e3baad4994d999a0aefa3a2fbafff
+#: ../../anomaly/part02/choose_metrics.rst:52
+msgid "원하는 데이타만 선정하기 위해 필터를 추가한다."
+msgstr ""
+
+# 017eeaed75044c3982af0a996b4e2e2f
+#: ../../anomaly/part02/choose_metrics.rst:58
+msgid "Figure 6. add filter"
+msgstr ""
+
+# 239cc318a2b84a2eace7aa8ad7e16a49
+#: ../../anomaly/part02/choose_metrics.rst:65
+msgid "Figure 7. select filter value"
+msgstr ""
+
+# 666fd653dd5b444599582b2beaba8f8f
+#: ../../anomaly/part02/choose_metrics.rst:70
+msgid "Select Training Interval"
+msgstr ""
+
+# c5d3c5fb529041febe704271aaf120ab
+#: ../../anomaly/part02/choose_metrics.rst:71
+msgid ""
+"트레이닝에 필요한 데이타를 선택하기 위해 데이타의 단위, 범위등을 선택한다. 최근 데이타가 기본으로 선택되고 필요에 따라서 특정 "
+"범위를 선택할 수 있다."
+msgstr ""
+
+# 29109e6304a04f0eb78c046281e30636
+#: ../../anomaly/part02/choose_metrics.rst:78
+msgid "Figure 8. select granularity"
+msgstr ""
+
+# 392a02e73cf14876af26966dd573f7de
+#: ../../anomaly/part02/choose_metrics.rst:85
+msgid "Figure 9. select specific time"
+msgstr ""
+
