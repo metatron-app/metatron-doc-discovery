@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>차트 유형 선택 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="차트 스타일 속성" href="chart_style.html" />
+    <link rel="prev" title="차트 그리기(pivoting)" href="pivoting.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dashboards.html">대시보드</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_charts.html">차트</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pivoting.html">차트 그리기(pivoting)</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">차트 유형 선택</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart_style.html">차트 스타일 속성</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html">필터</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">워크북</a> &raquo;</li>
+        
+          <li><a href="manage_charts.html">차트</a> &raquo;</li>
+        
+      <li>차트 유형 선택</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part04/chart_types.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>차트 유형 선택<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>Metatron Discovery는 20여 가지의 차트를 제공하고 있습니다. 차트를 선택하기 전에 먼저 컬럼들을 선반에 올려놓으면 그에 어울리는 차트들이 보라색으로 강조됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/Chart_Types.00.png" src="../../_images/Chart_Types.00.png" />
+</div>
+</div></blockquote>
+<p>아래 표는 각 차트별 생성조건과 사용 속성, 사용 유형, 사용 예시에 대해 정리한 것입니다.</p>
+<blockquote>
+<div><table class="longtable docutils align-center">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>차트명/아이콘</p></th>
+<th class="head"><p>생성 조건</p></th>
+<th class="head"><p>사용 속성</p></th>
+<th class="head"><p>사용 유형</p></th>
+<th class="head"><p>사용 예시</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><img alt="icon01" src="../../_images/Chart_Types_Icon01.png" /></p>
+<p>막대형 차트</p>
+</td>
+<td><p>열: 차원값 1개 이상 &amp; 교차: 측정값 1개 이상</p></td>
+<td><p>개별 항목의 값 비교</p></td>
+<td><p>그룹들을 비교할 때 사용하거나 시간에 따른 변화 추이를 보고 싶을 때 사용합니다. 변화 추이가 클 때 사용하면 효과적입니다.</p></td>
+<td><p>제품별 매출 및 수익 비교</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="icon02" src="../../_images/Chart_Types_Icon02.png" /></p>
+<p>표</p>
+</td>
+<td><p>열 또는 행: 차원값 1개 이상 &amp; 교차: 측정값 1개 이상</p></td>
+<td><p>항목별 교차 데이터를 텍스트로 표시</p></td>
+<td><p>특정 기준에 따른 측정 값을 보고싶을 때 사용합니다. 시각화보다는 자세한 데이터와 정확한 값을 보려는 경우에 사용합니다.</p></td>
+<td><p>연도별 매출 상세</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="icon03" src="../../_images/Chart_Types_Icon03.png" /></p>
+<p>선형 차트</p>
+</td>
+<td><p>열: 차원값 1개 이상 &amp; 교차: 측정값 1개 이상</p></td>
+<td><p>시간의 흐름에 따른 데이터 변화</p></td>
+<td><p>시간에 따른 변화 추이를 보고 싶을 때 사용합니다. 변화 추이가 작을 때는 막대형 차트보다 선형 차트를 사용하는 것이 효과적입니다.</p></td>
+<td><p>월별 매출 추이</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="icon04" src="../../_images/Chart_Types_Icon04.png" /></p>
+<p>분산형 차트</p>
+</td>
+<td><p>열: 측정값 1개 &amp; 행: 측정값 1개 &amp; 교차: 차원값 1개 이상</p></td>
+<td><p>관련된 여러 항목의 연관관계 표시</p></td>
+<td><p>두 변수 간의 관계를 정의하고 싶을 때 사용합니다.</p></td>
+<td><p>제품의 매출과 수익의 관계</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="icon05" src="../../_images/Chart_Types_Icon05.png" /></p>
+<p>히트맵</p>
+</td>
+<td><p>열 또는 행: 차원값 1개 이상 &amp; 교차: 측정값 1개 이상</p></td>
+<td><p>항목별 교차 데이터를 색상 분포 형태로 표시</p></td>
+<td><p>색과 크기를 이용해 두 변수를 직관적으로 비교할 때 사용합니다. 표 차트에서 시각적 요소를 강조하기 위해 사용합니다.</p></td>
+<td><p>지역별 각 제품 판매량</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="icon06" src="../../_images/Chart_Types_Icon06.png" /></p>
+<p>원형 차트</p>
+</td>
+<td><p>교차: 차원값 1개 이상, 측정값 1개 이상</p></td>
+<td><p>전체 대비 각 항목이 차지하는 비율</p></td>
+<td><p>전체를 이루는 부분들을 비교할 때 사용합니다.</p></td>
+<td><p>웹 브라우저의 마켓 쉐어 비교</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="icon07" src="../../_images/Chart_Types_Icon07.png" /></p>
+<p>맵뷰</p>
+</td>
+<td><p>레이어 선반 : 차원값(위치속성), 차원값 1개이상 , 측정값 1개이상</p></td>
+<td><p>지도 상 각 위치 값에 해당하는 데이터를 표시</p></td>
+<td><p>지역별 색을 이용한 변수의 직관적 비교에 사용. 시각적 요소를 강조하기 위해 사용</p></td>
+<td><p>지역별 각 제품 판매량 비교</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="icon08" src="../../_images/Chart_Types_Icon08.png" /></p>
+<p>핵심지표</p>
+</td>
+<td><p>교차: 측정값 1개 이상</p></td>
+<td><p>주요 지표를 추세와 함께 표시</p></td>
+<td><p>조직의 현재 성과에 대한 정보를 빠르게 전달하기 위해 사용합니다.</p></td>
+<td><p>올 해 이입된 고객 수 혹은 조직의 성과 지표</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="icon09" src="../../_images/Chart_Types_Icon09.png" /></p>
+<p>박스플롯</p>
+</td>
+<td><p>열: 차원값1개 이상, 행: 차원값1개, 교차: 측정값 1개</p></td>
+<td><p>값의 상승과 하락을 표시</p></td>
+<td><p>각 그룹들의 분포를 비교할 때 사용하거나 특정 값의 목표치를 나타낼 때 사용합니다.</p></td>
+<td><p>비행기 기종 별 지연 시간 분포 비교</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="icon10" src="../../_images/Chart_Types_Icon10.png" /></p>
+<p>폭포 차트</p>
+</td>
+<td><p>열: 시간속성의 차원값 1개 &amp; 교차: 측정값 1개</p></td>
+<td><p>값을 더하거나 뺄 때의 누계를 표시</p></td>
+<td><p>시간에 따른 값의 증가와 감소를 강조할 때 사용합니다.</p></td>
+<td><p>일정 기간 동안 조직의 팀원 수 변화 관찰 혹은 주식</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="icon11" src="../../_images/Chart_Types_Icon11.png" /></p>
+<p>워드클라우드</p>
+</td>
+<td><p>교차: 차원값 1개 이상, 측정값 1개</p></td>
+<td><p>출현 빈도에 비례한 크기로 텍스트를 표시</p></td>
+<td><p>중요한 단어들을 강조해서 요약하고 싶을 때 사용합니다.</p></td>
+<td><p>고객들의 코멘트 요약</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="icon12" src="../../_images/Chart_Types_Icon12.png" /></p>
+<p>결합 차트</p>
+</td>
+<td><p>열: 차원값 1개 이상 &amp; 교차: 측정값 2개 이상, 4개 이하</p></td>
+<td><p>막대와 라인 차트를 결합하여 데이터를 비교</p></td>
+<td><p>서로 다른 종류의 정보를 강조하기 위해 사용합니다.</p></td>
+<td><p>제품별 가격과 판매량을 동시 관찰</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="icon13" src="../../_images/Chart_Types_Icon13.png" /></p>
+<p>트리맵</p>
+</td>
+<td><p>열: 차원값 1개 &amp; 행: 차원값 1개 이상 &amp; 교차: 측정값 1개</p></td>
+<td><p>계층 데이터를 중첩된 사각형 집합으로 표시</p></td>
+<td><p>계층 구조를 갖는 데이터를 시각화하기 위해 사용합니다.</p></td>
+<td><p>제품별(대분류-중분류-소분류) 매출 관찰</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="icon14" src="../../_images/Chart_Types_Icon14.png" /></p>
+<p>레이더 차트</p>
+</td>
+<td><p>교차: 차원값 1개, 측정값 1개 이상</p></td>
+<td><p>중심점을 기준으로 다양한 평가요소를 표시</p></td>
+<td><p>여러 측정 목표를 직관적으로 비교할 때 사용합니다.</p></td>
+<td><p>품질을 5요인으로 나누어 평가한 제품들 비교</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="icon15" src="../../_images/Chart_Types_Icon15.png" /></p>
+<p>네트워크 다이어그램</p>
+</td>
+<td><p>주체 선반: 차원값 1개 &amp; 대상 선반: 차원값 1개 &amp; 연결 선반: 측정값 1개</p></td>
+<td><p>의존관계가 있는 요소들을 표현하는 연결 다이어그램</p></td>
+<td><p>데이터의 발생 순서 흐름을 보고 싶을 때 사용합니다.</p></td>
+<td><p>프로젝트 태스크 흐름을 관찰</p></td>
+</tr>
+<tr class="row-odd"><td><p><img alt="icon16" src="../../_images/Chart_Types_Icon16.png" /></p>
+<p>측정 차트</p>
+</td>
+<td><p>열: 행: 차원값 1개 이상 &amp; 교차: 측정값 1개</p></td>
+<td><p>설정된 목표에 대한 성능을 시각화하여 표시</p></td>
+<td><p>데이터가 어떤 비율로 구성되어 있는지 보고 싶을 때 사용합니다.</p></td>
+<td><p>지역별 수익 관찰</p></td>
+</tr>
+<tr class="row-even"><td><p><img alt="icon17" src="../../_images/Chart_Types_Icon17.png" /></p>
+<p>생키 다이어그램</p>
+</td>
+<td><p>열: 차원값 3개 이상 &amp; 교차: 측정값 1개</p></td>
+<td><p>연결선의 너비로 흐름의 양을 비율적으로 표시</p></td>
+<td><p>데이터의 양적인 흐름을 관찰할 때 사용합니다.</p></td>
+<td><p>공장의 에너지 흐름 관찰</p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chart_style.html" class="btn btn-neutral float-right" title="차트 스타일 속성" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pivoting.html" class="btn btn-neutral float-left" title="차트 그리기(pivoting)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

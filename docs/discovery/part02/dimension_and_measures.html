@@ -1,0 +1,264 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>&#39;차원값&#39;과 &#39;측정값&#39;의 개념 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="데이터 소스 관리 홈 화면" href="manage_data_sources.html" />
+    <link rel="prev" title="데이터 소스" href="data_source.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 관리</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="data_source.html">데이터 소스</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">'차원값'과 '측정값'의 개념</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manage_data_sources.html">데이터 소스 관리 홈 화면</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_source_detail_view.html">데이터 소스 상세 정보</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_a_data_source.html">데이터 소스 만들기</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_connection.html">데이터 커넥션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_monitoring.html">데이터 모니터링</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">데이터 관리</a> &raquo;</li>
+        
+          <li><a href="data_source.html">데이터 소스</a> &raquo;</li>
+        
+      <li>'차원값'과 '측정값'의 개념</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part02/dimension_and_measures.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>'차원값'과 '측정값'의 개념<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>대시보드에 연동된 데이터 소스의 컬럼들은 아래와 같이 <strong>차원값</strong> 컬럼과 <strong>측정값</strong> 컬럼으로 구분됩니다. Discovery의 데이터 분석·시각화 기능을 온전히 활용하기 위해서는 차원값과 측정값의 개념을 명확하게 이해해야 합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/dimension_measure_01.png" src="../../_images/dimension_measure_01.png" />
+</div>
+</div></blockquote>
+<p><strong>차원값(Dimension) 컬럼</strong></p>
+<p>범주형 데이터 컬럼을 가리키며, 특징은 아래와 같습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>집계(aggregated)보다는 분류(categorical)에 의미가 있는 데이터 필드(예: Category, Region, Organization 등)</p></li>
+<li><p>측정값을 표시하는 데 기준이 됨.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>측정값(Measure) 컬럼</strong></p>
+<p>수량적 데이터 필드를 가리키며, 특징은 아래와 같습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>집계(aggregated)할 수 있거나 양적인(quantitative) 정보를 포함하는 필드(예: Sales 등)</p></li>
+<li><p>차원값에 의해 제시된 기준을 토대로 차트에 표현되는 데이터</p></li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="manage_data_sources.html" class="btn btn-neutral float-right" title="데이터 소스 관리 홈 화면" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data_source.html" class="btn btn-neutral float-left" title="데이터 소스" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

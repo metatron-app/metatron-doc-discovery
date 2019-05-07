@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>구조 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="얄람 룰" href="../part02/index.html" />
+    <link rel="prev" title="주요기능" href="features.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">이상 탐지 확장팩 소개</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="features.html">주요기능</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">구조</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-list">Alarm list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-rule-list">Alarm Rule list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-alarm-rule">Create Alarm Rule</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">이상 탐지 확장팩 소개</a> &raquo;</li>
+        
+      <li>구조</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/anomaly/part01/structure.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>구조<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<blockquote>
+<div><ul class="simple">
+<li><p>통계 / 알람 리스트 / 알람 룰로 구분된 메뉴</p></li>
+<li><p>그 중 알람 리스트에서 알람 정보를 잘 확인 할 수 있고, 검색이 용이한 UI로 사용성 높임</p></li>
+<li><p>어느 메뉴에서나 진입 가능한 알람 룰 만들기 메뉴</p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-center" id="id2">
+<img alt="Figure 1. metatron anomaly structure" src="../../_images/structure_01.png" />
+<p class="caption"><span class="caption-text">Figure 1. metatron anomaly structure</span><a class="headerlink" href="#id2" title="이 이미지에 대한 퍼머링크">¶</a></p>
+</div>
+<div class="section" id="statistics">
+<h2>Statistics<a class="headerlink" href="#statistics" title="제목 주소">¶</a></h2>
+<p>모든 알람의 요약 및 통계를 보고 빠르게 전체 상황을 파악</p>
+</div>
+<div class="section" id="alarm-list">
+<h2>Alarm list<a class="headerlink" href="#alarm-list" title="제목 주소">¶</a></h2>
+<p>알람을 확인&amp;검색하거나 각 알람 별 디테일을 확인</p>
+</div>
+<div class="section" id="alarm-rule-list">
+<h2>Alarm Rule list<a class="headerlink" href="#alarm-rule-list" title="제목 주소">¶</a></h2>
+<p>만들어진 알람 룰의 디테일을 확인하거나 룰을 수정</p>
+</div>
+<div class="section" id="create-alarm-rule">
+<h2>Create Alarm Rule<a class="headerlink" href="#create-alarm-rule" title="제목 주소">¶</a></h2>
+<p>알람룰을 생성하기 위해서 데이타, 모델, 알람 주기 등을 결정</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part02/index.html" class="btn btn-neutral float-right" title="얄람 룰" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="features.html" class="btn btn-neutral float-left" title="주요기능" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

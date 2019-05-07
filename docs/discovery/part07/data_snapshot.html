@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>데이터 스냅샷 결과 이용하기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="이상 탐지 확장팩 소개" href="../../anomaly/part01/index.html" />
+    <link rel="prev" title="데이터 스냅샷 만들기" href="create_a_datasnapshot.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">데이터플로우 관리하기</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">데이터 스냅샷 결과 이용하기</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snapshot-result-check">데이터 스냅샷 결과 확인하기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metatron">Metatron 엔진으로 적재하기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#csv">CSV파일로 다운로드 받기</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">데이터 프리퍼레이션</a> &raquo;</li>
+        
+      <li>데이터 스냅샷 결과 이용하기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/data_snapshot.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>데이터 스냅샷 결과 이용하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>데이터플로우를 통해 생성된 <strong>데이터 스냅샷</strong>은 다음과 같이 활용할 수 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#snapshot-result-check"><span class="std std-ref">데이터 스냅샷 결과 확인하기</span></a></p></li>
+<li><p><a class="reference internal" href="#snapshot-into-druid"><span class="std std-ref">Metatron 엔진으로 적재하기</span></a></p></li>
+<li><p><a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">CSV파일로 다운로드 받기</span></a></p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="snapshot-result-check">
+<span id="id2"></span><h2>데이터 스냅샷 결과 확인하기<a class="headerlink" href="#snapshot-result-check" title="제목 주소">¶</a></h2>
+<p>스냅샷의 생성 단계는 다음과 같은 3가지 경우로 분류됩니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>성공</strong> = SUCCEEDED</p></li>
+<li><p><strong>실패</strong> = FAILED</p></li>
+<li><p><strong>처리중</strong> = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING</p></li>
+</ul>
+</div></blockquote>
+<p>스냅샷의 상세한 처리 결과는 다음 2가지 경로를 통해 확인할 수 있습니다.</p>
+<blockquote>
+<div><ul>
+<li><p><strong>MANAGEMENT</strong> &gt; <strong>데이터 프리퍼레이션</strong> &gt; <strong>데이터 스냅샷</strong>의 스냅샷 목록을 통해서 확인</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_1.png" src="../../_images/data_snapshot_1.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>데이터플로우</strong>의 <a class="reference internal" href="edit_rules.html"><span class="doc">룰 편집</span></a> 화면 우측에서 <strong>스냅샷(#)</strong> 탭을 클릭</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_2.png" src="../../_images/data_snapshot_2.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>생성에 성공한 스냅샷의 상세 보기 화면으로 들어가면, 데이터의 유효성 비율, 생성된 스냅샷의 그리드 등을 확인할 수 있고, 스냅샷 결과를 <a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">CSV 파일로 다운로드</span></a>할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_3.png" src="../../_images/data_snapshot_3.png" />
+</div>
+</div></blockquote>
+<p>유효한 데이터가 생성되지 못한 스냅샷의 상세 보기 화면으로 들어가면, 실패를 발생시킨 예외의 로그가 표시됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_4.png" src="../../_images/data_snapshot_4.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="metatron">
+<span id="snapshot-into-druid"></span><h2>Metatron 엔진으로 적재하기<a class="headerlink" href="#metatron" title="제목 주소">¶</a></h2>
+<p>(개발예정)</p>
+</div>
+<div class="section" id="csv">
+<span id="snapshot-into-csv"></span><h2>CSV파일로 다운로드 받기<a class="headerlink" href="#csv" title="제목 주소">¶</a></h2>
+<p>생성에 성공한 스냅샷의 상세 보기에서는 <strong>CSV로 다운로드</strong>가 가능합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_5.png" src="../../_images/data_snapshot_5.png" />
+</div>
+</div></blockquote>
+<p>다운로드한 파일은 표준 CSV 형식으로, 'comma'로 구분되고 'new line'으로 개행합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_6.png" src="../../_images/data_snapshot_6.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../anomaly/part01/index.html" class="btn btn-neutral float-right" title="이상 탐지 확장팩 소개" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="create_a_datasnapshot.html" class="btn btn-neutral float-left" title="데이터 스냅샷 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

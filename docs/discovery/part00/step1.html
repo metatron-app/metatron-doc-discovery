@@ -1,0 +1,325 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Step1. 데이터 소스 만들기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Step2. 워크북 만들기" href="step2.html" />
+    <link rel="prev" title="디스커버리 퀵가이드" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">디스커버리 퀵가이드</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Step1. 데이터 소스 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="step2.html">Step2. 워크북 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="step3.html">Step3. 대시보드 구성하기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">디스커버리 퀵가이드</a> &raquo;</li>
+        
+      <li>Step1. 데이터 소스 만들기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part00/step1.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="step1">
+<h1>Step1. 데이터 소스 만들기<a class="headerlink" href="#step1" title="제목 주소">¶</a></h1>
+<p>데이터 분석을 하기 위해 가장 먼저 해야할 일은 데이터를 시스템에 적재하는 것 입니다. Metatron Discovery는 다양한 원천 데이터를 쉽게 적재할 수 있도록 지원합니다.</p>
+<p>본 튜토리얼 예제에서는 로컬 파일에 있는 데이터를 적재하는 방법을 소개합니다. 먼저 데이터를 준비하세요. 흔히 쓰이는 엑셀 파일(.xls, .xlsx)또는 .csv 형식의 파일이면 충분합니다. 여기서는 판매 현황 데이터를 활용합니다. 아래 링크에서 다운로드 받으세요.</p>
+<blockquote>
+<div><p><a class="reference download internal" download="" href="../../_downloads/3d8503f4ebb11b730c492d42af26fc23/sales-data-sample.csv"><code class="xref download docutils literal notranslate"><span class="pre">sample</span> <span class="pre">data</span> <span class="pre">(.csv)</span></code></a></p>
+</div></blockquote>
+<p>데이터 소스는 <strong>Management</strong> &gt; <strong>데이터 스토리지</strong> &gt; <strong>데이터 소스</strong>에서 조회하고 적재할 수 있습니다. 새로운 데이터 소스를 만들기 위해서 데이터 소스 리스트 우측 상단의 <strong>new</strong> 버튼을 클릭합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create a new data source" src="../../_images/s1-1.png" />
+</div>
+</div></blockquote>
+<p>일단 튜토리얼에서는 <strong>파일</strong>을 눌러 로컬 폴더에서 데이터를 가져옵니다. 다른 원천에서 데이터 소스를 만드는 방법은 <a class="reference internal" href="../part02/create_a_data_source.html"><span class="doc">데이터 소스 만들기</span></a> 문서를 참조하세요.</p>
+<p>분석하고 싶은 데이터를 drag &amp; drop하거나 디렉토리로부터 불러올 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create a data source from local" src="../../_images/s1-2.png" />
+</div>
+</div></blockquote>
+<p>판매 현황 데이터를 드래그하면 컬럼과 라인 구분자에 따라 나타나는 데이터 샘플을 최대 100행까지 조회할 수 있습니다. 이 데이터는 기본적으로 설정된 구분자로 충분히 데이터를 잘 나타내는 것 같네요! <strong>다음</strong>을 누릅니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="data preview" src="../../_images/s1-3.png" />
+</div>
+</div></blockquote>
+<p>이제 실제로 데이터를 보면서 컬럼의 타입을 알맞게 조정해야 합니다. 이 작업을 <strong>데이터 스키마 구성</strong>이라고 부릅니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="data schema configuration" src="../../_images/s1-4.png" />
+</div>
+</div></blockquote>
+<p>각 컬럼은 '차원값'(dimension) 또는 '측정값'(measure)이라는 역할로 나뉩니다. 자세한 내용은 <a class="reference internal" href="../part02/dimension_and_measures.html"><span class="doc">'차원값'과 '측정값'의 개념</span></a> 문서를 참조하세요. 이 데이터에서는 <code class="docutils literal notranslate"><span class="pre">Discount</span></code>, <code class="docutils literal notranslate"><span class="pre">Profit</span></code>, <code class="docutils literal notranslate"><span class="pre">Quantity</span></code>, <code class="docutils literal notranslate"><span class="pre">Sales</span></code>, <code class="docutils literal notranslate"><span class="pre">DaystoShipActual</span></code>, <code class="docutils literal notranslate"><span class="pre">SalesForecast</span></code>, <code class="docutils literal notranslate"><span class="pre">DaystoShipScheduled</span></code>, <code class="docutils literal notranslate"><span class="pre">SalesperCustomer</span></code>, <code class="docutils literal notranslate"><span class="pre">ProfitRatio</span></code> 컬럼들을 측정값으로 변경해야 합니다.</p>
+<p>그 다음은 컬럼의 데이터 타입을 적절하게 변경해 주어야 합니다. 기본적으로 차원값은 문자로, 측정값은 정수로 설정되어 있습니다. 데이터 샘플을 보면서 가장 알맞는 형식으로 변경해주세요. 아래에 이 데이터에서 변경할 사항들을 나열했습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Orderdate</span></code> : 날짜/시간</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Discount</span></code> : 소수</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ShipDate</span></code> : 날짜/시간 (시간 표현을 yyyy. MM. dd. 로 변경한 후 체크박스 클릭하여 유효성 확인)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SalesperCustomer</span></code> : 소수</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ProfitRatio</span></code> : 소수</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">latitude</span></code> : 위도</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">longitude</span></code> : 경도</p></li>
+</ul>
+</div></blockquote>
+<p>마지막으로 새로운 컬럼을 만들어 줄 차례입니다. 우리는 위도와 경도 컬럼을 갖고 있으므로 Point 타입의 컬럼을 새로 만들 수 있습니다. 우측 상단의 <strong>컬럼 추가</strong> 버튼을 누르세요. <strong>위도</strong> 컬럼에 <code class="docutils literal notranslate"><span class="pre">latitude</span></code> 컬럼을 선택하고, <strong>경도</strong> 컬럼에 <code class="docutils literal notranslate"><span class="pre">longitude</span></code> 컬럼을 선택합니다. 컬럼 이름을 적절하게 입력한 후 <strong>추가</strong>를 누르세요. 새로운 Point 타입 컬럼이 생성되었습니다!</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create a new Point type column" src="../../_images/s1-5.png" />
+</div>
+</div></blockquote>
+<p>스키마 구성 작업이 마무리되었으면 <strong>다음</strong>을 누릅니다. 필요한 경우 Druid의 수집 설정을 변경하는 작업입니다. 지금은 기본 설정으로도 충분합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="druid ingestion setting" src="../../_images/s1-6.png" />
+</div>
+</div></blockquote>
+<p>마지막으로 데이터 소스의 <strong>이름</strong>과 <strong>설명</strong>을 입력합니다. <strong>마침</strong>을 누르면 즉시 데이터 소스 상세로 넘어갑니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="typing name and description for a new data source in metatron discovery" src="../../_images/s1-7.png" />
+</div>
+</div></blockquote>
+<p>데이터 소스 상세에서는 적재 현황을 실시간으로 볼 수 있습니다. 몇 분 기다리면 아래와 같이 적재가 성공했음을 알리며 히스토그램이 나타납니다. 혹시 다른 데이터 소스를 적재하다 에러가 났을 경우 <strong>상세</strong> 링크를 클릭하여 Druid 적재 로그를 조회할 수 있습니다. 컬럼명 중복, 컬럼 타입과 불일치하는 데이터 등으로 인해 적재가 실패할 수 있습니다. 이 경우 원인을 찾아 다시 적재를 시도해보아야 합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="success for creation of data source for the metatron discovery" src="../../_images/s1-8.png" />
+</div>
+</div></blockquote>
+<p>이 데이터 소스를 다른 사용자들에게 오픈하려면 <strong>할당</strong>에서 <strong>모든 워크스페이스에 데이터소스를 사용하도록 허용</strong> 체크박스에 체크합니다. 모든 사용자가 아니라 특정 사용자들에게만 오픈하고 싶으면 <strong>수정</strong>을 클릭하여 할당하고자 하는 개인 사용자들 또는 팀 워크스페이스를 선택합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="assign data source to specific workspaces" src="../../_images/s1-9.png" />
+</div>
+</div></blockquote>
+<p>이 예제에서는 모든 사용자가 사용할 수 있도록 <strong>Open Data</strong>로 설정하겠습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="make public data" src="../../_images/s1-10.png" />
+</div>
+</div></blockquote>
+<p>적재된 데이터는 <strong>데이터</strong> 탭에서 조회할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="data tab in metatron discovery" src="../../_images/s1-11.png" />
+</div>
+</div></blockquote>
+<p>축하합니다! 이제 데이터 소스를 사용해 볼 차례네요. 다음 스텝으로 넘어가볼까요?</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="step2.html"><span class="doc">Step2. 워크북 만들기</span></a></p></li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="step2.html" class="btn btn-neutral float-right" title="Step2. 워크북 만들기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="디스커버리 퀵가이드" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,498 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>데이터 소스 만들기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="데이터 커넥션" href="data_connection.html" />
+    <link rel="prev" title="데이터 소스 상세 정보" href="data_source_detail_view.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 관리</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="data_source.html">데이터 소스</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dimension_and_measures.html">'차원값'과 '측정값'의 개념</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manage_data_sources.html">데이터 소스 관리 홈 화면</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_source_detail_view.html">데이터 소스 상세 정보</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">데이터 소스 만들기</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#create-datasource-from-file">파일로 데이터 소스 만들기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#db">DB로 데이터 소스 만들기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stagingdb">StagingDB로 데이터 소스 만들기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metatron">Metatron 엔진을 통해 데이터 소스 추가하기</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_connection.html">데이터 커넥션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_monitoring.html">데이터 모니터링</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">데이터 관리</a> &raquo;</li>
+        
+          <li><a href="data_source.html">데이터 소스</a> &raquo;</li>
+        
+      <li>데이터 소스 만들기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part02/create_a_data_source.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>데이터 소스 만들기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>본 절에서는 다양한 형태의 원천 데이터를 Metatron 엔진으로 가져와 데이터 소스로 만드는 과정을 설명합니다.</p>
+<p>데이터 소스를 생성하려면 <strong>데이터 소스</strong> 홈 화면 우측 상단에서 <strong>+ 새로만들기</strong> 버튼을 클릭합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_2.png" src="../../_images/create_datasource_2.png" />
+</div>
+</div></blockquote>
+<p>그런 다음 원천 데이터의 타입을 선택합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_3.png" src="../../_images/create_datasource_3.png" />
+</div>
+<ul class="simple">
+<li><p><strong>파일:</strong> 사용자의 로컬 PC에 저장되어 있는 파일을 가져와서 데이터 소스를 생성합니다(자세한 절차는 <a class="reference internal" href="#create-datasource-from-file"><span class="std std-ref">파일로 데이터 소스 만들기</span></a> 참조).</p></li>
+<li><p><strong>데이터베이스:</strong> 외부 데이터베이스에서 데이터를 가져와서 데이터 소스를 생성합니다(자세한 절차는 <a class="reference internal" href="#create-datasource-from-db"><span class="std std-ref">DB로 데이터 소스 만들기</span></a> 참조).</p></li>
+<li><p><strong>Staging DB:</strong> Metatron의 내부 Hive 데이터베이스에서 가져온 데이터를 기반으로 데이터 소스를 생성합니다(자세한 절차는 <a class="reference internal" href="#create-datasource-from-stagingdb"><span class="std std-ref">StagingDB로 데이터 소스 만들기</span></a> 참조).</p></li>
+<li><p><strong>실시간:</strong> 현재 해당 기능은 지원하지 않습니다.</p></li>
+<li><p><strong>데이터스냅샷:</strong> 현재 해당 기능은 지원하지 않습니다.</p></li>
+<li><p><strong>Metatron 엔진:</strong> Metatron 이전 버전에 저장된 데이터 소스를 마이그레이션 합니다(자세한 절차는 <a class="reference internal" href="#create-datasource-from-metatron"><span class="std std-ref">Metatron 엔진을 통해 데이터 소스 추가하기</span></a> 참조).</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="create-datasource-from-file">
+<span id="id2"></span><h2>파일로 데이터 소스 만들기<a class="headerlink" href="#create-datasource-from-file" title="제목 주소">¶</a></h2>
+<p>사용자의 로컬 PC에 저장되어 있는 파일을 가져와서 데이터 소스를 생성합니다.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>원천 데이터 타입 선택 화면에서 <strong>파일</strong>을 선택합니다.</p></li>
+<li><p>사용자 로컬 PC에서 데이터 소스로 사용할 파일을 가져옵니다. <strong>Import</strong> 버튼을 클릭하여 파일을 선택할 수도 있고 화면 상으로 파일을 끌어다 놓을 수도 있습니다. 파일을 가져왔으면 다음 버튼을 누릅니다.</p>
+<div class="figure align-center">
+<img alt="../../_images/create_datasource_file_1.png" src="../../_images/create_datasource_file_1.png" />
+</div>
+</li>
+<li><p>가져온 파일에서 데이터 소스에 포함시킬 시트를 선택합니다.</p>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>데이터가 있음에도 불구하고 '미리보기 데이터가 없습니다'로 나오는 경우에는, <strong>컬럼 구분자</strong> 및 <strong>라인 구분자</strong>를 맞게 설정했는지 확인해야 합니다. 이 예제에서는 <strong>라인 구분자</strong>가 MS Windows의 carriage return인 'r'로 입력이 되어야 합니다.</p>
+</div>
+<div class="figure align-center">
+<img alt="../../_images/create_datasource_file_3.png" src="../../_images/create_datasource_file_3.png" />
+</div>
+<ul class="simple">
+<li><p><strong>파일 이름:</strong> 가져온 파일의 이름입니다. 다른 파일을 다시 가져올 수도 있습니다.</p></li>
+<li><p><strong>파일 시트 목록:</strong> 가져온 파일에 포함된 시트들을 보여줍니다. 여기서 데이터 소스로 만들 시트를 선택합니다.</p></li>
+<li><p><strong>파일 시트 이름:</strong> 현재 선택된 시트 이름입니다.</p></li>
+<li><p><strong>용량:</strong> 가져온 파일의 용량입니다.</p></li>
+<li><p><strong>컬럼:</strong> 가져온 파일의 컬럼 개수입니다.</p></li>
+<li><p><strong>행:</strong> 가져온 파일의 행 개수입니다. 숫자를 입력하면 해당 숫자만큼의 행이 화면에 나타납니다.</p></li>
+<li><p><strong>타입:</strong> 각 컬럼으로부터 인식한 데이터 타입이 몇 종류인지 보여줍니다. 컬럼별 데이터 타입은 이후 화면에서 수정할 수 있습니다.</p></li>
+<li><p><strong>첫째 행을 컬럼명으로 사용 여부 확인란:</strong> 선택하면 파일 내의 첫번째 행의 내용이 컬럼명으로 사용됩니다. 선택하지 않을 경우 컬럼명을 기재할 행이 새로 생성됩니다.</p></li>
+</ul>
+</li>
+<li><p>데이터 소스에서 구현하고자 하는 스키마를 설정합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_file_4.png" src="../../_images/create_datasource_file_4.png" />
+</div>
+<ul>
+<li><p><strong>컬럼명으로 검색:</strong> 가져온 파일에 들어있는 컬럼을 이름으로 검색합니다.</p></li>
+<li><p><strong>역할:</strong> 가져온 파일에 들어있는 컬럼을 전체/차원값/측정값으로 선별하여 조회합니다.</p></li>
+<li><p><strong>추천 필터:</strong> 최우선 추천 필터가 적용된 컬럼들만 선별하여 조회합니다.</p></li>
+<li><p><strong>타입:</strong> 가져온 파일에 들어있는 컬럼을 필드 타입별로 선별하여 조회합니다.</p></li>
+<li><p><strong>컬럼 목록 영역:</strong> 설정한 선별 조건에 맞는 컬럼들을 보여줍니다. 컬럼들을 선택하면 하단에 패널이 나타나는데, 여기서 원하는 일괄 동작을 선택한 후 <strong>적용</strong>을 클릭하면 선택한 컬럼들에 대한 일괄 동작이 수행됩니다.</p></li>
+<li><p><strong>개별 컬럼 설정 영역:</strong> 컬럼 목록에서 선택한 컬럼의 속성들을 설정할 수 있는 영역입니다. 여기서 <strong>빈 값 설정</strong>은 컬럼 내 Null 값을 처리하는 방식을 설정하는 항목입니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>대체:</strong> 여기에 입력된 값으로 Null 값이 대체됩니다.</p></li>
+<li><p><strong>버림:</strong> Null 값을 버립니다.</p></li>
+<li><p><strong>설정안함:</strong> Null 값이 그대로 보여집니다. 단 데이터 소스의 타임스탬프의 Null 값은 무조건 버려지게 됩니다.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>타임스탬프 설정:</strong> 각 행에 타임스탬프를 지정하는 방식을 결정합니다. 기존 데이터가 보유하고 있는 시간 타입 컬럼을 타임스탬프로 지정하거나, 아니면 현재 시간 값으로 이루어진 시간 타입 컬럼을 생성하여 타임스탬프로 지정할 수 있습니다.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>Metatron 엔진은 데이터 소스 저장 시 무조건 시간 값을 보유해야 하는 시계열 엔진입니다.</p>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>데이터 소스 수집 설정을 하고 다음 버튼을 누릅니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_file_10.png" src="../../_images/create_datasource_file_10.png" />
+</div>
+<ul>
+<li><p><strong>세그먼트 단위:</strong> 분산 노드 환경에서 동작하는 Druid의 특성을 활용하기 위해 데이터를 분할하여 저장하게 되는데 이때 저장하는 시간 단위를 결정합니다.</p></li>
+<li><p><strong>쿼리 단위:</strong> 분석에서 수행하고자 하는 최소 시간 단위를 결정합니다. 이는 최소 단위까지의 결과를 미리 생성하여 이후에 보다 빠른 응답을 얻을 수 있도록 하기 위함입니다.</p></li>
+<li><p><strong>롤업:</strong> '데이터 롤업'은 차원값을 기준으로 데이터를 요약하는 작업입니다('데이터 롤업'의 개념에 대한 보다 상세한 설명은 <a class="reference internal" href="../part01/druid_features.html#data-rollup"><span class="std std-ref">데이터 roll-up</span></a> 참조). 요약 규칙은 계층 구조를 따라 합계를 계산하거나 <code class="docutils literal notranslate"><span class="pre">profit=sales=expenses</span></code>와 같은 수식 집합을 적용하는 것일 수 있습니다.</p></li>
+<li><p><strong>고급설정:</strong> 데이터 적재 성능을 설정합니다. 텍스트상자에 JSON 형식의 구문을 입력하십시오. 예,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">maxRowsInMemory</span> <span class="p">:</span> <span class="mi">75000</span><span class="p">,</span>
+<span class="n">maxOccupationInMemory</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+<span class="n">maxShardLength</span> <span class="p">:</span> <span class="o">-</span><span class="mi">2147483648</span><span class="p">,</span>
+<span class="n">leaveIntermediate</span> <span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+<span class="n">cleanupOnFailure</span> <span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+<span class="n">overwriteFiles</span> <span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+<span class="n">ignoreInvalidRows</span> <span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+<span class="n">assumeTimeSorted</span> <span class="p">:</span> <span class="n">false</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>가져온 파일에서 설정한 데이터에 관한 정보를 확인한 뒤, <strong>이름</strong>과 <strong>설명</strong>을 입력하고 <strong>완료</strong> 버튼을 누르면 데이터 소스가 생성됩니다. 이때, 원천 데이터에서부터 Metatron 내장 엔진(Druid)으로 적재(ingestion)하기 때문에 데이터량에 따라 수 초~분의 시간이 소요될 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_file_12.png" src="../../_images/create_datasource_file_12.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>데이터 적재가 완료된 후 상태를 확인해볼 수 있습니다. 아래 예시에서는 상태가 <strong>ENABLED</strong>로 되어 있으며 히스토그램이 보입니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_file_13.png" src="../../_images/create_datasource_file_13.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>데이터</strong> 탭으로 이동을 하면 적재된 데이터를 테이블 형태로 확인할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_file_15.png" src="../../_images/create_datasource_file_15.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>데이터 소스</strong> 관리 홈 화면으로 이동하면 생성된 데이터 소스를 화면에서 확인할 수 있습니다. 데이터 적재가 수행되는 중에는 아래와 같이 상태가 <strong>Disabled</strong>로 표시되게 되고 적재가 완료되면 <strong>Enabled</strong>로 변경됩니다. 이때부터 데이터 소스를 사용할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_file_16.png" src="../../_images/create_datasource_file_16.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="db">
+<span id="create-datasource-from-db"></span><h2>DB로 데이터 소스 만들기<a class="headerlink" href="#db" title="제목 주소">¶</a></h2>
+<p>외부 데이터베이스에서 데이터를 가져와서 데이터 소스를 생성합니다.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>원천 데이터 타입 선택 화면에서 <strong>데이터베이스</strong>를 선택합니다.</p></li>
+<li><p>연결할 데이터베이스의 정보를 입력합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_db_2.png" src="../../_images/create_datasource_db_2.png" />
+</div>
+<ul>
+<li><p><strong>수집 타입:</strong> 데이터 소스가 데이터를 수집하는 방식을 선택합니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>수집형 데이터(Ingested):</strong> 데이터를 Metatron 서버에 직접 저장하는 방식으로 수집된 데이터 소스들이 출력됩니다.</p></li>
+<li><p><strong>연결형 데이터(Linked):</strong> 연결된 데이터베이스에서 필요한 시점마다 데이터를 가져오는 방식의 데이터 소스들이 출력됩니다.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>데이터 커넥션 로드:</strong> 기존에 등록된 데이터 커넥션에 연결되어 있는 데이터베이스의 접근 정보를 자동으로 불러올 수 있습니다. 단, 이때도 <strong>유효성 체크</strong> 버튼을 눌러서 연결 검증은 반드시 실시해야 합니다.</p></li>
+<li><p><strong>DB 타입:</strong> 연결할 데이터베이스의 타입을 선택합니다.</p></li>
+<li><p><strong>Host:</strong> 연결할 호스트 값을 입력합니다.</p></li>
+<li><p><strong>Port:</strong> 연결할 포트 번호를 입력합니다.</p></li>
+<li><p><strong>사용자이름:</strong> 해당 데이터베이스의 username을 입력합니다.</p></li>
+<li><p><strong>비밀번호:</strong> 해당 데이터베이스의 비밀번호를 입력합니다.</p></li>
+<li><p><strong>유효성 체크:</strong> 모든 입력 항목을 다 작성하면 테스트 버튼이 활성화 됩니다. 클릭하면 커넥션이 정상적인지 여부가 버튼 하단에 나타납니다. 정상적이라면 <strong>유효한 커넥션</strong>, 비정상적이라면 <strong>잘못된 커넥션</strong>이라는 문구가 나타납니다.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>데이터를 선택합니다. 연결된 데이터베이스 계정에서 테이블을 선택할 수도 있고 쿼리문을 직접 작성할 수도 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_db_4.png" src="../../_images/create_datasource_db_4.png" />
+</div>
+<ul class="simple">
+<li><p><strong>테이블:</strong> 데이터베이스와 테이블명을 선택한 후 실제 저장될 데이터가 조회되면, 확인 후 <strong>다음</strong> 버튼을 누릅니다.</p></li>
+<li><p><strong>쿼리:</strong> 원하는 데이터를 가져올 수 있는 쿼리문을 직접 작성하고 <strong>실행</strong> 버튼을 클릭하면 하단에 데이터가 보여집니다. 데이터를 확인한 후 <strong>다음</strong> 버튼을 누르십시오.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>이후 절차는 <a class="reference internal" href="#create-datasource-from-file"><span class="std std-ref">파일로 데이터 소스 만들기</span></a> 항목과 동일합니다. 단, 데이터베이스로부터 데이터 소스를 생성할 경우 수집 설정 시 아래와 같이 <strong>적재 설정</strong> 항목을 추가로 설정해야 합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_db_6.png" src="../../_images/create_datasource_db_6.png" />
+</div>
+<ul>
+<li><p><strong>1회 수집:</strong> 현재 데이터베이스에 있는 데이터를 이번 한번만 적재합니다. <strong>최대 건 수</strong>를 선택할 경우 제1행부터 몇 번째 행까지 적재할지 지정할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_db_7.png" src="../../_images/create_datasource_db_7.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>주기적 수집:</strong> 기간을 두어 데이터 저장을 주기적으로 실행합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_db_8.png" src="../../_images/create_datasource_db_8.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="stagingdb">
+<span id="create-datasource-from-stagingdb"></span><h2>StagingDB로 데이터 소스 만들기<a class="headerlink" href="#stagingdb" title="제목 주소">¶</a></h2>
+<p>Metatron의 내부 Hive 데이터베이스에서 가져온 데이터를 기반으로 데이터 소스를 생성합니다.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>원천 데이터 타입 선택 화면에서 <strong>Staging DB</strong>를 선택합니다.</p></li>
+<li><p>연결할 데이터베이스와 테이블을 선택하면 데이터가 출력됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_stagingdb_2.png" src="../../_images/create_datasource_stagingdb_2.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>이후 절차는 <a class="reference internal" href="#create-datasource-from-db"><span class="std std-ref">DB로 데이터 소스 만들기</span></a> 항목과 동일합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_stagingdb_3.png" src="../../_images/create_datasource_stagingdb_3.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="metatron">
+<span id="create-datasource-from-metatron"></span><h2>Metatron 엔진을 통해 데이터 소스 추가하기<a class="headerlink" href="#metatron" title="제목 주소">¶</a></h2>
+<p>Metatron 이전 버전에 저장된 데이터 소스를 마이그레이션합니다.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>원천 데이터 타입 선택 화면에서 <strong>Metatron 엔진</strong>을 선택합니다.</p></li>
+<li><p>아래와 같이 이전 버전의 Metatron에서 만든 데이터 소스가 좌측 화면에 나열되면, 그 중에서 현 버전으로 마이그레이션하고자 하는 데이터 소스들의 확인란에 체크합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_metatron_engine_2.png" src="../../_images/create_datasource_metatron_engine_2.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>마침</strong> 버튼을 누르면 선택한 데이터 소스들이 마이그레이션됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/create_datasource_metatron_engine_3.png" src="../../_images/create_datasource_metatron_engine_3.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data_connection.html" class="btn btn-neutral float-right" title="데이터 커넥션" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data_source_detail_view.html" class="btn btn-neutral float-left" title="데이터 소스 상세 정보" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

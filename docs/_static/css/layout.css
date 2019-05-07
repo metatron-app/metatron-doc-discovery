@@ -1,0 +1,9 @@
+.wy-side-nav-search{
+  background-color: #fcfcfc;
+}
+.wy-menu .caption-text{
+	color:#60c3db;
+}
+.toctree-wrapper .caption{
+	visibility:none;
+}

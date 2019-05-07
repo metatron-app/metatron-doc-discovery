@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>데이터 프리퍼레이션 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="데이터셋 만들기" href="create_a_dataset.html" />
+    <link rel="prev" title="워크벤치 사용하기" href="../part06/06_03-use_a_workbench.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">데이터 프리퍼레이션</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">데이터플로우 관리하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">데이터 스냅샷 결과 이용하기</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>데이터 프리퍼레이션</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>데이터 프리퍼레이션<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p><strong>데이터 프리퍼레이션</strong>은 파일, 테이블 등의 데이터셋을 분석에 용이한 형태로 정제하기 위한 변형 룰들을 생성하여, 그 결과를 HDFS, Hive 등으로 저장하는 툴입니다.</p>
+<p><strong>Metatron Discovery 데이터 프리퍼레이션의 장점</strong></p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_preparation_overview_1.png" src="../../_images/data_preparation_overview_1.png" />
+</div>
+</div></blockquote>
+<p>사용자는 위와 같이 GUI를 통해 Step-by-Step으로 변형 룰을 생성해낼 수 있습니다. 매 Step의 변형 결과가 데이터 분포도와 함께 메모리에 저장되기 때문에, 사용자는 이전 스텝 결과를 마우스 클릭만으로 쉽게 확인할 수 있을 뿐 아니라, 마치 텍스트 편집기를 쓰는 것처럼 <strong>undo</strong>, <strong>redo</strong> 등의 동작도 간단히 실행할 수 있습니다.</p>
+<p>이러한 특징을 기반으로 데이터 프리퍼레이션 툴에서는 다음과 같은 장점을 활용할 수 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>프로그래밍이나 데이터 처리에 익숙하지 않아도 작업자가 원하는 형태의 결과를 얻을 수 있습니다.</p></li>
+<li><p>보통 변형 룰 하나를 추가하려면 프로그래밍을 하거나 최소한 SQL문을 작성해야하지만, 데이터 프리퍼레이션 GUI를 통한 <strong>탐색적 변형</strong>을 활용하면 몇 번의 마우스 클릭이나 타이핑만으로 간편하게 변형 룰을 만들어내어 시간을 크게 절약할 수 있습니다.</p></li>
+<li><p>기본적으로 수반되는 데이터 변형들은 자동으로 수행합니다. 예를 들어, 명백히 숫자로 보이는 컬럼에 대해 알아서 형변환 룰을 적용해줍니다. 이것은 언제나 <strong>undo</strong> 또는 룰 삭제가 용이하기 때문에 가능한 것입니다.</p></li>
+<li><p>다양한 형태의 데이터를 결합하여 원하는 형태로 바꿔놓을 수 있습니다(예: 기준 파일 + 팩트 테이블).</p></li>
+<li><p>만들어 놓은 데이터 정제 결과를 다른 사람들과 공유함으로써, 물리적인 데이터를 주고 받는 부담을 줄여줍니다.</p></li>
+<li><p>실제 데이터는 지우고 그것을 만드는 방법만 유지함으로써, 저장 공간을 아끼고 <strong>ILM (Information Life Cycle)</strong>을 줄일 수 있습니다. 다시 필요할 때 실제 데이터를 만들어내는 데에 부담이 줄어들기 때문입니다.</p></li>
+</ul>
+</div></blockquote>
+<p><strong>Metatron Discovery 데이터 프리퍼레이션의 구조</strong></p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/preparation_overview.png" src="../../_images/preparation_overview.png" />
+</div>
+</div></blockquote>
+<p>위 그림과 같이 데이터 프리퍼레이션은 정제할 대상 데이터를 참조하는 <strong>데이터셋</strong>, 지정된 데이터셋의 변형 룰들을 정의하는 <strong>데이터플로우</strong>, 그리고 그러한 룰들에 의해 변형된 결과물을 출력하는 <strong>데이터 스냅샷</strong>으로 구성됩니다.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html#create-a-dataset-of-file">파일 타입 데이터셋 생성하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html#create-a-dataset-of-database">데이터베이스 타입 데이터셋 생성하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html#staging-db">Staging DB 타입 데이터셋 생성하기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="manage_dataflow.html">데이터플로우 관리하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_datasets.html">데이터셋 추가하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit_rules.html">룰 편집</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rule_kinds.html">룰의 종류</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_datasnapshot.html">데이터 스냅샷 만들기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_snapshot.html">데이터 스냅샷 결과 이용하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html#snapshot-result-check">데이터 스냅샷 결과 확인하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html#metatron">Metatron 엔진으로 적재하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html#csv">CSV파일로 다운로드 받기</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create_a_dataset.html" class="btn btn-neutral float-right" title="데이터셋 만들기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../part06/06_03-use_a_workbench.html" class="btn btn-neutral float-left" title="워크벤치 사용하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

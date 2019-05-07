@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Step3. 대시보드 구성하기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Metatron Discovery 소개" href="../part01/index.html" />
+    <link rel="prev" title="Step2. 워크북 만들기" href="step2.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">디스커버리 퀵가이드</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="step1.html">Step1. 데이터 소스 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="step2.html">Step2. 워크북 만들기</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Step3. 대시보드 구성하기</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">핵심지표 차트 만들기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">선형 차트 만들기</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">디스커버리 퀵가이드</a> &raquo;</li>
+        
+      <li>Step3. 대시보드 구성하기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part00/step3.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="step3">
+<h1>Step3. 대시보드 구성하기<a class="headerlink" href="#step3" title="제목 주소">¶</a></h1>
+<p>마지막 단계는 빈 대시보드에 차트 위젯, 텍스트 위젯, 필터 위젯을 생성하여 대시보드를 구성하는 작업입니다. 대시보드 편집은 아래와 같은 순서로 진행됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="차트 생성 단계" src="../../_images/create_chart.png" />
+</div>
+</div></blockquote>
+<p>이제 앞서 만든 <code class="docutils literal notranslate"><span class="pre">판매현황</span> <span class="pre">데이터</span></code>를 이용해 아래와 같이 핵심지표 차트와 선형 차트를 그려 대시보드를 만들어보겠습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Sales dashboard" src="../../_images/ttd.png" />
+</div>
+</div></blockquote>
+<p>빈 대시보드에서 <strong>차트</strong> 버튼을 눌러서 차트를 만들어봅시다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="empty dashboard" src="../../_images/ttd-1.png" />
+</div>
+</div></blockquote>
+<div class="section" id="id1">
+<h2>핵심지표 차트 만들기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
+<p>처음 만들어 볼 차트는 핵심지표(KPI) 차트입니다. 핵심지표 차트는 조직의 목표를 가장 직관적으로 보여주는 가장 단순하면서도 강력한 차트입니다. 우리가 만들 대시보드는 판매 현황을 잘 나타내는 것이 목표입니다. 따라서 총 판매액, 예상 총 판매액, 총 이익을 핵심지표 차트로 보여주려고 합니다. 어떻게 해야 할까요? 단순히 Sales, SalesForcast, Profit 세 개의 측정값 컬럼을 데이터 메뉴에서 클릭하세요. 이 작업을 피봇팅(pivoting)이라고 합니다. 피봇된 칼럼들은 자동으로 집계되어 선반에 올라갑니다. 컬럼을 선반에 올리면 즉시 알맞는 차트 종류가 추천됩니다. 추천된 <strong>핵심지표</strong> 차트를 클릭해 볼까요?</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="pivoiting" src="../../_images/ttd-3.png" />
+</div>
+</div></blockquote>
+<p>아래와 같이 핵심지표 차트가 만들어졌습니다. 조금 더 보기 좋게 만들기 위해서 우측의 차트 속성 메뉴를 이용해봅시다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="raw KPI chart" src="../../_images/ttd-4.png" />
+</div>
+</div></blockquote>
+<p><img alt="icon_common" src="../../_images/icon_common.png" />을 눌러 <strong>공통 설정</strong> 패널에서 각 측정값 컬럼에 아이콘을 추가하고</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="KPI icon" src="../../_images/ttd-5.png" />
+</div>
+</div></blockquote>
+<p><img alt="icon_number" src="../../_images/icon_number.png" />을 눌러 <strong>숫자 포멧</strong> 패널에서 소수점 표기 방식과 약어 표기 방식을 변경해주었습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="KPI chart number format" src="../../_images/ttd-6.png" />
+</div>
+</div></blockquote>
+<p>핵심지표 차트에서 특히 중요한 건 이전 대비 얼마나 성과가 있는지를 파악하는 것 입니다. <img alt="icon_aux" src="../../_images/icon_aux.png" />을 눌러 <strong>보조 지표 설정</strong> 패널에서 보조 지표를 설정하고 전월 대비 몇 %나 잘하고 있는지 확인해보겠습니다. 원한다면 원 지표 대신 보조 지표를 강조할 수도 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="KPI chart comparison" src="../../_images/ttd-7.png" />
+</div>
+</div></blockquote>
+<p><strong>저장</strong>을 누르면 차트가 대시보드에 나타납니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="KPI chart on dashboard" src="../../_images/ttd-8.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h2>선형 차트 만들기<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>그 다음으로 가장 기본적인 차트인 선형 차트를 그려보겠습니다. 시간에 따라 매출과 수익이 어떻게 변하는지 한 눈에 볼 수 있도록 해 볼까요? 다시 <strong>차트</strong> 버튼을 눌러 새 차트 그리기로 들어갑니다. <code class="docutils literal notranslate"><span class="pre">OrderDate</span></code>, <code class="docutils literal notranslate"><span class="pre">Profit</span></code>, <code class="docutils literal notranslate"><span class="pre">Sales</span></code> 컬럼을 눌러 시간 차원에 따라 값들이 변하는 모습을 보고자 합니다. 추천된 <strong>선형 차트</strong>를 클릭해보세요.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="pivoting" src="../../_images/ttd-9.png" />
+</div>
+</div></blockquote>
+<p>선형 차트가 그려졌습니다. 차트 속성창을 열어서 라인의 모양을 둥글게 변경해주었습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Line chart" src="../../_images/ttd-10.png" />
+</div>
+</div></blockquote>
+<p>지금은 <code class="docutils literal notranslate"><span class="pre">OrderDate</span></code>의 집계 단위가 시간이라 너무 데이터가 많습니다. 월 단위로 보기 위해서 선반에 올라간 <code class="docutils literal notranslate"><span class="pre">OrderDate</span></code> 컬럼의 메뉴에서 <strong>Granularity</strong>를 <strong>월(Month)</strong>로 선택해줍니다. 이제 모든 데이터가 보이네요! 우측 상단의 <strong>미니맵</strong>을 클릭해서 차트에서 미니맵을 제거해줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Line chart granularity" src="../../_images/ttd-13.png" />
+</div>
+</div></blockquote>
+<p>우측 메뉴에서 <img alt="icon_coloring" src="../../_images/icon_coloring.png" />을 눌러 <strong>색상 설정</strong> 패널에서 색상 설정도 변경해줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Line chart color" src="../../_images/ttd-16.png" />
+</div>
+</div></blockquote>
+<p>저장을 누르고 차트를 drag &amp; drop하여 적절하게 위치를 바꿔주세요. <strong>텍스트 위젯</strong>도 추가하여 대시보드에 적절한 정보를 추가합니다. <strong>마침</strong>을 누르면 대시보드 편집이 완료됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Dash board edit window" src="../../_images/ttd-15.png" />
+</div>
+</div></blockquote>
+<p>본 튜토리얼을 통해 간단한 차트 두 가지를 완성해보았습니다. 대시보드는 인터랙티브하게 동작하여 차트를 선택하거나 필터를 추가하면 원하는 방식으로 프레젠테이션할 수 있습니다. 또 필요할 때마다 언제든지 차트를 수정하거나 추가·삭제할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Dash board edit window" src="../../_images/ttd.png" />
+</div>
+</div></blockquote>
+<p>이제 Metatron Discovery에 대해 더 알아보시겠어요?</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="../part01/overview.html"><span class="doc">Metatron Discovery 개요</span></a></p></li>
+<li><p><a class="reference internal" href="../part01/structure.html"><span class="doc">Metatron Discovery 구성</span></a></p></li>
+<li><p><a class="reference internal" href="../part01/engine.html"><span class="doc">Metatron 기본 엔진: Druid</span></a></p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part01/index.html" class="btn btn-neutral float-right" title="Metatron Discovery 소개" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="step2.html" class="btn btn-neutral float-left" title="Step2. 워크북 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

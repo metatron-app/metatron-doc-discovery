@@ -1,0 +1,288 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>차트 그리기(pivoting) &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="차트 유형 선택" href="chart_types.html" />
+    <link rel="prev" title="데이터 컬럼 리스트" href="composition_of_the_data_column_list.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dashboards.html">대시보드</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_charts.html">차트</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">차트 그리기(pivoting)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">'Pivoting'이란</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">열/행/교차 선반의 개념</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="chart_types.html">차트 유형 선택</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart_style.html">차트 스타일 속성</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html">필터</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">워크북</a> &raquo;</li>
+        
+          <li><a href="manage_charts.html">차트</a> &raquo;</li>
+        
+      <li>차트 그리기(pivoting)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part04/pivoting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pivoting">
+<h1>차트 그리기(pivoting)<a class="headerlink" href="#pivoting" title="제목 주소">¶</a></h1>
+<div class="section" id="id1">
+<h2>'Pivoting'이란<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
+<p>Pivoting이란 주어진 테이블을 특정 컬럼들을 기준으로 그룹화하는 과정을 의미하며, 이를 통해 분석가는 원천 데이터의 특정한 측면을 그래픽 또는 도표로 확인할 수 있습니다.
+이러한 과정에는 의미 있는 데이터를 포함하는 컬럼들을 열/행/교차 선반에 배치하는 것을 포함합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.01.png" src="../../_images/pivoting.01.png" />
+</div>
+</div></blockquote>
+<p>위 그림은 두 개의 차원값 컬럼을 열선반에 배치하고 하나의 측정값 컬럼을 교차선반에 배치 한 상태를 보여주고 있습니다.
+차트에는 이렇게 선반에 올려놓은 컬럼들의 데이터가 표시됩니다.</p>
+<p>차트 유형별로 선반별 필수/권장 컬럼 유형이 다르며, 컬럼들을 선반에 올려놓기 전에 먼저 차트 유형을 선택하면 선반에 필요한 컬럼 유형이 제시됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.02.png" src="../../_images/pivoting.02.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h2>열/행/교차 선반의 개념<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>열/행/교차 선반의 개념은 Excel의 구조를 생각하면 쉽게 이해할 수 있습니다. 아래 그림과 같이 열/행은 블록을 정의하는 역할을 하고, 교차는 블록 안에 들어갈 값을 정하는 역할을 합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.03.png" src="../../_images/pivoting.03.png" />
+</div>
+</div></blockquote>
+<p>Excel에서 데이터를 열/행/교차를 2차원 값인 그리드에 표현한 다면, Metatron은 OLAP Data Discovery 도구로서, OLAP Cube를 통해 다차원에서 데이터를 조회합니다.
+아래의 차트는 Metatron에서 3차원 큐브로 나타낸 열/행/교차 값의 축 그림 입니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.04.png" src="../../_images/pivoting.04.png" />
+</div>
+</div></blockquote>
+<p>Excel 그리드의 값을 3차원 차트에서 표현한다면 그리드의 교차값이 막대바 형태로 여러 개 세워 지게 될 수 있습니다. Metatron에서는 2차원 단면으로 차트가 보여지기 때문에 열과 행 기준으로 막대 바를 쌓아 올려서 표현하게 됩니다.
+결국 아래 그 림의 회색 부분과 같은 2차원 형태의 차트로 나타납니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.05.png" src="../../_images/pivoting.05.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="chart_types.html" class="btn btn-neutral float-right" title="차트 유형 선택" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="composition_of_the_data_column_list.html" class="btn btn-neutral float-left" title="데이터 컬럼 리스트" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

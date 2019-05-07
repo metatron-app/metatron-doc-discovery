@@ -1,0 +1,4 @@
+(function() {
+var toc =  [{"type":"item","name":"1. Workbook overview","url":"metatron_3.0_Discovery/xml/059_WorkbookOutline.html"},{"type":"item","name":"2. Create a workbook","url":"metatron_3.0_Discovery/xml/060_CreateaWorkbook.html"},{"type":"item","name":"3. Create a dashboard","url":"metatron_3.0_Discovery/xml/061_CreateaDashboard.html"},{"type":"book","name":"4. Manage a workbook","key":"toc22","url":"metatron_3.0_Discovery/xml/062_ManageaWorkbook.html"},{"type":"book","name":"5. Create/manage chart","key":"toc24","url":"metatron_3.0_Discovery/xml/069_CreateManageChart.html"}];
+window.rh.model.publish(rh.consts('KEY_TEMP_DATA'), toc, { sync:true });
+})();

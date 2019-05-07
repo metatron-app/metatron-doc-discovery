@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Metatron 기본 엔진: Druid &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Druid 개발 배경" href="druid_background.html" />
+    <link rel="prev" title="Metatron Discovery 구성" href="structure.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Metatron Discovery 소개</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Metatron Discovery 개요</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Metatron Discovery 구성</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Metatron 기본 엔진: Druid</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="druid_background.html">Druid 개발 배경</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_features.html">Druid 특징</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_nodes.html">Druid 기본 클러스터 아키텍쳐</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_tests.html">Druid 성능 평가</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_to_metatron.html">Metatron 엔진으로서 Druid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Metatron Discovery 소개</a> &raquo;</li>
+        
+      <li>Metatron 기본 엔진: Druid</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part01/engine.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="metatron-druid">
+<h1>Metatron 기본 엔진: Druid<a class="headerlink" href="#metatron-druid" title="제목 주소">¶</a></h1>
+<p>근래에 들어 정보통신 기술의 발전과 함께 데이터 발생량이 비약적으로 증가하였고, 이를 효율적으로 수집·관리·활용하는 것의 중요성이 대두되고 있습니다. 하지만 RDBMS 위주의 레거시 시스템들로는 대용량의 다차원 데이터를 온전히 처리할 수가 없기 때문에 차세대 빅데이터 수요를 충족시키기 위한 새로운 방법론과 솔루션들이 대거 등장하기 시작하였습니다.</p>
+<p>미국 실리콘 밸리에 소재한 스타트업 Metamarkets사에서는 2011년 Druid라는 컬럼 기반 분산형 데이터 스토어를 출시하였고 2012년 10월 이를 오픈소스로 전환하였는데, 빠르고 효율적인 데이터 처리를 비롯한 여러 장점 때문에 많은 기업에서 Druid를 backend 기술로 활용하고 있습니다.</p>
+<p>이러한 흐름에서 SK텔레콤도 B2C 이동통신 서비스 제공업체로서 매순간 이용자들로부터 발생하는 엄청난 양의 네트워크 데이터를 효과적으로 관리·분석할 필요가 있었으며, 2016년 Druid를 기본 엔진으로 활용한 end-to-end 비즈니스 인텔리전스 솔루션 Metatron을 개발·출시하였습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Druid와 Metatron" src="../../_images/druid_logo.png" />
+</div>
+</div></blockquote>
+<p>본 단원에서는 시계열 데이터 처리에 적합한 Druid의 특징에 대해 알아본 후 SK텔레콤의 Metatron에서 이를 어떤 식으로 적용하고 추가 기능들을 개발하였는지 소개합니다.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="druid_background.html">Druid 개발 배경</a></li>
+<li class="toctree-l1"><a class="reference internal" href="druid_features.html">Druid 특징</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#id1">데이터 테이블 형태</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#ingestion">데이터 ingestion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#roll-up">데이터 roll-up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#sharding">데이터 sharding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#id2">데이터 저장 포맷 및 인덱싱</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#id5">쿼리 언어</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="druid_nodes.html">Druid 기본 클러스터 아키텍쳐</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#real-time">Real-time 노드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#historical">Historical 노드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#broker">Broker 노드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#coordinator">Coordinator 노드</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#external-dependencies">외부 종속 모듈</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#high-availability">High Availability 특성</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#extensionability">아키텍쳐 확장성</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="druid_tests.html">Druid 성능 평가</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="druid_tests.html#id1">Druid 개발진의 자체 평가</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_tests.html#sk-druid">SK텔레콤의 Druid 성능 평가</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_tests.html#druid-3">Druid에 대한 제3자의 평가</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_tests.html#apache-spark">Apache Spark와의 비교</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="druid_to_metatron.html">Metatron 엔진으로서 Druid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="druid_to_metatron.html#id1">Metatron 개발 배경과 Druid 기술의 도입</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_to_metatron.html#id3">Metatron에서 보강한 Druid 기능들</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="druid_background.html" class="btn btn-neutral float-right" title="Druid 개발 배경" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structure.html" class="btn btn-neutral float-left" title="Metatron Discovery 구성" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

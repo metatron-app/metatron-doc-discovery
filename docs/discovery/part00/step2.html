@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Step2. 워크북 만들기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Step3. 대시보드 구성하기" href="step3.html" />
+    <link rel="prev" title="Step1. 데이터 소스 만들기" href="step1.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">디스커버리 퀵가이드</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="step1.html">Step1. 데이터 소스 만들기</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Step2. 워크북 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="step3.html">Step3. 대시보드 구성하기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">디스커버리 퀵가이드</a> &raquo;</li>
+        
+      <li>Step2. 워크북 만들기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part00/step2.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="step2">
+<h1>Step2. 워크북 만들기<a class="headerlink" href="#step2" title="제목 주소">¶</a></h1>
+<p>분석을 위한 데이터가 준비되었나요? 그럼 이제 워크북을 만들 차례입니다. 워크북은 데이터 시각화 기능을 포함하는 모듈입니다. 좌측 상단의 Metatron Discovery 로고를 클릭하면 메인 화면인 내 개인 워크스페이스로 이동합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Sales data" src="../../_images/tt02.png" />
+</div>
+</div></blockquote>
+<p>우측 하단의 <strong>+ 워크북</strong> 버튼을 눌러 워크북을 만들어 볼까요? 만들 워크북의 이름과 설명을 입력합니다. 워크북을 만드는 즉시 이어서 대시보드를 만들도록 체크박스에 표시가 되어 있습니다. 여기서 각 워크북은 여러 개의 대시보드를 포함하고, 각 대시보드는 또 여러 개의 차트를 포함하는 구조입니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Sales data" src="../../_images/tt03.png" />
+</div>
+</div></blockquote>
+<p>이어서 대시보드를 만들어야 합니다. 대시보드에는 시각화할 데이터 소스가 있어야 합니다. 이 데이터 소스는 단일 소스이거나, join으로 연결된 데이터 소스일 수도 있습니다. 더 자세한 내용은 <a class="reference internal" href="../part04/create_a_dashboard.html"><span class="doc">대시보드 만들기</span></a> 문서를 참고하세요. 본 튜토리얼에서는 Step1에서 적재한 <code class="docutils literal notranslate"><span class="pre">판매현황</span> <span class="pre">데이터</span></code> 하나만 사용합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Sales data" src="../../_images/tt03-2.png" />
+</div>
+</div></blockquote>
+<p><strong>+데이터 소스 추가</strong> 버튼을 누르면 데이터 소스 선택 팝업이 나타납니다. <code class="docutils literal notranslate"><span class="pre">판매현황</span> <span class="pre">데이터</span></code>를 검색하거나 <strong>오픈 데이터만 보기</strong>에 체크하여 공개된 데이터 중에서 찾아냅니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Sales data" src="../../_images/tt04.png" />
+</div>
+</div></blockquote>
+<p>마지막으로 대시보드의 <strong>이름</strong>과 <strong>설명</strong>을 입력합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Sales data" src="../../_images/tt03-3.png" />
+</div>
+</div></blockquote>
+<p>워크북 내에 대시보드가 생성되었습니다! 이제 이 위젯들을 추가해서 대시보드를 구성하는 일만 남았네요.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Sales data" src="../../_images/tt06.png" />
+</div>
+</div></blockquote>
+<p>다음 단계로 넘어가 볼까요?</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="step3.html"><span class="doc">Step3. 대시보드 구성하기</span></a></p></li>
+</ul>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="step3.html" class="btn btn-neutral float-right" title="Step3. 대시보드 구성하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="step1.html" class="btn btn-neutral float-left" title="Step1. 데이터 소스 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

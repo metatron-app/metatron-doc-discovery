@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>데이터셋 추가하기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="룰 편집" href="edit_rules.html" />
+    <link rel="prev" title="데이터플로우 관리하기" href="manage_dataflow.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_dataflow.html">데이터플로우 관리하기</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">데이터셋 추가하기</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#dataflow-creation-first">빈 데이터플로우 생성 후 데이터셋 추가</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dataflow-from-dataset">데이터셋 상세 화면에서 바로 데이터플로우 생성</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="edit_rules.html">룰 편집</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rule_kinds.html">룰의 종류</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_a_datasnapshot.html">데이터 스냅샷 만들기</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">데이터 스냅샷 결과 이용하기</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">데이터 프리퍼레이션</a> &raquo;</li>
+        
+          <li><a href="manage_dataflow.html">데이터플로우 관리하기</a> &raquo;</li>
+        
+      <li>데이터셋 추가하기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/add_datasets.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>데이터셋 추가하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>데이터플로우 정의의 첫 단계는 데이터셋을 추가하는 것입니다. 이를 위해서는 아래와 같은 두 가지 방법이 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#dataflow-creation-first"><span class="std std-ref">빈 데이터플로우 생성 후 데이터셋 추가</span></a></p></li>
+<li><p><a class="reference internal" href="#dataflow-from-dataset"><span class="std std-ref">데이터셋 상세 화면에서 바로 데이터플로우 생성</span></a></p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="dataflow-creation-first">
+<span id="id2"></span><h2>빈 데이터플로우 생성 후 데이터셋 추가<a class="headerlink" href="#dataflow-creation-first" title="제목 주소">¶</a></h2>
+<ol class="arabic">
+<li><p><strong>데이터플로우</strong> 홈 화면 우측 상단에서 <strong>데이터플로우 추가</strong>를 클릭합니다.</p></li>
+<li><p>생성할 데이터플로우의 <strong>이름</strong>과 <strong>설명</strong>을 입력하고 <strong>완료</strong>를 누르면, 빈 데이터플로우가 생성됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/add_datasets_2.png" src="../../_images/add_datasets_2.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>화면 중앙에 위치한 <strong>이 데이터플로우에 데이터셋 추가</strong> 버튼을 누릅니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/add_datasets_3.png" src="../../_images/add_datasets_3.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>추가할 데이터셋들을 선택합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/add_datasets_4.png" src="../../_images/add_datasets_4.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>선택한 Imported Dataset과 그에 상응하는 Wrangled Dataset이 생성되었으면, <strong>룰 편집</strong> 버튼을 눌러 룰 편집을 실시합니다(자세한 절차는 <a class="reference internal" href="edit_rules.html"><span class="doc">룰 편집</span></a> 참조)</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/add_datasets_5.png" src="../../_images/add_datasets_5.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="dataflow-from-dataset">
+<span id="id3"></span><h2>데이터셋 상세 화면에서 바로 데이터플로우 생성<a class="headerlink" href="#dataflow-from-dataset" title="제목 주소">¶</a></h2>
+<p>데이터셋 상세 화면에서 <strong>이 데이터셋으로 새로운 데이터플로우 생성</strong> 버튼을 누르면, 자동으로 데이터플로우를 만들고 <strong>룰 편집</strong> 직전의 단계까지 진행합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/add_datasets_6.png" src="../../_images/add_datasets_6.png" />
+</div>
+<div class="admonition note">
+<p class="admonition-title">참고</p>
+<p>데이터플로우의 이름은 데이터셋 이름을 기반해서 자동으로 지어집니다.</p>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="edit_rules.html" class="btn btn-neutral float-right" title="룰 편집" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="manage_dataflow.html" class="btn btn-neutral float-left" title="데이터플로우 관리하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

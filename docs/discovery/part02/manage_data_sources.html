@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>데이터 소스 관리 홈 화면 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="데이터 소스 상세 정보" href="data_source_detail_view.html" />
+    <link rel="prev" title="&#39;차원값&#39;과 &#39;측정값&#39;의 개념" href="dimension_and_measures.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 관리</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="data_source.html">데이터 소스</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dimension_and_measures.html">'차원값'과 '측정값'의 개념</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">데이터 소스 관리 홈 화면</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_source_detail_view.html">데이터 소스 상세 정보</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_a_data_source.html">데이터 소스 만들기</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_connection.html">데이터 커넥션</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_monitoring.html">데이터 모니터링</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">데이터 관리</a> &raquo;</li>
+        
+          <li><a href="data_source.html">데이터 소스</a> &raquo;</li>
+        
+      <li>데이터 소스 관리 홈 화면</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part02/manage_data_sources.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>데이터 소스 관리 홈 화면<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>본 화면에서는 데이터 소스의 신규 등록·편집·조회가 가능합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/manage_datasource_01.png" src="../../_images/manage_datasource_01.png" />
+</div>
+<ol class="arabic">
+<li><p><strong>상태:</strong> 현재 데이터 스토리지에 저장되어 있는 데이터 소스의 가용 여부로 선별하여 조회합니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Enable:</strong> 데이터 ingestion을 마쳐 워크북이나 워크벤치에서 사용 가능한 데이터 소스들이 출력됩니다.</p></li>
+<li><p><strong>Preparing:</strong> 아직 생성된 지 얼마 되지 않아서 데이터 ingestion이 진행 중인 데이터 소스들이 출력됩니다.</p></li>
+<li><p><strong>Failed:</strong> 생성이 제대로 되지 않은 데이터 소스들이 출력됩니다.</p></li>
+<li><p><strong>Disabled:</strong> 데이터 ingestion을 마쳤으나 Druid 엔진의 일부 프로세스에서 제대로 진행이 되지 않아 사용이 불가능한 데이터 소스들이 출력됩니다.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>공개:</strong> 데이터 소스의 공개 대상여부로 선별하여 조회합니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>공개 데이터:</strong> 모든 워크스페이스에서 사용이 허용된 데이터 소스들만 선별하여 조회합니다.</p></li>
+<li><p><strong>Admin workspace:</strong> 어드민 워크스페이스에서 사용이 허용된 데이터 소스들만 선별하여 조회합니다.</p></li>
+<li><p><strong>Shared Workspace:</strong> shared workspace에서 사용이 허용된 데이터 소스들만 선별하여 조회합니다.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>생성한 사람:</strong> 해당 데이터 소스를 생성한 사용자 또는 그룹을 조회합니다.</p></li>
+<li><p><strong>생성한 시간:</strong> 데이터 소스 조회 시 적용되는 시간 기준입니다. 생성일과 수정일 중 원하는 기준으로 선택할 수 있으며 시간 범위는 전체/오늘/지난 7일/특정 날짜 기간 중 선택이 가능합니다.</p></li>
+<li><p><strong>데이터 소스 이름으로 검색:</strong> 현재 등록된 데이터 소스를 이름으로 검색합니다</p></li>
+<li><p><strong>데이터 소스 목록:</strong> 설정한 선별 조건에 맞는 데이터 소스들을 보여줍니다. 이 중 하나를 클릭하면 상세 내역을 볼 수 있습니다. (<a class="reference internal" href="data_source_detail_view.html"><span class="doc">데이터 소스 상세 정보</span></a> 참조)</p></li>
+<li><p><strong>삭제:</strong> 해당 데이터 소스에 마우스 오버 시 휴지통 아이콘이 나타납니다. 클릭하면 해당 데이터 소스를 삭제할 수 있습니다.</p></li>
+</ol>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data_source_detail_view.html" class="btn btn-neutral float-right" title="데이터 소스 상세 정보" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="dimension_and_measures.html" class="btn btn-neutral float-left" title="&#39;차원값&#39;과 &#39;측정값&#39;의 개념" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

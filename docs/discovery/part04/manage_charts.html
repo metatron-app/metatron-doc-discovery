@@ -1,0 +1,274 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>차트 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="데이터 컬럼 리스트" href="composition_of_the_data_column_list.html" />
+    <link rel="prev" title="컬럼에 새로운 이름 부여하기" href="give_new_column_name(alias).html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dashboards.html">대시보드</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">차트</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pivoting.html">차트 그리기(pivoting)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart_types.html">차트 유형 선택</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart_style.html">차트 스타일 속성</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html">필터</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">워크북</a> &raquo;</li>
+        
+      <li>차트</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part04/manage_charts.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>차트<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>기본적으로 워크북 내 각 대시보드는 분석한 데이터를 시각화하여 보여주는 다양한 차트로 구성됩니다. 데이터 분석 목적에 맞게 차트를 만들기 위해 필수적으로 알아야할 몇 가지 개념과 Discovery의 차트 구성 UI에 대해 설명합니다.</p>
+<p>차트 홈 화면은 다음과 같이 세 영역으로 구분됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/part04-chart01.png" src="../../_images/part04-chart01.png" />
+</div>
+<ol class="arabic simple">
+<li><p><strong>컬럼/차트 선택 영역:</strong> 차트를 만들기 위해 필수적으로 행해야 하는 액션의 순서대로 UI가 구성되어 있습니다. Data(데이터 컬럼 리스트)선택을 통해 차트를 피봇팅할 수 있으며, Chart(차트 종류 리스트)를 선택하여 데이터를 시각화할 수 있습니다. 또한 Analytics(분석)을 통해 원하는 분석 조건을 차트에 탑재할 수 있습니다.</p></li>
+<li><p><strong>시각화 영역:</strong> 피봇팅할 수 있는 선반영역과 실제 차트가 그려지는 시각화 영역으로 구성됩니다. 컬럼/차트 선택 영역에서 차트를 그릴 수 있는 데이터와 차트가 선택되면 이 곳에서 차트가 나타납니다.</p></li>
+<li><p><strong>옵션 영역:</strong> 차트를 보기 좋게 꾸미고, 차트가 보여지는 방식을 사용자의 기호에 맞게 선택할 수 있습니다. 옵션 영역은 필터, 파레트, 축, 숫자표현, 차트표현으로 이루어져 있습니다.</p></li>
+</ol>
+</div></blockquote>
+<p>아래 각 절에서는 이러한 사용자 인터페이스를 이용하여 각종 차트를 만들고 관리하는 방식을 소개합니다.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="composition_of_the_data_column_list.html">데이터 컬럼 리스트</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="composition_of_the_data_column_list.html#id2">데이터 컬럼 리스트 구성</a></li>
+<li class="toctree-l2"><a class="reference internal" href="composition_of_the_data_column_list.html#id3">사용자 컬럼 추가</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pivoting.html">차트 그리기(pivoting)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pivoting.html#id1">'Pivoting'이란</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pivoting.html#id2">열/행/교차 선반의 개념</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="chart_types.html">차트 유형 선택</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chart_style.html">차트 스타일 속성</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="chart_style.html#id2">차트 스타일 설정 메뉴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="chart_style.html#id3">차트 유형별 공통 설정 항목</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="composition_of_the_data_column_list.html" class="btn btn-neutral float-right" title="데이터 컬럼 리스트" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="give_new_column_name(alias).html" class="btn btn-neutral float-left" title="컬럼에 새로운 이름 부여하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,277 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>대시보드 내에 데이터 소스 확인하기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="대시보드 프리젠테이션 하기" href="present_the_dashboard.html" />
+    <link rel="prev" title="대시보드 크기와 레이아웃 변경하기" href="change_dashboard_layout_and_size.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">워크북</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">워크북 만들기</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_dashboards.html">대시보드</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="create_a_dashboard.html">대시보드 만들기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="change_dashboard_layout_and_size.html">대시보드 크기와 레이아웃 변경하기</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">대시보드 내에 데이터 소스 확인하기</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">데이터 그리드 탭</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">컬럼 상세 탭</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">대시보드 데이터 정보 탭</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="present_the_dashboard.html">대시보드 프리젠테이션 하기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="give_new_column_name(alias).html">컬럼에 새로운 이름 부여하기</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="manage_charts.html">차트</a></li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html">필터</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">워크북</a> &raquo;</li>
+        
+          <li><a href="manage_dashboards.html">대시보드</a> &raquo;</li>
+        
+      <li>대시보드 내에 데이터 소스 확인하기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part04/display_a_data_source.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>대시보드 내에 데이터 소스 확인하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>대시보드 기본 화면에서 <img alt="db_info" src="../../_images/dashboard.icon_db_info.png" /> 버튼을 클릭하면 해당 대시보드에서 사용하는 데이터 소스들의 정보 를 보여주는 대화 상자가 나타납니다. 좌측 상단에서 확인하고자 하는 데이터 소스를 선택할 수 있 습니다. 이 대화 상자는 크게 3가지 탭(데이터 그리드, 컬럼 상세 탭, 대시보드 데이터 정보)으로 구 성됩니다.</p>
+<div class="section" id="id2">
+<h2>데이터 그리드 탭<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>해당 데이터 소스의 레코드 값이 모두 표시됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/dashboard.09.png" src="../../_images/dashboard.09.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2>컬럼 상세 탭<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
+<p>해당 데이터 소스를 구성하는 각 컬럼에 관한 정보를 상세히 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/dashboard.10.png" src="../../_images/dashboard.10.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h2>대시보드 데이터 정보 탭<a class="headerlink" href="#id4" title="제목 주소">¶</a></h2>
+<p>해당 데이터 소스 전체에 대한 요약 정보를 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/dashboard.11.png"><img alt="../../_images/dashboard.11.png" src="../../_images/dashboard.11.png" style="width: 326.4px; height: 240.6px;" /></a>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="present_the_dashboard.html" class="btn btn-neutral float-right" title="대시보드 프리젠테이션 하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="change_dashboard_layout_and_size.html" class="btn btn-neutral float-left" title="대시보드 크기와 레이아웃 변경하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

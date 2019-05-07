@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>노트북 활용하기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="워크벤치" href="../part06/index.html" />
+    <link rel="prev" title="신규 노트북 생성하기" href="create_a_notebook.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">노트북</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="register_a_notebook_server.html">노트북 서버 등록하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_notebook.html">신규 노트북 생성하기</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">노트북 활용하기</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">노트북 상세 조회</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">노트북 코딩</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#api">노트북 API 등록하기</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">노트북</a> &raquo;</li>
+        
+      <li>노트북 활용하기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part05/use_a_notebook.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>노트북 활용하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>노트북을 생성하였으면, 스크립트를 작성하고 REST API를 통해 서비스할 수 있습니다. 노트북 활용 절차는 다음과 같습니다.</p>
+<div class="section" id="id2">
+<h2>노트북 상세 조회<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>워크스페이스 화면에서 분석하고자 하는 노트북을 선택하면, 아래와 같은 상세 화면이 나타납니다. 노트북 생성 시 입력했던 데이터 타입과 데이터 소스 이름, 개발 언어, 코드를 조회할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="노트북 상세" src="../../_images/use_a_notebook_01.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2>노트북 코딩<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
+<p>노트북 상세 조회 화면에서 코드 란의 <strong>상세</strong>를 클릭하면, 노트북 페이지가 나타납니다. 노트북 페이지 상단에는 데이터셋을 로딩하는 코드가 삽입되어 있으며, 해당 셀을 실행하면 dataset 객체에 JSON 포맷의 데이터셋이 로딩됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="노트북 코딩" src="../../_images/use_a_notebook_02.png" />
+</div>
+</div></blockquote>
+<p>위 화면은 Zeppeline을 선택한 경우에 나타나며, 생성 시 선택한 데이터의 로딩을 위한 셀이 삽입되어 있습니다. 3번째 셀부터 프로그램 코딩 작업을 수행한 후 개발이 완료되면 <strong>저장</strong> 버튼을 클릭하십시오.</p>
+</div>
+<div class="section" id="api">
+<h2>노트북 API 등록하기<a class="headerlink" href="#api" title="제목 주소">¶</a></h2>
+<p>작성한 노트북은 REST API 를 호출하여 결과값을 반환할 수 있습니다. 아래 설명을 참조하여 <strong>리턴타입</strong>을 선택한 후 <strong>이름</strong>과 <strong>설명</strong>을 기입하십시오.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="노트북 API 등록 팝업" src="../../_images/use_a_notebook_03.png" />
+</div>
+<ul>
+<li><p><strong>HTML</strong>: 노트북 스크립트 전체 실행 결과 화면을 HTML로 반환합니다.</p></li>
+<li><p><strong>JSON</strong>: 노트북 스크립트에 작성된 사용자가 정의한 포맷의 JSON 객체를 결과로 반환합니다. 이 때 Metatron Discovery에서 제공하는 <code class="docutils literal notranslate"><span class="pre">response.write(...)</span></code> 함수를 사용하며, 예시 코드는 다음과 같습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>R 기반 노트북: <code class="docutils literal notranslate"><span class="pre">response.write(list(coefficient</span> <span class="pre">=</span> <span class="pre">2,</span> <span class="pre">intercept</span> <span class="pre">=</span> <span class="pre">0))</span></code></p></li>
+<li><p>Python 기반 노트북: <code class="docutils literal notranslate"><span class="pre">response.write({'coefficient'</span> <span class="pre">:</span> <span class="pre">2.5,</span> <span class="pre">'intercept'</span> <span class="pre">:</span> <span class="pre">0})</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>없음</strong>: 노트북 스크립트를 실행하되 반환값은 제공하지 않습니다.</p></li>
+</ul>
+</div></blockquote>
+<p>API 정보를 모두 입력한 후 <strong>마침</strong> 버튼을 클릭하면 API생성이 완료되고 아래와 같은 REST API URL을 확인할 수 있습니다. <strong>Result</strong> 버튼을 클릭하면 URL 실행 결과값을 팝업으로 조회할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="API 상세" src="../../_images/use_a_notebook_04.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part06/index.html" class="btn btn-neutral float-right" title="워크벤치" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="create_a_notebook.html" class="btn btn-neutral float-left" title="신규 노트북 생성하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
