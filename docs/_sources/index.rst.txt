@@ -7,6 +7,11 @@
 ===============================================
 
 .. toctree::
+	:name: lang_sel
+
+	VIEW IN ENGLISH <https://ucrystal.github.io/metatron-doc-discovery-en>
+
+.. toctree::
    :maxdepth: 2
    :caption: Metatron Discovery
 
@@ -18,8 +23,7 @@
    /discovery/part05/index
    /discovery/part06/index
    /discovery/part07/index
-
-
+   
 .. toctree::
    :maxdepth: 2
    :caption: EX-pack for Anomaly Detection

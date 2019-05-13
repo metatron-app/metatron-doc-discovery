@@ -124,7 +124,7 @@ html_static_path = ['_static']
 # default: ``['localtoc.html', 'relations.html', 'sourcelink.html',
 # 'searchbox.html']``.
 #
-# html_sidebars = {}
+
 
 html_logo = "./_static/img/metatron-docs-logo.png"
 
@@ -135,6 +135,8 @@ html_logo = "./_static/img/metatron-docs-logo.png"
 # Output file base name for HTML help builder.
 #htmlhelp_basename = 'metatron-doc-userdoc'
 htmlhelp_basename = 'metatron-discovery-doc'
+
+
 
 
 # -- Options for LaTeX output ------------------------------------------------
