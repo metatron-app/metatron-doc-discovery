@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# d8e02aeddbcf40c180e3bc812ecdeac4
+# c94e73a52749427c9d5cfc9e987322f9
 #: ../../anomaly/part02/alarm_rule_list.rst:2
 msgid "알람 룰 리스트"
 msgstr ""
 
-# 4cfb8f2f35bb44a5a0cd48b10991191c
+# acb53d465965430984eddc7049d26b33
 #: ../../anomaly/part02/alarm_rule_list.rst:3
 msgid "등록된 알람룰을 현재의 상태, 데이타소스, 발생 알람수와 같은 주요 인자와 함께 리스팅한다."
 msgstr ""
 
-# cea1bb5c0f4d405aab94da4952c421a8
+# 2d4ba70d068146cc9beef2989c2ac68d
 #: ../../anomaly/part02/alarm_rule_list.rst:10
 msgid "Figure 1. alarm rule list"
 msgstr ""

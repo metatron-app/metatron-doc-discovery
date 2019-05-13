@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,62 +18,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# 3d301cfd777b46e7a575102ba3bd3ac6
+# 0a4cb298781e4a3db16bda25c803a342
 #: ../../anomaly/part02/set_alarm_rules.rst:2
 msgid "알람 룰 설정하기"
 msgstr ""
 
-# dab7c3820d70496eae9cfcdea4c25b94
+# 1f9b6249ac184f8ea9a62d4da7ebba13
 #: ../../anomaly/part02/set_alarm_rules.rst:3
 msgid "알람이 동작하기 위한 조건들을 설정한다."
 msgstr ""
 
-# 42c0fa03ae734da38768ef4a5893a859
+# c42de8ad91d742d89c1cd7f7a9510481
 #: ../../anomaly/part02/set_alarm_rules.rst:8
 msgid "Set Alarm Interval"
 msgstr ""
 
-# 2381a3461cf74abd9c94c8a069e4956c
+# f378357d428849e4bdf997ab5c4e6c8c
 #: ../../anomaly/part02/set_alarm_rules.rst:9
 msgid "알람의 주기, 시작 시점등을 설정한다."
 msgstr ""
 
-# 7e3cbd1c0fa44f06b8c0257ae1645376
+# 0c39c711e6cd4252ab5c82161acad8e8
 #: ../../anomaly/part02/set_alarm_rules.rst:15
 msgid "Figure 1. set alarm interval"
 msgstr ""
 
-# ad261bd4109540a9acdb76a2de3136c2
+# 5d9427ebb98d41019f9ef1f707d55502
 #: ../../anomaly/part02/set_alarm_rules.rst:19
 msgid "Set Alarm Condition"
 msgstr ""
 
-# 7ddc712dbe514066ac3d0803726085d0
+# 554c4767da374ffca4d387199a7a1205
 #: ../../anomaly/part02/set_alarm_rules.rst:20
 msgid "알람이 발생의 조건, 알람의 중요도등을 설정한다."
 msgstr ""
 
-# e71782c6994d498392eeea0c97d9033d
+# 4bcee5e1d0b5425ab111fca8f350054b
 #: ../../anomaly/part02/set_alarm_rules.rst:26
 msgid "Figure 2. set alarm condition"
 msgstr ""
 
-# 15580cdc819e4d7488b664b49f40c7a2
+# 86d9e84d4ca94cd991b6bceefcb40dd7
 #: ../../anomaly/part02/set_alarm_rules.rst:29
 msgid "Set Alarm Notification User"
 msgstr ""
 
-# b12572d2d73c4df1a62c27e364c24785
+# cabaa437284744a9bf3be8713fae63f3
 #: ../../anomaly/part02/set_alarm_rules.rst:30
 msgid "알람 발생시 노티를 받는 대상 및 방법을 설정한다."
 msgstr ""
 
-# f37b5addb7db4d07b29815c479d5d701
+# 7c7c3a27b8864248bda7d89500f15204
 #: ../../anomaly/part02/set_alarm_rules.rst:36
 msgid "Figure 3. set alarm noti"
 msgstr ""
 
-# 3d34896dadcc4dc1910e739cc0161906
+# 0ed6357b2a63424da1b458fec748b8d5
 #: ../../anomaly/part02/set_alarm_rules.rst:42
 msgid "Figure 4. set alarm noti detail"
 msgstr ""

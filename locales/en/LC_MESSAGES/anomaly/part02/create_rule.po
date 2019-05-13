@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# 4eb4863d7a294f35a2d4393b85d93621
+# a0d5d57169a24f40be1a069a3e322a94
 #: ../../anomaly/part02/create_rule.rst:2
 msgid "알람 룰 만들기"
 msgstr ""
 
-# 01ad1ad16ffb4f90ae492c47548ff99c
+# bb6728bedf774ed6a876d667d97829d1
 #: ../../anomaly/part02/create_rule.rst:4
 msgid ""
 "대상 데이타 선정, 모델 트레이닝을 위한 범위 및 값 선정, 자동 트레이닝, 최적 모델의 선정, 알람 규칙 설정 등을 순차적으로 "
 "수행하여 사용자가 원하는 알람룰을 쉽게 생성할수 있도록 지원한다."
 msgstr ""
 
-# 648d18cd185944db8b167e765e9c8a91
+# 4e4686f48a3f48ac8a2aba4585232185
 #: ../../anomaly/part02/create_rule.rst:11
 msgid "Figure 1. create rule"
 msgstr ""

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# 97a3c0517bc244c3b4b2bae705ef2187
+# e0e0f5caa3ff4ce79b174102957a4149
 #: ../../index.rst:9
 msgid "Metatron Discovery"
 msgstr ""
 
-# 9d76e71497d34ebfb65a9fb43a8973ec
+# 11b7c8132d764a98b06c5dff97cb9ef6
 #: ../../index.rst:23
 msgid "EX-pack for Anomaly Detection"
 msgstr ""
 
-# 7600f5c65b494231b0f2792744fa1cda
+# 38fb0de1b15f45669d80ad83aa78b6db
 #: ../../index.rst:7
 msgid "메타트론 사용자 문서"
 msgstr ""

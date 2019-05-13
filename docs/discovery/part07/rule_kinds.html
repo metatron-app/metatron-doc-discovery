@@ -269,13 +269,13 @@
 </div>
 <div class="section" id="header">
 <h2>header<a class="headerlink" href="#header" title="제목 주소">¶</a></h2>
-<p>필수 인자: 컬럼명을 담고 있는 행 번호 (1-base)
-상세 설명</p>
+<p>필수 인자: 컬럼명을 담고 있는 행 번호 (1-base)</p>
+<p>상세 설명</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>지정된 행의 내용을 컬럼명으로 설정합니다.</p></li>
 <li><p>첫 행에 컬럼명이 있는 CSV 파일을 읽어들일 때에 유용합니다.</p></li>
-<li><p>특별한 설정이 없는 한, 데이터 프리퍼레이션은 자동으로 <strong>header</strong>를 수행합니다. 자동 적용된 <strong>header</strong>의 결과를 원치 않는 경우 해당 룰을 삭제하면 되지만, 보통 그런 일은 흔치 않습니다.</p></li>
+<li><p>특별한 설정이 없는 한, 데이터 프리퍼레이션은 자동으로 header를 수행합니다. 자동 적용된 header의 결과를 원치 않는 경우 해당 룰을 삭제하면 되지만, 보통 그런 일은 흔치 않습니다.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -344,7 +344,7 @@
 <blockquote>
 <div><ul>
 <li><p>선택된 컬럼의 이름을 변경합니다.</p></li>
-<li><p>2개 이상의 컬럼들에 대해 한번에 <strong>rename</strong>을 수행하고자 할 때엔 하단 명령 입력창에 있는 <strong>전체 컬럼 변경</strong> 버튼을 클릭하면 다음과 같은 팝업창이 뜹니다.</p>
+<li><p>2개 이상의 컬럼들에 대해 한번에 rename을 수행하고자 할 때엔 하단 명령 입력창에 있는 <strong>전체 컬럼 변경</strong> 버튼을 클릭하면 다음과 같은 팝업창이 뜹니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="../../_images/rule_kinds_rename_1.png" src="../../_images/rule_kinds_rename_1.png" />
@@ -435,7 +435,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>새로운 값</strong>에는 <code class="docutils literal notranslate"><span class="pre">'</span></code>이나 <code class="docutils literal notranslate"><span class="pre">/</span></code>를 사용하지 않습니다.</p></li>
-<li><p><strong>새로운 값</strong>에 다른 컬럼의 값을 이용할 수 없습니다. <strong>replace</strong>는 순수히 해당 컬럼 내용안에서의 <strong>문자열</strong> 변환입니다. (cf. <a class="reference internal" href="#set">set</a> 룰)</p></li>
+<li><p><strong>새로운 값</strong>에 다른 컬럼의 값을 이용할 수 없습니다. replace는 순수히 해당 컬럼 내용안에서의 문자열 변환입니다. (cf. <a class="reference internal" href="#set">set</a> 룰)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -452,7 +452,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>여러 컬럼을 대상으로 하는 경우, <code class="docutils literal notranslate"><span class="pre">$col</span></code>이라고 쓰면 각 컬럼에 대해 변환을 할 때, 그 대상 컬럼을 가리키도록 치환됩니다.</p></li>
-<li><p>즉, <code class="docutils literal notranslate"><span class="pre">column1</span></code>, <code class="docutils literal notranslate"><span class="pre">column2</span></code>에 대해 <strong>set</strong> 명령을 사용하는 경우, <code class="docutils literal notranslate"><span class="pre">column1</span></code>에 대해 변환을 할 때엔 <code class="docutils literal notranslate"><span class="pre">$col</span></code>이 <code class="docutils literal notranslate"><span class="pre">column1</span></code>이 되고, <code class="docutils literal notranslate"><span class="pre">column2</span></code>에 대해 변환을 할 때엔 <code class="docutils literal notranslate"><span class="pre">$col</span></code>이 <code class="docutils literal notranslate"><span class="pre">column2</span></code>가 됩니다.</p></li>
+<li><p>즉, <code class="docutils literal notranslate"><span class="pre">column1</span></code>, <code class="docutils literal notranslate"><span class="pre">column2</span></code>에 대해 set 명령을 사용하는 경우, <code class="docutils literal notranslate"><span class="pre">column1</span></code>에 대해 변환을 할 때엔 <code class="docutils literal notranslate"><span class="pre">$col</span></code>이 <code class="docutils literal notranslate"><span class="pre">column1</span></code>이 되고, <code class="docutils literal notranslate"><span class="pre">column2</span></code>에 대해 변환을 할 때엔 <code class="docutils literal notranslate"><span class="pre">$col</span></code>이 <code class="docutils literal notranslate"><span class="pre">column2</span></code>가 됩니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -464,8 +464,8 @@
 <li><p>다음 조건에서만 수행</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>이 조건을 만족하는 행에 대해서만 <strong>set</strong> 룰을 적용합니다.</p></li>
-<li><p>SQL문에서 WHERE과 같다고 생각하면됩니다.</p></li>
+<li><p>이 조건을 만족하는 행에 대해서만 set 룰을 적용합니다.</p></li>
+<li><p>SQL문에서 <code class="docutils literal notranslate"><span class="pre">WHERE</span></code>과 같다고 생각하면 됩니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -521,7 +521,7 @@
 <p>상세 설명</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>각 행에 대해 주어진 <strong>횟수 - 1</strong> 만큼 split을 합니다.</p></li>
+<li><p>각 행에 대해 주어진 <strong>횟수</strong> - 1 만큼 split을 합니다.</p></li>
 <li><p>컬럼 내용에 패턴이 더 이상 없을 경우 <cite>null</cite> 값을 가진 컬럼을 만들어냅니다.</p></li>
 </ul>
 </div></blockquote>
@@ -605,7 +605,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>패턴에 매치되는 내용이 몇 군데에 있는지 세어서, 그 숫자로 새 컬럼을 만듭니다.</p></li>
-<li><p><a class="reference internal" href="#extract">extract</a> 와 상당히 비슷합니다. 내용을 추출하는 것이 아니라, 그 숫자를 세는 것만 다를 뿐입니다.</p></li>
+<li><p><a class="reference internal" href="#extract">extract</a>와 상당히 비슷합니다. 내용을 추출하는 것이 아니라, 그 숫자를 세는 것만 다를 뿐입니다.</p></li>
 </ul>
 </div></blockquote>
 <p>주의사항</p>
@@ -762,7 +762,7 @@
 <blockquote>
 <div><ul>
 <li><p>최소 2개의 컬럼에 대한 복합 Group By를 할 때에 사용됩니다. (피봇 대상 1개, 그룹화 기준 1개)</p></li>
-<li><p>일반적으로 컬럼명이 길어지기 때문에, 뒤이어 전체 rename을 필요로하는 경우가 많습니다.</p>
+<li><p>일반적으로 컬럼명이 길어지기 때문에, 뒤이어 <strong>전체 rename</strong>을 필요로하는 경우가 많습니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="../../_images/rule_kinds_pivot_2.png" src="../../_images/rule_kinds_pivot_2.png" />
@@ -832,8 +832,8 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>대상 데이터셋과 연결해서 컬럼들을 만들어 냅니다.</p></li>
-<li><p>기본적으로 관계형 데이터베이스의 join과 같습니다.</p></li>
-<li><p>결과보기 버튼으로 실제 룰적용 전에 join 결과를 볼 수 있습니다.</p></li>
+<li><p>기본적으로 관계형 데이터베이스의 <code class="docutils literal notranslate"><span class="pre">join</span></code>과 같습니다.</p></li>
+<li><p><strong>결과보기</strong> 버튼으로 실제 룰적용 전에 join 결과를 볼 수 있습니다.</p></li>
 </ul>
 </div></blockquote>
 <p>주의사항</p>
@@ -854,24 +854,24 @@
 <div class="figure align-center">
 <img alt="../../_images/rule_kinds_union_1.png" src="../../_images/rule_kinds_union_1.png" />
 </div>
-<p><strong>union</strong> 역시 <a class="reference internal" href="#join">join</a>처럼 별도의 팝업창을 갖습니다.</p>
+<p>union 역시 <a class="reference internal" href="#join">join</a>처럼 별도의 팝업창을 갖습니다.</p>
 <p>필수 인자(팝업에서 선택)</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>union 대상 데이터셋: 다수 선택가능</p></li>
+<li><p>union 대상 데이터셋: 다수 선택 가능</p></li>
 </ul>
 </div></blockquote>
 <p>상세 설명</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>지정된 데이터셋의 내용도 함께 처리합니다.</p></li>
-<li><p>기본적으로 관계형 데이터베이스의 union all과 같습니다.</p></li>
+<li><p>기본적으로 관계형 데이터베이스의 <code class="docutils literal notranslate"><span class="pre">union</span> <span class="pre">all</span></code>과 같습니다.</p></li>
 </ul>
 </div></blockquote>
 <p>주의사항</p>
 <blockquote>
 <div><ul>
-<li><p>대상 데이터셋은 <strong>union</strong>을 수행하는 데이터셋과 컬럼명과 타입, 그리고 컬럼 개수가 일치해야합니다.</p>
+<li><p>대상 데이터셋은 union을 수행하는 데이터셋과 컬럼명과 타입, 그리고 컬럼 개수가 일치해야합니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="../../_images/rule_kinds_union_2.png" src="../../_images/rule_kinds_union_2.png" />

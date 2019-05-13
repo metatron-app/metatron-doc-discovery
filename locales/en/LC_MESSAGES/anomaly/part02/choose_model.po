@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,29 +18,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# 3bd5bdfb8ecd44738e5a58b128e96826
+# 435f3c3687b64619af3d72fcf9184e67
 #: ../../anomaly/part02/choose_model.rst:2
 msgid "모델 선택하기"
 msgstr ""
 
-# f025740453f84458b95faa4169d5e395
+# 274f4bd44a5d4307baa0c6db4a43425a
 #: ../../anomaly/part02/choose_model.rst:3
 msgid ""
 "대상이 되는 알고리즘에 대해서 자동적으로 다수의 트레이닝을 수행하여 최적의 모델을 추천한다. 각각의 모델에 대해서는 모델의 상세 "
 "정보 및 정확도를 표현한다. 필요에 따라 다른 모델을 선택할수 있다."
 msgstr ""
 
-# ced26e55a84e4188adbfeb5d574501aa
+# 29fe8f81cf4a4cf798e1864bf129c252
 #: ../../anomaly/part02/choose_model.rst:12
 msgid "Figure 1. auto training model"
 msgstr ""
 
-# 54b30eb15a1346ff8aadd0d922098fc4
+# 3605bf641d4648ab85d7199be4e7cf4f
 #: ../../anomaly/part02/choose_model.rst:20
 msgid "Figure 2. detail model"
 msgstr ""
 
-# 9e92f5b5de574ed5a6e6ce5339416851
+# 22cda611c49345d99856f15e7b10d6c7
 #: ../../anomaly/part02/choose_model.rst:28
 msgid "Figure 3. change model"
 msgstr ""

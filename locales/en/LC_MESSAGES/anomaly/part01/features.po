@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,52 +18,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# ee7be15902a14b65b211d9ae1b4f6120
+# 130224323931401f8c3cd9510c47d27f
 #: ../../anomaly/part01/features.rst:2
 msgid "주요기능"
 msgstr ""
 
-# b972c5cee5d44bd496abbad0001a2be9
+# 73cc7bd1ddd14808b6bd24a4e63b556c
 #: ../../anomaly/part01/features.rst:5
 msgid "Machine Learning"
 msgstr ""
 
-# 682402eca80e414c85c5122f7a6b6b3e
+# e5590800f8a6447cb922494200bb62f1
 #: ../../anomaly/part01/features.rst:6
 msgid "예측 모델에 기반한 알고리즘을 자동 추천하는 머신 러닝으로 이지 유즈"
 msgstr ""
 
-# 2a36ccead71441a7a79d8c949f512704
+# 7c0c29959dad496ba59791c521fd8c98
 #: ../../anomaly/part01/features.rst:9
 msgid "Alarm & Report"
 msgstr ""
 
-# 4276372645da45dd882d89cf69ea2367
+# 9177329918e1478193ba57a9ed09fd02
 #: ../../anomaly/part01/features.rst:10
 msgid "비정상적인 상황에 대한 알람을 즉각적으로 확인 하고 리포팅까지 이어진 서비스"
 msgstr ""
 
-# ac40caf807334d99bea5a856c4e46d94
+# 5e5f474e59e44888a1981c8aadbde26a
 #: ../../anomaly/part01/features.rst:13
 msgid "Analyze"
 msgstr ""
 
-# 2dae6aa7e8ce4f9fbaaf24656967e4cb
+# 8860dc15c7bf46e497d0cff5237d7912
 #: ../../anomaly/part01/features.rst:14
 msgid "데이터로 차트 생성하고 분석하는 서비스 메타트론 디스커버리와 연계 가능"
 msgstr ""
 
-# 257dcfb2996f42cea162135e03df36d2
+# 9bfabef88d2240f19c02328c7d7c24bb
 #: ../../anomaly/part01/features.rst:17
 msgid "Link with Learning System"
 msgstr ""
 
-# 7d61fa35ed0c4c36a1f4e408e640fa6f
+# 523d6c67e06b4e5ab036cb7d19121a98
 #: ../../anomaly/part01/features.rst:18
 msgid "새로운 분석을 적용할 수 있도록 외부 분석 시스템과의 연계를 지원"
 msgstr ""
 
-# c09c1345b4ce4f81a5efef57f14b7c46
+# 525692426c68436aa6aaba33a18ecece
 #: ../../anomaly/part01/features.rst:25
 msgid "Figure 1. metatron anomaly"
 msgstr ""

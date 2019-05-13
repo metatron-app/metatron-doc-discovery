@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# 55d321c4536e459eb7cf3db1103f3214
+# 8aef3bbdefa646e599853cdec93e4dcc
 #: ../../anomaly/part02/choose_data_source.rst:2
 msgid "데이터 소스 선택하기"
 msgstr ""
 
-# d6f2ffe071964e41968d5c0299c4447c
+# f600de9d9c284926a545b449575f8880
 #: ../../anomaly/part02/choose_data_source.rst:3
 msgid "알람을 생성하고자 하는 값이 있는 데이타소스를 선택한다."
 msgstr ""
 
-# 5d37d4aff0b1464198e6c6498f25d4b6
+# edfa80e3fee04b2ba2c4f2d21c24a658
 #: ../../anomaly/part02/choose_data_source.rst:10
 msgid "Figure 1. select datasource"
 msgstr ""

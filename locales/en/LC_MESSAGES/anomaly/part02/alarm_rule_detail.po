@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,32 +18,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# dc20729a3751478595b12aa48664e0f7
+# 303d1d754b3c46aeb83b9597911222eb
 #: ../../anomaly/part02/alarm_rule_detail.rst:2
 msgid "알람 룰 상세"
 msgstr ""
 
-# 91763db64530449da644d942787a428f
+# 8920e46897f24e6d9f6d785cf5338948
 #: ../../anomaly/part02/alarm_rule_detail.rst:3
 msgid "알람룰에 대한 상세 정보 및 발생한 알람을 표시하고 이에 대한 변경을 제공한다."
 msgstr ""
 
-# 20fae593cc304988aac9fce515a19d4e
+# 20568460e0e14d539d6204040aa834c8
 #: ../../anomaly/part02/alarm_rule_detail.rst:10
 msgid "Figure 1. alarm rule detail"
 msgstr ""
 
-# b02bb1de925346d9bd866786f75cae13
+# bb61eca40cd347cf899dd2df21b035b3
 #: ../../anomaly/part02/alarm_rule_detail.rst:18
 msgid "Figure 2. change visualize range"
 msgstr ""
 
-# 97d7b3788820435796ecd7c2e6f6a1de
+# 8cb1aa03081944648e4f01d26e64e14a
 #: ../../anomaly/part02/alarm_rule_detail.rst:26
 msgid "Figure 3. change alarm rule condition"
 msgstr ""
 
-# d3ff1bbf2d6c4494bf8e092eff89eb96
+# e688f9c38c22436faf36cb18ffa2c27f
 #: ../../anomaly/part02/alarm_rule_detail.rst:34
 msgid "Figure 4. list alarm history"
 msgstr ""

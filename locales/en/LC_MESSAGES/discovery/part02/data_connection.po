@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,174 +18,174 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# 4c9ee6c0b67e469e814c830018d82082
+# 34c24df961fd459a8c1e011796da1f1a
 #: ../../discovery/part02/data_connection.rst:2
 msgid "데이터 커넥션"
 msgstr "Data Connection"
 
-# 32c0e28b23c34f95b4fc9a72da77ffbd
+# 01880e346f2c4490938768f88c27ace5
 #: ../../discovery/part02/data_connection.rst:4
 msgid ""
 "Metatron Discovery는 외부 데이터베이스를 직접 연결하는 기능을 지원합니다. 외부 데이터베이스를 연결하려면 해당 "
 "데이터베이스에 대한 접근 정보가 담긴 데이터 커넥션을 생성·관리해야 합니다. 데이터 커넥션을 등록해 두면 새로운 데이터베이스 접속 "
 "정보를 다시 입력해야 하는 수고를 덜 수 있습니다."
-msgstr "Metatron Discovery can connect to an external database directly. To connect to an external database, you must create and manage a data connection containing the access information to that database. By registering such a data connection, you don&rsquo;t need to enter the access information each time you connect to the same database."
+msgstr "Metatron Discovery can connect to an external database directly. To connect to an external database, you must create and manage a data connection containing the access information to that database. By registering such a data connection, you don’t need to enter the access information each time you connect to the same database."
 
-# 52d8480a567e407ca3eeb7aa833f42b8
+# 82a4c736cae440bab2b2efb514e9327e
 #: ../../discovery/part02/data_connection.rst:6
 msgid ""
 "데이터 커넥션 메뉴는 메인 화면 좌측 패널에서 **MANAGEMENT** > **데이터 스토리지** > **데이터 커넥션**\\을 "
 "통해 진입할 수 있습니다."
-msgstr "The data connection menu can be accessed in **MANAGEMENT** > **DATA STORAGE** > **DATA CONNECTION** on the panel on the left-hand side of the main screen."
+msgstr "The Data Connection menu can be accessed under **MANAGEMENT** > **Data Storage** > **Data Connection** on the left-hand panel of the main screen."
 
-# 2db850eaa2654aeaac3f081bfba2b46c
+# 38a483eed90f46b7b7a15486b57e9a13
 #: ../../discovery/part02/data_connection.rst:11
 msgid "데이터 커넥션 관리 홈 화면"
 msgstr "Data connection management home"
 
-# fb70ef8a56ba48baad3d5ba6593cc807
+# 9f7ed0dc749e46e79283ce1ac26df059
 #: ../../discovery/part02/data_connection.rst:13
 msgid "**데이터 커넥션** 화면에서는 데이터베이스 커넥션의 신규 등록·편집·조회가 가능합니다."
-msgstr "On the **data connection** home page, you can create, edit and view database connections."
+msgstr "On the **Data Connection** home page, you can create, edit and view database connections."
 
-# 0be9b3fd27f0454cad804d4ba01d4604
+# 84cd789129214a2385d3e33aa98234ae
 #: ../../discovery/part02/data_connection.rst:18
 msgid "**공개:** 데이터 커넥션을 공개 워크스페이스별로 선별하여 조회합니다."
-msgstr "**Public:** Filter the data connection list by public workspace."
+msgstr "**Publish:** Filter the data connection list by public workspace."
 
-# ed2e607a4488438e8d32dcfa88b3a728
+# a853cf2c90fc4ba0ba3002622ce9f0d8
 #: ../../discovery/part02/data_connection.rst:19
 msgid "**생성한 사람:** 데이터 커넥션을 생성한 사람별로 선별하여 조회합니다."
 msgstr "**Creator:** Filter the data connection list by creator."
 
-# ae549207a881498aa6740ec33368f0c4
+# 8f0b15c3a3134b89bf9a279373c1e8e5
 #: ../../discovery/part02/data_connection.rst:20
 msgid "**DB 타입:** 데이터 커넥션을 DB 타입(MySQL, PostgreSQL, Hive, Presto)별로 선별하여 조회합니다."
-msgstr "**DB type:** Filter the data connection list by database type (MySQL, PostgreSQL, Hive, Presto)."
+msgstr "**DB type:** Filter the data connection list by database type (MySQL, PostgreSQL, Hive, or Presto)."
 
-# 1a6f766e5a1a456594f1fc77c9da14bd
+# 7ff2e51bfe8f421496d5665763710ed2
 #: ../../discovery/part02/data_connection.rst:21
 msgid "**보안:** 데이터 커넥션을 보안 유형(항상 연결, 사용자 계정, 아이디와 비밀번호)별로 선별하여 조회합니다."
-msgstr "**Security:** Filter the data connection list by security type (always connect, user account, ID and password)."
+msgstr "**Security:** Filter the data connection list by security type (Always connect, connect by user’s account, or connect with ID and password)."
 
-# 09f04315e4034339909cc778ea9eee7b
+# ca76ea23bac247ec814ee107ebfa89a5
 #: ../../discovery/part02/data_connection.rst:22
 msgid "**생성한 시간:** 데이터 커넥션을 생성한 시간(오늘, 지난 7일, 사용자설정 기간)별로 선별하여 조회합니다."
-msgstr "**Time of creation:** Filter the data connection list by time of creation (today, last seven days, custom period)."
+msgstr "**Created time:** Filter the data connection list by time of creation (Today, Last 7 days, or Between)."
 
-# fcceb7189f284c999eb8f103e733e11b
+# e2fa91dce94548c4a035c8a9a3a64c2d
 #: ../../discovery/part02/data_connection.rst:23
 msgid "**검색:** 데이터 커넥션을 데이터 커넥션의 이름으로 검색하여 조회합니다."
-msgstr "**Search:** Search the data connection list with the name of the data connection."
+msgstr "**Search:** Search the data connection list by data connection name."
 
-# 43db630025ad47debe48263ac2ac15a1
+# bbcd7c3fbd2b448b98a49d0155e418a0
 #: ../../discovery/part02/data_connection.rst:24
 msgid "**데이터 커넥션 개수:** 현재 목록에 조회된 데이터 커넥션의 개수를 나타냅니다."
 msgstr "**Number of data connections:** Displays how many data connections are returned in the list."
 
-# 50e37b5e94bb4c898954b27e2a318fa6
+# a3280f93c5f240fa9d08a7c3b21714b0
 #: ../../discovery/part02/data_connection.rst:25
 msgid "**새로 만들기:** 클릭하면 새로운 데이터 커넥션을 생성할 수 있습니다."
 msgstr "**New:** Click on it to create a new data connection."
 
-# 06d2d718dd35487fb4d02336e29aa12f
+# 98989865d1e04490be60bd0bec83800d
 #: ../../discovery/part02/data_connection.rst:26
 msgid "**삭제:** 데이터 커넥션에 마우스 오버 시 휴지통 아이콘이 나타납니다. 클릭하면 해당 데이터 커넥션을 삭제할 수 있습니다."
 msgstr "**Delete:** Hover the mouse over a data connection to display a recycle bin icon. Click the icon to delete the data connection."
 
-# 60cfd0f9a85a482d934db9d0f8717ba1
+# faec7f0dd05f4f9d88ca9214fdb70c58
 #: ../../discovery/part02/data_connection.rst:31
 msgid "데이터 커넥션 만들기"
-msgstr "Creating a data connection"
+msgstr "Create a data connection"
 
-# 404f09600a324a6c80151bec99548aaf
+# a27bfa8852674e5ab4a1e5f2f8baec52
 #: ../../discovery/part02/data_connection.rst:33
 msgid "**데이터커넥션 생성하기** 화면에서는 커넥션 생성에 필요한 정보를 입력하여 커넥션을 생성합니다."
-msgstr "On the **Create Data Connection** screen, enter the required information to create a connection."
+msgstr "On the **Create data connection** screen, enter the required information to create a connection."
 
-# 7ad4ff29e7874efdb443cd8b68ea90fb
+# 2704040e817544b4b42aa011cb1cfe9b
 #: ../../discovery/part02/data_connection.rst:38
 msgid "**DB 타입:** 현재 총 4개 타입의 데이터베이스를 지원합니다. (MySQL, PostgreSQL Hive, Presto)"
 msgstr "**DB type:** Four database types are currently supported. (MySQL, PostgreSQL Hive, Presto)"
 
-# d63c064d0b3a456692b10676ca96859c
+# cca0c8090bab46c2baad475698f09286
 #: ../../discovery/part02/data_connection.rst:39
 msgid "**Host:** 연결할 호스트 값을 입력합니다."
 msgstr "**Host:** Enter the hostname to connect to the database."
 
-# a70657548fb64e41afc427ce22fd55f8
+# 3c47a75c48cb42f4ab0f826f10717ea6
 #: ../../discovery/part02/data_connection.rst:40
 msgid "**Port:** 연결할 포트 번호를 입력합니다."
 msgstr "**Port:** Enter the port to connect to the database."
 
-# 4799a93822234b788318451619983f08
+# 013aecfbe6034d2eb2c7c0ce5c742f51
 #: ../../discovery/part02/data_connection.rst:41
 msgid "**URL 만:** Host, Port 대신 DB URL을 입력합니다."
-msgstr "**URL only:** Enter the database URL instead of a host or port."
+msgstr "**URL only:** Enter a database URL instead of a host and port."
 
-# 4cdca01222434f54b5016696327896bb
+# b941a95b72d34e5d883eb0088c9ce5c7
 #: ../../discovery/part02/data_connection.rst:42
 msgid "**사용자이름:** 데이터베이스의 사용자 이름을 입력합니다."
-msgstr "**User name:** Enter the name of the database user."
+msgstr "**User name:** Enter the username of the database."
 
-# ef0a272ea7b647c88391555345e34994
+# c001da4bd1d84629b76ad1a718ce79f2
 #: ../../discovery/part02/data_connection.rst:43
 msgid "**비밀번호:** 데이터베이스의 비밀번호를 입력합니다."
 msgstr "**Password:** Enter the password of the database."
 
-# a4cc9ee191ac47aabadb05fb0d06e012
+# 5eda34270bf34609a07913faca45e406
 #: ../../discovery/part02/data_connection.rst:44
 msgid "**보안:** 데이터 커넥션을 이용할 때 적용할 보안 방식을 설정합니다."
 msgstr "**Security:** Set the type of security to be applied while using the data connection."
 
-# b27c8a9d38874fb48cfaff1d95a3c983
+# 15ca3aa6b7b9463f882b116071604fec
 #: ../../discovery/part02/data_connection.rst:46
 msgid "**항상 연결:** 데이터 커넥션 생성 시 사용자가 직접 입력한 정보를 사용하여 로그인합니다."
 msgstr "**Always connect:** Logs in using the account information the user has entered to create a new data connection."
 
-# 3e378faae51a473bba6b856b57255098
+# e35fb246513042daa7524584260ce4b2
 #: ../../discovery/part02/data_connection.rst:47
 msgid "**사용자의 계정으로 연결:** Metatron Discovery에 등록되어 있는 사용자 계정 정보를 사용하여 로그인합니다."
-msgstr "**Connect with user account:** Logs in using the account information registered in Metatron Discovery."
+msgstr "**Connect by user’s account:** Logs in using the account information registered in Metatron Discovery."
 
-# 8f91170b824d4ca3be14e44ddffd3274
+# 54f764dfb09b462a92db98883f771aba
 #: ../../discovery/part02/data_connection.rst:48
 msgid "**아이디와 비밀번호로 연결:** 데이터 커넥션을 사용할 때마다 계정 정보를 입력 받아서 로그인합니다."
-msgstr "**Connect with ID and password:** Log in using the account information every time the data connection is used."
+msgstr "**Connect with ID and password:** Requires to enter the account information every time the data connection is used."
 
-# 0cc82578246a4b729db34ef3f0ca4db5
+# 3e806c8047474e2099f304dc063dc748
 #: ../../discovery/part02/data_connection.rst:50
 msgid ""
 "**유효성 체크:** 입력한 커넥션 정보가 유효한지 검사하며, 그 결과가 버튼 옆에 나타납니다. 정상적이라면 **유효한 커넥션**,"
 " 비정상적이라면 **잘못된 커넥션**\\이라는 문구가 나타납니다."
-msgstr "**Validity check:** Checks whether the connection information entered is valid; the results are shown next to the button. The validity of the connection appears below the button."
+msgstr "**Validation check:** Checks whether the connection information entered is valid; the result is shown next to the button. The validity of the connection appears below the button."
 
-# 839a31f16bf147feb05e20627b742b3e
+# a835c96c7ef6487e98bfe11e98c13f4c
 #: ../../discovery/part02/data_connection.rst:51
 msgid "**고급설정:** 옵션으로 커스텀 프로퍼티 키와 값을 추가할 수 있습니다."
 msgstr "**Advanced settings:** You can add a custom property key and value as options."
 
-# cda683382dff40b68ff4efaf4f738847
+# 46fe3752522749d1bdca87dc75c2c504
 #: ../../discovery/part02/data_connection.rst:52
 msgid "**할당:** 생성할 데이터 커넥션의 사용을 허용할 워크스페이스를 지정합니다."
-msgstr "**Assign:** Set which workspaces have access to the data connection."
+msgstr "**Publish:** Set which workspaces have access to the data connection."
 
-# a354110e4b8c4963870c3fb8cd8a6bf1
+# 08eac85c123540ce8f0876b8960fcecc
 #: ../../discovery/part02/data_connection.rst:54
 msgid ""
 "**모든 워크스페이스에서 이 데이터 커넥션 사용을 허용:** 이 확인란에 체크하면 모든 워크스페이스에서 해당 데이터 커넥션을 사용할"
 " 수 있습니다."
 msgstr "**Allow all workspaces to use this data connection:** Select this check box to make the data connection available in all workspaces."
 
-# beaef521b77640b68346730ff60de7c8
+# 7e0fc7c8195c4ed6a290a9cdee595c58
 #: ../../discovery/part02/data_connection.rst:55
 msgid ""
 "**수정:** 해당 데이터 커넥션의 사용을 허용할 특정 워크스페이스를 지정할 때 사용합니다. 해당 데이터 커넥션을 오픈 데이터로 "
 "지정할 경우 이 버튼이 사라집니다."
 msgstr "**Edit:** Used to allow specific workspaces to access the data connection. This button will disappear if the data connection is set as open data."
 
-# 1b04994987354c2fb746dc532678bc89
+# be9ffa35c0cd41b3a2bf79c274c35d7a
 #: ../../discovery/part02/data_connection.rst:56
 msgid "**공유 워크스페이스 수:** 해당 데이터 커넥션을 사용할 수 있도록 허용된 워크스페이스의 수를 나타냅니다."
-msgstr "**Number of sharing workspaces:** Displays how many workspaces have access to the data connection."
+msgstr "**Number of shared workspaces:** Displays how many workspaces have access to the data connection."
 

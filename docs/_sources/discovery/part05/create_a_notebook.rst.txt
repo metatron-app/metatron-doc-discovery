@@ -27,8 +27,6 @@
 		   :align: center
 		   :alt: 노트북 새로 만들기 - 설정 요약 및 생성
 
-		   노트북 새로 만들기 - 설정 요약 및 생성
-
 	#. 노트북 생성이 완료되면, 해당 워크스페이스 화면에서 다음과 같이 확인할 수 있습니다.
 
 		.. figure:: /_static/img/discovery/part05/create_a_notebook_04.png

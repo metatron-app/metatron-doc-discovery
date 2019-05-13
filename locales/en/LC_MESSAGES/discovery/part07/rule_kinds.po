@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 03:51+0900\n"
+"POT-Creation-Date: 2019-05-12 19:33+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,1114 +18,1113 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# 9f3fcb2ce849401ba113374094d64072
+# 3a407d50ea7c4173a31c49f7abd789cb
 #: ../../discovery/part07/rule_kinds.rst:2
 msgid "룰의 종류"
-msgstr "Types of rules"
+msgstr "Rule types"
 
-# f44ead15e5d44ce8b30c41f84ed6da75
+# 55b41028a74e4e00943067f2422811c0
 #: ../../discovery/part07/rule_kinds.rst:4
 msgid "본 절에서는 각 룰을 다음과 같은 항목으로 구분하여 설명합니다."
 msgstr "This section describes each rule in terms of the following."
 
-# 53d70366b0cb4457b310c4ec22d10f97
+# d561456b9b3f40aa99ec5ff5f6ddb488
 #: ../../discovery/part07/rule_kinds.rst:6
 msgid "룰 이름"
 msgstr "Name of rule"
 
-# 1d1ad9e169e44783a5f3585bfb41be55
-# 3be1e118b64f4c80b1518cc13b1ec890
-# 463d71f3cbb34358ad4f65bd76f4c8f1
-# 98002c5e7071468a837d70f578182714
-# ed0b491f06c846798659d6f6ac688725
-# 04d1158737e64500bedb1055b67c68a6
-# bf8d77c592cf450da9d0ff07ff2c0924
-# cd088262fa5d4ca0b041ec0cd0e24c57
-# ba1f4697d94044e483aca4cc80702064
-# 226f1bdf62814737b9d7d72dff26eddc
-# 0ae402114bd047b1b00ae0519847f026
-# f55ef877f8f64ab0b191c41ab1801318
-# 7c260fbe37b44dd081d41e0d2fb8ced7
-# 522fb28f5eaa45a7b5990fea0c93e9f1
-# 16903fd31c53401eb6438ed4c0fd7b45
-# ef0ee5d25d994821989908c7a12e4924
-# 824555692e7a49f38c76d9c4417aac97
-# a96ead6811d34dbaba3639c17aebe728
-# f9d11b75eec6411faf602cf57c2ad0d3
-# ef919a3f25da4297858a67ed5146880e
-# aa721fb5d21a41a08a3f753cfd8ab972
+# 764799a848c14c3f8c75bd34adf9b8f6
+# b59e53899c7e4132a1feeface04079e6
+# 32c65f0faa9848b89833420cf55a20d2
+# 238093b5087c410395e19ae0c07a2690
+# 28cb618186ea40ef8d712db3a56c2ea9
+# 991a9612f0834d278de6a77469abec1a
+# a5b7949237764071b0f2bc07a6c8d7a9
+# ab6b1b74136f47149f2131a2eeea2e18
+# 3861e85dec0444edb104545b046cff07
+# 2eb4d1466bc14e6493659e4388c1101f
+# 6b68174f705e45fab4ee6005dba1d52e
+# 1a533cbb5e58449daa8c119441fa46f6
+# 9a01520e587e46eb8a45869370826140
+# 30674234d9774461accf6b6c40a7f9b1
+# 53a3a36d19d64046b3023364dc85a40c
+# ef3b04212eec4ba889be03795635f37e
+# e09a537f0c2c4b3591bbc0bea7b6838f
+# ba0de2f45a9f405e8a6a63c18874e1b9
+# 35af549d3e584187aa1247890e2b681b
+# c2c0d9b3784a4580a171b8457d2e3636
+# 3fd94fb0955744df8f85d0844f63bbc2
 #: ../../discovery/part07/rule_kinds.rst:7
 #: ../../discovery/part07/rule_kinds.rst:43
-#: ../../discovery/part07/rule_kinds.rst:66
-#: ../../discovery/part07/rule_kinds.rst:84
-#: ../../discovery/part07/rule_kinds.rst:104
-#: ../../discovery/part07/rule_kinds.rst:120
-#: ../../discovery/part07/rule_kinds.rst:134
-#: ../../discovery/part07/rule_kinds.rst:148
-#: ../../discovery/part07/rule_kinds.rst:182
-#: ../../discovery/part07/rule_kinds.rst:210
-#: ../../discovery/part07/rule_kinds.rst:227
-#: ../../discovery/part07/rule_kinds.rst:246
-#: ../../discovery/part07/rule_kinds.rst:264
-#: ../../discovery/part07/rule_kinds.rst:287
-#: ../../discovery/part07/rule_kinds.rst:310
-#: ../../discovery/part07/rule_kinds.rst:329
-#: ../../discovery/part07/rule_kinds.rst:346
-#: ../../discovery/part07/rule_kinds.rst:370
-#: ../../discovery/part07/rule_kinds.rst:401
-#: ../../discovery/part07/rule_kinds.rst:425
-#: ../../discovery/part07/rule_kinds.rst:505
+#: ../../discovery/part07/rule_kinds.rst:67
+#: ../../discovery/part07/rule_kinds.rst:85
+#: ../../discovery/part07/rule_kinds.rst:105
+#: ../../discovery/part07/rule_kinds.rst:121
+#: ../../discovery/part07/rule_kinds.rst:135
+#: ../../discovery/part07/rule_kinds.rst:149
+#: ../../discovery/part07/rule_kinds.rst:183
+#: ../../discovery/part07/rule_kinds.rst:211
+#: ../../discovery/part07/rule_kinds.rst:228
+#: ../../discovery/part07/rule_kinds.rst:247
+#: ../../discovery/part07/rule_kinds.rst:265
+#: ../../discovery/part07/rule_kinds.rst:288
+#: ../../discovery/part07/rule_kinds.rst:311
+#: ../../discovery/part07/rule_kinds.rst:330
+#: ../../discovery/part07/rule_kinds.rst:347
+#: ../../discovery/part07/rule_kinds.rst:371
+#: ../../discovery/part07/rule_kinds.rst:402
+#: ../../discovery/part07/rule_kinds.rst:426
+#: ../../discovery/part07/rule_kinds.rst:506
 msgid "필수 인자"
-msgstr "Required parameter"
+msgstr "Required arguments"
 
-# a385b361d7c645e3b20b722c7bebfb25
-# 79737060b2594a329eab4ddaf275a37e
-# d15d4240c40d40e9b2170af0cbcc16eb
-# 07b4db9ee6ec459196082974b9a67dac
-# 2e5e68d15a18452e898401baed080691
-# 410403690d8b4bfd99270bd8886c41be
+# 9db3e58c06c444a79297d3c3189624f9
+# b517a332180444df846b660608856feb
+# 943567b987924ff38945ec1ab197e99f
+# c18892a18696422d99902e360165316e
+# adf4dd0d5085425795f7bfecccc77c89
+# 1eaa62bd45414ad9afe0f54a9f9c61ee
 #: ../../discovery/part07/rule_kinds.rst:8
-#: ../../discovery/part07/rule_kinds.rst:71
-#: ../../discovery/part07/rule_kinds.rst:161
-#: ../../discovery/part07/rule_kinds.rst:190
-#: ../../discovery/part07/rule_kinds.rst:270
-#: ../../discovery/part07/rule_kinds.rst:292
+#: ../../discovery/part07/rule_kinds.rst:72
+#: ../../discovery/part07/rule_kinds.rst:162
+#: ../../discovery/part07/rule_kinds.rst:191
+#: ../../discovery/part07/rule_kinds.rst:271
+#: ../../discovery/part07/rule_kinds.rst:293
 msgid "선택 인자"
-msgstr "Optional parameter"
+msgstr "Optional arguments"
 
-# b39f4025f79b4172abd3d0a05446d47f
-# fe120e546ca0437980bf8c35ec451d3f
-# 26069d59c6dc43c7bafac9840eeb8547
-# ac7715f65c214fec8d84d2431452d9b0
-# 6faf602270c846d9bd3cbf586f367d15
-# 39e2ad77e7fd4ae0b2ff6f58a10098e8
-# 891aecbb8714462296373ab9f843381a
-# 371fa701d6e849bbb249b0dd929d34b5
-# a437637ee4da4add8441393c5083da6a
-# 94874c86006c4ceca55e5e0d3e77c982
-# 469a7943491a484c9be9500d0d6c4d36
-# 2400b7b32c0142f6a32b4a6576454dae
-# 99bf9bc6d1414fbea2fd7ad94dbbdf01
-# ac3cd5022412449f847ab411a491046a
-# b7e4169b21ca4cfdb886d768269e8f68
-# 32794f65cfc748db8f1b5613e09f879f
-# ba7810ff91744a55abbe1ee6e8142b46
-# cda7d683841e4b1d99d5dcc83311e00d
-# 54b18f72aef942e39f0e5b119998175b
-# b2277aad2466467382199c978fef6897
-# fa06737377fb438e84d30a18122435dd
-# 9c63c6a9870e441996471bb393073218
-# f2d41b39c8324d6f87971dca8119e4ec
+# 1aa3438ac28e4e598358b4ca0c091f63
+# 33303ecec352475b86abca2d03717810
+# 74bf52509d054a46aa1b86cb49be432d
+# 4835d41cf2764ae9a0fe0f364117466e
+# ef41766e2d73411797db1b5784cb2b8d
+# 25364732c38c43dc9f4c78b7f3aaf0e7
+# 045e44b2b6ea46b193a58d0ea26a6254
+# 34236bb7c4f646aab6c9ae196b28d823
+# d534d212e120457a87fc35a52537ec89
+# 5865f48f56f54ad785aab34f6624001d
+# 5652d92dcb364b50a004b4674521de6a
+# f60b43a494d542dbadf34e5f9855e726
+# d4f5749c786a4f23b4793173cbafbc69
+# 9c86d863a3c444bf967a0aa4ddc4414c
+# fa10c8e536034991b63f2aa54352b003
+# 158930729771480ab5ad7bec81081f01
+# f591e9f8561346088bd56446dd712af0
+# c5c36791b164400eb65d91750b80b442
+# 367d761efd3546c7b013cf31a4591fe4
+# 4f31e1ee5bcf43088b557da181bff791
+# b5a55bcdf91f49c088b0f5cc96b1ec59
+# f9fcabe497ef457cbcd67a36db2ca411
+# dbeeb00de0314f68bbcc0224bd593cc2
+# 3af193ffc13446e9bd0b1e4e45bd463d
 #: ../../discovery/part07/rule_kinds.rst:9
 #: ../../discovery/part07/rule_kinds.rst:47
-#: ../../discovery/part07/rule_kinds.rst:75
-#: ../../discovery/part07/rule_kinds.rst:89
-#: ../../discovery/part07/rule_kinds.rst:109
-#: ../../discovery/part07/rule_kinds.rst:124
-#: ../../discovery/part07/rule_kinds.rst:138
-#: ../../discovery/part07/rule_kinds.rst:167
-#: ../../discovery/part07/rule_kinds.rst:197
-#: ../../discovery/part07/rule_kinds.rst:215
-#: ../../discovery/part07/rule_kinds.rst:233
-#: ../../discovery/part07/rule_kinds.rst:252
-#: ../../discovery/part07/rule_kinds.rst:275
-#: ../../discovery/part07/rule_kinds.rst:297
-#: ../../discovery/part07/rule_kinds.rst:316
-#: ../../discovery/part07/rule_kinds.rst:334
-#: ../../discovery/part07/rule_kinds.rst:350
-#: ../../discovery/part07/rule_kinds.rst:375
-#: ../../discovery/part07/rule_kinds.rst:407
-#: ../../discovery/part07/rule_kinds.rst:430
-#: ../../discovery/part07/rule_kinds.rst:462
-#: ../../discovery/part07/rule_kinds.rst:486
-#: ../../discovery/part07/rule_kinds.rst:511
+#: ../../discovery/part07/rule_kinds.rst:57
+#: ../../discovery/part07/rule_kinds.rst:76
+#: ../../discovery/part07/rule_kinds.rst:90
+#: ../../discovery/part07/rule_kinds.rst:110
+#: ../../discovery/part07/rule_kinds.rst:125
+#: ../../discovery/part07/rule_kinds.rst:139
+#: ../../discovery/part07/rule_kinds.rst:168
+#: ../../discovery/part07/rule_kinds.rst:198
+#: ../../discovery/part07/rule_kinds.rst:216
+#: ../../discovery/part07/rule_kinds.rst:234
+#: ../../discovery/part07/rule_kinds.rst:253
+#: ../../discovery/part07/rule_kinds.rst:276
+#: ../../discovery/part07/rule_kinds.rst:298
+#: ../../discovery/part07/rule_kinds.rst:317
+#: ../../discovery/part07/rule_kinds.rst:335
+#: ../../discovery/part07/rule_kinds.rst:351
+#: ../../discovery/part07/rule_kinds.rst:376
+#: ../../discovery/part07/rule_kinds.rst:408
+#: ../../discovery/part07/rule_kinds.rst:431
+#: ../../discovery/part07/rule_kinds.rst:463
+#: ../../discovery/part07/rule_kinds.rst:487
+#: ../../discovery/part07/rule_kinds.rst:512
 msgid "상세 설명"
-msgstr "Detailed description"
+msgstr "Description"
 
-# c2dd3030d2f74baca14caeb9a105e147
-# b9b5e246ece4430d9684481dd4469db3
-# 48e333ac39eb43a18f48480dbf3cad4f
-# 746c6a17c6ff4d10ab4b7cf3f917a0a7
-# c4c129583843471bafef78b19b33c8eb
-# ac2b0f9a50a64ed69f34502e53c31db8
-# fb05a15b05bd4fa995d5e0d7596b405c
-# 61fd6049d5d14b25b32b2080f8e23c10
-# b40b50acad2c42c683313c99dd814245
-# 43f56a5e854d428394eeeeea6dc0b061
-# cfd292d71ab24719b77f682f17aa3b6e
-# 5b32d63599304d9aaac6bc6f292fd03f
-# d8fb9936632549bc9d9c8027cdcaf929
-# dc4d3f3420344783a1813b6813263326
-# 621f577b8c32434abbee7a48444a1089
-# 45c7109674724b0ba9d76dedbdd4c609
+# 500a8515b03e41aa8408ca443072becc
+# 0b49a40004b24442885aa8b1c5129b63
+# 5e0d0662e33743a7ad975dc96c29f9fd
+# 922444ce8d394c079a5807f996844f8a
+# f21b5e823cb34d0c9fedf98c29430262
+# a51532050c5f45679c923258e25c4f91
+# 13f30cfd75c4494c9faee74f133eed39
+# 7e48b63756b44308817a6e2c4daeb888
+# 829fba4ebb9349749510f4fabb57a379
+# 2fa22c03d6d84b6b86fef4d50c2d2071
+# 1b4bd653cf9c4c8b948958b979f9646a
+# ee2a616479814153a8798e9d0fc7aaa7
+# d48e29dab58c4b06973a1576f45cc6f4
+# 3b82783c5fff4a0f871fe9746e6be8eb
+# 02b30842fb7b4945b28e88cf37f00ff2
+# 84aaf2c5242d4689a0c011d9131f4698
 #: ../../discovery/part07/rule_kinds.rst:10
-#: ../../discovery/part07/rule_kinds.rst:94
-#: ../../discovery/part07/rule_kinds.rst:171
-#: ../../discovery/part07/rule_kinds.rst:219
-#: ../../discovery/part07/rule_kinds.rst:238
-#: ../../discovery/part07/rule_kinds.rst:256
-#: ../../discovery/part07/rule_kinds.rst:279
-#: ../../discovery/part07/rule_kinds.rst:302
-#: ../../discovery/part07/rule_kinds.rst:338
-#: ../../discovery/part07/rule_kinds.rst:354
-#: ../../discovery/part07/rule_kinds.rst:387
-#: ../../discovery/part07/rule_kinds.rst:412
-#: ../../discovery/part07/rule_kinds.rst:435
-#: ../../discovery/part07/rule_kinds.rst:468
-#: ../../discovery/part07/rule_kinds.rst:491
-#: ../../discovery/part07/rule_kinds.rst:529
+#: ../../discovery/part07/rule_kinds.rst:95
+#: ../../discovery/part07/rule_kinds.rst:172
+#: ../../discovery/part07/rule_kinds.rst:220
+#: ../../discovery/part07/rule_kinds.rst:239
+#: ../../discovery/part07/rule_kinds.rst:257
+#: ../../discovery/part07/rule_kinds.rst:280
+#: ../../discovery/part07/rule_kinds.rst:303
+#: ../../discovery/part07/rule_kinds.rst:339
+#: ../../discovery/part07/rule_kinds.rst:355
+#: ../../discovery/part07/rule_kinds.rst:388
+#: ../../discovery/part07/rule_kinds.rst:413
+#: ../../discovery/part07/rule_kinds.rst:436
+#: ../../discovery/part07/rule_kinds.rst:469
+#: ../../discovery/part07/rule_kinds.rst:492
+#: ../../discovery/part07/rule_kinds.rst:530
 msgid "주의사항"
-msgstr "Precaution"
+msgstr "Notes"
 
-# 5d24e93199834a669a0ad0c8aa917bcc
+# 69573609c325468c9fa25cf715f413a9
 #: ../../discovery/part07/rule_kinds.rst:12
 msgid "현재 데이터 프리퍼레이션에서 지원하는 룰 종류는 다음과 같습니다."
-msgstr "The types of rules supported in data preparation are as follows."
+msgstr "The types of rules supported in data preparation are as follows:"
 
-# cbbab80323334ae5a9a73e908698c2c7
+# c95ed9510ae542e1b433d91b352158a7
 #: ../../discovery/part07/rule_kinds.rst:14
 msgid "`drop`_"
 msgstr "`drop`_"
 
-# 1e718594c08c4a0b8ed40e951f73fcb1
+# b3c1210e8c7043f89d24a9e4a980bf26
 #: ../../discovery/part07/rule_kinds.rst:15
 msgid "`header`_"
 msgstr "`header`_"
 
-# 26766fea37a7401a9de81d70145a178e
+# e8a47798ae244e589315b120903a75ab
 #: ../../discovery/part07/rule_kinds.rst:16
 msgid "`settype`_"
 msgstr "`settype`_"
 
-# f136b97f38944eff8e85d44d42d40343
+# d4b642b39c5d460f90a24b171c7b8b00
 #: ../../discovery/part07/rule_kinds.rst:17
 msgid "`setformat`_"
 msgstr "`setformat`_"
 
-# 0dff768f02f1449da4d7c18fd5453686
+# 0a6a1777231442a2a435eee664949fbe
 #: ../../discovery/part07/rule_kinds.rst:18
 msgid "`rename`_"
 msgstr "`rename`_"
 
-# b2d6e7ce1d19415a8379fb22b55668de
+# b4ca7fe664e74ebab30f574ff31458cb
 #: ../../discovery/part07/rule_kinds.rst:19
 msgid "`keep`_"
 msgstr "`keep`_"
 
-# 0de067e86a02425db7e592d2dd238fda
+# 4a0937b3c3e0485c80076432c43a3c73
 #: ../../discovery/part07/rule_kinds.rst:20
 msgid "`delete`_"
 msgstr "`delete`_"
 
-# e2d6b73162ea42dbb63abc9f0d84c323
+# 7c3da08280594c99be176ea3bed18f77
 #: ../../discovery/part07/rule_kinds.rst:21
 msgid "`replace`_"
 msgstr "`replace`_"
 
-# 2c28a211df7b41ecb81455bd7c5513ea
+# ae1421d9e3bb4c02812a23ab5ff1acf6
 #: ../../discovery/part07/rule_kinds.rst:22
 msgid "`set`_"
 msgstr "`set`_"
 
-# 9faa0af7765a467388a2a35d4f803085
+# a396ac13362f41c38859a551146e1db0
 #: ../../discovery/part07/rule_kinds.rst:23
 msgid "`derive`_"
 msgstr "`derive`_"
 
-# 50c22d186d2647a8bef2742c2f1baed0
+# 190a43ad74fd46ab8916f32ff8a1f212
 #: ../../discovery/part07/rule_kinds.rst:24
 msgid "`split`_"
 msgstr "`split`_"
 
-# f7ed93bdb15a4bd995ff49fc07e87110
+# 6df99004b1f946adb3f16fff2bdc48c0
 #: ../../discovery/part07/rule_kinds.rst:25
 msgid "`merge`_"
 msgstr "`merge`_"
 
-# 41f4b8d4e49b4826a68bb993d36dafc9
+# 725c826093a549aa81a1d7f5c8b84a1c
 #: ../../discovery/part07/rule_kinds.rst:26
 msgid "`extract`_"
 msgstr "`extract`_"
 
-# 6c18c6ef7ff94fec9c75a4d9f28e1af1
+# 0b2f073894fa431587b7c773dc81fdef
 #: ../../discovery/part07/rule_kinds.rst:27
 msgid "`countpattern`_"
 msgstr "`countpattern`_"
 
-# cd3678660c7c4b218967699cdc622418
+# 2f6a5da4c34743b08b0f169a03e31cfe
 #: ../../discovery/part07/rule_kinds.rst:28
 msgid "`nest`_"
 msgstr "`nest`_"
 
-# b6bfc75c329d43ab825bfb1b29dee61a
+# 6087b0d377d74bf58fa5de51cdbff4e7
 #: ../../discovery/part07/rule_kinds.rst:29
 msgid "`unnest`_"
 msgstr "`unnest`_"
 
-# 5e6e7fa24bb7403b92819a426e080e7f
+# 260cda02f659450f91e2c3e8029b6c4f
 #: ../../discovery/part07/rule_kinds.rst:30
 msgid "`flatten`_"
 msgstr "`flatten`_"
 
-# 2e4e224069a149d0883e492229143bd0
+# 0d948f6458534c35b8455fa0b0db1bbe
 #: ../../discovery/part07/rule_kinds.rst:31
 msgid "`aggregate`_"
 msgstr "`aggregate`_"
 
-# f62e496331b94f349372cfce0c1f3013
+# d41424ae8aac4d5786fd672c13858b20
 #: ../../discovery/part07/rule_kinds.rst:32
 msgid "`pivot`_"
 msgstr "`pivot`_"
 
-# 9c7d0ca6e95c4a42aacd07a1904b4c47
+# f8a178a239664e1f970255516241b15c
 #: ../../discovery/part07/rule_kinds.rst:33
 msgid "`unpivot`_"
 msgstr "`unpivot`_"
 
-# 03de80123d55480794b2af678b3a4a05
+# ddd69c0c49d643adafe1aa181f796987
 #: ../../discovery/part07/rule_kinds.rst:34
 msgid "`join`_"
 msgstr "`join`_"
 
-# 2394d1c5a029409a8593ac3b8571fe87
+# 17fa1bb6d5b54377adcaa976a599c804
 #: ../../discovery/part07/rule_kinds.rst:35
 msgid "`union`_"
 msgstr "`union`_"
 
-# 683a032507794edc85010ef9af613182
+# 51bc3cbf483745ea98be5f8bb692bc2c
 #: ../../discovery/part07/rule_kinds.rst:36
 msgid "`window`_"
 msgstr "`window`_"
 
-# 32cb6bfa464540d1a572659afeda49b7
+# 87bdb722c3834ef9b122407797de85dd
 #: ../../discovery/part07/rule_kinds.rst:38
 msgid ""
 "이러한 룰과 더불어 각종 수식 함수를 제공함으로써, 데이터 프리퍼레이션은 일반적인 데이터 정제에 필요한 대부분의 기능들을 지원하고 "
 "있습니다."
-msgstr "In addition to these rules, Data Preparation provides various expressions, thereby supporting almost every function required for general data preprocessing."
+msgstr "In addition to these rules, data preparation provides various expressions, thereby supporting almost every function required for general data preprocessing."
 
-# 848f1f63a6cb4d12be705a27abc16581
+# db59f2746e4540eb9d8180d1b13da1cb
 #: ../../discovery/part07/rule_kinds.rst:41
 msgid "drop"
 msgstr "drop"
 
-# 2af0f4dd31ba4956afc4611b2348ffd7
-# 0ee84c6729df453180135cce81204cd3
-# 9aa5f75f6dee4fd2b345c74da8978ac7
-# 63e91cdfa0224e3ca8b003cedbd75879
-# 8e53804eb09040028740baa8c4ea465d
-# 3816be3094f246e5ab7c10863abe7622
-# 61c5b362384a4ba08c079f805b26c575
-# c59ee1ed77dd4fa0bb63c495ecff02a6
-# 22a252ee959e42f8baf12f4ab156be8a
-# 0a6f183c97a640ed9d3b9f73cc4fbbbe
+# 1a40171bda0d4c0bb5af491ce92f76b1
+# 13a9efa661754c85ac7079484ba33f00
+# 79d3b97b997241dc9a495b8037085684
+# 4e31704c4aac4c0089f57fc097cb31b4
+# a9d6ed8a8f7c40aebd42254bbc8ad997
+# 672f1f6aef044329ab2c8043a9ffeece
+# 85487bf29bb247dfaaf3770c98313a6f
+# fa842e4dc1ff4b6aa5d496c457916660
+# f3fccb3389f3424e85991b632b288083
+# cb213a55b4bd4933bb2a6ee34109c1d2
 #: ../../discovery/part07/rule_kinds.rst:45
-#: ../../discovery/part07/rule_kinds.rst:68
-#: ../../discovery/part07/rule_kinds.rst:86
-#: ../../discovery/part07/rule_kinds.rst:150
-#: ../../discovery/part07/rule_kinds.rst:184
-#: ../../discovery/part07/rule_kinds.rst:229
-#: ../../discovery/part07/rule_kinds.rst:248
-#: ../../discovery/part07/rule_kinds.rst:266
-#: ../../discovery/part07/rule_kinds.rst:289
-#: ../../discovery/part07/rule_kinds.rst:312
+#: ../../discovery/part07/rule_kinds.rst:69
+#: ../../discovery/part07/rule_kinds.rst:87
+#: ../../discovery/part07/rule_kinds.rst:151
+#: ../../discovery/part07/rule_kinds.rst:185
+#: ../../discovery/part07/rule_kinds.rst:230
+#: ../../discovery/part07/rule_kinds.rst:249
+#: ../../discovery/part07/rule_kinds.rst:267
+#: ../../discovery/part07/rule_kinds.rst:290
+#: ../../discovery/part07/rule_kinds.rst:313
 msgid "컬럼: 대상 컬럼 리스트"
-msgstr "Column: Target column list"
+msgstr "Column: A list of target columns"
 
-# f846716d98c94b38b58e9b783b09eea9
+# 40f16817a16044aeb602d71688d8ae4a
 #: ../../discovery/part07/rule_kinds.rst:49
 msgid "선택된 컬럼들을 삭제합니다."
 msgstr "Deletes the selected columns."
 
-# de862465f89b45a2a0ae5572d0348a5e
+# 73ec4dbe487c429ea12139f58a519edc
 #: ../../discovery/part07/rule_kinds.rst:53
 msgid "header"
 msgstr "header"
 
-# 365956d307914b658cc0cc21288cb83b
+# d4b30cfb4c93474bba81ade4c6365b2c
 #: ../../discovery/part07/rule_kinds.rst:55
-msgid "필수 인자: 컬럼명을 담고 있는 행 번호 (1-base) 상세 설명"
-msgstr "Required parameter: Detailed description in row number (1-base) containing column name"
+msgid "필수 인자: 컬럼명을 담고 있는 행 번호 (1-base)"
+msgstr "Required arguments: Row number that contains the column name (1-base)"
 
-# 7e958ce1d1844feaafbdbbd274825924
-#: ../../discovery/part07/rule_kinds.rst:58
+# f5a2cc6dac534a4ebe5a8532d0a113cc
+#: ../../discovery/part07/rule_kinds.rst:59
 msgid "지정된 행의 내용을 컬럼명으로 설정합니다."
 msgstr "This rule sets the content in the designated row as the column name."
 
-# ce9ff2eaba7949b6857d9371c15f72b8
-#: ../../discovery/part07/rule_kinds.rst:59
-msgid "첫 행에 컬럼명이 있는 CSV 파일을 읽어들일 때에 유용합니다."
-msgstr "This is useful for reading CSV files with column names in the first row."
-
-# f2c8dcae89fc481fb6a1dcc7b252c003
+# bb25e746222343fc99bd04829d8d0f93
 #: ../../discovery/part07/rule_kinds.rst:60
-msgid ""
-"특별한 설정이 없는 한, 데이터 프리퍼레이션은 자동으로 **header**\\를 수행합니다. 자동 적용된 **header**\\의 "
-"결과를 원치 않는 경우 해당 룰을 삭제하면 되지만, 보통 그런 일은 흔치 않습니다."
-msgstr "Unless otherwise specified, data preparation automatically performs **header**. This rule may be deleted if **header** results are not desired, but such cases are not common."
+msgid "첫 행에 컬럼명이 있는 CSV 파일을 읽어들일 때에 유용합니다."
+msgstr "This is useful for reading a CSV file with column names in the first row."
 
-# 1544488780c547fab26a24e403743283
-#: ../../discovery/part07/rule_kinds.rst:64
+# b0422002a3cb4bbdbe952a53ab744a4d
+#: ../../discovery/part07/rule_kinds.rst:61
+msgid ""
+"특별한 설정이 없는 한, 데이터 프리퍼레이션은 자동으로 header를 수행합니다. 자동 적용된 header의 결과를 원치 않는 경우"
+" 해당 룰을 삭제하면 되지만, 보통 그런 일은 흔치 않습니다."
+msgstr "Unless otherwise specified, data preparation automatically performs header. This rule may be deleted if header results are not desired, but such cases are not common."
+
+# 38e90a1e732f45f39dbdb61dd2d981ae
+#: ../../discovery/part07/rule_kinds.rst:65
 msgid "settype"
 msgstr "settype"
 
-# bbd3897bc5ac46a2baffbadeef6bb2c9
-#: ../../discovery/part07/rule_kinds.rst:69
+# b08bccbfe1e74e389a4cc09c127fdbba
+#: ../../discovery/part07/rule_kinds.rst:70
 msgid "새로운 타입: Long, Double, String, Boolean, Timestamp 중 택 1"
-msgstr "New type: Select one out of Long, Double, String, Boolean, Timestamp"
+msgstr "New type: Select one out of Long, Double, String, Boolean, and Timestamp"
 
-# b1028d08b18e4c8dacb8a1374e6aa1a7
-#: ../../discovery/part07/rule_kinds.rst:73
+# b1fe7ceef944426fbad00e7417a2445a
+#: ../../discovery/part07/rule_kinds.rst:74
 msgid "포멧 지정: Timestamp의 경우 format string (Joda time)"
-msgstr "Format designation: Format string (Joda time) in the case of Timestamp"
+msgstr "Set format: A format string (Joda Time) in the case of timestamp"
 
-# a1b87ecff2ac40ddb1ec6283c35b8913
-#: ../../discovery/part07/rule_kinds.rst:77
+# cdede1a625c9453988170e9b4ae78104
+#: ../../discovery/part07/rule_kinds.rst:78
 msgid "선택된 컬럼들의 타입을 바꿉니다."
 msgstr "This rule changes the type of the selected columns."
 
-# 4a79a612844c4e62bd02066bfc595f14
-#: ../../discovery/part07/rule_kinds.rst:78
+# 3af63cce5e4141dea2a28cf1d55ec119
+#: ../../discovery/part07/rule_kinds.rst:79
 msgid "Type mismatch가 발생해도 룰은 성공하며, type mismatch는 이후 따로 해결해주어야 합니다."
 msgstr "The rule is considered successful even if the result is a type mismatch, which should be separately addressed. "
 
-# 42e2a82ecdfe4ecc879a56ae90040b7e
-#: ../../discovery/part07/rule_kinds.rst:82
+# 9276fce4c6324ac39aab2d4b42341751
+#: ../../discovery/part07/rule_kinds.rst:83
 msgid "setformat"
 msgstr "setformat"
 
-# e9d2ba2a366747639de5d91ddd050c35
-#: ../../discovery/part07/rule_kinds.rst:87
+# 65cdb5d5db4d4c41aee0e1e010516530
+#: ../../discovery/part07/rule_kinds.rst:88
 msgid "포멧 지정: Jodatime의 포맷 스트링"
-msgstr "Format designation: Format string of Jodatime"
+msgstr "Set format: A Joda-Time format string"
 
-# 6e5be20a800740c79458bc1346671cfd
-#: ../../discovery/part07/rule_kinds.rst:91
-msgid "Timestamp 컬럼의 화면 표시 형식을 바꿉니다."
-msgstr "This rule changes the display format of the Timestamp column."
-
-# c77e5a2c2c3545a6936e1734780dea4e
+# f85c68f88cfd44fe8e222a0e858e5261
 #: ../../discovery/part07/rule_kinds.rst:92
+msgid "Timestamp 컬럼의 화면 표시 형식을 바꿉니다."
+msgstr "This rule changes the display format of a Timestamp column."
+
+# f2940cb5d9454e2c82ce671041f84661
+#: ../../discovery/part07/rule_kinds.rst:93
 msgid "대상 컬럼이 반드시 Timestamp 타입이어야 합니다."
 msgstr "The target column must be of the Timestamp type."
 
-# 88fb11bae1f8439581042d6513aefbf7
-#: ../../discovery/part07/rule_kinds.rst:96
+# 585bd9c779364ca9897e4f029cedc069
+#: ../../discovery/part07/rule_kinds.rst:97
 msgid ""
 "포멧 지정 입력창은 아래처럼 입력에 따라 제시되는 리스트가 변합니다. 원하는 포멧을 앞에서부터 치다보면 리스트에 나오는 후보가 점점"
 " 좁혀집니다."
-msgstr "As shown below, the format designation input field proposes different lists depending on the input. The candidate lists are narrowed as more values are entered."
+msgstr "As shown below, the format input field lists different entries depending on the input. The candidate list is narrowed as more values are entered."
 
-# 104b7a305bd24970b024b92180861c26
-#: ../../discovery/part07/rule_kinds.rst:102
+# dc1bcf1a65ab45968b9f95cf5ad65694
+#: ../../discovery/part07/rule_kinds.rst:103
 msgid "rename"
 msgstr "rename"
 
-# 37ef88012b7a4758afcbbcaef14d9678
-# cbaf1d59c49a482cb938402331cf7cc4
-# 05fa419d97f14b5f99aef4e93bfff39e
-#: ../../discovery/part07/rule_kinds.rst:106
-#: ../../discovery/part07/rule_kinds.rst:331
-#: ../../discovery/part07/rule_kinds.rst:348
-msgid "컬럼: 대상 컬럼 (1개)"
-msgstr "Column: Target column (1 column)"
-
-# d5cdf743ce6245a9b642ddfbabd856fd
+# 2ea53117163a4d3791b3cc40801fb9b1
+# aae20eb59cd74304b934f8d78cdef5aa
+# e5ac3edc95074c788a89d75856359f9c
 #: ../../discovery/part07/rule_kinds.rst:107
+#: ../../discovery/part07/rule_kinds.rst:332
+#: ../../discovery/part07/rule_kinds.rst:349
+msgid "컬럼: 대상 컬럼 (1개)"
+msgstr "Column: A single target column"
+
+# b86125ad881a489d8e8c3b8dd1ff9bd0
+#: ../../discovery/part07/rule_kinds.rst:108
 msgid "새로운 컬럼 이름: 새로운 이름"
 msgstr "New column name: New name"
 
-# fcf4ec306c454df68574ba58cc05137a
-#: ../../discovery/part07/rule_kinds.rst:111
+# 5d7f1098e369469c9f556aaa4266a1ee
+#: ../../discovery/part07/rule_kinds.rst:112
 msgid "선택된 컬럼의 이름을 변경합니다."
 msgstr "This rule changes the name of the selected column."
 
-# 96e8bbcd739f4c958940afdab2cdf5cd
-#: ../../discovery/part07/rule_kinds.rst:112
+# ad866487a1d740a28c2882e9ac5edf0c
+#: ../../discovery/part07/rule_kinds.rst:113
 msgid ""
-"2개 이상의 컬럼들에 대해 한번에 **rename**\\을 수행하고자 할 때엔 하단 명령 입력창에 있는 **전체 컬럼 변경** "
-"버튼을 클릭하면 다음과 같은 팝업창이 뜹니다."
-msgstr "To **rename** two or more columns at once, click the **Rename all columns** button at the bottom of the command input window to display the following popup."
+"2개 이상의 컬럼들에 대해 한번에 rename을 수행하고자 할 때엔 하단 명령 입력창에 있는 **전체 컬럼 변경** 버튼을 클릭하면"
+" 다음과 같은 팝업창이 뜹니다."
+msgstr "To rename two or more columns at once, click the **Rename multiple columns** button at the bottom of the command input panel to display the following popup."
 
-# 9bc77fc57ced453a8562c2dd2f99c854
-#: ../../discovery/part07/rule_kinds.rst:118
+# 8a007e55885440efbafcaf36714a9868
+#: ../../discovery/part07/rule_kinds.rst:119
 msgid "keep"
 msgstr "keep"
 
-# a348941391ba45b995f5d416b3d6af22
-# 35a09cf22f774f3a8d47bf0ec1b95092
-#: ../../discovery/part07/rule_kinds.rst:122
-#: ../../discovery/part07/rule_kinds.rst:136
+# cb197d34711e4b14b9b928c65ba6c705
+# 7667f4b593854990bdf299b87715115d
+#: ../../discovery/part07/rule_kinds.rst:123
+#: ../../discovery/part07/rule_kinds.rst:137
 msgid "조건: Boolean이 결과로 나오는 조건식"
-msgstr "Condition: Result to be in the form of a conditional Boolean expression"
+msgstr "Condition: A conditional expression returning a Boolean value"
 
-# 496ff225ecd443c09d1a3d9ded4f1dfe
-#: ../../discovery/part07/rule_kinds.rst:126
+# 6ab9d5ec294e43c39f8722eba20fb45e
+#: ../../discovery/part07/rule_kinds.rst:127
 msgid "조건식을 참으로 하는 행만 남기고 나머지 행을 지웁니다."
-msgstr "All rows are deleted except the row that returns true for the conditional expression."
+msgstr "All rows are deleted except the rows that return true for the conditional expression."
 
-# aba65b66f2a440a1bd890d6235816940
-#: ../../discovery/part07/rule_kinds.rst:132
+# 9cb01abb5dfa410f87be9780801ad278
+#: ../../discovery/part07/rule_kinds.rst:133
 msgid "delete"
 msgstr "delete"
 
-# c8ad596a8ca547cc8031d20a9c3d107b
-#: ../../discovery/part07/rule_kinds.rst:140
+# 11a1078401fc4d47bf82933541cd5a88
+#: ../../discovery/part07/rule_kinds.rst:141
 msgid "조건식을 참으로 하는 행을 모두 지웁니다. `keep`_\\과 정반대로 동작합니다."
 msgstr "All rows that return true for the conditional expression are deleted. This is the opposite of `keep`_."
 
-# cdbb42c71e784982b2d597bbdcaab0d0
-#: ../../discovery/part07/rule_kinds.rst:144
+# 94b39970241f40baa4881547f8e549d8
+#: ../../discovery/part07/rule_kinds.rst:145
 msgid "replace"
 msgstr "replace"
 
-# 3442531545e64e12b8353bf95b50a63b
-#: ../../discovery/part07/rule_kinds.rst:151
+# a43fbe0877e5461cbf7e5bd449612bff
+#: ../../discovery/part07/rule_kinds.rst:152
 msgid "패턴: 갈아치울 대상 문자열 패턴"
-msgstr "Pattern: String pattern to be placed"
+msgstr "Pattern: A string pattern to be replaced"
 
-# 27a6e20e2cb7442a97a7fdcf625e1e16
-#: ../../discovery/part07/rule_kinds.rst:153
-msgid "상수 문자열인 경우: ``'``\\로 감싸져 있는 경우 (``'seoul'``, ``'서울'``, ``'서울 특별시'`` 등)"
-msgstr "In the case of a string constant: Characters enclosed inside ``'`` (``'seoul'``, ``'서울'``, ``'서울 특별시'`` etc.)"
-
-# 571030f96bac44149ac7abb0a672e837
+# a0ad491ce08c4bd2a3d847c583da78b9
 #: ../../discovery/part07/rule_kinds.rst:154
+msgid "상수 문자열인 경우: ``'``\\로 감싸져 있는 경우 (``'seoul'``, ``'서울'``, ``'서울 특별시'`` 등)"
+msgstr "In the case of a constant string: Characters enclosed inside ``'`` (``'Houston'``, ``'Naperville'``, ``'Philadelphia'`` etc.)"
+
+# 392bd8f44adf49f79bc179344bc81586
+#: ../../discovery/part07/rule_kinds.rst:155
 msgid "정규식인 경우: ``/``\\로 감싸져 있는 경우 (``/[ ,_]+/``, ``/\\s+$/`` 등)"
-msgstr "In the case of a regular string: Characters enclosed inside ``/`` (``/[ ,_]+/``, ``/\\s+$/``, etc.)"
+msgstr "In the case of a regular expression: Characters enclosed inside ``/`` (``/[ ,_]+/``, ``/\\s+$/``, etc.)"
 
-# 33118beda363410fa49b9896e62704f9
-#: ../../discovery/part07/rule_kinds.rst:156
+# 00d965585f3c448a98040db501add29d
+#: ../../discovery/part07/rule_kinds.rst:157
 msgid "새로운 값: 새롭게 놓일 문자열 수식"
-msgstr "New value: New string to be inserted"
+msgstr "New value: A new string expression to replace the specified pattern"
 
-# ed43f5775b4f48f291ae3d8c20cc788b
-#: ../../discovery/part07/rule_kinds.rst:158
-msgid "상수 문자열"
-msgstr "String constant"
-
-# 5e294c44285c4284b1b64c1cf9e760b0
+# 809c4615282f408ea2a0cad966a92d8b
 #: ../../discovery/part07/rule_kinds.rst:159
+msgid "상수 문자열"
+msgstr "Constant string"
+
+# 383ffba7ead9479fa260c51a6568277e
+#: ../../discovery/part07/rule_kinds.rst:160
 msgid "정규식의 그룹을 이용한 문자열 수식: ``$1_$2_$3`` 등"
-msgstr "String expression based on regular expression groups: ``$1_$2_$3``, etc."
+msgstr "Regular expression ``$1_$2_$3``, etc."
 
-# c990e9a660904850a460778a1764c583
-# 5e029906905a46f1bb54cf175d1de49f
-# 54b01d2547684183a3721aec861326d2
-#: ../../discovery/part07/rule_kinds.rst:163
-#: ../../discovery/part07/rule_kinds.rst:272
-#: ../../discovery/part07/rule_kinds.rst:294
-msgid "다음 문자 사이 무시: 이 안에 입력된 문자 사이 내용에 대해서는 치환을 하지 않습니다."
-msgstr "Ignore between characters: Does not make any replacement for content between the input characters"
-
-# bbaae3473c1a4121a7da8a0326bd280e
+# 8011c52102ab41af86c94d0bd744a36b
+# 1efa75ab733a4ea8ae819a36c9ef6604
+# 9651d755e82d403e84bae2e5fc9bfd3d
 #: ../../discovery/part07/rule_kinds.rst:164
-msgid "모든 항목 일치 여부: 단어의 모든 문자가 일치해야하는지 여부"
-msgstr "Match for all items: Whether all characters in a word must match"
-
-# 41d5e2ed4db44ceaa9160dbef08ed200
-# e36ac8dd79af4a9d8ad0ab117e465dc6
-# f347d54c97e94f5cafc15c6e5c740f32
-#: ../../discovery/part07/rule_kinds.rst:165
 #: ../../discovery/part07/rule_kinds.rst:273
 #: ../../discovery/part07/rule_kinds.rst:295
+msgid "다음 문자 사이 무시: 이 안에 입력된 문자 사이 내용에 대해서는 치환을 하지 않습니다."
+msgstr "Ignore between characters: Does not make any replacement for content between the characters entered here"
+
+# c716ff54b04b4b96a77afaf74a03b43e
+#: ../../discovery/part07/rule_kinds.rst:165
+msgid "모든 항목 일치 여부: 단어의 모든 문자가 일치해야하는지 여부"
+msgstr "Match all occurrences: Whether all characters of a word must match"
+
+# 74f79220658e4125a52f1b03cbcfa92c
+# f5132d950fe64c028dba1751514493b2
+# f537384c1a0743f98c56a721f6a28ac7
+#: ../../discovery/part07/rule_kinds.rst:166
+#: ../../discovery/part07/rule_kinds.rst:274
+#: ../../discovery/part07/rule_kinds.rst:296
 msgid "대소문자 구분 무시: 대소문자를 동일하게 취급할지 여부"
-msgstr "Ignore upper/lower case: Whether upper case should be regarded the same as lower case"
+msgstr "Ignore case: Whether to make the strings case-insensitive"
 
-# 6f65abf00e5a4e7281a21bf8df1badb1
-#: ../../discovery/part07/rule_kinds.rst:169
+# 5095f61f17414bc294de277fe533967e
+#: ../../discovery/part07/rule_kinds.rst:170
 msgid "선택된 컬럼들에 대하여, 문자열 변환을 수행합니다."
-msgstr "String conversion is performed for the selected columns."
+msgstr "String replacement is performed for the selected columns."
 
-# 19caead94e4e4168a6ee7a36dc13a2c2
-#: ../../discovery/part07/rule_kinds.rst:173
+# 01d59c7c04e14d228afe9759c64ee2c5
+#: ../../discovery/part07/rule_kinds.rst:174
 msgid "**새로운 값**\\에는 ``'``\\이나 ``/``\\를 사용하지 않습니다."
 msgstr "Do not use ``'`` or ``/`` in a **new value**."
 
-# e34245f206f24ed0a6616622bd00dbd4
-#: ../../discovery/part07/rule_kinds.rst:174
+# 5f7e38e1eae64c4abd25d2509886be1d
+#: ../../discovery/part07/rule_kinds.rst:175
 msgid ""
-"**새로운 값**\\에 다른 컬럼의 값을 이용할 수 없습니다. **replace**\\는 순수히 해당 컬럼 내용안에서의 "
-"**문자열** 변환입니다. (cf. `set`_ 룰)"
-msgstr "Do not use values from other columns in a **new value**. **Replace** performs **string** conversion for content in the selected column only. (cf. `set`_ rule)"
+"**새로운 값**\\에 다른 컬럼의 값을 이용할 수 없습니다. replace는 순수히 해당 컬럼 내용안에서의 문자열 "
+"변환입니다. (cf. `set`_ 룰)"
+msgstr "Values from other columns are not available as **new values**. replace performs string replacement for content in the selected columns only. (cf. `set`_ rule)"
 
-# 801d986dd2094e13bb087ffba34abdf7
-#: ../../discovery/part07/rule_kinds.rst:178
+# 2f4de87ddd904194b99bc2b029780acf
+#: ../../discovery/part07/rule_kinds.rst:179
 msgid "set"
 msgstr "set"
 
-# 63b8cfcc87c743fdb6babf72b97c9efb
-#: ../../discovery/part07/rule_kinds.rst:185
+# a182c01376df4551ae48fe9aa627cfa4
+#: ../../discovery/part07/rule_kinds.rst:186
 msgid "수식: 대상 컬럼의 값이 될 수식. 다른 컬럼값을 참조할 수 있습니다. (cf. `replace`_ 룰)"
-msgstr "Expression: Expression to be used as value of target column. Values from other column may serve as a reference. (cf. `replace`_ rule)"
+msgstr "Expression: An expression to be applied to the values of the target column. Values from other columns may be referenced. (cf. `replace`_ rule)"
 
-# 290cc159b8ff44fe9b13822ac4d3015a
-#: ../../discovery/part07/rule_kinds.rst:187
+# 871e93188a3545dbad3a3fd60d60e94b
+#: ../../discovery/part07/rule_kinds.rst:188
 msgid ""
 "여러 컬럼을 대상으로 하는 경우, ``$col``\\이라고 쓰면 각 컬럼에 대해 변환을 할 때, 그 대상 컬럼을 가리키도록 "
 "치환됩니다."
-msgstr "When multiple columns are involved, ``$col`` is substituted by the target column during the respective conversions."
+msgstr "When multiple columns are involved, use a ``$col`` variable, which will be substituted by the respective target column during each conversion."
 
-# 4a54f37730f74f80b79ae16689ec8e18
-#: ../../discovery/part07/rule_kinds.rst:188
+# c3a6a86a5ff3450b94dd51d4458ed023
+#: ../../discovery/part07/rule_kinds.rst:189
 msgid ""
-"즉, ``column1``, ``column2``\\에 대해 **set** 명령을 사용하는 경우, ``column1``\\에 대해 "
-"변환을 할 때엔 ``$col``\\이 ``column1``\\이 되고, ``column2``\\에 대해 변환을 할 때엔 "
+"즉, ``column1``, ``column2``\\에 대해 set 명령을 사용하는 경우, ``column1``\\에 대해 변환을 "
+"할 때엔 ``$col``\\이 ``column1``\\이 되고, ``column2``\\에 대해 변환을 할 때엔 "
 "``$col``\\이 ``column2``\\가 됩니다."
-msgstr "That is, when applying the **set** command on ``column1`` and ``column2``, ``$col`` becomes ``column1`` during conversion of ``column1``, and ``$col`` becomes ``column2`` during conversion of ``column2``."
+msgstr "That is, when applying the set command on ``column1`` and ``column2``, ``$col`` becomes ``column1`` during conversion of ``column1``, and ``$col`` becomes ``column2`` during conversion of ``column2``."
 
-# bc93d77fb33d44c4a4054c0690f52e30
-#: ../../discovery/part07/rule_kinds.rst:192
+# aede36b580a24c599642a303210b2ca8
+#: ../../discovery/part07/rule_kinds.rst:193
 msgid "다음 조건에서만 수행"
-msgstr "Performed only under the following conditions"
+msgstr "Use only under the following conditions"
 
-# 97d7557930f042e9a7bc3541636c8e20
-#: ../../discovery/part07/rule_kinds.rst:194
-msgid "이 조건을 만족하는 행에 대해서만 **set** 룰을 적용합니다."
-msgstr "The **set** rule is applied only to rows satisfying this condition."
-
-# 3051b30b73ce4373a49eba73527591d6
+# d44d9f4b9e6d431a957e9c15754ca877
 #: ../../discovery/part07/rule_kinds.rst:195
-msgid "SQL문에서 WHERE과 같다고 생각하면됩니다."
-msgstr "This rule may be regarded the same as the WHERE clause in SQL."
+msgid "이 조건을 만족하는 행에 대해서만 set 룰을 적용합니다."
+msgstr "The set rule is applied only to rows satisfying this condition."
 
-# 4e83e57bf39d4dc59d47d62227bcb5f1
-#: ../../discovery/part07/rule_kinds.rst:199
+# ba2c6403214649d5bc75e10073beed79
+#: ../../discovery/part07/rule_kinds.rst:196
+msgid "SQL문에서 ``WHERE``\\과 같다고 생각하면 됩니다."
+msgstr "This rule may be regarded the same as the ``WHERE`` statement in SQL."
+
+# 05c2d36529e5499b8d6cb08ef0003f4f
+#: ../../discovery/part07/rule_kinds.rst:200
 msgid "해당 컬럼의 값을 주어진 수식의 결과값으로 대체합니다."
 msgstr "This rule replaces the values in the selected column with results returned by the expression."
 
-# 5cd52f67e1794c9faf5a5e9bff887f47
-#: ../../discovery/part07/rule_kinds.rst:200
+# a21e308954f94feb9bb6a43c38e000f0
+#: ../../discovery/part07/rule_kinds.rst:201
 msgid "복잡한 수식을 사용하는 경우 **고급 편집기**\\를 클릭하면 다음과 같은 팝업창이 뜹니다."
-msgstr "When using a complex expression, click the **Advanced Editor** to display the following popup."
+msgstr "When using a complex expression, click the **Advanced editor** to display the popup shown below:"
 
-# b073ca7e4d1d45ce8e103e99f0a55bc3
-#: ../../discovery/part07/rule_kinds.rst:204
+# 05be67d604ec463b89768dd0df975f8a
+#: ../../discovery/part07/rule_kinds.rst:205
 msgid ""
 "**고급 편집기**\\를 활용하면 컬럼의 리스트와 함수의 리스트 및 각 설명, 예시를 보면서 넓은 창에서 수식을 편집할 수 있고, "
 "실제로 룰을 실행하기 전에 수식의 유효성을 체크해볼 수 있습니다."
-msgstr "In the **Advanced Editor**, you can edit expressions in a larger window while viewing column lists and descriptions, and also run a validity check before implementation."
+msgstr "In the **Advanced editor**, you can edit the expression in a larger window while viewing the column list and a list of functions and their descriptions, and also run a validity check before implementing the expression."
 
-# 20184de84f064400b63d54dbf81b9f48
-#: ../../discovery/part07/rule_kinds.rst:208
+# 012b02f965e746339fad6cae0010e960
+#: ../../discovery/part07/rule_kinds.rst:209
 msgid "derive"
 msgstr "derive"
 
-# 310974991e984cf786ce89bc4ee0d225
-#: ../../discovery/part07/rule_kinds.rst:212
-msgid "수식: 새로운 컬럼의 값이 될 수식. `set`_ 룰과 마찬가지로 다른 컬럼값을 참조할 수 있습니다."
-msgstr "Expression: Expressed to be used as value of new column. Similar to the `set`_ rule, values from other column may serve as a reference."
-
-# 1f4be951fffc461297baa864814eaf26
-# cffa8b46561c4290a399cc0d0303a2cf
-# 1ee46ab682be407882cacec7f80a162f
+# 1389579062514a2f879f2dc2dd044d0d
 #: ../../discovery/part07/rule_kinds.rst:213
-#: ../../discovery/part07/rule_kinds.rst:250
-#: ../../discovery/part07/rule_kinds.rst:314
+msgid "수식: 새로운 컬럼의 값이 될 수식. `set`_ 룰과 마찬가지로 다른 컬럼값을 참조할 수 있습니다."
+msgstr "Expression: An expression whose resulting values are to form a new column. Similar to the `set`_ rule, values from other columns may be referenced."
+
+# 1923cfd49d994f1da147de43f2e9c885
+# 629205a2fea54053bdad0d5eedfd1896
+# 29fd125da736470dba2cb9c01f1295c3
+#: ../../discovery/part07/rule_kinds.rst:214
+#: ../../discovery/part07/rule_kinds.rst:251
+#: ../../discovery/part07/rule_kinds.rst:315
 msgid "새로운 컬럼 이름"
 msgstr "New column name"
 
-# 1f5f2f2bc6964f8e8127cb473222d1f6
-#: ../../discovery/part07/rule_kinds.rst:217
+# dad267fa92bf4ec8b0982cd94149cbaf
+#: ../../discovery/part07/rule_kinds.rst:218
 msgid "`set`_ 룰과 비슷하지만, 어떤 컬럼의 값을 대체하는 것이 아니라 새로운 컬럼을 만들어냅니다."
 msgstr "While similar to the `set`_ rule, this rule creates a new column instead of replacing an existing one."
 
-# 3d574fad98bf4a3b9c0268782d1d7922
-#: ../../discovery/part07/rule_kinds.rst:221
+# 88fcdc58b2de42d987943a8decfb25c6
+#: ../../discovery/part07/rule_kinds.rst:222
 msgid "수식에 등장하는 컬럼 중에 제일 마지막 컬럼 뒤로 삽입됩니다."
 msgstr "The new column is inserted after the last existing column in the expression. "
 
-# db74a1818fa5425f888fadb86e12da58
-#: ../../discovery/part07/rule_kinds.rst:225
+# 657e63bf0c4d4158a27bea98cadf34a0
+#: ../../discovery/part07/rule_kinds.rst:226
 msgid "split"
 msgstr "split"
 
-# 173ce4f2f28d4f839ab6c30bac845f18
-#: ../../discovery/part07/rule_kinds.rst:230
-msgid "패턴: split의 기준이 되는 문자열 수식. `replace`_ 룰과 같이 정규식을 허용합니다."
-msgstr "Pattern: String expression that serves as basis for split. Permits regular expressions as is the case for the `replace`_ rule."
-
-# 1a7919e53a8b477d9846af936c43b6e4
+# b0555265f672457aa79e3ea1ea68f1e1
 #: ../../discovery/part07/rule_kinds.rst:231
+msgid "패턴: split의 기준이 되는 문자열 수식. `replace`_ 룰과 같이 정규식을 허용합니다."
+msgstr "Pattern: A string expression that serves as a separator that splits the target strings. Allows a regular expression as is the case for the `replace`_ rule."
+
+# 244660a4d4c24d679cb8ac1072d63ef6
+#: ../../discovery/part07/rule_kinds.rst:232
 msgid "횟수: 몇 개의 컬럼으로 나눌 것인지 여부입니다."
 msgstr "Number: Number of columns to be divided into."
 
-# fa6ebd893d2d4d8d9e7224e604c13307
-#: ../../discovery/part07/rule_kinds.rst:235
-msgid "각 행에 대해 주어진 **횟수 - 1** 만큼 split을 합니다."
-msgstr "Each row is split by **number - 1**."
-
-# 638148bbd9c5432a9a0b45249e5b9211
+# ca5ac4a6f20342d9a74e972a4c48d3ff
 #: ../../discovery/part07/rule_kinds.rst:236
+msgid "각 행에 대해 주어진 **횟수** - 1 만큼 split을 합니다."
+msgstr "Each row is split by the given **Number** - 1."
+
+# 0ca6aa68effe484586dabee3b569c656
+#: ../../discovery/part07/rule_kinds.rst:237
 msgid "컬럼 내용에 패턴이 더 이상 없을 경우 `null` 값을 가진 컬럼을 만들어냅니다."
-msgstr "When the pattern is no longer detected, a column with a `null` value is created."
+msgstr "When the pattern is no longer matched, the rest columns contain a `null`."
 
-# 7aa1017914014d6fb37fa482f85effc8
-#: ../../discovery/part07/rule_kinds.rst:240
+# 1cc87596964044c0813b7852d9f9ecb9
+#: ../../discovery/part07/rule_kinds.rst:241
 msgid "**횟수**\\에 해당하는 개수의 컬럼이 생기게 된다는 것에 유의하세요."
-msgstr "Note that the number of columns created is the same as **number**."
+msgstr "Note that columns are created as many as the **Number** input."
 
-# b27076c345254f5dab362926e20eddf0
-#: ../../discovery/part07/rule_kinds.rst:244
+# 1df965273747436a9dcff1ac17318e62
+#: ../../discovery/part07/rule_kinds.rst:245
 msgid "merge"
 msgstr "merge"
 
-# b361bd1cd07c45c48a96ae1e159146ab
-#: ../../discovery/part07/rule_kinds.rst:249
+# dbc5941143504108bb5502c70fa786cc
+#: ../../discovery/part07/rule_kinds.rst:250
 msgid "구분자: 컬럼들을 이을 상수 문자열"
-msgstr "Separator: String constant to connect columns"
+msgstr "Delimiter: A constant string with which values of different columns are concatenated."
 
-# 83db7440866e49829a2807c699243edb
-#: ../../discovery/part07/rule_kinds.rst:254
+# 4bb41ccd46da4f4fb24524be78586116
+#: ../../discovery/part07/rule_kinds.rst:255
 msgid "대상 컬럼들을 **구분자**\\로 이어서 새로운 컬럼을 만듭니다."
-msgstr "The target columns are connected with a **separator** to create a new column."
+msgstr "The target columns are merged with the **Delimiter** into a new column."
 
-# bd2ef295212b4c4aa89a38a8f779d0db
-#: ../../discovery/part07/rule_kinds.rst:258
+# b99c216cd102471bb4c68c14828f1958
+#: ../../discovery/part07/rule_kinds.rst:259
 msgid ""
 "`replace`_ 룰도 마찬가지지만, ``'`` 로 감싸는 것은 생략할 수 있습니다. 즉, ``/`` 로도, ``'`` 로도 "
 "감싸지지 않는 문자열이 입력되었을 시, 알아서 ``'`` 로 감싸서 전달되게 되어있습니다."
-msgstr "Similar to the `replace`_ rule, enclosing with a ``'`` may be dropped. That is, strings not enclosed by ``/`` or ``'`` are automatically enclosed by ``'``."
+msgstr "Similar to the `replace`_ rule, enclosing with a ``'`` may be skipped. That is, strings not enclosed by ``/`` or ``'`` are automatically enclosed by ``'``."
 
-# a888f3eb965d4b2399ea98b71e78b697
-#: ../../discovery/part07/rule_kinds.rst:262
+# c996de23759d435d9d0d05b2e68ff0f4
+#: ../../discovery/part07/rule_kinds.rst:263
 msgid "extract"
 msgstr "extract"
 
-# ebfce059dd80422d8c8b504dba874d85
-#: ../../discovery/part07/rule_kinds.rst:267
-msgid "패턴: 추출할 문자열 패턴. `replace`_ 룰과 마찬가지로 정규식을 허용합니다."
-msgstr "Pattern: String pattern to be extracted. Permits regular expressions as is the case for the `replace`_ rule."
-
-# 5d7b47c2a9d1410c925da01808f0f2d2
+# d5ef196b5a3d4d3893791587a62ac8ae
 #: ../../discovery/part07/rule_kinds.rst:268
+msgid "패턴: 추출할 문자열 패턴. `replace`_ 룰과 마찬가지로 정규식을 허용합니다."
+msgstr "Pattern: A string pattern to be extracted. Allows a regular expression as is the case for the `replace`_ rule."
+
+# 006941ba61b3424f8c38562344a08938
+#: ../../discovery/part07/rule_kinds.rst:269
 msgid "횟수: 추출할 횟수"
-msgstr "Number: Number of times to be extracted"
+msgstr "Number: Number of instances to be extracted"
 
-# 8ef37393f5474ab695f7165675fbf80b
-#: ../../discovery/part07/rule_kinds.rst:277
+# 67a6011a0cc744bca7ee37f5b4a86665
+#: ../../discovery/part07/rule_kinds.rst:278
 msgid "패턴에 매치되는 내용으로 새로운 컬럼을 만듭니다."
-msgstr "A new column with content matching the given pattern is created."
+msgstr "A new column(s) with content matching the given pattern is created."
 
-# f4761330004e4b8787321d3809f56062
-#: ../../discovery/part07/rule_kinds.rst:281
+# 49be37cf0d314db5b29bf93024969bb1
+#: ../../discovery/part07/rule_kinds.rst:282
 msgid "여러 개의 대상 컬럼이 있는 경우, 추출의 결과는 각 컬럼의 뒤로 붙습니다."
-msgstr "When there are multiple target columns, the results of extraction are inserted after each column."
+msgstr "When there are multiple target columns, the resulting columns are inserted after each target column."
 
-# b2eded864ab34fe7b6a019c44c804429
-#: ../../discovery/part07/rule_kinds.rst:285
+# 1dcd5f1a91af4e7b8ca18ef73f9eec52
+#: ../../discovery/part07/rule_kinds.rst:286
 msgid "countpattern"
 msgstr "countpattern"
 
-# c9948e2abc2f49859665eb975e2c64c3
-#: ../../discovery/part07/rule_kinds.rst:290
+# c7ad22f9308649eea95c04039dc53e54
+#: ../../discovery/part07/rule_kinds.rst:291
 msgid "패턴: 찾아낼 문자열 패턴. `replace`_ 룰과 마찬가지로 정규식을 허용합니다."
-msgstr "Pattern: String pattern to be detected. Permits regular expressions as is the case for the `replace`_ rule."
+msgstr "Pattern: A string pattern to be detected. Allows a regular expression as is the case for the `replace`_ rule."
 
-# a2691c255e824335a42a79ba427b1ec4
-#: ../../discovery/part07/rule_kinds.rst:299
+# bcf9aef05b3845dfa32588e0e7720a69
+#: ../../discovery/part07/rule_kinds.rst:300
 msgid "패턴에 매치되는 내용이 몇 군데에 있는지 세어서, 그 숫자로 새 컬럼을 만듭니다."
 msgstr "New columns are created based on the number of matches with the pattern."
 
-# 4071f30c4338480fbb91a4c1de9a38fe
-#: ../../discovery/part07/rule_kinds.rst:300
-msgid "`extract`_ 와 상당히 비슷합니다. 내용을 추출하는 것이 아니라, 그 숫자를 세는 것만 다를 뿐입니다."
-msgstr "This is highly similar to `extract`_. The only difference is that it counts the number of matches, rather than extracting the content."
+# 875e89f9abf9480c9317542d1dc73b84
+#: ../../discovery/part07/rule_kinds.rst:301
+msgid "`extract`_\\와 상당히 비슷합니다. 내용을 추출하는 것이 아니라, 그 숫자를 세는 것만 다를 뿐입니다."
+msgstr "This is highly similar to `extract`_. The only difference is that it counts the number of matches, rather than extracting the matched content."
 
-# 501f687d545a49738d640de162aec80c
-#: ../../discovery/part07/rule_kinds.rst:304
+# 21861aad05a74f459a167a9cd4ac2660
+#: ../../discovery/part07/rule_kinds.rst:305
 msgid "여러 개의 대상 컬럼이 있는 경우, 추출의 결과는 각각 컬럼의 뒤로 붙습니다."
-msgstr "When there are multiple target columns, the results of extraction are inserted after each column."
+msgstr "When there are multiple target columns, the resulting columns are inserted after each target column."
 
-# edef90f9a8d74cad98ccd81dab28fd59
-#: ../../discovery/part07/rule_kinds.rst:308
+# 9eeea3ae92524dc683d0524bf659e0d8
+#: ../../discovery/part07/rule_kinds.rst:309
 msgid "nest"
 msgstr "nest"
 
-# 8d95fe0d0df648f6a0fb56acdc1707bd
-#: ../../discovery/part07/rule_kinds.rst:313
+# 7990331d6d4c407a8005df2a607ed324
+#: ../../discovery/part07/rule_kinds.rst:314
 msgid "타입: Map 또는 Array"
 msgstr "Type: Map or Array"
 
-# 57b1b8502b5c48a9b95732641d435d4d
-#: ../../discovery/part07/rule_kinds.rst:318
-msgid "대상 컬럼을 주어진 타입으로 묶습니다."
-msgstr "The target columns are grouped into the given type."
-
-# 7dd26fb4e06545acbeeecc23694f16cb
+# 14656049d2ae4003a22f88c599772199
 #: ../../discovery/part07/rule_kinds.rst:319
+msgid "대상 컬럼을 주어진 타입으로 묶습니다."
+msgstr "The target columns are grouped into a new column of the given type."
+
+# 134bfd745a2a45679379f43eab680af3
+#: ../../discovery/part07/rule_kinds.rst:320
 msgid "다음은 각각 Array, Map으로 묶여진 경우입니다."
 msgstr "Below are examples of grouping columns into an array and map, respectively. "
 
-# 1d55edde2d874d34b0418085d02db5b2
-#: ../../discovery/part07/rule_kinds.rst:325
+# 1cdc3282cdc54870997fe3fb805bb049
+#: ../../discovery/part07/rule_kinds.rst:326
 msgid "unnest"
 msgstr "unnest"
 
-# 0b69d051391a42f894e0d5d66baadf59
-#: ../../discovery/part07/rule_kinds.rst:332
+# 74035350288c43f1903cbe5d39618f42
+#: ../../discovery/part07/rule_kinds.rst:333
 msgid "선택할 요소: Array의 경우 *0-base* index, Map의 경우 key값"
-msgstr "Parameter to be selected: *0-base*\\index for an array, or key value for a map"
+msgstr "Select elements: *0-base* index for an array, or key value for a map"
 
-# 057e34c662ad4dfcbba18006033110fc
-#: ../../discovery/part07/rule_kinds.rst:336
+# 1a632b0e689d48cf8fc723613ac2f351
+#: ../../discovery/part07/rule_kinds.rst:337
 msgid "Array 또는 Map에서 지정된 요소를 빼서 새 컬럼으로 만듭니다."
-msgstr "A new column is created after removing the designated parameter from an array or a map."
+msgstr "A new column is created by extracting the selected elements from an array or a map."
 
-# a48b4212358742bd8751439aeb2bc8ce
-#: ../../discovery/part07/rule_kinds.rst:340
+# 5f9c53fe53354b4dbbc478b4c8148c5c
+#: ../../discovery/part07/rule_kinds.rst:341
 msgid "대상 컬럼은 반드시 Array 또는 Map 타입이어야 합니다."
 msgstr "The target column must be of the array or map type."
 
-# 933d1c8dee67420bb7b34243d9cd8f1d
-#: ../../discovery/part07/rule_kinds.rst:344
+# 8fe6832c783043a79a7473599be22c65
+#: ../../discovery/part07/rule_kinds.rst:345
 msgid "flatten"
 msgstr "flatten"
 
-# a8240f13cae7429eaafb57c6c3703a58
-#: ../../discovery/part07/rule_kinds.rst:352
+# 714b9059660d4e7f989b72aa9bc44b4e
+#: ../../discovery/part07/rule_kinds.rst:353
 msgid "Array의 각각 원소를 해당 컬럼의 값으로 삼는 행을 만들어냅니다."
-msgstr "Rows are created with elements in an array as column values. "
+msgstr "Rows are created from elements of an array."
 
-# 3c603879ea324e19ad293d953d12b8d6
-#: ../../discovery/part07/rule_kinds.rst:356
+# 389832e34f7d47f6b3bd450f65779316
+#: ../../discovery/part07/rule_kinds.rst:357
 msgid "대상 컬럼은 반드시 Array 타입이어야 합니다."
 msgstr "The target column must be of the array type."
 
-# c0c7db46a5294eb5892b360efd1e364e
-#: ../../discovery/part07/rule_kinds.rst:360
+# d120bdb84bcf4bbdb2dfb23481d65ea8
+#: ../../discovery/part07/rule_kinds.rst:361
 msgid ""
 "위와 같이 Array 컬럼에 4개의 원소가 있는 경우, 각 원소의 값에 대해 1개씩 행이 생깁니다. 이 때 대상 Array 컬럼을 "
 "제외한 모든 컬럼들의 값은 동일하게 됩니다."
-msgstr "As shown in the above example, if the array column has four elements, one row is created for each element. All columns except the array column assume the same values."
+msgstr "If the target array column has four elements as shown in the above example, each original row of the array results in four rows. Non-array columns result in the same columns."
 
-# aa321f17694843ecb46a1a59c398d07a
-#: ../../discovery/part07/rule_kinds.rst:366
+# 70cc795e43b84006a6e3ea44fd60cacc
+#: ../../discovery/part07/rule_kinds.rst:367
 msgid "aggregate"
 msgstr "aggregate"
 
-# 0c82e759a9fd4904b0f203922132dd0a
-#: ../../discovery/part07/rule_kinds.rst:372
-msgid "수식: Aggregation 함수 리스트"
-msgstr "Expression: Aggregation function list"
-
-# d495fdca27e14f57b8a6f68c1949c447
-# b4104c351c5e4d2dadf2ee84d0c3c53a
+# 9ec90df3551d4ae1b6ff506e2dcf81a1
 #: ../../discovery/part07/rule_kinds.rst:373
-#: ../../discovery/part07/rule_kinds.rst:405
+msgid "수식: Aggregation 함수 리스트"
+msgstr "Expression: A list of aggregate functions"
+
+# 0284b145eed04dcb9138127a35c8a28a
+# 451f33d1f68649dab0f4f9a798fe4665
+#: ../../discovery/part07/rule_kinds.rst:374
+#: ../../discovery/part07/rule_kinds.rst:406
 msgid "그룹화 기준: Group By에 쓰일 컬럼 리스트"
-msgstr "Grouping basis: Column list to be used in Group B"
+msgstr "Group by: A list of columns that group values by."
 
-# 290a8a5e32a542faa29596f79fffd20e
-#: ../../discovery/part07/rule_kinds.rst:377
-msgid "그룹화 기준 컬럼들 각 조합에 대해 Group By 연산을 수행한 결과를 새로운 컬럼으로 추가합니다."
-msgstr "A new column is added using results of running Group By on each combination of columns included in the grouping basis."
-
-# 26ba617eb8f243c0afc413cffcdca37c
+# 2e79ca74d74a4cd9ae3dc50b276e4a62
 #: ../../discovery/part07/rule_kinds.rst:378
-msgid "각 수식 당 한 컬럼씩 생깁니다. 예를 들어, 평균값과 카운트를 수식으로 지정하였을 경우, 2개의 컬럼이 생깁니다."
-msgstr "A column is created for each expression. For example, two columns are created when average value and count are designated as expressions."
+msgid "그룹화 기준 컬럼들 각 조합에 대해 Group By 연산을 수행한 결과를 새로운 컬럼으로 추가합니다."
+msgstr "A new column is added from the results of grouping by each combination of the elements from the GroupBy columns."
 
-# deb94064bf064e5382f29520f6768a5a
+# 076e235c7c6748208e76218e8c7fe944
 #: ../../discovery/part07/rule_kinds.rst:379
-msgid "현재 지원하는 Aggregation 함수는 다음과 같습니다."
-msgstr "The available aggregation functions are as follows."
+msgid "각 수식 당 한 컬럼씩 생깁니다. 예를 들어, 평균값과 카운트를 수식으로 지정하였을 경우, 2개의 컬럼이 생깁니다."
+msgstr "A column is created for each expression. For example, two columns are created if average and count are designated as expressions."
 
-# 9537c177ad004373a0379f7f78b68c9a
-#: ../../discovery/part07/rule_kinds.rst:381
+# d2e1ce01e29d4c4082e5012c459fd1d1
+#: ../../discovery/part07/rule_kinds.rst:380
+msgid "현재 지원하는 Aggregation 함수는 다음과 같습니다."
+msgstr "The available aggregate functions are as follows:"
+
+# b80ab210f7024f05b5493a5de5413ca1
+#: ../../discovery/part07/rule_kinds.rst:382
 msgid "count()"
 msgstr "count()"
 
-# d5624c0af1cc48108b483dcd3a32b326
-#: ../../discovery/part07/rule_kinds.rst:382
+# 5e24cf80fb484e4eb8173d3d4d373bcb
+#: ../../discovery/part07/rule_kinds.rst:383
 msgid "sum(*colname*)"
 msgstr "sum(*colname*)"
 
-# c9db2907cee4487fbc717a9b36c766d5
-#: ../../discovery/part07/rule_kinds.rst:383
+# 4b592ac6508e4ee4b13204bcde7d8afe
+#: ../../discovery/part07/rule_kinds.rst:384
 msgid "avg(*colname*)"
 msgstr "avg(*colname*)"
 
-# 7e9827c952c8447298709c196a215d31
-#: ../../discovery/part07/rule_kinds.rst:384
+# 212fe259e8b344eda36fa02983c21413
+#: ../../discovery/part07/rule_kinds.rst:385
 msgid "min(*colname*)"
 msgstr "min(*colname*)"
 
-# cb4867c276374856b861a34f7d25cce0
-#: ../../discovery/part07/rule_kinds.rst:385
+# ad931ceb540740acbf037b154213aebb
+#: ../../discovery/part07/rule_kinds.rst:386
 msgid "max(*colname*)"
 msgstr "max(*colname*)"
 
-# 872e499c31334e2ab59c50a697655b71
-#: ../../discovery/part07/rule_kinds.rst:389
-msgid "샘플링된 결과에 대해서만 연산을 수행합니다. 때문에 전체 데이터에 대한 결과, 즉 스냅샷은 달라질 수 있습니다."
-msgstr "Calculations are performed only for sampling results. The results for the entire data, that is, the snapshot, may be different."
-
-# 5014396df2bd44f890635b9e395513b9
+# c44004716b4d47bfad5f2e4b9a7e14bc
 #: ../../discovery/part07/rule_kinds.rst:390
+msgid "샘플링된 결과에 대해서만 연산을 수행합니다. 때문에 전체 데이터에 대한 결과, 즉 스냅샷은 달라질 수 있습니다."
+msgstr "Calculations are performed only for sampling results. Therefore, the snapshot?the results for the entire data?may be different."
+
+# 324d8c01fa934778a71cf10a8a7bd4a2
+#: ../../discovery/part07/rule_kinds.rst:391
 msgid "count함수 사용시 ``()`` 를 꼭 붙여야 하는 것에 유의하십시오."
 msgstr "Note that ``()`` must be inserted when using the count function."
 
-# 6323fdaa3fdd4288a81fcee06c36895c
-#: ../../discovery/part07/rule_kinds.rst:391
+# 344515feaaec42bf89682b403876de16
+#: ../../discovery/part07/rule_kinds.rst:392
 msgid "count(*colname*)은 현재 지원하지 않습니다."
-msgstr "count(*colname*)is currently not available."
+msgstr "count(*colname*) is currently not available."
 
-# 88ad46f70ffa44b1b57a9b20276d5aff
-#: ../../discovery/part07/rule_kinds.rst:397
+# bdc2a5d0ac7c4939bdb2902d8450cb05
+#: ../../discovery/part07/rule_kinds.rst:398
 msgid "pivot"
 msgstr "pivot"
 
-# 64ed86959ef24d888f00fa89b19f6cc0
-#: ../../discovery/part07/rule_kinds.rst:403
-msgid "컬럼: 피봇 대상 컬럼 리스트"
-msgstr "Column: Column list serving as pivot target"
-
-# 4b8630a1980c4dccbd9a2c8e3dee1fe8
+# ffd86fca04954698a3523683e6b32c91
 #: ../../discovery/part07/rule_kinds.rst:404
-msgid "수식: 컬럼의 값이 될 수식 리스트 (Aggregation 함수만 가능)"
-msgstr "Expression: Expression list to be used as column values (for aggregation functions only)"
+msgid "컬럼: 피봇 대상 컬럼 리스트"
+msgstr "Column: A list of columns subject to pivoting"
 
-# 08e91999509246169f831946b119c47d
-#: ../../discovery/part07/rule_kinds.rst:409
+# 3be9d882363f4f8aabb7f07e92c62dd4
+#: ../../discovery/part07/rule_kinds.rst:405
+msgid "수식: 컬럼의 값이 될 수식 리스트 (Aggregation 함수만 가능)"
+msgstr "Expression: A list of expressions whose resulting values form new columns (only aggregate functions are available)"
+
+# 16a321460217424e8d067cf8b1f20a0c
+#: ../../discovery/part07/rule_kinds.rst:410
 msgid ""
 "대상 컬럼들과 그룹화 기준 컬럼들 각 조합에 대해 Group By 연산을 수행하고, 그 결과를 새로운 컬럼값으로 하는 데이터셋을 "
 "만듭니다."
-msgstr "Group By is performed for target columns and each combination of columns included in the grouping basis. A dataset having the results as column values is created. "
+msgstr "Group By is performed for each combination of target columns and GroupBy columns. A dataset having the results as column values is created."
 
-# 1f88f84693ee4ceb8f502ff7ce5448c5
-#: ../../discovery/part07/rule_kinds.rst:410
+# ea0658e1fa894d6c889d0cf40c1c8e3b
+#: ../../discovery/part07/rule_kinds.rst:411
 msgid ""
 "각 수식에 대해 컬럼 세트들이 생깁니다. 예를 들어, 평균값과 카운트를 수식으로 지정하였을 경우, 피봇 대상 컬럼들의 값이 결국 "
 "10개의 그룹으로 나뉠 경우, 20개의 컬럼이 생겨나게 됩니다."
-msgstr "A set of columns is created for each expression. For example, if average value and count are designated as expressions, the values in the pivot target columns are divided into ten groups, resulting in 20 columns."
+msgstr "A set of columns is created for each expression. For example, if average and count are designated as expressions and the values in the pivoted columns are divided into ten groups, a total of 20 columns will be created."
 
-# e41eb25685a34e179aea08f08cef886e
-#: ../../discovery/part07/rule_kinds.rst:414
-msgid "최소 2개의 컬럼에 대한 복합 Group By를 할 때에 사용됩니다. (피봇 대상 1개, 그룹화 기준 1개)"
-msgstr "This is used when performing Group By on at least two columns. (1 pivot target, 1 grouping basis)"
-
-# 2e70e6b3831541cd8a2fffa4ddd9612c
+# 45a30a960b894709855372d0a6f73244
 #: ../../discovery/part07/rule_kinds.rst:415
-msgid "일반적으로 컬럼명이 길어지기 때문에, 뒤이어 전체 rename을 필요로하는 경우가 많습니다."
-msgstr "Here, the Rename All function is useful as column names tend to get longer."
+msgid "최소 2개의 컬럼에 대한 복합 Group By를 할 때에 사용됩니다. (피봇 대상 1개, 그룹화 기준 1개)"
+msgstr "This is used when performing GroupBy on at least two columns. (1 pivoted column, 1 GroupBy column)"
 
-# 3822a1d350cb40688165c0c1e0230a6e
-#: ../../discovery/part07/rule_kinds.rst:421
+# de0f031a64764d4eb4f75191f755b6fc
+#: ../../discovery/part07/rule_kinds.rst:416
+msgid "일반적으로 컬럼명이 길어지기 때문에, 뒤이어 **전체 rename**\\을 필요로하는 경우가 많습니다."
+msgstr "Here, **Rename multiple columns** is useful as column names tend to get longer."
+
+# d15cde1605b84424acb8b2fc6409af32
+#: ../../discovery/part07/rule_kinds.rst:422
 msgid "unpivot"
 msgstr "unpivot"
 
-# ed3e0d0490044c81b908eb3223bc19f1
-#: ../../discovery/part07/rule_kinds.rst:427
-msgid "컬럼: 컬럼값으로 내릴 대상 컬럼들 리스트"
-msgstr "Column: Target column list to be used as column values"
-
-# 26b3eb455820466ea84f9884109ff20b
+# 4002c8be38af4f9da56a9983c1e470b3
 #: ../../discovery/part07/rule_kinds.rst:428
+msgid "컬럼: 컬럼값으로 내릴 대상 컬럼들 리스트"
+msgstr "Column: A list of target columns to be converted into values in new columns"
+
+# e0df818e75034d27a8948fc87ba0303e
+#: ../../discovery/part07/rule_kinds.rst:429
 msgid "그룹 수: 결과 컬럼 숫자 (기본적으로 1)"
-msgstr "Number of groups: Column number (default is 1)"
+msgstr "GroupEvery: Number of columns (defaults to 1)"
 
-# 2e7d3b5e56e143bea3109dc131608e56
-#: ../../discovery/part07/rule_kinds.rst:432
-msgid "선택된 컬럼들에 대해 컬럼 이름과 컬럼의 값을 내용으로 하는 컬럼 2개를 만듭니다. (그룹 수가 1인 경우)"
-msgstr "Two column are created using the column names and values of selected columns. (Where the number of groups is 1)"
-
-# 2d498625d38947aea18fe14f47d4f16a
+# da03db2f69ab472cafcfbf163f852bb0
 #: ../../discovery/part07/rule_kinds.rst:433
+msgid "선택된 컬럼들에 대해 컬럼 이름과 컬럼의 값을 내용으로 하는 컬럼 2개를 만듭니다. (그룹 수가 1인 경우)"
+msgstr "Two columns are created?one contains the selected column names and the other contains their values. (If GroupEvery is set to 1)"
+
+# 1b212dbf85c841fd9acd18762f795d97
+#: ../../discovery/part07/rule_kinds.rst:434
 msgid ""
 "그룹 수가 선택된 컬럼 숫자와 같은 경우, 각 컬럼 이름과 값에 해당하는 컬럼들을 만듭니다. 즉, 10개 컬럼에 대해 그룹 수 "
 "10으로 unpivot을 하면, 총 20개 컬럼이 생깁니다."
-msgstr "If the number of groups is the same as the number of selected columns, the resulting columns correspond to the column names and values. That is, 20 columns are created when 10 columns are unpivoted to 10 groups."
+msgstr "If GroupEvery is the same as the number of selected columns, each resulting pair of columns contains the name and values of its respective original column. Therefore, If 10 columns are unpivoted with the GroupEvery argument set to 10, for example, a total of 20 columns are created."
 
-# e4bf4aa773e6484d82683ec728f9a4c8
-#: ../../discovery/part07/rule_kinds.rst:437
+# 5d6711206f004c0081c768d37488e113
+#: ../../discovery/part07/rule_kinds.rst:438
 msgid "그룹 수가 대상 컬럼 수의 약수인 경우는 곧 지원할 예정입니다."
-msgstr "Cases where the number of groups is a factor of the number of columns will soon be supported."
+msgstr "Using the GroupEvery argument set to a factor of the number of columns will soon be supported."
 
-# ebfbe27c87e0427d8a280abf5875c30a
-#: ../../discovery/part07/rule_kinds.rst:439
+# a04d94876ce5487b83089957483b3d5f
+#: ../../discovery/part07/rule_kinds.rst:440
 msgid "<그룹 수가 1인 경우>"
-msgstr "<Where the number of groups is 1>"
+msgstr "<Where GroupEvery is set to 1>"
 
-# aaa9300273e24408a85005af34fb8a5b
-#: ../../discovery/part07/rule_kinds.rst:443
+# dfc4ec1a01354e279c762b63701a8e5b
+#: ../../discovery/part07/rule_kinds.rst:444
 msgid "<그룹 수가 컬럼 수와 같은 경우>"
-msgstr "<Where the number of groups is the same as the number of columns>"
+msgstr "<Where GroupEvery is set to the same as the number of columns>"
 
-# 70baeb38132047f4928bcc8d0501fbe8
-#: ../../discovery/part07/rule_kinds.rst:449
+# 79a786e1ce7747f5bee0cb6e940f1df1
+#: ../../discovery/part07/rule_kinds.rst:450
 msgid "join"
 msgstr "join"
 
-# 40eb5b39351d4a179089b556a1d82c50
-#: ../../discovery/part07/rule_kinds.rst:453
+# e9a8666a2acb497f80248a0a69de92f0
+#: ../../discovery/part07/rule_kinds.rst:454
 msgid "join은 다른 룰들과는 달리, 별도의 팝업창을 갖습니다."
 msgstr "Unlike other rules, join has a separate popup."
 
-# 5ac70427a12c435aaab0450ed73ebfbb
-#: ../../discovery/part07/rule_kinds.rst:455
+# 203921ebcb1140568ab2e6ae53a0dfc0
+#: ../../discovery/part07/rule_kinds.rst:456
 msgid "필수 인자 (팝업에서 선택하거나 입력)"
-msgstr "Required parameter (select in popup or enter value)"
+msgstr "Required arguments (select in a popup or enter a value)"
 
-# 5bed58cfe57849aa8eea317bd790451a
-#: ../../discovery/part07/rule_kinds.rst:457
-msgid "join 대상 데이터셋: 같은 데이터플로우 내의 Wrangled 데이터셋"
-msgstr "Target dataset of join: Wrangled dataset in the same dataflow"
-
-# f223145832fc477d85a81641307d2fb8
+# 45c905923fb843bd83029504252eecdc
 #: ../../discovery/part07/rule_kinds.rst:458
-msgid "join 결과로 나올 컬럼들 (토글)"
-msgstr "Columns to be displayed in join results (toggle)"
+msgid "join 대상 데이터셋: 같은 데이터플로우 내의 Wrangled 데이터셋"
+msgstr "Dataset to join: A wrangled dataset in the same dataflow"
 
-# da6862ed77964b56b85baded2cbdcca1
+# ef3667a5e2124648b2d37e9c6b3dc34d
 #: ../../discovery/part07/rule_kinds.rst:459
-msgid "join 키: 여러 개 입력 가능"
-msgstr "Join key: Multiple values may be entered"
+msgid "join 결과로 나올 컬럼들 (토글)"
+msgstr "Columns to join (toggle)"
 
-# 647fa3d4bf8c42258034abec48baef9f
+# 2360b9ea471946898afd4d64441f4be4
 #: ../../discovery/part07/rule_kinds.rst:460
+msgid "join 키: 여러 개 입력 가능"
+msgstr "Join keys: Multiple values may be entered"
+
+# e6c6f5f045ff4696ad90926550e46811
+#: ../../discovery/part07/rule_kinds.rst:461
 msgid "join 타입: 현재 내부조인만 지원"
-msgstr "Join type: Only internal join supported"
+msgstr "Join type: Only inner join supported now"
 
-# 7e85dde43c2c4fedbeb5c589b3140f8a
-#: ../../discovery/part07/rule_kinds.rst:464
-msgid "대상 데이터셋과 연결해서 컬럼들을 만들어 냅니다."
-msgstr "Columns are connected by joining to the target dataset."
-
-# 161d5e5494764419a06d8d60bc0c7ee3
+# f4e98edffe9c438a8cc4e243942a0b4f
 #: ../../discovery/part07/rule_kinds.rst:465
-msgid "기본적으로 관계형 데이터베이스의 join과 같습니다."
-msgstr "This rule is the same as "join" in a relational database."
+msgid "대상 데이터셋과 연결해서 컬럼들을 만들어 냅니다."
+msgstr "Joins to the target dataset to create new columns."
 
-# 4973141168b44eada354e72be519386d
+# 89af01185a7348119046c19cf2cc8201
 #: ../../discovery/part07/rule_kinds.rst:466
-msgid "결과보기 버튼으로 실제 룰적용 전에 join 결과를 볼 수 있습니다."
-msgstr "The results before implementing the rule can be viewed by clicking the View Results button."
+msgid "기본적으로 관계형 데이터베이스의 ``join``\\과 같습니다."
+msgstr "This rule is the same as ``join`` used by a relational database."
 
-# 86b4ee8c52914890af9e39384fac968e
-#: ../../discovery/part07/rule_kinds.rst:470
+# 1e804af4c69e4973b18244a43d569746
+#: ../../discovery/part07/rule_kinds.rst:467
+msgid "**결과보기** 버튼으로 실제 룰적용 전에 join 결과를 볼 수 있습니다."
+msgstr "The results can be previewed by clicking the **Show result** button."
+
+# b6f96bb8ba214710957d46aa8ec437b6
+#: ../../discovery/part07/rule_kinds.rst:471
 msgid "결과로 나올 컬럼에 join 키가 꼭 포함되어있어야 합니다."
-msgstr "The join key must be included in columns to be displayed as results."
+msgstr "The join keys must be included in the columns to join."
 
-# 1e93d0d6c74b405c9aec33813e41fa5e
-#: ../../discovery/part07/rule_kinds.rst:476
+# 7482ca465d7945839a0064ebb2b646a1
+#: ../../discovery/part07/rule_kinds.rst:477
 msgid "union"
 msgstr "union"
 
-# 545326a2c0944190b82eb781fc26ad2e
-#: ../../discovery/part07/rule_kinds.rst:480
-msgid "**union** 역시 `join`_\\처럼 별도의 팝업창을 갖습니다."
-msgstr "Similar to `join`_, **union** has a separate popup."
+# 36a1cee958514cdca968da1ad2d12636
+#: ../../discovery/part07/rule_kinds.rst:481
+msgid "union 역시 `join`_\\처럼 별도의 팝업창을 갖습니다."
+msgstr "Similar to `join`_, union has a separate popup."
 
-# aa8887fc0dfa4593922883bd703e5172
-#: ../../discovery/part07/rule_kinds.rst:482
+# 8de7fffbbf92432b821cb7ff58fa8d9c
+#: ../../discovery/part07/rule_kinds.rst:483
 msgid "필수 인자(팝업에서 선택)"
-msgstr "Required parameter (select in popup)"
+msgstr "Required arguments (select in a popup)"
 
-# 4707558fa079419c9f32f609aac64920
-#: ../../discovery/part07/rule_kinds.rst:484
-msgid "union 대상 데이터셋: 다수 선택가능"
-msgstr "Target dataset of union: More than one may be selected"
+# 601fb4cf894e456086991f00f47522f4
+#: ../../discovery/part07/rule_kinds.rst:485
+msgid "union 대상 데이터셋: 다수 선택 가능"
+msgstr "Datasets to union: Multiple selections allowed."
 
-# ad17dcb372004eb3b1d4ba8159a7db4a
-#: ../../discovery/part07/rule_kinds.rst:488
-msgid "지정된 데이터셋의 내용도 함께 처리합니다."
-msgstr "The content of the designated dataset is also processed."
-
-# 1d862a4aff3149e6b26dd0f4ca2759ff
+# 95858d6c07e54b2d92fa0266024f7e46
 #: ../../discovery/part07/rule_kinds.rst:489
-msgid "기본적으로 관계형 데이터베이스의 union all과 같습니다."
-msgstr "This rule is the same as "union all" in a relational database."
+msgid "지정된 데이터셋의 내용도 함께 처리합니다."
+msgstr "The content of the selected datasets is also processed."
 
-# 66b662e3a52148a09cdf367eff74eaf2
-#: ../../discovery/part07/rule_kinds.rst:493
-msgid "대상 데이터셋은 **union**\\을 수행하는 데이터셋과 컬럼명과 타입, 그리고 컬럼 개수가 일치해야합니다."
-msgstr "The target dataset must coincide with the dataset to which **union** is performed in terms of column name, type, and number of columns."
+# 11ae418057ff498cb8658cf606637b3a
+#: ../../discovery/part07/rule_kinds.rst:490
+msgid "기본적으로 관계형 데이터베이스의 ``union all``\\과 같습니다."
+msgstr "This rule is the same as ``union all`` used by a relational database."
 
-# a032075600e1429a8e014ffc372d3bdf
-#: ../../discovery/part07/rule_kinds.rst:499
+# 5907f3442c364d78a1399c1ca68b3f4f
+#: ../../discovery/part07/rule_kinds.rst:494
+msgid "대상 데이터셋은 union을 수행하는 데이터셋과 컬럼명과 타입, 그리고 컬럼 개수가 일치해야합니다."
+msgstr "The target datasets must coincide with the dataset that unions them in terms of column name, type, and number of columns."
+
+# 3fed9f8b9ea644e0a9009fc57870da58
+#: ../../discovery/part07/rule_kinds.rst:500
 msgid "window"
 msgstr "window"
 
-# 7ad48b018e33495f986220eb8cf44589
-#: ../../discovery/part07/rule_kinds.rst:507
-msgid "수식: Window 함수 리스트"
-msgstr "Expression: Window function list"
-
-# 07b7a20260cd43a5b6f4870486fb60f1
+# e0f0382c57bb4b50b92a6bf4400ce97a
 #: ../../discovery/part07/rule_kinds.rst:508
-msgid "그룹화 기준: 이 그룹안에서 행의 순서가 만들어짐. 없으면 그냥 전체적으로 정렬 기준 적용"
-msgstr "Grouping basis: Row order created within this group. Alignment criteria applied if grouping basis is not available."
+msgid "수식: Window 함수 리스트"
+msgstr "Expression: A list of window functions"
 
-# 6f8f0169b1a649e78d9df52d5efa2d17
+# 254a33aa38b9470a803b48c9451c9de3
 #: ../../discovery/part07/rule_kinds.rst:509
+msgid "그룹화 기준: 이 그룹안에서 행의 순서가 만들어짐. 없으면 그냥 전체적으로 정렬 기준 적용"
+msgstr "Group by: A list of columns that group values by. Row order created within each group. If not specified, the whole data is sorted based on the Sort by setting."
+
+# 2af3b78bc5114bc0989a300b99c384aa
+#: ../../discovery/part07/rule_kinds.rst:510
 msgid "정렬 기준: 이 컬럼의 순서로 전후 관계가 만들어짐. 없으면 그냥 데이터가 입력되는 순서"
-msgstr "Alignment criteria: Creates before and after relations based on the selected column. Order of data input applied if alignment criteria is not available."
+msgstr "Sort by: Specifies columns by which the order of rows is determined. If not specified, data is sorted in the order of being inputted."
 
-# c9527c6a3d1d40dc802bcb3413d5a93b
-#: ../../discovery/part07/rule_kinds.rst:513
-msgid "앞의 행, 뒤의 행의 내용을 토대로 수식을 계산해서 컬럼값을 생성합니다."
-msgstr "Column values are created using content of preceding and following rules."
-
-# 38074e5b1710487caf0cbff735824147
+# 5cd82a551aa545dcb6cb9dfe816f7a34
 #: ../../discovery/part07/rule_kinds.rst:514
+msgid "앞의 행, 뒤의 행의 내용을 토대로 수식을 계산해서 컬럼값을 생성합니다."
+msgstr "Column values are created by calculating with the values of the preceding and following rows."
+
+# 4f12f6e8769f44ac92f53aaf0bffd9c3
+#: ../../discovery/part07/rule_kinds.rst:515
 msgid "그룹화 기준내에서 정렬 기준으로 순서를 정합니다."
-msgstr "The order is determined based on the alignment criteria within the grouping basis."
+msgstr "The rows are grouped first and then sorted within each group in the specified column order."
 
-# 1ffae85da5b3488eb63e4d1473841d02
-#: ../../discovery/part07/rule_kinds.rst:516
-msgid "예를 들어, 위의 예시에서는 주(state)별로 앞뒤 3개씩의 행을 포함해서 평균값을 계산합니다."
-msgstr "In the above example, the average value is calculated by state using the three preceding and following rows. "
-
-# b4313c907a9f4461bac0356ea9ad6d8a
+# cdf0a6617a4049b9af048764747e9886
 #: ../../discovery/part07/rule_kinds.rst:517
+msgid "예를 들어, 위의 예시에서는 주(state)별로 앞뒤 3개씩의 행을 포함해서 평균값을 계산합니다."
+msgstr "In the above example, each row value is averaged with the three preceding and following rows within the same State group."
+
+# 0a62514af1114c148d2c3e479182fb75
+#: ../../discovery/part07/rule_kinds.rst:518
 msgid "화면상에서는 바로 앞에 보인다고 해도, 주가 같지 않으면 더 앞의 행을 보게됩니다."
 msgstr "If an immediately preceding row does not have the same state, earlier rows are searched."
 
-# 45fe3abfd76c4ca3a75f92e487e93f9d
-#: ../../discovery/part07/rule_kinds.rst:519
+# 6a0acdd029b54b8d98b88154881f0044
+#: ../../discovery/part07/rule_kinds.rst:520
 msgid "현재 지원하는 Window 함수는 다음과 같습니다."
-msgstr "The currently available Window functions are as follows."
+msgstr "The currently available window functions are as follows:"
 
-# 4e7c0ef63f534e16aab8f547489e8a49
-#: ../../discovery/part07/rule_kinds.rst:521
+# cefd792c023a42b48818f11d0b4ec256
+#: ../../discovery/part07/rule_kinds.rst:522
 msgid "row_number()"
 msgstr "row_number()"
 
-# 985e61dac22a4d65b19a5ed0620eee6b
-#: ../../discovery/part07/rule_kinds.rst:522
+# 9ecad42eddcd444ebef55528b83fdd87
+#: ../../discovery/part07/rule_kinds.rst:523
 msgid "lead(*colname*, *int*)"
 msgstr "lead(*colname*, *int*)"
 
-# 9769d55e55d544bd81694cf431278515
-#: ../../discovery/part07/rule_kinds.rst:523
+# 1cc73f71cf4d4c26886e6d0b7e72c775
+#: ../../discovery/part07/rule_kinds.rst:524
 msgid "lag(*colname*, *int*)"
 msgstr "lag(*colname*, *int*)"
 
-# be16ca291b0c4d509bfa68b2b35a321e
-#: ../../discovery/part07/rule_kinds.rst:524
+# 9e78f1c6b65f439e8e8e4d852fdffa5b
+#: ../../discovery/part07/rule_kinds.rst:525
 msgid "rolling_sum(*colname*, *int*, *int*)"
 msgstr "rolling_sum(*colname*, *int*, *int*)"
 
-# 9e2c723e6a3b4e4a96d99314912d5fda
-#: ../../discovery/part07/rule_kinds.rst:525
+# 0c253196baf84a38846d52fbe977998b
+#: ../../discovery/part07/rule_kinds.rst:526
 msgid "rolling_avg(*colname*, *int*, *int*)"
 msgstr "rolling_avg(*colname*, *int*, *int*)"
 
-# fecbd579f96b4c19b61bbc65f9d9b6c4
-#: ../../discovery/part07/rule_kinds.rst:527
+# 31bf1107032d46978b946fe04be7f631
+#: ../../discovery/part07/rule_kinds.rst:528
 msgid "Window 함수와 더불어 Aggregation 함수도 사용할 수 있습니다."
-msgstr "In addition to Window functions, Aggregation functions may be used."
+msgstr "In addition to window functions, aggregate functions may be used."
 
-# 894e242d55514a5d8831f1d256aa5398
-#: ../../discovery/part07/rule_kinds.rst:531
+# 5e2d90e89d3c4003806752c56c30c95b
+#: ../../discovery/part07/rule_kinds.rst:532
 msgid "Window 함수 사용시, 인자 수가 부족하거나 한 상황에 대해 적절한 에러메시지가 제공되지 않습니다. 유의하시기 바랍니다."
-msgstr "When using Window functions, note that error messages may not be properly displayed in the event of insufficient parameters."
+msgstr "When using window functions, error messages may not be properly displayed in the event of insufficient arguments."
 
-# 32cb6bfa464540d1a572659afeda49b7
-#~ msgid ""
-#~ "이러한 룰과 더불어 각종 수식 함수가 제공함으로써, "
-#~ "데이터 프리퍼레이션은 일반적인 데이터 정제에 필요한 대부분의"
-#~ " 기능들을 지원하고 있습니다."
+# de0f031a64764d4eb4f75191f755b6fc
+#~ msgid "일반적으로 컬럼명이 길어지기 때문에, 뒤이어 전체 `rename`_\\을 필요로하는 경우가 많습니다."
 #~ msgstr ""
 

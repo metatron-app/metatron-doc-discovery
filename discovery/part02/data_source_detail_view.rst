@@ -3,7 +3,7 @@
 
 데이터 소스 관리 홈에 열거된 데이터 소스 중 하나를 클릭하면 해당 데이터 소스에 관한 다양한 속성을 확인할 수 있습니다. 아래 각 영역을 확인할 때에는 각 데이터 소스가 Metatron의 내부 Druid 데이터베이스에 하나의 테이블로 저장되며, Druid의 시계열 특성 때문에 반드시 타임스탬프 컬럼을 포함하게 됨을 유의하십시오.
 
-	.. figure:: /_static/img/discovery/part02/manage_data_sources_02.png
+	.. figure:: /_static/img/discovery/part02/manage_datasource_02.png
 
 상단 공통 영역
 ===================================
@@ -35,7 +35,7 @@
 
 이 영역에서는 해당 데이터 소스를 어느 워크스페이스에서 사용할 수 있는지를 확인·설정합니다.
 
-	.. figure:: /_static/img/discovery/part02/manage_data_source_04.png
+	.. figure:: /_static/img/discovery/part02/manage_datasource_04.png
 
 	#. **모든 워크스페이스에 데이터 소스를 사용하도록 허용:** 이 확인란에 체크하면 모든 워크스페이스에서 해당 데이터 소스를 사용할 수 있습니다.
 	#. **수정:** 해당 데이터 소스의 사용을 허용할 특정 워크스페이스를 지정할 때 사용합니다. 해당 데이터 소스를 오픈 데이터로 지정하면 이 버튼이 사라집니다.
@@ -63,7 +63,7 @@
 
 컬럼들의 명칭 및 타입 수정을 하는 사용자 인터페이스를 제공합니다. 
 
-	.. figure:: /_static/img/discovery/part02/manage_data_source_06.png
+	.. figure:: /_static/img/discovery/part02/manage_datasource_06.png
 
 	#. **역할:** 해당 컬럼 차원값/측정값의 여부를 표시합니다.
 	#. **물리이름:** 해당 컬럼의 실제 명칭을 표시합니다.
@@ -80,17 +80,17 @@
 
 해당 데이터 소스의 시간에 따른 트랜잭션량 추이를 보여줍니다.
 
-	.. figure:: /_static/img/discovery/part02/manage_data_source_07.png
+	.. figure:: /_static/img/discovery/part02/manage_datasource_07.png
 
 **데이터 사이즈 변경**
 
 해당 데이터 소스의 시간에 따른 용량 추이를 보여줍니다.
 
-	.. figure:: /_static/img/discovery/part02/manage_data_source_08.png
+	.. figure:: /_static/img/discovery/part02/manage_datasource_08.png
 
 **쿼리사용분포(지난 1주일 동안)**
 
-	.. figure:: /_static/img/discovery/part02/manage_data_source_09.png
+	.. figure:: /_static/img/discovery/part02/manage_datasource_09.png
 
 	* **사용자별 쿼리사용 분포 (지난 1주일 동안):** 지난 한 주간 쿼리를 수행한 사용자별로 분류하여 그래프로 보여줍니다.
 	* **응답 시간별 쿼리사용 분포 (지난 1주일 동안):** 지난 한 주간 쿼리를 수행한 소요시간별로 분류하여 그래프로 보여줍니다.
@@ -99,7 +99,7 @@
 
 수행된 각 쿼리에 대한 상세 이력을 확인할 수 있습니다.
 
-	.. figure:: /_static/img/discovery/part02/manage_data_source_10.png
+	.. figure:: /_static/img/discovery/part02/manage_datasource_10.png
 
 	#. **날짜:** 확인하고자 하는 쿼리들의 실행 시간대를 설정합니다.
 	#. **쿼리 타입:** 실행한 쿼리를 타입별로 선별하여 출력합니다.

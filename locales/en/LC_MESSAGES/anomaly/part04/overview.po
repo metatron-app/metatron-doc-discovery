@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,24 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# 20b652fd908048bcb12d18a9c904ff38
+# d6b132a08f054cb29639f207c70b1144
 #: ../../anomaly/part04/overview.rst:2
 msgid "통계 개요"
 msgstr ""
 
-# c5eec9c3e44943e6bb2e42ab554f1eef
+# 70f46814715945f9a79f271137dccec3
 #: ../../anomaly/part04/overview.rst:3
 msgid ""
 "발생한 알람들을 한눈에 쉽게 알아보기 위해 중요도 기준 표현, 발생 시기 기준 표현, 알람룰 기준 표현 등의 다양한 방식으로 "
 "알람발생 통계정보를 표현한다. 기간을 변경하여 확인할 수 있다. 나의 알람 뿐만 아니라 전체 알람도 확인할 수 있다."
 msgstr ""
 
-# cb67b40a58564eb1b788e8e8ceffe9fe
+# 346f710c54f8418993154f692131df2d
 #: ../../anomaly/part04/overview.rst:10
 msgid "Figure 1. statistics my alarms"
 msgstr ""
 
-# 717e8fa0bf5d4721a8ceed8e6c6528b0
+# 5cacc333045c4c16bb6b18de8f029d48
 #: ../../anomaly/part04/overview.rst:16
 msgid "Figure 2. statistics other interval"
 msgstr ""

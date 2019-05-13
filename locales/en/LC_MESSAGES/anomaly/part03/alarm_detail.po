@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-07 01:18+0900\n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,22 +18,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-# bba8db640ef344f2bf4edad300029ee4
+# e3a15c6ef6ca4fb38c62df15d1d88876
 #: ../../anomaly/part03/alarm_detail.rst:2
 msgid "알람 상세"
 msgstr ""
 
-# 0bfcbd42554a49c99f86cf098b94cd75
+# 3b4fc487d2824395a0035ec58f78aa6e
 #: ../../anomaly/part03/alarm_detail.rst:3
 msgid "발생한 알람의 중요도, 발생시기, 발생 규칙, 다른 알람들의 이력, 발생에 이유 등을 상세하게 표현한다."
 msgstr ""
 
-# f3da4c85aeda4e9b870681058abef7cb
+# b121d9bb1676476cb500ba5fce45f5f1
 #: ../../anomaly/part03/alarm_detail.rst:9
 msgid "Figure 1. alarm detail"
 msgstr ""
 
-# 752208c4d7a44aa597341ac15be8cf0f
+# 231d6ad7771c47d3b06594a8433906bc
 #: ../../anomaly/part03/alarm_detail.rst:16
 msgid "Figure 2. alarm detail table view"
 msgstr ""
