@@ -18,12 +18,14 @@ This repository is for documenting about [metatron-discovery](https://github.com
    * Location for all the image files is `/_static/img/part00`
   
 * Build documents using [Sphinx](http://sphinx-doc.org/)
-  ```sh
-    make html
+  ```sh    
+    make all
   ```
 * HTML files are located in `_build/html/`.
 * Copy built files to `docs/` for publishing [GitHub Pages](https://pages.github.com/)
   ```sh
+    # Delete /docs first if you changed a lot
+    # rm -rf docs
     cp -r _build/html/* docs/
   ```
 * Update
