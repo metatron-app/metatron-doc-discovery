@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>워크벤치 사용하기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>워크벤치 사용하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -17,21 +17,13 @@
   
 
   
-  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
-  
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-    
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
+  
+  
     
 
   
+
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -40,16 +32,21 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="데이터 프리퍼레이션" href="../part07/index.html" />
     <link rel="prev" title="워크벤치 만들기" href="06_02-create_a_workbench.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
+
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search">
           
 
           
@@ -66,7 +63,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -91,7 +88,8 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://ucrystal.github.io/metatron-doc-discovery-en">VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
 <ul class="current">
@@ -123,13 +121,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
-</ul>
-<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">얄람 룰</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">통계</a></li>
 </ul>
 
             
@@ -204,12 +195,12 @@
 <img alt="../../_images/workbench_basic.png" src="../../_images/workbench_basic.png" />
 </div>
 <ol class="arabic simple">
-<li><p>기본 정보 영역(<a class="reference internal" href="#workbench-use-1"><span class="std std-ref">기본 정보 영역</span></a> 참조)</p></li>
-<li><p>스키마 및 테이블 영역(<a class="reference internal" href="#workbench-use-2"><span class="std std-ref">스키마 및 테이블 영역</span></a> 참조)</p></li>
-<li><p>쿼리 에디터 영역(<a class="reference internal" href="#workbench-use-3"><span class="std std-ref">쿼리 에디터 영역</span></a> 참조)</p></li>
-<li><p>쿼리 결과 영역(<a class="reference internal" href="#workbench-use-4"><span class="std std-ref">쿼리 결과 영역</span></a> 참조)</p></li>
-<li><p>추가 도구 영역(<a class="reference internal" href="#workbench-use-5"><span class="std std-ref">추가 도구 영역</span></a> 참조)</p></li>
-<li><p>스키마 브라우저(<a class="reference internal" href="#workbench-use-6"><span class="std std-ref">스키마 브라우저</span></a> 참조)</p></li>
+<li>기본 정보 영역(<a class="reference internal" href="#workbench-use-1"><span class="std std-ref">기본 정보 영역</span></a> 참조)</li>
+<li>스키마 및 테이블 영역(<a class="reference internal" href="#workbench-use-2"><span class="std std-ref">스키마 및 테이블 영역</span></a> 참조)</li>
+<li>쿼리 에디터 영역(<a class="reference internal" href="#workbench-use-3"><span class="std std-ref">쿼리 에디터 영역</span></a> 참조)</li>
+<li>쿼리 결과 영역(<a class="reference internal" href="#workbench-use-4"><span class="std std-ref">쿼리 결과 영역</span></a> 참조)</li>
+<li>추가 도구 영역(<a class="reference internal" href="#workbench-use-5"><span class="std std-ref">추가 도구 영역</span></a> 참조)</li>
+<li>스키마 브라우저(<a class="reference internal" href="#workbench-use-6"><span class="std std-ref">스키마 브라우저</span></a> 참조)</li>
 </ol>
 </div></blockquote>
 <div class="section" id="workbench-use-1">
@@ -220,9 +211,9 @@
 <img alt="../../_images/workbench_lnb_header.png" src="../../_images/workbench_lnb_header.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>이름:</strong> 워크벤치의 이름입니다. 클릭하여 이름을 변경할 수 있습니다.</p></li>
-<li><p><strong>데이터 커넥션:</strong> 해당 워크벤치와 연결되어 있는 데이터 커넥션의 이름입니다. <img alt="icon_exclamation" src="../../_images/icon_exclamation.png" /> 아이콘을 클릭하면 자세한 정보가 나타납니다.</p></li>
-<li><p><img alt="icon_folding" src="../../_images/icon_folding.png" /> : 패널을 접고 펼치는 UI 버튼입니다</p></li>
+<li><strong>이름:</strong> 워크벤치의 이름입니다. 클릭하여 이름을 변경할 수 있습니다.</li>
+<li><strong>데이터 커넥션:</strong> 해당 워크벤치와 연결되어 있는 데이터 커넥션의 이름입니다. <img alt="icon_exclamation" src="../../_images/icon_exclamation.png" /> 아이콘을 클릭하면 자세한 정보가 나타납니다.</li>
+<li><img alt="icon_folding" src="../../_images/icon_folding.png" /> : 패널을 접고 펼치는 UI 버튼입니다</li>
 </ol>
 </div></blockquote>
 </div>
@@ -234,11 +225,11 @@
 <img alt="../../_images/workbench_lnb.png" src="../../_images/workbench_lnb.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>데이터베이스 이름:</strong> 현재 선택된 데이터베이스의 이름을 출력해줍니다. 해당 워크벤치에 등록된 데이터 커넥션의 첫 번째 데이터베이스를 기본적으로 선택됩니다. 클릭하면 데이터 커넥션에 포함된 모든 데이터베이스가 조회되며, 그 중에 하나를 선택하면 해당 데이터베이스로 변경됩니다.</p></li>
-<li><p><strong>스키마 브라우저:</strong> 선택된 데이터베이스의 테이블 목록과 각 테이블에 속한 모든 컬럼 및 레코드 정보를 확인할 수 있는 스키마 브라우저 화면이 팝업됩니다.</p></li>
-<li><p><strong>테이블 검색:</strong> 선택된 데이터베이스에 등록된 테이블을 이름으로 검색합니다.</p></li>
-<li><p><strong>테이블 이름:</strong> 필요한 데이터를 담은 테이블을 선택하면, 오른쪽 쿼리 에디터에 해당 테이블에 대한 <code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">\*</span> <span class="pre">FROM</span> <span class="pre">{table</span> <span class="pre">name}</span></code> 쿼리가 자동으로 입력됩니다.</p></li>
-<li><p><strong>컬럼 목록:</strong> 해당 테이블에 속한 모든 컬럼 이름과 각각의 데이터 타입이 나타납니다. 컬럼 이름을 클릭하면 쿼리 에디터에 자동으로 삽입됩니다.</p></li>
+<li><strong>데이터베이스 이름:</strong> 현재 선택된 데이터베이스의 이름을 출력해줍니다. 해당 워크벤치에 등록된 데이터 커넥션의 첫 번째 데이터베이스를 기본적으로 선택됩니다. 클릭하면 데이터 커넥션에 포함된 모든 데이터베이스가 조회되며, 그 중에 하나를 선택하면 해당 데이터베이스로 변경됩니다.</li>
+<li><strong>스키마 브라우저:</strong> 선택된 데이터베이스의 테이블 목록과 각 테이블에 속한 모든 컬럼 및 레코드 정보를 확인할 수 있는 스키마 브라우저 화면이 팝업됩니다.</li>
+<li><strong>테이블 검색:</strong> 선택된 데이터베이스에 등록된 테이블을 이름으로 검색합니다.</li>
+<li><strong>테이블 이름:</strong> 필요한 데이터를 담은 테이블을 선택하면, 오른쪽 쿼리 에디터에 해당 테이블에 대한 <code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">\*</span> <span class="pre">FROM</span> <span class="pre">{table</span> <span class="pre">name}</span></code> 쿼리가 자동으로 입력됩니다.</li>
+<li><strong>컬럼 목록:</strong> 해당 테이블에 속한 모든 컬럼 이름과 각각의 데이터 타입이 나타납니다. 컬럼 이름을 클릭하면 쿼리 에디터에 자동으로 삽입됩니다.</li>
 </ol>
 </div></blockquote>
 </div>
@@ -250,18 +241,18 @@
 <img alt="../../_images/workbench_query_editor.png" src="../../_images/workbench_query_editor.png" />
 </div>
 <ol class="arabic simple">
-<li><p><img alt="icon_arrow" src="../../_images/icon_arrow.png" /> : 탭이 너무 많을 경우 탭 영역을 좌우로 스크롤 할수 있는 버튼입니다. 탭의 개수가 많지 않은 경우 나타나지 않습니다.</p></li>
-<li><p><strong>탭:</strong> 쿼리 관리를 위해 여러 개의 탭으로 나누어서 쿼리를 실행하거나 저장할 수 있습니다. <img alt="icon_more" src="../../_images/icon_more1.png" /> 버튼을 클릭 시 탭 제목의 수정과 탭 삭제가 가능합니다.</p></li>
-<li><p><img alt="icon_plus" src="../../_images/icon_plus1.png" /> : 이 버튼을 클릭하면 새로운 탭이 추가됩니다.</p></li>
-<li><p><img alt="icon_full" src="../../_images/icon_full.png" /> : 이 버튼을 클릭하면 쿼리 에디터 영역을 전체화면으로 확장하거나 축소 할 수 있습니다.</p></li>
-<li><p><strong>쿼리 행:</strong> 쿼리 코드의 행 번호를 보여줍니다.</p></li>
-<li><p><strong>에디터 화면:</strong> 이 곳에 쿼리 문을 작성합니다. 멀티 쿼리의 실행 및 단일 쿼리의 실행이 가능합니다. <code class="docutils literal notranslate"><span class="pre">;</span></code>을 쿼리 문이 끝날 때마다 삽입하면 쿼리를 나눠서 실행이 가능합니다. 자동완성 기능이 제공됩니다.</p></li>
-<li><p><strong>쿼리 전체 실행:</strong> 쿼리 에디터에 작성된 전체 쿼리를 실행합니다. (단축키: Ctrl + Enter)</p></li>
-<li><p><strong>쿼리 부분 실행:</strong> 쿼리 문 안에서 마우스가 위치된 특정 쿼리 또는 드래그하여 선택된 영역만 쿼리를 실행합니다. (단축키: Command + Enter)</p></li>
-<li><p><strong>CLEAR SQL:</strong> 쿼리 문을 모두 삭제 합니다.</p></li>
-<li><p><strong>SQL BEAUTIFIER:</strong> 이 버튼을 클릭하면 작성된 쿼리 문이 쿼리 문법 표준에 맞게 정렬됩니다.</p></li>
-<li><p><strong>Query History:</strong> 쿼리 에디터에서 수행한 과거 목록을 조회할수 있으며, 쿼리 선택 시 쿼리문이 쿼리 에디터에 추가됩니다.</p></li>
-<li><p><strong>Query Editor 단축키:</strong> 쿼리 에디터에서 사용가능한 단축키 목록입니다.</p></li>
+<li><img alt="icon_arrow" src="../../_images/icon_arrow.png" /> : 탭이 너무 많을 경우 탭 영역을 좌우로 스크롤 할수 있는 버튼입니다. 탭의 개수가 많지 않은 경우 나타나지 않습니다.</li>
+<li><strong>탭:</strong> 쿼리 관리를 위해 여러 개의 탭으로 나누어서 쿼리를 실행하거나 저장할 수 있습니다. <img alt="icon_more" src="../../_images/icon_more3.png" /> 버튼을 클릭 시 탭 제목의 수정과 탭 삭제가 가능합니다.</li>
+<li><img alt="icon_plus" src="../../_images/icon_plus1.png" /> : 이 버튼을 클릭하면 새로운 탭이 추가됩니다.</li>
+<li><img alt="icon_full" src="../../_images/icon_full.png" /> : 이 버튼을 클릭하면 쿼리 에디터 영역을 전체화면으로 확장하거나 축소 할 수 있습니다.</li>
+<li><strong>쿼리 행:</strong> 쿼리 코드의 행 번호를 보여줍니다.</li>
+<li><strong>에디터 화면:</strong> 이 곳에 쿼리 문을 작성합니다. 멀티 쿼리의 실행 및 단일 쿼리의 실행이 가능합니다. <code class="docutils literal notranslate"><span class="pre">;</span></code>을 쿼리 문이 끝날 때마다 삽입하면 쿼리를 나눠서 실행이 가능합니다. 자동완성 기능이 제공됩니다.</li>
+<li><strong>쿼리 전체 실행:</strong> 쿼리 에디터에 작성된 전체 쿼리를 실행합니다. (단축키: Ctrl + Enter)</li>
+<li><strong>쿼리 부분 실행:</strong> 쿼리 문 안에서 마우스가 위치된 특정 쿼리 또는 드래그하여 선택된 영역만 쿼리를 실행합니다. (단축키: Command + Enter)</li>
+<li><strong>CLEAR SQL:</strong> 쿼리 문을 모두 삭제 합니다.</li>
+<li><strong>SQL BEAUTIFIER:</strong> 이 버튼을 클릭하면 작성된 쿼리 문이 쿼리 문법 표준에 맞게 정렬됩니다.</li>
+<li><strong>Query History:</strong> 쿼리 에디터에서 수행한 과거 목록을 조회할수 있으며, 쿼리 선택 시 쿼리문이 쿼리 에디터에 추가됩니다.</li>
+<li><strong>Query Editor 단축키:</strong> 쿼리 에디터에서 사용가능한 단축키 목록입니다.</li>
 </ol>
 </div></blockquote>
 </div>
@@ -275,33 +266,40 @@
 <img alt="../../_images/workbench_query_result_ing.png" src="../../_images/workbench_query_result_ing.png" />
 </div>
 <ol class="arabic">
-<li><p><strong>쿼리 결과 탭:</strong> 다중 쿼리 수행시 쿼리당 하나의 결과 탭이 생성되며 쿼리 수행 중인 탭일 경우 탭 제목에 'Loading' 메시지가 표시됩니다.</p></li>
-<li><p><strong>쿼리 로그:</strong> 쿼리 수행 로그를 보여주는 영역입니다. Hive 타입의 커넥션일 경우 Hive Job Log가 추가적으로 표시됩니다.</p></li>
-<li><p><strong>쿼리 수행 취소:</strong> 수행중인 쿼리를 취소합니다. DB 타입별 취소에 걸리는 시간이 다소 차이날 수 있습니다.</p></li>
-<li><p><strong>쿼리 수행 단계:</strong> 쿼리 수행의 총 5가지 단계 중 현재 단계를 표시합니다.</p>
+<li><p class="first"><strong>쿼리 결과 탭:</strong> 다중 쿼리 수행시 쿼리당 하나의 결과 탭이 생성되며 쿼리 수행 중인 탭일 경우 탭 제목에 'Loading' 메시지가 표시됩니다.</p>
+</li>
+<li><p class="first"><strong>쿼리 로그:</strong> 쿼리 수행 로그를 보여주는 영역입니다. Hive 타입의 커넥션일 경우 Hive Job Log가 추가적으로 표시됩니다.</p>
+</li>
+<li><p class="first"><strong>쿼리 수행 취소:</strong> 수행중인 쿼리를 취소합니다. DB 타입별 취소에 걸리는 시간이 다소 차이날 수 있습니다.</p>
+</li>
+<li><p class="first"><strong>쿼리 수행 단계:</strong> 쿼리 수행의 총 5가지 단계 중 현재 단계를 표시합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Getting connection</p></li>
-<li><p>Creating statement</p></li>
-<li><p>Executing query</p></li>
-<li><p>Getting result set</p></li>
-<li><p>Done!</p></li>
+<li>Getting connection</li>
+<li>Creating statement</li>
+<li>Executing query</li>
+<li>Getting result set</li>
+<li>Done!</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>다중 쿼리 순서 표시:</strong> 다중 쿼리 수행 시 현재 몇 번째 쿼리를 수행 중인지 표시합니다.</p></li>
-<li><p><strong>표시 전환 탭:</strong> 쿼리 수행 로그 탭과 쿼리 결과 탭을 전환하는 버튼입니다.</p></li>
-<li><p><strong>쿼리 수행 상태:</strong> 3가지 쿼리 수행 상태를 표시합니다.</p>
+<li><p class="first"><strong>다중 쿼리 순서 표시:</strong> 다중 쿼리 수행 시 현재 몇 번째 쿼리를 수행 중인지 표시합니다.</p>
+</li>
+<li><p class="first"><strong>표시 전환 탭:</strong> 쿼리 수행 로그 탭과 쿼리 결과 탭을 전환하는 버튼입니다.</p>
+</li>
+<li><p class="first"><strong>쿼리 수행 상태:</strong> 3가지 쿼리 수행 상태를 표시합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>쿼리 수행중</p></li>
-<li><p>쿼리 수행 실패</p></li>
-<li><p>쿼리 수행 취소</p></li>
+<li>쿼리 수행중</li>
+<li>쿼리 수행 실패</li>
+<li>쿼리 수행 취소</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>쿼리 수행 시작 시각:</strong> 쿼리 수행 시작 시각을 표시합니다.</p></li>
-<li><p><strong>쿼리 수행 경과 시간:</strong> 쿼리 수행 경과 시간을 표시합니다.</p></li>
+<li><p class="first"><strong>쿼리 수행 시작 시각:</strong> 쿼리 수행 시작 시각을 표시합니다.</p>
+</li>
+<li><p class="first"><strong>쿼리 수행 경과 시간:</strong> 쿼리 수행 경과 시간을 표시합니다.</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
@@ -312,18 +310,18 @@
 <img alt="../../_images/workbench_query_result_complete.png" src="../../_images/workbench_query_result_complete.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>쿼리 결과 탭:</strong> 다중 쿼리 수행시 쿼리당 하나의 결과 탭이 생성되며 쿼리 수행 중인 탭일 경우 탭 제목에 'Loading' 메시지가 표시됩니다.</p></li>
-<li><p><strong>데이터 내역:</strong> 쿼리 실행에 의해 출력된 데이터 내역입니다. 출력된 데이터는 클립보드에 복사하여 활용할 수도 있습니다.</p></li>
-<li><p><strong>표시 전환 탭:</strong> 쿼리 수행 로그 탭과 쿼리 결과 탭을 전환하는 버튼입니다.</p></li>
-<li><p><strong>컬럼 데이터 검색:</strong> 결과 내 컬럼 및 값을 검색할 수 있습니다.</p></li>
-<li><p><strong>차트 미리보기:</strong> 쿼리 결과를 이용하여 차트를 가상으로 그려볼 수 있습니다. 시각화를 위해 그려지는 것이고, 실제 워크스페이스 내용에 반영되지는 않습니다. (자세한 조작 방식은 <a class="reference internal" href="../part04/manage_charts.html"><span class="doc">차트</span></a> 항목 참조)</p></li>
-<li><p><strong>데이터 소스 저장:</strong> 쿼리 결과를 이용하여 워크스페이스 내 데이터 소스로 저장할 수 있습니다. 데이터 소스 생성 팝업이 나타나며, 데이터 커넥션 선택 및 테이블 선택 등의 과정은 워크벤치 결과 내용으로 대체됩니다. 따라서 스키마 정의 및 ingestion 주기 등의 과정이 곧바로 진행되게 됩니다. (자세한 절차는 <a class="reference internal" href="../part02/create_a_data_source.html"><span class="doc">데이터 소스 만들기</span></a> 참조)</p></li>
-<li><p><strong>다운로드 CSV:</strong> 쿼리 결과를 로컬 파일(csv)로 다운로드가 가능합니다.</p></li>
-<li><p><strong>데이터 페이징:</strong> 1000건의 이상의 데이터일 경우 Prev, Next 버튼을 이용해 페이지 넘김이 가능합니다.</p></li>
-<li><p><strong>쿼리 수행 시작 시각:</strong> 쿼리 수행 시작 시각을 표시합니다.</p></li>
-<li><p><strong>쿼리 수행 종료 시각:</strong> 쿼리 수행 종료 시각을 표시합니다.</p></li>
-<li><p><strong>쿼리 수행 경과 시간:</strong> 쿼리 수행 경과 시간을 표시합니다.</p></li>
-<li><p><strong>쿼리 Row 정보:</strong> 쿼리 결과의 Row 숫자와 현재 페이지 정보를 표시합니다.</p></li>
+<li><strong>쿼리 결과 탭:</strong> 다중 쿼리 수행시 쿼리당 하나의 결과 탭이 생성되며 쿼리 수행 중인 탭일 경우 탭 제목에 'Loading' 메시지가 표시됩니다.</li>
+<li><strong>데이터 내역:</strong> 쿼리 실행에 의해 출력된 데이터 내역입니다. 출력된 데이터는 클립보드에 복사하여 활용할 수도 있습니다.</li>
+<li><strong>표시 전환 탭:</strong> 쿼리 수행 로그 탭과 쿼리 결과 탭을 전환하는 버튼입니다.</li>
+<li><strong>컬럼 데이터 검색:</strong> 결과 내 컬럼 및 값을 검색할 수 있습니다.</li>
+<li><strong>차트 미리보기:</strong> 쿼리 결과를 이용하여 차트를 가상으로 그려볼 수 있습니다. 시각화를 위해 그려지는 것이고, 실제 워크스페이스 내용에 반영되지는 않습니다. (자세한 조작 방식은 <a class="reference internal" href="../part04/manage_charts.html"><span class="doc">차트</span></a> 항목 참조)</li>
+<li><strong>데이터 소스 저장:</strong> 쿼리 결과를 이용하여 워크스페이스 내 데이터 소스로 저장할 수 있습니다. 데이터 소스 생성 팝업이 나타나며, 데이터 커넥션 선택 및 테이블 선택 등의 과정은 워크벤치 결과 내용으로 대체됩니다. 따라서 스키마 정의 및 ingestion 주기 등의 과정이 곧바로 진행되게 됩니다. (자세한 절차는 <a class="reference internal" href="../part02/create_a_data_source.html"><span class="doc">데이터 소스 만들기</span></a> 참조)</li>
+<li><strong>다운로드 CSV:</strong> 쿼리 결과를 로컬 파일(csv)로 다운로드가 가능합니다.</li>
+<li><strong>데이터 페이징:</strong> 1000건의 이상의 데이터일 경우 Prev, Next 버튼을 이용해 페이지 넘김이 가능합니다.</li>
+<li><strong>쿼리 수행 시작 시각:</strong> 쿼리 수행 시작 시각을 표시합니다.</li>
+<li><strong>쿼리 수행 종료 시각:</strong> 쿼리 수행 종료 시각을 표시합니다.</li>
+<li><strong>쿼리 수행 경과 시간:</strong> 쿼리 수행 경과 시간을 표시합니다.</li>
+<li><strong>쿼리 Row 정보:</strong> 쿼리 결과의 Row 숫자와 현재 페이지 정보를 표시합니다.</li>
 </ol>
 </div></blockquote>
 </div>
@@ -333,8 +331,8 @@
 <p>추가 도구 영역은 워크벤치 활용에 도움을 주는 유용한 기능들로 구성되어 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>반복 사용 구문에 대한 글로벌 변수 설정 (<a class="reference internal" href="#global-variable"><span class="std std-ref">글로벌 변수(Global variable) 편집 기능</span></a> 참조)</p></li>
-<li><p>다른 워크벤치로 이동하기 위한 네비게이션 기능 (<a class="reference internal" href="#workbench-navigation"><span class="std std-ref">워크벤치 네비게이션</span></a> 참조)</p></li>
+<li>반복 사용 구문에 대한 글로벌 변수 설정 (<a class="reference internal" href="#global-variable"><span class="std std-ref">글로벌 변수(Global variable) 편집 기능</span></a> 참조)</li>
+<li>다른 워크벤치로 이동하기 위한 네비게이션 기능 (<a class="reference internal" href="#workbench-navigation"><span class="std std-ref">워크벤치 네비게이션</span></a> 참조)</li>
 </ul>
 </div></blockquote>
 <div class="section" id="global-variable">
@@ -345,10 +343,10 @@
 <a class="reference internal image-reference" href="../../_images/workbench_global_variable.png"><img alt="../../_images/workbench_global_variable.png" src="../../_images/workbench_global_variable.png" style="width: 518.0px; height: 473.2px;" /></a>
 </div>
 <ul class="simple">
-<li><p><strong>변수 타입:</strong> 글로벌 변수 타입으로는 달력과 텍스트가 제공합니다.</p></li>
-<li><p><strong>새 변수 추가:</strong> 원하는 변수 종류를 선택한 뒤 새 변수 추가 버튼을 누릅니다. 쿼리 에디터 영역에 해당 글로벌 변수가 추가됩니다.</p></li>
-<li><p><strong>이름:</strong> 변수 이름을 입력합니다.</p></li>
-<li><p><strong>변수 값:</strong> 달력은 날짜를 선택, 텍스트는 값을 입력하여 사용할 수 있습니다.</p></li>
+<li><strong>변수 타입:</strong> 글로벌 변수 타입으로는 달력과 텍스트가 제공합니다.</li>
+<li><strong>새 변수 추가:</strong> 원하는 변수 종류를 선택한 뒤 새 변수 추가 버튼을 누릅니다. 쿼리 에디터 영역에 해당 글로벌 변수가 추가됩니다.</li>
+<li><strong>이름:</strong> 변수 이름을 입력합니다.</li>
+<li><strong>변수 값:</strong> 달력은 날짜를 선택, 텍스트는 값을 입력하여 사용할 수 있습니다.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -360,8 +358,8 @@
 <img alt="../../_images/workbench_navigation.png" src="../../_images/workbench_navigation.png" />
 </div>
 <ul class="simple">
-<li><p><strong>워크벤치 검색:</strong> 워크스페이스에 저장된 워크벤치를 검색합니다.</p></li>
-<li><p><strong>워크벤치 목록:</strong> 워크스페이스에 저장된 모든 워크벤치를 보여줍니다. 나열된 워크벤치 중 하나를 클릭하면 해당 워크벤치로 이동됩니다.</p></li>
+<li><strong>워크벤치 검색:</strong> 워크스페이스에 저장된 워크벤치를 검색합니다.</li>
+<li><strong>워크벤치 목록:</strong> 워크스페이스에 저장된 모든 워크벤치를 보여줍니다. 나열된 워크벤치 중 하나를 클릭하면 해당 워크벤치로 이동됩니다.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -370,13 +368,13 @@
 <span id="id11"></span><h2>스키마 브라우저<a class="headerlink" href="#workbench-use-6" title="제목 주소">¶</a></h2>
 <p>선택된 데이터베이스의 테이블 목록과 각 테이블에 속한 컬럼 및 레코드 정보를 확인할 수 있습니다.</p>
 <blockquote>
-<div><div class="figure align-center">
+<div><div class="figure">
 <img alt="../../_images/workbench_schema_browser.png" src="../../_images/workbench_schema_browser.png" />
 </div>
 <ul class="simple">
-<li><p><strong>컬럼:</strong> 선택한 테이블의 모든 컬럼의 이름과 속성을 보여줍니다.</p></li>
-<li><p><strong>인포메이션:</strong> 선택한 테이블의 속성을 보여줍니다.</p></li>
-<li><p><strong>데이터:</strong> 선택한 테이블의 데이터를 보여줍니다. 최대 50건의 데이터만 조회할 수 있습니다.</p></li>
+<li><strong>컬럼:</strong> 선택한 테이블의 모든 컬럼의 이름과 속성을 보여줍니다.</li>
+<li><strong>인포메이션:</strong> 선택한 테이블의 속성을 보여줍니다.</li>
+<li><strong>데이터:</strong> 선택한 테이블의 데이터를 보여줍니다. 최대 50건의 데이터만 조회할 수 있습니다.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -393,7 +391,7 @@
         <a href="../part07/index.html" class="btn btn-neutral float-right" title="데이터 프리퍼레이션" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="06_02-create_a_workbench.html" class="btn btn-neutral float-left" title="워크벤치 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="06_02-create_a_workbench.html" class="btn btn-neutral" title="워크벤치 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -419,16 +417,37 @@
   
 
 
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

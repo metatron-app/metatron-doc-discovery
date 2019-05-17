@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Druid features &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Druid cluster architecture" href="druid_nodes.html" />
+    <link rel="prev" title="Background of Druid development" href="druid_background.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Introduction of Metatron Discovery</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview of Metatron Discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Components of Metatron Discovery</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="engine.html">Metatron engine: Druid</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="druid_background.html">Background of Druid development</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Druid features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Data table components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ingestion">Data ingestion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#roll-up">Data roll-up</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sharding">Data sharding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Data storage format and indexing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Query languages</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="druid_nodes.html">Druid cluster architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_tests.html">Druid performance assessments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_to_metatron.html">Metatron powered by Druid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Introduction of Metatron Discovery</a> &raquo;</li>
+        
+          <li><a href="engine.html">Metatron engine: Druid</a> &raquo;</li>
+        
+      <li>Druid features</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part01/druid_features.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="druid">
+<h1>Druid features<a class="headerlink" href="#druid" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>Data table components<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Data tables in Druid (called data sources) are collections of timestamped events designed for&amp;nbsp;OLAP queries. A data source is composed of three distinct types of columns (here we use an example dataset from online advertising).</p>
+<blockquote>
+<div><div class="figure align-center" id="id6">
+<img alt="Time-series OLAP table example" src="../../_images/druid-features-time-series.en.png" />
+<p class="caption"><span class="caption-text">Source: <a class="reference external" href="http://druid.io">http://druid.io</a></span></p>
+</div>
+<ul class="simple">
+<li><strong>Timestamp column:</strong> Druid treats timestamp separately in a data source because all its queries center around the time axis (If non-time series data is ingested in batch, all records are timestamped with the current time for use in Druid).</li>
+<li><strong>Dimension columns:</strong> Dimensions are string attributes of an event, and the columns most commonly used in filtering the data. Four dimensions are involved in the example dataset: publisher, advertiser, gender, and country. They each represent an axis of the data chosen to slice across.</li>
+<li><strong>Metric columns:</strong> Metrics are columns used in aggregations and computations. In the example, the metrics are clicks and price. Metrics are usually numeric values, and computations include operations such as count, sum, and mean (Metatron has extended supported Druid data types).</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="ingestion">
+<h2>Data ingestion<a class="headerlink" href="#ingestion" title="Permalink to this headline">¶</a></h2>
+<p>Druid supports real-time and batch ingestion.</p>
+<p>One major characteristic of Druid is real-time ingestion, which is enabled by real-time nodes (For details, see <a class="reference internal" href="druid_nodes.html#realtime-nodes"><span class="std std-ref">Real-time nodes</span></a>). Events ingested in real-time from a data stream get indexed in seconds to become queryable in the Druid cluster.</p>
+</div>
+<div class="section" id="roll-up">
+<span id="data-rollup"></span><h2>Data roll-up<a class="headerlink" href="#roll-up" title="Permalink to this headline">¶</a></h2>
+<p>The individual events in our example dataset are not very interesting because there may be trillions of such events. However, summarizations of this type of data by time interval can yield many useful insights. Druid summarizes this raw data when ingesting it using an optional process called “roll-up.” Below is an example of roll-up.</p>
+<blockquote>
+<div><div class="figure align-center" id="id7">
+<img alt="Data roll-up example" src="../../_images/druid-features-rollup.en.png" />
+<p class="caption"><span class="caption-text">Source: Interactive Exploratory Analytics with Druid | DataEngConf SF ‘17</span></p>
+</div>
+</div></blockquote>
+<p>The table on the left lists the domain click events that occurred from 00:00:00 to 01:00:00 on January 1, 2011. Since individual events recorded in seconds do not have much significance from the analyst’s perspective, the data was compiled at a granularity of one hour. This results in the more meaningful table on the right, which shows the number of clicks by gender for the same time period.</p>
+<p>In practice, rolling up data can dramatically reduce the size of data that needs to be stored (up to a factor of 100), thereby saving on storage resources and enabling faster queries.</p>
+<p>But, as data is rolled up, individual events can no longer be queried; the rollup granularity is the minimum granularity you will be able to explore data at and events are floored to this granularity. The unit of granularity can be set as desired by users. If necessary, the roll-up process may be disabled to ingest every individual event.</p>
+</div>
+<div class="section" id="sharding">
+<h2>Data sharding<a class="headerlink" href="#sharding" title="Permalink to this headline">¶</a></h2>
+<p>A data source is a collection of timestamped events and partitioned into a set of shards. A shard is called a segment in Druid and each segment is typically 5?10 million rows. Druid partitions its data sources into well-defined time intervals, typically an hour or a day, and may further partition on values from other columns to achieve the desired segment size.</p>
+<p>The example below shows a data table segmented by hour:</p>
+<p>Segment <code class="docutils literal notranslate"><span class="pre">sampleData_2011-01-01T01:00:00:00Z_2011-01-01T02:00:00:00Z_v1_0</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T01</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">ultratrimfast</span><span class="o">.</span><span class="n">com</span>   <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">USA</span>   <span class="mi">1800</span>   <span class="mi">25</span>   <span class="mf">15.70</span>
+<span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T01</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">bieberfever</span><span class="o">.</span><span class="n">com</span>     <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">USA</span>   <span class="mi">2912</span>   <span class="mi">42</span>   <span class="mf">29.18</span>
+</pre></div>
+</div>
+<p>Segment <code class="docutils literal notranslate"><span class="pre">sampleData_2011-01-01T02:00:00:00Z_2011-01-01T03:00:00:00Z_v1_0</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T02</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">ultratrimfast</span><span class="o">.</span><span class="n">com</span>   <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">UK</span>    <span class="mi">1953</span>   <span class="mi">17</span>   <span class="mf">17.31</span>
+<span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T02</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">bieberfever</span><span class="o">.</span><span class="n">com</span>     <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">UK</span>    <span class="mi">3194</span>   <span class="mi">170</span>  <span class="mf">34.01</span>
+</pre></div>
+</div>
+<p>This segmentation by time can be achieved because every single event in a data source is timestamped.</p>
+<p>Segments represent the fundamental storage unit in Druid and replication and distribution are done at a segment level. They are designed to be immutable, which means that once a segment is created, it cannot be edited. This ensures no contention between reads and writes. Druid segments are just designed to be read very fast.</p>
+<p>In addition, this data segmentation is key to parallel processing in Druid’s distributed environment: As one CPU can scan one segment at a time, data partitioned into multiple segments can be scanned by multiple CPUs simultaneously in parallel, thereby ensuring fast query returns and stable load balancing.</p>
+</div>
+<div class="section" id="id2">
+<h2>Data storage format and indexing<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>The way Druid stores data contributes to its data structures highly optimized for analytic queries. This section uses the Druid table below as an example:</p>
+<blockquote>
+<div><div class="figure align-center" id="id8">
+<img alt="Druid table example for edits that have occurred on Wikipedia" src="../../_images/druid-features-wiki.en.png" />
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
+</div>
+</div></blockquote>
+<div class="section" id="id3">
+<h3>Columnar storage and indexing<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Druid is a column store, which means each individual column is stored separately. Given that Druid is best used for aggregating event streams, column storage allows for more efficient CPU usage as only the columns pertaining to a query are actually loaded and scanned in that query. In a row oriented data store, all columns associated with a row must be scanned as part of an aggregation. The additional scan time can introduce significant performance degradations. In the example above, the page, user, gender, and city columns only contain strings. Storing strings directly is unnecessarily costly; instead, they can be mapped into unique integer identifiers. For example,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Justin Bieber -&gt; 0
+Ke$ha -&gt; 1
+</pre></div>
+</div>
+<p>This mapping allows the page column to be represented as an integer array where the array indices correspond to the rows of the original dataset. For the page column, we can represent the unique pages as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Thus, strings are replaced by fixed-length integers in storage, which are much easier to compress. Druid indexes data on a per-shard (segment) level.</p>
+</div>
+<div class="section" id="id4">
+<h3>Indices for filtering data<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Druid creates additional lookup indices that facilitate filtering on string columns. Let us consider the above example table again. A query might be: “How many Wikipedia edits were done by users in San Francisco who are also male?” This example query involves two dimensions: City (San Francisco) and Gender (Male). For each dimension, a binary array is created where the array indices represent whether or not their corresponding rows match the query filter, as shown below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">San</span> <span class="n">Francisco</span> <span class="p">(</span><span class="n">City</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Male</span> <span class="p">(</span><span class="n">Gender</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>And the query filter performs the AND operation between the two arrays:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="n">AND</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>As a result, only row 1 is subject to scanning, which retrieves only the filtered rows and eliminates unnecessary workload. And these binary arrays are very easy to compress as well.</p>
+<p>This lookup can be used for the OR operation too. If a query filters on San Francisco or Calgary, array indices will be for each dimension value:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">San</span> <span class="n">Francisco</span> <span class="p">(</span><span class="n">City</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">Calgary</span> <span class="p">(</span><span class="n">City</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>And then the OR operation is performed on the two arrays:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="n">OR</span> <span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Thus the query scans rows 1 and 3 only.</p>
+<p>This approach of performing Boolean operations on large bitmap sets is commonly used in search engines.</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Query languages<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Druid’s native query language is JSON over HTTP. Druid queries include:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Group By</li>
+<li>Time-series roll-ups</li>
+<li>Arbitrary Boolean filters</li>
+<li>Sum, Min, Max, Avg and other aggregation functions</li>
+<li>Dimensional Search</li>
+</ul>
+</div></blockquote>
+<p>In addition to these, query libraries in numerous languages, including SQL, are developed and shared.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="druid_nodes.html" class="btn btn-neutral float-right" title="Druid cluster architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="druid_background.html" class="btn btn-neutral" title="Background of Druid development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

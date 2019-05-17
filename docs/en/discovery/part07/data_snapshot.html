@@ -1,0 +1,319 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Use data snapshot results &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Create a data snapshot" href="create_a_datasnapshot.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Preparation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">Create a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">Manage a dataflow</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Use data snapshot results</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#snapshot-result-check">Check the data snapshot results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metatron">Ingest into the Metatron engine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#csv">Download as a CSV file</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Data Preparation</a> &raquo;</li>
+        
+      <li>Use data snapshot results</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/data_snapshot.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Use data snapshot results<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>A <strong>data snapshot</strong> created through a dataflow can be used as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#snapshot-result-check"><span class="std std-ref">Check the data snapshot results</span></a></li>
+<li><a class="reference internal" href="#snapshot-into-druid"><span class="std std-ref">Ingest into the Metatron engine</span></a></li>
+<li><a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">Download as a CSV file</span></a></li>
+</ul>
+</div></blockquote>
+<div class="section" id="snapshot-result-check">
+<span id="id2"></span><h2>Check the data snapshot results<a class="headerlink" href="#snapshot-result-check" title="Permalink to this headline">¶</a></h2>
+<p>The status of snapshot creation can be classified as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Success</strong> = SUCCEEDED</li>
+<li><strong>Failed</strong> = FAILED</li>
+<li><strong>Preparing</strong> = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING</li>
+</ul>
+</div></blockquote>
+<p>You can view the details of snapshot creation through the two paths below:</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Go to the snapshot list under <strong>MANGEMENT</strong> &gt; <strong>Data Preparation</strong> &gt; <strong>Data Snapshot</strong>.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/data_snapshot_1.png" src="../../_images/data_snapshot_1.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Click the <strong>Snapshot (#)</strong> tab on the right of the <a class="reference internal" href="edit_rules.html"><span class="doc">Edit rules</span></a> page in <strong>Dataflow</strong></p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/data_snapshot_2.png" src="../../_images/data_snapshot_2.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>In the snapshot details page, you can view details such as data validity ratio and a grid of the created snapshot, and download the results as a CSV file (<a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">Download as CSV</span></a>).</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/data_snapshot_3.png" src="../../_images/data_snapshot_3.png" />
+</div>
+</div></blockquote>
+<p>If valid data has not been created, the snapshot details page displays an error log.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/data_snapshot_4.png" src="../../_images/data_snapshot_4.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="metatron">
+<span id="snapshot-into-druid"></span><h2>Ingest into the Metatron engine<a class="headerlink" href="#metatron" title="Permalink to this headline">¶</a></h2>
+<p>(upcoming feature)</p>
+</div>
+<div class="section" id="csv">
+<span id="snapshot-into-csv"></span><h2>Download as a CSV file<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h2>
+<p>In the details page of a successfully created snapshot, the <strong>Download as CSV</strong> option is enabled.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/data_snapshot_5.png" src="../../_images/data_snapshot_5.png" />
+</div>
+</div></blockquote>
+<p>The downloaded file is a standard CSV, with each value separated by a “comma” and each row by a “new line.”</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/data_snapshot_6.png" src="../../_images/data_snapshot_6.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="create_a_datasnapshot.html" class="btn btn-neutral" title="Create a data snapshot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

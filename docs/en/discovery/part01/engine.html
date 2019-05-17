@@ -1,0 +1,300 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Metatron engine: Druid &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Background of Druid development" href="druid_background.html" />
+    <link rel="prev" title="Components of Metatron Discovery" href="structure.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Introduction of Metatron Discovery</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview of Metatron Discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Components of Metatron Discovery</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Metatron engine: Druid</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="druid_background.html">Background of Druid development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_features.html">Druid features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_nodes.html">Druid cluster architecture</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_tests.html">Druid performance assessments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_to_metatron.html">Metatron powered by Druid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Introduction of Metatron Discovery</a> &raquo;</li>
+        
+      <li>Metatron engine: Druid</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part01/engine.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="metatron-druid">
+<h1>Metatron engine: Druid<a class="headerlink" href="#metatron-druid" title="Permalink to this headline">¶</a></h1>
+<p>The development of information and communications technology has been accompanied by a rapid increase in the amount of data generated, highlighting the importance of efficient data collection, management, and utilization. However, RDBMS-based legacy tools are unable to process mass amounts of multidimensional data. This has led to the emergence of new methodologies and solutions aimed at satisfying the demand for big data.</p>
+<p>Metamarkets, a technology startup based in Silicon Valley, launched a column-oriented distributed data store known as Druid in 2011, and open sourced it in October 2012. Many companies have turned to Druid for their backend technology because it offers various advantages, including fast and efficient data processing.</p>
+<p>As a B2C telecommunications service provider, SK Telecom recognized the need to effectively manage and analyze the vast amounts of network data generated by its users every minute. Metatron, an end-to-end business intelligence solution with Druid as the underlying engine, was thus developed and launched in 2016.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Druid와 Metatron" src="../../_images/druid_logo.png" />
+</div>
+</div></blockquote>
+<p>The following sections discuss the features of Druid that make it suitable for time-series data processing, and introduce how they were adapted and improved by SK Telecom for Metatron.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="druid_background.html">Background of Druid development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="druid_features.html">Druid features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#id1">Data table components</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#ingestion">Data ingestion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#roll-up">Data roll-up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#sharding">Data sharding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#id2">Data storage format and indexing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_features.html#id5">Query languages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="druid_nodes.html">Druid cluster architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#real-time">Real-time nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#historical">Historical nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#broker">Broker nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#coordinator">Coordinator nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#external-dependencies">External dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#high-availability">High availability characteristics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_nodes.html#extensionability">Architecture extensibility</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="druid_tests.html">Druid performance assessments</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="druid_tests.html#id1">Self-assessment by Druid developers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_tests.html#sk-druid">Druid performance assessment by SK Telecom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_tests.html#druid-3">Druid assessments by third parties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_tests.html#apache-spark">Comparison with Apache Spark</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="druid_to_metatron.html">Metatron powered by Druid</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="druid_to_metatron.html#id1">Metatron development background and Druid integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="druid_to_metatron.html#id3">Druid functions reinforced in Metatron</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="druid_background.html" class="btn btn-neutral float-right" title="Background of Druid development" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="structure.html" class="btn btn-neutral" title="Components of Metatron Discovery" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
