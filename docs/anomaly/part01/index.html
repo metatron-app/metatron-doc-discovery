@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>이상 탐지 확장팩 소개 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>이상 탐지 확장팩 소개 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,34 +17,37 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -61,7 +64,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -165,23 +168,44 @@
             
   <div class="section" id="id1">
 <h1>이상 탐지 확장팩 소개<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="features.html">주요기능</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="features.html#machine-learning">Machine Learning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="features.html#alarm-report">Alarm &amp; Report</a></li>
-<li class="toctree-l2"><a class="reference internal" href="features.html#analyze">Analyze</a></li>
-<li class="toctree-l2"><a class="reference internal" href="features.html#link-with-learning-system">Link with Learning System</a></li>
+<div class="section" id="id2">
+<h2>주요 기능<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>이상 탐지 확장팩 Anomaly는 Machine Learning 예측 모델 기반으로 데이터 흐름의 비정상적인 상황을 감지하여 사용자가 즉각적으로 확인할 수 있도록 도와주는 도구입니다.</p>
+<p><strong>Machine Learning</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>예측 모델에 기반한 알고리즘을 자동 추천하는 머신 러닝으로 이지 유즈</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="structure.html">구조</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="structure.html#statistics">Statistics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structure.html#alarm-list">Alarm list</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structure.html#alarm-rule-list">Alarm Rule list</a></li>
-<li class="toctree-l2"><a class="reference internal" href="structure.html#create-alarm-rule">Create Alarm Rule</a></li>
+</div></blockquote>
+<p><strong>Alarm &amp; Report</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>비정상적인 상황에 대한 알람을 즉각적으로 확인 하고 리포팅까지 이어진 서비스</p></li>
 </ul>
-</li>
+</div></blockquote>
+<p><strong>Analyze</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>데이터로 차트 생성하고 분석하는 서비스 메타트론 디스커버리와 연계 가능</p></li>
 </ul>
+</div></blockquote>
+<p><strong>Link with Learning System</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>새로운 분석을 적용할 수 있도록 외부 분석 시스템과의 연계를 지원</p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-center">
+<img alt="metatron anomaly" src="../../_images/features_01.png" />
+</div>
+</div>
+<div class="section" id="id3">
+<h2>구조<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
+<p>Anomaly의 메뉴 구성은 다음과 같습니다.</p>
+<div class="figure align-center">
+<img alt="metatron anomaly structure" src="../../_images/structure_01.png" />
+</div>
+<p>이러한 메뉴 간 이동이 단순하고 세부 항목 간 참조 기능도 잘 구축되어 있어, 알람 룰 설정값과 실제 발생 알람, 그리고 전반적인 현황 간의 유기적인 파악이 용이합니다.</p>
 </div>
 </div>
 
@@ -213,37 +237,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

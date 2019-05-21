@@ -10,27 +10,27 @@
 	:name: lang_sel
 
 	VIEW IN ENGLISH <https://metatron-app.github.io/metatron-doc-discovery/en>
-   한국어로 보기 <https://metatron-app.github.io/metatron-doc-discovery/>
+	한국어로 보기 <https://metatron-app.github.io/metatron-doc-discovery/>
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Metatron Discovery
+	:maxdepth: 2
+	:caption: Metatron Discovery
 
-   /discovery/part00/index
-   /discovery/part01/index
-   /discovery/part02/index
-   /discovery/part03/index
-   /discovery/part04/index
-   /discovery/part05/index
-   /discovery/part06/index
-   /discovery/part07/index
-  
-..
-   .. toctree::
-..    :maxdepth: 2
-   :caption: EX-pack for Anomaly Detection
+	/discovery/part00/index
+	/discovery/part01/index
+	/discovery/part02/index
+	/discovery/part03/index
+	/discovery/part04/index
+	/discovery/part05/index
+	/discovery/part06/index
+	/discovery/part07/index
 
-   /anomaly/part01/index
-   /anomaly/part02/index
-   /anomaly/part03/index
-   /anomaly/part04/index
+.. toctree::
+	:maxdepth: 2
+	:caption: EX-pack for Anomaly Detection
+
+	/anomaly/part01/index
+	/anomaly/part02/index
+	/anomaly/part03/index
+	/anomaly/part04/index
+	/anomaly/part05/index

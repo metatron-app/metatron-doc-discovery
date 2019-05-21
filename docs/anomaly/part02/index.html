@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>얄람 룰 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>알람 룰 만들기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,34 +17,37 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="색인" href="../../genindex.html" />
     <link rel="search" title="검색" href="../../search.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -61,7 +64,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -144,7 +147,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>얄람 룰</li>
+      <li>알람 룰 만들기</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -164,30 +167,188 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>얄람 룰<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="create_rule.html">알람 룰 만들기</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="choose_data_source.html">데이터 소스 선택하기</a></li>
-<li class="toctree-l2"><a class="reference internal" href="choose_metrics.html">모니터링할 지표 선택하기</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="choose_metrics.html#select-measure">Select Measure</a></li>
-<li class="toctree-l3"><a class="reference internal" href="choose_metrics.html#add-filter">Add Filter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="choose_metrics.html#select-training-interval">Select Training Interval</a></li>
+<h1>알람 룰 만들기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>Anomaly는 다음의 절차를 순차적으로 수행하도록 안내하여 사용자가 원하는 알람 룰을 쉽게 생성할 수 있도록 지원해줍니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#select-datasource"><span class="std std-ref">데이터 소스 선정</span></a></p></li>
+<li><p><a class="reference internal" href="#select-columns"><span class="std std-ref">모니터링할 지표 선택하기</span></a></p></li>
+<li><p><a class="reference internal" href="#configure-training"><span class="std std-ref">트레이닝 기간 설정하기</span></a></p></li>
+<li><p><a class="reference internal" href="#select-model"><span class="std std-ref">모델 선택하기</span></a></p></li>
+<li><p><a class="reference internal" href="#alarm-rule-settings"><span class="std std-ref">알람 룰 조건 설정하기</span></a></p></li>
+<li><p><a class="reference internal" href="#complete-rule"><span class="std std-ref">알람 룰 완성하기</span></a></p></li>
 </ul>
+</div></blockquote>
+<div class="section" id="select-datasource">
+<span id="id2"></span><h2>데이터 소스 선정<a class="headerlink" href="#select-datasource" title="제목 주소">¶</a></h2>
+<p>아래와 같이 알람 룰 만들기 절차를 시작하십시오.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Anomaly 홈 우측 상단에 있는 <strong>Create Alarm Rule</strong> 버튼을 클릭합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create rule" src="../../_images/create_rule_01.png" />
+</div>
+</div></blockquote>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="choose_model.html">모델 선택하기</a></li>
-<li class="toctree-l2"><a class="reference internal" href="set_alarm_rules.html">알람 룰 설정하기</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="set_alarm_rules.html#set-alarm-interval">Set Alarm Interval</a></li>
-<li class="toctree-l3"><a class="reference internal" href="set_alarm_rules.html#set-alarm-condition">Set Alarm Condition</a></li>
-<li class="toctree-l3"><a class="reference internal" href="set_alarm_rules.html#set-alarm-notification-user">Set Alarm Notification User</a></li>
-</ul>
+<li><p>알람을 생성하고자 하는 값이 있는 데이터 소스를 선택합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select datasource" src="../../_images/choose_data_source_01.png" />
+</div>
+</div></blockquote>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="complete_alarm_rules.html">알람 룰 만들기 완성</a></li>
-</ul>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="select-columns">
+<span id="id3"></span><h2>모니터링할 지표 선택하기<a class="headerlink" href="#select-columns" title="제목 주소">¶</a></h2>
+<p>데이터 소스를 선택하면 다음 화면으로 넘어가면서 좌측에 <strong>Data</strong> 패널이 열립니다. 이 패널을 이용하여 아래와 같이 모니터링할 지표를 선택하십시오.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p><strong>Measure</strong> 영역에서 알람을 설정하고자 하는 측정값 컬럼을 선택합니다. 클릭한 측정값 컬럼은 Aggregate 선반에 자동으로 옮겨집니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select measure" src="../../_images/choose_metrics_select_measure_01.png" />
+</div>
+</div></blockquote>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="alarm_rule_list.html">알람 룰 리스트</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alarm_rule_detail.html">알람 룰 상세</a></li>
+<li><p>필요할 경우 기존 컬럼에 공식을 적용하여 사용자 컬럼을 새로 만들 수도 있습니다. <strong>Measure</strong> 영역의 우측 상단에서 <img alt="icon_custom_column" src="../../_images/icon_custom_column.png" /> 버튼을 클릭하여 대화 상자를 열고 사용자 컬럼을 설정하십시오.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="make custem measure rule" src="../../_images/choose_metrics_select_measure_04.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Aggregate 선반에 올려진 각 컬럼의 aggregate 타입 항목을 클릭하여 원하는 타입을 선택합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select aggregation type" src="../../_images/choose_metrics_select_measure_02.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>필요할 경우 차원값 컬럼을 기준으로 aggregate 데이터를 분할할 수 있습니다. <strong>Dimension</strong> 영역에서 분할의 기준으로 삼을 측정값 컬럼에 마우스 커서를 오버한 후 <img alt="icon_split" src="../../_images/icon_split.png" /> 버튼을 클릭하십시오.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="splite measure by dimension" src="../../_images/choose_metrics_select_measure_05.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>필요할 경우 차원값 컬럼을 기준으로 aggregate 데이터를 필터링할 수 있습니다. <strong>Dimension</strong> 영역에서 필터를 설정할 측정값 컬럼에 마우스 커서를 오버한 후 <img alt="icon_ano_filter" src="../../_images/icon_ano_filter.png" /> 버튼을 클릭하십시오. 그런 다음, 모니터링하고자 하는 특정 범주들을 선택하십시오.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select filter value" src="../../_images/choose_metrics_add_filter_02.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="configure-training">
+<span id="id4"></span><h2>트레이닝 기간 설정하기<a class="headerlink" href="#configure-training" title="제목 주소">¶</a></h2>
+<p>모니터링할 지표 선택을 마쳤으면, <strong>Training interval</strong> 패널에서 모델 트레이닝에 사용할 데이터 범위를 선택할 수 있습니다.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>모델을 트레이닝시키는 데 사용할 데이터 세트의 주기를 <strong>Granularity</strong> 선택란에서 선택합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select granularity" src="../../_images/choose_metrics_select_training_interval_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>모델을 트레이닝시키는 데 사용할 데이터 세트의 기간 범위를 설정합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select specific time" src="../../_images/choose_metrics_select_training_interval_02.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>모든 설정을 마쳤으면 <strong>Next</strong>를 클릭합니다.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="select-model">
+<span id="id5"></span><h2>모델 선택하기<a class="headerlink" href="#select-model" title="제목 주소">¶</a></h2>
+<p>이제 <strong>Model</strong> 패널로 넘어가서 어떠한 예측 모델을 사용할지 선택합니다. Anomaly는 주어진 트레이닝 데이터 세트를 이용하여 각각의 모델을 트레이닝시킨 후 그 결과를 산출해줍니다. 아래 두 방법 중 하나를 통해 적합한 예측 모델을 선택합니다.</p>
+<blockquote>
+<div><ul>
+<li><p>기본적으로 우측에 표시되는 정확도 점수(100점 만점)가 가장 높은 모델이 <strong>Recommend</strong> 표시와 함께 자동 선택됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="auto training model" src="../../_images/choose_model_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>각 모델 항목 위에 마우스 커서를 오버하면 나타나는 상세 정보를 확인하여 가장 적합한 예측 모델을 직접 선택할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="model details" src="../../_images/choose_model_03.png" />
+</div>
+</div></blockquote>
+</li>
 </ul>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-rule-settings">
+<span id="id6"></span><h2>알람 룰 조건 설정하기<a class="headerlink" href="#alarm-rule-settings" title="제목 주소">¶</a></h2>
+<p>사용할 예측 모델을 선택하였으면, <strong>Condition</strong> 패널에서 알람이 발생하는 조건을 설정할 수 있습니다.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p><strong>Subscribers</strong> 항목의 우측에 있는 <img alt="icon_set" src="../../_images/icon_set.png" /> 버튼을 클릭하여 대화 상자를 연 후, 알람 발생 시 통보를 받는 대상과 방법을 설정합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="set alarm noti detail" src="../../_images/set_alarm_rules_04.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>아래 각 항목의 설명을 참고하여 알람이 발동되는 시기를 설정합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="set alarm interval" src="../../_images/set_alarm_rules_01.png" />
+</div>
+<ul class="simple">
+<li><p><strong>Alarm Start:</strong> 알람을 개시할 때를 설정합니다. 이 설정값에 해당하는 시간 이후부터 알람이 개시됩니다.</p></li>
+<li><p><strong>Alarm Interval:</strong> 알람의 조건이 충족되었을 때 알람을 발생시킬 주기를 설정합니다.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>아래 각 항목의 설명을 참고하여 모니터링하는 데이터의 aggregate 값에 따른 알람 발동 조건을 설정합니다. 기본적으로 하나의 조건이 주어지며, <strong>+ Add Condition</strong> 버튼을 클릭하면 조건을 추가할 수 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Severity:</strong> 주어진 조건에 해당하는 알람의 심각도를 설정합니다.</p></li>
+<li><p><strong>Threshold:</strong> aggregate 값이 이 설정값에 도달하면 알람이 발생하게 됩니다.</p></li>
+<li><p><strong>Frequency:</strong> 알람 조건 충족 시 알람을 울리는 빈도를 설정합니다.</p></li>
+</ul>
+<div class="figure align-center">
+<img alt="set alarm condition" src="../../_images/set_alarm_rules_02.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>모든 설정을 마쳤으면 <strong>Next</strong>를 클릭합니다.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="complete-rule">
+<span id="id7"></span><h2>알람 룰 완성하기<a class="headerlink" href="#complete-rule" title="제목 주소">¶</a></h2>
+<p>알람 룰 설정이 끝났으면 아래와 같이 알람 룰 만들기 절차를 마무리합니다.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>알람 룰의 이름과 설명을 기입한 후 <strong>Done</strong> 버튼을 클릭합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="write alarm rule name" src="../../_images/complete_alarm_rules_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>생성된 알람 룰은 알람 룰 리스트의 최상단에 노출되고, 첫 알람 수행이 있기 전까지 <strong>Prepare</strong> 상태로 표시됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm rule list" src="../../_images/complete_alarm_rules_02.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
 </div>
 </div>
 
@@ -219,37 +380,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

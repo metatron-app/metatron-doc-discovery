@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터 프리퍼레이션 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>데이터 프리퍼레이션 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="데이터셋 만들기" href="create_a_dataset.html" />
     <link rel="prev" title="워크벤치 사용하기" href="../part06/06_03-use_a_workbench.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -175,7 +178,7 @@
 <p><strong>데이터 프리퍼레이션</strong>은 파일, 테이블 등의 데이터셋을 분석에 용이한 형태로 정제하기 위한 변형 룰들을 생성하여, 그 결과를 HDFS, Hive 등으로 저장하는 툴입니다.</p>
 <p><strong>Metatron Discovery 데이터 프리퍼레이션의 장점</strong></p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/data_preparation_overview_1.png" src="../../_images/data_preparation_overview_1.png" />
 </div>
 </div></blockquote>
@@ -183,17 +186,17 @@
 <p>이러한 특징을 기반으로 데이터 프리퍼레이션 툴에서는 다음과 같은 장점을 활용할 수 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li>프로그래밍이나 데이터 처리에 익숙하지 않아도 작업자가 원하는 형태의 결과를 얻을 수 있습니다.</li>
-<li>보통 변형 룰 하나를 추가하려면 프로그래밍을 하거나 최소한 SQL문을 작성해야하지만, 데이터 프리퍼레이션 GUI를 통한 <strong>탐색적 변형</strong>을 활용하면 몇 번의 마우스 클릭이나 타이핑만으로 간편하게 변형 룰을 만들어내어 시간을 크게 절약할 수 있습니다.</li>
-<li>기본적으로 수반되는 데이터 변형들은 자동으로 수행합니다. 예를 들어, 명백히 숫자로 보이는 컬럼에 대해 알아서 형변환 룰을 적용해줍니다. 이것은 언제나 <strong>undo</strong> 또는 룰 삭제가 용이하기 때문에 가능한 것입니다.</li>
-<li>다양한 형태의 데이터를 결합하여 원하는 형태로 바꿔놓을 수 있습니다(예: 기준 파일 + 팩트 테이블).</li>
-<li>만들어 놓은 데이터 정제 결과를 다른 사람들과 공유함으로써, 물리적인 데이터를 주고 받는 부담을 줄여줍니다.</li>
-<li>실제 데이터는 지우고 그것을 만드는 방법만 유지함으로써, 저장 공간을 아끼고 <strong>ILM (Information Life Cycle)</strong>을 줄일 수 있습니다. 다시 필요할 때 실제 데이터를 만들어내는 데에 부담이 줄어들기 때문입니다.</li>
+<li><p>프로그래밍이나 데이터 처리에 익숙하지 않아도 작업자가 원하는 형태의 결과를 얻을 수 있습니다.</p></li>
+<li><p>보통 변형 룰 하나를 추가하려면 프로그래밍을 하거나 최소한 SQL문을 작성해야하지만, 데이터 프리퍼레이션 GUI를 통한 <strong>탐색적 변형</strong>을 활용하면 몇 번의 마우스 클릭이나 타이핑만으로 간편하게 변형 룰을 만들어내어 시간을 크게 절약할 수 있습니다.</p></li>
+<li><p>기본적으로 수반되는 데이터 변형들은 자동으로 수행합니다. 예를 들어, 명백히 숫자로 보이는 컬럼에 대해 알아서 형변환 룰을 적용해줍니다. 이것은 언제나 <strong>undo</strong> 또는 룰 삭제가 용이하기 때문에 가능한 것입니다.</p></li>
+<li><p>다양한 형태의 데이터를 결합하여 원하는 형태로 바꿔놓을 수 있습니다(예: 기준 파일 + 팩트 테이블).</p></li>
+<li><p>만들어 놓은 데이터 정제 결과를 다른 사람들과 공유함으로써, 물리적인 데이터를 주고 받는 부담을 줄여줍니다.</p></li>
+<li><p>실제 데이터는 지우고 그것을 만드는 방법만 유지함으로써, 저장 공간을 아끼고 <strong>ILM (Information Life Cycle)</strong>을 줄일 수 있습니다. 다시 필요할 때 실제 데이터를 만들어내는 데에 부담이 줄어들기 때문입니다.</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Metatron Discovery 데이터 프리퍼레이션의 구조</strong></p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/preparation_overview.png" src="../../_images/preparation_overview.png" />
 </div>
 </div></blockquote>
@@ -234,7 +237,7 @@
         <a href="create_a_dataset.html" class="btn btn-neutral float-right" title="데이터셋 만들기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../part06/06_03-use_a_workbench.html" class="btn btn-neutral" title="워크벤치 사용하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../part06/06_03-use_a_workbench.html" class="btn btn-neutral float-left" title="워크벤치 사용하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -260,37 +263,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
