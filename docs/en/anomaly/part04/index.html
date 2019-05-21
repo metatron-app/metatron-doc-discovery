@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>통계 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>얄람 룰 내역 열람·수정하기 &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -17,34 +17,36 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -61,7 +63,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -86,7 +88,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -144,7 +146,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>통계</li>
+      <li>얄람 룰 내역 열람·수정하기</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -164,11 +166,64 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>통계<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">통계 개요</a></li>
+<h1>얄람 룰 내역 열람·수정하기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><strong>Alarm Rule</strong> 탭 메뉴에서는 등록된 알람 룰을 열람·수정할 수 있습니다. 또한 이 메뉴에서는 선택한 알람 룰의 따라 산출되고 있는 데이터 abnormal score 현황도 쉽게 파악할 수 있습니다.</p>
+<p>알람 룰 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#alarm-rule-list"><span class="std std-ref">알람 룰 리스트</span></a></p></li>
+<li><p><a class="reference internal" href="#alarm-rule-details"><span class="std std-ref">알람 룰 상세</span></a></p></li>
 </ul>
+</div></blockquote>
+<div class="section" id="alarm-rule-list">
+<span id="id2"></span><h2>알람 룰 리스트<a class="headerlink" href="#alarm-rule-list" title="Permalink to this headline">¶</a></h2>
+<p><strong>Alarm Rule</strong> 탭으로 들어가면 현재 등록된 알람 룰들을 열거하여 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm rule list" src="../../_images/complete_alarm_rules_021.png" />
+</div>
+</div></blockquote>
+<p>리스트에 표시되는 정보는 아래와 같으며, 이를 기준으로 열거할 룰을 필터링하거나 검색할 수 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Current Status:</strong> 해당 룰에 따른 모니터링 결과 상태</p></li>
+<li><p><strong>Alarm Rule Name:</strong> 해당 룰의 이름</p></li>
+<li><p><strong>DataSource:</strong> 모니터링 대상 데이터 소스</p></li>
+<li><p><strong>Measure:</strong> 모니터링 대상 측정값 컬럼</p></li>
+<li><p><strong>Alarm Interval:</strong> 알람 발생 주기</p></li>
+<li><p><strong>Condition:</strong> 해당 룰에 적용된 알람 발생 조건의 개수</p></li>
+<li><p><strong>Alarm:</strong> 해당 룰에 의해 발생한 알람의 수</p></li>
+<li><p><strong>Running:</strong> 해당 룰의 모니터링 활성 여부</p></li>
+<li><p><strong>Updated:</strong> 해당 룰을 마지막으로 업데이트한 시간과 사용자</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-rule-details">
+<span id="id3"></span><h2>알람 룰 상세<a class="headerlink" href="#alarm-rule-details" title="Permalink to this headline">¶</a></h2>
+<p>알람 룰 리스트에 열거된 항목 중 하나를 선택하면 해당 알람 룰에 대한 상세 정보를 열람하고 설정을 수정할 수 있습니다. 화면 좌측에서는 모니터링 현황을 시각화하여 보여주고, 우측에는 알람 룰 조건 설정값이 표시됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm rule detail" src="../../_images/alarm_rule_detail_01.png" />
+</div>
+</div></blockquote>
+<p>모니터링 현황 영역 상단에는 화면에 보여주는 모니터링 기간 설정값이 표시되어 있습니다. <img alt="icon_period_edit" src="../../_images/icon_period_edit.png" /> 아이콘을 클릭하면 기간 설정값을 변경할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="change visualize range" src="../../_images/alarm_rule_detail_02.png" />
+</div>
+</div></blockquote>
+<p>알람 룰 조건 설정 영역에서는 기존에 설정된 알람 룰 설정값을 수정할 수 있습니다. 자세한 내용은 <a class="reference internal" href="../part02/index.html#alarm-rule-settings"><span class="std std-ref">알람 룰 조건 설정하기</span></a> 항목을 참조하십시오.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="change alarm rule condition" src="../../_images/alarm_rule_detail_03.png" />
+</div>
+</div></blockquote>
+<p>우측 끝단에서 <img alt="icon_alarm_history" src="../../_images/icon_alarm_history.png" /> 버튼을 누르면 <strong>Conditions</strong> 패널이 <strong>Alarm History</strong> 패널로 전환되어 지금까지 발생한 알람 이력을 보여줍니다(다시 <img alt="icon_rule_settings_edit" src="../../_images/icon_rule_settings_edit.png" /> 버튼을 누르면 <strong>Conditions</strong> 패널로 되돌아옵니다).</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="list alarm history" src="../../_images/alarm_rule_detail_04.png" />
+</div>
+</div></blockquote>
 </div>
 </div>
 
@@ -200,36 +255,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

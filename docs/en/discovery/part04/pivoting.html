@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Draw a chart (pivoting) &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Draw a chart (pivoting) &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -17,13 +17,20 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +39,16 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Select a chart type" href="chart_types.html" />
     <link rel="prev" title="Data column list" href="composition_of_the_data_column_list.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +90,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -191,15 +193,15 @@
 <h2>What is pivoting<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Pivoting is a process of grouping the given table by specific columns, thereby helping the analyst view particular aspects of the source data in a graphic or tabular chart. This process includes selecting columns that contain meaningful data and placing them on the column/row/cross shelves.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/pivoting.01.png" src="../../_images/pivoting.01.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.01.en.png" src="../../_images/pivoting.01.en.png" />
 </div>
 </div></blockquote>
 <p>In the example shown above, two dimension columns are placed on the column shelf and one measure column is placed on the cross shelf. The chart displays data resulting from the columns placed on the shelves in this way.</p>
 <p>Mandatory/recommended column types for each shelf vary depending on the chart type. Selecting a chart type before placing columns on a shelf shows the necessary column types for each shelf.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/pivoting.02.png" src="../../_images/pivoting.02.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.02.en.png" src="../../_images/pivoting.02.en.png" />
 </div>
 </div></blockquote>
 </div>
@@ -207,20 +209,20 @@
 <h2>Column/row/cross shelves<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Think of the structure of Excel to understand what column/row/cross shelves work for. As shown below, the crossing of each column and row cross contains a value.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/pivoting.03.png" src="../../_images/pivoting.03.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.03.en.png" src="../../_images/pivoting.03.en.png" />
 </div>
 </div></blockquote>
 <p>Whereas Excel shows data in a two-dimensional grid composed of columns, rows and crosses, Metatron is an OLAP data discovery tool capable of multidimensional data representation. In the following Metatron chart, the column, row, and crossing axes form a three-dimensional cube.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/pivoting.04.png" src="../../_images/pivoting.04.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.04.en.png" src="../../_images/pivoting.04.en.png" />
 </div>
 </div></blockquote>
 <p>If the values of an Excel grid are displayed in a three-dimensional chart, each crossing value will be represented by a bar. However, Metatron needs to display such a chart two-dimensionally; for this, bars either in the same column or in the same row get stacked at one point while remaining distinctive from one another. The resulting two-dimensional chart is shown in the gray area of the chart below.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/pivoting.05.png" src="../../_images/pivoting.05.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/pivoting.05.en.png" src="../../_images/pivoting.05.en.png" />
 </div>
 </div></blockquote>
 </div>
@@ -237,7 +239,7 @@
         <a href="chart_types.html" class="btn btn-neutral float-right" title="Select a chart type" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="composition_of_the_data_column_list.html" class="btn btn-neutral" title="Data column list" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="composition_of_the_data_column_list.html" class="btn btn-neutral float-left" title="Data column list" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -263,36 +265,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

@@ -1,0 +1,298 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>알람 내역 열람하기 &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part07/index.html">Data Preparation</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>알람 내역 열람하기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/anomaly/part05/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>알람 내역 열람하기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><strong>Alarm</strong> 탭 메뉴에서는 지금까지 발생한 알람 내역을 확인할 수 있습니다. 알람의 전체적인 현황을 보여주는 <a class="reference internal" href="../part03/index.html#statistics"><span class="std std-ref">통계</span></a> 페이지와는 다르게 이 메뉴에서는 보다 개별적인 알람들을 열람하고 탐색하는 데 최적화된 UI를 제공합니다.</p>
+<p>이 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#alarm-list"><span class="std std-ref">알람 리스트</span></a></p></li>
+<li><p><a class="reference internal" href="#alarm-details"><span class="std std-ref">알람 상세</span></a></p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="alarm-list">
+<span id="id2"></span><h2>알람 리스트<a class="headerlink" href="#alarm-list" title="Permalink to this headline">¶</a></h2>
+<p><strong>Alarm</strong> 탭으로 들어가면 현재까지 발생한 알람들을 열거하여 보여줍니다. 화면 상단에 있는 <strong>Alarm rule</strong> / <strong>Timeline</strong> 선택 박스를 이용하여, 알람 리스트를 알람 룰 기준으로 정렬할 수도 있고, 발생한 시간 기준으로 정렬할 수도 있습니다.</p>
+<ul>
+<li><p><strong>Alarm rule</strong> (알람 룰 기준으로 정렬)</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm list" src="../../_images/alarm_list_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Timeline</strong> (발생 시간 기준으로 정렬)</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="timeline type display" src="../../_images/alarm_list_03.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p>카테고리 맨 끝에 있는 <strong>+ Load more</strong>를 클릭하면 해당 카테고리 내 더 많은 알람 항목을 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm list show more" src="../../_images/alarm_list_02.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-details">
+<span id="id3"></span><h2>알람 상세<a class="headerlink" href="#alarm-details" title="Permalink to this headline">¶</a></h2>
+<p>알람 리스트에 열거된 항목 중 하나를 선택하면 해당 알람에 대한 상세 정보를 열람할 수 있습니다. 아래는 알람 상세 페이지의 각 영역별 설명입니다.</p>
+<div class="section" id="alarm-info">
+<h3>Alarm Info 영역<a class="headerlink" href="#alarm-info" title="Permalink to this headline">¶</a></h3>
+<p>이 영역에서는 해당 알람의 심각도와 발생 시각, 그리고 이 알람을 발생시킨 룰의 설정값을 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm info" src="../../_images/alarm_detail_01.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h3>알람 현황 일람 상자<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>이 영역에서는 해당 알람의 발생 현황을 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm overview" src="../../_images/alarm_detail_02.png" />
+</div>
+</div></blockquote>
+<p>Alarm History 영역</p>
+<hr class="docutils" />
+<p>이 영역에서는 해당 알람에 적용된 알람 룰에 의해 발생한 알람의 이력을 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm history" src="../../_images/alarm_detail_03.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="chart-view">
+<h3>Chart View 탭<a class="headerlink" href="#chart-view" title="Permalink to this headline">¶</a></h3>
+<p>이 탭 영역에서는 해당 알람 구간 내에서 모니터링한 aggregate 데이터의 Abnormal score 추이를 차트로 보여줍니다. 여기서는 각 조건별 점수 한계값에 도달하여 상응하는 알람(Critical, Major, Moderate, Low)을 일으킨 발생 건도 보고해줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="chart view" src="../../_images/alarm_detail_04.png" />
+</div>
+<ul class="simple">
+<li><p><strong>Total abnormal score:</strong> 알람 룰에 포함된 모든 측정값 컬럼에 대한 Abnormal score를 보여줍니다.</p></li>
+<li><p><strong>Chart by measures:</strong> 알람 룰에 포함된 각 개별 측정값 컬럼의 현황을 보여줍니다.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="table-view">
+<h3>Table View 탭<a class="headerlink" href="#table-view" title="Permalink to this headline">¶</a></h3>
+<p>이 탭 영역에서는 각 알람 발생 건별로 실제치와 예상치, 그리고 Abnormal score를 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="table view" src="../../_images/alarm_detail_05.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

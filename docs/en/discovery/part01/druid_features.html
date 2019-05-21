@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Druid features &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Druid features &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -17,13 +17,20 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +39,16 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Druid cluster architecture" href="druid_nodes.html" />
     <link rel="prev" title="Background of Druid development" href="druid_background.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +90,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -197,12 +199,12 @@
 <blockquote>
 <div><div class="figure align-center" id="id6">
 <img alt="Time-series OLAP table example" src="../../_images/druid-features-time-series.en.png" />
-<p class="caption"><span class="caption-text">Source: <a class="reference external" href="http://druid.io">http://druid.io</a></span></p>
+<p class="caption"><span class="caption-text">Source: <a class="reference external" href="http://druid.io">http://druid.io</a></span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 <ul class="simple">
-<li><strong>Timestamp column:</strong> Druid treats timestamp separately in a data source because all its queries center around the time axis (If non-time series data is ingested in batch, all records are timestamped with the current time for use in Druid).</li>
-<li><strong>Dimension columns:</strong> Dimensions are string attributes of an event, and the columns most commonly used in filtering the data. Four dimensions are involved in the example dataset: publisher, advertiser, gender, and country. They each represent an axis of the data chosen to slice across.</li>
-<li><strong>Metric columns:</strong> Metrics are columns used in aggregations and computations. In the example, the metrics are clicks and price. Metrics are usually numeric values, and computations include operations such as count, sum, and mean (Metatron has extended supported Druid data types).</li>
+<li><p><strong>Timestamp column:</strong> Druid treats timestamp separately in a data source because all its queries center around the time axis (If non-time series data is ingested in batch, all records are timestamped with the current time for use in Druid).</p></li>
+<li><p><strong>Dimension columns:</strong> Dimensions are string attributes of an event, and the columns most commonly used in filtering the data. Four dimensions are involved in the example dataset: publisher, advertiser, gender, and country. They each represent an axis of the data chosen to slice across.</p></li>
+<li><p><strong>Metric columns:</strong> Metrics are columns used in aggregations and computations. In the example, the metrics are clicks and price. Metrics are usually numeric values, and computations include operations such as count, sum, and mean (Metatron has extended supported Druid data types).</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -217,7 +219,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id7">
 <img alt="Data roll-up example" src="../../_images/druid-features-rollup.en.png" />
-<p class="caption"><span class="caption-text">Source: Interactive Exploratory Analytics with Druid | DataEngConf SF ‘17</span></p>
+<p class="caption"><span class="caption-text">Source: Interactive Exploratory Analytics with Druid | DataEngConf SF ‘17</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
 </div></blockquote>
 <p>The table on the left lists the domain click events that occurred from 00:00:00 to 01:00:00 on January 1, 2011. Since individual events recorded in seconds do not have much significance from the analyst’s perspective, the data was compiled at a granularity of one hour. This results in the more meaningful table on the right, which shows the number of clicks by gender for the same time period.</p>
@@ -248,7 +250,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id8">
 <img alt="Druid table example for edits that have occurred on Wikipedia" src="../../_images/druid-features-wiki.en.png" />
-<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </div>
 </div></blockquote>
 <div class="section" id="id3">
@@ -294,11 +296,11 @@ Ke$ha -&gt; 1
 <p>Druid’s native query language is JSON over HTTP. Druid queries include:</p>
 <blockquote>
 <div><ul class="simple">
-<li>Group By</li>
-<li>Time-series roll-ups</li>
-<li>Arbitrary Boolean filters</li>
-<li>Sum, Min, Max, Avg and other aggregation functions</li>
-<li>Dimensional Search</li>
+<li><p>Group By</p></li>
+<li><p>Time-series roll-ups</p></li>
+<li><p>Arbitrary Boolean filters</p></li>
+<li><p>Sum, Min, Max, Avg and other aggregation functions</p></li>
+<li><p>Dimensional Search</p></li>
 </ul>
 </div></blockquote>
 <p>In addition to these, query libraries in numerous languages, including SQL, are developed and shared.</p>
@@ -316,7 +318,7 @@ Ke$ha -&gt; 1
         <a href="druid_nodes.html" class="btn btn-neutral float-right" title="Druid cluster architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="druid_background.html" class="btn btn-neutral" title="Background of Druid development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="druid_background.html" class="btn btn-neutral float-left" title="Background of Druid development" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -342,36 +344,16 @@ Ke$ha -&gt; 1
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

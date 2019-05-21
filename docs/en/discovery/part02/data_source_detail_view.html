@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data source details &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Data source details &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -17,13 +17,20 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +39,16 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Create a data source" href="create_a_data_source.html" />
     <link rel="prev" title="Data source management home" href="manage_data_sources.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +90,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -190,7 +192,7 @@
 <h1>Data source details<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Click a data source listed in the data source management home to view various attributes of that data source. The following subsections describe each area of the data source details. Note that a data source represents a Druid database table stored in Metatron and necessarily includes a timestamp column as a time-series table.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/manage_datasource_02.en.png" src="../../_images/manage_datasource_02.en.png" />
 </div>
 </div></blockquote>
@@ -198,11 +200,11 @@
 <h2>Common top area<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ol class="arabic simple">
-<li><strong>Name:</strong> Name of the data source. Click on it if you want modify it.</li>
-<li><strong>Description:</strong> Description of the data source. Click on it if you want modify it.</li>
-<li><strong>Last update:</strong> Shows who and when last updated the data source.</li>
-<li><strong>Delete:</strong> Click this icon to display a menu that allows you to delete the data source.</li>
-<li><strong>Tab selection:</strong> Each tab displays a specific set of attributes of the data source. Depending upon the type of data source, not all of the three tabs may be displayed. For details on each tab, refer to the relevant subsection below.</li>
+<li><p><strong>Name:</strong> Name of the data source. Click on it if you want modify it.</p></li>
+<li><p><strong>Description:</strong> Description of the data source. Click on it if you want modify it.</p></li>
+<li><p><strong>Last update:</strong> Shows who and when last updated the data source.</p></li>
+<li><p><strong>Delete:</strong> Click this icon to display a menu that allows you to delete the data source.</p></li>
+<li><p><strong>Tab selection:</strong> Each tab displays a specific set of attributes of the data source. Depending upon the type of data source, not all of the three tabs may be displayed. For details on each tab, refer to the relevant subsection below.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -210,24 +212,20 @@
 <h2>Data information area<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>This area displays basic information of the data source.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/manage_datasource_03.en.png" src="../../_images/manage_datasource_03.en.png" />
 </div>
 <ol class="arabic">
-<li><p class="first"><strong>Data type:</strong> Type of the imported source data from which the data source has been created.</p>
-</li>
-<li><p class="first"><strong>Status:</strong> Displays the availability of the data source.</p>
-</li>
-<li><p class="first"><strong>Size:</strong> Displays the size of the data source.</p>
-</li>
-<li><p class="first"><strong>Duration:</strong> Displays the time range of the timestamps included in the data source.</p>
-</li>
-<li><p class="first"><strong>Timestamp setting:</strong> Displays the granularities defined when the data source was created.</p>
+<li><p><strong>Data type:</strong> Type of the imported source data from which the data source has been created.</p></li>
+<li><p><strong>Status:</strong> Displays the availability of the data source.</p></li>
+<li><p><strong>Size:</strong> Displays the size of the data source.</p></li>
+<li><p><strong>Duration:</strong> Displays the time range of the timestamps included in the data source.</p></li>
+<li><p><strong>Timestamp setting:</strong> Displays the granularities defined when the data source was created.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Query Granularity:</strong> Defines the minimum time period by which data is queried. This ensures faster returns by aggregating data per granularity interval.</li>
-<li><strong>Segment Granularity:</strong> In Druid, a data source is stored into multiple segments to be processed over multiple nodes in the distributed cluster environment. This granularity setting defines the time intervals into which the data source is partitioned.</li>
-<li><strong>Histogram:</strong> A graph displaying the size of the data stored within each time interval in Kbytes. This histogram is can be rendered because the Druid engine timestamps every table record.</li>
+<li><p><strong>Query Granularity:</strong> Defines the minimum time period by which data is queried. This ensures faster returns by aggregating data per granularity interval.</p></li>
+<li><p><strong>Segment Granularity:</strong> In Druid, a data source is stored into multiple segments to be processed over multiple nodes in the distributed cluster environment. This granularity setting defines the time intervals into which the data source is partitioned.</p></li>
+<li><p><strong>Histogram:</strong> A graph displaying the size of the data stored within each time interval in Kbytes. This histogram is can be rendered because the Druid engine timestamps every table record.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -236,13 +234,13 @@
 <p><strong>Publish area</strong></p>
 <p>In this area, you can check and set which workspaces have access to the data source.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/manage_datasource_04.en.png" src="../../_images/manage_datasource_04.en.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>Allow all workspaces to use this data source:</strong> Select this check box to make the data source available in all workspaces.</li>
-<li><strong>Edit:</strong> Used to allow specific workspaces to access the data source. This button will disappear if the data source is set as open data.</li>
-<li><strong>Number of shared workspaces:</strong> Displays how many workspaces have access to the data source.</li>
+<li><p><strong>Allow all workspaces to use this data source:</strong> Select this check box to make the data source available in all workspaces.</p></li>
+<li><p><strong>Edit:</strong> Used to allow specific workspaces to access the data source. This button will disappear if the data source is set as open data.</p></li>
+<li><p><strong>Number of shared workspaces:</strong> Displays how many workspaces have access to the data source.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -251,34 +249,34 @@
 <p>The top section of the column details tab provides a user interface to filter columns by the criteria you define. Columns that meet the criteria are displayed on the left. You can also edit column settings.</p>
 <p><strong>Column view/settings</strong></p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/manage_datasource_05.en.png" src="../../_images/manage_datasource_05.en.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>Search data:</strong> Searches for columns by the column name you type in.</li>
-<li><strong>Role:</strong> Displays all, dimension, or measure columns.</li>
-<li><strong>Type:</strong> Displays the columns whose data type is selected.</li>
-<li><strong>View all:</strong> Clears all filter settings in the Search data, Role, and Type options and returns to view all columns.</li>
-<li><strong>Configure schema:</strong> Click this button to prompt a window to edit the current column settings.</li>
-<li><strong>Column list:</strong> Lists table columns.</li>
-<li><strong>Column information:</strong> Displays attributes of the selected column.</li>
-<li><strong>Column settings:</strong> Displays the metadata of the selected column.</li>
-<li><strong>Statistics:</strong> Displays the row count and other statistical values of the selected column.</li>
+<li><p><strong>Search data:</strong> Searches for columns by the column name you type in.</p></li>
+<li><p><strong>Role:</strong> Displays all, dimension, or measure columns.</p></li>
+<li><p><strong>Type:</strong> Displays the columns whose data type is selected.</p></li>
+<li><p><strong>View all:</strong> Clears all filter settings in the Search data, Role, and Type options and returns to view all columns.</p></li>
+<li><p><strong>Configure schema:</strong> Click this button to prompt a window to edit the current column settings.</p></li>
+<li><p><strong>Column list:</strong> Lists table columns.</p></li>
+<li><p><strong>Column information:</strong> Displays attributes of the selected column.</p></li>
+<li><p><strong>Column settings:</strong> Displays the metadata of the selected column.</p></li>
+<li><p><strong>Statistics:</strong> Displays the row count and other statistical values of the selected column.</p></li>
 </ol>
 </div></blockquote>
 <p><strong>Configure the schema</strong></p>
 <p>Provides a user interface for editing the name and type of columns.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/manage_datasource_06.en.png" src="../../_images/manage_datasource_06.en.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>Role:</strong> Displays whether the column is a dimension or measure.</li>
-<li><strong>Name:</strong> Displays the actual name of the column.</li>
-<li><strong>Logical name:</strong> Allows you to edit the logical name of the column displayed in the system.</li>
-<li><strong>Type:</strong> Allows you to edit the logical type (character/integer/date, etc.) of the column.</li>
-<li><strong>Format:</strong> Allows you to edit the display format of the column in the case of the column being a timestamp type.</li>
-<li><strong>Description:</strong> Allows you to add a detailed description of the column.</li>
+<li><p><strong>Role:</strong> Displays whether the column is a dimension or measure.</p></li>
+<li><p><strong>Name:</strong> Displays the actual name of the column.</p></li>
+<li><p><strong>Logical name:</strong> Allows you to edit the logical name of the column displayed in the system.</p></li>
+<li><p><strong>Type:</strong> Allows you to edit the logical type (character/integer/date, etc.) of the column.</p></li>
+<li><p><strong>Format:</strong> Allows you to edit the display format of the column in the case of the column being a timestamp type.</p></li>
+<li><p><strong>Description:</strong> Allows you to add a detailed description of the column.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -288,39 +286,39 @@
 <p><strong>Change of transaction</strong></p>
 <p>Displays the trend of data source transactions over time.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/manage_datasource_07.en.png" src="../../_images/manage_datasource_07.en.png" />
 </div>
 </div></blockquote>
 <p><strong>Changes of data size</strong></p>
 <p>Displays the trend of the data source size over time.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/manage_datasource_08.en.png" src="../../_images/manage_datasource_08.en.png" />
 </div>
 </div></blockquote>
 <p><strong>Query distribution (during last one week)</strong></p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/manage_datasource_09.en.png" src="../../_images/manage_datasource_09.en.png" />
 </div>
 <ul class="simple">
-<li><strong>Query distribution by user (during last one week):</strong> Displays a pie chart of query percentages by user for the past week.</li>
-<li><strong>Query distribution by elapsed time (during last one week):</strong> Displays a pie chart of query percentages by execution time for the past week.</li>
+<li><p><strong>Query distribution by user (during last one week):</strong> Displays a pie chart of query percentages by user for the past week.</p></li>
+<li><p><strong>Query distribution by elapsed time (during last one week):</strong> Displays a pie chart of query percentages by execution time for the past week.</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Query log</strong></p>
 <p>Used to view a detailed history of each performed query.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/manage_datasource_10.en.png" src="../../_images/manage_datasource_10.en.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>Date:</strong> Set a time range to display only those queries that were last executed within this time range.</li>
-<li><strong>Query type:</strong> Filters the performed queries by type.</li>
-<li><strong>Status:</strong> Displays all, succeeded, or failed queries.</li>
-<li><strong>Query list:</strong> Lists queries filtered by specified criteria.</li>
-<li><strong>Detail:</strong> Click on it to view the query statement.</li>
+<li><p><strong>Date:</strong> Set a time range to display only those queries that were last executed within this time range.</p></li>
+<li><p><strong>Query type:</strong> Filters the performed queries by type.</p></li>
+<li><p><strong>Status:</strong> Displays all, succeeded, or failed queries.</p></li>
+<li><p><strong>Query list:</strong> Lists queries filtered by specified criteria.</p></li>
+<li><p><strong>Detail:</strong> Click on it to view the query statement.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -337,7 +335,7 @@
         <a href="create_a_data_source.html" class="btn btn-neutral float-right" title="Create a data source" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="manage_data_sources.html" class="btn btn-neutral" title="Data source management home" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="manage_data_sources.html" class="btn btn-neutral float-left" title="Data source management home" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -363,36 +361,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
