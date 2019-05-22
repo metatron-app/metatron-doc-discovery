@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Chart filters &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Chart filters &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -17,13 +17,20 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +39,16 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Global filters" href="global_filter.html" />
     <link rel="prev" title="Filter" href="filters.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +90,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -192,9 +194,9 @@
 <p>The following column filters are included automatically when a chart is created:</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Timestamp column filter:</strong> As a time-series data store, the Metatron engine necessarily uses a time filter.</li>
-<li><strong>Recommended filters:</strong> Column filters designated as “recommended filters” during the registration of the data source.</li>
-<li><strong>Dashboard filters set global:</strong> Filters applied to all charts registered in the dashboard.</li>
+<li><p><strong>Timestamp column filter:</strong> As a time-series data store, the Metatron engine necessarily uses a time filter.</p></li>
+<li><p><strong>Recommended filters:</strong> Column filters designated as “recommended filters” during the registration of the data source.</p></li>
+<li><p><strong>Dashboard filters set global:</strong> Filters applied to all charts registered in the dashboard.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -202,14 +204,14 @@
 <h2>Chart filter panel<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>The chart filter panel is located on the right-hand side of the chart home screen. On this panel, you can easily view and configure registered filters.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/chart-panel.png" src="../../_images/chart-panel.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/chart-panel.en.png" src="../../_images/chart-panel.en.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>Filter number:</strong> Displays how many filters are registered for the chart.</li>
-<li><strong>Add/edit filter:</strong> Click on “+” at the top right to either add a new filter or open a popup for configuring an existing filter.</li>
-<li><strong>Columns applied with the filter:</strong> The top part of each individual filter displays which columns are applied with the filter.</li>
-<li><strong>Filter settings:</strong> Click the hamburger menu at the top right of an individual filter either to reset the filter or configure the details of the filter.</li>
+<li><p><strong>Filter number:</strong> Displays how many filters are registered for the chart.</p></li>
+<li><p><strong>Add/edit filter:</strong> Click on “+” at the top right to either add a new filter or open a popup for configuring an existing filter.</p></li>
+<li><p><strong>Columns applied with the filter:</strong> The top part of each individual filter displays which columns are applied with the filter.</p></li>
+<li><p><strong>Filter settings:</strong> Click the hamburger menu at the top right of an individual filter either to reset the filter or configure the details of the filter.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -218,40 +220,40 @@
 <p>Click the button at the top of the chart filter panel or click the button in each filter area to open the chart filter dialog box. With this dialog box, you can add a new filter or configure an existing filter.</p>
 <p>The chart filter dialog box is divided into the Dimension and Measure tabs as shown below:</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/filter-dialog.png" src="../../_images/filter-dialog.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/filter-dialog.en.png" src="../../_images/filter-dialog.en.png" />
 </div>
 </div></blockquote>
 <div class="section" id="id5">
 <h3>Dimension filtering<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>From the connected data source, select a dimension on which to create a filter.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/filter-dialog-dimension.png" src="../../_images/filter-dialog-dimension.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/filter-dialog-dimension.en.png" src="../../_images/filter-dialog-dimension.en.png" />
 </div>
 <ul>
-<li><p class="first"><strong>Value range:</strong> Select whether to filter the chart by a single or multiple data categories.</p>
+<li><p><strong>Value range:</strong> Select whether to filter the chart by a single or multiple data categories.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Single:</strong> Select one data category by which to filter the chart.</li>
-<li><strong>Multiple:</strong> Select multiple data categories by which to filter the chart.</li>
+<li><p><strong>Single:</strong> Select one data category by which to filter the chart.</p></li>
+<li><p><strong>Multiple:</strong> Select multiple data categories by which to filter the chart.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>Search:</strong> If there are too many elements in the column, this function allows you to limit the results only to those you wish to see.</p>
+<li><p><strong>Search:</strong> If there are too many elements in the column, this function allows you to limit the results only to those you wish to see.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Search by name:</strong> Search the column element list by name.</li>
-<li><strong>Element filtering:</strong> Filters elements either by matching element names with regular expressions or wildcards, or by applying a range condition to a measure.</li>
+<li><p><strong>Search by name:</strong> Search the column element list by name.</p></li>
+<li><p><strong>Element filtering:</strong> Filters elements either by matching element names with regular expressions or wildcards, or by applying a range condition to a measure.</p></li>
 </ul>
 </div></blockquote>
 </li>
 </ul>
 <div class="figure align-center">
-<img alt="../../_images/filter-dimension-searching.png" src="../../_images/filter-dimension-searching.png" />
+<img alt="../../_images/filter-dimension-searching.en.png" src="../../_images/filter-dimension-searching.en.png" />
 </div>
 <ul class="simple">
-<li><strong>Defined value:</strong> Used to add?as a filter criterion?a data element that is not contained in the column. This allows you to create a filter in advance for a data element that may be added later.</li>
+<li><p><strong>Defined value:</strong> Used to add?as a filter criterion?a data element that is not contained in the column. This allows you to create a filter in advance for a data element that may be added later.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -260,14 +262,14 @@
 <p>Dimensions with a time icon displayed are of a timestamp type for which a timestamp filter can be configured. Although they are set to “All time” by default, you can select Relative or Specific if you wish to display only data from a certain period in the chart.</p>
 <p>“Relative” sets a period of time relative to the present and displays only data from the applicable period of time in the chart.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/filter-timestamp-relative.png" src="../../_images/filter-timestamp-relative.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/filter-timestamp-relative.en.png" src="../../_images/filter-timestamp-relative.en.png" />
 </div>
 </div></blockquote>
 <p>“Specific” directly sets a certain period of time of data and displays only data from the applicable period of time in the chart.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/filter-timestamp-specific.png" src="../../_images/filter-timestamp-specific.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/filter-timestamp-specific.en.png" src="../../_images/filter-timestamp-specific.en.png" />
 </div>
 </div></blockquote>
 </div>
@@ -275,14 +277,14 @@
 <h3>Measure filtering<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <p>From the connected data source, select a measure on which to create a filter.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/filter-measure1.png" src="../../_images/filter-measure1.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/filter-measure1.en.png" src="../../_images/filter-measure1.en.png" />
 </div>
 </div></blockquote>
 <p>Once you have selected a measure, designate the range of values to filter.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/filter-measure2.png" src="../../_images/filter-measure2.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/filter-measure2.en.png" src="../../_images/filter-measure2.en.png" />
 </div>
 </div></blockquote>
 </div>
@@ -300,7 +302,7 @@
         <a href="global_filter.html" class="btn btn-neutral float-right" title="Global filters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="filters.html" class="btn btn-neutral" title="Filter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="filters.html" class="btn btn-neutral float-left" title="Filter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -326,36 +328,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

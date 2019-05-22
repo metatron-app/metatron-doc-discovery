@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>차트 필터 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>차트 필터 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="글로벌 필터" href="global_filter.html" />
     <link rel="prev" title="필터" href="filters.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +91,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -116,6 +119,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
 </ul>
 
             
@@ -192,9 +203,9 @@
 <p>다음에 해당하는 컬럼들의 필터는 별도의 차트 필터를 추가하지 않아도 자동으로 포함됩니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>타임스탬프 컬럼 필터:</strong> Metatron 엔진의 시계열 특성 때문에 시간 조건 필터링이 필수적으로 사용됩니다.</li>
-<li><strong>추천 필터:</strong> 데이터 소스 등록할 때 '추천 필터'로 지정된 컬럼 필터들입니다.</li>
-<li><strong>글로벌 필터가 적용된 대시보드:</strong> 해당 대시보드에 등록된 모든 차트에 공통적으로 적용되는 필터입니다.</li>
+<li><p><strong>타임스탬프 컬럼 필터:</strong> Metatron 엔진의 시계열 특성 때문에 시간 조건 필터링이 필수적으로 사용됩니다.</p></li>
+<li><p><strong>추천 필터:</strong> 데이터 소스 등록할 때 '추천 필터'로 지정된 컬럼 필터들입니다.</p></li>
+<li><p><strong>글로벌 필터가 적용된 대시보드:</strong> 해당 대시보드에 등록된 모든 차트에 공통적으로 적용되는 필터입니다.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -202,14 +213,14 @@
 <h2>차트 필터 패널<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
 <p>차트 홈 화면 우측에는 차트 필터 패널이 있습니다. 이 패널에서는 등록된 필터를 간단하게 조회·설정할 수 있습니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/chart-panel.png" src="../../_images/chart-panel.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>필터 수:</strong> 차트 패널 이름 옆에는 현재 적용된 차트가 몇 개인지 표시됩니다.</li>
-<li><strong>필터 추가/변경:</strong> 우측 상단의 '+' 버튼을 누르면 새로운 필터를 추가하거나 기존 필터를 세부 설정하는 팝업이 나타납니다.</li>
-<li><strong>필터 대상 컬럼:</strong> 개별 필터의 상단에는 필터가 적용되는 컬럼 정보를 보여줍니다.</li>
-<li><strong>필터 상세 설정:</strong> 개별 필터 우측 상단에 햄버거 메뉴를 누르면 필터를 초기화하거나 상세 설정할 수 있습니다.</li>
+<li><p><strong>필터 수:</strong> 차트 패널 이름 옆에는 현재 적용된 차트가 몇 개인지 표시됩니다.</p></li>
+<li><p><strong>필터 추가/변경:</strong> 우측 상단의 '+' 버튼을 누르면 새로운 필터를 추가하거나 기존 필터를 세부 설정하는 팝업이 나타납니다.</p></li>
+<li><p><strong>필터 대상 컬럼:</strong> 개별 필터의 상단에는 필터가 적용되는 컬럼 정보를 보여줍니다.</p></li>
+<li><p><strong>필터 상세 설정:</strong> 개별 필터 우측 상단에 햄버거 메뉴를 누르면 필터를 초기화하거나 상세 설정할 수 있습니다.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -218,7 +229,7 @@
 <p>차트 필터 패널 상단에서 버튼을 클릭하거나 각 필터 영역에서 버튼을 클릭하면 차트 필터 대화 상자를 열 수 있습니다. 이 대화 상자에서는 새로운 필터를 추가하거나 기존 필터를 세부적으로 설정할 수 있습니다.</p>
 <p>차트 필터 대화 상자는 다음과 같이 차원값과 측정값 영역으로 구성됩니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/filter-dialog.png" src="../../_images/filter-dialog.png" />
 </div>
 </div></blockquote>
@@ -226,23 +237,23 @@
 <h3>차원값 필터링<a class="headerlink" href="#id5" title="제목 주소">¶</a></h3>
 <p>해당 차트와 연동된 데이터 소스의 차원값을 필터로 지정할 수 있습니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/filter-dialog-dimension.png" src="../../_images/filter-dialog-dimension.png" />
 </div>
 <ul>
-<li><p class="first"><strong>범위 선택:</strong> 선택한 필터의 컬럼에 들어있는 데이터 범주 중 필터링하여 차트에 표시할 범위를 선택합니다.</p>
+<li><p><strong>범위 선택:</strong> 선택한 필터의 컬럼에 들어있는 데이터 범주 중 필터링하여 차트에 표시할 범위를 선택합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>단건:</strong> 하나의 데이터 범주만 선택하여 차트에서 표시할 수 있습니다.</li>
-<li><strong>다건:</strong> 여러 개의 데이터 범주를 선택하여 차트에 표시할 수 있습니다.</li>
+<li><p><strong>단건:</strong> 하나의 데이터 범주만 선택하여 차트에서 표시할 수 있습니다.</p></li>
+<li><p><strong>다건:</strong> 여러 개의 데이터 범주를 선택하여 차트에 표시할 수 있습니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>검색:</strong> 컬럼 속성 값이 너무 많은 경우, 원하는 결과만 볼 수 있도록 제한할 수 있습니다.</p>
+<li><p><strong>검색:</strong> 컬럼 속성 값이 너무 많은 경우, 원하는 결과만 볼 수 있도록 제한할 수 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>이름으로 검색:</strong> 컬럼의 속성값 이름으로 검색할 수 있습니다.</li>
-<li><strong>속성 필터링:</strong> 속성 값 이름을 정규식이나 와일드 카드로 매칭하거나, 측정값의 범위를 기준으로 조건을 걸어서 속성을 선별할 수 있습니다.</li>
+<li><p><strong>이름으로 검색:</strong> 컬럼의 속성값 이름으로 검색할 수 있습니다.</p></li>
+<li><p><strong>속성 필터링:</strong> 속성 값 이름을 정규식이나 와일드 카드로 매칭하거나, 측정값의 범위를 기준으로 조건을 걸어서 속성을 선별할 수 있습니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -251,7 +262,7 @@
 <img alt="../../_images/filter-dimension-searching.png" src="../../_images/filter-dimension-searching.png" />
 </div>
 <ul class="simple">
-<li><strong>Defined value:</strong> 컬럼에 들어있지 않은 속성값을 필터 조건으로 추가하는 데 사용합니다. 현재 데이터 소스에는 없지만 추후에 들어올 수 있는 데이터를 미리 예측하여 필터를 생성하는 기능입니다.</li>
+<li><p><strong>Defined value:</strong> 컬럼에 들어있지 않은 속성값을 필터 조건으로 추가하는 데 사용합니다. 현재 데이터 소스에는 없지만 추후에 들어올 수 있는 데이터를 미리 예측하여 필터를 생성하는 기능입니다.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -260,13 +271,13 @@
 <p>시간 아이콘이 표시된 차원값은 타임스탬프 타입이며 해당 차원값은 타임스탬프 필터를 설정할 수 있습니다. 기본적으로 전체 시간(All time)으로 설정되어 있으며, 특정 기간의 데이터만 차트에 표출하고 싶은 경우 Relative 또는 Specific을 선택하여 설정합니다.</p>
 <p>Relative는 현재 시점을 기준으로 상대적인 기간을 설정하여 해당 기간 동안의 데이터만 차트에 표출하도록 합니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/filter-timestamp-relative.png" src="../../_images/filter-timestamp-relative.png" />
 </div>
 </div></blockquote>
 <p>Specific은 데이터의 특정 기간을 직접 설정하여 해당 기간 동안의 데이터만 차트에 표출하도록 합니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/filter-timestamp-specific.png" src="../../_images/filter-timestamp-specific.png" />
 </div>
 </div></blockquote>
@@ -275,13 +286,13 @@
 <h3>측정값 필터링<a class="headerlink" href="#id7" title="제목 주소">¶</a></h3>
 <p>해당 차트와 연동된 데이터 소스의 측정값을 필터로 지정할 수 있습니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/filter-measure1.png" src="../../_images/filter-measure1.png" />
 </div>
 </div></blockquote>
 <p>필터로 설정할 측정값을 선택했으면 필터링할 값의 범위를 지정합니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/filter-measure2.png" src="../../_images/filter-measure2.png" />
 </div>
 </div></blockquote>
@@ -300,7 +311,7 @@
         <a href="global_filter.html" class="btn btn-neutral float-right" title="글로벌 필터" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="filters.html" class="btn btn-neutral" title="필터" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="filters.html" class="btn btn-neutral float-left" title="필터" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -326,37 +337,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

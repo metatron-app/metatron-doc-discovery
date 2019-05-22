@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Use data snapshot results &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Use data snapshot results &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -17,13 +17,20 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -31,21 +38,16 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="prev" title="Create a data snapshot" href="create_a_datasnapshot.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -62,7 +64,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -87,7 +89,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -181,9 +183,9 @@
 <p>A <strong>data snapshot</strong> created through a dataflow can be used as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="#snapshot-result-check"><span class="std std-ref">Check the data snapshot results</span></a></li>
-<li><a class="reference internal" href="#snapshot-into-druid"><span class="std std-ref">Ingest into the Metatron engine</span></a></li>
-<li><a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">Download as a CSV file</span></a></li>
+<li><p><a class="reference internal" href="#snapshot-result-check"><span class="std std-ref">Check the data snapshot results</span></a></p></li>
+<li><p><a class="reference internal" href="#snapshot-into-druid"><span class="std std-ref">Ingest into the Metatron engine</span></a></p></li>
+<li><p><a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">Download as a CSV file</span></a></p></li>
 </ul>
 </div></blockquote>
 <div class="section" id="snapshot-result-check">
@@ -191,25 +193,25 @@
 <p>The status of snapshot creation can be classified as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Success</strong> = SUCCEEDED</li>
-<li><strong>Failed</strong> = FAILED</li>
-<li><strong>Preparing</strong> = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING</li>
+<li><p><strong>Success</strong> = SUCCEEDED</p></li>
+<li><p><strong>Failed</strong> = FAILED</p></li>
+<li><p><strong>Preparing</strong> = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING</p></li>
 </ul>
 </div></blockquote>
 <p>You can view the details of snapshot creation through the two paths below:</p>
 <blockquote>
 <div><ul>
-<li><p class="first">Go to the snapshot list under <strong>MANGEMENT</strong> &gt; <strong>Data Preparation</strong> &gt; <strong>Data Snapshot</strong>.</p>
+<li><p>Go to the snapshot list under <strong>MANGEMENT</strong> &gt; <strong>Data Preparation</strong> &gt; <strong>Data Snapshot</strong>.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/data_snapshot_1.png" src="../../_images/data_snapshot_1.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_1.en.png" src="../../_images/data_snapshot_1.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">Click the <strong>Snapshot (#)</strong> tab on the right of the <a class="reference internal" href="edit_rules.html"><span class="doc">Edit rules</span></a> page in <strong>Dataflow</strong></p>
+<li><p>Click the <strong>Snapshot (#)</strong> tab on the right of the <a class="reference internal" href="edit_rules.html"><span class="doc">Edit rules</span></a> page in <strong>Dataflow</strong></p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/data_snapshot_2.png" src="../../_images/data_snapshot_2.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_2.en.png" src="../../_images/data_snapshot_2.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -217,14 +219,14 @@
 </div></blockquote>
 <p>In the snapshot details page, you can view details such as data validity ratio and a grid of the created snapshot, and download the results as a CSV file (<a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">Download as CSV</span></a>).</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/data_snapshot_3.png" src="../../_images/data_snapshot_3.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_3.en.png" src="../../_images/data_snapshot_3.en.png" />
 </div>
 </div></blockquote>
 <p>If valid data has not been created, the snapshot details page displays an error log.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/data_snapshot_4.png" src="../../_images/data_snapshot_4.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_4.en.png" src="../../_images/data_snapshot_4.en.png" />
 </div>
 </div></blockquote>
 </div>
@@ -236,13 +238,13 @@
 <span id="snapshot-into-csv"></span><h2>Download as a CSV file<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h2>
 <p>In the details page of a successfully created snapshot, the <strong>Download as CSV</strong> option is enabled.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/data_snapshot_5.png" src="../../_images/data_snapshot_5.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/data_snapshot_5.en.png" src="../../_images/data_snapshot_5.en.png" />
 </div>
 </div></blockquote>
 <p>The downloaded file is a standard CSV, with each value separated by a “comma” and each row by a “new line.”</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-center">
 <img alt="../../_images/data_snapshot_6.png" src="../../_images/data_snapshot_6.png" />
 </div>
 </div></blockquote>
@@ -258,7 +260,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="create_a_datasnapshot.html" class="btn btn-neutral" title="Create a data snapshot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="create_a_datasnapshot.html" class="btn btn-neutral float-left" title="Create a data snapshot" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -284,36 +286,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

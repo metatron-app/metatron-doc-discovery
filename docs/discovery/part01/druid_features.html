@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Druid 특징 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Druid 특징 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="Druid 기본 클러스터 아키텍쳐" href="druid_nodes.html" />
     <link rel="prev" title="Druid 개발 배경" href="druid_background.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +91,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -121,6 +124,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
 </ul>
 
             
@@ -197,12 +208,12 @@
 <blockquote>
 <div><div class="figure align-center" id="id6">
 <img alt="Time-series OLAP table example" src="../../_images/druid-features-time-series.png" />
-<p class="caption"><span class="caption-text">Source: <a class="reference external" href="http://druid.io">http://druid.io</a></span></p>
+<p class="caption"><span class="caption-text">Source: <a class="reference external" href="http://druid.io">http://druid.io</a></span><a class="headerlink" href="#id6" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 <ul class="simple">
-<li><strong>타임스탬프 컬럼(Timestamp column):</strong> Druid는 데이터 소스에서 타임스탬프 컬럼을 별도로 구성함으로써 모든 쿼리가 시간 축을 중심으로 이루어지게 합니다(시계열 속성이 없는 데이터를 일괄적으로 ingestion할 경우에는 현재 시간을 기준으로 타임스탬프가 부여되어 Druid에서 활용할 수 있는 형태가 됩니다).</li>
-<li><strong>차원 컬럼(Dimension columns):</strong> 차원 컬럼은 각 이벤트의 문자열 속성들을 담고 있으며, 데이터 필터링 시 가장 흔히 사용됩니다. 위 데이터셋 예시에서는 publisher, advertiser, gender, country가 차원 컬럼입니다. 데이터 탐색 시에는 이러한 차원 컬럼들을 축으로 하여 데이터를 slice하게 됩니다.</li>
-<li><strong>측정값 컬럼(Metric columns):</strong> 측정값 컬럼들은 집계 및 연산에 사용됩니다. 위 예에서는 clicks 및 price가 측정값 컬럼입니다. 측정값 컬럼의 자료형은 대체로 수치 값이며, 이들은 계수, 합산, 평균 등의 방식으로 집계할 수 있습니다(Metatron에서는 지원되는 자료형을 증대하였습니다).</li>
+<li><p><strong>타임스탬프 컬럼(Timestamp column):</strong> Druid는 데이터 소스에서 타임스탬프 컬럼을 별도로 구성함으로써 모든 쿼리가 시간 축을 중심으로 이루어지게 합니다(시계열 속성이 없는 데이터를 일괄적으로 ingestion할 경우에는 현재 시간을 기준으로 타임스탬프가 부여되어 Druid에서 활용할 수 있는 형태가 됩니다).</p></li>
+<li><p><strong>차원 컬럼(Dimension columns):</strong> 차원 컬럼은 각 이벤트의 문자열 속성들을 담고 있으며, 데이터 필터링 시 가장 흔히 사용됩니다. 위 데이터셋 예시에서는 publisher, advertiser, gender, country가 차원 컬럼입니다. 데이터 탐색 시에는 이러한 차원 컬럼들을 축으로 하여 데이터를 slice하게 됩니다.</p></li>
+<li><p><strong>측정값 컬럼(Metric columns):</strong> 측정값 컬럼들은 집계 및 연산에 사용됩니다. 위 예에서는 clicks 및 price가 측정값 컬럼입니다. 측정값 컬럼의 자료형은 대체로 수치 값이며, 이들은 계수, 합산, 평균 등의 방식으로 집계할 수 있습니다(Metatron에서는 지원되는 자료형을 증대하였습니다).</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -217,7 +228,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id7">
 <img alt="Data roll-up example" src="../../_images/druid-features-rollup.png" />
-<p class="caption"><span class="caption-text">Source: Interactive Exploratory Analytics with Druid | DataEngConf SF '17</span></p>
+<p class="caption"><span class="caption-text">Source: Interactive Exploratory Analytics with Druid | DataEngConf SF '17</span><a class="headerlink" href="#id7" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 </div></blockquote>
 <p>왼쪽의 원본 이벤트 목록은 2011년 1월 1일 00:00:00~01:00:00 사이에 발생한 도메인 클릭 이벤트를 열거한 것입니다. 하지만 분석가 입장에서는 분 이하 단위의 개별 이벤트가 별다른 의미를 갖지 못하기 때문에 1시간의 granularity를 기준으로 데이터를 취합했습니다. 그 결과 오른쪽 테이블에 나타난 것처럼 2011년 1월 1일 00~01시 시간대에 각 도메인을 남성과 여성이 각각 클릭한 횟수를 보여주는 보다 의미 있는 결과물이 도출되었습니다.</p>
@@ -248,7 +259,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id8">
 <img alt="Druid table example for edits that have occurred on Wikipedia" src="../../_images/druid-features-wiki.png" />
-<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id8" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 </div></blockquote>
 <div class="section" id="id3">
@@ -294,11 +305,11 @@ Ke$ha -&gt; 1
 <p>Druid의 네이티브 쿼리 언어는 JSON over HTTP이며, 주요 쿼리는 다음과 같습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li>Group By</li>
-<li>시계열 기반 roll-up</li>
-<li>임의적 boolean 필터링</li>
-<li>Sum, Min, Max, Avg 등의 집계 연산</li>
-<li>차원값 검색</li>
+<li><p>Group By</p></li>
+<li><p>시계열 기반 roll-up</p></li>
+<li><p>임의적 boolean 필터링</p></li>
+<li><p>Sum, Min, Max, Avg 등의 집계 연산</p></li>
+<li><p>차원값 검색</p></li>
 </ul>
 </div></blockquote>
 <p>하지만 이 외에도 SQL을 비롯한 다양한 언어로 이루어진 쿼리 라이브러리가 생성·공유되고있습니다.</p>
@@ -316,7 +327,7 @@ Ke$ha -&gt; 1
         <a href="druid_nodes.html" class="btn btn-neutral float-right" title="Druid 기본 클러스터 아키텍쳐" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="druid_background.html" class="btn btn-neutral" title="Druid 개발 배경" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="druid_background.html" class="btn btn-neutral float-left" title="Druid 개발 배경" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -342,37 +353,16 @@ Ke$ha -&gt; 1
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

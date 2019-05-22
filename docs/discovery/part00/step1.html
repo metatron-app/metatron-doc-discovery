@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Step1. 데이터 소스 만들기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Step1. 데이터 소스 만들기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="Step2. 워크북 만들기" href="step2.html" />
     <link rel="prev" title="디스커버리 퀵가이드" href="index.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +91,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -106,6 +109,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
 </ul>
 
             
@@ -177,7 +188,8 @@
 <p>데이터 분석을 하기 위해 가장 먼저 해야할 일은 데이터를 시스템에 적재하는 것 입니다. Metatron Discovery는 다양한 원천 데이터를 쉽게 적재할 수 있도록 지원합니다.</p>
 <p>본 튜토리얼 예제에서는 로컬 파일에 있는 데이터를 적재하는 방법을 소개합니다. 먼저 데이터를 준비하세요. 흔히 쓰이는 엑셀 파일(.xls, .xlsx)또는 .csv 형식의 파일이면 충분합니다. 여기서는 판매 현황 데이터를 활용합니다. 아래 링크에서 다운로드 받으세요.</p>
 <blockquote>
-<div><a class="reference download internal" href="../../_downloads/sales-data-sample.csv" download=""><code class="xref download docutils literal notranslate"><span class="pre">sample</span> <span class="pre">data</span> <span class="pre">(.csv)</span></code></a></div></blockquote>
+<div><p><a class="reference download internal" download="" href="../../_downloads/3d8503f4ebb11b730c492d42af26fc23/sales-data-sample.csv"><code class="xref download docutils literal notranslate"><span class="pre">sample</span> <span class="pre">data</span> <span class="pre">(.csv)</span></code></a></p>
+</div></blockquote>
 <p>데이터 소스는 <strong>Management</strong> &gt; <strong>데이터 스토리지</strong> &gt; <strong>데이터 소스</strong>에서 조회하고 적재할 수 있습니다. 새로운 데이터 소스를 만들기 위해서 데이터 소스 리스트 우측 상단의 <strong>new</strong> 버튼을 클릭합니다.</p>
 <blockquote>
 <div><div class="figure align-center">
@@ -207,13 +219,13 @@
 <p>그 다음은 컬럼의 데이터 타입을 적절하게 변경해 주어야 합니다. 기본적으로 차원값은 문자로, 측정값은 정수로 설정되어 있습니다. 데이터 샘플을 보면서 가장 알맞는 형식으로 변경해주세요. 아래에 이 데이터에서 변경할 사항들을 나열했습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">Orderdate</span></code> : 날짜/시간</li>
-<li><code class="docutils literal notranslate"><span class="pre">Discount</span></code> : 소수</li>
-<li><code class="docutils literal notranslate"><span class="pre">ShipDate</span></code> : 날짜/시간 (시간 표현을 yyyy. MM. dd. 로 변경한 후 체크박스 클릭하여 유효성 확인)</li>
-<li><code class="docutils literal notranslate"><span class="pre">SalesperCustomer</span></code> : 소수</li>
-<li><code class="docutils literal notranslate"><span class="pre">ProfitRatio</span></code> : 소수</li>
-<li><code class="docutils literal notranslate"><span class="pre">latitude</span></code> : 위도</li>
-<li><code class="docutils literal notranslate"><span class="pre">longitude</span></code> : 경도</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Orderdate</span></code> : 날짜/시간</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Discount</span></code> : 소수</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ShipDate</span></code> : 날짜/시간 (시간 표현을 yyyy. MM. dd. 로 변경한 후 체크박스 클릭하여 유효성 확인)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SalesperCustomer</span></code> : 소수</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ProfitRatio</span></code> : 소수</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">latitude</span></code> : 위도</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">longitude</span></code> : 경도</p></li>
 </ul>
 </div></blockquote>
 <p>마지막으로 새로운 컬럼을 만들어 줄 차례입니다. 우리는 위도와 경도 컬럼을 갖고 있으므로 Point 타입의 컬럼을 새로 만들 수 있습니다. 우측 상단의 <strong>컬럼 추가</strong> 버튼을 누르세요. <strong>위도</strong> 컬럼에 <code class="docutils literal notranslate"><span class="pre">latitude</span></code> 컬럼을 선택하고, <strong>경도</strong> 컬럼에 <code class="docutils literal notranslate"><span class="pre">longitude</span></code> 컬럼을 선택합니다. 컬럼 이름을 적절하게 입력한 후 <strong>추가</strong>를 누르세요. 새로운 Point 타입 컬럼이 생성되었습니다!</p>
@@ -261,7 +273,7 @@
 <p>축하합니다! 이제 데이터 소스를 사용해 볼 차례네요. 다음 스텝으로 넘어가볼까요?</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="step2.html"><span class="doc">Step2. 워크북 만들기</span></a></li>
+<li><p><a class="reference internal" href="step2.html"><span class="doc">Step2. 워크북 만들기</span></a></p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -277,7 +289,7 @@
         <a href="step2.html" class="btn btn-neutral float-right" title="Step2. 워크북 만들기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="디스커버리 퀵가이드" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="디스커버리 퀵가이드" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -303,37 +315,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

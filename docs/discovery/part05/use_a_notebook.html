@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>노트북 활용하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>노트북 활용하기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,13 +17,21 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +40,16 @@
     <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="워크벤치" href="../part06/index.html" />
     <link rel="prev" title="신규 노트북 생성하기" href="create_a_notebook.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +91,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -111,6 +114,14 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
 </ul>
 
             
@@ -207,18 +218,16 @@
 <img alt="노트북 API 등록 팝업" src="../../_images/use_a_notebook_03.png" />
 </div>
 <ul>
-<li><p class="first"><strong>HTML</strong>: 노트북 스크립트 전체 실행 결과 화면을 HTML로 반환합니다.</p>
-</li>
-<li><p class="first"><strong>JSON</strong>: 노트북 스크립트에 작성된 사용자가 정의한 포맷의 JSON 객체를 결과로 반환합니다. 이 때 Metatron Discovery에서 제공하는 <code class="docutils literal notranslate"><span class="pre">response.write(...)</span></code> 함수를 사용하며, 예시 코드는 다음과 같습니다.</p>
+<li><p><strong>HTML</strong>: 노트북 스크립트 전체 실행 결과 화면을 HTML로 반환합니다.</p></li>
+<li><p><strong>JSON</strong>: 노트북 스크립트에 작성된 사용자가 정의한 포맷의 JSON 객체를 결과로 반환합니다. 이 때 Metatron Discovery에서 제공하는 <code class="docutils literal notranslate"><span class="pre">response.write(...)</span></code> 함수를 사용하며, 예시 코드는 다음과 같습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li>R 기반 노트북: <code class="docutils literal notranslate"><span class="pre">response.write(list(coefficient</span> <span class="pre">=</span> <span class="pre">2,</span> <span class="pre">intercept</span> <span class="pre">=</span> <span class="pre">0))</span></code></li>
-<li>Python 기반 노트북: <code class="docutils literal notranslate"><span class="pre">response.write({'coefficient'</span> <span class="pre">:</span> <span class="pre">2.5,</span> <span class="pre">'intercept'</span> <span class="pre">:</span> <span class="pre">0})</span></code></li>
+<li><p>R 기반 노트북: <code class="docutils literal notranslate"><span class="pre">response.write(list(coefficient</span> <span class="pre">=</span> <span class="pre">2,</span> <span class="pre">intercept</span> <span class="pre">=</span> <span class="pre">0))</span></code></p></li>
+<li><p>Python 기반 노트북: <code class="docutils literal notranslate"><span class="pre">response.write({'coefficient'</span> <span class="pre">:</span> <span class="pre">2.5,</span> <span class="pre">'intercept'</span> <span class="pre">:</span> <span class="pre">0})</span></code></p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>없음</strong>: 노트북 스크립트를 실행하되 반환값은 제공하지 않습니다.</p>
-</li>
+<li><p><strong>없음</strong>: 노트북 스크립트를 실행하되 반환값은 제공하지 않습니다.</p></li>
 </ul>
 </div></blockquote>
 <p>API 정보를 모두 입력한 후 <strong>마침</strong> 버튼을 클릭하면 API생성이 완료되고 아래와 같은 REST API URL을 확인할 수 있습니다. <strong>Result</strong> 버튼을 클릭하면 URL 실행 결과값을 팝업으로 조회할 수 있습니다.</p>
@@ -241,7 +250,7 @@
         <a href="../part06/index.html" class="btn btn-neutral float-right" title="워크벤치" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="create_a_notebook.html" class="btn btn-neutral" title="신규 노트북 생성하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="create_a_notebook.html" class="btn btn-neutral float-left" title="신규 노트북 생성하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -267,37 +276,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

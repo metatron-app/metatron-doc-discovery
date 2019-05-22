@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>알람 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>통계 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -17,34 +17,39 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="색인" href="../../genindex.html" />
-    <link rel="search" title="검색" href="../../search.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="얄람 룰 내역 열람·수정하기" href="../part04/index.html" />
+    <link rel="prev" title="알람 룰 만들기" href="../part02/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -61,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -86,7 +91,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -99,6 +104,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../../discovery/part05/index.html">노트북</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../discovery/part06/index.html">워크벤치</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../discovery/part07/index.html">데이터 프리퍼레이션</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">이상 탐지 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">알람 룰 만들기</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">알람 내역 열람하기</a></li>
 </ul>
 
             
@@ -144,7 +157,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>알람</li>
+      <li>통계</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -163,14 +176,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="id1">
-<h1>알람<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="alarm_list.html">알람 리스트</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alarm_detail.html">알람 상세</a></li>
-</ul>
+  <div class="section" id="statistics">
+<span id="id1"></span><h1>통계<a class="headerlink" href="#statistics" title="제목 주소">¶</a></h1>
+<p><strong>Statistics</strong> 탭 메뉴에서는 발생한 알람의 전반적인 통계를 보여줍니다. 이 페이지에서는 사용자가 지금까지 발생한 알람의 현황을 다각도로 파악할 수 있도록 중요도, 알람 발생 시기, 알람 룰 등의 다양한 기준으로 통계를 산출하여 제시합니다.</p>
+<p>페이지 기본 구성은 다음과 같습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="statistics my alarms" src="../../_images/overview_01.png" />
 </div>
+<ul class="simple">
+<li><p><strong>Alarm Distribution by Severity:</strong> 심각도별 알람 발생 비중을 보여줍니다.</p></li>
+<li><p><strong>Alarm Count per Time:</strong> 시간대별 알람 빈도를 보여줍니다.</p></li>
+<li><p><strong>Top 5 Subscribers:</strong> 가장 많은 알람을 통보받은 사용자 5명을 보여줍니다.</p></li>
+<li><p><strong>Top 5 Alarm rules:</strong> 가장 많은 알람을 일으킨 알람 룰 5개를 보여줍니다.</p></li>
+<li><p><strong>Latest Alarms:</strong> 가장 최근에 발생한 알람들을 보여줍니다.</p></li>
+</ul>
+</div></blockquote>
+<p>페이지 상단의 기간 설정 메뉴를 이용하면 통계를 산출하는 기준 기간을 변경할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="statistics other interval" src="../../_images/overview_02.png" />
+</div>
+</div></blockquote>
 </div>
 
 
@@ -178,6 +205,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part04/index.html" class="btn btn-neutral float-right" title="얄람 룰 내역 열람·수정하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../part02/index.html" class="btn btn-neutral float-left" title="알람 룰 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -201,37 +237,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

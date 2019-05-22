@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Step 1. Create a data source &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Step 1. Create a data source &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -17,13 +17,20 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +39,16 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Step 2. Create a workbook" href="step2.html" />
     <link rel="prev" title="Discovery Quick Guide" href="index.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +90,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -177,91 +179,92 @@
 <p>The first step in data analysis is ingesting your data into the system. Metatron Discovery allows you to easily ingest various data sources.</p>
 <p>The example in this tutorial shows you how to ingest data from your local directory. First, prepare data. An Excel file (.xls, .xlsx) or .csv file will suffice. This tutorial uses sales data. Download it from the link below:</p>
 <blockquote>
-<div><a class="reference download internal" href="../../_downloads/sales-data-sample.csv" download=""><code class="xref download docutils literal notranslate"><span class="pre">sample</span> <span class="pre">data</span> <span class="pre">(.csv)</span></code></a></div></blockquote>
+<div><p><a class="reference download internal" download="" href="../../_downloads/3d8503f4ebb11b730c492d42af26fc23/sales-data-sample.csv"><code class="xref download docutils literal notranslate"><span class="pre">sample</span> <span class="pre">data</span> <span class="pre">(.csv)</span></code></a></p>
+</div></blockquote>
 <p>Data sources can be viewed and ingested from <strong>Management</strong> &gt; <strong>Data Storage</strong> &gt; <strong>Data Source</strong>. To create a new data source, click the <strong>New</strong> button on the upper right of the data source list.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="create a new data source" src="../../_images/s1-1.png" />
+<img alt="create a new data source" src="../../_images/s1-1.en.png" />
 </div>
 </div></blockquote>
 <p>In this tutorial, click <strong>File</strong> to retrieve the data from your local directory. See <a class="reference internal" href="../part02/create_a_data_source.html"><span class="doc">Create a data source</span></a> for details on creating a data source from other sources.</p>
 <p>Drag and drop the data you wish to analyze, or retrieve it from the directory.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="create a data source from local" src="../../_images/s1-2.png" />
+<img alt="create a data source from local" src="../../_images/s1-2.en.png" />
 </div>
 </div></blockquote>
 <p>Drag your cursor over the sales data to view up to 100 rows of data with detection of the column delimiter and line separator. This data is properly displayed using the default delimiter and separator. Click <strong>Next</strong>.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="data preview" src="../../_images/s1-3.png" />
+<img alt="data preview" src="../../_images/s1-3.en.png" />
 </div>
 </div></blockquote>
 <p>While viewing the data, adjust the column types properly. This task is called <strong>data schema configuration</strong>.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="data schema configuration" src="../../_images/s1-4.png" />
+<img alt="data schema configuration" src="../../_images/s1-4.en.png" />
 </div>
 </div></blockquote>
 <p>Each column functions as a “dimension” or “measure.” See <a class="reference internal" href="../part02/dimension_and_measures.html"><span class="doc">“Dimensions” and “Measures”</span></a> for further details. In this data, the <code class="docutils literal notranslate"><span class="pre">Discount</span></code>, <code class="docutils literal notranslate"><span class="pre">Profit</span></code>, <code class="docutils literal notranslate"><span class="pre">Quantity</span></code>, <code class="docutils literal notranslate"><span class="pre">Sales</span></code>, <code class="docutils literal notranslate"><span class="pre">DaystoShipActual</span></code>, <code class="docutils literal notranslate"><span class="pre">SalesForecast</span></code>, <code class="docutils literal notranslate"><span class="pre">DaystoShipScheduled</span></code>, <code class="docutils literal notranslate"><span class="pre">SalesperCustomer</span></code>, and <code class="docutils literal notranslate"><span class="pre">ProfitRatio</span></code> columns must be converted into measures.</p>
 <p>Next, the data types of columns must be adjusted properly. The string type is the default setting for dimensions, and the integer type for measures. While viewing the sample, change the data type settings properly. Below is a list of items to be modified in this data.</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">Orderdate</span></code> : Date/Time</li>
-<li><code class="docutils literal notranslate"><span class="pre">Discount</span></code> : Decimal</li>
-<li><code class="docutils literal notranslate"><span class="pre">ShipDate</span></code> : Date/Time (Change the time format to yyyy. MM. dd. and click the checkbox to validate)</li>
-<li><code class="docutils literal notranslate"><span class="pre">SalesperCustomer</span></code> : Decimal</li>
-<li><code class="docutils literal notranslate"><span class="pre">ProfitRatio</span></code> : Decimal</li>
-<li><code class="docutils literal notranslate"><span class="pre">latitude</span></code> : Latitude</li>
-<li><code class="docutils literal notranslate"><span class="pre">longitude</span></code> : Longitude</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Orderdate</span></code> : Date/Time</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Discount</span></code> : Decimal</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ShipDate</span></code> : Date/Time (Change the time format to yyyy. MM. dd. and click the checkbox to validate)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SalesperCustomer</span></code> : Decimal</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ProfitRatio</span></code> : Decimal</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">latitude</span></code> : Latitude</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">longitude</span></code> : Longitude</p></li>
 </ul>
 </div></blockquote>
 <p>Lastly, you should create a new column. Since we already have columns for latitude and longitude, we can create a point type column. Click the <strong>Add column</strong> button on the upper right. Select the <code class="docutils literal notranslate"><span class="pre">latitude</span></code> column for the <strong>Latitude</strong> column, and the <code class="docutils literal notranslate"><span class="pre">longitude</span></code> column for the <strong>Longitude</strong> column. Name the columns appropriately, and click <strong>Add</strong>. A new point type column is created!</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="create a new Point type column" src="../../_images/s1-5.png" />
+<img alt="create a new Point type column" src="../../_images/s1-5.en.png" />
 </div>
 </div></blockquote>
 <p>Once you are done with schema configuration, click <strong>Next</strong>. If necessary, you can change the settings for ingestion into Druid. The default settings are sufficient for now.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="druid ingestion setting" src="../../_images/s1-6.png" />
+<img alt="druid ingestion setting" src="../../_images/s1-6.en.png" />
 </div>
 </div></blockquote>
 <p>Lastly, enter the <strong>Name</strong> and <strong>Description</strong> for the data source. Click <strong>Done</strong> to proceed to the data source details page.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="typing name and description for a new data source in metatron discovery" src="../../_images/s1-7.png" />
+<img alt="typing name and description for a new data source in metatron discovery" src="../../_images/s1-7.en.png" />
 </div>
 </div></blockquote>
 <p>In the data source details page, you can view the ingestion status in real time. The screen below appears after a few minutes, indicating success. A histogram is displayed. If you encounter an error while ingesting another data source, click <strong>Details</strong> to view the Druid ingestion log. Ingestion may be unsuccessful due to a duplicate column name or mismatch between column types and their data. Try ingestion again after addressing the issue.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="success for creation of data source for the metatron discovery" src="../../_images/s1-8.png" />
+<img alt="success for creation of data source for the metatron discovery" src="../../_images/s1-8.en.png" />
 </div>
 </div></blockquote>
 <p>To make the data source available to other users, check the checkbox next to <strong>Allow all workspaces to use this datasource</strong> under <strong>Publish</strong>. To make the data source available only to specific users, click <strong>Edit</strong> and select individual users’ or teams’ workspaces as desired.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="assign data source to specific workspaces" src="../../_images/s1-9.png" />
+<img alt="assign data source to specific workspaces" src="../../_images/s1-9.en.png" />
 </div>
 </div></blockquote>
 <p>In this example, we will choose <strong>Open Data</strong> to make it available to all users.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="make public data" src="../../_images/s1-10.png" />
+<img alt="make public data" src="../../_images/s1-10.en.png" />
 </div>
 </div></blockquote>
 <p>The ingested data can be viewed under the <strong>Data</strong> tab.</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="data tab in metatron discovery" src="../../_images/s1-11.png" />
+<img alt="data tab in metatron discovery" src="../../_images/s1-11.en.png" />
 </div>
 </div></blockquote>
 <p>Congratulations! Now, it’s time to use the data source. Let’s proceed to the next step.</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="step2.html"><span class="doc">Step 2. Create a workbook</span></a></li>
+<li><p><a class="reference internal" href="step2.html"><span class="doc">Step 2. Create a workbook</span></a></p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -277,7 +280,7 @@
         <a href="step2.html" class="btn btn-neutral float-right" title="Step 2. Create a workbook" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Discovery Quick Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Discovery Quick Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -303,36 +306,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

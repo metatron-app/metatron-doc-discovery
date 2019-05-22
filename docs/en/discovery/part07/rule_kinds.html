@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Rule types &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Rule types &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -17,13 +17,20 @@
   
 
   
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
@@ -32,21 +39,16 @@
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Create a data snapshot" href="create_a_datasnapshot.html" />
     <link rel="prev" title="Edit rules" href="edit_rules.html" /> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -63,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -88,7 +90,7 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">     VIEW IN ENGLISH</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/">한국어로 보기</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -210,39 +212,39 @@
 <p>This section describes each rule in terms of the following.</p>
 <blockquote>
 <div><ul class="simple">
-<li>Name of rule</li>
-<li>Required arguments</li>
-<li>Optional arguments</li>
-<li>Description</li>
-<li>Notes</li>
+<li><p>Name of rule</p></li>
+<li><p>Required arguments</p></li>
+<li><p>Optional arguments</p></li>
+<li><p>Description</p></li>
+<li><p>Notes</p></li>
 </ul>
 </div></blockquote>
 <p>The types of rules supported in data preparation are as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="#drop">drop</a></li>
-<li><a class="reference internal" href="#header">header</a></li>
-<li><a class="reference internal" href="#settype">settype</a></li>
-<li><a class="reference internal" href="#setformat">setformat</a></li>
-<li><a class="reference internal" href="#rename">rename</a></li>
-<li><a class="reference internal" href="#keep">keep</a></li>
-<li><a class="reference internal" href="#delete">delete</a></li>
-<li><a class="reference internal" href="#replace">replace</a></li>
-<li><a class="reference internal" href="#set">set</a></li>
-<li><a class="reference internal" href="#derive">derive</a></li>
-<li><a class="reference internal" href="#split">split</a></li>
-<li><a class="reference internal" href="#merge">merge</a></li>
-<li><a class="reference internal" href="#extract">extract</a></li>
-<li><a class="reference internal" href="#countpattern">countpattern</a></li>
-<li><a class="reference internal" href="#nest">nest</a></li>
-<li><a class="reference internal" href="#unnest">unnest</a></li>
-<li><a class="reference internal" href="#flatten">flatten</a></li>
-<li><a class="reference internal" href="#aggregate">aggregate</a></li>
-<li><a class="reference internal" href="#pivot">pivot</a></li>
-<li><a class="reference internal" href="#unpivot">unpivot</a></li>
-<li><a class="reference internal" href="#join">join</a></li>
-<li><a class="reference internal" href="#union">union</a></li>
-<li><a class="reference internal" href="#window">window</a></li>
+<li><p><a class="reference internal" href="#drop">drop</a></p></li>
+<li><p><a class="reference internal" href="#header">header</a></p></li>
+<li><p><a class="reference internal" href="#settype">settype</a></p></li>
+<li><p><a class="reference internal" href="#setformat">setformat</a></p></li>
+<li><p><a class="reference internal" href="#rename">rename</a></p></li>
+<li><p><a class="reference internal" href="#keep">keep</a></p></li>
+<li><p><a class="reference internal" href="#delete">delete</a></p></li>
+<li><p><a class="reference internal" href="#replace">replace</a></p></li>
+<li><p><a class="reference internal" href="#set">set</a></p></li>
+<li><p><a class="reference internal" href="#derive">derive</a></p></li>
+<li><p><a class="reference internal" href="#split">split</a></p></li>
+<li><p><a class="reference internal" href="#merge">merge</a></p></li>
+<li><p><a class="reference internal" href="#extract">extract</a></p></li>
+<li><p><a class="reference internal" href="#countpattern">countpattern</a></p></li>
+<li><p><a class="reference internal" href="#nest">nest</a></p></li>
+<li><p><a class="reference internal" href="#unnest">unnest</a></p></li>
+<li><p><a class="reference internal" href="#flatten">flatten</a></p></li>
+<li><p><a class="reference internal" href="#aggregate">aggregate</a></p></li>
+<li><p><a class="reference internal" href="#pivot">pivot</a></p></li>
+<li><p><a class="reference internal" href="#unpivot">unpivot</a></p></li>
+<li><p><a class="reference internal" href="#join">join</a></p></li>
+<li><p><a class="reference internal" href="#union">union</a></p></li>
+<li><p><a class="reference internal" href="#window">window</a></p></li>
 </ul>
 </div></blockquote>
 <p>In addition to these rules, data preparation provides various expressions, thereby supporting almost every function required for general data preprocessing.</p>
@@ -251,13 +253,13 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of target columns</li>
+<li><p>Column: A list of target columns</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>Deletes the selected columns.</li>
+<li><p>Deletes the selected columns.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -267,9 +269,9 @@
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>This rule sets the content in the designated row as the column name.</li>
-<li>This is useful for reading a CSV file with column names in the first row.</li>
-<li>Unless otherwise specified, data preparation automatically performs header. This rule may be deleted if header results are not desired, but such cases are not common.</li>
+<li><p>This rule sets the content in the designated row as the column name.</p></li>
+<li><p>This is useful for reading a CSV file with column names in the first row.</p></li>
+<li><p>Unless otherwise specified, data preparation automatically performs header. This rule may be deleted if header results are not desired, but such cases are not common.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -278,21 +280,21 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of target columns</li>
-<li>New type: Select one out of Long, Double, String, Boolean, and Timestamp</li>
+<li><p>Column: A list of target columns</p></li>
+<li><p>New type: Select one out of Long, Double, String, Boolean, and Timestamp</p></li>
 </ul>
 </div></blockquote>
 <p>Optional arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Set format: A format string (Joda Time) in the case of timestamp</li>
+<li><p>Set format: A format string (Joda Time) in the case of timestamp</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>This rule changes the type of the selected columns.</li>
-<li>The rule is considered successful even if the result is a type mismatch, which should be separately addressed.</li>
+<li><p>This rule changes the type of the selected columns.</p></li>
+<li><p>The rule is considered successful even if the result is a type mismatch, which should be separately addressed.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -301,24 +303,24 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of target columns</li>
-<li>Set format: A Joda-Time format string</li>
+<li><p>Column: A list of target columns</p></li>
+<li><p>Set format: A Joda-Time format string</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>This rule changes the display format of a Timestamp column.</li>
-<li>The target column must be of the Timestamp type.</li>
+<li><p>This rule changes the display format of a Timestamp column.</p></li>
+<li><p>The target column must be of the Timestamp type.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul>
-<li><p class="first">As shown below, the format input field lists different entries depending on the input. The candidate list is narrowed as more values are entered.</p>
+<li><p>As shown below, the format input field lists different entries depending on the input. The candidate list is narrowed as more values are entered.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_setformat_1.png" src="../../_images/rule_kinds_setformat_1.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_setformat_1.en.png" src="../../_images/rule_kinds_setformat_1.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -330,19 +332,18 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A single target column</li>
-<li>New column name: New name</li>
+<li><p>Column: A single target column</p></li>
+<li><p>New column name: New name</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul>
-<li><p class="first">This rule changes the name of the selected column.</p>
-</li>
-<li><p class="first">To rename two or more columns at once, click the <strong>Rename multiple columns</strong> button at the bottom of the command input panel to display the following popup.</p>
+<li><p>This rule changes the name of the selected column.</p></li>
+<li><p>To rename two or more columns at once, click the <strong>Rename multiple columns</strong> button at the bottom of the command input panel to display the following popup.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_rename_1.png" src="../../_images/rule_kinds_rename_1.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_rename_1.en.png" src="../../_images/rule_kinds_rename_1.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -354,16 +355,16 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Condition: A conditional expression returning a Boolean value</li>
+<li><p>Condition: A conditional expression returning a Boolean value</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul>
-<li><p class="first">All rows are deleted except the rows that return true for the conditional expression.</p>
+<li><p>All rows are deleted except the rows that return true for the conditional expression.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_keep_1.png" src="../../_images/rule_kinds_keep_1.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_keep_1.en.png" src="../../_images/rule_kinds_keep_1.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -375,39 +376,38 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Condition: A conditional expression returning a Boolean value</li>
+<li><p>Condition: A conditional expression returning a Boolean value</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>All rows that return true for the conditional expression are deleted. This is the opposite of <a class="reference internal" href="#keep">keep</a>.</li>
+<li><p>All rows that return true for the conditional expression are deleted. This is the opposite of <a class="reference internal" href="#keep">keep</a>.</p></li>
 </ul>
 </div></blockquote>
 </div>
 <div class="section" id="replace">
 <h2>replace<a class="headerlink" href="#replace" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="../../_images/rule_kinds_replace_1.png" src="../../_images/rule_kinds_replace_1.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_replace_1.en.png" src="../../_images/rule_kinds_replace_1.en.png" />
 </div>
 <p>Required arguments</p>
 <blockquote>
 <div><ul>
-<li><p class="first">Column: A list of target columns</p>
-</li>
-<li><p class="first">Pattern: A string pattern to be replaced</p>
+<li><p>Column: A list of target columns</p></li>
+<li><p>Pattern: A string pattern to be replaced</p>
 <blockquote>
 <div><ul class="simple">
-<li>In the case of a constant string: Characters enclosed inside <code class="docutils literal notranslate"><span class="pre">'</span></code> (<code class="docutils literal notranslate"><span class="pre">'Houston'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Naperville'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Philadelphia'</span></code> etc.)</li>
-<li>In the case of a regular expression: Characters enclosed inside <code class="docutils literal notranslate"><span class="pre">/</span></code> (<code class="docutils literal notranslate"><span class="pre">/[</span> <span class="pre">,_]+/</span></code>, <code class="docutils literal notranslate"><span class="pre">/\s+$/</span></code>, etc.)</li>
+<li><p>In the case of a constant string: Characters enclosed inside <code class="docutils literal notranslate"><span class="pre">'</span></code> (<code class="docutils literal notranslate"><span class="pre">'Houston'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Naperville'</span></code>, <code class="docutils literal notranslate"><span class="pre">'Philadelphia'</span></code> etc.)</p></li>
+<li><p>In the case of a regular expression: Characters enclosed inside <code class="docutils literal notranslate"><span class="pre">/</span></code> (<code class="docutils literal notranslate"><span class="pre">/[</span> <span class="pre">,_]+/</span></code>, <code class="docutils literal notranslate"><span class="pre">/\s+$/</span></code>, etc.)</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">New value: A new string expression to replace the specified pattern</p>
+<li><p>New value: A new string expression to replace the specified pattern</p>
 <blockquote>
 <div><ul class="simple">
-<li>Constant string</li>
-<li>Regular expression <code class="docutils literal notranslate"><span class="pre">$1_$2_$3</span></code>, etc.</li>
+<li><p>Constant string</p></li>
+<li><p>Regular expression <code class="docutils literal notranslate"><span class="pre">$1_$2_$3</span></code>, etc.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -416,40 +416,39 @@
 <p>Optional arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Ignore between characters: Does not make any replacement for content between the characters entered here</li>
-<li>Match all occurrences: Whether all characters of a word must match</li>
-<li>Ignore case: Whether to make the strings case-insensitive</li>
+<li><p>Ignore between characters: Does not make any replacement for content between the characters entered here</p></li>
+<li><p>Match all occurrences: Whether all characters of a word must match</p></li>
+<li><p>Ignore case: Whether to make the strings case-insensitive</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>String replacement is performed for the selected columns.</li>
+<li><p>String replacement is performed for the selected columns.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul class="simple">
-<li>Do not use <code class="docutils literal notranslate"><span class="pre">'</span></code> or <code class="docutils literal notranslate"><span class="pre">/</span></code> in a <strong>new value</strong>.</li>
-<li>Values from other columns are not available as <strong>new values</strong>. replace performs string replacement for content in the selected columns only. (cf. <a class="reference internal" href="#set">set</a> rule)</li>
+<li><p>Do not use <code class="docutils literal notranslate"><span class="pre">'</span></code> or <code class="docutils literal notranslate"><span class="pre">/</span></code> in a <strong>new value</strong>.</p></li>
+<li><p>Values from other columns are not available as <strong>new values</strong>. replace performs string replacement for content in the selected columns only. (cf. <a class="reference internal" href="#set">set</a> rule)</p></li>
 </ul>
 </div></blockquote>
 </div>
 <div class="section" id="set">
 <h2>set<a class="headerlink" href="#set" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="../../_images/rule_kinds_set_1.png" src="../../_images/rule_kinds_set_1.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_set_1.en.png" src="../../_images/rule_kinds_set_1.en.png" />
 </div>
 <p>Required arguments</p>
 <blockquote>
 <div><ul>
-<li><p class="first">Column: A list of target columns</p>
-</li>
-<li><p class="first">Expression: An expression to be applied to the values of the target column. Values from other columns may be referenced. (cf. <a class="reference internal" href="#replace">replace</a> rule)</p>
+<li><p>Column: A list of target columns</p></li>
+<li><p>Expression: An expression to be applied to the values of the target column. Values from other columns may be referenced. (cf. <a class="reference internal" href="#replace">replace</a> rule)</p>
 <blockquote>
 <div><ul class="simple">
-<li>When multiple columns are involved, use a <code class="docutils literal notranslate"><span class="pre">$col</span></code> variable, which will be substituted by the respective target column during each conversion.</li>
-<li>That is, when applying the set command on <code class="docutils literal notranslate"><span class="pre">column1</span></code> and <code class="docutils literal notranslate"><span class="pre">column2</span></code>, <code class="docutils literal notranslate"><span class="pre">$col</span></code> becomes <code class="docutils literal notranslate"><span class="pre">column1</span></code> during conversion of <code class="docutils literal notranslate"><span class="pre">column1</span></code>, and <code class="docutils literal notranslate"><span class="pre">$col</span></code> becomes <code class="docutils literal notranslate"><span class="pre">column2</span></code> during conversion of <code class="docutils literal notranslate"><span class="pre">column2</span></code>.</li>
+<li><p>When multiple columns are involved, use a <code class="docutils literal notranslate"><span class="pre">$col</span></code> variable, which will be substituted by the respective target column during each conversion.</p></li>
+<li><p>That is, when applying the set command on <code class="docutils literal notranslate"><span class="pre">column1</span></code> and <code class="docutils literal notranslate"><span class="pre">column2</span></code>, <code class="docutils literal notranslate"><span class="pre">$col</span></code> becomes <code class="docutils literal notranslate"><span class="pre">column1</span></code> during conversion of <code class="docutils literal notranslate"><span class="pre">column1</span></code>, and <code class="docutils literal notranslate"><span class="pre">$col</span></code> becomes <code class="docutils literal notranslate"><span class="pre">column2</span></code> during conversion of <code class="docutils literal notranslate"><span class="pre">column2</span></code>.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -458,11 +457,11 @@
 <p>Optional arguments</p>
 <blockquote>
 <div><ul>
-<li><p class="first">Use only under the following conditions</p>
+<li><p>Use only under the following conditions</p>
 <blockquote>
 <div><ul class="simple">
-<li>The set rule is applied only to rows satisfying this condition.</li>
-<li>This rule may be regarded the same as the <code class="docutils literal notranslate"><span class="pre">WHERE</span></code> statement in SQL.</li>
+<li><p>The set rule is applied only to rows satisfying this condition.</p></li>
+<li><p>This rule may be regarded the same as the <code class="docutils literal notranslate"><span class="pre">WHERE</span></code> statement in SQL.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -471,12 +470,11 @@
 <p>Description</p>
 <blockquote>
 <div><ul>
-<li><p class="first">This rule replaces the values in the selected column with results returned by the expression.</p>
-</li>
-<li><p class="first">When using a complex expression, click the <strong>Advanced editor</strong> to display the popup shown below:</p>
+<li><p>This rule replaces the values in the selected column with results returned by the expression.</p></li>
+<li><p>When using a complex expression, click the <strong>Advanced editor</strong> to display the popup shown below:</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_set_2.png" src="../../_images/rule_kinds_set_2.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_set_2.en.png" src="../../_images/rule_kinds_set_2.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -489,20 +487,20 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Expression: An expression whose resulting values are to form a new column. Similar to the <a class="reference internal" href="#set">set</a> rule, values from other columns may be referenced.</li>
-<li>New column name</li>
+<li><p>Expression: An expression whose resulting values are to form a new column. Similar to the <a class="reference internal" href="#set">set</a> rule, values from other columns may be referenced.</p></li>
+<li><p>New column name</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>While similar to the <a class="reference internal" href="#set">set</a> rule, this rule creates a new column instead of replacing an existing one.</li>
+<li><p>While similar to the <a class="reference internal" href="#set">set</a> rule, this rule creates a new column instead of replacing an existing one.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul class="simple">
-<li>The new column is inserted after the last existing column in the expression.</li>
+<li><p>The new column is inserted after the last existing column in the expression.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -511,22 +509,22 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of target columns</li>
-<li>Pattern: A string expression that serves as a separator that splits the target strings. Allows a regular expression as is the case for the <a class="reference internal" href="#replace">replace</a> rule.</li>
-<li>Number: Number of columns to be divided into.</li>
+<li><p>Column: A list of target columns</p></li>
+<li><p>Pattern: A string expression that serves as a separator that splits the target strings. Allows a regular expression as is the case for the <a class="reference internal" href="#replace">replace</a> rule.</p></li>
+<li><p>Number: Number of columns to be divided into.</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>Each row is split by the given <strong>Number</strong> - 1.</li>
-<li>When the pattern is no longer matched, the rest columns contain a <cite>null</cite>.</li>
+<li><p>Each row is split by the given <strong>Number</strong> - 1.</p></li>
+<li><p>When the pattern is no longer matched, the rest columns contain a <cite>null</cite>.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul class="simple">
-<li>Note that columns are created as many as the <strong>Number</strong> input.</li>
+<li><p>Note that columns are created as many as the <strong>Number</strong> input.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -535,21 +533,21 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of target columns</li>
-<li>Delimiter: A constant string with which values of different columns are concatenated.</li>
-<li>New column name</li>
+<li><p>Column: A list of target columns</p></li>
+<li><p>Delimiter: A constant string with which values of different columns are concatenated.</p></li>
+<li><p>New column name</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>The target columns are merged with the <strong>Delimiter</strong> into a new column.</li>
+<li><p>The target columns are merged with the <strong>Delimiter</strong> into a new column.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul class="simple">
-<li>Similar to the <a class="reference internal" href="#replace">replace</a> rule, enclosing with a <code class="docutils literal notranslate"><span class="pre">'</span></code> may be skipped. That is, strings not enclosed by <code class="docutils literal notranslate"><span class="pre">/</span></code> or <code class="docutils literal notranslate"><span class="pre">'</span></code> are automatically enclosed by <code class="docutils literal notranslate"><span class="pre">'</span></code>.</li>
+<li><p>Similar to the <a class="reference internal" href="#replace">replace</a> rule, enclosing with a <code class="docutils literal notranslate"><span class="pre">'</span></code> may be skipped. That is, strings not enclosed by <code class="docutils literal notranslate"><span class="pre">/</span></code> or <code class="docutils literal notranslate"><span class="pre">'</span></code> are automatically enclosed by <code class="docutils literal notranslate"><span class="pre">'</span></code>.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -558,28 +556,28 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of target columns</li>
-<li>Pattern: A string pattern to be extracted. Allows a regular expression as is the case for the <a class="reference internal" href="#replace">replace</a> rule.</li>
-<li>Number: Number of instances to be extracted</li>
+<li><p>Column: A list of target columns</p></li>
+<li><p>Pattern: A string pattern to be extracted. Allows a regular expression as is the case for the <a class="reference internal" href="#replace">replace</a> rule.</p></li>
+<li><p>Number: Number of instances to be extracted</p></li>
 </ul>
 </div></blockquote>
 <p>Optional arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Ignore between characters: Does not make any replacement for content between the characters entered here</li>
-<li>Ignore case: Whether to make the strings case-insensitive</li>
+<li><p>Ignore between characters: Does not make any replacement for content between the characters entered here</p></li>
+<li><p>Ignore case: Whether to make the strings case-insensitive</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>A new column(s) with content matching the given pattern is created.</li>
+<li><p>A new column(s) with content matching the given pattern is created.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul class="simple">
-<li>When there are multiple target columns, the resulting columns are inserted after each target column.</li>
+<li><p>When there are multiple target columns, the resulting columns are inserted after each target column.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -588,28 +586,28 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of target columns</li>
-<li>Pattern: A string pattern to be detected. Allows a regular expression as is the case for the <a class="reference internal" href="#replace">replace</a> rule.</li>
+<li><p>Column: A list of target columns</p></li>
+<li><p>Pattern: A string pattern to be detected. Allows a regular expression as is the case for the <a class="reference internal" href="#replace">replace</a> rule.</p></li>
 </ul>
 </div></blockquote>
 <p>Optional arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Ignore between characters: Does not make any replacement for content between the characters entered here</li>
-<li>Ignore case: Whether to make the strings case-insensitive</li>
+<li><p>Ignore between characters: Does not make any replacement for content between the characters entered here</p></li>
+<li><p>Ignore case: Whether to make the strings case-insensitive</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>New columns are created based on the number of matches with the pattern.</li>
-<li>This is highly similar to <a class="reference internal" href="#extract">extract</a>. The only difference is that it counts the number of matches, rather than extracting the matched content.</li>
+<li><p>New columns are created based on the number of matches with the pattern.</p></li>
+<li><p>This is highly similar to <a class="reference internal" href="#extract">extract</a>. The only difference is that it counts the number of matches, rather than extracting the matched content.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul class="simple">
-<li>When there are multiple target columns, the resulting columns are inserted after each target column.</li>
+<li><p>When there are multiple target columns, the resulting columns are inserted after each target column.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -618,20 +616,19 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of target columns</li>
-<li>Type: Map or Array</li>
-<li>New column name</li>
+<li><p>Column: A list of target columns</p></li>
+<li><p>Type: Map or Array</p></li>
+<li><p>New column name</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul>
-<li><p class="first">The target columns are grouped into a new column of the given type.</p>
-</li>
-<li><p class="first">Below are examples of grouping columns into an array and map, respectively.</p>
+<li><p>The target columns are grouped into a new column of the given type.</p></li>
+<li><p>Below are examples of grouping columns into an array and map, respectively.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_nest_1.png" src="../../_images/rule_kinds_nest_1.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_nest_1.en.png" src="../../_images/rule_kinds_nest_1.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -640,26 +637,26 @@
 </div>
 <div class="section" id="unnest">
 <h2>unnest<a class="headerlink" href="#unnest" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="../../_images/rule_kinds_unnest_1.png" src="../../_images/rule_kinds_unnest_1.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_unnest_1.en.png" src="../../_images/rule_kinds_unnest_1.en.png" />
 </div>
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A single target column</li>
-<li>Select elements: <em>0-base</em> index for an array, or key value for a map</li>
+<li><p>Column: A single target column</p></li>
+<li><p>Select elements: <em>0-base</em> index for an array, or key value for a map</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>A new column is created by extracting the selected elements from an array or a map.</li>
+<li><p>A new column is created by extracting the selected elements from an array or a map.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul class="simple">
-<li>The target column must be of the array or map type.</li>
+<li><p>The target column must be of the array or map type.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -668,73 +665,69 @@
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A single target column</li>
+<li><p>Column: A single target column</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>Rows are created from elements of an array.</li>
+<li><p>Rows are created from elements of an array.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul>
-<li><p class="first">The target column must be of the array type.</p>
+<li><p>The target column must be of the array type.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_flatten_1.png" src="../../_images/rule_kinds_flatten_1.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_flatten_1.en.png" src="../../_images/rule_kinds_flatten_1.en.png" />
 </div>
 </div></blockquote>
 </li>
 </ul>
 <p>If the target array column has four elements as shown in the above example, each original row of the array results in four rows. Non-array columns result in the same columns.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_flatten_2.png" src="../../_images/rule_kinds_flatten_2.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_flatten_2.en.png" src="../../_images/rule_kinds_flatten_2.en.png" />
 </div>
 </div></blockquote>
 </div></blockquote>
 </div>
 <div class="section" id="aggregate">
 <h2>aggregate<a class="headerlink" href="#aggregate" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="../../_images/rule_kinds_aggregate_1.png" src="../../_images/rule_kinds_aggregate_1.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_aggregate_1.en.png" src="../../_images/rule_kinds_aggregate_1.en.png" />
 </div>
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Expression: A list of aggregate functions</li>
-<li>Group by: A list of columns that group values by.</li>
+<li><p>Expression: A list of aggregate functions</p></li>
+<li><p>Group by: A list of columns that group values by.</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul>
-<li><p class="first">A new column is added from the results of grouping by each combination of the elements from the GroupBy columns.</p>
-</li>
-<li><p class="first">A column is created for each expression. For example, two columns are created if average and count are designated as expressions.</p>
-</li>
-<li><p class="first">The available aggregate functions are as follows:</p>
+<li><p>A new column is added from the results of grouping by each combination of the elements from the GroupBy columns.</p></li>
+<li><p>A column is created for each expression. For example, two columns are created if average and count are designated as expressions.</p></li>
+<li><p>The available aggregate functions are as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li>count()</li>
-<li>sum(<em>colname</em>)</li>
-<li>avg(<em>colname</em>)</li>
-<li>min(<em>colname</em>)</li>
-<li>max(<em>colname</em>)</li>
+<li><p>count()</p></li>
+<li><p>sum(<em>colname</em>)</p></li>
+<li><p>avg(<em>colname</em>)</p></li>
+<li><p>min(<em>colname</em>)</p></li>
+<li><p>max(<em>colname</em>)</p></li>
 </ul>
 <p>Notes</p>
 </div></blockquote>
 </li>
-<li><p class="first">Calculations are performed only for sampling results. Therefore, the snapshot?the results for the entire data?may be different.</p>
-</li>
-<li><p class="first">Note that <code class="docutils literal notranslate"><span class="pre">()</span></code> must be inserted when using the count function.</p>
-</li>
-<li><p class="first">count(<em>colname</em>) is currently not available.</p>
+<li><p>Calculations are performed only for sampling results. Therefore, the snapshot?the results for the entire data?may be different.</p></li>
+<li><p>Note that <code class="docutils literal notranslate"><span class="pre">()</span></code> must be inserted when using the count function.</p></li>
+<li><p>count(<em>colname</em>) is currently not available.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_aggregate_2.png" src="../../_images/rule_kinds_aggregate_2.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_aggregate_2.en.png" src="../../_images/rule_kinds_aggregate_2.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -743,33 +736,32 @@
 </div>
 <div class="section" id="pivot">
 <h2>pivot<a class="headerlink" href="#pivot" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="../../_images/rule_kinds_pivot_1.png" src="../../_images/rule_kinds_pivot_1.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_pivot_1.en.png" src="../../_images/rule_kinds_pivot_1.en.png" />
 </div>
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of columns subject to pivoting</li>
-<li>Expression: A list of expressions whose resulting values form new columns (only aggregate functions are available)</li>
-<li>Group by: A list of columns that group values by.</li>
+<li><p>Column: A list of columns subject to pivoting</p></li>
+<li><p>Expression: A list of expressions whose resulting values form new columns (only aggregate functions are available)</p></li>
+<li><p>Group by: A list of columns that group values by.</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>Group By is performed for each combination of target columns and GroupBy columns. A dataset having the results as column values is created.</li>
-<li>A set of columns is created for each expression. For example, if average and count are designated as expressions and the values in the pivoted columns are divided into ten groups, a total of 20 columns will be created.</li>
+<li><p>Group By is performed for each combination of target columns and GroupBy columns. A dataset having the results as column values is created.</p></li>
+<li><p>A set of columns is created for each expression. For example, if average and count are designated as expressions and the values in the pivoted columns are divided into ten groups, a total of 20 columns will be created.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul>
-<li><p class="first">This is used when performing GroupBy on at least two columns. (1 pivoted column, 1 GroupBy column)</p>
-</li>
-<li><p class="first">Here, <strong>Rename multiple columns</strong> is useful as column names tend to get longer.</p>
+<li><p>This is used when performing GroupBy on at least two columns. (1 pivoted column, 1 GroupBy column)</p></li>
+<li><p>Here, <strong>Rename multiple columns</strong> is useful as column names tend to get longer.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_pivot_2.png" src="../../_images/rule_kinds_pivot_2.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_pivot_2.en.png" src="../../_images/rule_kinds_pivot_2.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -778,38 +770,38 @@
 </div>
 <div class="section" id="unpivot">
 <h2>unpivot<a class="headerlink" href="#unpivot" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="../../_images/rule_kinds_unpivot_1.png" src="../../_images/rule_kinds_unpivot_1.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_unpivot_1.en.png" src="../../_images/rule_kinds_unpivot_1.en.png" />
 </div>
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Column: A list of target columns to be converted into values in new columns</li>
-<li>GroupEvery: Number of columns (defaults to 1)</li>
+<li><p>Column: A list of target columns to be converted into values in new columns</p></li>
+<li><p>GroupEvery: Number of columns (defaults to 1)</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>Two columns are created?one contains the selected column names and the other contains their values. (If GroupEvery is set to 1)</li>
-<li>If GroupEvery is the same as the number of selected columns, each resulting pair of columns contains the name and values of its respective original column. Therefore, If 10 columns are unpivoted with the GroupEvery argument set to 10, for example, a total of 20 columns are created.</li>
+<li><p>Two columns are created?one contains the selected column names and the other contains their values. (If GroupEvery is set to 1)</p></li>
+<li><p>If GroupEvery is the same as the number of selected columns, each resulting pair of columns contains the name and values of its respective original column. Therefore, If 10 columns are unpivoted with the GroupEvery argument set to 10, for example, a total of 20 columns are created.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul>
-<li><p class="first">Using the GroupEvery argument set to a factor of the number of columns will soon be supported.</p>
+<li><p>Using the GroupEvery argument set to a factor of the number of columns will soon be supported.</p>
 <blockquote>
 <div><p>&lt;Where GroupEvery is set to 1&gt;</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_unpivot_2.png" src="../../_images/rule_kinds_unpivot_2.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_unpivot_2.en.png" src="../../_images/rule_kinds_unpivot_2.en.png" />
 </div>
 </div></blockquote>
 <p>&lt;Where GroupEvery is set to the same as the number of columns&gt;</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_unpivot_3.png" src="../../_images/rule_kinds_unpivot_3.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_unpivot_3.en.png" src="../../_images/rule_kinds_unpivot_3.en.png" />
 </div>
 </div></blockquote>
 </div></blockquote>
@@ -819,34 +811,34 @@
 </div>
 <div class="section" id="join">
 <h2>join<a class="headerlink" href="#join" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="../../_images/rule_kinds_join_1.png" src="../../_images/rule_kinds_join_1.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_join_1.en.png" src="../../_images/rule_kinds_join_1.en.png" />
 </div>
 <p>Unlike other rules, join has a separate popup.</p>
 <p>Required arguments (select in a popup or enter a value)</p>
 <blockquote>
 <div><ul class="simple">
-<li>Dataset to join: A wrangled dataset in the same dataflow</li>
-<li>Columns to join (toggle)</li>
-<li>Join keys: Multiple values may be entered</li>
-<li>Join type: Only inner join supported now</li>
+<li><p>Dataset to join: A wrangled dataset in the same dataflow</p></li>
+<li><p>Columns to join (toggle)</p></li>
+<li><p>Join keys: Multiple values may be entered</p></li>
+<li><p>Join type: Only inner join supported now</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>Joins to the target dataset to create new columns.</li>
-<li>This rule is the same as <code class="docutils literal notranslate"><span class="pre">join</span></code> used by a relational database.</li>
-<li>The results can be previewed by clicking the <strong>Show result</strong> button.</li>
+<li><p>Joins to the target dataset to create new columns.</p></li>
+<li><p>This rule is the same as <code class="docutils literal notranslate"><span class="pre">join</span></code> used by a relational database.</p></li>
+<li><p>The results can be previewed by clicking the <strong>Show result</strong> button.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul>
-<li><p class="first">The join keys must be included in the columns to join.</p>
+<li><p>The join keys must be included in the columns to join.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_join_2.png" src="../../_images/rule_kinds_join_2.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_join_2.en.png" src="../../_images/rule_kinds_join_2.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -855,30 +847,30 @@
 </div>
 <div class="section" id="union">
 <h2>union<a class="headerlink" href="#union" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="../../_images/rule_kinds_union_1.png" src="../../_images/rule_kinds_union_1.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_union_1.en.png" src="../../_images/rule_kinds_union_1.en.png" />
 </div>
 <p>Similar to <a class="reference internal" href="#join">join</a>, union has a separate popup.</p>
 <p>Required arguments (select in a popup)</p>
 <blockquote>
 <div><ul class="simple">
-<li>Datasets to union: Multiple selections allowed.</li>
+<li><p>Datasets to union: Multiple selections allowed.</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>The content of the selected datasets is also processed.</li>
-<li>This rule is the same as <code class="docutils literal notranslate"><span class="pre">union</span> <span class="pre">all</span></code> used by a relational database.</li>
+<li><p>The content of the selected datasets is also processed.</p></li>
+<li><p>This rule is the same as <code class="docutils literal notranslate"><span class="pre">union</span> <span class="pre">all</span></code> used by a relational database.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul>
-<li><p class="first">The target datasets must coincide with the dataset that unions them in terms of column name, type, and number of columns.</p>
+<li><p>The target datasets must coincide with the dataset that unions them in terms of column name, type, and number of columns.</p>
 <blockquote>
-<div><div class="figure">
-<img alt="../../_images/rule_kinds_union_2.png" src="../../_images/rule_kinds_union_2.png" />
+<div><div class="figure align-center">
+<img alt="../../_images/rule_kinds_union_2.en.png" src="../../_images/rule_kinds_union_2.en.png" />
 </div>
 </div></blockquote>
 </li>
@@ -887,52 +879,50 @@
 </div>
 <div class="section" id="window">
 <h2>window<a class="headerlink" href="#window" title="Permalink to this headline">¶</a></h2>
-<div class="figure">
-<img alt="../../_images/rule_kinds_window_1.png" src="../../_images/rule_kinds_window_1.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_window_1.en.png" src="../../_images/rule_kinds_window_1.en.png" />
 </div>
-<div class="figure">
-<img alt="../../_images/rule_kinds_window_2.png" src="../../_images/rule_kinds_window_2.png" />
+<div class="figure align-center">
+<img alt="../../_images/rule_kinds_window_2.en.png" src="../../_images/rule_kinds_window_2.en.png" />
 </div>
 <p>Required arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>Expression: A list of window functions</li>
-<li>Group by: A list of columns that group values by. Row order created within each group. If not specified, the whole data is sorted based on the Sort by setting.</li>
-<li>Sort by: Specifies columns by which the order of rows is determined. If not specified, data is sorted in the order of being inputted.</li>
+<li><p>Expression: A list of window functions</p></li>
+<li><p>Group by: A list of columns that group values by. Row order created within each group. If not specified, the whole data is sorted based on the Sort by setting.</p></li>
+<li><p>Sort by: Specifies columns by which the order of rows is determined. If not specified, data is sorted in the order of being inputted.</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul>
-<li><p class="first">Column values are created by calculating with the values of the preceding and following rows.</p>
-</li>
-<li><p class="first">The rows are grouped first and then sorted within each group in the specified column order.</p>
+<li><p>Column values are created by calculating with the values of the preceding and following rows.</p></li>
+<li><p>The rows are grouped first and then sorted within each group in the specified column order.</p>
 <blockquote>
 <div><ul class="simple">
-<li>In the above example, each row value is averaged with the three preceding and following rows within the same State group.</li>
-<li>If an immediately preceding row does not have the same state, earlier rows are searched.</li>
+<li><p>In the above example, each row value is averaged with the three preceding and following rows within the same State group.</p></li>
+<li><p>If an immediately preceding row does not have the same state, earlier rows are searched.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">The currently available window functions are as follows:</p>
+<li><p>The currently available window functions are as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li>row_number()</li>
-<li>lead(<em>colname</em>, <em>int</em>)</li>
-<li>lag(<em>colname</em>, <em>int</em>)</li>
-<li>rolling_sum(<em>colname</em>, <em>int</em>, <em>int</em>)</li>
-<li>rolling_avg(<em>colname</em>, <em>int</em>, <em>int</em>)</li>
+<li><p>row_number()</p></li>
+<li><p>lead(<em>colname</em>, <em>int</em>)</p></li>
+<li><p>lag(<em>colname</em>, <em>int</em>)</p></li>
+<li><p>rolling_sum(<em>colname</em>, <em>int</em>, <em>int</em>)</p></li>
+<li><p>rolling_avg(<em>colname</em>, <em>int</em>, <em>int</em>)</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">In addition to window functions, aggregate functions may be used.</p>
-</li>
+<li><p>In addition to window functions, aggregate functions may be used.</p></li>
 </ul>
 </div></blockquote>
 <p>Notes</p>
 <blockquote>
 <div><ul class="simple">
-<li>When using window functions, error messages may not be properly displayed in the event of insufficient arguments.</li>
+<li><p>When using window functions, error messages may not be properly displayed in the event of insufficient arguments.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -949,7 +939,7 @@
         <a href="create_a_datasnapshot.html" class="btn btn-neutral float-right" title="Create a data snapshot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="edit_rules.html" class="btn btn-neutral" title="Edit rules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="edit_rules.html" class="btn btn-neutral float-left" title="Edit rules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -975,36 +965,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
-        <script type="text/javascript" src="../../_static/jquery.js"></script>
-        <script type="text/javascript" src="../../_static/underscore.js"></script>
-        <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-  
-
-  <script type="text/javascript" src="../../_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
