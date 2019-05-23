@@ -27,6 +27,6 @@
 .. toctree::
    :maxdepth: 2
 
-   ../part07/create_a_dataset
-   ../part07/manage_dataflow
-   ../part07/data_snapshot
+   create_a_dataset
+   manage_dataflow
+   data_snapshot

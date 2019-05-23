@@ -23,6 +23,6 @@ Metatron Discovery로 즉시 데이터 분석을 시작할 수 있는 방법은 
 .. toctree::
    :maxdepth: 4
    
-   ../part00/step1
-   ../part00/step2
-   ../part00/step3
+   step1
+   step2
+   step3

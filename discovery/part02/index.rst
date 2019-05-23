@@ -11,6 +11,6 @@
 .. toctree::
    :maxdepth: 2
    
-   ../part02/data_source
-   ../part02/data_connection
-   ../part02/data_monitoring
+   data_source
+   data_connection
+   data_monitoring

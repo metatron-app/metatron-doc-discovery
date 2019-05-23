@@ -6,5 +6,5 @@
 .. toctree::
    :maxdepth: 4
 
-   ../part04/chart_filter
-   ../part04/global_filter
+   chart_filter
+   global_filter

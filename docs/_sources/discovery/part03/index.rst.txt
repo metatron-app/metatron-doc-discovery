@@ -15,5 +15,5 @@
 .. toctree::
    :maxdepth: 2
 
-   ../part03/workspace_management
-   ../part03/shared_workspace
+   workspace_management
+   shared_workspace

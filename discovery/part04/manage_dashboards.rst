@@ -11,8 +11,8 @@
 .. toctree::
    :maxdepth: 4
 
-   ../part04/create_a_dashboard
-   ../part04/change_dashboard_layout_and_size
-   ../part04/display_a_data_source
-   ../part04/present_the_dashboard
-   ../part04/give_new_column_name(alias)
+   create_a_dashboard
+   change_dashboard_layout_and_size
+   display_a_data_source
+   present_the_dashboard
+   give_new_column_name(alias)

@@ -18,5 +18,5 @@ SQL 기반 분석 쿼리를 보관하는 각각의 문서를 '워크벤치'라�
 .. toctree::
    :maxdepth: 2
 
-   ../part06/06_02-create_a_workbench
-   ../part06/06_03-use_a_workbench
+   06_02-create_a_workbench
+   06_03-use_a_workbench

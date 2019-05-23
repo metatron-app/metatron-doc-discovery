@@ -16,9 +16,9 @@ Metatron 기본 엔진: Druid
 .. toctree::
 	:maxdepth: 2
 
-	../part01/druid_background
-	../part01/druid_features
-	../part01/druid_nodes
-	../part01/druid_tests
-	../part01/druid_to_metatron
+	druid_background
+	druid_features
+	druid_nodes
+	druid_tests
+	druid_to_metatron
 	

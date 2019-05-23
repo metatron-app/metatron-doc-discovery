@@ -19,7 +19,7 @@
 .. toctree::
    :maxdepth: 4
 
-   ../part07/add_datasets
-   ../part07/edit_rules
-   ../part07/rule_kinds
-   ../part07/create_a_datasnapshot
+   add_datasets
+   edit_rules
+   rule_kinds
+   create_a_datasnapshot

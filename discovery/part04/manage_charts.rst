@@ -18,7 +18,7 @@
 .. toctree::
    :maxdepth: 4
 
-   ../part04/composition_of_the_data_column_list
-   ../part04/pivoting
-   ../part04/chart_types
-   ../part04/chart_style 
+   composition_of_the_data_column_list
+   pivoting
+   chart_types
+   chart_style 
