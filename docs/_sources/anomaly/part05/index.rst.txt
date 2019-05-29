@@ -53,14 +53,13 @@ Alarm Info 영역
 알람 현황 일람 상자
 ``````````````````````````````````````````````````
 
-이 영역에서는 해당 알람의 발생 현황을 보여줍니다.
+이 영역에서는 해당 알람의 발생 현황을 보여줍니다. 정해진 주기에 따라 알람이 연속적으로 발생하면 1개의 알람 항목으로 계속 유지됩니다. 아래 그림 예시에서는 알람이 4번의 주기 동안 연속적으로 발생하였고(**Alarms**), 주기가 1분이었기 때문에 4건의 알람이 총 4분 동안 지속된 것입니다(**Elapsed Time**).
 
 	.. figure:: /_static/img/anomaly/part04/alarm_detail_02.png
 	   :align: center
 	   :alt: alarm overview
 
 Alarm History 영역
-
 ``````````````````````````````````````````````````
 
 이 영역에서는 해당 알람에 적용된 알람 룰에 의해 발생한 알람의 이력을 보여줍니다.
@@ -72,19 +71,19 @@ Alarm History 영역
 Chart View 탭
 ``````````````````````````````````````````````````
 
-이 탭 영역에서는 해당 알람 구간 내에서 모니터링한 aggregate 데이터의 Abnormal score 추이를 차트로 보여줍니다. 여기서는 각 조건별 점수 한계값에 도달하여 상응하는 알람(Critical, Major, Moderate, Low)을 일으킨 발생 건도 보고해줍니다.
+이 탭 영역에서는 해당 알람 구간 내에서 모니터링한 aggregate 데이터의 abnormal score 추이를 차트로 보여줍니다. 여기서는 각 조건별 점수 한계값에 도달하여 상응하는 알람(``Critical``, ``Major``, ``Moderate``, ``Low``)을 일으킨 발생 건도 보고해줍니다. 차트 산출 방식에 관해서는 :ref:`basic_principles` 항목을 참조하십시오.
 
 	.. figure:: /_static/img/anomaly/part04/alarm_detail_04.png
 	   :align: center
 	   :alt: chart view
 
-	* **Total abnormal score:** 알람 룰에 포함된 모든 측정값 컬럼에 대한 Abnormal score를 보여줍니다.
-	* **Chart by measures:** 알람 룰에 포함된 각 개별 측정값 컬럼의 현황을 보여줍니다.
+	* **Total abnormal score:** 알람 룰에 포함된 모든 측정값 컬럼에 대한 abnormal score를 보여줍니다.
+	* **Chart by measures:** 알람 룰에 포함된 각 개별 측정값 컬럼 데이터의 예측치와 실제치의 추이를 보여줍니다.
 
 Table View 탭
 ``````````````````````````````````````````````````
 
-이 탭 영역에서는 각 알람 발생 건별로 실제치와 예상치, 그리고 Abnormal score를 보여줍니다.
+이 탭 영역에서는 각 알람 발생 건별로 데이터 실제치와 예측치, 그리고 abnormal score를 보여줍니다.
 
 	.. figure:: /_static/img/anomaly/part04/alarm_detail_05.png
 	   :align: center

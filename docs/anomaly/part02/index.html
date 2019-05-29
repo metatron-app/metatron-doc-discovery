@@ -216,7 +216,7 @@
 </div>
 </div></blockquote>
 </li>
-<li><p>알람을 생성하고자 하는 값이 있는 데이터 소스를 선택합니다.</p>
+<li><p>모니터링하고자 하는 데이터 소스를 선택합니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="select datasource" src="../../_images/choose_data_source_01.png" />
@@ -238,7 +238,7 @@
 </div>
 </div></blockquote>
 </li>
-<li><p>필요할 경우 기존 컬럼에 공식을 적용하여 사용자 컬럼을 새로 만들 수도 있습니다. <strong>Measure</strong> 영역의 우측 상단에서 <img alt="icon_custom_column" src="../../_images/icon_custom_column.png" /> 버튼을 클릭하여 대화 상자를 열고 사용자 컬럼을 설정하십시오.</p>
+<li><p>필요할 경우 기존 컬럼에 수식을 적용하여 사용자 컬럼을 새로 만들 수도 있습니다. <strong>Measure</strong> 영역의 우측 상단에서 <img alt="icon_custom_column" src="../../_images/icon_custom_column.png" /> 버튼을 클릭하여 대화 상자를 열고 사용자 컬럼을 설정하십시오.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="make custem measure rule" src="../../_images/choose_metrics_select_measure_04.png" />
@@ -271,7 +271,7 @@
 </div>
 <div class="section" id="configure-training">
 <span id="id4"></span><h2>트레이닝 기간 설정하기<a class="headerlink" href="#configure-training" title="제목 주소">¶</a></h2>
-<p>모니터링할 지표 선택을 마쳤으면, <strong>Training interval</strong> 패널에서 모델 트레이닝에 사용할 데이터 범위를 선택할 수 있습니다.</p>
+<p>모니터링할 지표 선택을 마쳤으면, <strong>Training interval</strong> 패널에서 예측 모델 트레이닝에 사용할 데이터 범위를 선택할 수 있습니다.</p>
 <blockquote>
 <div><ol class="arabic">
 <li><p>모델을 트레이닝시키는 데 사용할 데이터 세트의 주기를 <strong>Granularity</strong> 선택란에서 선택합니다.</p>
@@ -294,7 +294,7 @@
 </div>
 <div class="section" id="select-model">
 <span id="id5"></span><h2>모델 선택하기<a class="headerlink" href="#select-model" title="제목 주소">¶</a></h2>
-<p>이제 <strong>Model</strong> 패널로 넘어가서 어떠한 예측 모델을 사용할지 선택합니다. Anomaly는 주어진 트레이닝 데이터 세트를 이용하여 각각의 모델을 트레이닝시킨 후 그 결과를 산출해줍니다. 아래 두 방법 중 하나를 통해 적합한 예측 모델을 선택합니다.</p>
+<p>이제 <strong>Model</strong> 패널로 넘어가서 어떠한 예측 모델을 사용할지 선택합니다. Anomaly는 주어진 트레이닝 데이터 세트를 이용하여 각각의 모델을 트레이닝시킨 후 그 결과를 산출해줍니다. 아래 두 방법 중 하나를 통해 적합한 예측 모델을 선택하십시오.</p>
 <blockquote>
 <div><ul>
 <li><p>기본적으로 우측에 표시되는 정확도 점수(100점 만점)가 가장 높은 모델이 <strong>Recommend</strong> 표시와 함께 자동 선택됩니다.</p>
@@ -333,20 +333,20 @@
 </div>
 <ul class="simple">
 <li><p><strong>Alarm Start:</strong> 알람을 개시할 때를 설정합니다. 이 설정값에 해당하는 시간 이후부터 알람이 개시됩니다.</p></li>
-<li><p><strong>Alarm Interval:</strong> 알람의 조건이 충족되었을 때 알람을 발생시킬 주기를 설정합니다.</p></li>
+<li><p><strong>Alarm Interval:</strong> 알람의 조건이 충족되었을 때 알람을 발생시키는 주기를 설정합니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>아래 각 항목의 설명을 참고하여 모니터링하는 데이터의 aggregate 값에 따른 알람 발동 조건을 설정합니다. 기본적으로 하나의 조건이 주어지며, <strong>+ Add Condition</strong> 버튼을 클릭하면 조건을 추가할 수 있습니다.</p>
+<li><p>아래 각 항목의 설명을 참고하여 모니터링 대상 데이터의 abnormal score에 따른 알람 발동 조건을 설정합니다. 기본적으로 하나의 조건이 주어지며, <strong>+ Add Condition</strong> 버튼을 클릭하면 조건을 추가할 수 있습니다.</p>
 <blockquote>
-<div><ul class="simple">
-<li><p><strong>Severity:</strong> 주어진 조건에 해당하는 알람의 심각도를 설정합니다.</p></li>
-<li><p><strong>Threshold:</strong> aggregate 값이 이 설정값에 도달하면 알람이 발생하게 됩니다.</p></li>
-<li><p><strong>Frequency:</strong> 알람 조건 충족 시 알람을 울리는 빈도를 설정합니다.</p></li>
-</ul>
-<div class="figure align-center">
+<div><div class="figure align-center">
 <img alt="set alarm condition" src="../../_images/set_alarm_rules_02.png" />
 </div>
+<ul class="simple">
+<li><p><strong>Severity:</strong> 주어진 조건에 해당하는 알람의 심각도를 설정합니다.</p></li>
+<li><p><strong>Threshold:</strong> abnormal score가 이 설정값을 초과하면 데이터 이상 상태로 간주됩니다.</p></li>
+<li><p><strong>Frequency:</strong> abnormal score가 한계값을 초과하는 빈도가 어떠할 때 알람을 발생시킬지 결정합니다. 예를 들어, &quot;3 within 5 minute&quot;로 설정한 경우에는 abnormal score가 5분 안에 3회 이상 한계값을 초과하면 알람이 발생합니다.</p></li>
+</ul>
 </div></blockquote>
 </li>
 <li><p>모든 설정을 마쳤으면 <strong>Next</strong>를 클릭합니다.</p></li>

@@ -115,8 +115,9 @@
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Anomaly 확장팩 소개</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">주요 기능</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">구조</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-principles">기본 원리</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">주요 기능</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">구조</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../part02/index.html">알람 룰 만들기</a></li>
@@ -189,44 +190,53 @@
             
   <div class="section" id="anomaly">
 <h1>Anomaly 확장팩 소개<a class="headerlink" href="#anomaly" title="제목 주소">¶</a></h1>
-<div class="section" id="id1">
-<h2>주요 기능<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
-<p>이상 탐지 확장팩 Anomaly는 Machine Learning 예측 모델 기반으로 데이터 흐름의 비정상적인 상황을 감지하여 사용자가 즉각적으로 확인할 수 있도록 도와주는 도구입니다.</p>
+<p>이상 탐지 확장팩 Anomaly는 Machine Learning 예측 모델을 기반으로 데이터 흐름의 비정상적인 상황을 감지하여 사용자가 즉각적으로 확인할 수 있도록 도와주는 도구입니다.</p>
+<div class="section" id="basic-principles">
+<span id="id1"></span><h2>기본 원리<a class="headerlink" href="#basic-principles" title="제목 주소">¶</a></h2>
+<p>아래 그림과 같이 Anomaly는 대상 데이터 소스의 집계값을 실시간으로 예측하고 실제 값을 모니터링합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="aggregation monitoring" src="../../_images/features_01.png" />
+</div>
+</div></blockquote>
+<p>여기서 <strong>Predict</strong>로 표시된 값은 머신러닝 기반으로 예측한 데이터 집계값이고, <strong>Actual</strong>로 표시된 값은 실제로 모니터링한 결과 값입니다. 아래 그림과 같이 두 값 간의 격차가 커질수록 <strong>total abnormal score</strong>가 증가하게 됩니다. 즉, 실제치가 예상치와 다르면 데이터 집계값이 그만큼 정상 범위를 벗어났다고 간주하는 것입니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="total abnormal score" src="../../_images/features_02.png" />
+</div>
+</div></blockquote>
+<p>이 예시에서는 abnormal score가 10점에 도달하면 <code class="docutils literal notranslate"><span class="pre">Moderate</span></code> 알람을 발생시키고, 80점에 도달하면 <code class="docutils literal notranslate"><span class="pre">Critical</span></code> 알람을 발생시키도록 설정되어 있습니다.</p>
+<p>이렇게 발생하는 알람은 다양한 채널로 사용자에게 통보되어, 사용자는 데이터 이상 상황에 즉각 대처할 수 있습니다.</p>
+</div>
+<div class="section" id="id2">
+<h2>주요 기능<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>Anomaly의 주요 기능은 다음과 같습니다.</p>
 <p><strong>Machine Learning</strong></p>
 <blockquote>
-<div><ul class="simple">
-<li><p>예측 모델에 기반한 알고리즘을 자동 추천하는 머신 러닝으로 이지 유즈</p></li>
-</ul>
+<div><p>머신러닝에 기반한 예측 모델이 자동으로 추천되어 사용자 편의 증대</p>
 </div></blockquote>
 <p><strong>Alarm &amp; Report</strong></p>
 <blockquote>
-<div><ul class="simple">
-<li><p>비정상적인 상황에 대한 알람을 즉각적으로 확인 하고 리포팅까지 이어진 서비스</p></li>
-</ul>
+<div><p>비정상적인 상황 발생 시 즉각 알람 발동 및 보고서 생성</p>
 </div></blockquote>
 <p><strong>Analyze</strong></p>
 <blockquote>
-<div><ul class="simple">
-<li><p>데이터로 차트 생성하고 분석하는 서비스 메타트론 디스커버리와 연계 가능</p></li>
-</ul>
+<div><p>데이터로 차트 생성하고 분석하는 서비스 메타트론 디스커버리와 연계 가능</p>
 </div></blockquote>
 <p><strong>Link with Learning System</strong></p>
 <blockquote>
-<div><ul class="simple">
-<li><p>새로운 분석을 적용할 수 있도록 외부 분석 시스템과의 연계를 지원</p></li>
-</ul>
+<div><p>새로운 분석을 적용할 수 있도록 외부 분석 시스템과의 연계를 지원</p>
 </div></blockquote>
-<div class="figure align-center">
-<img alt="metatron anomaly" src="../../_images/features_01.png" />
 </div>
-</div>
-<div class="section" id="id2">
-<h2>구조<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<div class="section" id="id3">
+<h2>구조<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
 <p>Anomaly의 메뉴 구성은 다음과 같습니다.</p>
-<div class="figure align-center">
+<blockquote>
+<div><div class="figure align-center">
 <img alt="metatron anomaly structure" src="../../_images/structure_01.png" />
 </div>
-<p>이러한 메뉴 간 이동이 단순하고 세부 항목 간 참조 기능도 잘 구축되어 있어, 알람 룰 설정값과 실제 발생 알람, 그리고 전반적인 현황 간의 유기적인 파악이 용이합니다.</p>
+</div></blockquote>
+<p>주요 메뉴 간 이동이 쉽고 세부 항목 간 참조 기능도 잘 구축되어 있어, 알람 룰 설정값과 발생한 알람 내역, 그리고 전반적인 알람 현황 간의 유기적인 파악이 용이합니다.</p>
 </div>
 </div>
 
