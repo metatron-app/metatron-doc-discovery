@@ -141,22 +141,13 @@ htmlhelp_basename = 'metatron-discovery-doc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_engine = 'xelatex'
+
 latex_elements = {
-    # The paper size ('letterpaper' or 'a4paper').
-    #
-    # 'papersize': 'letterpaper',
-
-    # The font size ('10pt', '11pt' or '12pt').
-    #
-    # 'pointsize': '10pt',
-
-    # Additional stuff for the LaTeX preamble.
-    #
-    # 'preamble': '',
-
-    # Latex figure (float) alignment
-    #
-    # 'figure_align': 'htbp',
+    'fontpkg': r'''
+\usepackage[cjk]{kotex}
+    ''',
+    'figure_align': 'H'
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
@@ -166,7 +157,6 @@ latex_documents = [
     (master_doc, 'metatron-doc-user.tex', 'metatron-doc-user Documentation',
      'metatron team', 'manual'),
 ]
-
 
 # -- Options for manual page output ------------------------------------------
 

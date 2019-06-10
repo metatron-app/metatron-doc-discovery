@@ -8,6 +8,6 @@ Metatron Discovery는 Metatron 운용 서버 클러스터에 적재된 데이터
 .. toctree::
    :maxdepth: 2
 
-   ../part01/overview
-   ../part01/structure
-   ../part01/engine
+   overview
+   structure
+   engine

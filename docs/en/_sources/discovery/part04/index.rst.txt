@@ -18,7 +18,7 @@
 .. toctree::
    :maxdepth: 2
 
-   ../part04/create_a_workbook
-   ../part04/manage_dashboards
-   ../part04/manage_charts
-   ../part04/filters
+   create_a_workbook
+   manage_dashboards
+   manage_charts
+   filters

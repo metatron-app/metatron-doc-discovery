@@ -6,7 +6,7 @@
 .. |icon_alarm_history| image:: /_static/img/anomaly/part05/icon_alarm_history.png
 
 
-**Alarm Rule** 탭 메뉴에서는 등록된 알람 룰을 열람·수정할 수 있습니다. 또한 이 메뉴에서는 선택한 알람 룰의 따라 산출되고 있는 데이터 abnormal score 현황도 쉽게 파악할 수 있습니다.
+**Alarm Rule** 탭 메뉴에서는 등록된 알람 룰을 열람·수정할 수 있습니다. 또한 이 메뉴에서는 선택한 예측 모델에 따라 산출되고 있는 데이터 abnormal score 현황도 쉽게 파악할 수 있습니다.
 
 알람 룰 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다.
 

@@ -1,0 +1,46 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-29 12:55+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# ebe22c806df342aea36e2778797399e2
+#: ../../integrator/part02/index.rst:4
+msgid "워크플로우 리스트"
+msgstr "Workflow list"
+
+# 1d86601021964be682a053e890d8df78
+#: ../../integrator/part02/index.rst:6
+msgid ""
+"Integrator 메인 홈에서 **워크플로우** 탭으로 들어가면, 아래와 같이 현재 등록된 워크플로우들을 열거하여 보여줍니다. "
+"**상태** 컬럼에서는 각 워크플로우의 진행 현황을 간략하게 보여줍니다."
+msgstr "The **Workflow** tab on the main page of Integrator lists registered workflows as shown below. The **Status** column gives the brief progress of each workflow."
+
+# 07865366cf2f472fac3038127a3e3f2e
+#: ../../integrator/part02/index.rst:11
+msgid ""
+"리스트에 나열된 워크플로우 중 하나를 클릭하면 해당 워크플로우의 에디터 화면으로 이동합니다. 워크플로우 에디터에 대한 자세한 설명은"
+" :ref:`workflow_editor` 항목을 참조하십시오."
+msgstr "Click on one of the workflows in the list to enter the workflow editor. See :ref:`workflow_editor` for details on the workflow editor."
+
+# 0446dfc2294b4febaab8fde433af29da
+#: ../../integrator/part02/index.rst:13
+msgid ""
+"화면 우측 상단의 **+ 워크플로우 생성**\\을 클릭하면 새로운 워크플로우를 생성할 수 있는 대화 상자가 열립니다. 만들고자하는 "
+"워크플로우의 이름과 설명을 입력한 후 **마침** 버튼을 클릭하면 새로운 워크플로우가 생성됩니다."
+msgstr "Click **+ Create Workflow** on the upper right to open a dialog box to create a new workflow. Enter the name and description of the workflow, and click **Done** to create the new workflow."
+

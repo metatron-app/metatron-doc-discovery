@@ -11,7 +11,7 @@ Metatron Discovery에서 '데이터 소스'는 Druid 엔진에 수집되는 데�
 .. toctree::
    :maxdepth: 4
 
-   ../part02/dimension_and_measures
-   ../part02/manage_data_sources
-   ../part02/data_source_detail_view
-   ../part02/create_a_data_source
+   dimension_and_measures
+   manage_data_sources
+   data_source_detail_view
+   create_a_data_source
