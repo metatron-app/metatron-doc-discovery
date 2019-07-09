@@ -3,13 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Metatron User Manual
+메타트론 사용자 문서
 ===============================================
 
 .. toctree::
 	:name: lang_sel
 
-	한국어로 보기 <https://metatron-app.github.io/metatron-doc-discovery/>
+	VIEW IN ENGLISH <https://metatron-app.github.io/metatron-doc-discovery/en>
 
 .. toctree::
 	:maxdepth: 2

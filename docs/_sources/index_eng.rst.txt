@@ -24,3 +24,23 @@ Metatron User Manual
 	/discovery/part06/index
 	/discovery/part07/index
 
+.. toctree::
+	:maxdepth: 2
+	:caption: EX-pack for Workflow Integrator
+
+	/integrator/part01/index
+	/integrator/part02/index
+	/integrator/part03/index
+	/integrator/part04/index
+	/integrator/part05/index
+
+.. toctree::
+	:maxdepth: 2
+	:caption: EX-pack for Anomaly Detection
+
+	/anomaly/part01/index
+	/anomaly/part02/index
+	/anomaly/part03/index
+	/anomaly/part04/index
+	/anomaly/part05/index
+	

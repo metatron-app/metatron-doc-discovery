@@ -21,4 +21,5 @@
    composition_of_the_data_column_list
    pivoting
    chart_types
-   chart_style 
+   chart_style
+   map_chart
