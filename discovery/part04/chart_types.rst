@@ -28,6 +28,5 @@ Metatron Discovery는 20여 가지의 차트를 제공하고 있습니다. 차�
 	.. csv-table::
 	   :file: chart_types.csv
 	   :header-rows: 1
+	   :widths: 10 30 30 60 30
 	   :class: longtable
-
-	.. 그림 다시

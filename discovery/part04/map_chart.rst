@@ -41,7 +41,7 @@
 	.. figure:: /_static/img/discovery/part04/map_04.jpg
 		:align: center
 
-또한 차원값을 레이어 선반에 배치하면 측정값으로 색상을 분류하고 동시에 해당 측정값을 기준으로 포인트 크기를 다르게 표현합니다. 차원값과 마찬가지로 툴팁에 해당 측정값이 표기됩니다.
+또한 측정값을 레이어 선반에 배치하면 측정값으로 색상을 분류하고 동시에 해당 측정값을 기준으로 포인트 크기를 다르게 표현합니다. 차원값과 마찬가지로 툴팁에 해당 측정값이 표기됩니다.
 
 	.. figure:: /_static/img/discovery/part04/map_05.jpg
 		:align: center
@@ -60,7 +60,7 @@
 
 공통 설정
 ******************************
-지도 레이어에서 기본 지도를 표현하는 맵타일의 유형을 선택할 수 있습니다. OpenStreetMap을 활용하여 세 가지의 맵 타일을 기본적으로 제공하고 있습니다.
+지도 레이어에서 기본 지도를 표현하는 맵 스타일의 유형을 선택할 수 있습니다. OpenStreetMap을 활용하여 세 가지의 맵 스타일을 기본적으로 제공하고 있습니다.
 
 	.. figure:: /_static/img/discovery/part04/map_commonsetting.jpg
 		:align: center
