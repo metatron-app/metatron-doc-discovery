@@ -1,6 +1,14 @@
 차트 유형 선택
 -------------------------------------
 
+.. raw:: html
+
+	<style>
+		.rst-content table.docutils td{ padding: 0.5em;}
+		.rst-content table.docutils td:nth-child(1){ text-align: center;}
+		.rst-content table.docutils td:nth-child(1) p{ margin-bottom: 10px;}
+	</style>
+
 .. |icon01| image:: /_static/img/discovery/part04/Chart_Types_Icon01.png
 .. |icon02| image:: /_static/img/discovery/part04/Chart_Types_Icon02.png
 .. |icon03| image:: /_static/img/discovery/part04/Chart_Types_Icon03.png
@@ -28,5 +36,5 @@ Metatron Discovery는 20여 가지의 차트를 제공하고 있습니다. 차�
 	.. csv-table::
 	   :file: chart_types.csv
 	   :header-rows: 1
-	   :widths: 10 30 30 60 30
+	   :widths: 20 25 25 40 25
 	   :class: longtable
