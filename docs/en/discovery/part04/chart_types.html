@@ -90,9 +90,13 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
@@ -201,7 +205,11 @@
             
   <div class="section" id="id1">
 <h1>Select a chart type<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Metatron Discovery provides about 20 types of charts. If you place columns on shelves before selecting a chart, suitable charts are highlighted in purple.</p>
+<style>
+        .rst-content table.docutils td{ padding: 0.5em;}
+        .rst-content table.docutils td:nth-child(1){ text-align: center;}
+        .rst-content table.docutils td:nth-child(1) p{ margin-bottom: 10px;}
+</style><p>Metatron Discovery provides about 20 types of charts. If you place columns on shelves before selecting a chart, suitable charts are highlighted in purple.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/Chart_Types.00.en.png" src="../../_images/Chart_Types.00.en.png" />
@@ -211,10 +219,10 @@
 <blockquote>
 <div><table class="colwidths-given longtable docutils align-default">
 <colgroup>
-<col style="width: 6%" />
+<col style="width: 15%" />
 <col style="width: 19%" />
 <col style="width: 19%" />
-<col style="width: 38%" />
+<col style="width: 30%" />
 <col style="width: 19%" />
 </colgroup>
 <thead>

@@ -7,11 +7,6 @@
 ===============================================
 
 .. toctree::
-	:name: lang_sel
-
-	VIEW IN ENGLISH <https://metatron-app.github.io/metatron-doc-discovery/en>
-
-.. toctree::
 	:maxdepth: 2
 	:caption: Metatron Discovery
 

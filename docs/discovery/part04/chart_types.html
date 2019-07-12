@@ -91,9 +91,13 @@
             
             
               <ul>
-<li class="toctree-l1"><a class="reference external" href="https://metatron-app.github.io/metatron-doc-discovery/en">VIEW IN ENGLISH</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+                  <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
+					 <!-- 하위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
+					<li><a class="lang_sel" href="../../en/index.html">VIEW IN ENGLISH</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
@@ -202,7 +206,11 @@
             
   <div class="section" id="id1">
 <h1>차트 유형 선택<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
-<p>Metatron Discovery는 20여 가지의 차트를 제공하고 있습니다. 차트를 선택하기 전에 먼저 컬럼들을 선반에 올려놓으면 그에 어울리는 차트들이 보라색으로 강조됩니다.</p>
+<style>
+        .rst-content table.docutils td{ padding: 0.5em;}
+        .rst-content table.docutils td:nth-child(1){ text-align: center;}
+        .rst-content table.docutils td:nth-child(1) p{ margin-bottom: 10px;}
+</style><p>Metatron Discovery는 20여 가지의 차트를 제공하고 있습니다. 차트를 선택하기 전에 먼저 컬럼들을 선반에 올려놓으면 그에 어울리는 차트들이 보라색으로 강조됩니다.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/Chart_Types.00.png" src="../../_images/Chart_Types.00.png" />
@@ -212,10 +220,10 @@
 <blockquote>
 <div><table class="colwidths-given longtable docutils align-default">
 <colgroup>
-<col style="width: 6%" />
+<col style="width: 15%" />
 <col style="width: 19%" />
 <col style="width: 19%" />
-<col style="width: 38%" />
+<col style="width: 30%" />
 <col style="width: 19%" />
 </colgroup>
 <thead>
