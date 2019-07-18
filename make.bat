@@ -8,9 +8,11 @@ if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=sphinx-build
 )
 set SOURCEDIR=.
-set BUILDDIR=_build
+set BUILDDIR=docs
 
 if "%1" == "" goto help
+if "%1" == "all" goto all
+if "%1" == "html" goto html
 
 %SPHINXBUILD% >NUL 2>NUL
 if errorlevel 9009 (
@@ -30,6 +32,15 @@ goto end
 
 :help
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
+
+:all
+echo.#1 Build for Korean
+%SPHINXBUILD% -b html . %BUILDDIR%
+echo.#2 Build for English
+%SPHINXBUILD% -b html -D language=en . %BUILDDIR%\en
+
+:html
+%SPHINXBUILD% -b html . %BUILDDIR%
 
 :end
 popd

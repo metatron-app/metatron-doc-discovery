@@ -6,15 +6,18 @@ SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = metatron-doc-user
 SOURCEDIR     = .
-BUILDDIR      = _build
+BUILDDIR      = docs
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
 all:
-	make -B html
-	@$(SPHINXBUILD) -b html -D language=en . $(BUILDDIR)/html/en
+	@$(SPHINXBUILD) -b html . $(BUILDDIR)
+	@$(SPHINXBUILD) -b html -D language=en . $(BUILDDIR)/en
+
+html:
+	@$(SPHINXBUILD) -b html . $(BUILDDIR)
 
 .PHONY: help Makefile
 
