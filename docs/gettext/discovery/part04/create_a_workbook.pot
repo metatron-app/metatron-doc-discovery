@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part04/create_a_workbook.rst:2
+# c1b1455269e5414d9ff49a43a7c92c54
+msgid "워크북 만들기"
+msgstr ""
+
+#: ../../discovery/part04/create_a_workbook.rst:4
+# a7bcdf16e8dd49d2bb4174d41af4b49f
+msgid "Metatron Discovery에서 **워크북**\\은 하나의 독립적인 데이터 분석 보고서로서 기능을 합니다. 하나의 워크북을 생성하면 그 안에 여러 **대시보드** 슬라이드를 담아서 적절한 순서대로 보여줄 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_workbook.rst:6
+# 0ee2a6eb471f4b549f0db4e0430455ef
+msgid "워크북 생성 절차는 다음과 같습니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_workbook.rst:8
+# 10f97e3b4d704caeb713e00bcdcdb851
+msgid "워크스페이스 하단에 있는 **+ 워크북** 버튼을 클릭하면 워크북을 생성할 수 있는 화면이 나타납니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_workbook.rst:13
+# 709a23b6f9bc42cf91d39f47961abcb4
+msgid "생성하고자 하는 워크북의 이름(필수 사항)과 설명을 입력하고 **마침** 버튼을 누릅니다. **Continue to create a dashboard of a new workbook** 박스에 체크하면 워크북 생성과 동시에 **대시보드 생성하기** 화면으로 넘어갑니다. 워크북은 그 안에 대시보드가 있어야 비로소 기능을 할 수 있기 때문에 이렇게 연결되는 것입니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_workbook.rst:18
+# 213e2ebcbf1d47a18a0f36e20f236c53
+msgid "화면 가운데의 '+ 데이터 소스 추가' 버튼을 클릭 후, 데이터 소스를 선택하여 대시보드를 생성합니다. 대시보드를 생성하는 절차에 관한 자세한 내용은 :doc:`create_a_dashboard` 항목을 참조하십시오."
+msgstr ""
+
+#: ../../discovery/part04/create_a_workbook.rst:26
+# 53a24d2e7f0a434ab8a311fc0364c028
+msgid "새로 생성된 워크북은 아래와 같이 워크스페이스 화면에서 확인할 수 있습니다. 클릭하면 해당 워크북을 사용할 수 있는 화면이 나타납니다."
+msgstr ""
+

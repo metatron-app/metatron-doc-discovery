@@ -18,6 +18,7 @@
 	/discovery/part05/index
 	/discovery/part06/index
 	/discovery/part07/index
+	/discovery/part08/index
 
 .. toctree::
 	:maxdepth: 2

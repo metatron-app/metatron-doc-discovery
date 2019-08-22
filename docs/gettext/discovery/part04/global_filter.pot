@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part04/global_filter.rst:2
+# edeac6687ba64eb9a50fbbfa56bad40e
+msgid "글로벌 필터"
+msgstr ""
+
+#: ../../discovery/part04/global_filter.rst:4
+# 30b51a87176847dea19d54f4ce1d00a7
+msgid "글로벌 필터는 대시보드에 속한 모든 차트에 적용되는 데이터 표출 조건으로, 대시보드 편집 창의 필터 패널에서 추가, 수정, 삭제할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/global_filter.rst:8
+# 9802c432f35c4fffbc6d5bfd9b8f8d36
+msgid "**필터 위젯 수:** 글로벌 필터 제목 옆에 현재 대시보드에 등록된 필터 위젯의 개수가 나타납니다."
+msgstr ""
+
+#: ../../discovery/part04/global_filter.rst:9
+# 2674bac3d12d469f95c90c124620425f
+msgid "**필터 위젯 추가:** 우측 상단의 '+'를 클릭하면 대시보드 내에 새로운 필터 위젯을 생성할 수 있습니다. 필터 생성 팝업 및 생성 방법은 직전 챕터의 차트 필터 생성 절차와 동일합니다."
+msgstr ""
+
+#: ../../discovery/part04/global_filter.rst:10
+# caa0bd21ac3a4bc5aaf98cb01ecce241
+msgid "**필터 위젯 목록:** 현재 대시보드에 등록된 필터 위젯들이 열거됩니다. 수정 또는 삭제를 원하는 위젯 항목에 마우스를 오버하면 이를 위한 아이콘이 나타납니다. 또한 위젯 항목을 위젯 레이아웃 영역으로 드래그하면 위젯이 위젯 레이아웃 영역에 표시됩니다."
+msgstr ""
+
+#: ../../discovery/part04/global_filter.rst:12
+# d5eb75b8588d4dfdb9ff762c67b350d5
+msgid "전체 대시보드에 적용된 글로벌 필터는 차트 생성 시 개별 필터를 만들 때에 함께 조회됩니다. 또한 글로벌 필터 생성 시에도 개별 차트 필터가 있다면 어떤 칼럼에 생성되었는지 직관적으로 알려줍니다."
+msgstr ""
+

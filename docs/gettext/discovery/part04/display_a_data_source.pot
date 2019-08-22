@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part04/display_a_data_source.rst:2
+# d9cbf2d0ac1a4652ac5d72f5e9966973
+msgid "대시보드 내에 데이터 소스 확인하기"
+msgstr ""
+
+#: ../../discovery/part04/display_a_data_source.rst:5
+# e63f98133a5f40b5b4cdf0ffd32b32d8
+msgid "대시보드 기본 화면에서 |db_info| 버튼을 클릭하면 해당 대시보드에서 사용하는 데이터 소스들의 정보 를 보여주는 대화 상자가 나타납니다. 좌측 상단에서 확인하고자 하는 데이터 소스를 선택할 수 있 습니다. 이 대화 상자는 크게 3가지 탭(데이터 그리드, 컬럼 상세 탭, 대시보드 데이터 정보)으로 구 성됩니다."
+msgstr ""
+
+#: ../../discovery/part04/display_a_data_source.rst:8
+# db0e243d0486481a8ca474ef14dc5cb9
+msgid "데이터 그리드 탭"
+msgstr ""
+
+#: ../../discovery/part04/display_a_data_source.rst:10
+# 735a528092f54886aa3ec88b513fc209
+msgid "해당 데이터 소스의 레코드 값이 모두 표시됩니다."
+msgstr ""
+
+#: ../../discovery/part04/display_a_data_source.rst:16
+# da8e73df4ceb4e40bd110bcb4c1b6bde
+msgid "컬럼 상세 탭"
+msgstr ""
+
+#: ../../discovery/part04/display_a_data_source.rst:18
+# 31605496cfe34bdca122fa498210b1da
+msgid "해당 데이터 소스를 구성하는 각 컬럼에 관한 정보를 상세히 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part04/display_a_data_source.rst:24
+# b1e692bce43e435dbb2f1f38466deb6a
+msgid "대시보드 데이터 정보 탭"
+msgstr ""
+
+#: ../../discovery/part04/display_a_data_source.rst:26
+# 3d6cdfbc835a473a97374ba5d8c588f7
+msgid "해당 데이터 소스 전체에 대한 요약 정보를 보여줍니다."
+msgstr ""
+

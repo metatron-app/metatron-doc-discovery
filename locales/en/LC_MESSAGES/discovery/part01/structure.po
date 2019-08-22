@@ -1,4 +1,3 @@
-﻿# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2019, metatron team
 # This file is distributed under the same license as the metatron discovery
 # docs package.
@@ -9,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.7.0\n"
 
 # d2173c5a46e74fdaac0e888108ea7376
 #: ../../discovery/part01/structure.rst:2
@@ -29,7 +28,11 @@ msgid ""
 "Metatron Discovery는 Metatron 운용 서버에 적재된 데이터 소스나 그 밖의 외부 데이터 소스로부터 원하는 "
 "데이터를 불러와서 각종 고급 분석 기능을 통해 분석한 후, 그 결과를 다양한 형식의 차트와 보고서로 출력하는 기능을 합니다. 본 "
 "모듈을 이용하려면 다음과 같은 전반적인 구조를 이해해야 합니다."
-msgstr "Metatron Discovery performs analytics on its ingested data sources or other external data sources using various analytical tools and outputs analytical results in charts and reports. To utilize this system, you must understand its overall structure shown below:"
+msgstr ""
+"Metatron Discovery performs analytics on its ingested data sources or "
+"other external data sources using various analytical tools and outputs "
+"analytical results in charts and reports. To utilize this system, you "
+"must understand its overall structure shown below:"
 
 # 9a0102eb4ca84bf383d4dc9dcb378014
 #: ../../discovery/part01/structure.rst:12
@@ -41,7 +44,9 @@ msgstr "Data Preparation"
 msgid ""
 "데이터 프리퍼레이션은 원천 데이터에서부터 데이터를 정제 및 가공하여 Metatron으로 적재하는 기능을 제공합니다. 데이터 "
 "프리퍼레이션에 대한 자세한 설명은 :doc:`../part07/index` 항목을 참조하십시오."
-msgstr "Data Preparation refines data from source data to be ingested into Metatron. See :doc:`../part07/index` for details on data preparation."
+msgstr ""
+"Data Preparation refines data from source data to be ingested into "
+"Metatron. See :doc:`../part07/index` for details on data preparation."
 
 # 46af07dbae204e2ab28f5c3dd5872cbc
 #: ../../discovery/part01/structure.rst:24
@@ -53,7 +58,10 @@ msgstr "Data Storage"
 msgid ""
 "데이터 스토리지는 분석·시각화를 위해 Metatron 엔진에 적재된 데이터를 관리합니다. 데이터 관리 기능에 대한 자세한 설명은 "
 ":doc:`../part02/index` 항목을 참조하십시오."
-msgstr "Data Storage manages data ingested into the Metatron engine for analysis and visualization. See :doc:`../part02/index` for details on data management."
+msgstr ""
+"Data Storage manages data ingested into the Metatron engine for analysis "
+"and visualization. See :doc:`../part02/index` for details on data "
+"management."
 
 # c749720838454665a4ff53454b277ba7
 #: ../../discovery/part01/structure.rst:37
@@ -63,7 +71,9 @@ msgstr "Data analysis and visualization"
 # da9e0e008efb46d4bc293b5c33038695
 #: ../../discovery/part01/structure.rst:38
 msgid "아래 각 모듈은 데이터 스토리지에 저장한 데이터를 사용자가 시각화 기반 탐색, 분석하는 기능을 제공합니다."
-msgstr "Each module below allows users to perform visualization-based exploration and analysis of stored data."
+msgstr ""
+"Each module below allows users to perform visualization-based exploration"
+" and analysis of stored data."
 
 # 1161ebadd90f4cb2a877f9365a2edc44
 #: ../../discovery/part01/structure.rst:41
@@ -75,7 +85,10 @@ msgstr "Workspace"
 msgid ""
 "워크스페이스는 조직 내에서 사용할 워크북, 워크벤치, 노트북을 권한에 따라 관리할 수 있습니다. 워크스페이스 기능에 대한 자세한 "
 "설명은 :doc:`../part03/index` 항목을 참조하십시오."
-msgstr "Workspace provides an interface to manage its workbooks, workbenches, and notebooks used in an organization according to user access. See :doc:`../part03/index` for details on the use of the workspace."
+msgstr ""
+"Workspace provides an interface to manage its workbooks, workbenches, and"
+" notebooks used in an organization according to user access. See "
+":doc:`../part03/index` for details on the use of the workspace."
 
 # 5c89802f8e854194b0d5984e80581b83
 #: ../../discovery/part01/structure.rst:49
@@ -87,7 +100,10 @@ msgstr "Workbook, dashboard, chart"
 msgid ""
 "워크북은 그 안에 담긴 여러 대시보드와 차트를 PPT처럼 작업하고 이를 공유·프리젠테이션할 수 있게 해주는 모듈입니다. 워크북 "
 "기능에 대한 자세한 설명은 :doc:`../part04/index` 항목을 참조하십시오."
-msgstr "Workbook supports working on, sharing, and making a presentation with dashboards and charts using a PowerPoint-like interface. See :doc:`../part04/index` for details on the workbook module."
+msgstr ""
+"Workbook supports working on, sharing, and making a presentation with "
+"dashboards and charts using a PowerPoint-like interface. See "
+":doc:`../part04/index` for details on the workbook module."
 
 # 0547034fa22b4dee9894c9a834046523
 #: ../../discovery/part01/structure.rst:65
@@ -99,7 +115,9 @@ msgstr "Notebook"
 msgid ""
 "노트북에서는 Machine Learning 기반 고급 분석을 수행할 수 있습니다. 노트북 기능에 대한 자세한 설명은 "
 ":doc:`../part05/index` 항목을 참조하십시오."
-msgstr "Notebook enables advanced analytics based on machine learning. See :doc:`../part05/index` for details on the notebook module."
+msgstr ""
+"Notebook enables advanced analytics based on machine learning. See "
+":doc:`../part05/index` for details on the notebook module."
 
 # e95deebd6b584edcbc371a92d2173ce7
 #: ../../discovery/part01/structure.rst:73
@@ -111,7 +129,9 @@ msgstr "Workbench"
 msgid ""
 "SQL 기반 분석을 수행할 수 있습니다. 워크벤치 기능에 대한 자세한 설명은 :doc:`../part06/index` 항목을 "
 "참조하십시오."
-msgstr "Workbench enables SQL data analytics. See :doc:`../part06/index` for details on the workbench module."
+msgstr ""
+"Workbench enables SQL data analytics. See :doc:`../part06/index` for "
+"details on the workbench module."
 
 # 1b3bd8c947c4459c920567c02c1406bb
 #: ../../discovery/part01/structure.rst:81
@@ -123,7 +143,10 @@ msgstr "Data Monitoring"
 msgid ""
 "데이터 쿼리 통계, 쿼리 로그 감사를 통해 데이터 사용에 대한 모니터링 기능을 제공합니다. 데이터 모니터링 기능에 대한 자세한 "
 "설명은 :doc:`../part02/data_monitoring` 항목을 참조하십시오."
-msgstr "This function monitors data use based on data query statistics and query logs. See :doc:`../part02/data_monitoring` for details on the data monitoring functionality."
+msgstr ""
+"This function monitors data use based on data query statistics and query "
+"logs. See :doc:`../part02/data_monitoring` for details on the data "
+"monitoring functionality."
 
 # 2e05c47df74c469993b2166f720c19df
 #: ../../discovery/part01/structure.rst:90
@@ -134,4 +157,16 @@ msgstr "User permission and account management"
 #: ../../discovery/part01/structure.rst:91
 msgid "사용자를 추가, 삭제하거나 사용자의 권한을 관리합니다."
 msgstr "You can add/delete users or manage user permission."
+
+# 629a359d4f5a4f3b92cb56dd2c2427ed
+#: ../../discovery/part01/structure.rst:95
+msgid "로그인/로그아웃"
+msgstr ""
+
+# 4cee8907e72c477faef9da7471584337
+#: ../../discovery/part01/structure.rst:96
+msgid ""
+"계정을 부여받은 사용자는 Metatron Discovery에 로그인하여 사용 권한에 맞게 자유롭게 이용할 수 있습니다. 로그인 중인"
+" 계정은 외부 시스템에서도 로그아웃이 가능합니다."
+msgstr ""
 

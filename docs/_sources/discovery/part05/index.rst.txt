@@ -12,6 +12,7 @@ Metatron Discovery에서는 Jupyter와 Zeppelin을 등록하여 사용할 수 �
 .. toctree::
    :maxdepth: 2
 
+   notebook_management
    register_a_notebook_server
    create_a_notebook
    use_a_notebook

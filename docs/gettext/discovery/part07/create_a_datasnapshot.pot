@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part07/create_a_datasnapshot.rst:2
+# da6dfb55795944d9bc4b028f5e8dc6f6
+msgid "데이터 스냅샷 만들기"
+msgstr ""
+
+#: ../../discovery/part07/create_a_datasnapshot.rst:4
+# 25b9a73e08784ee490f7eaba815104e7
+msgid "데이터플로우에서 룰 편집이 완료된 데이터셋은 '데이터 스냅샷'을 찍어서 로컬 PC에 파일로 다운로드 받거나, Metatron 엔진으로 즉시 적재할 수 있습니다. 데이터 스냅샷을 실행하면 10,000개 행 이하의 샘플 데이터에만 적용된 룰을 전체 데이터에 대해 적용하게 됩니다."
+msgstr ""
+
+#: ../../discovery/part07/create_a_datasnapshot.rst:6
+# d2ed8bc762be4035b5b94934f64302ba
+msgid "스냅샷을 만드는 방법은 다음과 같습니다."
+msgstr ""
+
+#: ../../discovery/part07/create_a_datasnapshot.rst:8
+# 52b2fdbd49dd4f36b4f3ccf144ca2ac1
+msgid ":doc:`룰 편집 <edit_rules>` 창 우측 상단에 위치한 **데이터 스냅샷** 버튼을 클릭합니다."
+msgstr ""
+
+#: ../../discovery/part07/create_a_datasnapshot.rst:12
+# 3f575e55fba04af29f84a735a4276dec
+msgid "스냅샷 생성을 위한 팝업이 나타나면, 스냅샷 생성 위치를 FILE과 HIVE(STAGING_DB) 중에서 지정합니다."
+msgstr ""
+
+#: ../../discovery/part07/create_a_datasnapshot.rst:16
+# e90c144b01a444ac97bb530a40852527
+msgid "FILE 경로로 스냅샷의 위치를 지정하는 경우, **CSV** 또는 **JSON**\\의 포맷으로 생성할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part07/create_a_datasnapshot.rst:20
+# 852c3df93b3243aea974d25eea2bd7df
+msgid "HIVE 옵션은 STAGING_DB가 설정된 경우에만 활성화됩니다. 스키마명과 테이블명을 지정하면 해당 테이블에 스냅샷이 생성됩니다."
+msgstr ""
+
+#: ../../discovery/part07/create_a_datasnapshot.rst:24
+# caf90f78aec74a3fb02e7b566bc0e70a
+msgid "스냅샷을 생성하면 동일한 창에서 스냅샷 생성 상태와 정보를 조회할 수 있습니다."
+msgstr ""
+

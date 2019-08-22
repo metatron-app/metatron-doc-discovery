@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../index.rst:9
+#: ../../index.rst:9
+# 
+# 43b7e3a9c4e74f029d0f5ee9571d6bc4
+msgid "Metatron Discovery"
+msgstr ""
+
+#: ../../index.rst:23
+#: ../../index.rst:23
+# 
+# bd7c0807ea5444138fcd530e42503ffc
+msgid "EX-pack for Workflow Integrator"
+msgstr ""
+
+#: ../../index.rst:33
+#: ../../index.rst:33
+# 
+# 2d4e4fd2d48c47ed9e830130d30a386c
+msgid "EX-pack for Anomaly Detection"
+msgstr ""
+
+#: ../../index.rst:7
+# 3ab4040f7b0d436289cef923a79603e6
+msgid "메타트론 사용자 문서"
+msgstr ""
+

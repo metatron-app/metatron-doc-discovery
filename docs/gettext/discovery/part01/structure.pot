@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part01/structure.rst:2
+# 42eb9faa18ac465f9b6de1b204430620
+msgid "Metatron Discovery 구성"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:4
+# f3b39662832442f8b81a4f46fdd6e603
+msgid "Metatron Discovery는 Metatron 운용 서버에 적재된 데이터 소스나 그 밖의 외부 데이터 소스로부터 원하는 데이터를 불러와서 각종 고급 분석 기능을 통해 분석한 후, 그 결과를 다양한 형식의 차트와 보고서로 출력하는 기능을 합니다. 본 모듈을 이용하려면 다음과 같은 전반적인 구조를 이해해야 합니다."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:12
+# 9f0e682b19d74f06bd0bdfa8be70a276
+msgid "데이터 프리퍼레이션"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:13
+# 4badea80463a4feb9da98fcf8009c2f5
+msgid "데이터 프리퍼레이션은 원천 데이터에서부터 데이터를 정제 및 가공하여 Metatron으로 적재하는 기능을 제공합니다. 데이터 프리퍼레이션에 대한 자세한 설명은 :doc:`../part07/index` 항목을 참조하십시오."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:24
+# 90120c69d2104526b53d9d9192014fc9
+msgid "데이터 스토리지"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:25
+# abbba4bd77504857ac8d0c65c5f814f1
+msgid "데이터 스토리지는 분석·시각화를 위해 Metatron 엔진에 적재된 데이터를 관리합니다. 데이터 관리 기능에 대한 자세한 설명은 :doc:`../part02/index` 항목을 참조하십시오."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:37
+# 9be208a9ce694db6af21fbc16ae26493
+msgid "데이터 분석 및 시각화"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:38
+# 60b5d2a62226492db154fa38a71d4d11
+msgid "아래 각 모듈은 데이터 스토리지에 저장한 데이터를 사용자가 시각화 기반 탐색, 분석하는 기능을 제공합니다."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:41
+# 603e8f02fea146ceb5b5528cbbfe9de1
+msgid "워크스페이스"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:42
+# 07e5403273024ec1a2cc1127f53678d0
+msgid "워크스페이스는 조직 내에서 사용할 워크북, 워크벤치, 노트북을 권한에 따라 관리할 수 있습니다. 워크스페이스 기능에 대한 자세한 설명은 :doc:`../part03/index` 항목을 참조하십시오."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:49
+# 4bdccb885b0540fbb49d1d088998b635
+msgid "워크북, 대시보드, 차트"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:50
+# ece2d0c942174b3bbb20443e5bd1c5a7
+msgid "워크북은 그 안에 담긴 여러 대시보드와 차트를 PPT처럼 작업하고 이를 공유·프리젠테이션할 수 있게 해주는 모듈입니다. 워크북 기능에 대한 자세한 설명은 :doc:`../part04/index` 항목을 참조하십시오."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:65
+# c4d051cf82f54307afa97dfcb6e566fe
+msgid "노트북"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:66
+# 2ccad32a44dd4d3d9ba643b12a605fc6
+msgid "노트북에서는 Machine Learning 기반 고급 분석을 수행할 수 있습니다. 노트북 기능에 대한 자세한 설명은 :doc:`../part05/index` 항목을 참조하십시오."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:73
+# 4a7154c92ef44bb9ae30c183530cb617
+msgid "워크벤치"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:74
+# a100efa718894a16b6d3f59dceba3a33
+msgid "SQL 기반 분석을 수행할 수 있습니다. 워크벤치 기능에 대한 자세한 설명은 :doc:`../part06/index` 항목을 참조하십시오."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:81
+# f279ff681d3c4c9e85e8c5d99148c455
+msgid "데이터 모니터링"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:82
+# 9161c8b5ff9b4de38a65b662bde9f1be
+msgid "데이터 쿼리 통계, 쿼리 로그 감사를 통해 데이터 사용에 대한 모니터링 기능을 제공합니다. 데이터 모니터링 기능에 대한 자세한 설명은 :doc:`../part02/data_monitoring` 항목을 참조하십시오."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:90
+# 8defc1925c7a4949b8a4b1f8f6590857
+msgid "사용자 권한 및 계정"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:91
+# 026419414ed7489f91d95c97f409c846
+msgid "사용자를 추가, 삭제하거나 사용자의 권한을 관리합니다."
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:95
+# 629a359d4f5a4f3b92cb56dd2c2427ed
+msgid "로그인/로그아웃"
+msgstr ""
+
+#: ../../discovery/part01/structure.rst:96
+# 4cee8907e72c477faef9da7471584337
+msgid "계정을 부여받은 사용자는 Metatron Discovery에 로그인하여 사용 권한에 맞게 자유롭게 이용할 수 있습니다. 로그인 중인 계정은 외부 시스템에서도 로그아웃이 가능합니다."
+msgstr ""
+

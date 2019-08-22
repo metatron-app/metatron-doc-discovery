@@ -1,0 +1,330 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part01/druid_to_metatron.rst:2
+# 7802dc37f0914a57bcd6e13b24520e00
+msgid "Metatron 엔진으로서 Druid"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:4
+# fb12f304987949359b10d9d3632fd815
+msgid "앞서 설명한 바와 같이 Metatron은 Druid를 기본 엔진으로서 도입하였고, Metatron만의 용도에 맞게 자체적으로 기능을 개발·보강하였습니다. 본 절에서는 이에 관한 구체적인 배경과 과정, 그리고 결과에 대해 소개합니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:7
+# 62e455d169cc4ecca5700e033077d137
+msgid "Metatron 개발 배경과 Druid 기술의 도입"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:10
+# 77ebd188a6af4a12b78e8f68db84c18e
+msgid "빅데이터 분석 솔루션으로서 Metatron의 니즈"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:12
+# 198b599bf7d24887b313df1082d487fd
+msgid "SK텔레콤은 국내 최대 가입자를 보유하고 있는 이동통신 서비스 제공업체로서, 수많은 이용자들로부터 발생되는 엄청난 양의 네트워크 데이터 로그를 활용하여 안정적인 네트워크 환경을 구축하는데 많은 노력을 기울이고 있습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:14
+# 96f73e54cee44f128a8e02f83cc067af
+msgid "기존의 IT 인프라로는 이런 대용량 데이터 처리에 한계가 있기 때문에 SK텔레콤은 대규모 빅데이터 시스템(Apache Hadoop)과 이를 활용하기 위한 빅데이터 분석 솔루션이 필요했습니다. SK텔레콤은 저비용으로 대용량 데이터의 저장하기 위해 대규모 Hadoop 인프라를 자체 구축하였지만 다음과 같은 한계가 있었습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:16
+# 749aaa66386142ed9350114a7b285763
+msgid "수많은 사용자의 네트워크 데이터를 실시간으로 분석할 수 없었습니다. 빅데이터의 저장/처리는 가능했지만 데이터를 시각화하는 데는 한계가 있어 결국 과거와 같이 일부 필요한 데이터만 샘플링해서 확인해야 했습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:17
+# a482240c504c47a08a1caa11b21e8ef6
+msgid "ETL, DW, BI 등 데이터 분석 단계별로 각기 다른 솔루션, 각기 다른 담당자가 지원하는 기존의 방식은 데이터 분석을 하는 데 시간과 비용이 많이 들며 데이터 접근성을 현저하게 떨어뜨렸습니다. 단순하면서도 신속하게 데이터를 분석할 수 있으려면 분석의 전 단계를 한꺼번에 처리할 수 있는 end-to-end 솔루션이 필요했습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:20
+# 47555af45900465a9c75d719d8e1476b
+msgid "Druid를 엔진으로 채택한 이유"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:22
+# 1e3b1e9e8e9146c39f4abe7f3c62b2f0
+msgid "Druid는 다음과 같은 특징들 때문에 위와 같은 니즈를 충족해야 하는 Metatron 솔루션의 엔진으로서 적합했습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:24
+# 1eb4078a28b04fdabbe70d89aef9e3ab
+msgid "Druid는 대용량의 데이터를 실시간으로 수집하여 즉시 쿼리 가능한 형태로 인덱싱하며, 분산 처리 기반을 통해 대용량의 데이터 집계를 아주 빠른 시간(최대 수초) 이내에 처리해줍니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:25
+# 6dba91aa600845fe9936e35fb80edb04
+msgid "Druid의 시계열 기반 OLAP Cube 데이터 포맷은 분석가가 원하는 대로 탐색, 필터링, 시각화하기 용이합니다. 실무자들이 쿼리 구성을 고민하지 않고 직관적으로 필요한 데이터를 선별하여 알고자 하는 상관 관계를 바로 출력할 수 있게 하려면 이러한 탐색 자유도와 유연성이 필수적입니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:26
+# 8a53d155697045869d4e69962051eb56
+msgid "Druid는 확장성이 탁월하여 각종 모듈을 추가하기 용이합니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:28
+# 3452cfc36bab445593c71fa3be6be04c
+msgid "Metatron은 Druid의 이러한 특성을 활용하여 데이터 수집, 저장, 처리, 분석, 시각화 등의 모든 layer를 포괄하는 end-to-end 솔루션을 구축하였습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:31
+# f3e7c8247d8a4891834a76d3bb25b76d
+msgid "Druid 응용 방식"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:33
+# d36bfb826adf47c3aa331318c74d1920
+msgid "Metatron에서 Druid 엔진을 응용하는 방식은 다음과 같습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:35
+# ab8c8dafbf6349208ac3790eb9e28f0d
+msgid "사용자(현업/빅데이터 분석가) 측면에서 Druid를 기본 처리/분석 엔진으로 사용하기 쉽도록 GUI 화면을 구성하여 데이터 전처리, 분석, 시각화 등 데이터 관련 업무를 수행하고 이를 공유할 수 있게 하였습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:36
+# b3e5cb3c5bbf4802ba9f833a7b0b9151
+msgid "IT 운영자는 Druid 내 데이터 소스를 관리/모니터링 할 수 있고, 필요시 데이터 전처리 작업을 통해 고품질의 데이터 소스를 제공할 수 있도록 지원합니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:40
+#: ../../discovery/part01/druid_to_metatron.rst:61
+# abdb795c194f41f8b8d771ed504f4d51
+# 6a5e68c2bbf4402dbbf9660c4a8c9bcd
+msgid "Metatron에서 보강한 Druid 기능들"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:42
+# 92448b37e5214005975896bc9d40abce
+msgid "Druid는 강력한 데이터 수집·처리 기능을 지원하지만, Metatron이 end-to-end 솔루션으로 온전히 기능하기 위해서는 기존의 오픈소스 Druid를 개선할 필요가 있었습니다. 본 절에서는 기존 오픈소스 Druid의 한계와 Metatron에서 보강한 기능들을 살펴보겠습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:45
+# 3fb4811edaf34a0ea15d1493aa6017c9
+msgid "오픈소스 Druid의 한계"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:47
+# 1aab7f3d98ee4a8d9ac6103035a3ad70
+msgid "기존의 오픈소스 Druid의 한계는 다음과 같습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:49
+# e0811539c13748fda1a77c044ce9362d
+msgid "Druid는 데이터 테이블 join에 제약이 많습니다. 이런 이유로 Metatron은 데이터 전처리를 위해 다른 SQL 엔진으로 사용합니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:50
+# 3ef42fe7496b4347be6f1e768ae9591e
+msgid "Druid는 SQL 쿼리를 부분적으로만 지원합니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:51
+# be75fb9d4dcb4c62aada66cd7d162a21
+msgid "데이터 레이크용으로는 기존의 SQL 엔진을 사용하는 편이 더 낫습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:52
+# c5858dc6c0424e69880111ecb02b09c3
+msgid "이미 인덱싱된 세그먼트를 수정하거나 행을 추가할 수 없습니다. 물론 incremental ingestion과 같은 특수한 상황에는 가능하지만 일반적이지 않습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:53
+# 4a8690ab72b24295ad349a0462bdc63f
+msgid "null 값이 지원되지 않습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:54
+# 7b221a81cce049239da3efef03067fb3
+msgid "측정값에 대한 필터링이 지원되지 않습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:55
+# f28f580b1d484e39853e0ce4bc5c1fc9
+msgid "Linear scalability가 보장되지 않습니다. 서버의 수를 늘려도 성능이 크게 개선되지 않습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:56
+# d280bb21ee374288a1b6c336534e6fbe
+msgid "Druid에서 지원하는 자료형은 제한적이며 추가하기가 어렵습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:57
+# 96f9fa71b234452b8943e129c096940d
+msgid "관리 및 모니터링 도구가 성능이 우수하지 않습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:63
+# d90ac89d79344bf697f9bbda148a3bbd
+msgid "Metatron은 Druid에서 미비한 기능들을 다음과 같이 보강하였습니다."
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:65
+# 0aa103a6eeae4bb58a742ca2c3721568
+msgid "**쿼리 성능 개선**"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:67
+# 7251d4ef46e8414aa76c066f0da2d944
+msgid "groupBy 쿼리 성능 개선"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:68
+# e04f535fc0ed4316ba07a6c6016feb02
+msgid "기타 쿼리 성능 소폭 개선"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:70
+# f53ad581821f448a9da8481523d3de32
+msgid "**기능 추가**"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:72
+# 6acb579e8def4f6182959e2ff87ab911
+msgid "가상 컬럼(map, expression 등)"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:73
+# 75930c890bdc4a128bc15c7d0225d508
+msgid "측정값 자료형 확장(double, string, array 등)"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:74
+# f6c6d0d7003f4c8fac0cd93e2731ac7b
+msgid "계산식 기능 확장"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:75
+# ffbd169823d844fe95f021170eb76b27
+msgid "Druid 쿼리 결과를 HDFS 또는 파일로 내보낼 수 있음"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:76
+# 54ad4427e2894e209a8639b984426c6a
+msgid "데이터 테이블에 대한 메타 정보 및 통계용 쿼리 추가"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:77
+# ba268986dbee4ff49727f55233fcf30e
+msgid "집계 기능 추가(분산, 상관관계 등)"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:78
+# 675659672bd2438e803ace18d31c095b
+msgid "(제한적) 관계형 DB의 window 기능들 구현(lead, lar, running aggregations 등)"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:79
+# 4d57568e6a20459d9d9189cf610765d5
+msgid "(제한적) join 기능 강화"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:80
+# de04bcb38d9b4f938b94d445cd46e9c9
+msgid "(제한적) 서브 쿼리 추가"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:81
+# 41e7875b41a74429895d4518fd0543b5
+msgid "임시 데이터 소스"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:82
+# 76fc7d6894184f109bb6a1867cb390e3
+msgid "복합 쿼리 추가(데이터 소스 summarization, 데이터 소스 간 상관관계, k-평균 등)"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:83
+# 0bc5c1e217b749ff95b8ae0022d708cf
+msgid "사용자 정의 컬럼 grouping 지원"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:84
+# de7928d9d280486ab2ac536e7d3627a6
+msgid "GIS(지도-GEO서버 연계 adaptor 제공) 기능 지원"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:85
+# de87d67febe04b2297bafc1097499eb6
+msgid "컬럼별 histogram 제공"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:86
+# b5b6f09cf0794604aad1c18d19bc7542
+msgid "Bit-slice indexing 지원"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:88
+# 7895153f23ac42859777e166f217918d
+msgid "**인덱스 구조 개선**"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:90
+# 073712d154fb4bafb162dcf7451f593a
+msgid "측정값 필터링용 히스토그램"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:91
+# 37d979740ee74b99b21a7deff9546402
+msgid "텍스트 필터링용 lucene 포맷 지원"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:94
+# 349e84fcb9d24fd980ca577ff19d51f5
+msgid "**다른 시스템들과의 연동 지원**"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:96
+# d8a47f765e674ebd80015c5efde5aabb
+msgid "Hive 저장소 핸들러"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:97
+# 4b8b50cbf508431ea9b4c85381cac3e1
+msgid "Hive 테이블 ingestion(Hive 메타 스토어와 연결)"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:98
+# 35852751b4f14bb6a131961a7ff55e46
+msgid "ORC 포맷 ingestion"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:99
+# 539f665fbfc14deca59741c229b270b3
+msgid "JDBC를 통한 RDBMS 데이터 ingestion"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:100
+# 4b3a93696d3f427aa2dfdb136794ee39
+msgid "(제한적) Backport된 SQL 지원"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:102
+# 9d354067773545d5aed4b6c87aef7c26
+msgid "**기타 개선사항**"
+msgstr ""
+
+#: ../../discovery/part01/druid_to_metatron.rst:104
+# 4f008e8a03484a12bdd612b9e96a9c38
+msgid "버그 수정(50건 이상), 기능 추가 및 기타 경미한 사항들 개선"
+msgstr ""
+
