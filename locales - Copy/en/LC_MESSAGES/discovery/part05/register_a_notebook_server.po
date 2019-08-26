@@ -1,0 +1,58 @@
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+# 6b79c898af2b4618a67a8bff11f250c9
+#: ../../discovery/part05/register_a_notebook_server.rst:2
+msgid "노트북 서버 등록하기"
+msgstr "Register a notebook server"
+
+# e7f09f477eef4079830617172a1c3c93
+#: ../../discovery/part05/register_a_notebook_server.rst:6
+msgid ""
+"워크스페이스에서 노트북 기능을 이용하여 데이터를 분석하기 위해서는 노트북 서버 초기 설정이 필요합니다. 노트북 서버 초기 설정 "
+"절차는 다음과 같습니다."
+msgstr ""
+"To analyze data in a workspace using a notebook, initial settings are "
+"required for the notebook server. The procedure for initial settings for "
+"a notebook server is as follows:"
+
+# 6fe40a01dc434e6290a678f1cec2e3f4
+#: ../../discovery/part05/register_a_notebook_server.rst:8
+#, fuzzy
+msgid "워크스페이스의 우측 상단에 있는 |icon_more| 버튼을 클릭한 후 :guilabel:`노트북 서버 설정`\\을 선택합니다."
+msgstr ""
+"Click the |icon_more| button in the top-right corner of the workspace and"
+" select **Set notebook server**."
+
+# 4d9ca083823a473b8c951de16a58944c
+#: ../../discovery/part05/register_a_notebook_server.rst:14
+#, fuzzy
+msgid ""
+"관리자가 사전에 등록해 둔 Jupyter, Zeppelin 서버 목록 중에서 본인 워크스페이스에서 연결해서 사용하고자 하는 노트북 "
+"서버를 선택 후 :guilabel:`마침`\\ 버튼을 클릭합니다."
+msgstr ""
+"From the list of Jupyter and Zeppelin servers preregistered by the "
+"administrator, select the notebook server that you wish to connect to and"
+" use in your workspace and click **Done**."
+
+# a541f6c7e20042fdb892f8e77d620835
+#: ../../discovery/part05/register_a_notebook_server.rst:16
+msgid "아무 서버도 선택하지 않고자 한다면, **(없음)** 항목을 선택하십시오."
+msgstr ""
+

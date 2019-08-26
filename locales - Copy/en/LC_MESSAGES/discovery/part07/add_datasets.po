@@ -1,0 +1,89 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 0cfb5a19deb546b8a3613648e4e6302c
+#: ../../discovery/part07/add_datasets.rst:2
+msgid "데이터셋 추가하기"
+msgstr "Add a dataset"
+
+# fbbca0033599471f98d4f06485ebec30
+#: ../../discovery/part07/add_datasets.rst:4
+msgid "데이터플로우 정의의 첫 단계는 데이터셋을 추가하는 것입니다. 이를 위해서는 아래와 같은 두 가지 방법이 있습니다."
+msgstr "The first step in defining a dataflow is to add a dataset. This can be conducted using the two methods described below:"
+
+# e3dd61d2f9b4412aabfd64bbcf2fdb9b
+#: ../../discovery/part07/add_datasets.rst:6
+msgid ":ref:`dataflow_creation_first`"
+msgstr ":ref:`dataflow_creation_first`"
+
+# 7431090f643e443baaa679b0708bcb30
+#: ../../discovery/part07/add_datasets.rst:7
+msgid ":ref:`dataflow_from_dataset`"
+msgstr ":ref:`dataflow_from_dataset`"
+
+# 3f6ebc7a04df4241a1e47e7b0a85e174
+#: ../../discovery/part07/add_datasets.rst:12
+msgid "빈 데이터플로우 생성 후 데이터셋 추가"
+msgstr "Adding a dataset after creating an empty dataflow"
+
+# 00c6e7a091fb439fa591897ace2dd2c4
+#: ../../discovery/part07/add_datasets.rst:14
+msgid "**데이터플로우** 홈 화면 우측 상단에서 **데이터플로우 추가**\\를 클릭합니다."
+msgstr "Click **Add a dataflow** on the upper right of the **Dataflow** page."
+
+# 7a42d14cf21e4d1f9c3e025b64bb727f
+#: ../../discovery/part07/add_datasets.rst:16
+msgid "생성할 데이터플로우의 **이름**\\과 **설명**\\을 입력하고 **완료**\\를 누르면, 빈 데이터플로우가 생성됩니다."
+msgstr "Enter the **Name** and **Description** for the dataflow, and click **Done** to create an empty dataflow."
+
+# 9da0f101662749eca3dc58d266c12741
+#: ../../discovery/part07/add_datasets.rst:20
+msgid "화면 중앙에 위치한 **이 데이터플로우에 데이터셋 추가** 버튼을 누릅니다."
+msgstr "Click the **Add dataset to this dataflow** button on the center of the page."
+
+# 63591f86a29f46dd8c49f2c890709aaf
+#: ../../discovery/part07/add_datasets.rst:24
+msgid "추가할 데이터셋들을 선택합니다."
+msgstr "Select the datasets to be added."
+
+# 6fc375b1097543f7b9a63ecc27afb13e
+#: ../../discovery/part07/add_datasets.rst:28
+msgid ""
+"선택한 Imported Dataset과 그에 상응하는 Wrangled Dataset이 생성되었으면, **룰 편집** 버튼을 눌러 룰"
+" 편집을 실시합니다(자세한 절차는 :doc:`edit_rules` 참조)"
+msgstr "When an imported dataset and its corresponding wrangled dataset are created, click the **Edit rules** button to edit rules (see :doc:`edit_rules` for a detailed procedure)."
+
+# 8a4f210230544c6fb977c16a3de44eb4
+#: ../../discovery/part07/add_datasets.rst:35
+msgid "데이터셋 상세 화면에서 바로 데이터플로우 생성"
+msgstr "Creating a dataflow in the dataset details page"
+
+# 5e2f249f8f6c41a09c5ac23975e56d9f
+#: ../../discovery/part07/add_datasets.rst:37
+msgid ""
+"데이터셋 상세 화면에서 **이 데이터셋으로 새로운 데이터플로우 생성** 버튼을 누르면, 자동으로 데이터플로우를 만들고 **룰 "
+"편집** 직전의 단계까지 진행합니다."
+msgstr "In the dataset details page, click the **Create dataflow with this dataset** button to create a dataflow, and proceed until the step before **Edit rules**."
+
+# f80b09e2e6534af2be2b1f0507c7f231
+#: ../../discovery/part07/add_datasets.rst:42
+msgid "데이터플로우의 이름은 데이터셋 이름을 기반해서 자동으로 지어집니다."
+msgstr "The dataflow is named based on the name of the dataset."
+

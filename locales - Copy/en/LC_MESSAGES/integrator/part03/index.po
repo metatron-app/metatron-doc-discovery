@@ -1,0 +1,99 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-29 12:55+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 9c911b8a1db54333b19030ddda944e51
+#: ../../integrator/part03/index.rst:4
+msgid "워크플로우 에디터"
+msgstr "Workflow editor"
+
+# e330c4ff34d74e9a8e781fee447374bc
+#: ../../integrator/part03/index.rst:10
+msgid ""
+"워크플로우 에디터는 선택한 Hadoop 워크플로우를 손쉽게 편집하고 실행을 스케줄링할 수 있는 GUI를 제공합니다. "
+":ref:`workflow_list`\\에 열거된 워크플로우 중 하나를 클릭하면 워크플로우 에디터로 이동하며, 화면 구성은 아래와 "
+"같습니다."
+msgstr "Through the GUI of the workflow editor, you can conveniently edit the selected Hadoop workflow and schedule runs. Click one of the workflows listed in :ref:`workflow_list` to enter the workflow editor. The following is displayed."
+
+# fcf6003a49604b7fbb199e3dcefd1666
+#: ../../integrator/part03/index.rst:14
+msgid ""
+"**워크플로우 노드 선택 영역:** 워크플로우에 추가할 노드들을 선택하는 영역입니다. |unfold| 버튼을 클릭하면 패널이 "
+"확장되어 각 노드의 명칭을 확인할 수 있습니다. 다음과 같은 두 종류의 노드로 구분됩니다."
+msgstr "**Workflow node selection area:** Choose nodes to add to the workflow. Click |unfold| to expand the panel and view the names of all nodes. The nodes are categorized into two types."
+
+# 1ae4ef4bdba1468092bcb485bcebafdf
+#: ../../integrator/part03/index.rst:16
+msgid ""
+"**액션 노드(에디터에서 'Task'로 분류):** 원천 데이터를 Hadoop 클러스터에서 수집·가공·적재하기 위한 각각의 연산처리"
+" 작업을 정의합니다. 자세한 내용은 :ref:`action_nodes` 항목을 참조하십시오."
+msgstr "**Action nodes (categorized as “Task” in editor):** Define tasks involved in collecting, processing, and ingesting raw data in the Hadoop cluster. See :ref:`action_nodes` for details."
+
+# 82bd121d52424a9aaef3ccae85a920c4
+#: ../../integrator/part03/index.rst:17
+msgid ""
+"**제어 흐름 노드(에디터에서 'General'로 분류):** 워크플로우의 시작과 끝을 정의하고, 액션 노드들의 흐름 경로를 "
+"결정하는 역할을 합니다. 자세한 내용은 :ref:`control_flow_nodes` 항목을 참조하십시오."
+msgstr "**Control flow nodes (categorized as “General” in editor):** Define the start and end of a workflow and determine the flow path of action nodes. See :ref:`control_flow_nodes` for details."
+
+# 14087b4952f3496faf8462e830ae6ec1
+#: ../../integrator/part03/index.rst:19
+msgid ""
+"**워크플로우 차트 캔버스:** 추가한 노드들 간의 시퀀스를 정의하는 영역입니다. 아래 그림과 같이 노드 선택 영역에서 원하는 "
+"노드들을 캔버스로 드래그한 후, 원하는 시퀀스에 맞춰서 노드끼리 연결을 하면 워크플로우 차트가 간단하게 완성됩니다."
+msgstr "**Workflow chart canvas:** The sequence between added nodes is defined. As shown in the figure below, drag the desired nodes to the canvas, and connect the nodes according to the desired sequence to complete the workflow chart."
+
+# 56e8cf1f0afe454598d09128e59a33a4
+#: ../../integrator/part03/index.rst:23
+msgid ""
+"영역 상단에 있는 |do| 버튼을 사용하여 undo와 redo가 가능하며, |play| 버튼을 클릭하면 현재 정의된 워크플로우가 "
+"실행됩니다. 또한 **Draft** 버튼을 클릭하면 현재까지 작업한 워크플로우가 저장되고, **Save** 버튼을 클릭하면 실제 "
+"워크플로우로서 반영이 됩니다."
+msgstr "Undo or redo actions using the |do| buttons on the top, and click |play| to run the current workflow. And click the **Draft** button to save the current workflow, and the **Save** button to save it as the actual workflow."
+
+# a0719a121d984d9fadff4091eb059bf7
+#: ../../integrator/part03/index.rst:25
+msgid ""
+"**워크플로우 노드 설정 영역:** 워크플로우 차트 캔버스에서 선택한 각 개별 노드의 상세 작업 내역을 설정하는 영역입니다. 자세한"
+" 설정 방식은 :ref:`action_nodes` 및 :ref:`control_flow_nodes`\\에서 해당 노드 항목을 "
+"참조하십시오."
+msgstr "**Workflow settings area:** Set up the task details of individual nodes selected in the workflow chart canvas. See relevant node items in :ref:`action_nodes` and :ref:`control_flow_nodes` for details."
+
+# 313529457cf34e31bfcd9d38ba281ded
+#: ../../integrator/part03/index.rst:26
+msgid "**워크플로우 실행 내역 표시 영역:** 정의된 워크플로우의 실행 내역을 보여주는 영역입니다."
+msgstr "**Workflow run details area:** View the run details of the defined workflow."
+
+# 3938d3691dc44599b7af467f7e9e5288
+#: ../../integrator/part03/index.rst:28
+msgid "**Manual run 탭:** 에디터 좌측 상단에 있는 |play| 버튼을 클릭하여 수동으로 워크플로우를 실행한 내역을 보여줍니다."
+msgstr "**Manual run tab:** Click |play| on the top left of the editor to view the details of manual runs."
+
+# 7f27a084b88046a0ba72d46d2f70dc07
+#: ../../integrator/part03/index.rst:29
+msgid ""
+"**Scheduled run 탭:** 정해진 시간에 따라 워크플로우 실행을 예약하는 UI를 제공하고 예약된 내역을 보여줍니다. "
+"자세한 내용은 :ref:`scheduled_run` 항목을 참조하십시오."
+msgstr "**Scheduled run tab:** Schedule workflow runs at desired times using the UI, and view the details of scheduled runs. See :ref:`scheduled_run` for details."
+
+# 5ecb7a1337534d1886ee5770700c7602
+#: ../../integrator/part03/index.rst:31
+msgid "워크플로우 에디터 사용을 위해 보다 상세한 설명이 필요한 부분에 관해서는 아래와 같이 정리하였습니다."
+msgstr "Below is a comprehensive list of topics on using the workflow editor."
+

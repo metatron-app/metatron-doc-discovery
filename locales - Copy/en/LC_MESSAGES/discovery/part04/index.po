@@ -1,0 +1,58 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 4e2c05f737c14f5a8bb7fed68aee7d46
+#: ../../discovery/part04/index.rst:2
+msgid "워크북"
+msgstr "Workbook"
+
+# 33af799886054d52b0122b6daa317e83
+#: ../../discovery/part04/index.rst:7
+msgid ""
+"워크북은 Metatron Discovery의 Druid 엔진을 기반으로 하는 비주얼 데이터 분석 모듈입니다. 위 그림과 같이 하나의"
+" 독립된 보고서 단위에 해당하는 각 **워크북**\\은 다양한 **대시보드**\\로 구성되며, 각 대시보드는 원천 데이터 분석 "
+"결과를 시각화해서 보여주는 각종 **차트**\\로 구성되어 있습니다."
+msgstr "Workbook is a data visualization module powered by the Metatron Druid engine. As shown in the diagram above, each **workbook**\\?a standalone report?consists of multiple **dashboards**, while each dashboard consists of various **charts** showing a visualization of source data analysis."
+
+# 669251d593204ea9ae202deb77331847
+#: ../../discovery/part04/index.rst:10
+msgid "워크북의 기본적인 특징은 다음과 같습니다."
+msgstr "The main features of Workbook are as follows:"
+
+# e39a0cb608024db0b22a32b732275155
+#: ../../discovery/part04/index.rst:12
+msgid "시계열 기반의 다차원 데이터 소스를 이용하여 신속하고 유연한 데이터 분석 가능."
+msgstr "Fast and flexible data analytics over time-series multidimensional data sources."
+
+# a788f0d26e1c43e383df1cc74d3817ea
+#: ../../discovery/part04/index.rst:13
+msgid "각 대시보드에서 각종 차트와 텍스트 등의 시각화 위젯을 배치함으로써 프레젠테이션 형식의 보고서로 활용 가능."
+msgstr "Dashboards contain a variety of visualized charts and texts to be compiled into a report for presentations."
+
+# 59d674f34e4440c889b822675c52e2ac
+#: ../../discovery/part04/index.rst:14
+msgid "클러스터링, 예측선, 추세선 등의 자주 쓰는 알고리즘을 GUI(Graphical User Interface)로 구현 가능."
+msgstr "Frequently used algorithms such as clustering, prediction lines, and trend lines can be implemented through a GUI (graphical user interface)."
+
+# 60ec166dd8e14f67917f96b65c0d5322
+#: ../../discovery/part04/index.rst:16
+msgid "본 단원의 구성은 아래와 같습니다."
+msgstr "This chapter consists of:"
+

@@ -1,0 +1,75 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 5ddf055064f84275959e90fd81bcc25d
+#: ../../discovery/part00/step2.rst:2
+msgid "Step2. 워크북 만들기"
+msgstr "Step 2. Create a workbook"
+
+# ab6d2e3b848341b0af2eb3250e3aff82
+#: ../../discovery/part00/step2.rst:4
+msgid ""
+"분석을 위한 데이터가 준비되었나요? 그럼 이제 워크북을 만들 차례입니다. 워크북은 데이터 시각화 기능을 포함하는 모듈입니다. 좌측 "
+"상단의 Metatron Discovery 로고를 클릭하면 메인 화면인 내 개인 워크스페이스로 이동합니다."
+msgstr "Do you have the data ready for analysis? Now, it’s time to create a workbook. The Workbook module supports the visualization of data. Click the Metatron Discovery logo on the upper left to enter your personal workspace."
+
+# 7cbca9aa0e0845cebab6892df3f6c943
+#: ../../discovery/part00/step2.rst:10
+msgid ""
+"우측 하단의 **+ 워크북** 버튼을 눌러 워크북을 만들어 볼까요? 만들 워크북의 이름과 설명을 입력합니다. 워크북을 만드는 즉시 "
+"이어서 대시보드를 만들도록 체크박스에 표시가 되어 있습니다. 여기서 각 워크북은 여러 개의 대시보드를 포함하고, 각 대시보드는 또 "
+"여러 개의 차트를 포함하는 구조입니다."
+msgstr "Let’s begin by clicking the **+ Workbook** button on the bottom right. Enter the name and description for the workbook. The checkbox is marked by default for you to create a dashboard once a workbook is created. A single workbook contains multiple dashboards, and each single dashboard contains multiple charts."
+
+# 15d29da53fe246ed80132658eff2919b
+#: ../../discovery/part00/step2.rst:16
+msgid ""
+"이어서 대시보드를 만들어야 합니다. 대시보드에는 시각화할 데이터 소스가 있어야 합니다. 이 데이터 소스는 단일 소스이거나, "
+"join으로 연결된 데이터 소스일 수도 있습니다. 더 자세한 내용은 :doc:`../part04/create_a_dashboard`"
+" 문서를 참고하세요. 본 튜토리얼에서는 Step1에서 적재한 ``판매현황 데이터`` 하나만 사용합니다."
+msgstr "Proceed with creating a dashboard. A dashboard requires a data source for visualization. This data source can be either a single source, or joined data sources. See :doc:`../part04/create_a_dashboard` for further details. This tutorial uses ``Sales Report``, ingested previously in Step 1."
+
+# c41f57dc14be42d79bd5642013c218d0
+#: ../../discovery/part00/step2.rst:22
+msgid ""
+"**+데이터 소스 추가** 버튼을 누르면 데이터 소스 선택 팝업이 나타납니다. ``판매현황 데이터``\\를 검색하거나 **오픈 "
+"데이터만 보기**\\에 체크하여 공개된 데이터 중에서 찾아냅니다."
+msgstr "Click the **+ Add data source** button for the data source selection popup. Search ``Sales Report``, or select the **Show open data only** checkbox and choose from the results."
+
+# 3c48db6d69164f29ae5a97a566745862
+#: ../../discovery/part00/step2.rst:28
+msgid "마지막으로 대시보드의 **이름**\\과 **설명**\\을 입력합니다."
+msgstr "Finally, enter the **Name** and **Description** for the dashboard."
+
+# a01e4cc46a5f468eb7cc5c97323cb0c2
+#: ../../discovery/part00/step2.rst:34
+msgid "워크북 내에 대시보드가 생성되었습니다! 이제 이 위젯들을 추가해서 대시보드를 구성하는 일만 남았네요."
+msgstr "You have created a dashboard in the workbook. Now, you can add widgets to the dashboard."
+
+# 708c189ccd774ed0a7214cfea8bb2c51
+#: ../../discovery/part00/step2.rst:40
+msgid "다음 단계로 넘어가 볼까요?"
+msgstr "Let’s proceed to the next step."
+
+# 6c2c967a290c4f6c96ea86782f11bd49
+#: ../../discovery/part00/step2.rst:42
+msgid ":doc:`../part00/step3`"
+msgstr ":doc:`../part00/step3`\\"
+

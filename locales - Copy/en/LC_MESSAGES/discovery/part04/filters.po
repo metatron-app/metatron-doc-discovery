@@ -1,0 +1,32 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# a0a63c23c8124425bb397a0c8ac9865e
+#: ../../discovery/part04/filters.rst:2
+msgid "필터"
+msgstr "Filter"
+
+# 26ded4881bd54934b994332662f3217f
+#: ../../discovery/part04/filters.rst:4
+msgid ""
+"필터는 대시보드와 차트를 구성할 때 조건에 일치하는 데이터만 표출하도록 설정하는 기능입니다. 차트의 종류는 차트 필터, 글로벌 필터"
+" 두 가지로 구성됩니다. 차트 필터는 개별 차트에 적용되는 필터이고, 글로벌 필터는 하나의 대시보드 전체에 적용되는 필터입니다."
+msgstr "Filters are to display only data matching their preset conditions when forming dashboards and charts. Charts use two types of filters: chart filters and global filters. Chart filters are applied to individual charts, whereas global filters are applied to an entire dashboard."
+

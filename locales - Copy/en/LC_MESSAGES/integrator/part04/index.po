@@ -1,0 +1,56 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-29 12:55+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# cf04466c0f3842cd954e614a24ded29d
+#: ../../integrator/part04/index.rst:2
+msgid "모니터링"
+msgstr "Monitoring"
+
+# b4053c2950f34e3da1c43df4a883cbda
+#: ../../integrator/part04/index.rst:4
+msgid ""
+"Integrator 메인 홈에서 **모니터링** 탭으로 들어가면 등록된 각 워크플로우의 시간대별 실행 현황과 예약 정보를 그래프 "
+"형식으로 보여줍니다."
+msgstr "The **Monitoring** tab on the main page of Integrator displays runs and schedule information in graph form for each workflow."
+
+# a69f334b65ca4e3a94600d60446dd77c
+#: ../../integrator/part04/index.rst:8
+msgid "그래프에 표시된 상태 바 각각은 예약 또는 직접 명령한 워크플로우 실행 건을 가리키며, 다음과 같은 방식으로 실행 정보를 보여줍니다."
+msgstr "The status bars of the graph represent scheduled or manual runs, and related information is presented as follows:"
+
+# 2dc77f176f9c4dcf81384e0d330aaa12
+#: ../../integrator/part04/index.rst:10
+msgid "위치와 길이: 해당 건이 실행된 기간에 해당하는 타임라인 구간에 표시됩니다."
+msgstr "Position and length: The status bar spans the duration of the run represented on the timeline."
+
+# 43d5642c0fd147fea6e5c47e6ed81a03
+#: ../../integrator/part04/index.rst:11
+msgid ""
+"색상: 화면 상단에 범례로 표시된 **Status** 항목의 표시 색상과 동일한 색상으로 표시됩니다. 예를 들어 녹색으로 표시된 "
+"상태 바는 해당 실행 건이 running 상태임을 의미합니다."
+msgstr "Color: The status bar is displayed in the same color as the color of the **Status** item in the top legend. For example, a status bar in green indicates that the run is ongoing."
+
+# 06f997a4df104ea9be2e7d4bc2395481
+#: ../../integrator/part04/index.rst:13
+msgid ""
+"상태 바 위에 마우스 커서를 오버하면 아래와 같은 실행 내역이 나타나며, 대화 상자 우측 상단의 **상세보기**\\를 클릭하면 "
+"자세한 정보를 확인할 수 있습니다."
+msgstr "Hovering the cursor over the status bar displays the run details as shown below. Click **View details** on the top right of the dialog box to view more detailed information."
+

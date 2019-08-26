@@ -1,4 +1,4 @@
-# SOME DESCRIPTIVE TITLE.
+﻿# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2019, metatron team
 # This file is distributed under the same license as the metatron discovery
 # docs package.
@@ -21,24 +21,24 @@ msgstr ""
 # baabfde7423a4150843f727ceaf61f53
 #: ../../discovery/part08/permissions.rst:4
 msgid "사용자 권한"
-msgstr ""
+msgstr "Discovery Permissions"
 
 # 2157ce829daf4fc4a199771b11dcce08
 #: ../../discovery/part08/permissions.rst:6
 msgid ""
 "Metatron Discovery는 아래 화면과 같이 총 4종류의 권한을 지원하여 사용자 계정별로 접근 권한에 차등을 둘 수 "
 "있습니다. 본 메뉴에서는 개별 사용자 또는 그룹에게 부여하는 권한을 설정할 수 있습니다."
-msgstr ""
+msgstr "Metatron Discovery supports four types of permissions shown below, thereby enabling the administrator to grant different user privileges. This menu allows permission settings for individual members or groups."
 
 # ceef3f6fb98f45f8b249c4ee2e0d77b9
 #: ../../discovery/part08/permissions.rst:10
 msgid "홈 화면에 제시된 4개의 권한 중 하나를 클릭하면 아래와 같이 해당 권한이 부여된 개인 사용자와 그룹이 표시됩니다."
-msgstr ""
+msgstr "Click on one of the four permissions presented on the home to list the individual members and groups assigned the selected permission."
 
 # 13c7762b108d4da892f563954db40f5c
 #: ../../discovery/part08/permissions.rst:14
 msgid ""
 "**멤버** 또는 **그룹** 영역에서 |setup| 아이콘을 클릭하면 아래와 같은 설정 팝업이 나타나서 해당 권한을 부여받는 "
 "멤버/그룹을 설정할 수 있습니다."
-msgstr ""
+msgstr "In the **Member** or **Group** section, click on the |setup| icon to pop up the following settings dialog box where you can set which members or groups will be assigned the permission."
 

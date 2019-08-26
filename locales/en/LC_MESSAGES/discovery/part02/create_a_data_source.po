@@ -1,4 +1,4 @@
-# Copyright (C) 2019, metatron team
+﻿# Copyright (C) 2019, metatron team
 # This file is distributed under the same license as the metatron discovery
 # docs package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
@@ -197,7 +197,7 @@ msgstr ""
 # 1dd669faa57f45cca605ad63b986aaca
 #: ../../discovery/part02/create_a_data_source.rst:57
 msgid "|bin| **버튼(우측 상단):** 선택한 컬럼을 삭제합니다."
-msgstr ""
+msgstr "|bin| **button (top-right):** Deletes the selected columns,"
 
 # ae42a913911a468589506638763d5728
 #: ../../discovery/part02/create_a_data_source.rst:58
@@ -279,7 +279,7 @@ msgstr ""
 msgid ""
 "**컬럼 추가:** 데이터에 위도, 경도 컬럼이 있는 경우 이를 결합하여 ``Point`` 타입의 신규 컬럼을 추가할 수 있습니다."
 " 이 컬럼을 지우면 다른 컬럼들과 동일하게 동작합니다."
-msgstr ""
+msgstr "**Add column:** If the data includes a latitude and a longitude column, you can combine them into a new ``Point``-type column. Deleting this column works in the same way as other columns."
 
 # 747b08249c1e462094e2418f0703d6c5
 #: ../../discovery/part02/create_a_data_source.rst:75

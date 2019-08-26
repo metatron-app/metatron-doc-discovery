@@ -1,0 +1,188 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 37cbfb163be745249478a491f4af1e05
+#: ../../discovery/part00/step1.rst:2
+msgid "Step1. 데이터 소스 만들기"
+msgstr "Step 1. Create a data source"
+
+# c55062724e034a34a9c9a4208a5fce9b
+#: ../../discovery/part00/step1.rst:4
+msgid ""
+"데이터 분석을 하기 위해 가장 먼저 해야할 일은 데이터를 시스템에 적재하는 것 입니다. Metatron Discovery는 다양한 "
+"원천 데이터를 쉽게 적재할 수 있도록 지원합니다."
+msgstr "The first step in data analysis is ingesting your data into the system. Metatron Discovery allows you to easily ingest various data sources."
+
+# be15a267802848b6936378f8297b4a70
+#: ../../discovery/part00/step1.rst:6
+msgid ""
+"본 튜토리얼 예제에서는 로컬 파일에 있는 데이터를 적재하는 방법을 소개합니다. 먼저 데이터를 준비하세요. 흔히 쓰이는 엑셀 "
+"파일(.xls, .xlsx)또는 .csv 형식의 파일이면 충분합니다. 여기서는 판매 현황 데이터를 활용합니다. 아래 링크에서 "
+"다운로드 받으세요."
+msgstr "The example in this tutorial shows you how to ingest data from your local directory. First, prepare data. An Excel file (.xls, .xlsx) or .csv file will suffice. This tutorial uses sales data. Download it from the link below:"
+
+# 0d98be3bbfa04b65b4d863f6d778bc27
+#: ../../discovery/part00/step1.rst:8
+msgid ":download:`sample data (.csv) </_static/data/sales-data-sample.csv>`"
+msgstr ":download:`sample data (.csv) </_static/data/sales-data-sample.csv>`"
+
+# 89bec550f35b43adbba1ef5d9b894a13
+#: ../../discovery/part00/step1.rst:11
+msgid ""
+"데이터 소스는 **Management** > **데이터 스토리지** > **데이터 소스**\\에서 조회하고 적재할 수 있습니다. "
+"새로운 데이터 소스를 만들기 위해서 데이터 소스 리스트 우측 상단의 **new** 버튼을 클릭합니다."
+msgstr "Data sources can be viewed and ingested from **Management** > **Data Storage** > **Data Source**. To create a new data source, click the **New** button on the upper right of the data source list."
+
+# 5ba8ea09868b4c468d362707b8900142
+#: ../../discovery/part00/step1.rst:17
+msgid ""
+"일단 튜토리얼에서는 **파일**\\을 눌러 로컬 폴더에서 데이터를 가져옵니다. 다른 원천에서 데이터 소스를 만드는 방법은 "
+":doc:`../part02/create_a_data_source` 문서를 참조하세요."
+msgstr "In this tutorial, click **File** to retrieve the data from your local directory. See :doc:`../part02/create_a_data_source` for details on creating a data source from other sources."
+
+# 28e3df5e07b84e8ca3d5cfb8cd59930b
+#: ../../discovery/part00/step1.rst:19
+msgid "분석하고 싶은 데이터를 drag & drop하거나 디렉토리로부터 불러올 수 있습니다."
+msgstr "Drag and drop the data you wish to analyze, or retrieve it from the directory."
+
+# a8cf2c9af9ef4003ab0df6e1bf168de2
+#: ../../discovery/part00/step1.rst:25
+msgid ""
+"판매 현황 데이터를 드래그하면 컬럼과 라인 구분자에 따라 나타나는 데이터 샘플을 최대 100행까지 조회할 수 있습니다. 이 데이터는"
+" 기본적으로 설정된 구분자로 충분히 데이터를 잘 나타내는 것 같네요! **다음**\\을 누릅니다."
+msgstr "Drag your cursor over the sales data to view up to 100 rows of data with detection of the column delimiter and line separator. This data is properly displayed using the default delimiter and separator. Click **Next**."
+
+# 91c9aec91c3a46da970356e98a6813ce
+#: ../../discovery/part00/step1.rst:31
+msgid "이제 실제로 데이터를 보면서 컬럼의 타입을 알맞게 조정해야 합니다. 이 작업을 **데이터 스키마 구성**\\이라고 부릅니다."
+msgstr "While viewing the data, adjust the column types properly. This task is called **data schema configuration**."
+
+# 0ab90cd6be5c4d82946f121e9dcab592
+#: ../../discovery/part00/step1.rst:37
+msgid ""
+"각 컬럼은 '차원값'(dimension) 또는 '측정값'(measure)이라는 역할로 나뉩니다. 자세한 내용은 "
+":doc:`../part02/dimension_and_measures` 문서를 참조하세요. 이 데이터에서는 ``Discount``,"
+" ``Profit``, ``Quantity``, ``Sales``, ``DaystoShipActual``, "
+"``SalesForecast``, ``DaystoShipScheduled``, ``SalesperCustomer``, "
+"``ProfitRatio`` 컬럼들을 측정값으로 변경해야 합니다."
+msgstr "Each column functions as a “dimension” or “measure.” See :doc:`../part02/dimension_and_measures` for further details. In this data, the ``Discount``, ``Profit``, ``Quantity``, ``Sales``, ``DaystoShipActual``, ``SalesForecast``, ``DaystoShipScheduled``, ``SalesperCustomer``, and ``ProfitRatio`` columns must be converted into measures."
+
+# 70dbdca910d7418d8d20400953af14c6
+#: ../../discovery/part00/step1.rst:39
+msgid ""
+"그 다음은 컬럼의 데이터 타입을 적절하게 변경해 주어야 합니다. 기본적으로 차원값은 문자로, 측정값은 정수로 설정되어 있습니다. "
+"데이터 샘플을 보면서 가장 알맞는 형식으로 변경해주세요. 아래에 이 데이터에서 변경할 사항들을 나열했습니다."
+msgstr "Next, the data types of columns must be adjusted properly. The string type is the default setting for dimensions, and the integer type for measures. While viewing the sample, change the data type settings properly. Below is a list of items to be modified in this data."
+
+# 058c204984e141998027ed9a96e385c3
+#: ../../discovery/part00/step1.rst:41
+msgid "``Orderdate`` : 날짜/시간"
+msgstr "``Orderdate`` : Date/Time"
+
+# 5ae63afd2fe24cee9ea775c2d2922f8f
+#: ../../discovery/part00/step1.rst:42
+msgid "``Discount`` : 소수"
+msgstr "``Discount`` : Decimal"
+
+# 8416da0ddb0e4827809994b0a65735ea
+#: ../../discovery/part00/step1.rst:43
+msgid "``ShipDate`` : 날짜/시간 (시간 표현을 yyyy. MM. dd. 로 변경한 후 체크박스 클릭하여 유효성 확인)"
+msgstr "``ShipDate`` : Date/Time (Change the time format to yyyy. MM. dd. and click the checkbox to validate)"
+
+# 7823a2c5712c4f329859c2d5cb605a26
+#: ../../discovery/part00/step1.rst:44
+msgid "``SalesperCustomer`` : 소수"
+msgstr "``SalesperCustomer`` : Decimal"
+
+# d3436bfb65314308a84bbe776c3a92bd
+#: ../../discovery/part00/step1.rst:45
+msgid "``ProfitRatio`` : 소수"
+msgstr "``ProfitRatio`` : Decimal"
+
+# 9c8c073d07a34afdbf2607e8594ea0eb
+#: ../../discovery/part00/step1.rst:46
+msgid "``latitude`` : 위도"
+msgstr "``latitude`` : Latitude"
+
+# 199511a73724485a86ecb72c4fbb28a7
+#: ../../discovery/part00/step1.rst:47
+msgid "``longitude`` : 경도"
+msgstr "``longitude`` : Longitude"
+
+# 8ec420126ebb43d48f7b3816a0225090
+#: ../../discovery/part00/step1.rst:49
+msgid ""
+"마지막으로 새로운 컬럼을 만들어 줄 차례입니다. 우리는 위도와 경도 컬럼을 갖고 있으므로 Point 타입의 컬럼을 새로 만들 수 "
+"있습니다. 우측 상단의 **컬럼 추가** 버튼을 누르세요. **위도** 컬럼에 ``latitude`` 컬럼을 선택하고, **경도**"
+" 컬럼에 ``longitude`` 컬럼을 선택합니다. 컬럼 이름을 적절하게 입력한 후 **추가**\\를 누르세요. 새로운 Point"
+" 타입 컬럼이 생성되었습니다!"
+msgstr "Lastly, you should create a new column. Since we already have columns for latitude and longitude, we can create a point type column. Click the **Add column** button on the upper right. Select the ``latitude`` column for the **Latitude** column, and the ``longitude`` column for the **Longitude** column. Name the columns appropriately, and click **Add**. A new point type column is created!"
+
+# a1a706d3a6b24d838366d790bd736aba
+#: ../../discovery/part00/step1.rst:55
+msgid ""
+"스키마 구성 작업이 마무리되었으면 **다음**\\을 누릅니다. 필요한 경우 Druid의 수집 설정을 변경하는 작업입니다. 지금은 "
+"기본 설정으로도 충분합니다."
+msgstr "Once you are done with schema configuration, click **Next**. If necessary, you can change the settings for ingestion into Druid. The default settings are sufficient for now."
+
+# 8f612909161248129727e6b98d63dc92
+#: ../../discovery/part00/step1.rst:61
+msgid ""
+"마지막으로 데이터 소스의 **이름**\\과 **설명**\\을 입력합니다. **마침**\\을 누르면 즉시 데이터 소스 상세로 "
+"넘어갑니다."
+msgstr "Lastly, enter the **Name** and **Description** for the data source. Click **Done** to proceed to the data source details page."
+
+# 8d2258dfba484cef8a1aced0eac69075
+#: ../../discovery/part00/step1.rst:67
+msgid ""
+"데이터 소스 상세에서는 적재 현황을 실시간으로 볼 수 있습니다. 몇 분 기다리면 아래와 같이 적재가 성공했음을 알리며 히스토그램이 "
+"나타납니다. 혹시 다른 데이터 소스를 적재하다 에러가 났을 경우 **상세** 링크를 클릭하여 Druid 적재 로그를 조회할 수 "
+"있습니다. 컬럼명 중복, 컬럼 타입과 불일치하는 데이터 등으로 인해 적재가 실패할 수 있습니다. 이 경우 원인을 찾아 다시 적재를 "
+"시도해보아야 합니다."
+msgstr "In the data source details page, you can view the ingestion status in real time. The screen below appears after a few minutes, indicating success. A histogram is displayed. If you encounter an error while ingesting another data source, click **Details** to view the Druid ingestion log. Ingestion may be unsuccessful due to a duplicate column name or mismatch between column types and their data. Try ingestion again after addressing the issue."
+
+# 809e28c9af444651bb76700451f24926
+#: ../../discovery/part00/step1.rst:73
+msgid ""
+"이 데이터 소스를 다른 사용자들에게 오픈하려면 **할당**\\에서 **모든 워크스페이스에 데이터소스를 사용하도록 허용** 체크박스에"
+" 체크합니다. 모든 사용자가 아니라 특정 사용자들에게만 오픈하고 싶으면 **수정**\\을 클릭하여 할당하고자 하는 개인 사용자들 "
+"또는 팀 워크스페이스를 선택합니다."
+msgstr "To make the data source available to other users, check the checkbox next to **Allow all workspaces to use this datasource** under **Publish**. To make the data source available only to specific users, click **Edit** and select individual users’ or teams’ workspaces as desired."
+
+# 2916bd20bcba4c7abf93d046f6784fa5
+#: ../../discovery/part00/step1.rst:79
+msgid "이 예제에서는 모든 사용자가 사용할 수 있도록 **Open Data**\\로 설정하겠습니다."
+msgstr "In this example, we will choose **Open Data** to make it available to all users."
+
+# 3d38e122d9d649839f9bb5bca2848e63
+#: ../../discovery/part00/step1.rst:85
+msgid "적재된 데이터는 **데이터** 탭에서 조회할 수 있습니다."
+msgstr "The ingested data can be viewed under the **Data** tab."
+
+# 5be3f93cf4d042f19227782de10a32b4
+#: ../../discovery/part00/step1.rst:92
+msgid "축하합니다! 이제 데이터 소스를 사용해 볼 차례네요. 다음 스텝으로 넘어가볼까요?"
+msgstr "Congratulations! Now, it’s time to use the data source. Let’s proceed to the next step."
+
+# ea691ed19cb14c549aaf1d02eb55c757
+#: ../../discovery/part00/step1.rst:94
+msgid ":doc:`../part00/step2`"
+msgstr ":doc:`../part00/step2`\\"
+

@@ -1,0 +1,74 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 975673c7bda6405b93994061c9fae107
+#: ../../discovery/part02/dimension_and_measures.rst:2
+msgid "'차원값'과 '측정값'의 개념"
+msgstr "“Dimensions” and “Measures”"
+
+# acbe9b273f7841fb807a3b06111fe905
+#: ../../discovery/part02/dimension_and_measures.rst:4
+msgid ""
+"대시보드에 연동된 데이터 소스의 컬럼들은 아래와 같이 **차원값** 컬럼과 **측정값** 컬럼으로 구분됩니다. Discovery의 "
+"데이터 분석·시각화 기능을 온전히 활용하기 위해서는 차원값과 측정값의 개념을 명확하게 이해해야 합니다."
+msgstr "The columns of a data source linked to the dashboard are categorized into **dimension** and **measure** columns as explained below. To make full use of Discovery’s data analysis and visualization features, you must understand the concepts of dimensions and measures clearly."
+
+# 2796c0e079d84377aa3680410ef5bb9b
+#: ../../discovery/part02/dimension_and_measures.rst:8
+msgid "**차원값(Dimension) 컬럼**"
+msgstr "**Dimension column**"
+
+# 7b3d9614e532439da9cbc953801b4bc6
+#: ../../discovery/part02/dimension_and_measures.rst:10
+msgid "범주형 데이터 컬럼을 가리키며, 특징은 아래와 같습니다."
+msgstr "A column containing categorical data with the following characteristics:"
+
+# 456fb9d02044468b940d40d553a8ae45
+#: ../../discovery/part02/dimension_and_measures.rst:12
+msgid ""
+"집계(aggregated)보다는 분류(categorical)에 의미가 있는 데이터 필드(예: Category, Region, "
+"Organization 등)"
+msgstr "The values in this type of column are not for aggregation but to be categorized (e.g.: Category, Region, Organization)"
+
+# 3df51b5c3b884b90830cd1000c056b80
+#: ../../discovery/part02/dimension_and_measures.rst:13
+msgid "측정값을 표시하는 데 기준이 됨."
+msgstr "By each of these categories, measure values are aggregated."
+
+# a949179e4dc347eab1f2e8a829b3e666
+#: ../../discovery/part02/dimension_and_measures.rst:15
+msgid "**측정값(Measure) 컬럼**"
+msgstr "**Measure columns**"
+
+# 7d6f253eb0794a7b83ec2b640a458adc
+#: ../../discovery/part02/dimension_and_measures.rst:17
+msgid "수량적 데이터 필드를 가리키며, 특징은 아래와 같습니다."
+msgstr "A column containing quantitative data with the following characteristics:"
+
+# 56d27f22d7fb4d2497ff2ea44effb87a
+#: ../../discovery/part02/dimension_and_measures.rst:19
+msgid "집계(aggregated)할 수 있거나 양적인(quantitative) 정보를 포함하는 필드(예: Sales 등)"
+msgstr "The values in this type of column are subject to aggregation or contain quantitative information (e.g.: Sales)"
+
+# 1014b8dffe5d4726a5ff444c6c661d3f
+#: ../../discovery/part02/dimension_and_measures.rst:20
+msgid "차원값에 의해 제시된 기준을 토대로 차트에 표현되는 데이터"
+msgstr "These values are aggregated based on dimensions."
+

@@ -1,0 +1,52 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 13416e8af71242f9b313843fec82beba
+#: ../../discovery/part03/index.rst:2
+msgid "워크스페이스"
+msgstr "Workspace"
+
+# c4c724569df548b18cc0a379c9796002
+#: ../../discovery/part03/index.rst:8
+msgid ""
+"워크스페이스는 Metatron Discovery의 분석 모듈인 워크북, 노트북, 워크벤치를 보관하는 작업 공간으로, 개인용 "
+"워크스페이스와 공유용 워크스페이스로 분류됩니다."
+msgstr "A workspace stores Metatron Discovery’s analytics entities such as workbooks, notebooks, and workbenches. There are two types of workspaces: personal and shared workspaces."
+
+# 8064de32e975449aa4409d198782deb2
+#: ../../discovery/part03/index.rst:10
+msgid ""
+"**개인 워크스페이스:** Discovery 회원별로 하나씩 할당되는 개인용 워크스페이스입니다. 이 워크스페이스는 본인만 접근 "
+"가능합니다."
+msgstr "**Personal workspace:** A private workspace assigned to each Discovery member. It is accessible only to the owner."
+
+# ee7f8bbab82c48de9f88a7c3fbd3b8f9
+#: ../../discovery/part03/index.rst:11
+msgid ""
+"**공유 워크스페이스:** 여러 사용자가 함께 사용할 수 있는 워크스페이스입니다. 분석 과정과 결과를 다른 사용자들과 공유하기 위한"
+" 공간입니다. 각 공유 워크스페이스의 소유자 또는 관리자는 Discovery 회원들에게 다양한 수준의 접근 권한을 부여할 수 "
+"있습니다."
+msgstr "**Shared workspace:** A public workspace shared by multiple users. It is used for users to share analytics processes and results with each other. The owner or administrator of a shared workspace can grant various levels of access to Discovery members."
+
+# c9971a4df1b043e08757d74c67af30aa
+#: ../../discovery/part03/index.rst:13
+msgid "본 단원에서는 **워크스페이스 홈 화면 구성과 UI**, 그리고 **공유 워크스페이스**\\를 활용하는 방식에 대해 소개합니다."
+msgstr "This chapter introduces **workspace home page and UI**, and then how to use **shared workspaces**."
+

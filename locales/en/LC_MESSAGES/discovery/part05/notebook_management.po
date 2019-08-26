@@ -1,5 +1,4 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, metatron team
+﻿# Copyright (C) 2019, metatron team
 # This file is distributed under the same license as the metatron discovery
 # docs package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
@@ -9,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"POT-Creation-Date: 2019-08-26 18:06+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,8 +19,8 @@ msgstr ""
 
 # 3961898d233448f683cd28e5f4c0ffc2
 #: ../../discovery/part05/notebook_management.rst:4
-msgid "노트북 관리"
-msgstr ""
+msgid "노트북 서버 관리"
+msgstr "Manage notebook servers"
 
 # 47b41ee22a4e4ba6ba6681f9ba7b3c9b
 #: ../../discovery/part05/notebook_management.rst:6
@@ -29,6 +28,9 @@ msgid ""
 "노트북 모듈의 사용을 허용하기 위해서는 먼저 **관리자**\\가 외부 분석 도구가 설치되어 있는 서버, 즉 '노트북 서버'와 연동을"
 " 해야 합니다."
 msgstr ""
+"To enable the Notebook module, the **administrator** must connect to a "
+"“notebook server,”  which refers to a server that provides an external "
+"analytics tool."
 
 # 598011e1702742e69a22fb31f0fd75fa
 #: ../../discovery/part05/notebook_management.rst:8
@@ -36,11 +38,14 @@ msgid ""
 "메인 화면 좌측 패널에서 :menuselection:`MANAGEMENT --> 노트북 관리 --> 노트북 서버` 메뉴로 이동하면 "
 "노트북 서버를 새로 등록하거나 기존에 등록된 노트북 서버를 조회·수정할 수 있습니다."
 msgstr ""
+"On the left-hand panel of the main screen, go to "
+":menuselection:`MANAGEMENT --> Notebook --> Notebook Server` to register "
+"a new notebook server or view and edit registered notebook server."
 
 # 5743e28d335542119035c93a63ac3640
 #: ../../discovery/part05/notebook_management.rst:13
 msgid "노트북 서버 목록"
-msgstr ""
+msgstr "Notebook server list"
 
 # 76ebd9409af24287863da1df80b061a7
 #: ../../discovery/part05/notebook_management.rst:15
@@ -48,18 +53,20 @@ msgid ""
 "이 화면에서는 노트북 서버들을 보여줍니다. 노트북 서버 목록은 서버 이름과 타입으로 필터링할 수 있으며, 목록에 나타난 서버 중 "
 "하나를 클릭하여 해당 서버의 정보를 열람·수정할 수 있습니다. 또한 서버 중 하나에 마우스를 오버하면 나타나는 |bin| 버튼을 "
 "클릭하거나, 좌측에서 삭제하고자 하는 서버들의 체크란을 선택한 후 우측 상단에 있는 :guilabel:`선택 삭제` 버튼을 클릭하면"
-" 해당 노트북이 삭제됩니다."
-msgstr ""
+" 해당 노트북 서버가 삭제됩니다."
+msgstr "This page shows a list of notebook servers. The notebook server list can be filtered by server name or type, and clicking on an entry in the list allows you to view and edit the selected server’s information. Also, you can delete a notebook server either by clicking its |bin| button that appears when hovering the mouse over the server, or by clicking the :guilabel:`Delete selections` after selecting the checkboxes next to the servers you want to delete."
 
 # 7029e306f8bc418c936c28a596c12377
 #: ../../discovery/part05/notebook_management.rst:23
 msgid "노트북 서버 추가"
-msgstr ""
+msgstr "Add a notebook server"
 
 # 02b5b687a93a4085b315099642dd8542
 #: ../../discovery/part05/notebook_management.rst:25
 msgid "노트북 관리 화면에서 :guilabel:`노트북 서버 추가` 버튼을 클릭하면 다음과 같은 노트북 서버 등록 화면이 팝업이 됩니다."
 msgstr ""
+"Click the :guilabel:`Add a server` button in the notebook management home"
+" to pop up a window to register a notebook server as follows:"
 
 # ba08c919306b4e55ad7d5d0ddb5a0cb9
 #: ../../discovery/part05/notebook_management.rst:31
@@ -67,19 +74,26 @@ msgid ""
 "**타입:** 등록하려는 노트북 서버에 설치된 외부 분석 도구를 선택합니다. **Jupyter**\\와 **zeppelin** 중 "
 "선택이 가능합니다."
 msgstr ""
+"**Type:** Select the external analytics tool installed in the notebook "
+"server to be registered. You can select either **Jupyter** or "
+"**zeppelin**."
 
 # 0a2c63df3a39417d8ab048c105a9839a
 #: ../../discovery/part05/notebook_management.rst:32
 msgid "**URL:** 등록하려는 노트북 서버의 URL을 입력합니다. \\http://\\와 \\https://\\를 지원합니다."
 msgstr ""
+"**URL:** Enter the URL of the notebook server to be registered. "
+"\\http://\\ and \\https://\\ are supported."
 
 # 274c5b52617c4404a7567a1caaa16f25
 #: ../../discovery/part05/notebook_management.rst:33
 msgid "**이름:** 등록하려는 노트북 서버의 이름을 입력합니다."
-msgstr ""
+msgstr "**Name:** Enter a name for the notebook server to be registered."
 
 # 6d0b6057b6b6498f9dd85b53f389da3b
 #: ../../discovery/part05/notebook_management.rst:34
 msgid "**설명:** 등록하려는 노트북 서버에 대한 설명을 입력합니다."
 msgstr ""
+"**Description:** Enter a description for the notebook server to be "
+"registered."
 

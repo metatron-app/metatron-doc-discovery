@@ -1,4 +1,4 @@
-# Copyright (C) 2019, metatron team
+﻿# Copyright (C) 2019, metatron team
 # This file is distributed under the same license as the metatron discovery
 # docs package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
@@ -151,7 +151,7 @@ msgstr ""
 # 2e05c47df74c469993b2166f720c19df
 #: ../../discovery/part01/structure.rst:90
 msgid "사용자 권한 및 계정"
-msgstr "User permission and account management"
+msgstr "User permission and account administration"
 
 # 820e2cecceaf48dd85a238c60864c8e0
 #: ../../discovery/part01/structure.rst:91
@@ -161,12 +161,12 @@ msgstr "You can add/delete users or manage user permission."
 # 629a359d4f5a4f3b92cb56dd2c2427ed
 #: ../../discovery/part01/structure.rst:95
 msgid "로그인/로그아웃"
-msgstr ""
+msgstr "Login/logout"
 
 # 4cee8907e72c477faef9da7471584337
 #: ../../discovery/part01/structure.rst:96
 msgid ""
 "계정을 부여받은 사용자는 Metatron Discovery에 로그인하여 사용 권한에 맞게 자유롭게 이용할 수 있습니다. 로그인 중인"
 " 계정은 외부 시스템에서도 로그아웃이 가능합니다."
-msgstr ""
+msgstr "Users assigned accounts can log in to Metatron Discovery and use it freely within their permissions. Additionally, you can log out currently logged-in accounts even from an external system."
 

@@ -1,0 +1,393 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 3dc7516d27e54de1bb1b9583da5f5e4b
+#: ../../discovery/part04/chart_style.rst:2
+msgid "차트 스타일 속성"
+msgstr "Chart style attributes"
+
+# 8a78e5f51a014ba994170508bb9f0743
+#: ../../discovery/part04/chart_style.rst:4
+msgid ""
+"데이터를 피봇팅하고 나면 우측에 차트 스타일을 설정할 수 있는 옵션 메뉴가 나타납니다. 메뉴의 구성은 각 차트의 종류별로 다르게 "
+"나타납니다. 모든 차트 유형에 일반적으로 적용되는 설정 항목을 설명하고, 차트 유형별로 고유한 '공통 설정' 유형에 대해서 "
+"설명합니다."
+msgstr "Once data is pivoted, an options menu is shown on the right of the screen to allow you to set the chart style. The composition of the menu varies with chart type. This section describes the settings used universally by all chart types and the “Common Setting” items for each chart type."
+
+# 5e8dcd0bd78c46da9f8458dc8b9c884b
+#: ../../discovery/part04/chart_style.rst:9
+msgid "차트 스타일 설정 메뉴"
+msgstr "Chart style settings menu"
+
+# d93176ba411240a69f3b6b937724c4e6
+#: ../../discovery/part04/chart_style.rst:11
+msgid ""
+"차트 스타일 설정 메뉴를 구성하는 각 항목별로 설정 방식을 설명합니다. 사용하는 차트 유형에 따라 아래 제시된 항목 중 일부가 "
+"사용되지 않을 수 있음을 유의하십시오."
+msgstr "This section describes how to configure the settings of the chart style settings menu. Note that not all the settings are shown for every chart type."
+
+# 3781dead289f42d99c5a4f12b54f95ab
+#: ../../discovery/part04/chart_style.rst:13
+msgid "**색상 설정**"
+msgstr "**Color setting**"
+
+# dd89c2e31e134d899071eff987c9c90c
+#: ../../discovery/part04/chart_style.rst:15
+msgid "차트에 들어가는 각종 색상을 정의합니다."
+msgstr "Defines various colors used in the chart."
+
+# a7759d03505f448096c67334415c7702
+#: ../../discovery/part04/chart_style.rst:21
+msgid "**그래프 색상 설정:** 그래프에서 데이터 표시 항목별 색상을 구분하는 기준을 정한 후 색상 테마를 선택합니다."
+msgstr "**Graph color setting:** Set criteria to classify data on the chart by color, and select a coloring theme."
+
+# 589f02e984d84d76a18eceff66fb5d9e
+#: ../../discovery/part04/chart_style.rst:23
+msgid "**Series:** 측정값의 종류에 따라 색상을 구분합니다."
+msgstr "**Series:** Colors data elements differently with measures."
+
+# fda9e808c5f0458192ea22dd2c3d54f7
+#: ../../discovery/part04/chart_style.rst:24
+msgid "**Dimension:** 차원값의 종류에 따라 색상을 구분합니다."
+msgstr "**Dimension:** Colors data elements differently with dimensions."
+
+# cf45bad7a669493e9198957e8deaf50d
+#: ../../discovery/part04/chart_style.rst:25
+msgid "**Measure:** 측정값의 크기에 따라 색상을 구분합니다."
+msgstr "**Measure:** Colors elements differently with the size of each aggregate of measure values."
+
+# 72e2e7f77f364373be49ed0b8973973b
+#: ../../discovery/part04/chart_style.rst:27
+msgid ""
+"**색상범위 설정:** 데이터 표시 색상 구분 기준을 **Measure**\\로 선택할 때 나오는 항목으로서, ON으로 설정하면 "
+"측정값의 범위에 따라 색상을 다르게 나타낼 수 있습니다. 색상범위는 최저 구간부터 시작해서 원하는 개수만큼 세분화할 수 있는데, "
+"새로운 구간을 추가하려면 현재의 마지막 구간의 최댓값을 먼저 조정한 다음 **새 범위 추가** 버튼을 클릭해야 합니다."
+msgstr "**Setting color range:** This setting is displayed when **Measure** is selected as the criterion to classify data by color. Set “ON” to set colors differently with each range of measure values. The measure data to be colored can be subdivided into as many ranges as you want, starting with the lowest one. To add a new range, adjust the upper limit of the highest range and click **Add new range**."
+
+# 0febdba52072442f86ca6e727e8e4e0c
+#: ../../discovery/part04/chart_style.rst:29
+msgid "**숫자 포멧**"
+msgstr "**Number format**"
+
+# 733300d2cda043aea85e6a611903949f
+#: ../../discovery/part04/chart_style.rst:31
+msgid ""
+"차트 내 그래프에 텍스트로 나타나는 데이터값 의 표시 형식을 정의합니다. 이 기능을 사용하려면 데이터 레이블 설정 메뉴에서 레이블 "
+"표시 기능을 먼저 켜주십시오."
+msgstr "Defines how to display numerical text data on the chart graph. To use this function, turn on Show Axis Label in the Data Label Settings Menu."
+
+# c1af5a648d124b169ccc7486d15e73a5
+#: ../../discovery/part04/chart_style.rst:37
+msgid "**표시 형식:** 데이터 값을 숫자, 통화, 퍼센트, 지수 중 어떤 형식으로 표시할지 선택합니다."
+msgstr "**Format:** Select a display format for numeric values from among number, currency, percent, and exponent."
+
+# 5c6f7de542e64ff8884a49e9a2ff1c50
+#: ../../discovery/part04/chart_style.rst:38
+msgid "**소수점 자리 설정:** 데이터 값을 소수점 몇 번째 자리까지 표시할지 결정합니다."
+msgstr "**Decimal place:** Set how many digits to display after the decimal point."
+
+# 76e209a02fc6453dac8708946c603db1
+#: ../../discovery/part04/chart_style.rst:39
+msgid ""
+"**수치표시 약어 설정:** 데이터 값의 자릿수가 클 경우 천 단위(K), 백만 단위(M), 십억 단위(B) 중 하나를 약어로 "
+"설정할 수 있습니다. **자동 조정**\\을 선택하면, 데이터 값들의 자릿수에 가장 적절한 단위가 자동으로 결정됩니다."
+msgstr "**Number abbreviations:** You can use K (thousands), M (millions), or B (billions) as an abbreviation for a large numeric value. Select **Automation** to automatically set the most proper symbol in accordance with the number of digits."
+
+# a684a524e7c54fb196bb92aaa5b4eb6f
+#: ../../discovery/part04/chart_style.rst:40
+msgid "**천단위 구분자 사용:** 데이터 값들을 천단위 구분자를 사용하여 표시할 것인지 선택합니다."
+msgstr "**Thousands separator:** Select whether to add thousands separators when displaying numeric data values."
+
+# 1d7a9644f779438a94ecf0b8294cd926
+#: ../../discovery/part04/chart_style.rst:41
+msgid "**사용자 기호 설정:** 데이터 값들의 앞/뒤에 사용자가 원하는 텍스트를 삽입하여 표시할 수 있습니다."
+msgstr "**Customer symbol:** Insert a custom text before/after numeric data values."
+
+# 689407ec04d8400f8f018b54a0c6c1f1
+#: ../../discovery/part04/chart_style.rst:42
+msgid "**미리 보기:** 정의한 숫자 형식에 따른 결과를 예시로 보여줍니다."
+msgstr "**Preview:** Displays the result of the defined number format."
+
+# 344776c4c11f4702bff7435d5e382970
+#: ../../discovery/part04/chart_style.rst:44
+msgid "**Y축 설정(차트 유형 세로형 기준)**"
+msgstr "**Y-axis setting (when chart type is vertical)**"
+
+# b6c2016faca44647aff6a6be01cf7de5
+#: ../../discovery/part04/chart_style.rst:46
+msgid "공통 설정 항목에서 차트 유형을 **가로형**\\으로 바꾸면 X축과 Y축 설정 항목이 뒤바뀝니다."
+msgstr "If you set the chart direction **Horizontal** in the Common Setting area, the settings are exchanged between X-axis and Y-axis."
+
+# dc460208ee5040c9a1321aef130aa115
+#: ../../discovery/part04/chart_style.rst:52
+msgid "**축 제목 입력:** 차트의 Y축에 제목을 입력할 수 있습니다. 해당 기능을 사용하지 않으면 Y축에 제목이 나타나지 않게 됩니다."
+msgstr "**Show axis title:** Used to set a title for the Y-axis of the chart. Disabling this function hides the title of the Y-axis."
+
+# cfb1514a7a4e4eb5bcc1209df73a12c4
+#: ../../discovery/part04/chart_style.rst:53
+msgid ""
+"**레이블 표시:** 차트의 Y축에 데이터 레이블을 표시할 것인지 선택합니다. 해당 기능을 사용하지 않으면 Y축에 데이터 레이블은 "
+"나타나지 않게 됩니다."
+msgstr "**Show axis label:** Select whether or not to show the data labels on the Y-axis of the chart. Disabling this function hides the data labels on the Y-axis."
+
+# dd2b434fa61148cbab6d48d09b8d20e4
+#: ../../discovery/part04/chart_style.rst:55
+msgid ""
+"**레이블 설정:** Y축 데이터 레이블에 표시되는 숫자의 형식을 지정합니다. 자동으로 설정하면 **숫자 포멧** 항목의 설정값이 "
+"동일하게 반영되며, 수동으로 설정하면 Y축 데이터 레이블만의 고유한 형식을 지정할 수 있습니다."
+msgstr "**Label setting:** Set the numeric format of the data labels on the Y-axis. Set automatic to import the settings of **Format** or manual to set specific format for the data labels on the Y-axis."
+
+# fdc59bcb1f2b4050b6655a5ed6a32bac
+#: ../../discovery/part04/chart_style.rst:57
+msgid "**X축 설정(차트 유형 세로형 기준)**"
+msgstr "**X-axis setting (when chart type is vertical)**"
+
+# b8e3dbeeff664e50b31a687c3027c563
+#: ../../discovery/part04/chart_style.rst:59
+msgid ""
+"여기서는 차트의 X축 표시 방식을 정의합니다. 공통 설정 항목에서 차트 유형을 **가로형**\\으로 바꾸면 X축과 Y축 설정 항목이"
+" 뒤바뀝니다."
+msgstr "Defines how to display the X-axis of the chart. If you set the chart direction **Horizontal** in the Common Setting area, the settings are exchanged between X-axis and Y-axis."
+
+# 22af482d3e1b414da54e2978ddc445b1
+#: ../../discovery/part04/chart_style.rst:65
+msgid "**축 제목 입력:** 차트의 X축에 제목을 입력할 수 있습니다. 해당 기능을 사용하지 않으면 X축에 제목이 나타나지 않게 됩니다."
+msgstr "**Show axis title:** Used to set a title for the X-axis of the chart. Disabling this function hides the title of the X-axis."
+
+# 4f17b2ebeda647ef873675f74684b7c5
+#: ../../discovery/part04/chart_style.rst:66
+msgid ""
+"**레이블 표시:** 차트의 X축에 데이터 레이블을 표시할 것인지 선택합니다. 해당 기능을 사용하지 않으면 X축에 데이터 레이블은 "
+"나타나지 않게 됩니다."
+msgstr "**Show axis label:** Select whether or not to show the data labels on the X-axis of the chart. Disabling this function hides the data labels on the X-axis."
+
+# 140bbdd9061a4089aef851862f14a117
+#: ../../discovery/part04/chart_style.rst:68
+msgid "**레이블 회전:** 차트의 X축에 나타나는 데이터 레이블을 0도/45도/90도 중 어떤 각도로 표시할 것인지 선택합니다."
+msgstr "**Rotation:** Select an angle for the data labels on the X-axis from among 0, 45, and 90 degrees."
+
+# dd3cfa0f4f0447c4be29a108de228bac
+#: ../../discovery/part04/chart_style.rst:70
+msgid "**데이터 레이블 설정**"
+msgstr "**Data label setting**"
+
+# d722b5c5789a4582b01fd9a0d6247e9d
+#: ../../discovery/part04/chart_style.rst:72
+msgid "차트 내 그래프에 데이터 값을 표시할 것인지 여부를 선택합니다."
+msgstr "Selects whether to display the data values on the chart graph."
+
+# 713227a628324aba8313aed50544cb15
+#: ../../discovery/part04/chart_style.rst:80
+msgid "차트 유형별 공통 설정 항목"
+msgstr "Common settings for each chart type"
+
+# 56d2da165d8f44878d3053232a7b4ffa
+#: ../../discovery/part04/chart_style.rst:81
+msgid ""
+"가장 보편적으로 사용되는 상위 6개 차트(막대형 차트, 표, 선형 차트, 분산형 차트, 히 트맵, 원형 차트)의 스타일 설정 방법에"
+" 대해 설명합니다."
+msgstr "This section describes how to style the six most popular chart types (bar chart, table, line chart, scatter chart, heatmap, and pie chart)."
+
+# 58eeb380d9934b78bee96c22293503f6
+#: ../../discovery/part04/chart_style.rst:87
+msgid "**막대형 차트**"
+msgstr "**Bar chart**"
+
+# fe52ed98d5fc46aebf6e6e18ca32cbc9
+#: ../../discovery/part04/chart_style.rst:89
+msgid "차원값 컬럼을 구성하는 각 범주 항목에 속한 데이터 값이 막대 모양으로 표시됩니다."
+msgstr "This type of chart presents data values in each category of a dimension column with rectangular bars."
+
+# d79d5f6d35814d5ca932ed1d2fc554c1
+# 57e04bd1d5964e6bace642ea75b1b7cc
+# a854f73d8f004709ab72f1b4c9cfe775
+# 8e6d701a3e964e0fa0af6689ac4b36dc
+#: ../../discovery/part04/chart_style.rst:93
+#: ../../discovery/part04/chart_style.rst:109
+#: ../../discovery/part04/chart_style.rst:124
+#: ../../discovery/part04/chart_style.rst:155
+msgid "**차트 유형**"
+msgstr "**Chart type**"
+
+# 8dc3c79caf11496a861ad14ba0b705c4
+#: ../../discovery/part04/chart_style.rst:95
+msgid "**세로형:** 차원값 축이 세로를 기준으로 하여 데이터 값 막대가 세로로 나타납니다."
+msgstr "**Vertical:** Displays data values as vertical bars with the dimension axis set vertical."
+
+# 5859ec75d6984bc397e66ab2fa384fda
+#: ../../discovery/part04/chart_style.rst:96
+msgid "**가로형:** 차원값 축이 가로를 기준으로 하여 데이터 값 막대가 가로로 나타납니다."
+msgstr "**Horizontal:** Displays data values as horizontal bars with the dimension axis set horizontal."
+
+# 3d656a3cded840c59edf8ceacf827f31
+#: ../../discovery/part04/chart_style.rst:97
+msgid "**병렬형:** 측정값을 2개 이상 선택했을 때 측정값별로 각각 다른 막대로 병렬하여 나타냅니다."
+msgstr "**Parallel:** If more than one measure are selected, different bars representing those measures are displayed in parallel."
+
+# 122dd196425e40f3be8c23c3576885eb
+#: ../../discovery/part04/chart_style.rst:98
+msgid "**중첩형:** 측정값을 2개 이상 선택했을 때 모든 측정값을 한 막대에 중첩시켜 나타냅니다."
+msgstr "**Stacked:** If more than one measure are selected, different bars representing those measures are stacked at one position."
+
+# 2be3882e7ae2415786cf3a95ee1c4a89
+#: ../../discovery/part04/chart_style.rst:100
+msgid "**Limitation:** 차트에 나타나는 컬럼의 개수를 결정합니다."
+msgstr "**Limitation:** Set how many columns to display on the chart."
+
+# 44cd18ada7ed46bbae4b92adfc2d1d07
+#: ../../discovery/part04/chart_style.rst:103
+msgid "**표**"
+msgstr "**Table**"
+
+# 222211ee1287435aa28d1990d0290858
+#: ../../discovery/part04/chart_style.rst:105
+msgid ""
+"열/행 선반에 올려놓은 차원값 컬럼들의 범주 항목을 토대로 표 블록이 형성되며 그에 상응하는 측정값이 교차 영역에 텍스트로 "
+"표시됩니다."
+msgstr "A table block is formed based on the categories into which the dimension columns on the column/row shelves are grouped; accordingly, the values of the measure columns on the cross shelf are displayed as text in the crossings."
+
+# 06dfe3ad5b24499495860b5e0e1f75b4
+#: ../../discovery/part04/chart_style.rst:111
+msgid ""
+"**피봇 데이터:** 분류 기준이 되는 차원값 범주가 동일한 측정값끼리는 한 셀에 집계(``SUM``, ``MIN``, "
+"``MAX`` 등)되는 방식으로 보여집니다."
+msgstr "**Pivot:** Aggregates (``SUM``, ``MIN``, ``MAX``, etc) measure values for each pair of column and row dimensions into a different cell."
+
+# 1bda024898c045188888c4ca62e26b36
+#: ../../discovery/part04/chart_style.rst:112
+msgid "**원본 데이터:** 원본 측정값이 집계되지 않은 채로 특정한 차원값 컬럼을 기준으로 전부 출력됩니다."
+msgstr "**Original:** Displays all original measure values as unaggregated together with the selected dimensions."
+
+# 36ab1aed04804d61a20079ee81b6a4e7
+#: ../../discovery/part04/chart_style.rst:113
+msgid "**세로보기:** 측정값의 데이터를 표에서 세로로 표시합니다. 원본 데이터 유형으로 표를 나타낼 때는 사용할 수 없습니다."
+msgstr "**Vertical:** Displays measure values vertically in the table. This cannot be used when “Original” is selected for displaying the table."
+
+# f63dd8adc683401fbc218097ad14d660
+#: ../../discovery/part04/chart_style.rst:114
+msgid "**가로보기:** 피봇데이터 유형으로 표를 나타낼 경우 표를 가로보기 할 수 있습니다. 측정값의 데이터를 표에서 가로로 표시합니다."
+msgstr "**Horizontal:** Displays the table horizontally when “Pivot” is selected for displaying the table. Displays measure values horizontally in the table."
+
+# 23c34c33b7c24a5a9c9e2c7ba6f97107
+#: ../../discovery/part04/chart_style.rst:116
+msgid ""
+"**Show Head Colum:** 헤드 칼럼에 표시되는 텍스트 정렬 방식을 가로와 세로 별로 설정할 수 있습니다. 원본 데이터로"
+" 표시할 경우에는 헤드 칼럼은 필수로 표시됩니다. 피봇 데이터 유형일 경우에 헤드 칼럼을 사용하지 않을 수 있습니다."
+msgstr "**Show head column:** Set horizontal and vertical text alignment in the column headers. When “Original” is selected, the column headers are necessarily shown. When “Pivot” is selected, you may optionally hide the column headers."
+
+# 489ab67765e64fc1bca97d2b6a5a8fb3
+#: ../../discovery/part04/chart_style.rst:118
+msgid "**선형 차트**"
+msgstr "**Line chart**"
+
+# f8b350bfebba4ab59baed95fced1a0d0
+#: ../../discovery/part04/chart_style.rst:120
+msgid ""
+"차원값 컬럼을 구성하는 각 범주 항목에 속한 데이터 값이 점 모양으로 표시됩니다. 인접하는 범주 항목의 점끼리는 서로 연결되어 변화"
+" 추이를 확인할 수 있습니다."
+msgstr "This type of chart presents data values in each category of a dimension column with points. Adjacent data points are connected with each other. This type of chart is used to view trends."
+
+# 655d1b3895ff4a7b8d6ab0ba0bfabcb5
+#: ../../discovery/part04/chart_style.rst:126
+msgid "**선형:** 측정값을 기준점으로 선을 이어서 차트를 나타냅니다."
+msgstr "**Line type:** Displays the chart graph by drawing lines between points that represent measure value aggregates."
+
+# 2e7b44ee1173452a8176378a4638c67f
+#: ../../discovery/part04/chart_style.rst:127
+msgid "**면적형:** 선으로 이어진 면적에 색상을 입혀 차트를 나타냅니다."
+msgstr "**Area type:** Colors the area formed by the connecting lines."
+
+# 08baf93701794a69aa1a65b1f12944ac
+#: ../../discovery/part04/chart_style.rst:128
+msgid "**라인&포인트:** 측정값을 기준점으로 한 점과 그 점을 연결한 선을 함께 나타냅니다."
+msgstr "**Line & point:** Shows both the data points and connecting lines."
+
+# c75efa76e3164a2fa9294cc0a5a252e6
+#: ../../discovery/part04/chart_style.rst:129
+msgid "**포인트:** 포인트는 측정값을 기준으로 한 점만 나타냅니다."
+msgstr "**Point:** Shows the data points only."
+
+# cced0a7eecd44039bc9056fec98a478b
+#: ../../discovery/part04/chart_style.rst:130
+msgid "**라인:** 선의 연결만을 나타냅니다."
+msgstr "**Line:** Shows the connecting lines only."
+
+# b07d3dc75ece48f9b9b48d167a562650
+#: ../../discovery/part04/chart_style.rst:131
+msgid "**기본형:** 측정값을 그대로 차트에 나타냅니다."
+msgstr "**Basic:** Displays each aggregate as it is on the chart."
+
+# 96bdf09eda5845fc99a113d959b49372
+#: ../../discovery/part04/chart_style.rst:132
+msgid "**누적형:** 측정값을 누적한 값을 차트에 나타냅니다."
+msgstr "**Cumulative:** Displays cumulative aggregates on the chart."
+
+# bd6393cfccb843c38d1cfc6b0e9196fc
+#: ../../discovery/part04/chart_style.rst:134
+msgid "**분산형 차트**"
+msgstr "**Scatter chart**"
+
+# 6652187e92bb437ea0c0eb62cbba5bd7
+#: ../../discovery/part04/chart_style.rst:136
+msgid "차원값 컬럼을 구성하는 각 범주 항목에 속한 데이터 값이 정의된 기호 모양으로 표시됩니다."
+msgstr "This type of chart presents data values in each category of a dimension column with defined symbols."
+
+# c428fdd96355453aa8865fba4d572ba1
+#: ../../discovery/part04/chart_style.rst:140
+msgid "**기호 유형:** 차트에 표시되는 기호의 모양을 설정합니다."
+msgstr "**Symbol type:** Set the shape of the symbol to be shown on the chart."
+
+# 5d54644641a24a20bd5eeb31e52d4466
+#: ../../discovery/part04/chart_style.rst:141
+msgid "**기호 투명도:** 차트에 표시되는 기호의 투명도를 설정합니다. 단색/반투명 중 선택하여 나타낼 수 있습니다."
+msgstr "**Symbol transparency:** Set the transparency of the symbol to be shown on the chart. You can set colors either solid or transparent."
+
+# d45ea60dd6a742b394e212b8aaa231c6
+#: ../../discovery/part04/chart_style.rst:143
+msgid "**히트맵**"
+msgstr "**Heatmap**"
+
+# 800eb1d3c4d5489fa7c53038f6ba9514
+#: ../../discovery/part04/chart_style.rst:145
+msgid ""
+"교차선반에 올려진 측정값 컬럼의 각 데이터 값이 색상으로 표시됩니다. 데이터 값이 클수록 색상 농도가 짙어집니다. 히트맵의 공통 "
+"설정 항목에는 설정할 사항이 없습니다."
+msgstr "This type of chart displays values aggregated from the measure column placed on the cross shelf by using colors. For a larger aggregated value, a darker color is applied. The heatmap type does not provide any common settings."
+
+# 87946514a075452e9903897e52bc1d27
+#: ../../discovery/part04/chart_style.rst:149
+msgid "**원형 차트**"
+msgstr "**Pie chart**"
+
+# aa75fa7d86f34ed9a5d60ce705cba679
+#: ../../discovery/part04/chart_style.rst:151
+msgid "차원값 컬럼의 각 범주 항목별로 차지하는 비중을 시각화하는 차트입니다."
+msgstr "This type of chart visualizes the proportion of each category of the dimension column."
+
+# f6e5abf3eee249e0b6cc611a2b233a20
+#: ../../discovery/part04/chart_style.rst:157
+msgid "**부채꼴형:** 차트가 원형으로 나타납니다."
+msgstr "**Sector:** Displays a pie-shaped chart."
+
+# d96595a8319444e1bb1ac1ef50ff9fc6
+#: ../../discovery/part04/chart_style.rst:158
+msgid "**도넛형:** 차트가 도넛형으로 나타납니다."
+msgstr "**Donut:** Displays a donut-shaped chart."
+

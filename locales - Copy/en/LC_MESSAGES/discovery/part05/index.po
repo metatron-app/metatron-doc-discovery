@@ -1,0 +1,42 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 13fab184904842b7bd054a7dfdeca201
+#: ../../discovery/part05/index.rst:2
+msgid "노트북"
+msgstr "Notebook"
+
+# a7a33d1e0dfc428cb9f7a53fe462385b
+#: ../../discovery/part05/index.rst:7
+msgid ""
+"Metatron Discovery에서는 노트북 기능을 수행할 수 있습니다. 노트북이란, 라이브 코드, 등식, 시각화와 설명을 위한 "
+"텍스트 등을 포함한 문서를 만들고 공유할 수 있는 도구입니다. 주로 데이터 클리닝과 변형, 수치 시뮬레이션, 통계 모델링, 머신 "
+"러닝 등에 사용할 수 있습니다."
+msgstr "Metatron Discovery supports a notebook function. Notebook is a tool for creating and sharing documents that include live codes, equations, visualizations, and descriptive texts. It is mostly used for data cleaning and manipulation, numerical simulations, statistical modeling, and machine learning."
+
+# e38b4c66720146adb1f8be4ce1f99ed7
+#: ../../discovery/part05/index.rst:10
+msgid ""
+"Metatron Discovery에서는 Jupyter와 Zeppelin을 등록하여 사용할 수 있도록 기능을 제공하고 있습니다. "
+"Jupyter는 데이터 과학 분야에서 주로 사용하는 Python, R 프로그래밍 언어를, Zeppelin은 Spark(scala) "
+"프로그래밍 언어를 활용하여 실시간으로 인터렉티브하게 데이터를 분석하고 시각화할 수 있도록 도와줍니다. 노트북을 수행하기 전, 노트북"
+" 서버 세팅이 되어있어야 합니다."
+msgstr "Metatron Discovery allows users to register and use external Jupyter and Zeppelin servers. Jupyter uses Python and R?programming languages commonly used in data science?while Zeppelin uses Spark (Scala) to help with real-time and interactive analysis and visualization of data. Before running the notebook, its server must be set up."
+

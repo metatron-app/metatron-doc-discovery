@@ -1,0 +1,83 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 667406ed9e494034bfc0ba12bc2876f1
+#: ../../discovery/part00/index.rst:2
+msgid "디스커버리 퀵가이드"
+msgstr "Discovery Quick Guide"
+
+# 4808459fe8794e40ac047d52f21e705b
+#: ../../discovery/part00/index.rst:4
+msgid ""
+"Metatron Discovery는 대용량 데이터를 동일한 환경에서 적재, 전처리, 분석까지 빠르게 처리할 수 있는 툴입니다. "
+"데이터 분석을 위한 기술적인 지식이 없는 비즈니스 현업 사용자도 Metatron Discovery를 이용하면 직접 데이터를 다뤄보고"
+" 빠르게 시각화해 보면서 인사이트를 얻을 수 있습니다."
+msgstr "Metatron Discovery is an all-in-one solution that enables rapid loading, pre-processing, and analysis of large amounts all together. With Metatron Discovery, business users without technical knowledge can directly work with data and gain insights from rapid visualization."
+
+# 491b4a9d4e5f48b5ad5fa7e4218fe288
+#: ../../discovery/part00/index.rst:6
+msgid "Metatron Discovery로 즉시 데이터 분석을 시작할 수 있는 방법은 두 가지가 있습니다."
+msgstr "You can perform data analysis with Metatron Discovery using the two methods below:"
+
+# d86c83d9262049da92eaa4066ea5827c
+#: ../../discovery/part00/index.rst:8
+msgid ""
+"**방법 1:** `Metatron Discovery 데모 사이트 <https://metatron.app>`_\\를 실행하세요. "
+"ID와 password는 'metatron'이라고 입력하면 됩니다."
+msgstr "**Method 1:** Run `Metatron Discovery demo site <https://metatron.app>`_. Enter “metatron” as your ID and password."
+
+# 4c1f743bc7ed4562a2c98d312506fbb5
+#: ../../discovery/part00/index.rst:9
+msgid ""
+"**방법 2:** 싱글 모드용 Metatron Discovery를 로컬 PC에 다운로드 받으세요. `다운로드 "
+"<https://metatron.app/download/>`_\\는 세 가지 방법으로 제공됩니다."
+msgstr "**Method 2:** Download the single-mode Metatron Discovery to your local PC. `Download <https://metatron.app/download/>`_ is provided in three ways."
+
+# 07e588ec5262480080d0a8c30fa30cf2
+#: ../../discovery/part00/index.rst:11
+msgid ""
+"`Custom install <https://metatron.app/download/installation-guide-custom-"
+"install/>`_: Github 레파지토리로부터 소스코드를 다운받거나 빌드 파일을 직접 실행하세요."
+msgstr "`Custom install <https://metatron.app/download/installation-guide-custom-install/>`_: Download the source code from the Github repository, or directly run the build file."
+
+# 92fd35c85cbb44f790cfe3aadba3e4cd
+#: ../../discovery/part00/index.rst:12
+msgid ""
+"`Virtual machine <https://metatron.app/download/guide_vm/>`_: 가상 머신 이미지로 "
+"바로 실행하세요. Windows OS에서도 사용할 수 있습니다."
+msgstr "`Virtual machine <https://metatron.app/download/guide_vm/>`_: Run the virtual machine image. This is also available in the Windows OS."
+
+# 5d86ba98d8e64b64a9605266dabac6da
+#: ../../discovery/part00/index.rst:13
+msgid ""
+"`Docker <https://metatron.app/download/installation-guide-docker/>`_: "
+"Docker 이미지로 빠르게 설치하고 즉시 실행할 수 있습니다."
+msgstr "`Docker <https://metatron.app/download/installation-guide-docker/>`_: Run the Docker image for a quick installation."
+
+# e395befb43b54ab8a56d17cb1f45cbf7
+#: ../../discovery/part00/index.rst:15
+msgid "아래와 같은 화면을 보고 계신가요? 축하합니다! 이제부터 메타트론 디스커버리와 함께 쉽고 빠르게 데이터 분석을 시작해보세요."
+msgstr "Do you see the screen below? Congratulations! You are now ready for quick and easy data analysis with Metatron Discovery."
+
+# b2358f50ce0442beae073b0a54e59f14
+#: ../../discovery/part00/index.rst:21
+msgid "빠른 시작을 위해서 아래의 세 단계의 스텝으로 튜토리얼을 진행해보세요."
+msgstr "For a quick start, follow the three-step tutorial below:"
+

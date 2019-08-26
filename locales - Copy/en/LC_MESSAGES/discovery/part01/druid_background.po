@@ -1,0 +1,58 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# cb5dc0134d794a4b9faf9d73796f5d6f
+#: ../../discovery/part01/druid_background.rst:2
+msgid "Druid 개발 배경"
+msgstr "Background of Druid development"
+
+# 9fe1ffb29df546ccb6c32c07e3c8c9d9
+#: ../../discovery/part01/druid_background.rst:4
+msgid ""
+"Druid는 대량의 트랜잭션 이벤트(로그 데이터)를 ingestion하고 탐색할 수 있도록 지원하는 엔진으로서 다음과 같은 니즈를 "
+"충족하기 위해 개발되었습니다."
+msgstr "Druid was originally designed to satisfy the following needs around ingesting and exploring large quantities of transactional events (log data):"
+
+# 53e71801a93647f0a8bcccaecea7be9f
+#: ../../discovery/part01/druid_background.rst:6
+msgid ""
+"개발자들은 어떠한 차원들의 조합에 대한 쿼리라도 즉각적으로 결과가 반환되며, 데이터를 신속히 임의로 slice 및 dice하고 이를"
+" 아무 제약 없이 효과적으로 drill down하는 기능을 구현하고자 했습니다. 이러한 기능들은 사용자들이 데이터 대시보드에서 "
+"이벤트 스트림들을 interactive한 방식으로 자유롭게 탐색하고 시각화하는 데 필요하였습니다."
+msgstr "The developers wanted to be able to rapidly and arbitrarily slice and dice data and drill into that data effectively without any restrictions, along with sub-second queries over any arbitrary combination of dimensions. These capabilities were needed to allow users of their data dashboard to arbitrarily and interactively explore and visualize event streams."
+
+# cdb00a0f2d2a4a4fb25a8f34047a6441
+#: ../../discovery/part01/druid_background.rst:7
+msgid ""
+"개발자들은 이벤트들이 발생하는 즉시 해당 데이터를 ingestion하여 쿼리 가능하도록 인덱싱하는 기능을 원했습니다. 이러한 기능은"
+" 사용자들이 데이터를 실시간으로 수집·분석함으로써 시의적절하게 상황을 판단·예측하고 비즈니스 의사 결정을 내릴 수 있도록 하는 데 "
+"반드시 필요했습니다. 당시에 Hadoop 등의 유명한 오픈소스 데이터 웨어하우스 시스템들은 sub-second 데이터 "
+"ingestion이 불가능했습니다."
+msgstr "The developers wanted to be able to ingest events and make them exportable almost immediately after their occurrence. This was crucial to enable users to collect and analyze data in real time for timely situational assessments, predictions and business decisions. Popular open source data warehousing systems such as Hadoop were unable to provide the sub-second data ingestion latencies as required."
+
+# 73b0674406d24db59a1b312cde170c5c
+#: ../../discovery/part01/druid_background.rst:8
+msgid ""
+"개발자들은 multitenancy와 high availability를 보장하고자 했습니다. 이들이 제공하는 서비스의 기반 시스템은 "
+"많은 사용자들의 동시 접속을 보장하고, 항상 가동 상태를 유지하며 downtime 없이 모든 고장에 견딜 수 있어야 했습니다. "
+"downtime의 존재는 비용을 발생시키며, 소프트웨어 업그레이드나 네트워크 장애 발생 시 사용할 수 없는 시스템으로는 많은 기업의"
+" 비즈니스가 불가능합니다."
+msgstr "The developers wanted to ensure multitenancy and high availability for their solution services. Their systems needed to be constantly up and be able to withstand all sorts of potential failures without going down or taking any downtime. Downtime is costly and many businesses cannot afford to wait if a system is unavailable in the face of software upgrades or network failure."
+

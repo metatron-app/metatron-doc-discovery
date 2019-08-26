@@ -1,0 +1,58 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# d4eafcd8f05442138b350d55739be039
+#: ../../discovery/part04/global_filter.rst:2
+msgid "글로벌 필터"
+msgstr "Global filters"
+
+# 49757fde455b4ffea37cce133c5520f7
+#: ../../discovery/part04/global_filter.rst:4
+msgid ""
+"글로벌 필터는 대시보드에 속한 모든 차트에 적용되는 데이터 표출 조건으로, 대시보드 편집 창의 필터 패널에서 추가, 수정, 삭제할 "
+"수 있습니다."
+msgstr "Global filters specify which data is to be displayed in all charts of a dashboard. They can be added, edited, or deleted in the filter panel in the dashboard editing window."
+
+# 645ea3c50f444ef3adc6800c7b00a6e7
+#: ../../discovery/part04/global_filter.rst:8
+msgid "**필터 위젯 수:** 글로벌 필터 제목 옆에 현재 대시보드에 등록된 필터 위젯의 개수가 나타납니다."
+msgstr "**Number of filter widgets:** Displays how many filter widgets are currently registered in the dashboard next to the global filter heading."
+
+# 02a73546b5704d779424634a411ee845
+#: ../../discovery/part04/global_filter.rst:9
+msgid ""
+"**필터 위젯 추가:** 우측 상단의 '+'를 클릭하면 대시보드 내에 새로운 필터 위젯을 생성할 수 있습니다. 필터 생성 팝업 및 "
+"생성 방법은 직전 챕터의 차트 필터 생성 절차와 동일합니다."
+msgstr "**Add a filter widget:** Click the “+” icon at the top right to create a new filter widget in the dashboard. The filter creation popup interface and process for creating filters are the same as the process for creating chart filters described in the previous section."
+
+# 6fe86891ebcc419897ce85a284d74087
+#: ../../discovery/part04/global_filter.rst:10
+msgid ""
+"**필터 위젯 목록:** 현재 대시보드에 등록된 필터 위젯들이 열거됩니다. 수정 또는 삭제를 원하는 위젯 항목에 마우스를 오버하면 "
+"이를 위한 아이콘이 나타납니다. 또한 위젯 항목을 위젯 레이아웃 영역으로 드래그하면 위젯이 위젯 레이아웃 영역에 표시됩니다."
+msgstr "**Filter widget list:** Lists filter widgets registered in the dashboard. Hover the mouse over a widget to display the edit and delete icons. Drag a widget to the widget display area to display the widget in the display area."
+
+# 7562b17c45d6414ca2b1dd107774cc56
+#: ../../discovery/part04/global_filter.rst:12
+msgid ""
+"전체 대시보드에 적용된 글로벌 필터는 차트 생성 시 개별 필터를 만들 때에 함께 조회됩니다. 또한 글로벌 필터 생성 시에도 개별 "
+"차트 필터가 있다면 어떤 칼럼에 생성되었는지 직관적으로 알려줍니다."
+msgstr "Global filters applied to the entire dashboard are also listed when creating an individual filter for a new chart. When creating a global filter, if there are any individual chart filters, it intuitively notifies you of which column the filter was created from."
+

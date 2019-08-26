@@ -28,7 +28,7 @@ msgstr "Control flow nodes"
 msgid ""
 "Integrator의 제어 흐름 노드들(control-flow nodes)은 워크플로우의 시작과 끝을 정의하고, :ref:`액션 "
 "노드 <action_nodes>`\\들의 흐름 경로를 결정하는 역할을 합니다. 지원하는 노드는 다음과 같습니다."
-msgstr "The control flow nodes of Integrator define the start and end of a workflow and determine the flow path of :ref:`액션 노드 <action_nodes>`. The supported nodes are as follows:"
+msgstr "The control flow nodes of Integrator define the start and end of a workflow and determine the flow path of :ref:`action nodes <action_nodes>`. The supported nodes are as follows:"
 
 # a13ed95efdea49689ffc6cfc659e7a60
 #: ../../integrator/part03/control_flow.rst:9

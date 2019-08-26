@@ -1,0 +1,186 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 18f9288477244f99904ca23f217a434f
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:2
+msgid "대시보드 크기와 레이아웃 변경하기"
+msgstr "Change dashboard size and layout"
+
+# 924e0d4daa1b454b81b8ed12e1076dc5
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:4
+msgid ""
+"대시보드 기본 화면에서 **대시보드 편집** 버튼을 클릭하면 해당 대시보드의 구성을 편집할 수 있는 화면으로 이동합니다. 여기서는 "
+"위젯 추가 기능을 포함하여 대시보드의 편집 및 계층 구조 설정, 레이아웃 변경 기능을 사용할 수 있습니다."
+msgstr "Click **Edit Dashboard** on the basic dashboard page to go to a page for editing the configuration of the dashboard. In this page, you can add a widget, edit the dashboard, set the hierarchy and change the layout."
+
+# 3068cc43fe444dcbaa80e80daaa2313c
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:7
+msgid "대시보드 위젯 배열 설정"
+msgstr "Dashboard widget arrangement settings"
+
+# 8e5ce0a70d404e46b7f0deb79a25efa4
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:11
+msgid "**위젯 위치 변경:** 위젯 제목 부분을 드래그하여 위젯의 위치를 변경할 수 있습니다."
+msgstr "**Change widget location:** Drag the title of a widget to move the widget."
+
+# a7cddbdb039747feb95799c77fd11f29
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:12
+msgid "**위젯 너비 조정:** 위젯과 위젯의 사이를 움직여 위젯의 너비를 조정할 수 있습니다."
+msgstr "**Adjust widget width:** Move the distance between widgets to adjust their widths."
+
+# 32399cc6a769449eb04149f32dff6f86
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:13
+msgid ""
+"**화면에 위젯 추가:** 우측 패널에 있는 위젯 목록에서 원하는 위젯을 좌측 위젯 레이아웃 영역으로 드래그하면 해당 위젯이 "
+"레이아웃 영역에 추가됩니다."
+msgstr "**Add a widget to the display area:** Drag a widget from the widget list on the right panel to the left widget display area to add the widget to the display area."
+
+# 5349c1496673433b80db0d03477abd70
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:14
+msgid "**화면에서 위젯 삭제:** 위젯 레이아웃 영역에 표시된 각 위젯에서 X 버튼을 클릭하면 해당 위젯이 레이아웃 영역에서 제거됩니다."
+msgstr "**Delete a widget from the display area:** Click the X button on a widget shown in the widget display area to delete the widget from the display area."
+
+# 9b021b4a318b4bccb8b158c081857ebb
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:17
+msgid "차트 위젯 패널"
+msgstr "Chart widget panel"
+
+# dcea2d496a5143e88093b39756cb79b0
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:19
+msgid "차트 위젯 패널에서는 대시보드 내 차트의 추가, 수정, 삭제 등이 가능합니다."
+msgstr "On the chart widget panel, you can add/edit/delete a chart in the dashboard."
+
+# f0141c217fca495cb04e3d9a0bdda9b3
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:23
+msgid "**차트 위젯 수:** 현재 대시보드에 등록된 차트 위젯의 개수를 나타냅니다."
+msgstr "**Number of chart widgets:** Displays how many chart widgets are registered in the dashboard."
+
+# f01bcc107c88478d81ad16d7b0a2a1bc
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:24
+msgid "**차트 위젯 추가:** 대시보드 내에 새로운 차트 위젯을 생성할 수 있습니다."
+msgstr "**Add a chart widget:** Click on it to create a new chart widget in the dashboard."
+
+# 681e35aa519a43e08792103122fee432
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:25
+msgid ""
+"**차트 위젯 목록:** 현재 대시보드에 등록된 차트 위젯들이 열거됩니다. 수정 또는 삭제를 원하는 위젯 항목에 마우스를 오버하면 "
+"이를 위한 아이콘이 나타납니다. 또한 위젯 항목을 위젯 레이아웃 영역으로 드래그하면 해당 위젯이 레이아웃 영역에 표시됩니다."
+msgstr "**Chart widget list:** Lists chart widgets registered in the dashboard. Hover the mouse over a widget to display the edit and delete icons. Drag a widget to the widget display area to display the widget in the display area."
+
+# 1fe738be6c354ca69a0547ca8f1778fd
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:26
+msgid ""
+"**차트 계층 구조 설정:** 대시보드 내 차트 간 상하 관계를 설정할 수 있습니다. 부모 차트에서 데이터 항목을 하나 선택하면 "
+"자식 차트가 그 항목을 기준으로 필터링됩니다. 계층 구조를 설정하려면 하위 관계로 설정할 차트를 드래그하여 원하는 상위 관계 차트 "
+"밑으로 옮기면 됩니다. 차트 계층 구조 설정이 완료되면 차트 메뉴 상에서도 구조가 변경된 것을 확인할 수 있습니다."
+msgstr "**Set chart hierarchy:** Click on it to set parent/child relationships between charts in the dashboard. Selecting a data item from the parent chart filters the child chart by the selection. To set a hierarchy, drag the chart to be set as a child under the chart to be set as a parent. Once you finish setting the chart hierarchy, the chart menu is restructured accordingly."
+
+# fd14009f680b4cb3b2d606774f9c5b9a
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:29
+msgid "텍스트 위젯 패널"
+msgstr "Text widget panel"
+
+# b1e498d83c134899a34ff3c9c155b1aa
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:31
+msgid "텍스트 위젯 패널에서는 대시보드 내 텍스트 위젯의 추가, 수정, 삭제 등이 가능합니다."
+msgstr "On the text widget panel, you can add/edit/delete a text widget in the dashboard."
+
+# 5ba146551f0d4691902429176ca791c5
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:36
+msgid "**텍스트 위젯 수:** 현재 대시보드에 등록된 텍스트 위젯의 개수를 나타냅니다."
+msgstr "**Number of text widgets:** Displays how many text widgets are registered in the dashboard."
+
+# 8872fa8643184032b6c2700f7ffaad86
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:37
+msgid "**텍스트 위젯 추가:** 대시보드 내에 새로운 텍스트 위젯을 생성할 수 있습니다."
+msgstr "**Add a text widget:** Click on it to create a new text widget in the dashboard."
+
+# 6d20bcf452954a1086e25260760c0efa
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:38
+msgid ""
+"**텍스트 위젯 목록:** 현재 대시보드에 등록된 텍스트 위젯들이 열거됩니다. 수정 또는 삭제를 원하는 위젯 항목에 마우스를 "
+"오버하면 이를 위한 아이콘이 나타납니다. 또한 위젯 항목을 위젯 레이아웃 영역으로 드래그하면 해당 위젯이 레이아웃 영역에 "
+"표시됩니다."
+msgstr "**Text widget list:** Lists text widgets registered in the dashboard. Hover the mouse over a widget to display the edit and delete icons. Drag a widget to the widget display area to display the widget in the display area."
+
+# 49cd17904e284b928ee0e63d0a9107f0
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:41
+msgid "레이아웃 패널"
+msgstr "Layout panel"
+
+# d10e6c8b78c64fb2bcf98ea6a59633f6
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:43
+msgid "레이아웃 패널에서는 위젯 레이아웃 영역에서 위젯의 배열과 개별 위젯 표시 방법에 관하여 몇 가지 설정을 설정합니다."
+msgstr "On the layout panel, you can adjust some settings on how to arrange widgets and display each widget in the widget display area."
+
+# 3ec74441feee400786eb2a4d90794254
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:48
+msgid "**보드 높이 설정**"
+msgstr "**Set board height**"
+
+# 29877eb3560649d187565414c1b7a8d0
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:50
+msgid "**너비 고정:** 보드의 높이를 화면에 맞춥니다."
+msgstr "**Fix to screen:** Maximizes the height of the dashboard to fill the screen."
+
+# c915a04f5106417d8769cef3ffd014cb
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:51
+msgid "**높이 고정:** 보드의 높이를 고유한 픽셀 값으로 설정합니다."
+msgstr "**Fix to height:** Set the height of the dashboard to a specific pixel value."
+
+# 551d1b75ce4c407391079953750541de
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:52
+msgid "**위젯 사이 간격:** 위젯 레이아웃 영역에 표시되는 위젯 간의 간격을 지정합니다."
+msgstr "**Margin between widgets:** Sets the margin between widgets in the widget display area."
+
+# d69d46dc99254948a54b981f9e38460e
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:54
+msgid "**차트 제목:** 위젯 레이아웃 영역 내 차트 및 필터 위젯들의 제목 표시 여부를 일괄 설정합니다."
+msgstr "**Chart title:** Sets whether to display the title of each chart and filter widget in the widget display area."
+
+# 504f5889c669489db50f2339d97c8289
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:55
+msgid "**범례:** 위젯 레이아웃 영역 내 차트 위젯들의 범례 표시 여부를 일괄 설정합니다."
+msgstr "**Legend:** Sets whether to display a legend for each chart widget in the widget display area."
+
+# d16ad0c9090d4eec90bb71b061550ddb
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:56
+msgid "**미니맵:** 위젯 레이아웃 영역 내 차트 위젯들의 미니맵 표시 여부를 일괄 설정합니다."
+msgstr "**Mini-map:** Sets whether to display a mini-map for each chart widget in the widget display area."
+
+# fddfe3be9b70467e8eb6ee2c56162355
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:59
+msgid "데이터 소스 패널"
+msgstr "Data source panel"
+
+# d5ac20c63d844a689d4cab07974678b7
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:61
+msgid ""
+"데이터 소스 패널에서는 연동된 데이터 소스의 정보를 열람·수정하고, 컬럼 필터를 간편하게 추가할 수 있습니다. 각 차원값 또는 "
+"측정값 우측의 필터 아이콘을 눌러서 필터를 추가해 보십시오."
+msgstr "In the data source panel, you can view and edit information on connected data sources, as well as add column filters easily. Click on a filter icon on a dimension or measure on the right-hand side to add a filter."
+
+# 38a023a6a7a3499eb4ca85f6f44d1f12
+#: ../../discovery/part04/change_dashboard_layout_and_size.rst:65
+msgid ""
+"단, 여기서 지정/해제하는 필터는 대시보드 전체에 적용되는 글로벌 필터이고, 차트 에디터에서 지정/해제하는 필터는 차트 내 필터임을"
+" 유의하십시오."
+msgstr "Please note that the filters you can apply or clear here are global filters applied to the entire dashboard, and those applied or cleared in the chart editor are all chart filters."
+

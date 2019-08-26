@@ -1,0 +1,83 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 1293a1c2b36c4458b2ce0803aa77cc2d
+#: ../../discovery/part06/06_02-create_a_workbench.rst:2
+msgid "워크벤치 만들기"
+msgstr "Create a workbench"
+
+# 6513edf64e9e4ba3bbaa5623eaace389
+#: ../../discovery/part06/06_02-create_a_workbench.rst:4
+msgid ""
+"해당 워크스페이스에서 워크벤치를 사용하기 위해서는 워크벤치용 데이터 커넥션이 설정되어 있어야 합니다. 이에 관한 자세한 내용은 "
+":doc:`../part02/data_connection` 항목을 참조하시기 바랍니다."
+msgstr "To use a workbench in the workspace, a workbench-type data connection must be established. See :doc:`../part02/data_connection` for how to handle it."
+
+# 13abb0b54afe4387b63f3099d4226801
+#: ../../discovery/part06/06_02-create_a_workbench.rst:7
+msgid "워크벤치 생성 절차는 다음과 같습니다."
+msgstr "To create a workbench:"
+
+# c14d77b6fa884d8e82707b36e8fce4ca
+#: ../../discovery/part06/06_02-create_a_workbench.rst:9
+msgid ""
+"워크스페이스 하단에 있는 **+ 워크벤치** 버튼을 클릭하면 워크벤치에서 데이터 분석에 사용할 데이터 커넥션을 연결할 수 있는 "
+"화면이 나타납니다."
+msgstr "Click the **+ Workbench** button at the bottom of the workspace. You’ll be prompted to select a data connection for data analytics."
+
+# 6698d73e89214a69b3e57465f49556d0
+#: ../../discovery/part06/06_02-create_a_workbench.rst:13
+msgid "사용자가 연결하여 사용하고자하는 워크벤치용 데이터 커넥션을 선택한 후 **다음** 버튼을 클릭합니다."
+msgstr "Select the workbench-type data connection that connects to the data table you want, and click **Next**."
+
+# 9a994ac9e5814482925c0801ae7d7138
+#: ../../discovery/part06/06_02-create_a_workbench.rst:17
+msgid "**데이터 커넥션 이름으로 검색:** 해당 워크스페이스에 허용된 데이터 커넥션을 이름으로 검색합니다."
+msgstr "**Search by name of data connection:** Searches the list of data connections available to the workspace by the name you type in."
+
+# 1570632862c344b38c73444c5f431618
+#: ../../discovery/part06/06_02-create_a_workbench.rst:18
+msgid ""
+"**DB Type:** 데이터 커넥션을 데이터베이스 타입(Oracle/MySQL/Hive/presto/Tibero)별로 선별하여 볼"
+" 수 있습니다. **모두**\\로 선택하면 모든 DB타입의 데이터 커넥션을 볼 수 있습니다."
+msgstr "**DB type:** Filters data connections by database type (Oracle/MySQL/Hive/Presto/Tibero). Select **All** to display data connections regardless of database type."
+
+# 1179126ce87d4eab95f4707d3f2721aa
+#: ../../discovery/part06/06_02-create_a_workbench.rst:19
+msgid ""
+"**계정 타입:** 데이터 커넥션을 설정된 계정 타입(관리자 직접 입력/사용자의 계정 사용/워크벤치 접속 시 직접 입력)별로 "
+"선별하여 볼 수 있습니다. **All**\\로 선택하면 모든 계정 타입의 데이터 커넥션을 볼 수 있습니다."
+msgstr "**Account type:** Filters data connections by account type (All/Always connect/Connect by user’s account/Connect with ID and password). Select **All** to display data connections regardless of account type."
+
+# 8937dfd73be6494d8d7535ecba96455e
+#: ../../discovery/part06/06_02-create_a_workbench.rst:20
+msgid "**데이터 커넥션:** 설정한 선별 조건에 맞는 데이터 커넥션들을 보여줍니다."
+msgstr "**Data connection:** Lists data connections filtered by specified criteria."
+
+# 3844aeebad8840e7bbb87d050c4a85a9
+#: ../../discovery/part06/06_02-create_a_workbench.rst:22
+msgid "선택한 데이터 커넥션의 정보를 확인하고 이름과 설명을 입력하면 워크벤치가 생성됩니다."
+msgstr "Confirm the information of the selected data connection and enter a name and a description to create a workbench."
+
+# 04434b4e88e04f1f998dca483ec127b6
+#: ../../discovery/part06/06_02-create_a_workbench.rst:27
+msgid "워크벤치 생성이 완료되면, 생성된 워크벤치를 바로 확인할 수 있습니다."
+msgstr "The created workbench is immediately available."
+
