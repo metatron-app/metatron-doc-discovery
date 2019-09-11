@@ -1029,6 +1029,8 @@ a.wy-text-danger:hover{color:#ed7669 !important}
 .wy-text-neutral{color:#404040 !important}
 a.wy-text-neutral:hover{color:#595959 !important}
 h1,h2,.rst-content .toctree-wrapper p.caption,h3,h4,h5,h6,legend{margin-top:0;font-weight:700;font-family:"Roboto Slab","ff-tisa-web-pro","Georgia",Arial,sans-serif}
+.rst-content .toctree-wrapper p.caption{display:none} /* 캡션의 내용은 좌측 패널에만 나오고 본문에는 나오지 않도록 조치(그 대신 섹션 제목이 나옴) */
+
 p{line-height:24px;margin:0;font-size:16px;margin-bottom:24px}
 h1{font-size:175%}
 h2,.rst-content .toctree-wrapper p.caption{font-size:150%}

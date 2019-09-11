@@ -123,7 +123,7 @@ Outlier의 Druid 평가
 	.. csv-table:: Outlier의 주요 Druid 평가 내용
 		:file: Assessment_by_Outlyer.csv
 		:header-rows: 1
-		:class: longtable
+		:widths: 35 65
 
 DB-Engines의 Druid 평가
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -166,7 +166,7 @@ Apache Spark는 오픈소스 클러스터 컴퓨팅 프레임워크로서 Java, 
 	.. csv-table:: Druid와 Apache Spark의 query latency 비교 평가에 사용된 쿼리 내역
 		:file: comparison_with_Apache_Spark.csv
 		:header-rows: 1
-		:class: longtable
+		:widths: 20 20 20 20 25
 
 테스트 결과는 다음과 같았습니다.
 

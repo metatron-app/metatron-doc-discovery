@@ -142,13 +142,23 @@ htmlhelp_basename = 'metatron-discovery-doc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
+latex_toplevel_sectioning='part'
 latex_engine = 'xelatex'
-
 latex_elements = {
-    'fontpkg': r'''
+'fontpkg': r'''
+\renewcommand{\baselinestretch}{1.4}
 \usepackage[cjk]{kotex}
-    ''',
-    'figure_align': 'H'
+\setmainfont{NanumBarunGothic}[
+	BoldFont       = * Bold,
+]
+\setsansfont{NanumBarunGothic}[
+	BoldFont       = * Bold,
+]
+\setmonofont{NanumGothicCoding}[
+	BoldFont       = * Bold,
+]
+''',
+'figure_align': 'H'
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

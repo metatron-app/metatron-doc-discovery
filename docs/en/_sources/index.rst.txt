@@ -6,8 +6,10 @@
 메타트론 사용자 문서
 ===============================================
 
+Metatron Discovery
+-----------------------------------------------
+
 .. toctree::
-	:maxdepth: 2
 	:caption: Metatron Discovery
 
 	/discovery/part00/index
@@ -20,8 +22,10 @@
 	/discovery/part07/index
 	/discovery/part08/index
 
+EX-pack for Workflow Integrator
+-----------------------------------------------
+
 .. toctree::
-	:maxdepth: 2
 	:caption: EX-pack for Workflow Integrator
 
 	/integrator/part01/index
@@ -30,8 +34,10 @@
 	/integrator/part04/index
 	/integrator/part05/index
 
+EX-pack for Anomaly Detection
+-----------------------------------------------
+
 .. toctree::
-	:maxdepth: 2
 	:caption: EX-pack for Anomaly Detection
 
 	/anomaly/part01/index
@@ -39,4 +45,3 @@
 	/anomaly/part03/index
 	/anomaly/part04/index
 	/anomaly/part05/index
-	
