@@ -1,0 +1,37 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+# 97a214e79a36459eaedeb333c57c1553
+#: ../../discovery/part10/index.rst:2
+msgid "엔진 모니터링"
+msgstr ""
+
+# 9415155204c94896a84fd632c0b89374
+#: ../../discovery/part10/index.rst:4
+msgid ""
+"엔진 모니터링은 Metatron Engine의 모니터링을 의미합니다. Metatron Engine은 Druid를 사용한 시계열 "
+"기반의 엔진입니다. 엔진 모니터링은 Ingestion, Query에 대한 상태 모니터링과 로그 정보를 보여집니다."
+msgstr ""
+
+# df587a97e20749fb8d0105336f2c665e
+#: ../../discovery/part10/index.rst:9
+msgid "해당 기능은 Metatron Discovery 3.4.0 이후 버젼부터 지원합니다."
+msgstr ""
+

@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part05/register_a_notebook_server.rst:2
+# d3b55b8d3c4c4e7bbc24ec7122433db7
+msgid "노트북 서버 등록하기"
+msgstr ""
+
+#: ../../discovery/part05/register_a_notebook_server.rst:6
+# 4c47279bc8a14d30bdc1bf34e283f269
+msgid "워크스페이스에서 노트북 기능을 이용하여 데이터를 분석하기 위해서는 노트북 서버 초기 설정이 필요합니다. 노트북 서버 초기 설정 절차는 다음과 같습니다."
+msgstr ""
+
+#: ../../discovery/part05/register_a_notebook_server.rst:8
+# 753cbe4151504a5581e1824635dc7372
+msgid "워크스페이스의 우측 상단에 있는 |icon_more| 버튼을 클릭한 후 :guilabel:`노트북 서버 설정`\\을 선택합니다."
+msgstr ""
+
+#: ../../discovery/part05/register_a_notebook_server.rst:14
+# cf91bd2572d349e180dd62178c1e2ec5
+msgid "관리자가 사전에 등록해 둔 Jupyter, Zeppelin 서버 목록 중에서 본인 워크스페이스에서 연결해서 사용하고자 하는 노트북 서버를 선택 후 :guilabel:`마침`\\ 버튼을 클릭합니다."
+msgstr ""
+
+#: ../../discovery/part05/register_a_notebook_server.rst:16
+# 32bcc5831f3b44029c1b29840418d0d7
+msgid "아무 서버도 선택하지 않고자 한다면, **(없음)** 항목을 선택하십시오."
+msgstr ""
+

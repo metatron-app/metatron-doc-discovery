@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Ingestion &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Ingestion &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -75,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -219,33 +209,30 @@
 <p>아래와 같은 정보를 제공해줍니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><dl class="first docutils">
-<dt>MiddleManager 상태 확인 가능</dt>
-<dd><ul class="first last">
-<li>worker 별 용량, 현재 사용량 현황</li>
+<li><dl class="simple">
+<dt>MiddleManager 상태 확인 가능</dt><dd><ul>
+<li><p>worker 별 용량, 현재 사용량 현황</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><dl class="first docutils">
-<dt>Supervisor 상태 확인 가능</dt>
-<dd><ul class="first last">
-<li>supervisor 별 상태</li>
-<li>terminate (suspend, reset) 기능 제공</li>
+<li><dl class="simple">
+<dt>Supervisor 상태 확인 가능</dt><dd><ul>
+<li><p>supervisor 별 상태</p></li>
+<li><p>terminate (suspend, reset) 기능 제공</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><dl class="first docutils">
-<dt>Task 상태 확인 가능</dt>
-<dd><ul class="first last">
-<li>runningTasks, pendingTasks, waitingTasks, completedTasks</li>
-<li>log, kill 기능 제공</li>
+<li><dl class="simple">
+<dt>Task 상태 확인 가능</dt><dd><ul>
+<li><p>runningTasks, pendingTasks, waitingTasks, completedTasks</p></li>
+<li><p>log, kill 기능 제공</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li>Lockbox 상태 확인 가능</li>
+<li><p>Lockbox 상태 확인 가능</p></li>
 </ul>
 </div></blockquote>
 <p>Ingestion 에는 supervisor와 middle manager에 대한 정보도 같이 확인할 수 있다.</p>
@@ -254,110 +241,110 @@
 <p>Task는 다음과 같이 4개로 분류할 수 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li>pending task:  worker 할당을 기다리는 task</li>
-<li>running task: 실행중인 task</li>
-<li>waiting task: lock을 기다리는 task</li>
-<li>completed task: 완료된 task로 SUCCESS, FAIL의 두 상태로 나뉜다.</li>
+<li><p>pending task:  worker 할당을 기다리는 task</p></li>
+<li><p>running task: 실행중인 task</p></li>
+<li><p>waiting task: lock을 기다리는 task</p></li>
+<li><p>completed task: 완료된 task로 SUCCESS, FAIL의 두 상태로 나뉜다.</p></li>
 </ul>
 </div></blockquote>
 <p>Task 상세 정보 및 메뉴는 아래와 같습니다.</p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="26%" />
-<col width="62%" />
-<col width="12%" />
+<col style="width: 26%" />
+<col style="width: 62%" />
+<col style="width: 12%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Field</th>
-<th class="head">Description</th>
-<th class="head">Example</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>id</td>
-<td>taskId</td>
-<td>&#160;</td>
+<tbody>
+<tr class="row-even"><td><p>id</p></td>
+<td><p>taskId</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>type</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>type</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>dataSource</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p>dataSource</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>createdTime</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>createdTime</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>queueInsertionTime</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p>queueInsertionTime</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>status</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>status</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>runnerStatusCode</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p>runnerStatusCode</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>duration</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>duration</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>locationhost</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p>locationhost</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>locationport</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>locationport</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>payload</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p>payload</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>status</td>
-<td>상태</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>status</p></td>
+<td><p>상태</p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>log</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p>log</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>log last 8k</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>log last 8k</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>kill</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p>kill</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>ingestion</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>ingestion</p></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p>이와 같습니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/ingestion_task.png" src="../../_images/ingestion_task.png" />
 </div>
 </div></blockquote>
 <p>상세 화면을 살펴보면 다음과 같습니다. (아래는 Kafka를 사용한 경우입니다)</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/ingestion_task01.png" src="../../_images/ingestion_task01.png" />
 </div>
-<div class="figure">
+<div class="figure align-default">
 <img alt="../../_images/ingestion_task02.png" src="../../_images/ingestion_task02.png" />
 </div>
 </div></blockquote>
 <p>아래는 Kafka가 아닌 일반 Task의 경우의 모습입니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/ingestion_task03.png" src="../../_images/ingestion_task03.png" />
 </div>
 </div></blockquote>
@@ -365,52 +352,52 @@
 <div class="section" id="supervisors">
 <h2>Supervisors<a class="headerlink" href="#supervisors" title="Permalink to this headline">¶</a></h2>
 <p>실행중인 Supervisors의 모니터링을 할 수 있다. 확인 가능한 Supervisor 상세 정보 및 menu는 다음과 같다.</p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="21%" />
-<col width="68%" />
-<col width="12%" />
+<col style="width: 21%" />
+<col style="width: 68%" />
+<col style="width: 12%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Field</th>
-<th class="head">Description</th>
-<th class="head">Example</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Example</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>Status</td>
-<td>get supervisorIDs로 제공되는
-supervisor는 모두 running 상태임</td>
-<td>&#160;</td>
+<tbody>
+<tr class="row-even"><td><p>Status</p></td>
+<td><p>get supervisorIDs로 제공되는
+supervisor는 모두 running 상태임</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>Datasource</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>Datasource</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>Detailed Status</td>
-<td>status API 로 제공되는 정보</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p>Detailed Status</p></td>
+<td><p>status API 로 제공되는 정보</p></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>Lag</td>
-<td>kafka의 lag 정보. emitter 사용</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>Lag</p></td>
+<td><p>kafka의 lag 정보. emitter 사용</p></td>
+<td></td>
 </tr>
-<tr class="row-even"><td>Spec</td>
-<td>&#160;</td>
-<td>&#160;</td>
+<tr class="row-even"><td><p>Spec</p></td>
+<td></td>
+<td></td>
 </tr>
-<tr class="row-odd"><td>Shutdown</td>
-<td>Terminate supervisor. 관련된 task도 함께 kill 됨</td>
-<td>&#160;</td>
+<tr class="row-odd"><td><p>Shutdown</p></td>
+<td><p>Terminate supervisor. 관련된 task도 함께 kill 됨</p></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p>이와 같습니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/ingestion_supervisor.png" src="../../_images/ingestion_supervisor.png" />
 </div>
-<div class="figure">
+<div class="figure align-default">
 <img alt="../../_images/ingestion_supervisor01.png" src="../../_images/ingestion_supervisor01.png" />
 </div>
 </div></blockquote>
@@ -419,10 +406,10 @@ supervisor는 모두 running 상태임</td>
 <h2>MiddleManagers<a class="headerlink" href="#middlemanagers" title="Permalink to this headline">¶</a></h2>
 <p>worker 리스트를 의미합니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/ingestion_middlemanager.png" src="../../_images/ingestion_middlemanager.png" />
 </div>
-<div class="figure">
+<div class="figure align-default">
 <img alt="../../_images/ingestion_middlemanager01.png" src="../../_images/ingestion_middlemanager01.png" />
 </div>
 </div></blockquote>

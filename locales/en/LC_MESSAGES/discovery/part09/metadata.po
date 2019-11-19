@@ -1,0 +1,30 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+# 49b8eb0d49de4f80ad4739e112a574af
+#: ../../discovery/part09/metadata.rst:2
+msgid "메타데이터 관리하기"
+msgstr ""
+
+# e505ee087fb14378aa069dad28024206
+#: ../../discovery/part09/metadata.rst:3
+msgid "메타데이터는 Exploration에서 보여지는 각 데이터를 관리하고 더 자세하게 분석하기 위한 용도로 만들어졌습니다."
+msgstr ""
+

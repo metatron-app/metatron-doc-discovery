@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터 소스 상세 정보 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>데이터 소스 상세 정보 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -76,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -115,7 +105,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 관리</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="data_source.html">데이터 소스</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="dimension_and_measures.html">&#8216;차원값&#8217;과 &#8216;측정값&#8217;의 개념</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dimension_and_measures.html">'차원값'과 '측정값'의 개념</a></li>
 <li class="toctree-l3"><a class="reference internal" href="manage_data_sources.html">데이터 소스 관리 홈 화면</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">데이터 소스 상세 정보</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id2">상단 공통 영역</a></li>
@@ -227,7 +217,7 @@
 <h1>데이터 소스 상세 정보<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>데이터 소스 관리 홈에 열거된 데이터 소스 중 하나를 클릭하면 해당 데이터 소스에 관한 다양한 속성을 확인할 수 있습니다. 아래 각 영역을 확인할 때에는 각 데이터 소스가 Metatron의 내부 Druid 데이터베이스에 하나의 테이블로 저장되며, Druid의 시계열 특성 때문에 반드시 타임스탬프 컬럼을 포함하게 됨을 유의하십시오.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/manage_datasource_02.png" src="../../_images/manage_datasource_02.png" />
 </div>
 </div></blockquote>
@@ -235,11 +225,11 @@
 <h2>상단 공통 영역<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
 <blockquote>
 <div><ol class="arabic simple">
-<li><strong>이름:</strong> 해당 데이터 소스의 이름입니다. 클릭 시 수정 가능합니다.</li>
-<li><strong>설명:</strong> 해당 데이터 소스에 대한 설명입니다. 클릭 시 수정 가능합니다.</li>
-<li><strong>마지막 수정정보:</strong> 해당 데이터 소스를 누가 언제 마지막으로 수정했는지 보여줍니다.</li>
-<li><strong>삭제:</strong> 이 아이콘을 누르면 해당 데이터 소스를 삭제할 수 있는 메뉴가 나타납니다.</li>
-<li><strong>탭 선택 영역:</strong> 각 탭은 해당 데이터 소스에 관한 특정한 속성군을 보여줍니다. 데이터 소스의 종류에 따라 3개 탭이 모두 나오지 않을 수도 있습니다. 각각에 대한 자세한 설명은 아래의 각 절에서 확인하십시오.</li>
+<li><p><strong>이름:</strong> 해당 데이터 소스의 이름입니다. 클릭 시 수정 가능합니다.</p></li>
+<li><p><strong>설명:</strong> 해당 데이터 소스에 대한 설명입니다. 클릭 시 수정 가능합니다.</p></li>
+<li><p><strong>마지막 수정정보:</strong> 해당 데이터 소스를 누가 언제 마지막으로 수정했는지 보여줍니다.</p></li>
+<li><p><strong>삭제:</strong> 이 아이콘을 누르면 해당 데이터 소스를 삭제할 수 있는 메뉴가 나타납니다.</p></li>
+<li><p><strong>탭 선택 영역:</strong> 각 탭은 해당 데이터 소스에 관한 특정한 속성군을 보여줍니다. 데이터 소스의 종류에 따라 3개 탭이 모두 나오지 않을 수도 있습니다. 각각에 대한 자세한 설명은 아래의 각 절에서 확인하십시오.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -247,24 +237,20 @@
 <h2>데이터 정보 영역<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
 <p>이 영역에서는 해당 데이터 소스의 기본 정보를 보여줍니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/manage_datasource_03.png" src="../../_images/manage_datasource_03.png" />
 </div>
 <ol class="arabic">
-<li><p class="first"><strong>데이터 타입:</strong> 해당 데이터 소스 생성 시 가져온 원천 데이터의 타입입니다.</p>
-</li>
-<li><p class="first"><strong>상태:</strong> 해당 데이터 소스의 현재 사용 가능 여부를 나타냅니다.</p>
-</li>
-<li><p class="first"><strong>사이즈:</strong> 해당 데이터 소스의 크기를 나타냅니다.</p>
-</li>
-<li><p class="first"><strong>인터벌:</strong> 해당 데이터 소스에 포함된 타임스탬프의 시간 범위를 나타냅니다.</p>
-</li>
-<li><p class="first"><strong>타임스탬프 설정:</strong> 해당 데이터 소스 생성 시 설정한 Granularity 주기를 나타냅니다.</p>
+<li><p><strong>데이터 타입:</strong> 해당 데이터 소스 생성 시 가져온 원천 데이터의 타입입니다.</p></li>
+<li><p><strong>상태:</strong> 해당 데이터 소스의 현재 사용 가능 여부를 나타냅니다.</p></li>
+<li><p><strong>사이즈:</strong> 해당 데이터 소스의 크기를 나타냅니다.</p></li>
+<li><p><strong>인터벌:</strong> 해당 데이터 소스에 포함된 타임스탬프의 시간 범위를 나타냅니다.</p></li>
+<li><p><strong>타임스탬프 설정:</strong> 해당 데이터 소스 생성 시 설정한 Granularity 주기를 나타냅니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>쿼리단위:</strong> 분석에서 수행하고자 하는 최소 시간 단위를 결정합니다. 이는 최소 단위까지의 결과를 미리 생성하여 이후에 보다 빠른 응답을 얻을 수 있도록 하기 위함입니다.</li>
-<li><strong>세그먼트단위:</strong> 분산 환경에서 동작하는 Druid의 특성을 활용하기 위해 데이터를 분할하여 저장하게 되는데 이때 저장하는 단위를 결정합니다.</li>
-<li><strong>히스토그램:</strong> 각 시간대별로 저장된 데이터의 용량을 KByte 단위로 보여주는 그래프입니다. 이러한 히스토그램은 레코드별로 반드시 타임스탬프 기록을 남겨야하는 Druid 엔진의 특성에 따른 것입니다.</li>
+<li><p><strong>쿼리단위:</strong> 분석에서 수행하고자 하는 최소 시간 단위를 결정합니다. 이는 최소 단위까지의 결과를 미리 생성하여 이후에 보다 빠른 응답을 얻을 수 있도록 하기 위함입니다.</p></li>
+<li><p><strong>세그먼트단위:</strong> 분산 환경에서 동작하는 Druid의 특성을 활용하기 위해 데이터를 분할하여 저장하게 되는데 이때 저장하는 단위를 결정합니다.</p></li>
+<li><p><strong>히스토그램:</strong> 각 시간대별로 저장된 데이터의 용량을 KByte 단위로 보여주는 그래프입니다. 이러한 히스토그램은 레코드별로 반드시 타임스탬프 기록을 남겨야하는 Druid 엔진의 특성에 따른 것입니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -273,13 +259,13 @@
 <p><strong>데이터 소스에 Publish 권한주기</strong></p>
 <p>이 영역에서는 해당 데이터 소스를 어느 워크스페이스에서 사용할 수 있는지를 확인·설정합니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/manage_datasource_04.png" src="../../_images/manage_datasource_04.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>모든 워크스페이스에 데이터 소스를 사용하도록 허용:</strong> 이 확인란에 체크하면 모든 워크스페이스에서 해당 데이터 소스를 사용할 수 있습니다.</li>
-<li><strong>수정:</strong> 해당 데이터 소스의 사용을 허용할 특정 워크스페이스를 지정할 때 사용합니다. 해당 데이터 소스를 오픈 데이터로 지정하면 이 버튼이 사라집니다.</li>
-<li><strong>공유 워크스페이스 수:</strong> 해당 데이터 소스를 사용할 수 있도록 허용된 워크스페이스의 수를 나타냅니다.</li>
+<li><p><strong>모든 워크스페이스에 데이터 소스를 사용하도록 허용:</strong> 이 확인란에 체크하면 모든 워크스페이스에서 해당 데이터 소스를 사용할 수 있습니다.</p></li>
+<li><p><strong>수정:</strong> 해당 데이터 소스의 사용을 허용할 특정 워크스페이스를 지정할 때 사용합니다. 해당 데이터 소스를 오픈 데이터로 지정하면 이 버튼이 사라집니다.</p></li>
+<li><p><strong>공유 워크스페이스 수:</strong> 해당 데이터 소스를 사용할 수 있도록 허용된 워크스페이스의 수를 나타냅니다.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -288,34 +274,34 @@
 <p>컬럼 상세 탭의 상단부는 원하는 조건으로 컬럼을 선별하는 사용자 인터페이스를 제공합니다. 조건에 맞게 선별된 컬럼들은 좌측 영역에 조회됩니다. 또한 여기서는 컬럼 설정값을 수정할 수도 있습니다.</p>
 <p><strong>컬럼 조회/설정 기능</strong></p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/manage_datasource_05.png" src="../../_images/manage_datasource_05.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>데이터 검색:</strong> 컬럼 이름으로 검색이 가능합니다.</li>
-<li><strong>역할:</strong> 데이터 테이블의 컬럼을 전체/차원값/측정값으로 선별하여 조회합니다.</li>
-<li><strong>타입:</strong> 데이터 테이블의 컬럼을 필드 타입별로 선별하여 조회합니다.</li>
-<li><strong>전체 보기:</strong> 데이터 검색, 역할, 타입 옵션에서 설정한 모든 선별 조건을 취소하고 전체 컬럼 보기로 회귀합니다.</li>
-<li><strong>스키마구성:</strong> 클릭하면 현재의 컬럼 설정값을 바꿀 수 있는 창이 출력됩니다.</li>
-<li><strong>컬럼목록:</strong> 해당 테이블을 구성하는 컬럼들을 열거합니다.</li>
-<li><strong>컬럼정보:</strong> 선택된 컬럼의 속성을 보여줍니다.</li>
-<li><strong>컬럼설정:</strong> 선택된 컬럼의 메타 데이터 정보를 보여줍니다.</li>
-<li><strong>통계:</strong> 선택된 컬럼에 입력된 값에 대해서 건수 및 통계값을 보여줍니다.</li>
+<li><p><strong>데이터 검색:</strong> 컬럼 이름으로 검색이 가능합니다.</p></li>
+<li><p><strong>역할:</strong> 데이터 테이블의 컬럼을 전체/차원값/측정값으로 선별하여 조회합니다.</p></li>
+<li><p><strong>타입:</strong> 데이터 테이블의 컬럼을 필드 타입별로 선별하여 조회합니다.</p></li>
+<li><p><strong>전체 보기:</strong> 데이터 검색, 역할, 타입 옵션에서 설정한 모든 선별 조건을 취소하고 전체 컬럼 보기로 회귀합니다.</p></li>
+<li><p><strong>스키마구성:</strong> 클릭하면 현재의 컬럼 설정값을 바꿀 수 있는 창이 출력됩니다.</p></li>
+<li><p><strong>컬럼목록:</strong> 해당 테이블을 구성하는 컬럼들을 열거합니다.</p></li>
+<li><p><strong>컬럼정보:</strong> 선택된 컬럼의 속성을 보여줍니다.</p></li>
+<li><p><strong>컬럼설정:</strong> 선택된 컬럼의 메타 데이터 정보를 보여줍니다.</p></li>
+<li><p><strong>통계:</strong> 선택된 컬럼에 입력된 값에 대해서 건수 및 통계값을 보여줍니다.</p></li>
 </ol>
 </div></blockquote>
 <p><strong>스키마구성</strong></p>
 <p>컬럼들의 명칭 및 타입 수정을 하는 사용자 인터페이스를 제공합니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/manage_datasource_06.png" src="../../_images/manage_datasource_06.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>역할:</strong> 해당 컬럼 차원값/측정값의 여부를 표시합니다.</li>
-<li><strong>물리이름:</strong> 해당 컬럼의 실제 명칭을 표시합니다.</li>
-<li><strong>용어이름:</strong> 해당 컬럼이 해당 시스템에서 표시될 용어 이름을 표시하고 수정할수 있습니다.</li>
-<li><strong>논리타입:</strong> 해당 컬럼의 논리타입( 문자/숫자/날짜등)을 표시하고 수정할수 있습니다.</li>
-<li><strong>표시형식:</strong> 해당 컬럼이 타임스탭프 등인 경우 표시 포맷을 표시합니다.</li>
-<li><strong>설명:</strong> 해당 컬럼의 상세 설명을 표시하고 수정할수 있습니다.</li>
+<li><p><strong>역할:</strong> 해당 컬럼 차원값/측정값의 여부를 표시합니다.</p></li>
+<li><p><strong>물리이름:</strong> 해당 컬럼의 실제 명칭을 표시합니다.</p></li>
+<li><p><strong>용어이름:</strong> 해당 컬럼이 해당 시스템에서 표시될 용어 이름을 표시하고 수정할수 있습니다.</p></li>
+<li><p><strong>논리타입:</strong> 해당 컬럼의 논리타입( 문자/숫자/날짜등)을 표시하고 수정할수 있습니다.</p></li>
+<li><p><strong>표시형식:</strong> 해당 컬럼이 타임스탭프 등인 경우 표시 포맷을 표시합니다.</p></li>
+<li><p><strong>설명:</strong> 해당 컬럼의 상세 설명을 표시하고 수정할수 있습니다.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -325,39 +311,39 @@
 <p><strong>트랙잭션 변경</strong></p>
 <p>해당 데이터 소스의 시간에 따른 트랜잭션량 추이를 보여줍니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/manage_datasource_07.png" src="../../_images/manage_datasource_07.png" />
 </div>
 </div></blockquote>
 <p><strong>데이터 사이즈 변경</strong></p>
 <p>해당 데이터 소스의 시간에 따른 용량 추이를 보여줍니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/manage_datasource_08.png" src="../../_images/manage_datasource_08.png" />
 </div>
 </div></blockquote>
 <p><strong>쿼리사용분포(지난 1주일 동안)</strong></p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/manage_datasource_09.png" src="../../_images/manage_datasource_09.png" />
 </div>
 <ul class="simple">
-<li><strong>사용자별 쿼리사용 분포 (지난 1주일 동안):</strong> 지난 한 주간 쿼리를 수행한 사용자별로 분류하여 그래프로 보여줍니다.</li>
-<li><strong>응답 시간별 쿼리사용 분포 (지난 1주일 동안):</strong> 지난 한 주간 쿼리를 수행한 소요시간별로 분류하여 그래프로 보여줍니다.</li>
+<li><p><strong>사용자별 쿼리사용 분포 (지난 1주일 동안):</strong> 지난 한 주간 쿼리를 수행한 사용자별로 분류하여 그래프로 보여줍니다.</p></li>
+<li><p><strong>응답 시간별 쿼리사용 분포 (지난 1주일 동안):</strong> 지난 한 주간 쿼리를 수행한 소요시간별로 분류하여 그래프로 보여줍니다.</p></li>
 </ul>
 </div></blockquote>
 <p><strong>쿼리 로그</strong></p>
 <p>수행된 각 쿼리에 대한 상세 이력을 확인할 수 있습니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/manage_datasource_10.png" src="../../_images/manage_datasource_10.png" />
 </div>
 <ol class="arabic simple">
-<li><strong>날짜:</strong> 확인하고자 하는 쿼리들의 실행 시간대를 설정합니다.</li>
-<li><strong>쿼리 타입:</strong> 실행한 쿼리를 타입별로 선별하여 출력합니다.</li>
-<li><strong>상태:</strong> 쿼리 결과를 성공/실패로 선별하여 출력합니다.</li>
-<li><strong>쿼리 목록:</strong> 설정한 조건에 부합하는 쿼리들이 나열됩니다.</li>
-<li><strong>자세히:</strong> 클릭하면 해당 쿼리문을 확인할 수 있습니다.</li>
+<li><p><strong>날짜:</strong> 확인하고자 하는 쿼리들의 실행 시간대를 설정합니다.</p></li>
+<li><p><strong>쿼리 타입:</strong> 실행한 쿼리를 타입별로 선별하여 출력합니다.</p></li>
+<li><p><strong>상태:</strong> 쿼리 결과를 성공/실패로 선별하여 출력합니다.</p></li>
+<li><p><strong>쿼리 목록:</strong> 설정한 조건에 부합하는 쿼리들이 나열됩니다.</p></li>
+<li><p><strong>자세히:</strong> 클릭하면 해당 쿼리문을 확인할 수 있습니다.</p></li>
 </ol>
 </div></blockquote>
 </div>

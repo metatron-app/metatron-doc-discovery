@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Preparation &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Data Preparation &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -75,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -211,7 +201,7 @@
 <p><strong>Data Preparation</strong> is a tool that creates transformation rules to transform files and tables for more convenient analysis of datasets, and saves the results into HDFS or Hive.</p>
 <p><strong>Advantages of data preparation in Metatron Discovery</strong></p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/data_preparation_overview_1.en.png" src="../../_images/data_preparation_overview_1.en.png" />
 </div>
 </div></blockquote>
@@ -219,17 +209,17 @@
 <p>Based on these characteristics, the data preparation tool offers the following advantages:</p>
 <blockquote>
 <div><ul class="simple">
-<li>Users unfamiliar with programming or data processing can obtain the desired results.</li>
-<li>Adding a transformation rule usually involves programming or writing an SQL query. However, Metatron Discovery’s Data Preparation provides a GUI for <strong>exploratory transformation</strong> that enables the creation of transformation rules simply by clicking a button or typing.</li>
-<li>Basic data transformation is conducted automatically. For instance, a type cast is automatically applied to columns comprised of numerals. This is made possible by the <strong>undo</strong> and rule deletion functions.</li>
-<li>Data of different forms can be combined as desired (e.g. reference file + fact table).</li>
-<li>The results of data refinement can be shared with others, thus reducing the burden of exchanging physical data.</li>
-<li>Storage space is saved and <strong>information life cycle (ILM)</strong> shortened by deleting the actual data and retaining only the transformation rules involved. The actual data can be easily created whenever needed.</li>
+<li><p>Users unfamiliar with programming or data processing can obtain the desired results.</p></li>
+<li><p>Adding a transformation rule usually involves programming or writing an SQL query. However, Metatron Discovery’s Data Preparation provides a GUI for <strong>exploratory transformation</strong> that enables the creation of transformation rules simply by clicking a button or typing.</p></li>
+<li><p>Basic data transformation is conducted automatically. For instance, a type cast is automatically applied to columns comprised of numerals. This is made possible by the <strong>undo</strong> and rule deletion functions.</p></li>
+<li><p>Data of different forms can be combined as desired (e.g. reference file + fact table).</p></li>
+<li><p>The results of data refinement can be shared with others, thus reducing the burden of exchanging physical data.</p></li>
+<li><p>Storage space is saved and <strong>information life cycle (ILM)</strong> shortened by deleting the actual data and retaining only the transformation rules involved. The actual data can be easily created whenever needed.</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Structure of data preparation in Metatron Discovery</strong></p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/preparation_overview.en.png" src="../../_images/preparation_overview.en.png" />
 </div>
 </div></blockquote>

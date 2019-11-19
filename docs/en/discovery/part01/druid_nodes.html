@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Druid cluster architecture &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Druid cluster architecture &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -75,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -240,13 +230,13 @@
 <blockquote>
 <div><div class="figure align-center" id="id5">
 <img alt="Data processing in real-time nodes" src="../../_images/druid-archit-data-processing.png" />
-<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
 <ol class="arabic simple">
-<li>Incoming events are indexed in memory and immediately become available for querying.</li>
-<li>The in-memory data is regularly persisted to disk and converted into an immutable, columnar storage format.</li>
-<li>The persisted data is loaded into off-heap memory to be still queryable.</li>
-<li>On a periodic basis, the persisted indexes are merged together to form a “segment” of data and then get handed off to deep storage.</li>
+<li><p>Incoming events are indexed in memory and immediately become available for querying.</p></li>
+<li><p>The in-memory data is regularly persisted to disk and converted into an immutable, columnar storage format.</p></li>
+<li><p>The persisted data is loaded into off-heap memory to be still queryable.</p></li>
+<li><p>On a periodic basis, the persisted indexes are merged together to form a “segment” of data and then get handed off to deep storage.</p></li>
 </ol>
 </div></blockquote>
 <p>In this way, all events ingested into real-time nodes, regardless before or after persisted, are present in memory (either on- or off-heap) and thus can be queried (queries hit both the in-memory and persisted indexes). This functionality of real-time nodes enables Druid to conduct real-time data ingestion meaning that events can be queried almost as soon as they occur. In addition, there is no data loss during these steps. In addition, there is no data loss during these steps.</p>
@@ -259,7 +249,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id6">
 <img alt="Historical nodes download data from deep storage and load it in memory" src="../../_images/druid-archit-historical.png" />
-<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 </div></blockquote>
 <p>Once a query is received, the historical node first checks a local cache that maintains information about what segments already exist on the node. If information about a segment in question is not present in the cache, the node will proceed to download the segment from deep storage. On the completion of the processing, the segment is announced in Zookeeper to become queryable and the node performs the requested query on the segment.</p>
@@ -273,7 +263,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id7">
 <img alt="Caching in broker nodes" src="../../_images/druid-archit-broker.png" />
-<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
 </div></blockquote>
 <p>Once a broker node receives a query involving a number of segments, it checks for segments already existing in the cache. For any segments absent in the cache, the broker node will forward the query to the correct historical and real-time nodes. Once historical nodes return their results, the broker will cache these results on a per-segment basis for future use. Real-time data is never cached and hence requests for real-time data will always be forwarded to real-time nodes. Since real-time data is perpetually changing, caching the results is unreliable.</p>
@@ -289,9 +279,9 @@
 <p>Druid has a couple of external dependencies for cluster operations.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Zookeeper:</strong> Druid relies on Zookeeper for intra-cluster communication.</li>
-<li><strong>Metadata storage:</strong> Druid relies on a metadata storage to store metadata about segments and configuration. MySQL and PostgreSQL are popular metadata stores for production.</li>
-<li><strong>Deep storage:</strong> Deep storage acts as a permanent backup of segments. Services that create segments upload segments to deep storage and historical nodes download segments from deep storage. S3 and HDFS are popular deep storages.</li>
+<li><p><strong>Zookeeper:</strong> Druid relies on Zookeeper for intra-cluster communication.</p></li>
+<li><p><strong>Metadata storage:</strong> Druid relies on a metadata storage to store metadata about segments and configuration. MySQL and PostgreSQL are popular metadata stores for production.</p></li>
+<li><p><strong>Deep storage:</strong> Deep storage acts as a permanent backup of segments. Services that create segments upload segments to deep storage and historical nodes download segments from deep storage. S3 and HDFS are popular deep storages.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -305,7 +295,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id8">
 <img alt="Example of Druid’s extended architecture" src="../../_images/intro-to-druid.png" />
-<p class="caption"><span class="caption-text">Source: MetaMarkets - Introduction to Druid by Fangjin Yang</span></p>
+<p class="caption"><span class="caption-text">Source: MetaMarkets - Introduction to Druid by Fangjin Yang</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </div>
 </div></blockquote>
 <p>Metatron, an end-to-end business intelligence solution to be introduced in this paper, was also built by adding various modules to the Druid engine.</p>

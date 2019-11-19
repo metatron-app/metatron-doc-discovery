@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Connection &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Data Connection &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -75,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -217,7 +207,7 @@
 <p>Metatron Discovery can connect to an external database directly. To connect to an external database, you must create and manage a data connection containing the access information to that database. By registering such a data connection, you don’t need to enter the access information each time you connect to the same database.</p>
 <p>The Data Connection menu can be accessed under <strong>MANAGEMENT</strong> &gt; <strong>Data Storage</strong> &gt; <strong>Data Connection</strong> on the left-hand panel of the main screen.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/create_datasource_1.en.png" src="../../_images/create_datasource_1.en.png" />
 </div>
 </div></blockquote>
@@ -229,15 +219,15 @@
 <img alt="../../_images/data_connection_1.en.png" src="../../_images/data_connection_1.en.png" />
 </div>
 <ul class="simple">
-<li><strong>Publish:</strong> Filter the data connection list by public workspace.</li>
-<li><strong>Creator:</strong> Filter the data connection list by creator.</li>
-<li><strong>DB type:</strong> Filter the data connection list by database type (MySQL, PostgreSQL, Hive, or Presto).</li>
-<li><strong>Security:</strong> Filter the data connection list by security type (Always connect, connect by user’s account, or connect with ID and password).</li>
-<li><strong>Created time:</strong> Filter the data connection list by time of creation (Today, Last 7 days, or Between).</li>
-<li><strong>Search:</strong> Search the data connection list by data connection name.</li>
-<li><strong>Number of data connections:</strong> Displays how many data connections are returned in the list.</li>
-<li><strong>New:</strong> Click on it to create a new data connection.</li>
-<li><strong>Delete:</strong> Hover the mouse over a data connection to display a recycle bin icon. Click the icon to delete the data connection.</li>
+<li><p><strong>Publish:</strong> Filter the data connection list by public workspace.</p></li>
+<li><p><strong>Creator:</strong> Filter the data connection list by creator.</p></li>
+<li><p><strong>DB type:</strong> Filter the data connection list by database type (MySQL, PostgreSQL, Hive, or Presto).</p></li>
+<li><p><strong>Security:</strong> Filter the data connection list by security type (Always connect, connect by user’s account, or connect with ID and password).</p></li>
+<li><p><strong>Created time:</strong> Filter the data connection list by time of creation (Today, Last 7 days, or Between).</p></li>
+<li><p><strong>Search:</strong> Search the data connection list by data connection name.</p></li>
+<li><p><strong>Number of data connections:</strong> Displays how many data connections are returned in the list.</p></li>
+<li><p><strong>New:</strong> Click on it to create a new data connection.</p></li>
+<li><p><strong>Delete:</strong> Hover the mouse over a data connection to display a recycle bin icon. Click the icon to delete the data connection.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -249,37 +239,29 @@
 <img alt="../../_images/data_connection_creation.en.png" src="../../_images/data_connection_creation.en.png" />
 </div>
 <ul>
-<li><p class="first"><strong>DB type:</strong> Four database types are currently supported. (MySQL, PostgreSQL Hive, Presto)</p>
-</li>
-<li><p class="first"><strong>Host:</strong> Enter the hostname to connect to the database.</p>
-</li>
-<li><p class="first"><strong>Port:</strong> Enter the port to connect to the database.</p>
-</li>
-<li><p class="first"><strong>URL only:</strong> Enter a database URL instead of a host and port.</p>
-</li>
-<li><p class="first"><strong>User name:</strong> Enter the username of the database.</p>
-</li>
-<li><p class="first"><strong>Password:</strong> Enter the password of the database.</p>
-</li>
-<li><p class="first"><strong>Security:</strong> Set the type of security to be applied while using the data connection.</p>
+<li><p><strong>DB type:</strong> Four database types are currently supported. (MySQL, PostgreSQL Hive, Presto)</p></li>
+<li><p><strong>Host:</strong> Enter the hostname to connect to the database.</p></li>
+<li><p><strong>Port:</strong> Enter the port to connect to the database.</p></li>
+<li><p><strong>URL only:</strong> Enter a database URL instead of a host and port.</p></li>
+<li><p><strong>User name:</strong> Enter the username of the database.</p></li>
+<li><p><strong>Password:</strong> Enter the password of the database.</p></li>
+<li><p><strong>Security:</strong> Set the type of security to be applied while using the data connection.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Always connect:</strong> Logs in using the account information the user has entered to create a new data connection.</li>
-<li><strong>Connect by user’s account:</strong> Logs in using the account information registered in Metatron Discovery.</li>
-<li><strong>Connect with ID and password:</strong> Requires to enter the account information every time the data connection is used.</li>
+<li><p><strong>Always connect:</strong> Logs in using the account information the user has entered to create a new data connection.</p></li>
+<li><p><strong>Connect by user’s account:</strong> Logs in using the account information registered in Metatron Discovery.</p></li>
+<li><p><strong>Connect with ID and password:</strong> Requires to enter the account information every time the data connection is used.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>Validation check:</strong> Checks whether the connection information entered is valid; the result is shown next to the button. The validity of the connection appears below the button.</p>
-</li>
-<li><p class="first"><strong>Advanced settings:</strong> You can add a custom property key and value as options.</p>
-</li>
-<li><p class="first"><strong>Publish:</strong> Set which workspaces have access to the data connection.</p>
+<li><p><strong>Validation check:</strong> Checks whether the connection information entered is valid; the result is shown next to the button. The validity of the connection appears below the button.</p></li>
+<li><p><strong>Advanced settings:</strong> You can add a custom property key and value as options.</p></li>
+<li><p><strong>Publish:</strong> Set which workspaces have access to the data connection.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Allow all workspaces to use this data connection:</strong> Select this check box to make the data connection available in all workspaces.</li>
-<li><strong>Edit:</strong> Used to allow specific workspaces to access the data connection. This button will disappear if the data connection is set as open data.</li>
-<li><strong>Number of shared workspaces:</strong> Displays how many workspaces have access to the data connection.</li>
+<li><p><strong>Allow all workspaces to use this data connection:</strong> Select this check box to make the data connection available in all workspaces.</p></li>
+<li><p><strong>Edit:</strong> Used to allow specific workspaces to access the data connection. This button will disappear if the data connection is set as open data.</p></li>
+<li><p><strong>Number of shared workspaces:</strong> Displays how many workspaces have access to the data connection.</p></li>
 </ul>
 </div></blockquote>
 </li>

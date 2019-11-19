@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part02/data_source_detail_view.rst:2
+# e943612c139f456cb591273be4907a2e
+msgid "데이터 소스 상세 정보"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:4
+# 208da71cd39d4497a42a3a0b5e93cf54
+msgid "데이터 소스 관리 홈에 열거된 데이터 소스 중 하나를 클릭하면 해당 데이터 소스에 관한 다양한 속성을 확인할 수 있습니다. 아래 각 영역을 확인할 때에는 각 데이터 소스가 Metatron의 내부 Druid 데이터베이스에 하나의 테이블로 저장되며, Druid의 시계열 특성 때문에 반드시 타임스탬프 컬럼을 포함하게 됨을 유의하십시오."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:9
+# 0519bef112774bf0b83a7f73ebfe382a
+msgid "상단 공통 영역"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:11
+# 1b73bfc5606b449eb5f0398929ba7514
+msgid "**이름:** 해당 데이터 소스의 이름입니다. 클릭 시 수정 가능합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:12
+# f917d900ef5a4ecc91e782e74b61be96
+msgid "**설명:** 해당 데이터 소스에 대한 설명입니다. 클릭 시 수정 가능합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:13
+# c21bdb7f737a42b7a1b101cb871162a1
+msgid "**마지막 수정정보:** 해당 데이터 소스를 누가 언제 마지막으로 수정했는지 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:14
+# 546384efafc442beba8d22b8d9749319
+msgid "**삭제:** 이 아이콘을 누르면 해당 데이터 소스를 삭제할 수 있는 메뉴가 나타납니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:15
+# b640825f315d4de79ffad41a6eabc6ba
+msgid "**탭 선택 영역:** 각 탭은 해당 데이터 소스에 관한 특정한 속성군을 보여줍니다. 데이터 소스의 종류에 따라 3개 탭이 모두 나오지 않을 수도 있습니다. 각각에 대한 자세한 설명은 아래의 각 절에서 확인하십시오."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:18
+# 488ff54b2be74b6d8bbbf9e7a7982310
+msgid "데이터 정보 영역"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:20
+# 897388cdc7d44ca985d138f72c3b11f7
+msgid "이 영역에서는 해당 데이터 소스의 기본 정보를 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:24
+# a52e34282d5e4ab8a5f7e0de9099d052
+msgid "**데이터 타입:** 해당 데이터 소스 생성 시 가져온 원천 데이터의 타입입니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:25
+# 11c44a7f70994037a3ea318d6ed43ec7
+msgid "**상태:** 해당 데이터 소스의 현재 사용 가능 여부를 나타냅니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:26
+# 9ede0cb423da44d5905cf01adef48694
+msgid "**사이즈:** 해당 데이터 소스의 크기를 나타냅니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:27
+# 255413562c5b4b98875dd5d095413c5c
+msgid "**인터벌:** 해당 데이터 소스에 포함된 타임스탬프의 시간 범위를 나타냅니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:28
+# 663d0845f58e4c0fb3178e9db21a0c85
+msgid "**타임스탬프 설정:** 해당 데이터 소스 생성 시 설정한 Granularity 주기를 나타냅니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:30
+# b5eaf2adc3be49af9d8b116d9ab8a932
+msgid "**쿼리단위:** 분석에서 수행하고자 하는 최소 시간 단위를 결정합니다. 이는 최소 단위까지의 결과를 미리 생성하여 이후에 보다 빠른 응답을 얻을 수 있도록 하기 위함입니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:31
+# 5d3377faf3134fc8b179354850a9ded0
+msgid "**세그먼트단위:** 분산 환경에서 동작하는 Druid의 특성을 활용하기 위해 데이터를 분할하여 저장하게 되는데 이때 저장하는 단위를 결정합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:32
+# 5b01f69949d3487c987a037f3bd4cede
+msgid "**히스토그램:** 각 시간대별로 저장된 데이터의 용량을 KByte 단위로 보여주는 그래프입니다. 이러한 히스토그램은 레코드별로 반드시 타임스탬프 기록을 남겨야하는 Druid 엔진의 특성에 따른 것입니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:34
+# feb2092b890346e4a59b8100cc63eb2c
+msgid "**데이터 소스에 Publish 권한주기**"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:36
+# ad249f88d8c74601a3314dffe7b1f1f9
+msgid "이 영역에서는 해당 데이터 소스를 어느 워크스페이스에서 사용할 수 있는지를 확인·설정합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:40
+# 42cfa9ea219b46e7bf3d55007cb9cd11
+msgid "**모든 워크스페이스에 데이터 소스를 사용하도록 허용:** 이 확인란에 체크하면 모든 워크스페이스에서 해당 데이터 소스를 사용할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:41
+# a33adc883744441384f6941e30b3ad9d
+msgid "**수정:** 해당 데이터 소스의 사용을 허용할 특정 워크스페이스를 지정할 때 사용합니다. 해당 데이터 소스를 오픈 데이터로 지정하면 이 버튼이 사라집니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:42
+# 0739ea4db1f9435b8fcce32b3de13006
+msgid "**공유 워크스페이스 수:** 해당 데이터 소스를 사용할 수 있도록 허용된 워크스페이스의 수를 나타냅니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:45
+# 93680e0975934502a024707146787cee
+msgid "데이터 스키마 변경하기"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:46
+# 43752ac1c3de40fead423d5b25b7fe99
+msgid "컬럼 상세 탭의 상단부는 원하는 조건으로 컬럼을 선별하는 사용자 인터페이스를 제공합니다. 조건에 맞게 선별된 컬럼들은 좌측 영역에 조회됩니다. 또한 여기서는 컬럼 설정값을 수정할 수도 있습니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:48
+# 5325ace541cb4eec8b9767693457421a
+msgid "**컬럼 조회/설정 기능**"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:52
+# 74ff2c56039943b5b9209c0fb23f6f17
+msgid "**데이터 검색:** 컬럼 이름으로 검색이 가능합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:53
+# ec8c47fcac0043ed89d6eb91d488cebe
+msgid "**역할:** 데이터 테이블의 컬럼을 전체/차원값/측정값으로 선별하여 조회합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:54
+# 7cc1f422126742359e62ef68405371a9
+msgid "**타입:** 데이터 테이블의 컬럼을 필드 타입별로 선별하여 조회합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:55
+# 121a2f6986184cbf9a41ea92b95d670d
+msgid "**전체 보기:** 데이터 검색, 역할, 타입 옵션에서 설정한 모든 선별 조건을 취소하고 전체 컬럼 보기로 회귀합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:56
+# 5098401f1d90446ab8153dc3e169bb87
+msgid "**스키마구성:** 클릭하면 현재의 컬럼 설정값을 바꿀 수 있는 창이 출력됩니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:57
+# d05223ed9bc84b139945e4bb0584a262
+msgid "**컬럼목록:** 해당 테이블을 구성하는 컬럼들을 열거합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:58
+# 709e53890a304e199fde105fa7b6fc2e
+msgid "**컬럼정보:** 선택된 컬럼의 속성을 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:59
+# 93eb373bdebd4af086c351e22db4daa2
+msgid "**컬럼설정:** 선택된 컬럼의 메타 데이터 정보를 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:60
+# dc4b7bacb96f45b386201bd6ee478179
+msgid "**통계:** 선택된 컬럼에 입력된 값에 대해서 건수 및 통계값을 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:62
+# 3a9f8b3bd5884813975adbbdb024e064
+msgid "**스키마구성**"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:64
+# b7f86a27f87f4134be472f0a5247aeab
+msgid "컬럼들의 명칭 및 타입 수정을 하는 사용자 인터페이스를 제공합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:68
+# 5fbd0a94985d476383a22ff3209e5eb8
+msgid "**역할:** 해당 컬럼 차원값/측정값의 여부를 표시합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:69
+# 2b9d51d4203a44698686aade860eb99f
+msgid "**물리이름:** 해당 컬럼의 실제 명칭을 표시합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:70
+# d21b1b5d02284121aff858e7403a72ee
+msgid "**용어이름:** 해당 컬럼이 해당 시스템에서 표시될 용어 이름을 표시하고 수정할수 있습니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:71
+# e4956c4395994c839a4683a91d9804e9
+msgid "**논리타입:** 해당 컬럼의 논리타입( 문자/숫자/날짜등)을 표시하고 수정할수 있습니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:72
+# 60147dd24c5c4d95b547bb8e1d5ee981
+msgid "**표시형식:** 해당 컬럼이 타임스탭프 등인 경우 표시 포맷을 표시합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:73
+# 4121a31ee078487fbe89addda028f67a
+msgid "**설명:** 해당 컬럼의 상세 설명을 표시하고 수정할수 있습니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:76
+# 38a6d1ac0d5a41c7a4407bcc24ecf8b2
+msgid "데이터 통계 분석하기"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:77
+# f5a14b1a46034fdabfe95f456dea0b44
+msgid "모니터링 탭에서는 데이터 소스가 사용된 로그를 볼 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:79
+# 0e8c1bf0eccd487280ccf4eb22a1cf77
+msgid "**트랙잭션 변경**"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:81
+# b1124bccd1bc406d86644c53c1f34ef3
+msgid "해당 데이터 소스의 시간에 따른 트랜잭션량 추이를 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:85
+# 9d899666f938402693549c108ff08dbc
+msgid "**데이터 사이즈 변경**"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:87
+# 830f58544d2249cf9dcc69dd78a0fc01
+msgid "해당 데이터 소스의 시간에 따른 용량 추이를 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:91
+# d5ad8154479e4d669ecfc4eb3d14d6be
+msgid "**쿼리사용분포(지난 1주일 동안)**"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:95
+# b10e02ce1d1b45c3ae7bc00bc8aa236d
+msgid "**사용자별 쿼리사용 분포 (지난 1주일 동안):** 지난 한 주간 쿼리를 수행한 사용자별로 분류하여 그래프로 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:96
+# bd2a4899a7d44b5d81a4be44bd042c35
+msgid "**응답 시간별 쿼리사용 분포 (지난 1주일 동안):** 지난 한 주간 쿼리를 수행한 소요시간별로 분류하여 그래프로 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:98
+# 8575efb1d2904331bf3ec2e6c3abc63e
+msgid "**쿼리 로그**"
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:100
+# f42f14cfe7e54b54a3d75d45a3c0384a
+msgid "수행된 각 쿼리에 대한 상세 이력을 확인할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:104
+# 6fa6485d5c07477e958e4d42f662fb95
+msgid "**날짜:** 확인하고자 하는 쿼리들의 실행 시간대를 설정합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:105
+# 2b5ab286a191498d95b8b8782fbf1688
+msgid "**쿼리 타입:** 실행한 쿼리를 타입별로 선별하여 출력합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:106
+# 54d01efd7ef747a7a50311e3193fbdc1
+msgid "**상태:** 쿼리 결과를 성공/실패로 선별하여 출력합니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:107
+# e38db9c7238441d3962cd065353831cc
+msgid "**쿼리 목록:** 설정한 조건에 부합하는 쿼리들이 나열됩니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source_detail_view.rst:108
+# af86c6d3eb064544af259d6830e1cc73
+msgid "**자세히:** 클릭하면 해당 쿼리문을 확인할 수 있습니다."
+msgstr ""
+

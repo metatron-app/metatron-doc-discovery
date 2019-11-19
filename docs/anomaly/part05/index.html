@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>알람 내역 열람하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>알람 내역 열람하기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -75,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -218,22 +208,22 @@
 <p>이 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="#alarm-list"><span class="std std-ref">알람 리스트</span></a></li>
-<li><a class="reference internal" href="#alarm-details"><span class="std std-ref">알람 상세</span></a></li>
+<li><p><a class="reference internal" href="#alarm-list"><span class="std std-ref">알람 리스트</span></a></p></li>
+<li><p><a class="reference internal" href="#alarm-details"><span class="std std-ref">알람 상세</span></a></p></li>
 </ul>
 </div></blockquote>
 <div class="section" id="alarm-list">
 <span id="id2"></span><h2>알람 리스트<a class="headerlink" href="#alarm-list" title="제목 주소">¶</a></h2>
 <p><strong>Alarm</strong> 탭으로 들어가면 현재까지 발생한 알람들을 열거하여 보여줍니다. 화면 상단에 있는 <strong>Alarm rule</strong> / <strong>Timeline</strong> 선택 박스를 이용하여, 알람 리스트를 알람 룰 기준으로 정렬할 수도 있고, 발생한 시간 기준으로 정렬할 수도 있습니다.</p>
 <ul>
-<li><p class="first"><strong>Alarm rule</strong> (알람 룰 기준으로 정렬)</p>
+<li><p><strong>Alarm rule</strong> (알람 룰 기준으로 정렬)</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="alarm list" src="../../_images/alarm_list_01.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>Timeline</strong> (발생 시간 기준으로 정렬)</p>
+<li><p><strong>Timeline</strong> (발생 시간 기준으로 정렬)</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="timeline type display" src="../../_images/alarm_list_03.png" />
@@ -280,14 +270,14 @@
 </div>
 <div class="section" id="chart-view">
 <h3>Chart View 탭<a class="headerlink" href="#chart-view" title="제목 주소">¶</a></h3>
-<p>이 탭 영역에서는 해당 알람 구간 내에서 모니터링한 aggregate 데이터의 abnormal score 추이를 차트로 보여줍니다. 여기서는 각 조건별 점수 한계값에 도달하여 상응하는 알람(<code class="docutils literal"><span class="pre">Critical</span></code>, <code class="docutils literal"><span class="pre">Major</span></code>, <code class="docutils literal"><span class="pre">Moderate</span></code>, <code class="docutils literal"><span class="pre">Low</span></code>)을 일으킨 발생 건도 보고해줍니다. 차트 산출 방식에 관해서는 <a class="reference internal" href="../part01/index.html#basic-principles"><span class="std std-ref">기본 원리</span></a> 항목을 참조하십시오.</p>
+<p>이 탭 영역에서는 해당 알람 구간 내에서 모니터링한 aggregate 데이터의 abnormal score 추이를 차트로 보여줍니다. 여기서는 각 조건별 점수 한계값에 도달하여 상응하는 알람(<code class="docutils literal notranslate"><span class="pre">Critical</span></code>, <code class="docutils literal notranslate"><span class="pre">Major</span></code>, <code class="docutils literal notranslate"><span class="pre">Moderate</span></code>, <code class="docutils literal notranslate"><span class="pre">Low</span></code>)을 일으킨 발생 건도 보고해줍니다. 차트 산출 방식에 관해서는 <a class="reference internal" href="../part01/index.html#basic-principles"><span class="std std-ref">기본 원리</span></a> 항목을 참조하십시오.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="chart view" src="../../_images/alarm_detail_04.png" />
 </div>
 <ul class="simple">
-<li><strong>Total abnormal score:</strong> 알람 룰에 포함된 모든 측정값 컬럼에 대한 abnormal score를 보여줍니다.</li>
-<li><strong>Chart by measures:</strong> 알람 룰에 포함된 각 개별 측정값 컬럼 데이터의 예측치와 실제치의 추이를 보여줍니다.</li>
+<li><p><strong>Total abnormal score:</strong> 알람 룰에 포함된 모든 측정값 컬럼에 대한 abnormal score를 보여줍니다.</p></li>
+<li><p><strong>Chart by measures:</strong> 알람 룰에 포함된 각 개별 측정값 컬럼 데이터의 예측치와 실제치의 추이를 보여줍니다.</p></li>
 </ul>
 </div></blockquote>
 </div>

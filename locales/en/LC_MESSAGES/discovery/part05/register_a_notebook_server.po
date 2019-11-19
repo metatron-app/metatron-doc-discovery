@@ -1,4 +1,3 @@
-﻿# Copyright (C) 2019, metatron team
 # This file is distributed under the same license as the metatron discovery
 # docs package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
@@ -8,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,18 +33,29 @@ msgstr ""
 
 # 6fe40a01dc434e6290a678f1cec2e3f4
 #: ../../discovery/part05/register_a_notebook_server.rst:8
+#, fuzzy
 msgid "워크스페이스의 우측 상단에 있는 |icon_more| 버튼을 클릭한 후 :guilabel:`노트북 서버 설정`\\을 선택합니다."
-msgstr "Click the |icon_more| button in the top-right corner of the workspace and select :guilabel:`Set notebook server`."
+msgstr ""
+"Click the |icon_more| button in the top-right corner of the workspace and"
+" select :guilabel:`Set notebook server`."
 
 # 4d9ca083823a473b8c951de16a58944c
 #: ../../discovery/part05/register_a_notebook_server.rst:14
+#, fuzzy
 msgid ""
 "관리자가 사전에 등록해 둔 Jupyter, Zeppelin 서버 목록 중에서 본인 워크스페이스에서 연결해서 사용하고자 하는 노트북 "
 "서버를 선택 후 :guilabel:`마침`\\ 버튼을 클릭합니다."
-msgstr "From the list of Jupyter and Zeppelin servers preregistered by the administrator, select the notebook server that you wish to connect to and use in your workspace and click :guilabel:`Done`."
+msgstr ""
+"From the list of Jupyter and Zeppelin servers preregistered by the "
+"administrator, select the notebook server that you wish to connect to and"
+" use in your workspace and click :guilabel:`Done`."
 
-# a541f6c7e20042fdb892f8e77d620835
+# 32bcc5831f3b44029c1b29840418d0d7
 #: ../../discovery/part05/register_a_notebook_server.rst:16
 msgid "아무 서버도 선택하지 않고자 한다면, **(없음)** 항목을 선택하십시오."
-msgstr "If you don’t want to select a server, select **(None)**."
+msgstr ""
+
+# a541f6c7e20042fdb892f8e77d620835
+#~ msgid "아무 서버도 선택하지 않고자 한다면, **(없음)** 항목을 선택하십시오."
+#~ msgstr "If you don’t want to select a server, select **(None)**."
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Use data snapshot results &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Use data snapshot results &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -75,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -218,9 +208,9 @@
 <p>A <strong>data snapshot</strong> created through a dataflow can be used as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="#snapshot-result-check"><span class="std std-ref">Check the data snapshot results</span></a></li>
-<li><a class="reference internal" href="#snapshot-into-druid"><span class="std std-ref">Ingest into the Metatron engine</span></a></li>
-<li><a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">Download as a CSV file</span></a></li>
+<li><p><a class="reference internal" href="#snapshot-result-check"><span class="std std-ref">Check the data snapshot results</span></a></p></li>
+<li><p><a class="reference internal" href="#snapshot-into-druid"><span class="std std-ref">Ingest into the Metatron engine</span></a></p></li>
+<li><p><a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">Download as a CSV file</span></a></p></li>
 </ul>
 </div></blockquote>
 <div class="section" id="snapshot-result-check">
@@ -228,24 +218,24 @@
 <p>The status of snapshot creation can be classified as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Success</strong> = SUCCEEDED</li>
-<li><strong>Failed</strong> = FAILED</li>
-<li><strong>Preparing</strong> = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING</li>
+<li><p><strong>Success</strong> = SUCCEEDED</p></li>
+<li><p><strong>Failed</strong> = FAILED</p></li>
+<li><p><strong>Preparing</strong> = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING</p></li>
 </ul>
 </div></blockquote>
 <p>You can view the details of snapshot creation through the two paths below:</p>
 <blockquote>
 <div><ul>
-<li><p class="first">Go to the snapshot list under <strong>MANGEMENT</strong> &gt; <strong>Data Preparation</strong> &gt; <strong>Data Snapshot</strong>.</p>
+<li><p>Go to the snapshot list under <strong>MANGEMENT</strong> &gt; <strong>Data Preparation</strong> &gt; <strong>Data Snapshot</strong>.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/data_snapshot_1.en.png" src="../../_images/data_snapshot_1.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p class="first">Click the <strong>Snapshot (#)</strong> tab on the right of the <a class="reference internal" href="edit_rules.html"><span class="doc">Edit rules</span></a> page in <strong>Dataflow</strong></p>
+<li><p>Click the <strong>Snapshot (#)</strong> tab on the right of the <a class="reference internal" href="edit_rules.html"><span class="doc">Edit rules</span></a> page in <strong>Dataflow</strong></p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/data_snapshot_2.en.png" src="../../_images/data_snapshot_2.en.png" />
 </div>
 </div></blockquote>
@@ -254,13 +244,13 @@
 </div></blockquote>
 <p>In the snapshot details page, you can view details such as data validity ratio and a grid of the created snapshot, and download the results as a CSV file (<a class="reference internal" href="#snapshot-into-csv"><span class="std std-ref">Download as CSV</span></a>).</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/data_snapshot_3.en.png" src="../../_images/data_snapshot_3.en.png" />
 </div>
 </div></blockquote>
 <p>If valid data has not been created, the snapshot details page displays an error log.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/data_snapshot_4.en.png" src="../../_images/data_snapshot_4.en.png" />
 </div>
 </div></blockquote>
@@ -273,13 +263,13 @@
 <span id="snapshot-into-csv"></span><h2>Download as a CSV file<a class="headerlink" href="#csv" title="Permalink to this headline">¶</a></h2>
 <p>In the details page of a successfully created snapshot, the <strong>Download as CSV</strong> option is enabled.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/data_snapshot_5.en.png" src="../../_images/data_snapshot_5.en.png" />
 </div>
 </div></blockquote>
 <p>The downloaded file is a standard CSV, with each value separated by a “comma” and each row by a “new line.”</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/data_snapshot_6.png" src="../../_images/data_snapshot_6.png" />
 </div>
 </div></blockquote>

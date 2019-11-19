@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Metatron 엔진으로서 Druid &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Metatron 엔진으로서 Druid &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -76,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -233,8 +223,8 @@
 <p>기존의 IT 인프라로는 이런 대용량 데이터 처리에 한계가 있기 때문에 SK텔레콤은 대규모 빅데이터 시스템(Apache Hadoop)과 이를 활용하기 위한 빅데이터 분석 솔루션이 필요했습니다. SK텔레콤은 저비용으로 대용량 데이터의 저장하기 위해 대규모 Hadoop 인프라를 자체 구축하였지만 다음과 같은 한계가 있었습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li>수많은 사용자의 네트워크 데이터를 실시간으로 분석할 수 없었습니다. 빅데이터의 저장/처리는 가능했지만 데이터를 시각화하는 데는 한계가 있어 결국 과거와 같이 일부 필요한 데이터만 샘플링해서 확인해야 했습니다.</li>
-<li>ETL, DW, BI 등 데이터 분석 단계별로 각기 다른 솔루션, 각기 다른 담당자가 지원하는 기존의 방식은 데이터 분석을 하는 데 시간과 비용이 많이 들며 데이터 접근성을 현저하게 떨어뜨렸습니다. 단순하면서도 신속하게 데이터를 분석할 수 있으려면 분석의 전 단계를 한꺼번에 처리할 수 있는 end-to-end 솔루션이 필요했습니다.</li>
+<li><p>수많은 사용자의 네트워크 데이터를 실시간으로 분석할 수 없었습니다. 빅데이터의 저장/처리는 가능했지만 데이터를 시각화하는 데는 한계가 있어 결국 과거와 같이 일부 필요한 데이터만 샘플링해서 확인해야 했습니다.</p></li>
+<li><p>ETL, DW, BI 등 데이터 분석 단계별로 각기 다른 솔루션, 각기 다른 담당자가 지원하는 기존의 방식은 데이터 분석을 하는 데 시간과 비용이 많이 들며 데이터 접근성을 현저하게 떨어뜨렸습니다. 단순하면서도 신속하게 데이터를 분석할 수 있으려면 분석의 전 단계를 한꺼번에 처리할 수 있는 end-to-end 솔루션이 필요했습니다.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -243,9 +233,9 @@
 <p>Druid는 다음과 같은 특징들 때문에 위와 같은 니즈를 충족해야 하는 Metatron 솔루션의 엔진으로서 적합했습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li>Druid는 대용량의 데이터를 실시간으로 수집하여 즉시 쿼리 가능한 형태로 인덱싱하며, 분산 처리 기반을 통해 대용량의 데이터 집계를 아주 빠른 시간(최대 수초) 이내에 처리해줍니다.</li>
-<li>Druid의 시계열 기반 OLAP Cube 데이터 포맷은 분석가가 원하는 대로 탐색, 필터링, 시각화하기 용이합니다. 실무자들이 쿼리 구성을 고민하지 않고 직관적으로 필요한 데이터를 선별하여 알고자 하는 상관 관계를 바로 출력할 수 있게 하려면 이러한 탐색 자유도와 유연성이 필수적입니다.</li>
-<li>Druid는 확장성이 탁월하여 각종 모듈을 추가하기 용이합니다.</li>
+<li><p>Druid는 대용량의 데이터를 실시간으로 수집하여 즉시 쿼리 가능한 형태로 인덱싱하며, 분산 처리 기반을 통해 대용량의 데이터 집계를 아주 빠른 시간(최대 수초) 이내에 처리해줍니다.</p></li>
+<li><p>Druid의 시계열 기반 OLAP Cube 데이터 포맷은 분석가가 원하는 대로 탐색, 필터링, 시각화하기 용이합니다. 실무자들이 쿼리 구성을 고민하지 않고 직관적으로 필요한 데이터를 선별하여 알고자 하는 상관 관계를 바로 출력할 수 있게 하려면 이러한 탐색 자유도와 유연성이 필수적입니다.</p></li>
+<li><p>Druid는 확장성이 탁월하여 각종 모듈을 추가하기 용이합니다.</p></li>
 </ul>
 </div></blockquote>
 <p>Metatron은 Druid의 이러한 특성을 활용하여 데이터 수집, 저장, 처리, 분석, 시각화 등의 모든 layer를 포괄하는 end-to-end 솔루션을 구축하였습니다.</p>
@@ -255,8 +245,8 @@
 <p>Metatron에서 Druid 엔진을 응용하는 방식은 다음과 같습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li>사용자(현업/빅데이터 분석가) 측면에서 Druid를 기본 처리/분석 엔진으로 사용하기 쉽도록 GUI 화면을 구성하여 데이터 전처리, 분석, 시각화 등 데이터 관련 업무를 수행하고 이를 공유할 수 있게 하였습니다.</li>
-<li>IT 운영자는 Druid 내 데이터 소스를 관리/모니터링 할 수 있고, 필요시 데이터 전처리 작업을 통해 고품질의 데이터 소스를 제공할 수 있도록 지원합니다.</li>
+<li><p>사용자(현업/빅데이터 분석가) 측면에서 Druid를 기본 처리/분석 엔진으로 사용하기 쉽도록 GUI 화면을 구성하여 데이터 전처리, 분석, 시각화 등 데이터 관련 업무를 수행하고 이를 공유할 수 있게 하였습니다.</p></li>
+<li><p>IT 운영자는 Druid 내 데이터 소스를 관리/모니터링 할 수 있고, 필요시 데이터 전처리 작업을 통해 고품질의 데이터 소스를 제공할 수 있도록 지원합니다.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -269,15 +259,15 @@
 <p>기존의 오픈소스 Druid의 한계는 다음과 같습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li>Druid는 데이터 테이블 join에 제약이 많습니다. 이런 이유로 Metatron은 데이터 전처리를 위해 다른 SQL 엔진으로 사용합니다.</li>
-<li>Druid는 SQL 쿼리를 부분적으로만 지원합니다.</li>
-<li>데이터 레이크용으로는 기존의 SQL 엔진을 사용하는 편이 더 낫습니다.</li>
-<li>이미 인덱싱된 세그먼트를 수정하거나 행을 추가할 수 없습니다. 물론 incremental ingestion과 같은 특수한 상황에는 가능하지만 일반적이지 않습니다.</li>
-<li>null 값이 지원되지 않습니다.</li>
-<li>측정값에 대한 필터링이 지원되지 않습니다.</li>
-<li>Linear scalability가 보장되지 않습니다. 서버의 수를 늘려도 성능이 크게 개선되지 않습니다.</li>
-<li>Druid에서 지원하는 자료형은 제한적이며 추가하기가 어렵습니다.</li>
-<li>관리 및 모니터링 도구가 성능이 우수하지 않습니다.</li>
+<li><p>Druid는 데이터 테이블 join에 제약이 많습니다. 이런 이유로 Metatron은 데이터 전처리를 위해 다른 SQL 엔진으로 사용합니다.</p></li>
+<li><p>Druid는 SQL 쿼리를 부분적으로만 지원합니다.</p></li>
+<li><p>데이터 레이크용으로는 기존의 SQL 엔진을 사용하는 편이 더 낫습니다.</p></li>
+<li><p>이미 인덱싱된 세그먼트를 수정하거나 행을 추가할 수 없습니다. 물론 incremental ingestion과 같은 특수한 상황에는 가능하지만 일반적이지 않습니다.</p></li>
+<li><p>null 값이 지원되지 않습니다.</p></li>
+<li><p>측정값에 대한 필터링이 지원되지 않습니다.</p></li>
+<li><p>Linear scalability가 보장되지 않습니다. 서버의 수를 늘려도 성능이 크게 개선되지 않습니다.</p></li>
+<li><p>Druid에서 지원하는 자료형은 제한적이며 추가하기가 어렵습니다.</p></li>
+<li><p>관리 및 모니터링 도구가 성능이 우수하지 않습니다.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -287,51 +277,51 @@
 <p><strong>쿼리 성능 개선</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>groupBy 쿼리 성능 개선</li>
-<li>기타 쿼리 성능 소폭 개선</li>
+<li><p>groupBy 쿼리 성능 개선</p></li>
+<li><p>기타 쿼리 성능 소폭 개선</p></li>
 </ul>
 </div></blockquote>
 <p><strong>기능 추가</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>가상 컬럼(map, expression 등)</li>
-<li>측정값 자료형 확장(double, string, array 등)</li>
-<li>계산식 기능 확장</li>
-<li>Druid 쿼리 결과를 HDFS 또는 파일로 내보낼 수 있음</li>
-<li>데이터 테이블에 대한 메타 정보 및 통계용 쿼리 추가</li>
-<li>집계 기능 추가(분산, 상관관계 등)</li>
-<li>(제한적) 관계형 DB의 window 기능들 구현(lead, lar, running aggregations 등)</li>
-<li>(제한적)&nbsp;join 기능 강화</li>
-<li>(제한적)&nbsp;서브 쿼리 추가</li>
-<li>임시 데이터 소스</li>
-<li>복합 쿼리 추가(데이터 소스 summarization, 데이터 소스 간 상관관계, k-평균 등)</li>
-<li>사용자 정의 컬럼 grouping 지원</li>
-<li>GIS(지도-GEO서버 연계 adaptor 제공) 기능 지원</li>
-<li>컬럼별 histogram 제공</li>
-<li>Bit-slice indexing 지원</li>
+<li><p>가상 컬럼(map, expression 등)</p></li>
+<li><p>측정값 자료형 확장(double, string, array 등)</p></li>
+<li><p>계산식 기능 확장</p></li>
+<li><p>Druid 쿼리 결과를 HDFS 또는 파일로 내보낼 수 있음</p></li>
+<li><p>데이터 테이블에 대한 메타 정보 및 통계용 쿼리 추가</p></li>
+<li><p>집계 기능 추가(분산, 상관관계 등)</p></li>
+<li><p>(제한적) 관계형 DB의 window 기능들 구현(lead, lar, running aggregations 등)</p></li>
+<li><p>(제한적) join 기능 강화</p></li>
+<li><p>(제한적) 서브 쿼리 추가</p></li>
+<li><p>임시 데이터 소스</p></li>
+<li><p>복합 쿼리 추가(데이터 소스 summarization, 데이터 소스 간 상관관계, k-평균 등)</p></li>
+<li><p>사용자 정의 컬럼 grouping 지원</p></li>
+<li><p>GIS(지도-GEO서버 연계 adaptor 제공) 기능 지원</p></li>
+<li><p>컬럼별 histogram 제공</p></li>
+<li><p>Bit-slice indexing 지원</p></li>
 </ul>
 </div></blockquote>
 <p><strong>인덱스 구조 개선</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>측정값 필터링용 히스토그램</li>
-<li>텍스트 필터링용 lucene 포맷 지원</li>
+<li><p>측정값 필터링용 히스토그램</p></li>
+<li><p>텍스트 필터링용 lucene 포맷 지원</p></li>
 </ul>
 </div></blockquote>
 <p><strong>다른 시스템들과의 연동 지원</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>Hive 저장소 핸들러</li>
-<li>Hive 테이블 ingestion(Hive 메타 스토어와 연결)</li>
-<li>ORC 포맷 ingestion</li>
-<li>JDBC를 통한 RDBMS 데이터 ingestion</li>
-<li>(제한적) Backport된 SQL 지원</li>
+<li><p>Hive 저장소 핸들러</p></li>
+<li><p>Hive 테이블 ingestion(Hive 메타 스토어와 연결)</p></li>
+<li><p>ORC 포맷 ingestion</p></li>
+<li><p>JDBC를 통한 RDBMS 데이터 ingestion</p></li>
+<li><p>(제한적) Backport된 SQL 지원</p></li>
 </ul>
 </div></blockquote>
 <p><strong>기타 개선사항</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>버그 수정(50건 이상), 기능 추가 및 기타 경미한 사항들 개선</li>
+<li><p>버그 수정(50건 이상), 기능 추가 및 기타 경미한 사항들 개선</p></li>
 </ul>
 </div></blockquote>
 </div>

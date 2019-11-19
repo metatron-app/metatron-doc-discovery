@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part02/data_source.rst:2
+# 2fcf609023aa4f3eac347f8362cc4baf
+msgid "데이터 소스"
+msgstr ""
+
+#: ../../discovery/part02/data_source.rst:4
+# 4fc1b2c98fba47fab066c2b71d674fe8
+msgid "Metatron Discovery에서 '데이터 소스'는 Druid 엔진에 수집되는 데이터 단위를 의미합니다. 각 데이터 소스는 Druid 데이터베이스에서 하나의 테이블로서 저장됩니다. 이러한 데이터 소스들은 '워크북'이나 '노트북'에서 분석·시각화하는 데 사용됩니다."
+msgstr ""
+
+#: ../../discovery/part02/data_source.rst:6
+# 255420ed2ff043dda54f011dfec22f94
+msgid "데이터 소스 메뉴는 메인 화면 좌측 패널에서 **MANAGEMENT** > **데이터 스토리지** > **데이터 소스**\\를 통해 진입할 수 있습니다."
+msgstr ""
+

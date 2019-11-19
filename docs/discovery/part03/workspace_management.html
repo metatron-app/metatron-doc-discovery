@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>워크스페이스 홈 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>워크스페이스 홈 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -76,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -225,52 +215,40 @@
 <img alt="워크스페이스 홈 화면" src="../../_images/workspace_home.png" />
 </div>
 <ol class="arabic">
-<li><p class="first"><strong>메인 메뉴 버튼:</strong> 해당 버튼을 클릭하면 다른 워크스페이스로 접근할 수 있는 패널이 열립니다.</p>
-</li>
-<li><p class="first"><strong>워크스페이스 정보:</strong> 해당 워크스페이스의 이름과 설명을 보여줍니다. 로그인한 사용자가 소유하는 워크스페이스일 경우, 워크스페이스 이름 옆에 &#8216;소유자&#8217;라는 아이콘이 보입니다.</p>
-</li>
-<li><p class="first"><strong>등록 개체 현황:</strong> 워크스페이스 내에 등록된 개체 타입별 개수를 보여줍니다.</p>
-</li>
-<li><p class="first"><strong>데이터 소스:</strong> 해당 워크스페이스에서 사용 중인 데이터 소스의 개수를 보여주며, 이 영역을 클릭하면 사용 중인 데이터 소스들의 목록이 나타납니다.</p>
-</li>
-<li><p class="first"><strong>워크스페이스 목록:</strong> 이 버튼을 클릭하면 공유 워크스페이스의 목록이 나타납니다. (자세한 내용은 <a class="reference internal" href="shared_workspace.html#shared-workspace-list"><span class="std std-ref">공유 워크스페이스 목록</span></a> 참조)</p>
-</li>
-<li><p class="first"><strong>생성 정보:</strong> 해당 워크스페이스의 생성일과 만든 사용자 이름을 보여줍니다.</p>
-</li>
-<li><p class="first"><strong>더 보기:</strong> 해당 워크스페이스의 정보를 수정합니다.</p>
+<li><p><strong>메인 메뉴 버튼:</strong> 해당 버튼을 클릭하면 다른 워크스페이스로 접근할 수 있는 패널이 열립니다.</p></li>
+<li><p><strong>워크스페이스 정보:</strong> 해당 워크스페이스의 이름과 설명을 보여줍니다. 로그인한 사용자가 소유하는 워크스페이스일 경우, 워크스페이스 이름 옆에 '소유자'라는 아이콘이 보입니다.</p></li>
+<li><p><strong>등록 개체 현황:</strong> 워크스페이스 내에 등록된 개체 타입별 개수를 보여줍니다.</p></li>
+<li><p><strong>데이터 소스:</strong> 해당 워크스페이스에서 사용 중인 데이터 소스의 개수를 보여주며, 이 영역을 클릭하면 사용 중인 데이터 소스들의 목록이 나타납니다.</p></li>
+<li><p><strong>워크스페이스 목록:</strong> 이 버튼을 클릭하면 공유 워크스페이스의 목록이 나타납니다. (자세한 내용은 <a class="reference internal" href="shared_workspace.html#shared-workspace-list"><span class="std std-ref">공유 워크스페이스 목록</span></a> 참조)</p></li>
+<li><p><strong>생성 정보:</strong> 해당 워크스페이스의 생성일과 만든 사용자 이름을 보여줍니다.</p></li>
+<li><p><strong>더 보기:</strong> 해당 워크스페이스의 정보를 수정합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>이름 및 설명 수정:</strong> 해당 워크스페이스의 이름과 설명을 수정합니다.</li>
-<li><strong>공유 회원 및 그룹 설정:</strong> 해당 워크스페이스에 접근할 수 있는 사용자와 그룹을 지정합니다. (자세한 사항은 <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">공유 워크스페이스 접근 권한 설정</span></a> 참조)</li>
-<li><strong>노트북 서버 설정:</strong> 노트북 모듈이 사용하는 외부 분석 도구 서버 접근 정보를 설정합니다.</li>
-<li><strong>권한 스키마 설정:</strong> 해당 워크스페이스에서의 사용자 역할별 접근 권한을 설정합니다. (자세한 사항은 <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">공유 워크스페이스 접근 권한 설정</span></a> 참조)</li>
-<li><strong>소유자 변경:</strong> 해당 워크스페이스의 소유자를 바꿉니다.</li>
-<li><strong>워크스페이스 삭제:</strong> 해당 워크스페이스를 삭제합니다.</li>
+<li><p><strong>이름 및 설명 수정:</strong> 해당 워크스페이스의 이름과 설명을 수정합니다.</p></li>
+<li><p><strong>공유 회원 및 그룹 설정:</strong> 해당 워크스페이스에 접근할 수 있는 사용자와 그룹을 지정합니다. (자세한 사항은 <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">공유 워크스페이스 접근 권한 설정</span></a> 참조)</p></li>
+<li><p><strong>노트북 서버 설정:</strong> 노트북 모듈이 사용하는 외부 분석 도구 서버 접근 정보를 설정합니다.</p></li>
+<li><p><strong>권한 스키마 설정:</strong> 해당 워크스페이스에서의 사용자 역할별 접근 권한을 설정합니다. (자세한 사항은 <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">공유 워크스페이스 접근 권한 설정</span></a> 참조)</p></li>
+<li><p><strong>소유자 변경:</strong> 해당 워크스페이스의 소유자를 바꿉니다.</p></li>
+<li><p><strong>워크스페이스 삭제:</strong> 해당 워크스페이스를 삭제합니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>워크스페이스 경로:</strong> 워크스페이스 내에서의 현재 위치를 확인합니다. 경로에 나열된 상위 폴더 중 하나를 클릭하면 해당 폴더로 이동합니다.</p>
-</li>
-<li><p class="first"><strong>폴더 생성:</strong> 클릭하면 현재 위치에 새 폴더를 생성합니다.</p>
-</li>
-<li><p class="first"><strong>개체 목록 선별/정렬:</strong></p>
+<li><p><strong>워크스페이스 경로:</strong> 워크스페이스 내에서의 현재 위치를 확인합니다. 경로에 나열된 상위 폴더 중 하나를 클릭하면 해당 폴더로 이동합니다.</p></li>
+<li><p><strong>폴더 생성:</strong> 클릭하면 현재 위치에 새 폴더를 생성합니다.</p></li>
+<li><p><strong>개체 목록 선별/정렬:</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>검색:</strong> 해당 워크스페이스 내에서 개체 또는 폴더를 이름으로 검색합니다.</li>
-<li><strong>개체 타입:</strong> 워크북, 노트북, 워크벤치 중 원하는 개체 타입만을 선별해서 조회합니다.</li>
-<li><strong>정렬 순서:</strong> 폴더 및 개체를 이름 또는 업데이트 시간 순서로 정렬합니다.</li>
-<li><strong>뷰 형식:</strong> 워크스페이스 내 개체들의 열거 방식을 카드뷰와 리스트뷰 중에서 선택합니다.</li>
+<li><p><strong>검색:</strong> 해당 워크스페이스 내에서 개체 또는 폴더를 이름으로 검색합니다.</p></li>
+<li><p><strong>개체 타입:</strong> 워크북, 노트북, 워크벤치 중 원하는 개체 타입만을 선별해서 조회합니다.</p></li>
+<li><p><strong>정렬 순서:</strong> 폴더 및 개체를 이름 또는 업데이트 시간 순서로 정렬합니다.</p></li>
+<li><p><strong>뷰 형식:</strong> 워크스페이스 내 개체들의 열거 방식을 카드뷰와 리스트뷰 중에서 선택합니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>폴더 목록:</strong> 현재 위치에서 검색 조건에 부합하는 폴더들을 보여줍니다. 이중 하나를 클릭하면 해당 폴더 안으로 이동합니다. (개별 폴더 항목에 대한 자세한 설명은 <a class="reference internal" href="#folders"><span class="std std-ref">폴더 항목</span></a> 참조)</p>
-</li>
-<li><p class="first"><strong>개체 목록:</strong> 현재 위치에서 검색 또는 선별 조건에 부합하는 개체들을 보여줍니다. 이 중 하나를 클릭하면 해당 개체의 홈 화면으로 이동합니다. (개별 개체 항목에 대한 자세한 설명은 <a class="reference internal" href="#items"><span class="std std-ref">개체 항목</span></a> 참조)</p>
-</li>
-<li><p class="first"><strong>개체 선택/복사/이동/삭제:</strong> 개체 전체 선택, 복사, 이동, 삭제를 합니다. (자세한 내용은 <a class="reference internal" href="#actions"><span class="std std-ref">폴더 및 개체 선택/복사/이동/삭제</span></a> 참조)</p>
-</li>
-<li><p class="first"><strong>개체 생성:</strong> 해당 워크스페이스에서 원하는 타입의 개체를 만드는 데 사용되는 버튼들입니다. (구체적인 절차는 각각 <a class="reference internal" href="../part04/create_a_workbook.html"><span class="doc">워크북 만들기</span></a>, <a class="reference internal" href="../part05/create_a_notebook.html"><span class="doc">신규 노트북 생성하기</span></a>, <a class="reference internal" href="../part06/06_02-create_a_workbench.html"><span class="doc">워크벤치 만들기</span></a> 참조)</p>
-</li>
+<li><p><strong>폴더 목록:</strong> 현재 위치에서 검색 조건에 부합하는 폴더들을 보여줍니다. 이중 하나를 클릭하면 해당 폴더 안으로 이동합니다. (개별 폴더 항목에 대한 자세한 설명은 <a class="reference internal" href="#folders"><span class="std std-ref">폴더 항목</span></a> 참조)</p></li>
+<li><p><strong>개체 목록:</strong> 현재 위치에서 검색 또는 선별 조건에 부합하는 개체들을 보여줍니다. 이 중 하나를 클릭하면 해당 개체의 홈 화면으로 이동합니다. (개별 개체 항목에 대한 자세한 설명은 <a class="reference internal" href="#items"><span class="std std-ref">개체 항목</span></a> 참조)</p></li>
+<li><p><strong>개체 선택/복사/이동/삭제:</strong> 개체 전체 선택, 복사, 이동, 삭제를 합니다. (자세한 내용은 <a class="reference internal" href="#actions"><span class="std std-ref">폴더 및 개체 선택/복사/이동/삭제</span></a> 참조)</p></li>
+<li><p><strong>개체 생성:</strong> 해당 워크스페이스에서 원하는 타입의 개체를 만드는 데 사용되는 버튼들입니다. (구체적인 절차는 각각 <a class="reference internal" href="../part04/create_a_workbook.html"><span class="doc">워크북 만들기</span></a>, <a class="reference internal" href="../part05/create_a_notebook.html"><span class="doc">신규 노트북 생성하기</span></a>, <a class="reference internal" href="../part06/06_02-create_a_workbench.html"><span class="doc">워크벤치 만들기</span></a> 참조)</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -282,10 +260,10 @@
 <img alt="워크스페이스 폴더 항목" src="../../_images/workspace_entity_folder.png" />
 </div>
 <ul class="simple">
-<li><strong>확인란:</strong> 해당 폴더를 선택할 때 사용합니다. 선택한 폴더는 복제, 이동, 삭제할 수 있습니다.</li>
-<li><strong>이름:</strong> 해당 폴더의 이름입니다.</li>
-<li><strong>수정:</strong> 클릭하면 폴더의 이름을 수정할 수 있습니다. 이 버튼은 해당 폴더 항목에 마우스를 오버할 때만 나타납니다.</li>
-<li><strong>삭제:</strong> 클릭하면 해당 폴더가 삭제됩니다. 이 버튼은 해당 폴더 항목에 마우스를 오버할 때만 나타납니다.</li>
+<li><p><strong>확인란:</strong> 해당 폴더를 선택할 때 사용합니다. 선택한 폴더는 복제, 이동, 삭제할 수 있습니다.</p></li>
+<li><p><strong>이름:</strong> 해당 폴더의 이름입니다.</p></li>
+<li><p><strong>수정:</strong> 클릭하면 폴더의 이름을 수정할 수 있습니다. 이 버튼은 해당 폴더 항목에 마우스를 오버할 때만 나타납니다.</p></li>
+<li><p><strong>삭제:</strong> 클릭하면 해당 폴더가 삭제됩니다. 이 버튼은 해당 폴더 항목에 마우스를 오버할 때만 나타납니다.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -297,21 +275,16 @@
 <img alt="워크스페이스 개체 항목" src="../../_images/workspace_entity_object.png" />
 </div>
 <ul>
-<li><p class="first"><strong>확인란:</strong> 해당 개체를 선택할 때 사용됩니다. 선택한 개체는 복제, 이동, 삭제할 수 있습니다.</p>
-</li>
-<li><p class="first"><strong>개체 타입:</strong> 해당 개체가 워크북/노트북/워크벤치 중에서 어느 타입인지 보여줍니다.</p>
-</li>
-<li><p class="first"><strong>삭제:</strong> 클릭하면 해당 개체가 삭제됩니다. 이 버튼은 해당 개체 항목에 마우스를 오버할 때만 나타납니다.</p>
-</li>
-<li><p class="first"><strong>이름:</strong> 해당 개체의 이름입니다.</p>
-</li>
-<li><p class="first"><strong>업데이트 시점:</strong> 해당 개체가 마지막으로 업데이트된 시점을 보여줍니다.</p>
-</li>
-<li><p class="first"><strong>데이터 소스/대시보드 개수:</strong> 이 영역은 워크북 개체에만 고유합니다.</p>
+<li><p><strong>확인란:</strong> 해당 개체를 선택할 때 사용됩니다. 선택한 개체는 복제, 이동, 삭제할 수 있습니다.</p></li>
+<li><p><strong>개체 타입:</strong> 해당 개체가 워크북/노트북/워크벤치 중에서 어느 타입인지 보여줍니다.</p></li>
+<li><p><strong>삭제:</strong> 클릭하면 해당 개체가 삭제됩니다. 이 버튼은 해당 개체 항목에 마우스를 오버할 때만 나타납니다.</p></li>
+<li><p><strong>이름:</strong> 해당 개체의 이름입니다.</p></li>
+<li><p><strong>업데이트 시점:</strong> 해당 개체가 마지막으로 업데이트된 시점을 보여줍니다.</p></li>
+<li><p><strong>데이터 소스/대시보드 개수:</strong> 이 영역은 워크북 개체에만 고유합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><img alt="icon_datasource" src="../../_images/icon_datasource.png" /> 아이콘 옆 숫자는 해당 워크북에 연동된 데이터 소스의 개수를 가리킵니다.</li>
-<li><img alt="icon_dashboard" src="../../_images/icon_dashboard.png" /> 아이콘 옆 숫자는 해당 워크북에 등록된 대시보드의 개수를 가리킵니다.</li>
+<li><p><img alt="icon_datasource" src="../../_images/icon_datasource.png" /> 아이콘 옆 숫자는 해당 워크북에 연동된 데이터 소스의 개수를 가리킵니다.</p></li>
+<li><p><img alt="icon_dashboard" src="../../_images/icon_dashboard.png" /> 아이콘 옆 숫자는 해당 워크북에 등록된 대시보드의 개수를 가리킵니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -326,10 +299,10 @@
 <img alt="워크스페이스 개체 항목" src="../../_images/workspace_entity_folder_and_object_manipulation.png" />
 </div>
 <ul class="simple">
-<li><strong>전체 선택:</strong> 현재 폴더 목록과 개체 목록에 나타난 모든 항목을 선택합니다.</li>
-<li><strong>워크북 복사:</strong> 워크북에만 유효한 기능입니다. 이 버튼을 클릭하면 선택한 워크북이 복제됩니다.</li>
-<li><strong>선택 이동:</strong> 선택한 폴더 및 개체를 이동합니다. 워크북의 경우에는 다른 워크스페이스로 이동이 가능하고, 그 외의 항목들은 동일 워크스페이스 내 다른 폴더로 이동이 가능합니다. 워크북이 다른 개체와 함께 선택되어 있을 때는 이동을 실행할 수 없습니다.</li>
-<li><strong>선택 삭제:</strong> 선택한 폴더 및 개체를 삭제합니다.</li>
+<li><p><strong>전체 선택:</strong> 현재 폴더 목록과 개체 목록에 나타난 모든 항목을 선택합니다.</p></li>
+<li><p><strong>워크북 복사:</strong> 워크북에만 유효한 기능입니다. 이 버튼을 클릭하면 선택한 워크북이 복제됩니다.</p></li>
+<li><p><strong>선택 이동:</strong> 선택한 폴더 및 개체를 이동합니다. 워크북의 경우에는 다른 워크스페이스로 이동이 가능하고, 그 외의 항목들은 동일 워크스페이스 내 다른 폴더로 이동이 가능합니다. 워크북이 다른 개체와 함께 선택되어 있을 때는 이동을 실행할 수 없습니다.</p></li>
+<li><p><strong>선택 삭제:</strong> 선택한 폴더 및 개체를 삭제합니다.</p></li>
 </ul>
 </div></blockquote>
 </div>

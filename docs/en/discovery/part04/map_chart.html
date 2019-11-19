@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Map view and spatial operations &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Map view and spatial operations &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -75,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -233,20 +223,18 @@
 </div>
 </div></blockquote>
 <ul class="simple">
-<li>At least one <strong>location</strong> dimension is required.</li>
-<li>Data is placed on <strong>map layer shelves</strong> instead of the row/column/intersection shelves.</li>
-<li><strong>Style properties</strong> are set for each layer.</li>
-<li><strong>Spatial operations</strong> are provided.</li>
+<li><p>At least one <strong>location</strong> dimension is required.</p></li>
+<li><p>Data is placed on <strong>map layer shelves</strong> instead of the row/column/intersection shelves.</p></li>
+<li><p><strong>Style properties</strong> are set for each layer.</p></li>
+<li><p><strong>Spatial operations</strong> are provided.</p></li>
 </ul>
 <div class="section" id="id2">
 <h2>Location dimensions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>To use map view, dimension columns of WKT geometry types such as <code class="docutils literal"><span class="pre">Point</span></code>, <code class="docutils literal"><span class="pre">LineString</span></code>, and  <code class="docutils literal"><span class="pre">Polygon</span></code> must be placed on the layer shelf. There are largely three types of location data.</p>
+<p>To use map view, dimension columns of WKT geometry types such as <code class="docutils literal notranslate"><span class="pre">Point</span></code>, <code class="docutils literal notranslate"><span class="pre">LineString</span></code>, and  <code class="docutils literal notranslate"><span class="pre">Polygon</span></code> must be placed on the layer shelf. There are largely three types of location data.</p>
 <ul>
-<li><p class="first"><strong>Point:</strong> This is a 2D coordinate geometry type comprised of x and y values. Similar to GPS data, a point has a latitude and longitude.</p>
-</li>
-<li><p class="first"><strong>Line:</strong> This is a geometry type with line coordinates. WKT representations of LineString and MultiLineString are supported.</p>
-</li>
-<li><p class="first"><strong>Polygon</strong>: This is a geometry type with shape coordinates. WKT representations of Polygon and MultiPolygon are supported.</p>
+<li><p><strong>Point:</strong> This is a 2D coordinate geometry type comprised of x and y values. Similar to GPS data, a point has a latitude and longitude.</p></li>
+<li><p><strong>Line:</strong> This is a geometry type with line coordinates. WKT representations of LineString and MultiLineString are supported.</p></li>
+<li><p><strong>Polygon</strong>: This is a geometry type with shape coordinates. WKT representations of Polygon and MultiPolygon are supported.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="../../_images/map_01.jpg" src="../../_images/map_01.jpg" />
@@ -282,7 +270,7 @@
 </div></blockquote>
 <div class="section" id="id4">
 <h3>Add layer shelf<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>Click the <code class="docutils literal"><span class="pre">+</span></code> button on the right of a layer shelf to add another layer on top of the first layer. Each layer must use a different data source, and columns of only one data source are allowed to be placed per layer. Currently, up to two layer shelves are supported.</p>
+<p>Click the <code class="docutils literal notranslate"><span class="pre">+</span></code> button on the right of a layer shelf to add another layer on top of the first layer. Each layer must use a different data source, and columns of only one data source are allowed to be placed per layer. Currently, up to two layer shelves are supported.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="../../_images/map_addlayer.jpg" src="../../_images/map_addlayer.jpg" />
@@ -301,9 +289,9 @@
 </div>
 </div></blockquote>
 <ul class="simple">
-<li>Open Street Map <strong>Light</strong> (Default)</li>
-<li>Open Street Map <strong>Dark</strong></li>
-<li>Open Street Map <strong>Colored</strong></li>
+<li><p>Open Street Map <strong>Light</strong> (Default)</p></li>
+<li><p>Open Street Map <strong>Dark</strong></p></li>
+<li><p>Open Street Map <strong>Colored</strong></p></li>
 </ul>
 </div>
 <div class="section" id="id7">
@@ -317,15 +305,15 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple">
-<li><strong>Layer Name</strong>: Set a name of the layer for legend and tooltip settings in the map view.</li>
-<li><strong>Layer Type</strong>: Data points can be displayed on the map as <code class="docutils literal"><span class="pre">Point</span></code>, <code class="docutils literal"><span class="pre">Heatmap</span></code>, <code class="docutils literal"><span class="pre">Hexagon</span></code>, or <code class="docutils literal"><span class="pre">Cluster</span></code>. The point type is selected by default.</li>
-<li><strong>Point Type</strong>: With <code class="docutils literal"><span class="pre">Point</span></code> selected as the layer type, you can choose the shape of data points from among <code class="docutils literal"><span class="pre">Circle</span></code>, <code class="docutils literal"><span class="pre">Square</span></code>, and <code class="docutils literal"><span class="pre">Triangle</span></code>. Circle is selected by default. The shapes are displayed on the map when cluster use is set to Off.</li>
-<li><strong>Color</strong>: Data points can be distinguished by color based on a string dimension or a measure on the layer shelf. A color can be picked from the palette if color standards are not available. The transparency can be set as a % value.</li>
-<li><strong>Size</strong>: If the layer type is <code class="docutils literal"><span class="pre">Point</span></code>, data points can be distinguished by size based on a measure on the layer shelf.</li>
-<li><strong>Outline</strong>: When set to On, an outline is drawn for each data point. The default is Off, and the color and thickness are customizable.</li>
-<li><strong>Cluster Distance</strong>: With <code class="docutils literal"><span class="pre">Cluster</span></code> selected as the layer type, you can set the cluster distance as a % value. The use of clusters is recommended to optimize browser performance when working with a large number of data points.</li>
-<li><strong>Blur</strong>: With <code class="docutils literal"><span class="pre">Heatmap</span></code> selected as the layer type, you can adjust the blur effect on the heat map. The default is 20%.</li>
-<li><strong>Radius</strong>: If the layer type is <code class="docutils literal"><span class="pre">Heatmap</span></code> or <code class="docutils literal"><span class="pre">Hexagon</span></code>, the display radius can be adjusted in the range of 1 to 100.</li>
+<li><p><strong>Layer Name</strong>: Set a name of the layer for legend and tooltip settings in the map view.</p></li>
+<li><p><strong>Layer Type</strong>: Data points can be displayed on the map as <code class="docutils literal notranslate"><span class="pre">Point</span></code>, <code class="docutils literal notranslate"><span class="pre">Heatmap</span></code>, <code class="docutils literal notranslate"><span class="pre">Hexagon</span></code>, or <code class="docutils literal notranslate"><span class="pre">Cluster</span></code>. The point type is selected by default.</p></li>
+<li><p><strong>Point Type</strong>: With <code class="docutils literal notranslate"><span class="pre">Point</span></code> selected as the layer type, you can choose the shape of data points from among <code class="docutils literal notranslate"><span class="pre">Circle</span></code>, <code class="docutils literal notranslate"><span class="pre">Square</span></code>, and <code class="docutils literal notranslate"><span class="pre">Triangle</span></code>. Circle is selected by default. The shapes are displayed on the map when cluster use is set to Off.</p></li>
+<li><p><strong>Color</strong>: Data points can be distinguished by color based on a string dimension or a measure on the layer shelf. A color can be picked from the palette if color standards are not available. The transparency can be set as a % value.</p></li>
+<li><p><strong>Size</strong>: If the layer type is <code class="docutils literal notranslate"><span class="pre">Point</span></code>, data points can be distinguished by size based on a measure on the layer shelf.</p></li>
+<li><p><strong>Outline</strong>: When set to On, an outline is drawn for each data point. The default is Off, and the color and thickness are customizable.</p></li>
+<li><p><strong>Cluster Distance</strong>: With <code class="docutils literal notranslate"><span class="pre">Cluster</span></code> selected as the layer type, you can set the cluster distance as a % value. The use of clusters is recommended to optimize browser performance when working with a large number of data points.</p></li>
+<li><p><strong>Blur</strong>: With <code class="docutils literal notranslate"><span class="pre">Heatmap</span></code> selected as the layer type, you can adjust the blur effect on the heat map. The default is 20%.</p></li>
+<li><p><strong>Radius</strong>: If the layer type is <code class="docutils literal notranslate"><span class="pre">Heatmap</span></code> or <code class="docutils literal notranslate"><span class="pre">Hexagon</span></code>, the display radius can be adjusted in the range of 1 to 100.</p></li>
 </ol>
 </div>
 <div class="section" id="line">
@@ -336,10 +324,10 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple">
-<li><strong>Layer Name</strong>: Set a name of the layer for legend and tooltip settings in the map view.</li>
-<li><strong>Color</strong>: Data points can be distinguished by color based on a string dimension or a measure on the layer shelf. A color can be picked from the palette if color standards are not available. The transparency can be set as a % value.</li>
-<li><strong>Thickness</strong>: Set the line thickness.</li>
-<li><strong>Line type</strong>: Choose among a solid line, dotted line, and dashed line. The default is a solid line.</li>
+<li><p><strong>Layer Name</strong>: Set a name of the layer for legend and tooltip settings in the map view.</p></li>
+<li><p><strong>Color</strong>: Data points can be distinguished by color based on a string dimension or a measure on the layer shelf. A color can be picked from the palette if color standards are not available. The transparency can be set as a % value.</p></li>
+<li><p><strong>Thickness</strong>: Set the line thickness.</p></li>
+<li><p><strong>Line type</strong>: Choose among a solid line, dotted line, and dashed line. The default is a solid line.</p></li>
 </ol>
 </div>
 <div class="section" id="polygon">
@@ -350,9 +338,9 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple">
-<li><strong>Layer Name</strong>: Set a name of the layer for legend and tooltip settings in the map view.</li>
-<li><strong>Color</strong>: Data points can be distinguished by color based on a string dimension or a measure on the layer shelf. A color can be picked from the palette if color standards are not available. The transparency can be set as a % value.</li>
-<li><strong>Outline</strong>: When set to On, an outline is drawn for each polygon. The default is Off, and the color and thickness are customizable.</li>
+<li><p><strong>Layer Name</strong>: Set a name of the layer for legend and tooltip settings in the map view.</p></li>
+<li><p><strong>Color</strong>: Data points can be distinguished by color based on a string dimension or a measure on the layer shelf. A color can be picked from the palette if color standards are not available. The transparency can be set as a % value.</p></li>
+<li><p><strong>Outline</strong>: When set to On, an outline is drawn for each polygon. The default is Off, and the color and thickness are customizable.</p></li>
 </ol>
 </div>
 </div>
@@ -375,13 +363,13 @@
 </div>
 </div></blockquote>
 <ul class="simple">
-<li><strong>Within</strong>: This returns values within a distance designated between elements of the Main and Compare Layers.</li>
-<li><strong>Intersection</strong>: This method returns overlapping areas between the Main and Compare Layers. Return values may vary with the scale of the geometry selected (Polygon &gt; Line &gt; Point).</li>
+<li><p><strong>Within</strong>: This returns values within a distance designated between elements of the Main and Compare Layers.</p></li>
+<li><p><strong>Intersection</strong>: This method returns overlapping areas between the Main and Compare Layers. Return values may vary with the scale of the geometry selected (Polygon &gt; Line &gt; Point).</p></li>
 </ul>
 <p>Additional settings that can be customized for each operation are as follows:</p>
 <ul class="simple">
-<li><strong>Buffer</strong>: Set a tolerant distance within which the Main and Compare Layers could be compared. The distance can be set either in meters or in kilometers.</li>
-<li><strong>Choropleth map</strong>: The resulting layer can be displayed in the form of a choropleth map. The color scheme of the choropleth map can be selected; by default, colors are divided according to the data count. If the Main Layer includes a measure, colors can be changed based on its elements.</li>
+<li><p><strong>Buffer</strong>: Set a tolerant distance within which the Main and Compare Layers could be compared. The distance can be set either in meters or in kilometers.</p></li>
+<li><p><strong>Choropleth map</strong>: The resulting layer can be displayed in the form of a choropleth map. The color scheme of the choropleth map can be selected; by default, colors are divided according to the data count. If the Main Layer includes a measure, colors can be changed based on its elements.</p></li>
 </ul>
 </div>
 </div>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Workflow editor &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Workflow editor &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -75,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -210,33 +200,32 @@
 <span id="id1"></span><h1>Workflow editor<a class="headerlink" href="#workflow-editor" title="Permalink to this headline">¶</a></h1>
 <p>Through the GUI of the workflow editor, you can conveniently edit the selected Hadoop workflow and schedule runs. Click one of the workflows listed in <a class="reference internal" href="../part02/index.html#workflow-list"><span class="std std-ref">Workflow list</span></a> to enter the workflow editor. The following is displayed.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/workflow_editor.png" src="../../_images/workflow_editor.png" />
 </div>
 <ol class="arabic">
-<li><p class="first"><strong>Workflow node selection area:</strong> Choose nodes to add to the workflow. Click <img alt="unfold" src="../../_images/icon_unfold.png" /> to expand the panel and view the names of all nodes. The nodes are categorized into two types.</p>
+<li><p><strong>Workflow node selection area:</strong> Choose nodes to add to the workflow. Click <img alt="unfold" src="../../_images/icon_unfold.png" /> to expand the panel and view the names of all nodes. The nodes are categorized into two types.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Action nodes (categorized as “Task” in editor):</strong> Define tasks involved in collecting, processing, and ingesting raw data in the Hadoop cluster. See <a class="reference internal" href="tasks.html#action-nodes"><span class="std std-ref">Action nodes</span></a> for details.</li>
-<li><strong>Control flow nodes (categorized as “General” in editor):</strong> Define the start and end of a workflow and determine the flow path of action nodes. See <a class="reference internal" href="control_flow.html#control-flow-nodes"><span class="std std-ref">Control flow nodes</span></a> for details.</li>
+<li><p><strong>Action nodes (categorized as “Task” in editor):</strong> Define tasks involved in collecting, processing, and ingesting raw data in the Hadoop cluster. See <a class="reference internal" href="tasks.html#action-nodes"><span class="std std-ref">Action nodes</span></a> for details.</p></li>
+<li><p><strong>Control flow nodes (categorized as “General” in editor):</strong> Define the start and end of a workflow and determine the flow path of action nodes. See <a class="reference internal" href="control_flow.html#control-flow-nodes"><span class="std std-ref">Control flow nodes</span></a> for details.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>Workflow chart canvas:</strong> The sequence between added nodes is defined. As shown in the figure below, drag the desired nodes to the canvas, and connect the nodes according to the desired sequence to complete the workflow chart.</p>
+<li><p><strong>Workflow chart canvas:</strong> The sequence between added nodes is defined. As shown in the figure below, drag the desired nodes to the canvas, and connect the nodes according to the desired sequence to complete the workflow chart.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/canvas.png" src="../../_images/canvas.png" />
 </div>
 <p>Undo or redo actions using the <img alt="do" src="../../_images/icon_do.png" /> buttons on the top, and click <img alt="play" src="../../_images/icon_play.png" /> to run the current workflow. And click the <strong>Draft</strong> button to save the current workflow, and the <strong>Save</strong> button to save it as the actual workflow.</p>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>Workflow settings area:</strong> Set up the task details of individual nodes selected in the workflow chart canvas. See relevant node items in <a class="reference internal" href="tasks.html#action-nodes"><span class="std std-ref">Action nodes</span></a> and <a class="reference internal" href="control_flow.html#control-flow-nodes"><span class="std std-ref">Control flow nodes</span></a> for details.</p>
-</li>
-<li><p class="first"><strong>Workflow run details area:</strong> View the run details of the defined workflow.</p>
+<li><p><strong>Workflow settings area:</strong> Set up the task details of individual nodes selected in the workflow chart canvas. See relevant node items in <a class="reference internal" href="tasks.html#action-nodes"><span class="std std-ref">Action nodes</span></a> and <a class="reference internal" href="control_flow.html#control-flow-nodes"><span class="std std-ref">Control flow nodes</span></a> for details.</p></li>
+<li><p><strong>Workflow run details area:</strong> View the run details of the defined workflow.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>Manual run tab:</strong> Click <img alt="play" src="../../_images/icon_play.png" /> on the top left of the editor to view the details of manual runs.</li>
-<li><strong>Scheduled run tab:</strong> Schedule workflow runs at desired times using the UI, and view the details of scheduled runs. See <a class="reference internal" href="scheduled_run.html#scheduled-run"><span class="std std-ref">Schedule a workflow run</span></a> for details.</li>
+<li><p><strong>Manual run tab:</strong> Click <img alt="play" src="../../_images/icon_play.png" /> on the top left of the editor to view the details of manual runs.</p></li>
+<li><p><strong>Scheduled run tab:</strong> Schedule workflow runs at desired times using the UI, and view the details of scheduled runs. See <a class="reference internal" href="scheduled_run.html#scheduled-run"><span class="std std-ref">Schedule a workflow run</span></a> for details.</p></li>
 </ul>
 </div></blockquote>
 </li>

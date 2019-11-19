@@ -1,0 +1,393 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part04/create_a_dashboard.rst:2
+# b8966a0a31144ccca64675ead7e241bc
+msgid "대시보드 만들기"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:7
+# 97734ea61e8348b7b295828c480eef06
+msgid "대시보드 생성 절차는 다음과 같습니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:9
+# 317e61ebc6a1474da71bd22d5b7836b0
+msgid "워크북 화면에서 **+ 데이터 소스 추가**\\를 클릭합니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:14
+# 5f15e38027b7463a95721876d18e65bd
+msgid "해당 워크스페이스에 공개된 데이터 소스 목록에서 대시보드에 연결할 마스터 데이터 소스들을 선택합니다. 이후 단계에서는 여기서 선택하는 마스터 데이터 소스들에 join시킬 다른 데이터 소스를 추가적으로 선택할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:19
+# 44463d37d3c444e28e318d8dd27c3b8f
+msgid "**데이터 소스 이름 검색:** 해당 워크스페이스에 허용된 데이터 소스를 이름으로 검색합니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:20
+# 91f059affc234c8aa61ed4afd6162038
+msgid "**오픈 데이터만 보기:** '오픈 데이터 소스'로 지정된 데이터 소스만 선별하여 볼 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:21
+# 7ced529f6fd84300a226a03818a86ec1
+msgid "**타입:** 데이터 소스를 연결형 또는 수집형으로 선별하여 볼 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:22
+# 3e711fa4717845a8ac7b995de50be1e4
+msgid "**데이터 소스 목록:** 설정한 선별 조건에 맞는 데이터 소스들을 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:23
+# 2edf67caf2ad48c989b2aa7c6af38380
+msgid "**데이터 소스 정보:** 목록에서 선택한 데이터 소스의 정보를 간략하게 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:25
+# a8124496f9e54189a062f18323f679f7
+msgid "둘 이상의 데이터 소스를 선택할 경우에는 한 데이터 소스를 다른 데이터 소스로 드래그함으로써 둘을 연결시킬 수 있습니다. 연결된 데이터 소스끼리는 상호간 필터링이 가능합니다. 데이터 소스 연결이 필요 없다면 **마침** 버튼을 클릭하십시오."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:30
+# ced0afe2945d494385ce84ff46b0b764
+msgid "한 데이터 소스를 다른 데이터 소스로 드래그하면 데이터 소스 연결을 설정할 수 있는 새 창이 열립니다. 양 테이블에서 상호간 필터링을 할 수 있는 연결 키로 사용할 컬럼을 하나씩 선택한 후 **마침**\\을 클릭하십시오."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:35
+# 67f38d46742e4dd882babce118b9e102
+msgid "마스터 데이터 소스 간의 연결 관계를 설정하였으면 **마침**\\을 클릭합니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:40
+# 00f1b9ea3b4644bc8a3e2e847400f294
+msgid "아래 설명을 참조하여 마스터 데이터 소스 연결을 재설정하거나, 앞에서 선택한 최상위 데이터 소스에 join시킬 다른 데이터 소스들을 추가합니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:45
+# c2da08c223ac4886beb78c321464d6eb
+msgid "마스터 데이터 소스 연결 관계 뷰"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:47
+# 72e0831db10b43f1b60b3692223892f4
+msgid "|plus| : 클릭하면 새 마스터 데이터 소스를 추가할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:48
+# 8cec58f050174280874e26d1725c7d85
+msgid "**연결 수정:** 클릭하면 데이터 소스 연결 관계를 수정할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:50
+# da4c00e4f4be484db3885691ab2342cb
+msgid "개별 마스터 데이터 소스 설정 패널(다이어그램에서 마스터 데이터 소스에 해당하는 타원 중 하나를 클릭 시 열림)"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:52
+# 8aa2372038c24909b8bd686b92e7dca7
+msgid "**데이터 미리보기:** 데이터 소스 join에 따른 결과 테이블을 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:53
+# a7c4ff998c1e4d838ebacdc7deae0db1
+msgid "**스키마 관리:** 선택한 데이터 소스의 join 관계를 관리할 수 있습니다(자세한 절차는 다음 단계를 확인하십시오)."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:54
+# 2976042c1e054e55aa5b892f1351908c
+msgid "**연결해제:** 클릭하면 선택한 데이터 소스가 제거됩니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:55
+# 8df5e25a2fea47d7b624b368cf0fa576
+msgid "|X| : 클릭하면 패널이 닫힙니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:57
+# b36cf108d3d24dedb4d3bd30b6ac49de
+msgid "마스터 데이터 소스 중 하나를 다른 데이터 소스들과 join시키려면, 다이어그램에서 해당 타원 클릭 → 하단 패널에서 **스키마 관리** 탭 클릭 → **+ 조인을 위하여 데이터소스를 추가해 주세요** 클릭 순으로 진행합니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:62
+# 6c75bc71ea5143eda30176848ac6c353
+msgid "아래 설명을 참조하여 데이터 join 관계를 설정합니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:67
+# 1b458c2fe5a144a5b9ed3e8627cd4e78
+msgid "**마스터 데이터 소스:** 새로 join시키고자 하는 데이터 소스의 마스터 데이터 소스에 관한 정보를 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:68
+# 2b751fbddb234b1bbf86b3c2ac0812ca
+msgid "**Datasource to join:** 마스터 데이터 소스에 조인할 데이터 소스를 선택합니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:69
+# f5ffe256980b4d37b7a24f511dcc920d
+msgid "**조인 키 추가**: '조인 키'는 마스터 데이터 소스와 조인할 데이터 소스 간의 컬럼별 조인 관계를 정의하기 위한 키입니다. 두 데이터 소스에서 서로 연결시킬 컬럼을 하나씩 선택한 후 이 버튼을 클릭하면 새로운 조인 키가 추가됩니다. 이때 각각의 데이터 소스의 컬럼에 정의된 데이터 타입이 일치해야 합니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:70
+# 49766b2c0f434457880d5be9cb630d43
+msgid "**조인 타입:** 데이터 소스를 어떻게 조인하여 변형할 것인지를 선택합니다. 다음과 같은 예시를 이용하여 각 조인 타입을 설명하겠습니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:72
+# 40d97721dcc74b3cb4c2fc2a0c332913
+msgid "마스터 데이터 소스"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# bf747350af10419b83f8f39948e4cc4a
+# 31a889b20a884f1ea717e2547d1ca31d
+# e211185a349a499c9b74df6027c784d8
+# 8b12900f2efe448294f36685a005cceb
+# 903fce521c7e48ae8ff7fc512f1d7860
+# c34ab8b7cb3a42339b50ab22bebd2933
+msgid "제품명(조인 키)"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# e8502f9d4f364a77ad33cd9247e48906
+# 61889fb9ac844eccbd880165f38457e7
+# 415def115224478e938d626375f4cc3b
+# 29b0d6b5ea64454792b3a323ee0e8b20
+# 53b256efb24d435c977b0a74bd8e8e76
+msgid "가격"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 136bf92b820342d7bfafc6288c7806bc
+# 9ba232ac84e748a58278e3af0f4db873
+# 8b9ddc5a59ba4f6591d40888e8183f59
+msgid "A"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# b890135c2b004e148ff57898d7ad68f5
+# 0c7a8686162a41df84b081a6ad938fea
+# 3af6485175ac4d0593edac47df3c66d6
+msgid "$22.11"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# dbb36b5ac2b449f5986bc828934666bd
+# 3f35d618e67f4da3abe3dbd7f25275a2
+# 77c8d45752f7400c8715a7b9cc2258d1
+# 389ad28b08c2425c896476b043629378
+# db1917dec7214b3a8f0265519d29f0b6
+# 74708ad2b4f74a3b83f43fdde48fa180
+msgid "B"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 8a53c8d8ef174ddf9fe724d90739e39b
+# 87da0d719ab54a5e860a6ef50a605628
+# 184abd3f6dda46ebab1acd3db728707f
+# e3b6c87b289748028621dae29f5526f9
+# d6428231f53048b5bceafd156e9e380d
+msgid "$9.23"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 93df73c43a6b45afab5b9b3556385ca2
+# 7f1bdd55afce4278af7ecdfa83df4ad7
+# 4a3aecc6a449444d9b1dd9100a57450b
+msgid "C"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 1bac6aecf8454752993aa84b6218c884
+# 7f9f70f9e33e4f30b82010c3ba5dd5b7
+# b8692bff52214582a1d8bba8f56d3ab5
+msgid "$8.99"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 07af80e2993c413f862e191e974f5b95
+# c098329a87bc48c9a709e93939858ddb
+# a4c2954b3a1544728eb2bffe0047693b
+# 0f9f16b0a6124c88909a6a5953881b4d
+# a3f82e924b4a4b0b9c83de4d44e89305
+# 1035400a8fa74357947b8b06d76c81f3
+msgid "D"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 106be778f4d24a1cb00ca3290961cb7b
+# 01729c1c429a4b1b81b7fe1949a82fca
+# 67044c8b140b426fb46b622fec31466b
+# 97fc1f2fedb046648d464c09c1b1253d
+# a235a82165004b4aa424e444012b8de4
+msgid "$10.10"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:80
+# 9f7c0f1f32f6414aaf87b19e9736f392
+msgid "조인할 데이터 소스"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 5f40faf3aa084479b0d28541c45d4d85
+# f778b47ee0e1430b923bbbc5f39455d3
+# b0142dfc7ed04b07b5c232ec87c23a48
+# 2b75d9e367ca4aa49102047155cd918f
+# 26a23ba82d484842a746827b146cdd75
+msgid "판매량"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# aae40b901c62437aaa8c0f1c14fba1d3
+# 95087373c9874f6894be63a1eb1ef683
+# 8661f21c18fb42cb89f42a1dcc84cf05
+# cc637d3265dd4de6bf3a19ddc1cd0c4b
+# d6eeff69dbb347068921ed30e35f64a1
+msgid "100"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 1a23e04c7f814ab98ae5e647dfb45887
+# 452f2153f31946dcaecc924fababd828
+# 382a056cb8fc4662b3aa27ec42c7b9fb
+# c9753be0c1a747eebee402f7c3849de2
+# ddae53dae08040089ebb9a0cc3a81147
+msgid "200"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 0987ddfa1e37463d973f72a4e74325df
+# a01aaafbd6594a9db9e9840a7d6c9cef
+# 833ece4e0e384a3d9fed961a440143dd
+msgid "E"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# d4d51ae38cf94056b4277954bbb24b8f
+# 676a834595fc4e0f92b7914a0a63897e
+# ab2c33dc438d4ee9af72d6153cd8b2d1
+msgid "50"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:87
+# ac457d0425994dc18c36b46d2568265d
+msgid "**Inner:** 조인 키 컬럼 내 데이터 값을 기준으로 마스터 데이터 소스와 조인할 데이터 소스에 공통적으로 해당하는 레코드만 결과 테이블에 반영합니다. (두 데이터 소스의 교집합)"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:95
+# 4a2e303be07b4043a6e741a2f8274403
+msgid "**Left:** 왼쪽 데이터 소스(마스터 데이터 소스)의 조인 키 컬럼 내 데이터 값을 기준으로 오른쪽 데이터 소스(조인할 데이터 소스)의 데이터를 가져와 조인한 뒤, 결과 테이블에 반영합니다. 오른쪽 데이터 소스의 레코드 중에서 왼쪽 데이터 소스에 없는 조인 키 컬럼 데이터 값을 가진 레코드는 버려집니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 7bf02a8e5ce94c6da24707a4c7db6293
+# 81fba24f129b4e23bff7f5b20411a3ef
+# 855f55fe332140558d6cf8c8350f4a37
+# 5ca5424be52e4e7aa7f7f07303e0f4d5
+# 35483819e8454d9db9774d3fd76ac3bd
+msgid "null"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:105
+# 583d144c5cd64ce68a62f6e51ebb5990
+msgid "**Right:** 오른쪽 데이터 소스(조인할 데이터 소스)의 조인 키 컬럼 내 데이터 값을 기준으로 왼쪽 데이터 소스(마스터 데이터 소스)의 데이터를 가져와 조인한 뒤, 결과 테이블에 반영합니다. 왼쪽 데이터 소스의 레코드 중에서 오른쪽 데이터 소스에 없는 조인 키 컬럼 데이터 값을 가진 레코드는 버려집니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:1
+# 82f3955012c4451c9b384971dd6ac33b
+msgid "$null"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:114
+# b726f9996e7a4e1e94b15d8b5a916332
+msgid "**Full Outer:** 조인 키 컬럼 내 데이터 값을 기준으로 양쪽 데이터 소스의 모든 데이터를 가져와 조인한 뒤, 결과 테이블에 반영합니다. (두 데이터 소스의 합집합)"
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:125
+# 935c76a98f7a41369de85c2d47c71abe
+msgid "**결과 미리보기:** 데이터 소스를 join한 결과값이 나타납니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:127
+# c2824de791304df3be3bbe489cf34ac8
+msgid "대시보드를 생성하기 위해 불러온 데이터 소스들에 관한 정보를 확인한 뒤, **이름**\\과 **설명**\\을 입력하고 **마침** 버튼을 누르면 새로운 대시보드가 생성됩니다."
+msgstr ""
+
+#: ../../discovery/part04/create_a_dashboard.rst:132
+# c0d8db16364e4202912236c668228f09
+msgid "새로 생성된 대시보드는 워크북 홈 화면에 추가됩니다. 클릭하면 해당 대시보드에 관한 화면이 표시됩니다."
+msgstr ""
+

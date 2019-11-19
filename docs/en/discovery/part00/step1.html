@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Step 1. Create a data source &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Step 1. Create a data source &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: '.txt'
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -75,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -213,7 +203,8 @@
 <p>The first step in data analysis is ingesting your data into the system. Metatron Discovery allows you to easily ingest various data sources.</p>
 <p>The example in this tutorial shows you how to ingest data from your local directory. First, prepare data. An Excel file (.xls, .xlsx) or .csv file will suffice. This tutorial uses sales data. Download it from the link below:</p>
 <blockquote>
-<div><a class="reference download internal" href="../../_downloads/sales-data-sample.csv" download=""><code class="xref download docutils literal"><span class="pre">sample</span> <span class="pre">data</span> <span class="pre">(.csv)</span></code></a></div></blockquote>
+<div><p><a class="reference download internal" download="" href="../../_downloads/b741fce287ff898fd0a48cf95d8ad7c4/sales-data-sample.csv"><code class="xref download docutils literal notranslate"><span class="pre">sample</span> <span class="pre">data</span> <span class="pre">(.csv)</span></code></a></p>
+</div></blockquote>
 <p>Data sources can be viewed and ingested from <strong>Management</strong> &gt; <strong>Data Storage</strong> &gt; <strong>Data Source</strong>. To create a new data source, click the <strong>New</strong> button on the upper right of the data source list.</p>
 <blockquote>
 <div><div class="figure align-center">
@@ -239,20 +230,20 @@
 <img alt="data schema configuration" src="../../_images/s1-4.en.png" />
 </div>
 </div></blockquote>
-<p>Each column functions as a “dimension” or “measure.” See <a class="reference internal" href="../part02/dimension_and_measures.html"><span class="doc">“Dimensions” and “Measures”</span></a> for further details. In this data, the <code class="docutils literal"><span class="pre">Discount</span></code>, <code class="docutils literal"><span class="pre">Profit</span></code>, <code class="docutils literal"><span class="pre">Quantity</span></code>, <code class="docutils literal"><span class="pre">Sales</span></code>, <code class="docutils literal"><span class="pre">DaystoShipActual</span></code>, <code class="docutils literal"><span class="pre">SalesForecast</span></code>, <code class="docutils literal"><span class="pre">DaystoShipScheduled</span></code>, <code class="docutils literal"><span class="pre">SalesperCustomer</span></code>, and <code class="docutils literal"><span class="pre">ProfitRatio</span></code> columns must be converted into measures.</p>
+<p>Each column functions as a “dimension” or “measure.” See <a class="reference internal" href="../part02/dimension_and_measures.html"><span class="doc">“Dimensions” and “Measures”</span></a> for further details. In this data, the <code class="docutils literal notranslate"><span class="pre">Discount</span></code>, <code class="docutils literal notranslate"><span class="pre">Profit</span></code>, <code class="docutils literal notranslate"><span class="pre">Quantity</span></code>, <code class="docutils literal notranslate"><span class="pre">Sales</span></code>, <code class="docutils literal notranslate"><span class="pre">DaystoShipActual</span></code>, <code class="docutils literal notranslate"><span class="pre">SalesForecast</span></code>, <code class="docutils literal notranslate"><span class="pre">DaystoShipScheduled</span></code>, <code class="docutils literal notranslate"><span class="pre">SalesperCustomer</span></code>, and <code class="docutils literal notranslate"><span class="pre">ProfitRatio</span></code> columns must be converted into measures.</p>
 <p>Next, the data types of columns must be adjusted properly. The string type is the default setting for dimensions, and the integer type for measures. While viewing the sample, change the data type settings properly. Below is a list of items to be modified in this data.</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">Orderdate</span></code> : Date/Time</li>
-<li><code class="docutils literal"><span class="pre">Discount</span></code> : Decimal</li>
-<li><code class="docutils literal"><span class="pre">ShipDate</span></code> : Date/Time (Change the time format to yyyy. MM. dd. and click the checkbox to validate)</li>
-<li><code class="docutils literal"><span class="pre">SalesperCustomer</span></code> : Decimal</li>
-<li><code class="docutils literal"><span class="pre">ProfitRatio</span></code> : Decimal</li>
-<li><code class="docutils literal"><span class="pre">latitude</span></code> : Latitude</li>
-<li><code class="docutils literal"><span class="pre">longitude</span></code> : Longitude</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Orderdate</span></code> : Date/Time</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Discount</span></code> : Decimal</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ShipDate</span></code> : Date/Time (Change the time format to yyyy. MM. dd. and click the checkbox to validate)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SalesperCustomer</span></code> : Decimal</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ProfitRatio</span></code> : Decimal</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">latitude</span></code> : Latitude</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">longitude</span></code> : Longitude</p></li>
 </ul>
 </div></blockquote>
-<p>Lastly, you should create a new column. Since we already have columns for latitude and longitude, we can create a point type column. Click the <strong>Add column</strong> button on the upper right. Select the <code class="docutils literal"><span class="pre">latitude</span></code> column for the <strong>Latitude</strong> column, and the <code class="docutils literal"><span class="pre">longitude</span></code> column for the <strong>Longitude</strong> column. Name the columns appropriately, and click <strong>Add</strong>. A new point type column is created!</p>
+<p>Lastly, you should create a new column. Since we already have columns for latitude and longitude, we can create a point type column. Click the <strong>Add column</strong> button on the upper right. Select the <code class="docutils literal notranslate"><span class="pre">latitude</span></code> column for the <strong>Latitude</strong> column, and the <code class="docutils literal notranslate"><span class="pre">longitude</span></code> column for the <strong>Longitude</strong> column. Name the columns appropriately, and click <strong>Add</strong>. A new point type column is created!</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="create a new Point type column" src="../../_images/s1-5.en.png" />
@@ -297,7 +288,7 @@
 <p>Congratulations! Now, it’s time to use the data source. Let’s proceed to the next step.</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="step2.html"><span class="doc">Step 2. Create a workbook</span></a></li>
+<li><p><a class="reference internal" href="step2.html"><span class="doc">Step 2. Create a workbook</span></a></p></li>
 </ul>
 </div></blockquote>
 </div>

@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part02/manage_data_sources.rst:2
+# 1613e00965d24961960ea9b5e2822f52
+msgid "데이터 소스 관리 홈 화면"
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:4
+# 90b947fb14404e6d8eca5cbe14726354
+msgid "본 화면에서는 데이터 소스의 신규 등록·편집·조회가 가능합니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:8
+# 2691da41f884445388e58cbedfa698d4
+msgid "**상태:** 현재 데이터 스토리지에 저장되어 있는 데이터 소스의 가용 여부로 선별하여 조회합니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:10
+# 7a722c9aee984bcfacad28c07b2304d4
+msgid "**Enable:** 데이터 ingestion을 마쳐 워크북이나 워크벤치에서 사용 가능한 데이터 소스들이 출력됩니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:11
+# ba8e108a519147498fc0902c61e29ad4
+msgid "**Preparing:** 아직 생성된 지 얼마 되지 않아서 데이터 ingestion이 진행 중인 데이터 소스들이 출력됩니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:12
+# 3d67fdfdddee44d3902825665f62154e
+msgid "**Failed:** 생성이 제대로 되지 않은 데이터 소스들이 출력됩니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:13
+# d1ca0df9917e4f14866567cced75e317
+msgid "**Disabled:** 데이터 ingestion을 마쳤으나 Druid 엔진의 일부 프로세스에서 제대로 진행이 되지 않아 사용이 불가능한 데이터 소스들이 출력됩니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:15
+# d01dc543605e4641934d01c36b73fee1
+msgid "**공개:** 데이터 소스의 공개 대상여부로 선별하여 조회합니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:17
+# dae9458971874098b5c334378f6b7294
+msgid "**공개 데이터:** 모든 워크스페이스에서 사용이 허용된 데이터 소스들만 선별하여 조회합니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:18
+# db83d11847ce47b0aac45015bbbe7528
+msgid "**Admin workspace:** 어드민 워크스페이스에서 사용이 허용된 데이터 소스들만 선별하여 조회합니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:19
+# 532e0a4d33044a24a65e665d3f0c96d5
+msgid "**Shared Workspace:** shared workspace에서 사용이 허용된 데이터 소스들만 선별하여 조회합니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:21
+# ef93f70c6d494c069b2e09fcdd115b47
+msgid "**생성한 사람:** 해당 데이터 소스를 생성한 사용자 또는 그룹을 조회합니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:22
+# 2b352bfdc815414583614885960efa7e
+msgid "**생성한 시간:** 데이터 소스 조회 시 적용되는 시간 기준입니다. 생성일과 수정일 중 원하는 기준으로 선택할 수 있으며 시간 범위는 전체/오늘/지난 7일/특정 날짜 기간 중 선택이 가능합니다."
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:23
+# 96b9c909e9a54a4e8aef3f9db4d2a49d
+msgid "**데이터 소스 이름으로 검색:** 현재 등록된 데이터 소스를 이름으로 검색합니다"
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:24
+# 1f03a93e4bdd4447a467af395c6f7049
+msgid "**데이터 소스 목록:** 설정한 선별 조건에 맞는 데이터 소스들을 보여줍니다. 이 중 하나를 클릭하면 상세 내역을 볼 수 있습니다. (:doc:`data_source_detail_view` 참조)"
+msgstr ""
+
+#: ../../discovery/part02/manage_data_sources.rst:25
+# fc6945eec7434b86a5b976070c6572ab
+msgid "**삭제:** 해당 데이터 소스에 마우스 오버 시 휴지통 아이콘이 나타납니다. 클릭하면 해당 데이터 소스를 삭제할 수 있습니다."
+msgstr ""
+
