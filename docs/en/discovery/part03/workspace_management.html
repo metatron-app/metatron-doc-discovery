@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Workspace home &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Shared workspace" href="shared_workspace.html" />
+    <link rel="prev" title="Workspace" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Workspace</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Workspace home</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Composition of the workspace home</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#folders">Folder items</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#items">Entity items</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#actions">Select/clone/move/delete folder and entity</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="shared_workspace.html">Shared workspace</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Workspace</a> &raquo;</li>
+        
+      <li>Workspace home</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part03/workspace_management.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Workspace home<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>On the workspace home page, you can perform manage the Metatron Discovery entities (workbooks, notebooks and workbenches) contained in the workspace.</p>
+<div class="section" id="id2">
+<h2>Composition of the workspace home<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>The overall composition of the workspace home is as follows:</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="워크스페이스 홈 화면" src="../../_images/workspace_home.en.png" />
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Main menu button:</strong> Click this button to open a panel to access another workspace.</p>
+</li>
+<li><p class="first"><strong>Workspace information:</strong> Displays the name and description of the workspace. If the logged-in user owns the workspace, an Owner icon will be displayed next to the name of the workspace.</p>
+</li>
+<li><p class="first"><strong>Registered entities:</strong> Displays the number of entities registered in the workspace by entity type.</p>
+</li>
+<li><p class="first"><strong>Data source:</strong> Displays the number of data sources used in the workspace. Click this area to show a list of these data sources.</p>
+</li>
+<li><p class="first"><strong>Workspace list:</strong> Click this button to show a list of shared workspaces. (See <a class="reference internal" href="shared_workspace.html#shared-workspace-list"><span class="std std-ref">Shared workspace list</span></a> for how to handle it.)</p>
+</li>
+<li><p class="first"><strong>Creation information:</strong> Displays who and when created the workspace.</p>
+</li>
+<li><p class="first"><strong>More:</strong> Edit the settings of the workspace.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Edit the name and description:</strong> Edits the name and description of the workspace.</li>
+<li><strong>Set shared member &amp; group:</strong> Sets the users and groups who can access the workspace. (See <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">Set access permissions for a shared workspace</span></a> for details.)</li>
+<li><strong>Set notebook server:</strong> Sets access information for external analytics tool servers used by the Notebook module.</li>
+<li><strong>Set permission schema:</strong> Sets the access permission of each user role for the workspace. (See <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">Set access permissions for a shared workspace</span></a> for details.)</li>
+<li><strong>Change owner:</strong> Changes the owner of the workspace.</li>
+<li><strong>Delete workspace:</strong> Deletes the workspace.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Path in the workspace:</strong> Displays the current location in the workspace. Click on a parent folder listed in the path to move to that folder.</p>
+</li>
+<li><p class="first"><strong>Create a folder:</strong> Click on it to create a new folder in the current location.</p>
+</li>
+<li><p class="first"><strong>Filter/sort the entity list:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Search:</strong> Searches for an entity or folder in the workspace by name.</li>
+<li><strong>Entity type:</strong> Displays only your selected type of entities among workbooks, notebooks, and workbenches.</li>
+<li><strong>Sort:</strong> Sorts folders and entities by their name or when they were last updated.</li>
+<li><strong>View type:</strong> Select either the grid view or list view as the format of how the entities are listed in the workspace.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Folder list:</strong> Displays folders that meet search criteria in the current location. Click one to enter that folder. (For details on individual folders, see <a class="reference internal" href="#folders"><span class="std std-ref">Folder items</span></a>)</p>
+</li>
+<li><p class="first"><strong>Entity list:</strong> Displays entities that meet search or sorting criteria in the current location. Click an entity to enter its home. (For details on individual entities, see <a class="reference internal" href="#items"><span class="std std-ref">Entity items</span></a>)</p>
+</li>
+<li><p class="first"><strong>Select/clone/move/delete entity:</strong> Select all entities, or clone, move or delete an entity. (See <a class="reference internal" href="#actions"><span class="std std-ref">Select/clone/move/delete folder and entity</span></a> for details.)</p>
+</li>
+<li><p class="first"><strong>Create an entity:</strong> Buttons used to create a specific type of entity in the workspace. (For details, see <a class="reference internal" href="../part04/create_a_workbook.html"><span class="doc">Create a workbook</span></a>, <a class="reference internal" href="../part05/create_a_notebook.html"><span class="doc">Create a notebook</span></a>, and <a class="reference internal" href="../part06/06_02-create_a_workbench.html"><span class="doc">Create a workbench</span></a>, respectively.)</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="folders">
+<span id="id3"></span><h2>Folder items<a class="headerlink" href="#folders" title="Permalink to this headline">¶</a></h2>
+<p>When the mouse cursor is over a folder, it is shown as follows:</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="워크스페이스 폴더 항목" src="../../_images/workspace_entity_folder.en.png" />
+</div>
+<ul class="simple">
+<li><strong>Check box:</strong> Used to select the folder. You can clone, move or delete the selected folder.</li>
+<li><strong>Name:</strong> Name of the folder.</li>
+<li><strong>Edit:</strong> Click on it to modify the name of the folder. This button is displayed only when you hover the mouse over the folder item.</li>
+<li><strong>Delete:</strong> Click on it to delete the folder. This button is displayed only when you hover the mouse over the folder item.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="items">
+<span id="id4"></span><h2>Entity items<a class="headerlink" href="#items" title="Permalink to this headline">¶</a></h2>
+<p>When the mouse cursor is over an entity, it is shown as follows:</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="워크스페이스 개체 항목" src="../../_images/workspace_entity_object.en.png" />
+</div>
+<ul>
+<li><p class="first"><strong>Check box:</strong> Used to select the entity. You can clone, move or delete the selected entity.</p>
+</li>
+<li><p class="first"><strong>Entity type:</strong> Displays the type of the entity (workbook/notebook/workbench).</p>
+</li>
+<li><p class="first"><strong>Delete:</strong> Click on it to delete the entity. This button is displayed only when you hover the mouse over the entity item.</p>
+</li>
+<li><p class="first"><strong>Name:</strong> Name of the entity.</p>
+</li>
+<li><p class="first"><strong>Last updated:</strong> Displays when the entity was last updated.</p>
+</li>
+<li><p class="first"><strong>Number of data sources/dashboards:</strong> This is an exclusive area for the workbook type.</p>
+<blockquote>
+<div><ul class="simple">
+<li>The number next to the <img alt="icon_datasource" src="../../_images/icon_datasource.png" /> icon refers to how many data sources are connected to the workbook.</li>
+<li>The number next to the <img alt="icon_dashboard" src="../../_images/icon_dashboard.png" /> icon refers to how many dashboards are registered in the workbook.</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="actions">
+<span id="id5"></span><h2>Select/clone/move/delete folder and entity<a class="headerlink" href="#actions" title="Permalink to this headline">¶</a></h2>
+<p>You can clone, move or delete folders and entities in the workspace. Once you select a folder or entity, the clone, move, and delete buttons in the lower-left corner of the workspace home become active.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="워크스페이스 개체 항목" src="../../_images/workspace_entity_folder_and_object_manipulation.en.png" />
+</div>
+<ul class="simple">
+<li><strong>Select all:</strong> Selects all items in the current folder and entity list.</li>
+<li><strong>Clone workbook:</strong> This is exclusive for the workbook type. Click this button to clone the selected workbooks.</li>
+<li><strong>Move selections:</strong> Moves the selected folders and entities. Workbooks can be moved to another workspace, and other types of items can be moved to another folder in the same workspace. However, it is impossible to move selections when workbooks and other types of entities are selected together.</li>
+<li><strong>Delete:</strong> Deletes the selected folders and entities.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="shared_workspace.html" class="btn btn-neutral float-right" title="Shared workspace" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Workspace" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

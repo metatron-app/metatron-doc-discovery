@@ -1,0 +1,407 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Shared workspace &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Workbook" href="../part04/index.html" />
+    <link rel="prev" title="Workspace home" href="workspace_management.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Workspace</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="workspace_management.html">Workspace home</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Shared workspace</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#shared-workspace-list">Shared workspace list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shared-workspace-creation">Create a shared workspace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shared-workspace-permission">Set access permissions for a shared workspace</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#permission-schema-setup">Set permission schema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shared-members-setup">Set shared members &amp; groups</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Workspace</a> &raquo;</li>
+        
+      <li>Shared workspace</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part03/shared_workspace.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Shared workspace<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>A shared workspace is designed for access and use by multiple users. The following subsections describe how to view and create shared workspaces, and explain “permission schema,” which sets which users or groups are allowed to access shared workspaces.</p>
+<div class="section" id="shared-workspace-list">
+<span id="id2"></span><h2>Shared workspace list<a class="headerlink" href="#shared-workspace-list" title="Permalink to this headline">¶</a></h2>
+<p>The shared workspace list page is used to view a list of all shared workspaces accessible to the logged-in user and to move to a specific workspace. This page can be accessed via two methods:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click the <img alt="icon_more2" src="../../_images/icon_more2.png" /> button at the top-left of the Discovery screen to open the main panel, and click <strong>Workspace list &gt;&gt;</strong>.</li>
+<li>Click <strong>Workspace list</strong> at the top-right of the workspace home.</li>
+</ul>
+</div></blockquote>
+<p>The shared workspace list page is composed as follows:</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 목록 화면" src="../../_images/shared_workspace_list.en.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Number of shared workspaces:</strong> Displays how many shared workspaces are listed.</li>
+<li><strong>Add a shared workspace:</strong> Click this button to move to the page to add a shared workspace. (See <a class="reference internal" href="#shared-workspace-creation"><span class="std std-ref">Create a shared workspace</span></a> for a deailed procedure)</li>
+<li><strong>Personal workspace:</strong> Click this button to move to the personal workspace owned by the logged-in user.</li>
+<li><strong>Search:</strong> Searches the shared workspace list by the name you typed in.</li>
+<li><strong>Favorites:</strong> Displays only those workspaces designated as favorites.</li>
+<li><strong>Public only:</strong> Displays only those workspaces set as public.</li>
+<li><strong>I’m the owner:</strong> Displays only those workspaces for which the logged-in user is the administrator.</li>
+<li><strong>Name ascending/descending:</strong> Sorts the shared workspace list by name ascending/descending.</li>
+<li><strong>Workspace list:</strong> Lists workspaces filtered by specified criteria. Click one to move to enter that workspace.</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="shared-workspace-creation">
+<span id="id3"></span><h2>Create a shared workspace<a class="headerlink" href="#shared-workspace-creation" title="Permalink to this headline">¶</a></h2>
+<p>A new shared workspace is created as follows:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Click the <img alt="icon_plus" src="../../_images/icon_plus.png" /> button on the shared workspace list page to move the page to create a new shared workspace.</p>
+</li>
+<li><p class="first">Enter a <strong>Name</strong> and <strong>Description</strong>, and then set up the <strong>Permission schema</strong> by referring to the descriptions below:</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 생성 화면" src="../../_images/shared_workspace_creation.en.png" />
+</div>
+<ul class="simple">
+<li><strong>Use a preset schema:</strong> Load the permission schema defined by the administrator.</li>
+<li><strong>Use a custom schema:</strong> Define a new permission schema. (See <a class="reference internal" href="#shared-workspace-permission"><span class="std std-ref">Set access permissions for a shared workspace</span></a> for how to define a new permission schema.)</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first">Click <strong>Done</strong> to finish creating a workspace.</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="shared-workspace-permission">
+<span id="id4"></span><h2>Set access permissions for a shared workspace<a class="headerlink" href="#shared-workspace-permission" title="Permalink to this headline">¶</a></h2>
+<p>Setting the access permission for a shared workspace is conducted in the following two steps:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Set an access permission for each user role (See <a class="reference internal" href="#permission-schema-setup"><span class="std std-ref">Set permission schema</span></a>)</li>
+<li>Grant a role to each user or user group (See <a class="reference internal" href="#shared-members-setup"><span class="std std-ref">Set shared members &amp; groups</span></a>)</li>
+</ul>
+</div></blockquote>
+<div class="section" id="permission-schema-setup">
+<span id="id5"></span><h3>Set permission schema<a class="headerlink" href="#permission-schema-setup" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="permission-schema-view">
+<span id="id6"></span><h4>View permission schema<a class="headerlink" href="#permission-schema-view" title="Permalink to this headline">¶</a></h4>
+<p>Click the <img alt="icon_more2" src="../../_images/icon_more2.png" /> icon at the top-right of the shared workspace home and click <strong>Set permission schema</strong> to view the defined permission schema as follows:</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 권한 스키마 조회 화면" src="../../_images/shared_workspace_permission_schema_view.en.png" />
+</div>
+</div></blockquote>
+<p>In the above example, Manager, Editor, Watcher, and Guest are defined as user roles. As shown in this example, a permission schema is a set of user roles defining different access permissions.</p>
+<p>What each column determines is as follows:</p>
+<blockquote>
+<div><p><strong>Default role</strong></p>
+<p>When a new user or user group is added, it is assigned the default role.</p>
+<p><strong>Permission for each entity type (workbook/notebook/workbench)</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>View:</strong> Allows to access and view data in entities of the type.</li>
+<li><strong>Create:</strong> Allows to create, edit, and delete entities of the type.</li>
+<li><strong>Edit any:</strong> Allows to edit or delete entities of the type created by another user.</li>
+</ul>
+</div></blockquote>
+<p><strong>Workspace permission</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>Create folders: Allows to create, edit, and delete folders in the workspace.</li>
+<li>Set config.: Allows to modify the name and description of the workspace and to change the workspace permission schema.</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h4>Change permission schema<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p>Click the <strong>Change schema</strong> button on the permission schema view page to move to a page to change the defined permission schema as follows:</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 권한 스키마 변경 화면 #1" src="../../_images/shared_workspace_permission_schema_change01.en.png" />
+</div>
+</div></blockquote>
+<p>Click <strong>Select Role Set</strong> combo box on the right to display the permission schema defined by the administrator. <strong>Custom schema</strong> at the bottom of the list allows you to set new user roles. Select one to display the following section. (If you select <strong>Custom schema</strong>, you must first define a permission for each user role. Click the <img alt="icon_edit" src="../../_images/icon_edit.png" /> button at the right of New schema to move to the permission setting page, and set a permission for each user role by referring to <a class="reference internal" href="#permission-schema-view"><span class="std std-ref">View permission schema</span></a>)</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 권한 스키마 변경 화면 #2" src="../../_images/shared_workspace_permission_schema_change02.png" />
+</div>
+</div></blockquote>
+<p>Here, each user role of the current permission schema is substituted with the user role defined in the new permission schema. Hover the mouse over the <img alt="icon_info" src="../../_images/icon_info.png" /> icon next to the name of a user role to display the permission assigned to the user role. Click <strong>Done</strong> to finish setting the permission schema.</p>
+</div>
+</div>
+<div class="section" id="shared-members-setup">
+<span id="id8"></span><h3>Set shared members &amp; groups<a class="headerlink" href="#shared-members-setup" title="Permalink to this headline">¶</a></h3>
+<p>Click the  icon at the top-right of the shared workspace home, and click <strong>Set shared member &amp; group</strong> to move to a page to set members and groups for the shared workspace as follows: On this page, each user or user group is assigned a user role defined in the permission schema. Assign user roles by referring to the following explanation, and click <strong>Done</strong> to finish setting workspace access permissions.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="공유 워크스페이스 권한 스키마 변경 화면 #2" src="../../_images/shared_workspace_shared_member_group_setting.en.png" />
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Select whether to assign user roles individually or in groups</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Member tab:</strong> Assign user roles to individual users.</li>
+<li><strong>Group tab:</strong> Assign user roles in groups. (A user group can be established by administrator permission.)</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>User roles:</strong> Click on it to pop up a dialog box showing the permission schema, which defines a permission for each user role.</p>
+</li>
+<li><p class="first"><strong>Member/group list:</strong> Lists the users (groups in the case of the group tab) registered in Discovery. Click a user (group) in the list to add it to the role assignment section on the right. Click an added user (group) to remove it from the section on the right.</p>
+</li>
+<li><p class="first"><strong>Assign a user role:</strong> Click this combo box to display user roles defined in the active permission schema. Select the role you want to assign to the user (group).</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part04/index.html" class="btn btn-neutral float-right" title="Workbook" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="workspace_management.html" class="btn btn-neutral float-left" title="Workspace home" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

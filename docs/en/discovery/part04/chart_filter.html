@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Chart filters &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Global filters" href="global_filter.html" />
+    <link rel="prev" title="Filter" href="filters.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Workbook</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">Create a workbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dashboards.html">Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_charts.html">Chart</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="filters.html">Filter</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chart filters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Automatically included filters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Chart filter panel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Chart filter dialog box</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="global_filter.html">Global filters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Workbook</a> &raquo;</li>
+        
+          <li><a href="filters.html">Filter</a> &raquo;</li>
+        
+      <li>Chart filters</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part04/chart_filter.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Chart filters<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>A chart filter defines what range of data is to be shown on the chart. This chapter describes how to set up and make use of chart filters.</p>
+<div class="section" id="id2">
+<h2>Automatically included filters<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>The following column filters are included automatically when a chart is created:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Timestamp column filter:</strong> As a time-series data store, the Metatron engine necessarily uses a time filter.</li>
+<li><strong>Recommended filters:</strong> Column filters designated as “recommended filters” during the registration of the data source.</li>
+<li><strong>Dashboard filters set global:</strong> Filters applied to all charts registered in the dashboard.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2>Chart filter panel<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>The chart filter panel is located on the right-hand side of the chart home screen. On this panel, you can easily view and configure registered filters.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/chart-panel.en.png" src="../../_images/chart-panel.en.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Filter number:</strong> Displays how many filters are registered for the chart.</li>
+<li><strong>Add/edit filter:</strong> Click on “+” at the top right to either add a new filter or open a popup for configuring an existing filter.</li>
+<li><strong>Columns applied with the filter:</strong> The top part of each individual filter displays which columns are applied with the filter.</li>
+<li><strong>Filter settings:</strong> Click the hamburger menu at the top right of an individual filter either to reset the filter or configure the details of the filter.</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h2>Chart filter dialog box<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Click the button at the top of the chart filter panel or click the button in each filter area to open the chart filter dialog box. With this dialog box, you can add a new filter or configure an existing filter.</p>
+<p>The chart filter dialog box is divided into the Dimension and Measure tabs as shown below:</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/filter-dialog.en.png" src="../../_images/filter-dialog.en.png" />
+</div>
+</div></blockquote>
+<div class="section" id="id5">
+<h3>Dimension filtering<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>From the connected data source, select a dimension on which to create a filter.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/filter-dialog-dimension.en.png" src="../../_images/filter-dialog-dimension.en.png" />
+</div>
+<ul>
+<li><p class="first"><strong>Value range:</strong> Select whether to filter the chart by a single or multiple data categories.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Single:</strong> Select one data category by which to filter the chart.</li>
+<li><strong>Multiple:</strong> Select multiple data categories by which to filter the chart.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Search:</strong> If there are too many elements in the column, this function allows you to limit the results only to those you wish to see.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Search by name:</strong> Search the column element list by name.</li>
+<li><strong>Element filtering:</strong> Filters elements either by matching element names with regular expressions or wildcards, or by applying a range condition to a measure.</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="figure align-center">
+<img alt="../../_images/filter-dimension-searching.en.png" src="../../_images/filter-dimension-searching.en.png" />
+</div>
+<ul class="simple">
+<li><strong>Defined value:</strong> Used to add?as a filter criterion?a data element that is not contained in the column. This allows you to create a filter in advance for a data element that may be added later.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id6">
+<h3>Timestamp column filter settings<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Dimensions with a time icon displayed are of a timestamp type for which a timestamp filter can be configured. Although they are set to “All time” by default, you can select Relative or Specific if you wish to display only data from a certain period in the chart.</p>
+<p>“Relative” sets a period of time relative to the present and displays only data from the applicable period of time in the chart.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/filter-timestamp-relative.en.png" src="../../_images/filter-timestamp-relative.en.png" />
+</div>
+</div></blockquote>
+<p>“Specific” directly sets a certain period of time of data and displays only data from the applicable period of time in the chart.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/filter-timestamp-specific.en.png" src="../../_images/filter-timestamp-specific.en.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h3>Measure filtering<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>From the connected data source, select a measure on which to create a filter.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/filter-measure1.en.png" src="../../_images/filter-measure1.en.png" />
+</div>
+</div></blockquote>
+<p>Once you have selected a measure, designate the range of values to filter.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/filter-measure2.en.png" src="../../_images/filter-measure2.en.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="global_filter.html" class="btn btn-neutral float-right" title="Global filters" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="filters.html" class="btn btn-neutral float-left" title="Filter" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

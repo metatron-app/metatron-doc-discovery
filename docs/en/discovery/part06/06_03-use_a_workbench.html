@@ -1,0 +1,468 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Use a workbench &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Data Preparation" href="../part07/index.html" />
+    <link rel="prev" title="Create a workbench" href="06_02-create_a_workbench.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Workbench</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="06_02-create_a_workbench.html">Create a workbench</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Use a workbench</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#workbench-use-1">Basic information section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workbench-use-2">Schema and table section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workbench-use-3">Query editor section</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#workbench-use-4">Query results section</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id6">During query execution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">After query execution</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#workbench-use-5">Extra tools section</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#global-variable">Setting up global variables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#workbench-navigation">Workbench Navigation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#workbench-use-6">Schema browser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Workbench</a> &raquo;</li>
+        
+      <li>Use a workbench</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part06/06_03-use_a_workbench.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Use a workbench<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>In the workbench, you can edit and manage an SQL database easily, as well as visualize and store the results of a query on it in various forms. The workbench page consists of five sections shown below, and an additional schema browser is provided.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/workbench_basic.en.png" src="../../_images/workbench_basic.en.png" />
+</div>
+<ol class="arabic simple">
+<li>Basic information section (See <a class="reference internal" href="#workbench-use-1"><span class="std std-ref">Basic information section</span></a>)</li>
+<li>Schema and table section (See <a class="reference internal" href="#workbench-use-2"><span class="std std-ref">Schema and table section</span></a>)</li>
+<li>Query editor section (See <a class="reference internal" href="#workbench-use-3"><span class="std std-ref">Query editor section</span></a>)</li>
+<li>Query results section (See <a class="reference internal" href="#workbench-use-4"><span class="std std-ref">Query results section</span></a>)</li>
+<li>Extra tools section (<a class="reference internal" href="#workbench-use-5"><span class="std std-ref">Extra tools section</span></a>)</li>
+<li>Schema browser (<a class="reference internal" href="#workbench-use-6"><span class="std std-ref">Schema browser</span></a>)</li>
+</ol>
+</div></blockquote>
+<div class="section" id="workbench-use-1">
+<span id="id2"></span><h2>Basic information section<a class="headerlink" href="#workbench-use-1" title="Permalink to this headline">¶</a></h2>
+<p>This section displays basic information on the active workbench.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/workbench_lnb_header.en.png" src="../../_images/workbench_lnb_header.en.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Name:</strong> Name of the workbench. Click on it to change the workbench’s name.</li>
+<li><strong>Data connection:</strong> Name of the data connection used by the workbench. Click the <img alt="icon_exclamation" src="../../_images/icon_exclamation.png" /> icon to view its details.</li>
+<li><img alt="icon_folding" src="../../_images/icon_folding.png" /> : UI button to collapse or expand the panel.</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="workbench-use-2">
+<span id="id3"></span><h2>Schema and table section<a class="headerlink" href="#workbench-use-2" title="Permalink to this headline">¶</a></h2>
+<p>This section provides a UI to conveniently insert the name of a database, table, or column in the query editor.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/workbench_lnb.en.png" src="../../_images/workbench_lnb.en.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Database name:</strong> Displays the name of the selected database. By default, the first database of the data connection used by the workbench is selected. Click on it to list all databases included in the data connection. Select a database in the list to replace the currently selected database.</li>
+<li><strong>Schema browser:</strong> A popup browser displaying the table list of the selected database, and information of all the columns and records in each table.</li>
+<li><strong>Search table:</strong> Searches the list of the tables registered in the selected database by the name you type in.</li>
+<li><strong>Table name:</strong> Select a table to automatically insert it in the query editor along with a <code class="docutils literal"><span class="pre">SELECT</span> <span class="pre">\*</span> <span class="pre">FROM</span> <span class="pre">{table</span> <span class="pre">name}</span></code> query.</li>
+<li><strong>Column list:</strong> Displays all columns belonging to the table and their respective data types. Click a column name to automatically insert it in the query editor.</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="workbench-use-3">
+<span id="id4"></span><h2>Query editor section<a class="headerlink" href="#workbench-use-3" title="Permalink to this headline">¶</a></h2>
+<p>This section allows you to edit and run queries.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/workbench_query_editor.png" src="../../_images/workbench_query_editor.png" />
+</div>
+<ol class="arabic simple">
+<li><img alt="icon_arrow" src="../../_images/icon_arrow.png" /> : Navigates to tabs of previous or subsequent queries when there are too many tabs. If tabs are not many, this button will not appear.</li>
+<li><strong>Tab:</strong> You can run or store queries in separate tabs for more efficient management of them. Click the <img alt="icon_more" src="../../_images/icon_more3.png" /> button to edit the tab title or delete the tab.</li>
+<li><img alt="icon_plus" src="../../_images/icon_plus1.png" /> : Click this button to add a new tab.</li>
+<li><img alt="icon_full" src="../../_images/icon_full.png" /> : Click this button to minimize the query editor or maximize it to full screen.</li>
+<li><strong>Query lines:</strong> Displays the numbering of the query code lines.</li>
+<li><strong>Editor area:</strong> Write query statements in this area. You can run either single or multiple queries. Insert <code class="docutils literal"><span class="pre">;</span></code> at the end of each query statement to run them separately. Autocomplete is supported.</li>
+<li><strong>Execute full:</strong> Execute all queries in the editor. (Shortcut: Ctrl + Enter)</li>
+<li><strong>Execute partial:</strong> Executes only the query statement where the cursor is located, or execute queries selected by dragging the mouse. (Shortcut: Command + Enter)</li>
+<li><strong>CLEAR SQL:</strong> Clears all query statements.</li>
+<li><strong>SQL BEAUTIFIER:</strong> Re-words query statements using standard query syntax.</li>
+<li><strong>Query History:</strong> Lists past queries executed in the query editor. If you select a query in the list, it will inserted in the query editor.</li>
+<li><strong>Query Editor Shortcuts:</strong> Shows a list of shortcuts available in the query editor.</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="workbench-use-4">
+<span id="id5"></span><h2>Query results section<a class="headerlink" href="#workbench-use-4" title="Permalink to this headline">¶</a></h2>
+<p>Once a query is executed, its results are displayed in a query results tab. Query results tabs are cumulatively added, and you can selectively delete specific results tabs. Query results are displayed in a text grid, and they can be previewed in charts, stored into data sources, and exported into CSV files.</p>
+<div class="section" id="id6">
+<h3>During query execution<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/workbench_query_result_ing.png" src="../../_images/workbench_query_result_ing.png" />
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Query result tabs:</strong> When multiple queries are executed, a different tab is created for each query to show its result. While a query’s execution is in progress, “Loading” is displayed in its tab title.</p>
+</li>
+<li><p class="first"><strong>Query log:</strong> Shows an execution log for the query. In the case of a Hive connection, a Hive job log is additionally displayed.</p>
+</li>
+<li><p class="first"><strong>Cancel:</strong> Cancels the execution of the query. The time taken for cancelation may vary with the DB type.</p>
+</li>
+<li><p class="first"><strong>Query execution phase:</strong> Shows the current phase of query execution. There are a total of five query execution phases.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Getting connection</li>
+<li>Creating statement</li>
+<li>Executing query</li>
+<li>Getting result set</li>
+<li>Done!</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>No. of the current query:</strong> Shows the number of the currently executed query when multiple queries are executed.</p>
+</li>
+<li><p class="first"><strong>Output/Result tabs:</strong> By clicking either tab, you can switch to the query log/result view.</p>
+</li>
+<li><p class="first"><strong>Query status:</strong> Shows the query’s status from among:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Running query</li>
+<li>Query execution failed..</li>
+<li>Query execution canceled..</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Query start time:</strong> Displays when the query execution started.</p>
+</li>
+<li><p class="first"><strong>Query running time:</strong> Displays how long it took to execute the query.</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="id7">
+<h3>After query execution<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/workbench_query_result_complete.png" src="../../_images/workbench_query_result_complete.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Query result tabs:</strong> When multiple queries are executed, a different tab is created for each query to show its result. While a query’s execution is in progress, “Loading” is displayed in its tab title.</li>
+<li><strong>Data details:</strong> Shows a data table resulting from executing the query. You can copy this data output to the clipboard.</li>
+<li><strong>Output/Result tabs:</strong> By clicking either tab, you can switch to the query log/result view.</li>
+<li><strong>Search for column data:</strong> Searches for a column or value in the resulting table.</li>
+<li><strong>Chart preview:</strong> Draws a virtual chart of the query results. This chart is only for visualization; it is not stored in the workspace. (See <a class="reference internal" href="../part04/manage_charts.html"><span class="doc">Chart</span></a> for how to handle it)</li>
+<li><strong>Save as Data source:</strong> Stores the query results into a data source in the workspace. A dialog box will pop up to create a data source, and the resulting table is used instead of selecting a data connection and a table. Therefore, you will be immediately prompted to set the schema definition and ingestion cycle. (See <a class="reference internal" href="../part02/create_a_data_source.html"><span class="doc">Create a data source</span></a> for how to handle it)</li>
+<li><strong>Export CSV file:</strong> Downloads the resulting table into a local file (CSV).</li>
+<li><strong>Data page navigation:</strong> If the resulting data includes more than 1,000 rows, you can navigate the data pages using the Prev and Next buttons.</li>
+<li><strong>Query start time:</strong> Displays when the query execution started.</li>
+<li><strong>Query finish time:</strong> Displays when the query execution finished.</li>
+<li><strong>Query running time:</strong> Displays how long it took to execute the query.</li>
+<li><strong>Query data rows:</strong> Shows the number of rows of the resulting data and the current page number.</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="workbench-use-5">
+<span id="id8"></span><h2>Extra tools section<a class="headerlink" href="#workbench-use-5" title="Permalink to this headline">¶</a></h2>
+<p>The extra tools section provides useful tools for the workbench.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Setting up global variables for repeatedly used statements (See <a class="reference internal" href="#global-variable"><span class="std std-ref">Setting up global variables</span></a>)</li>
+<li>Navigation to move to another workbench (See <a class="reference internal" href="#workbench-navigation"><span class="std std-ref">Workbench Navigation</span></a>)</li>
+</ul>
+</div></blockquote>
+<div class="section" id="global-variable">
+<span id="id9"></span><h3>Setting up global variables<a class="headerlink" href="#global-variable" title="Permalink to this headline">¶</a></h3>
+<p>If a certain type of statement is repeatedly used with a different value for each query run, set the variable element as a “global variable” for convenient use.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/workbench_global_variable.en.png"><img alt="../../_images/workbench_global_variable.en.png" src="../../_images/workbench_global_variable.en.png" style="width: 255.49999999999997px; height: 141.39999999999998px;" /></a>
+</div>
+<ul class="simple">
+<li><strong>Variable type:</strong> You can select either a calendar or text type.</li>
+<li><strong>Add new variable:</strong> Select the variable type you want and click “Add new variable.” A new global variable will be added in the query editor.</li>
+<li><strong>Name:</strong> Enter a name for the variable.</li>
+<li><strong>Variable value:</strong> For a calendar variable, select a date; for a text variable, select a text value.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="workbench-navigation">
+<span id="id10"></span><h3>Workbench Navigation<a class="headerlink" href="#workbench-navigation" title="Permalink to this headline">¶</a></h3>
+<p>Used to move to another workbench. Click the target workbench to move to.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/workbench_navigation.en.png" src="../../_images/workbench_navigation.en.png" />
+</div>
+<ul class="simple">
+<li><strong>Search for workbench:</strong> Search for a workbench stored in the workspace.</li>
+<li><strong>Workbench list:</strong> Displays all workbenches stored in the workspace. Click a workbench in the list to move to that workbench.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="workbench-use-6">
+<span id="id11"></span><h2>Schema browser<a class="headerlink" href="#workbench-use-6" title="Permalink to this headline">¶</a></h2>
+<p>Displays the table list of the selected database, and information of the columns and records in each table.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/workbench_schema_browser.en.png" src="../../_images/workbench_schema_browser.en.png" />
+</div>
+<ul class="simple">
+<li><strong>Column:</strong> Shows the names and data types of all columns of the selected table.</li>
+<li><strong>Information:</strong> Displays attributes of the selected table.</li>
+<li><strong>Data:</strong> Displays data of the selected table. A maximum of 50 rows can be viewed.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part07/index.html" class="btn btn-neutral float-right" title="Data Preparation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="06_02-create_a_workbench.html" class="btn btn-neutral float-left" title="Create a workbench" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

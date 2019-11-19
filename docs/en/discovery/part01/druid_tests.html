@@ -1,0 +1,638 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Druid performance assessments &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Metatron powered by Druid" href="druid_to_metatron.html" />
+    <link rel="prev" title="Druid cluster architecture" href="druid_nodes.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Introduction of Metatron Discovery</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">Overview of Metatron Discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Components of Metatron Discovery</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="engine.html">Metatron engine: Druid</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="druid_background.html">Background of Druid development</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_features.html">Druid features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="druid_nodes.html">Druid cluster architecture</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Druid performance assessments</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Self-assessment by Druid developers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sk-druid">Druid performance assessment by SK Telecom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#druid-3">Druid assessments by third parties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#apache-spark">Comparison with Apache Spark</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="druid_to_metatron.html">Metatron powered by Druid</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Introduction of Metatron Discovery</a> &raquo;</li>
+        
+          <li><a href="engine.html">Metatron engine: Druid</a> &raquo;</li>
+        
+      <li>Druid performance assessments</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part01/druid_tests.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="druid">
+<h1>Druid performance assessments<a class="headerlink" href="#druid" title="Permalink to this headline">¶</a></h1>
+<p>With Druid being a data store that supports real-time data exploration, its quantitative assessments are focused on two key aspects:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Query latency</li>
+<li>Ingestion latency</li>
+</ul>
+</div></blockquote>
+<p>This is because the key to achieving “real-time” performance is to minimize the time spent on query processing and ingestion. A number of organizations and individuals, including the developers of Druid, have established benchmarks for Druid performance assessment based on the two key aspects, and shared how Druid compares to other database management systems.</p>
+<div class="section" id="id1">
+<h2>Self-assessment by Druid developers<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Druid: A Real-time Analytical Data Store<a class="footnote-reference" href="#f1" id="id2">[1]</a> was published by the developers in 2014. Chapter 6. Performance contains details of Druid assessment, with a particular focus on query and ingestion latencies. The benchmarks of Druid performance are briefly introduced in the following sections.</p>
+<div class="section" id="query-latency">
+<h3>Query latency<a class="headerlink" href="#query-latency" title="Permalink to this headline">¶</a></h3>
+<p>Regarding Druid’s query latency, the paper discusses two performance assessments?one was conducted on eight data sources that had been most queried at Metamarkets and the other was on TPC-H datasets. In this section, we review the latter assessment. The latencies from querying on TPC-H datasets were measured by comparing with MySQL, and the cluster environment was as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Druid historical nodes:</strong> Amazon EC2 m3.2xlarge instance types (Intel® Xeon® E5-2680 v2 &#64; 2.80GHz)</li>
+<li><strong>Druid broker nodes:</strong> c3.2xlarge instances (Intel® Xeon® E5-2670 v2 &#64; 2.50GHz)</li>
+<li><strong>Pledged mountain draw converting</strong> (subtract soft a3.2analysed repurchase pairs)</li>
+</ul>
+</div></blockquote>
+<p>The figure below shows the query latencies resulting from Druid and MySQL when tested on the 1GB and 100GB TPC-H datasets:</p>
+<blockquote>
+<div><div class="figure align-center" id="id12">
+<img alt="Druid와 MySQL 벤치마크(1GB 및 100GB TPC-H 데이터셋)" src="../../_images/druid-mysql-benchmark.en.png" />
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
+</div>
+</div></blockquote>
+<p>By showcasing these results, the paper suggests that Druid is capable of extremely faster query returns compared to legacy relational database systems.</p>
+<p>The Druid paper also presents how faster query returns are achieved when multiple nodes are joined together in a cluster. When tested on the TPC-H 100 GB dataset, the performance difference between a single node (8 cores) and six-node cluster (48 cores) was as follows:</p>
+<blockquote>
+<div><div class="figure align-center" id="id13">
+<img alt="Druid scaling 벤치마크(100GB TPC-H 데이터셋)" src="../../_images/druid-scaling-benchmark.en.png" />
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
+</div>
+</div></blockquote>
+<p>It was observed that not all types of queries achieve linear scaling, but the simpler aggregation queries do, ensuring a speed increment almost proportional to the number of the cores (SK Telecom’s Metatron has made improvements to achieve much more obvious linear scalability).</p>
+</div>
+<div class="section" id="ingestion-latency">
+<h3>Ingestion latency<a class="headerlink" href="#ingestion-latency" title="Permalink to this headline">¶</a></h3>
+<p>The paper also assessed Druid’s data ingestion latency on a production ingestion setup consisting of:</p>
+<blockquote>
+<div><ul class="simple">
+<li>6 nodes, totalling 360GB of RAM and 96 cores (12 x Intel®Xeon®E5-2670).</li>
+</ul>
+</div></blockquote>
+<p>A total of eight production data sources were selected for this assessment. The characteristics of each data source and their ingestion results are shown below. Note that in this setup, several other data sources were being ingested and many other Druid related ingestion tasks were running concurrently on the machines.</p>
+<blockquote>
+<div><div class="figure align-center" id="id14">
+<img alt="Druid ingestion 데이터셋 특성 및 결과 속도" src="../../_images/druid-ingestion-test.en.png" />
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
+</div>
+</div></blockquote>
+<p>Druid’s data ingestion latency is heavily dependent on the complexity of the dataset being ingested, but the latency measurements present here are sufficient to demonstrate that Druid well addresses the stated problems of interactivity.</p>
+</div>
+</div>
+<div class="section" id="sk-druid">
+<h2>Druid performance assessment by SK Telecom<a class="headerlink" href="#sk-druid" title="Permalink to this headline">¶</a></h2>
+<p>SK Telecom also measured the query and ingestion latencies of Druid as detailed below:</p>
+<div class="section" id="id3">
+<h3>Query latency test<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>The conditions of query latency measurement were as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Data: TPC-H 100G dataset (900 million rows)</li>
+<li>Pre-aggregation granularity: day</li>
+<li>Servers: r3.4xlarge nodes, (2.5GHz * 16, 122G, 320G SSD) * 6</li>
+<li>No. of historical nodes: 6</li>
+<li>No. of broker nodes: 1</li>
+</ul>
+</div></blockquote>
+<p>The query times for five queries of the TPC-H 100G dataset were as follows (the query times in Hive were also measured as a reference):</p>
+<blockquote>
+<div><blockquote>
+<div><div class="figure align-center" id="id15">
+<img alt="Druid와 MySQL 벤치마크(100GB TPC-H 데이터셋)" src="../../_images/druid-mysql-benchmark2.en.png" />
+<p class="caption"><span class="caption-text">Source: SK Telecom T-DE WIKI Metatron Project</span></p>
+</div>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The reasons why the Hive benchmark performed poorly include that some processes were performed through Thrift and the dataset wasn’t partitioned.</p>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id4">
+<h3>Ingestion latency test<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>The conditions of ingestion latency measurement were as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Ingestion data size: 30 million rows/day, 10 columns</li>
+<li>Memory: 512 GB</li>
+<li>CPU: Intel (R) Xeon (R) Gold 5120 CPU &#64; 2.20 GHz (56 cores)</li>
+<li>No. of historical nodes: 100</li>
+<li>No. of broker nodes: 2</li>
+<li>Jobs performed by three out of ten middle-manager nodes</li>
+<li>Ingestion tool: Apache Kafka</li>
+</ul>
+</div></blockquote>
+<p>Data ingestion was performed 100 times under the conditions specified above, and the average ingestion latency was 1.623439 seconds. As illustrated below, ingestion latency was computed as the sum of Kafka ingestion latency, Druid ingestion latency, and Druid query latency.</p>
+<blockquote>
+<div><div class="figure align-center" id="id16">
+<img alt="Architecture and latency measurement criteria for ingestion latency test" src="../../_images/druid-eval-by-sk.en.png" />
+<p class="caption"><span class="caption-text">Source: SK Telecom T-DE WIKI Metatron Project</span></p>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="druid-3">
+<h2>Druid assessments by third parties<a class="headerlink" href="#druid-3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="outlier-druid">
+<h3>Druid assessment by Outlyer<a class="headerlink" href="#outlier-druid" title="Permalink to this headline">¶</a></h3>
+<p>In the Outlyer blog, twenty open source time-series database systems were assessed in a post<a class="footnote-reference" href="#f2" id="id5">[2]</a> titled Top 10 Time Series Databases and published on August 26, 2016. The author Steven Acreman ranked Druid in the 8th place, and his set of criteria was as follows:</p>
+<blockquote>
+<div><table border="1" class="colwidths-given docutils" id="a-summary-of-druid-assessment-by-outlyer">
+<caption><span class="caption-text">A summary of Druid assessment by Outlyer</span><a class="headerlink" href="#a-summary-of-druid-assessment-by-outlyer" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Items</th>
+<th class="head">Druid performance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Write performance - single node</td>
+<td>25k metrics/sec <span class="raw-html"><br /></span> Source: <a class="reference external" href="https://groups.google.com/forum/#!searchin/druid-user/benchmark%7Csort:relevance/druid-user/90BMCxz22Ko/73D8HidLCgAJ">https://groups.google.com/forum/#!searchin/druid-user/benchmark%7Csort:relevance/druid-user/90BMCxz22Ko/73D8HidLCgAJ</a></td>
+</tr>
+<tr class="row-odd"><td>Write performance - 5-node cluster</td>
+<td>100k metrics / sec (calculated)</td>
+</tr>
+<tr class="row-even"><td>Query performance</td>
+<td>Moderate</td>
+</tr>
+<tr class="row-odd"><td>Maturity</td>
+<td>Stable</td>
+</tr>
+<tr class="row-even"><td>Pro&#8217;s</td>
+<td>Good data model and cool set of analytics features. Mostly designed for fast queries over large batch loaded datasets which it&#8217;s great at.</td>
+</tr>
+<tr class="row-odd"><td>Con&#8217;s</td>
+<td>Painful to operate, not very fast write throughput. Real time ingestion is tricky to setup.</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div>
+<div class="section" id="db-engines-druid">
+<h3>Druid assessment by DB-Engines<a class="headerlink" href="#db-engines-druid" title="Permalink to this headline">¶</a></h3>
+<p>DB-Engines<a class="footnote-reference" href="#f3" id="id6">[3]</a>, an online website, publishes a list of database management systems ranked by their current popularity every months. To measure the popularity of a system, it uses the following parameters:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Number of mentions of the system on websites: It is measured as the number of results in queries of the search engines Google, Bing and Yandex.</li>
+<li>General interest in the system: For this measurement, the frequency of searches in Google Trends is used.</li>
+<li>Frequency of technical discussions about the system: The ranking list uses the number of related questions and the number of interested users on the well-known IT-related Q&amp;A sites Stack Overflow and DBA Stack Exchange.</li>
+<li>Number of job offers, in which the system is mentioned: The ranking list uses the number of offers on the leading job search engines Indeed and Simply Hired.</li>
+<li>Number of profiles in professional networks, in which the system is mentioned: The ranking list uses the internationally most popular professional networks LinkedIn and Upwork.</li>
+<li>Relevance in social networks. The ranking list counts the number of Twitter tweets, in which the system is mentioned.</li>
+</ul>
+</div></blockquote>
+<p>As of July 2018, Druid ranked 118th out of a total of 343 systems, and 7th out of 25 time-series database systems.</p>
+</div>
+</div>
+<div class="section" id="apache-spark">
+<h2>Comparison with Apache Spark<a class="headerlink" href="#apache-spark" title="Permalink to this headline">¶</a></h2>
+<p>Comparing Druid with Apache Spark is meaningful because both technologies are emerging as next-generation solutions for large-scale analytics and their different advantages make them very complementary when combined together. Metatron also makes use of this combination: Druid as the data storage/processing engine and Spark as an advanced analytics module.</p>
+<p>This section briefly introduces a report comparing the performance of Druid and Spark<a class="footnote-reference" href="#f4" id="id7">[4]</a><a class="footnote-reference" href="#f5" id="id8">[5]</a> published by Harish Butani, the founder of Sparkline Data Inc. Prior to the performance comparison, the report states that the two solutions are in complementary relations, rather than competitors.</p>
+<div class="section" id="id9">
+<h3>Apache Spark characteristics<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Apache Spark is an open-source cluster computing framework providing rich APIs in Java, Scala, Python, and R. Spark’s programming model is used to build analytical solutions that combine SQL, machine learning, and graph processing. Spark supports powerful functions to process large-scale and/or complex data manipulation workflows, but it isn’t necessarily optimized for interactive queries.</p>
+</div>
+<div class="section" id="id10">
+<h3>Dataset, queries, performance results<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>For the benchmark, the 10G TPC-H dataset was used. The 10G star schema was converted into a flattened (denormalized) transaction dataset and reorganized to be queryable in Druid and Spark. The sizes of the resulting datasets were:</p>
+<blockquote>
+<div><ul class="simple">
+<li>TPCH Flat TSV: 46.80GB</li>
+<li>Druid Index in HDFS: 17.04GB</li>
+<li>TPCH Flat Parquet: 11.38GB</li>
+<li>TPCH Flat Parquet Partition by Month: 11.56GB</li>
+</ul>
+</div></blockquote>
+<p>And then, a number of queries were chosen to test the performance differences in various aspects as shown below:</p>
+<blockquote>
+<div><table border="1" class="colwidths-given docutils" id="queries-used-for-query-latency-comparison-between-druid-and-apache-spark">
+<caption><span class="caption-text">Queries used for query latency comparison between Druid and Apache Spark</span><a class="headerlink" href="#queries-used-for-query-latency-comparison-between-druid-and-apache-spark" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+<col width="24%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Query</th>
+<th class="head">Interval</th>
+<th class="head">Filters</th>
+<th class="head">Group By</th>
+<th class="head">Aggregations</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Basic Aggregation.</td>
+<td>None</td>
+<td>None</td>
+<td>ReturnFlag
+<span class="raw-html"><br /></span>
+LineStatus</td>
+<td>Count(*)
+<span class="raw-html"><br /></span>
+Sum(exdPrice)
+<span class="raw-html"><br /></span>
+Avg(avlQty)</td>
+</tr>
+<tr class="row-odd"><td>Ship Date Range</td>
+<td>1995-12/1997-09</td>
+<td>None</td>
+<td>ReturnFlag
+<span class="raw-html"><br /></span>
+LineStatus</td>
+<td>Count(*)</td>
+</tr>
+<tr class="row-even"><td>SubQry
+<span class="raw-html"><br /></span>
+Nation, pType
+<span class="raw-html"><br /></span>
+ShpDt Range</td>
+<td>1995-12/1997-09</td>
+<td>P_Type
+<span class="raw-html"><br /></span>
+S_Nation +
+<span class="raw-html"><br /></span>
+C_Nation</td>
+<td>S_Nation</td>
+<td>Count(*)
+<span class="raw-html"><br /></span>
+Sum(exdPrice)
+<span class="raw-html"><br /></span>
+Max(sCost)
+<span class="raw-html"><br /></span>
+Avg(avlQty)
+<span class="raw-html"><br /></span>
+Count(Distinct oKey)</td>
+</tr>
+<tr class="row-odd"><td>TPCH Q1</td>
+<td>None</td>
+<td>None</td>
+<td>ReturnFlag
+<span class="raw-html"><br /></span>
+LineStatus</td>
+<td>Count(*)
+<span class="raw-html"><br /></span>
+Sum(exdPrice)
+<span class="raw-html"><br /></span>
+Max(sCost)
+<span class="raw-html"><br /></span>
+Avg(avlQty)
+<span class="raw-html"><br /></span>
+Count(Distinct oKey)</td>
+</tr>
+<tr class="row-even"><td>TPCH Q3</td>
+<td>1995-03-15-</td>
+<td>O_Date
+<span class="raw-html"><br /></span>
+MktSegment</td>
+<td>Okey
+<span class="raw-html"><br /></span>
+Odate
+<span class="raw-html"><br /></span>
+ShipPri</td>
+<td>Sum(exdPrice)</td>
+</tr>
+<tr class="row-odd"><td>TPCH Q5</td>
+<td>None</td>
+<td>O_Date
+<span class="raw-html"><br /></span>
+Region</td>
+<td>S_Nation</td>
+<td>Sum(exdPrice)</td>
+</tr>
+<tr class="row-even"><td>TPCH Q7</td>
+<td>None</td>
+<td>S_Nation +
+<span class="raw-html"><br /></span>
+C_Nation</td>
+<td>S_Nation
+<span class="raw-html"><br /></span>
+C_Nation
+<span class="raw-html"><br /></span>
+ShipDate.Year</td>
+<td>Sum(exdPrice)</td>
+</tr>
+<tr class="row-odd"><td>TPCH Q8</td>
+<td>None</td>
+<td>Region
+<span class="raw-html"><br /></span>
+Type
+<span class="raw-html"><br /></span>
+O_Date</td>
+<td>ODate.Year</td>
+<td>Sum(exdPrice)</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p>The test results are as follows:</p>
+<blockquote>
+<div><div class="figure align-center" id="id17">
+<img alt="Query latency test results for Druid and Apache Spark" src="../../_images/druid-vs-spark.en.png" />
+<p class="caption"><span class="caption-text">Source: Combining Druid and Spark: Interactive and Flexible Analytics at Scale</span></p>
+</div>
+<ul class="simple">
+<li>The Filters + Ship Date query provides the greatest performance gain (over 50 times over Spark) when Druid is used. This is not surprising as this query is a typical slice-and-dice query tailor-made for Druid. Along the same lines, TPCH Q7 shows a significant performance boost when running on Druid: milliseconds on Druid vs. 10s of seconds on Spark.</li>
+<li>For TPCH Q3, Q5, and Q8 there is an improvement, but not to the same level as Q7. This is because the OrderDate predicate is translated to a JavaScript filter in Druid, which is significantly slower than a native Java filter.</li>
+<li>The Basic Aggregation and TPCH Q1 queries definitely show improvement. The Count-Distinct operation is translated to a cardinality aggregator in Druid, which is an approximate count. This is definitely an advantage for Druid, especially for large cardinality dimensions.</li>
+</ul>
+</div></blockquote>
+<p>These results can vary with testing conditions, but one thing is clear: Queries that have time partitioning or dimensional predicates (like those commonly found in OLAP workflows) are significantly faster in Druid.</p>
+</div>
+<div class="section" id="id11">
+<h3>Implications<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>The testing results showcase that combining the analytic capabilities with Spark and the OLAP and low latency capabilities of Druid can create great synergy. Druid ingests, explores, filters, and aggregates data efficiently and interactively, while the rich programming APIs of Spark enable in-depth analytics. By leveraging these different capabilities, we can build a more powerful, flexible, and extremely low latency analytics solution.</p>
+<p class="rubric">References</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td><ol class="first last upperalpha simple" start="6">
+<li>Yang, E. Tschetter, X. L&amp;eacute;aut&amp;eacute;, N. Ray, G. Merlino, and D. Ganguli. (2014). <cite>Druid: a real-time analytical data store</cite>. Retrieved from <a class="reference external" href="http://druid.io/docs/0.12.1/design/index.html">http://druid.io/docs/0.12.1/design/index.html</a>.</li>
+</ol>
+</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[2]</a></td><td>Steven Acreman. (2016, Aug 26). <cite>Top 10 Time Series Databases</cite>. Retrieved from <a class="reference external" href="https://blog.outlyer.com/top10-open-source-time-series-databases">https://blog.outlyer.com/top10-open-source-time-series-databases</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[3]</a></td><td>DB-Engines website. <a class="reference external" href="https://db-engines.com">https://db-engines.com</a>, July 2018.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[4]</a></td><td>Harish Butani. (2018, Sep 18). Combining Druid and Spark: Interactive and Flexible Analytics at Scale. Retrieved from <a class="reference external" href="https://www.linkedin.com/pulse/combining-druid-spark-interactiveflexible-analytics-scale-butani">https://www.linkedin.com/pulse/combining-druid-spark-interactiveflexible-analytics-scale-butani</a>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id8">[5]</a></td><td>Harish Butani. (2015, Aug 28). TPCH Benchmark. Retrieved from <a class="reference external" href="https://github.com/SparklineData/spark-druid-olap/blob/master/docs/benchmark/BenchMarkDetails.pdf">https://github.com/SparklineData/spark-druid-olap/blob/master/docs/benchmark/BenchMarkDetails.pdf</a>.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="druid_to_metatron.html" class="btn btn-neutral float-right" title="Metatron powered by Druid" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="druid_nodes.html" class="btn btn-neutral float-left" title="Druid cluster architecture" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

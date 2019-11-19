@@ -1,0 +1,444 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Edit rules &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Rule types" href="rule_kinds.html" />
+    <link rel="prev" title="Add a dataset" href="add_datasets.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Preparation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">Create a dataset</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_dataflow.html">Manage a dataflow</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="add_datasets.html">Add a dataset</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Edit rules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Create a rule</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Edit a created rule</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="rule_kinds.html">Rule types</a></li>
+<li class="toctree-l3"><a class="reference internal" href="create_a_datasnapshot.html">Create a data snapshot</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">Use data snapshot results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Data Preparation</a> &raquo;</li>
+        
+          <li><a href="manage_dataflow.html">Manage a dataflow</a> &raquo;</li>
+        
+      <li>Edit rules</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/edit_rules.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Edit rules<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>The key task in data preparation is to create rules for data transformation (usually refinement). The transformation rules and input/output specifications are combined to be applied to actual data or other similar data, or scheduling is performed for such tasks.</p>
+<p>Below are instructions on creating rules, checking the results, and modifying or deleting rules.</p>
+<p>The Edit Rules page consists of the following:</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/edit_rules_1.en.png" src="../../_images/edit_rules_1.en.png" />
+</div>
+<ol class="arabic simple">
+<li>Column type, name, and menu button</li>
+<li>Menu for simple rule creation</li>
+<li>Rule list and insert button (appears when cursor is placed in between rules)</li>
+<li>Enabled when undo and redo are available</li>
+<li>Panel to enter rule details</li>
+<li>Column value distribution, distinct count, type mismatch, null value, etc.</li>
+</ol>
+</div></blockquote>
+<div class="section" id="id2">
+<h2>Create a rule<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>Using the column header menu<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Select a target column by clicking the column header.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Press the function key to select multiple columns.</li>
+<li>Depending on your OS, click while holding the ^ or ⌘ key to select/deselect a column (toggle).</li>
+<li>Click while holding the Shift key to select a range.</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/edit_rules_2.png" src="../../_images/edit_rules_2.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Click the <img alt="header_menu" src="../../_images/header_menu.png" /> icon in the header of a selected column to open the header menu, and select a transformation command.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Among the commands, <strong>drop</strong> and <strong>settype</strong> are performed upon clicking.</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/edit_rules_3.png" src="../../_images/edit_rules_3.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">To add details, fill out the command input panel below, and click the <strong>Add</strong> button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/edit_rules_4.png" src="../../_images/edit_rules_4.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Some commands can be performed by selecting a distribution bar.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Click a distribution bar to filter the data based on the selected range (toggle).</li>
+<li>Click the type mismatch or null value graph to set conditions for those values.</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/edit_rules_13.png" src="../../_images/edit_rules_13.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h3>Using the command input panel<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">Select a transformation rule (command) in the command input panel.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/edit_rules_5.en.png" src="../../_images/edit_rules_5.en.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Add details as needed, and click the <strong>Add</strong> button.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Target columns can be selected using the input panel. You can also designate a column by clicking the column header.</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/edit_rules_6.en.png" src="../../_images/edit_rules_6.en.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h3>Inserting into a rule list<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">In the list of rules of the right, place the cursor over the boundary where you wish to insert a new rule. The <strong>+ Insert rule</strong> button appears. Press this button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/edit_rules_7.en.png" src="../../_images/edit_rules_7.en.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Select a transformation rule (command) in the command input panel. Add details as needed, and click the <strong>Add</strong> button.</p>
+<blockquote>
+<div><ul class="simple">
+<li>When a rule is inserted in this manner, all subsequent rules are affected.</li>
+<li>Rules that cannot be normally executed are displayed in red. In this case, they will revert to the results obtained in the previous step.</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/edit_rules_6.en.png" src="../../_images/edit_rules_6.en.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>Edit a created rule<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>Editing a rule<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first">In the list of rules on the right, place the cursor over the rule to be edited. The <img alt="edit" src="../../_images/icon_edit1.png" /> button appears. Press this button.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/edit_rules_8.en.png" src="../../_images/edit_rules_8.en.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p class="first">Edit the rule in the command input panel and press the <strong>Done</strong> button.</p>
+<blockquote>
+<div><ul class="simple">
+<li>When a rule is edited in this manner, all subsequent rules are affected.</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/edit_rules_12.en.png" src="../../_images/edit_rules_12.en.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h3>Deleting a rule<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>In the list of rules on the right, place the cursor over the rule to be deleted. The <img alt="delete" src="../../_images/icon_delete.png" /> button appears. Press this button.</p>
+<blockquote>
+<div><ul class="simple">
+<li>When a rule is deleted in this manner, all subsequent rules are affected.</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/edit_rules_10.en.png" src="../../_images/edit_rules_10.en.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="undo-redo">
+<h3>Undo and redo<a class="headerlink" href="#undo-redo" title="Permalink to this headline">¶</a></h3>
+<p>On the upper right of the rule list are icons to perform <strong>undo</strong> and <strong>redo</strong>.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/edit_rules_11.en.png" src="../../_images/edit_rules_11.en.png" />
+</div>
+</div></blockquote>
+<p>To revert to a state before executing a command, press the <img alt="undo" src="../../_images/icon_undo.png" /> button.</p>
+<blockquote>
+<div><ul class="simple">
+<li>The dataset reverts to the state before the last transformation (including rule creation, modification, and deletion).</li>
+<li>All rules that were affected also revert to their previous states.</li>
+</ul>
+</div></blockquote>
+<p>To perform the same command again, press the <img alt="redo" src="../../_images/icon_redo.png" /> button.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Pressing <img alt="redo" src="../../_images/icon_redo.png" /> is faster than following the steps to perform the same command again. It is because the transformation results are stored in memory.</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rule_kinds.html" class="btn btn-neutral float-right" title="Rule types" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="add_datasets.html" class="btn btn-neutral float-left" title="Add a dataset" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

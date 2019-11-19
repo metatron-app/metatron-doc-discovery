@@ -1,0 +1,469 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Chart style attributes &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Map view and spatial operations" href="map_chart.html" />
+    <link rel="prev" title="Select a chart type" href="chart_types.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Workbook</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_workbook.html">Create a workbook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dashboards.html">Dashboard</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_charts.html">Chart</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="composition_of_the_data_column_list.html">Data column list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pivoting.html">Draw a chart (pivoting)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="chart_types.html">Select a chart type</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Chart style attributes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Chart style settings menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Common settings for each chart type</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="map_chart.html">Map view and spatial operations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="filters.html">Filter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Workbook</a> &raquo;</li>
+        
+          <li><a href="manage_charts.html">Chart</a> &raquo;</li>
+        
+      <li>Chart style attributes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part04/chart_style.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Chart style attributes<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Once data is pivoted, an options menu is shown on the right of the screen to allow you to set the chart style. The composition of the menu varies with chart type. This section describes the settings used universally by all chart types and the “Common Setting” items for each chart type.</p>
+<div class="section" id="id2">
+<h2>Chart style settings menu<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>This section describes how to configure the settings of the chart style settings menu. Note that not all the settings are shown for every chart type.</p>
+<p><strong>Color setting</strong></p>
+<p>Defines various colors used in the chart.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/Chart_Style.01.en.png"><img alt="../../_images/Chart_Style.01.en.png" src="../../_images/Chart_Style.01.en.png" style="width: 285.3px; height: 609.3000000000001px;" /></a>
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Graph color setting:</strong> Set criteria to classify data on the chart by color, and select a coloring theme.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Series:</strong> Colors data elements differently with measures.</li>
+<li><strong>Dimension:</strong> Colors data elements differently with dimensions.</li>
+<li><strong>Measure:</strong> Colors elements differently with the size of each aggregate of measure values.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Setting color range:</strong> This setting is displayed when <strong>Measure</strong> is selected as the criterion to classify data by color. Set “ON” to set colors differently with each range of measure values. The measure data to be colored can be subdivided into as many ranges as you want, starting with the lowest one. To add a new range, adjust the upper limit of the highest range and click <strong>Add new range</strong>.</p>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Number format</strong></p>
+<p>Defines how to display numerical text data on the chart graph. To use this function, turn on Show Axis Label in the Data Label Settings Menu.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/Chart_Style.02.en.png"><img alt="../../_images/Chart_Style.02.en.png" src="../../_images/Chart_Style.02.en.png" style="width: 126.80000000000001px; height: 246.4px;" /></a>
+</div>
+<ol class="arabic simple">
+<li><strong>Format:</strong> Select a display format for numeric values from among number, currency, percent, and exponent.</li>
+<li><strong>Decimal place:</strong> Set how many digits to display after the decimal point.</li>
+<li><strong>Number abbreviations:</strong> You can use K (thousands), M (millions), or B (billions) as an abbreviation for a large numeric value. Select <strong>Automation</strong> to automatically set the most proper symbol in accordance with the number of digits.</li>
+<li><strong>Thousands separator:</strong> Select whether to add thousands separators when displaying numeric data values.</li>
+<li><strong>Customer symbol:</strong> Insert a custom text before/after numeric data values.</li>
+<li><strong>Preview:</strong> Displays the result of the defined number format.</li>
+</ol>
+</div></blockquote>
+<p><strong>Y-axis setting (when chart type is vertical)</strong></p>
+<p>If you set the chart direction <strong>Horizontal</strong> in the Common Setting area, the settings are exchanged between X-axis and Y-axis.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/Chart_Style.03.en.png"><img alt="../../_images/Chart_Style.03.en.png" src="../../_images/Chart_Style.03.en.png" style="width: 127.2px; height: 307.20000000000005px;" /></a>
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Show axis title:</strong> Used to set a title for the Y-axis of the chart. Disabling this function hides the title of the Y-axis.</p>
+</li>
+<li><p class="first"><strong>Show axis label:</strong> Select whether or not to show the data labels on the Y-axis of the chart. Disabling this function hides the data labels on the Y-axis.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Label setting:</strong> Set the numeric format of the data labels on the Y-axis. Set automatic to import the settings of <strong>Format</strong> or manual to set specific format for the data labels on the Y-axis.</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>X-axis setting (when chart type is vertical)</strong></p>
+<p>Defines how to display the X-axis of the chart. If you set the chart direction <strong>Horizontal</strong> in the Common Setting area, the settings are exchanged between X-axis and Y-axis.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/Chart_Style.04.en.png"><img alt="../../_images/Chart_Style.04.en.png" src="../../_images/Chart_Style.04.en.png" style="width: 127.60000000000001px; height: 193.60000000000002px;" /></a>
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Show axis title:</strong> Used to set a title for the X-axis of the chart. Disabling this function hides the title of the X-axis.</p>
+</li>
+<li><p class="first"><strong>Show axis label:</strong> Select whether or not to show the data labels on the X-axis of the chart. Disabling this function hides the data labels on the X-axis.</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Rotation:</strong> Select an angle for the data labels on the X-axis from among 0, 45, and 90 degrees.</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Data label setting</strong></p>
+<p>Selects whether to display the data values on the chart graph.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/Chart_Style.05.en.png"><img alt="../../_images/Chart_Style.05.en.png" src="../../_images/Chart_Style.05.en.png" style="width: 127.2px; height: 276.8px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2>Common settings for each chart type<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>This section describes how to style the six most popular chart types (bar chart, table, line chart, scatter chart, heatmap, and pie chart).</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/Chart_Style.12.en.png"><img alt="../../_images/Chart_Style.12.en.png" src="../../_images/Chart_Style.12.en.png" style="width: 126.80000000000001px; height: 113.2px;" /></a>
+</div>
+</div></blockquote>
+<p><strong>Bar chart</strong></p>
+<p>This type of chart presents data values in each category of a dimension column with rectangular bars.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/Chart_Style.06.en.png" src="../../_images/Chart_Style.06.en.png" />
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Chart type</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Vertical:</strong> Displays data values as vertical bars with the dimension axis set vertical.</li>
+<li><strong>Horizontal:</strong> Displays data values as horizontal bars with the dimension axis set horizontal.</li>
+<li><strong>Parallel:</strong> If more than one measure are selected, different bars representing those measures are displayed in parallel.</li>
+<li><strong>Stacked:</strong> If more than one measure are selected, different bars representing those measures are stacked at one position.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Limitation:</strong> Set how many columns to display on the chart.</p>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Table</strong></p>
+<p>A table block is formed based on the categories into which the dimension columns on the column/row shelves are grouped; accordingly, the values of the measure columns on the cross shelf are displayed as text in the crossings.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/Chart_Style.07.en.png" src="../../_images/Chart_Style.07.en.png" />
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Chart type</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Pivot:</strong> Aggregates (<code class="docutils literal"><span class="pre">SUM</span></code>, <code class="docutils literal"><span class="pre">MIN</span></code>, <code class="docutils literal"><span class="pre">MAX</span></code>, etc) measure values for each pair of column and row dimensions into a different cell.</li>
+<li><strong>Original:</strong> Displays all original measure values as unaggregated together with the selected dimensions.</li>
+<li><strong>Vertical:</strong> Displays measure values vertically in the table. This cannot be used when “Original” is selected for displaying the table.</li>
+<li><strong>Horizontal:</strong> Displays the table horizontally when “Pivot” is selected for displaying the table. Displays measure values horizontally in the table.</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Show head column:</strong> Set horizontal and vertical text alignment in the column headers. When “Original” is selected, the column headers are necessarily shown. When “Pivot” is selected, you may optionally hide the column headers.</p>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Line chart</strong></p>
+<p>This type of chart presents data values in each category of a dimension column with points. Adjacent data points are connected with each other. This type of chart is used to view trends.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/Chart_Style.08.en.png" src="../../_images/Chart_Style.08.en.png" />
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Chart type</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Line type:</strong> Displays the chart graph by drawing lines between points that represent measure value aggregates.</li>
+<li><strong>Area type:</strong> Colors the area formed by the connecting lines.</li>
+<li><strong>Line &amp; point:</strong> Shows both the data points and connecting lines.</li>
+<li><strong>Point:</strong> Shows the data points only.</li>
+<li><strong>Line:</strong> Shows the connecting lines only.</li>
+<li><strong>Basic:</strong> Displays each aggregate as it is on the chart.</li>
+<li><strong>Cumulative:</strong> Displays cumulative aggregates on the chart.</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p><strong>Scatter chart</strong></p>
+<p>This type of chart presents data values in each category of a dimension column with defined symbols.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/Chart_Style.09.en.png" src="../../_images/Chart_Style.09.en.png" />
+</div>
+<ol class="arabic simple">
+<li><strong>Symbol type:</strong> Set the shape of the symbol to be shown on the chart.</li>
+<li><strong>Symbol transparency:</strong> Set the transparency of the symbol to be shown on the chart. You can set colors either solid or transparent.</li>
+</ol>
+</div></blockquote>
+<p><strong>Heatmap</strong></p>
+<p>This type of chart displays values aggregated from the measure column placed on the cross shelf by using colors. For a larger aggregated value, a darker color is applied. The heatmap type does not provide any common settings.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/Chart_Style.10.en.png" src="../../_images/Chart_Style.10.en.png" />
+</div>
+</div></blockquote>
+<p><strong>Pie chart</strong></p>
+<p>This type of chart visualizes the proportion of each category of the dimension column.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/Chart_Style.11.en.png" src="../../_images/Chart_Style.11.en.png" />
+</div>
+<ol class="arabic">
+<li><p class="first"><strong>Chart type</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Sector:</strong> Displays a pie-shaped chart.</li>
+<li><strong>Donut:</strong> Displays a donut-shaped chart.</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="map_chart.html" class="btn btn-neutral float-right" title="Map view and spatial operations" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="chart_types.html" class="btn btn-neutral float-left" title="Select a chart type" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

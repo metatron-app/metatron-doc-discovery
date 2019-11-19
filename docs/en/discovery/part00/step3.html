@@ -1,0 +1,372 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Step 3. Organize a dashboard &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Introduction of Metatron Discovery" href="../part01/index.html" />
+    <link rel="prev" title="Step 2. Create a workbook" href="step2.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Discovery Quick Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="step1.html">Step 1. Create a data source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="step2.html">Step 2. Create a workbook</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Step 3. Organize a dashboard</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Creating a key performance indicator chart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Creating a line chart</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Discovery Quick Guide</a> &raquo;</li>
+        
+      <li>Step 3. Organize a dashboard</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part00/step3.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="step3">
+<h1>Step 3. Organize a dashboard<a class="headerlink" href="#step3" title="Permalink to this headline">¶</a></h1>
+<p>The final step is to create chart widgets, text widgets, and filter widgets to fill the empty dashboard. The dashboard can be edited in the following order:</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="차트 생성 단계" src="../../_images/create_chart.png" />
+</div>
+</div></blockquote>
+<p>Using the <code class="docutils literal"><span class="pre">Sales</span> <span class="pre">Report</span></code> created earlier, let’s add a key performance indicator chart and a line chart to the dashboard.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Sales dashboard" src="../../_images/ttd.en.png" />
+</div>
+</div></blockquote>
+<p>In the empty dashboard, click the <strong>Chart</strong> button to create a chart.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="empty dashboard" src="../../_images/ttd-1.en.png" />
+</div>
+</div></blockquote>
+<div class="section" id="id1">
+<h2>Creating a key performance indicator chart<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>The first chart you will be creating is a key performance indicator (KPI) chart. The KPI chart is a simple yet powerful chart that displays the goals of an organization in an intuitive manner. The goal of our dashboard is to clearly present sales data. As such, the KPI chart should include total sales, sales forecast, and profit. What should we do? Simply click the three measurement columns named “Sales,” “SalesForecast,” and “Profit” under the Data menu. This task is called pivoting. The pivoted columns are automatically aggregated and placed on shelves. Once columns are on shelves, suitable charts are recommended. How about clicking the recommended <strong>KPI</strong> chart?</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="pivoiting" src="../../_images/ttd-3.en.png" />
+</div>
+</div></blockquote>
+<p>The KPI chart is created as follows: To make it more presentable, let’s enter the chart properties menu on the right.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="raw KPI chart" src="../../_images/ttd-4.en.png" />
+</div>
+</div></blockquote>
+<p>Click <img alt="icon_common" src="../../_images/icon_common.png" /> to enter the <strong>Common Setting</strong> panel and add an icon to each measure column.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="KPI icon" src="../../_images/ttd-5.en.png" />
+</div>
+</div></blockquote>
+<p>Click <img alt="icon_number" src="../../_images/icon_number.png" /> to enter the <strong>Number Format</strong> panel and change the decimal place and abbreviation display.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="KPI chart number format" src="../../_images/ttd-6.en.png" />
+</div>
+</div></blockquote>
+<p>The most important feature of the KPI chart is comparing present achievements with past performance. Click <img alt="icon_aux" src="../../_images/icon_aux.png" /> to enter the <strong>Set up secondary indicators</strong> panel. Set a secondary indicator, and check the % improvement in performance compared to the previous month. If you wish, you can emphasize the secondary indicator instead of the original indicator.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="KPI chart comparison" src="../../_images/ttd-7.en.png" />
+</div>
+</div></blockquote>
+<p>Click <strong>Save</strong> to display the chart in the dashboard.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="KPI chart on dashboard" src="../../_images/ttd-8.en.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h2>Creating a line chart<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Next, let’s create a line chart, the most basic type of chart. Shall we take a look at how sales and profit change over time? Again, click the <strong>Chart</strong> button to begin drawing a new chart. Click the <code class="docutils literal"><span class="pre">OrderDate</span></code>, <code class="docutils literal"><span class="pre">Profit</span></code>, and <code class="docutils literal"><span class="pre">Sales</span></code> columns to see how the values change over time. Click the recommended <strong>Line Chart</strong>.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="pivoting" src="../../_images/ttd-9.en.png" />
+</div>
+</div></blockquote>
+<p>A line chart is drawn. Open the chart properties panel, and change the line shape to “round.”</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Line chart" src="../../_images/ttd-10.en.png" />
+</div>
+</div></blockquote>
+<p>There is too much data as <code class="docutils literal"><span class="pre">OrderDate</span></code> is aggregated on an hourly basis. To view by month, go to the menu of the <code class="docutils literal"><span class="pre">OrderDate</span></code> column, and set <strong>Granularity</strong> as <strong>Month</strong>. The entire data is displayed now! Click <strong>Mini Map</strong> on the upper right to remove the mini map from the chart.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Line chart granularity" src="../../_images/ttd-13.en.png" />
+</div>
+</div></blockquote>
+<p>Click <img alt="icon_coloring" src="../../_images/icon_coloring.png" /> on the right menu, and change colors using the <strong>Color Setting</strong> panel.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Line chart color" src="../../_images/ttd-16.en.png" />
+</div>
+</div></blockquote>
+<p>Click Save, and drag and drop the chart to the desired position. Add information to the dashboard by adding a <strong>text widget</strong>. Click <strong>Done</strong> to finish dashboard editing.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Dash board edit window" src="../../_images/ttd-15.en.png" />
+</div>
+</div></blockquote>
+<p>In this tutorial, you learned how to draw two chart types. Using the interactive dashboard, you can select a chart or add filters to present data as desired. You can also modify, add, or delete charts if required.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="Dash board edit window" src="../../_images/ttd.en.png" />
+</div>
+</div></blockquote>
+<p>Are you ready to learn more about Metatron Discovery?</p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="../part01/overview.html"><span class="doc">Overview of Metatron Discovery</span></a></li>
+<li><a class="reference internal" href="../part01/structure.html"><span class="doc">Components of Metatron Discovery</span></a></li>
+<li><a class="reference internal" href="../part01/engine.html"><span class="doc">Metatron engine: Druid</span></a></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part01/index.html" class="btn btn-neutral float-right" title="Introduction of Metatron Discovery" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="step2.html" class="btn btn-neutral float-left" title="Step 2. Create a workbook" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
