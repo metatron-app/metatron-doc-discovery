@@ -1,0 +1,345 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>데이터 탐색하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="메타데이터 관리하기" href="metadata.html" />
+    <link rel="prev" title="데이터 탐색" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
+					 <!-- 하위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../en/index.html">VIEW IN ENGLISH</a></li>
+					<li><a class="lang_sel" href="../../latex/metatron-doc-user_ko.pdf">PDF 버전으로 보기</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">계정 관리</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 탐색</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">데이터 탐색하기</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">데이터 탐색 오버뷰 화면</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">데이터 탐색 상세 화면</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#favorite-data">Favorite Data 화면</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-creator">Data Creator 화면</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="metadata.html">메타데이터 관리하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="columndictionary.html">Column Dictionary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="codetable.html">Code Table</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Integrator 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">워크플로우 리스트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">워크플로우 에디터</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">모니터링</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use Case</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">데이터 탐색</a> &raquo;</li>
+        
+      <li>데이터 탐색하기</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part09/dataexploration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>데이터 탐색하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>Metatron Discovery에서 제공하는 데이터 탐색의 목적은, 데이터가 어디 있던 쉽게 찾을 수 있고, 찾은 데이터로 시각화 할 수 있는 기능을 지원하고 있습니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/exploration.png" src="../../_images/exploration.png" />
+</div>
+</div></blockquote>
+<div class="section" id="id2">
+<h2>데이터 탐색 오버뷰 화면<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>현재 사용하고 계신 원천 DB 내 데이터, 그리고 Metatron Discovery에서 제공하는 StagingDB(Slave DB) 및 Engine(Druid) 내 데이터를 관리할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/exploration01.png" src="../../_images/exploration01.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h2>데이터 탐색 상세 화면<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
+<p>데이터 탐색을 통해 원하는 데이터를 빠르게 찾을 수 있도록 기능을 제공하고 있습니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/exploration_detail.png" src="../../_images/exploration_detail.png" />
+</div>
+</div></blockquote>
+<p>데이터는 크게 3부분으로 정보를 제공합니다. Overview, Column Scheme, Sample Data 입니다.
+각 데이터 타입에 따라, 워크북(Datasource 타입인 경우), 워크벤치(DB 타입인 경우)를 만들 수 있는 액션버튼도 제공합니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/exploration_detail01.png" src="../../_images/exploration_detail01.png" />
+</div>
+</div></blockquote>
+<p>샘플 데이터의 경우 현재 100건까지만 보여집니다. 권한이 있는 경우 &#8216;Management &gt; Exploration&#8217;을 통해 더 많은 데이터를 확인하고 다운로드 할 수 있습니다.
+권한의 여부는 해당 화면 상단에 &#8216;Edit data&#8217;라는 버튼의 유무로 확인할 수 있으며, 해당 버튼을 클릭하면 &#8216;Management &gt; Exploration&#8217;로 이동이 가능합니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/exploration_detail02.png" src="../../_images/exploration_detail02.png" />
+</div>
+</div></blockquote>
+<p>다른 메뉴로 점핑 시 다음과 같은 경고창이 보여집니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/popup.png" src="../../_images/popup.png" />
+</div>
+</div></blockquote>
+<p>아래 화면은 &#8216;Management &gt; Exploration&#8217;로 이동하였을때 화면입니다. 해당 공간에서, 관리자로서의 좀 더 많은 메타 정보를 상세히 볼 수 있고 관리할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/exploration_detail03.png" src="../../_images/exploration_detail03.png" />
+</div>
+<div class="figure">
+<img alt="../../_images/metadata.png" src="../../_images/metadata.png" />
+</div>
+</div></blockquote>
+<p>카타로그, 태그 등의 검색과 필터 기능을 통하여 데이터를 빠르게 찾을 수 있습니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/search.png" src="../../_images/search.png" />
+</div>
+</div></blockquote>
+<p>Metatron Discovery에서는 데이터를 카타로그로 관리할 수 있습니다. 카타로그을 그룹 등의 분류 군에 따라 구별해 두고 빠르게 데이터를 검색 하는 용도로 사용할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/catalog.png" src="../../_images/catalog.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="favorite-data">
+<h2>Favorite Data 화면<a class="headerlink" href="#favorite-data" title="제목 주소">¶</a></h2>
+<p>해당 기능은 준비 중입니다.</p>
+</div>
+<div class="section" id="data-creator">
+<h2>Data Creator 화면<a class="headerlink" href="#data-creator" title="제목 주소">¶</a></h2>
+<p>해당 기능은 준비 중입니다.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="metadata.html" class="btn btn-neutral float-right" title="메타데이터 관리하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="데이터 탐색" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

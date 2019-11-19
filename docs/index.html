@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>메타트론 사용자 문서 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>메타트론 사용자 문서 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,12 +20,22 @@
   <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="_static/jquery.js"></script>
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
         <script type="text/javascript" src="_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -65,7 +75,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -109,6 +119,8 @@
 <li class="toctree-l1"><a class="reference internal" href="discovery/part06/index.html">워크벤치</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part07/index.html">데이터 프리퍼레이션</a></li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part08/index.html">계정 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discovery/part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="discovery/part10/index.html">엔진 모니터링</a></li>
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
 <ul>
@@ -297,7 +309,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part02/index.html">데이터 관리</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part02/data_source.html">데이터 소스</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/dimension_and_measures.html">'차원값'과 '측정값'의 개념</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part02/dimension_and_measures.html">&#8216;차원값&#8217;과 &#8216;측정값&#8217;의 개념</a></li>
 <li class="toctree-l3"><a class="reference internal" href="discovery/part02/manage_data_sources.html">데이터 소스 관리 홈 화면</a></li>
 <li class="toctree-l3"><a class="reference internal" href="discovery/part02/data_source_detail_view.html">데이터 소스 상세 정보</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="discovery/part02/data_source_detail_view.html#id2">상단 공통 영역</a></li>
@@ -383,7 +395,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="discovery/part04/pivoting.html">차트 그리기(pivoting)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/pivoting.html#id1">'Pivoting'이란</a></li>
+<li class="toctree-l4"><a class="reference internal" href="discovery/part04/pivoting.html#id1">&#8216;Pivoting&#8217;이란</a></li>
 <li class="toctree-l4"><a class="reference internal" href="discovery/part04/pivoting.html#id2">열/행/교차 선반의 개념</a></li>
 </ul>
 </li>
@@ -549,6 +561,36 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part08/permissions.html">사용자 권한</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="discovery/part09/index.html">데이터 탐색</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part09/dataexploration.html">데이터 탐색하기</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part09/dataexploration.html#id2">데이터 탐색 오버뷰 화면</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part09/dataexploration.html#id3">데이터 탐색 상세 화면</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part09/dataexploration.html#favorite-data">Favorite Data 화면</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part09/dataexploration.html#data-creator">Data Creator 화면</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part09/metadata.html">메타데이터 관리하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part09/columndictionary.html">Column Dictionary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part09/codetable.html">Code Table</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="discovery/part10/index.html">엔진 모니터링</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part10/overview.html">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part10/overview.html#druid-setting-configuration">Druid Setting Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part10/overview.html#historical">Historical 사용량</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part10/overview.html#cluster">Cluster 전체 사용량</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part10/overview.html#id1">Historical 사용량</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part10/ingestion.html">Ingestion</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part10/ingestion.html#tasks">Tasks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part10/ingestion.html#supervisors">Supervisors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part10/ingestion.html#middlemanagers">MiddleManagers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part10/query.html">Query</a></li>
 </ul>
 </li>
 </ul>

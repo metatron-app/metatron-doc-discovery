@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Overview &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Ingestion" href="ingestion.html" />
+    <link rel="prev" title="엔진 모니터링" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
+					 <!-- 하위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../en/index.html">VIEW IN ENGLISH</a></li>
+					<li><a class="lang_sel" href="../../latex/metatron-doc-user_ko.pdf">PDF 버전으로 보기</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">계정 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">엔진 모니터링</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#druid-setting-configuration">Druid Setting Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#historical">Historical 사용량</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cluster">Cluster 전체 사용량</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Historical 사용량</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ingestion.html">Ingestion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="query.html">Query</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Integrator 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">워크플로우 리스트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">워크플로우 에디터</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">모니터링</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use Case</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">엔진 모니터링</a> &raquo;</li>
+        
+      <li>Overview</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part10/overview.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="제목 주소">¶</a></h1>
+<div class="section" id="druid-setting-configuration">
+<h2>Druid Setting Configuration<a class="headerlink" href="#druid-setting-configuration" title="제목 주소">¶</a></h2>
+<p>Druid 설치 정보를 알 수 있습니다. 우측 상단을 보면 information버튼이 있습니다. 해당 버튼을 클릭하면, 설치된 정보를 확인 가능합니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/configuration.png" src="../../_images/configuration.png" />
+</div>
+</div></blockquote>
+<p>Druid 설치 설정을 Common, Historical Node, Broker Node, Coordinator Node, Middle Manager Node, Overlord Node로 각각 확인 가능합니다.</p>
+<blockquote>
+<div><div class="figure">
+<img alt="../../_images/configuration01.png" src="../../_images/configuration01.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="historical">
+<h2>Historical 사용량<a class="headerlink" href="#historical" title="제목 주소">¶</a></h2>
+<p>각 historical node 의 사용량 표시합니다. Coordinator의 servers 리스트에서 개별 서버 항목 추출하여 만들어집니다.</p>
+</div>
+<div class="section" id="cluster">
+<h2>Cluster 전체 사용량<a class="headerlink" href="#cluster" title="제목 주소">¶</a></h2>
+<p>Druid historical 모니터링기능을 제공합니다.</p>
+<p>Cluster의 사용량 정보는 아래와 같습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li>cluster 전체 사용량 확인 가능</li>
+<li>개별 historical 사용량 확인 가능</li>
+</ul>
+</div></blockquote>
+<p>Coordinator의 servers 리스트를 이용하여 만들어진 KPI 입니다.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="26%" />
+<col width="62%" />
+<col width="12%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Node Count</td>
+<td>historical node 수</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>MaxSize</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>currSize</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Used</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>FreeSize</td>
+<td>&#160;</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id1">
+<h2>Historical 사용량<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
+<p>각 historical node 의 사용량 표시합니다. Coordinator의 servers 리스트에서 개별 서버 항목 추출하여 만들어집니다.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ingestion.html" class="btn btn-neutral float-right" title="Ingestion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="엔진 모니터링" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

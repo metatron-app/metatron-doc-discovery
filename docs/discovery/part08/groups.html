@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>그룹 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>그룹 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,12 +20,22 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -66,7 +76,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -121,6 +131,8 @@
 <li class="toctree-l2"><a class="reference internal" href="permissions.html">사용자 권한</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
 <ul>
@@ -208,8 +220,8 @@
 <p>Metatron Discovery 사용자들을 그룹으로 지정하면 다음과 같은 편의 기능을 사용할 수 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>그룹에 속한 사용자들의 권한 일괄 설정</p></li>
-<li><p>그룹에 속한 사용자들에게 일괄 메일 전송</p></li>
+<li>그룹에 속한 사용자들의 권한 일괄 설정</li>
+<li>그룹에 속한 사용자들에게 일괄 메일 전송</li>
 </ul>
 </div></blockquote>
 <div class="section" id="id2">
@@ -217,7 +229,7 @@
 <p>그룹 홈 화면에는 현재 Metatron Discovery에 등록된 사용자 그룹들을 보여줍니다.
 그룹 목록은 여러 기준으로 필터링할 수 있으며, 목록에 나타난 그룹 중 하나를 클릭하여 해당 그룹의 정보를 열람·수정할 수 있습니다.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/groups_home.png" src="../../_images/groups_home.png" />
 </div>
 </div></blockquote>
@@ -226,16 +238,16 @@
 <h2>그룹 정보 열람 및 수정<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
 <p>홈 화면 목록에 나타난 그룹 중 하나를 클릭하면, 아래와 같이 해당 그룹의 정보를 보여주는 화면으로 이동합니다.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/group_info.png" src="../../_images/group_info.png" />
 </div>
 </div></blockquote>
 <p>이 화면에서 제공되는 기능은 다음과 같습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>해당 그룹의 기본 정보와 부여된 권한, 그리고 소속된 사용자들을 확인할 수 있습니다.</p></li>
-<li><p><img alt="setup" src="../../_images/setup_icon.png" /> 아이콘을 클릭하면 해당 그룹의 소속 멤버를 추가·삭제할 수 있습니다.</p></li>
-<li><p><span class="guilabel">모든 멤버에게 이메일 보내기</span> 버튼을 클릭하면 해당 그룹에 소속된 모든 멤버에게 이메일을 보낼 수 있습니다.</p></li>
+<li>해당 그룹의 기본 정보와 부여된 권한, 그리고 소속된 사용자들을 확인할 수 있습니다.</li>
+<li><img alt="setup" src="../../_images/setup_icon.png" /> 아이콘을 클릭하면 해당 그룹의 소속 멤버를 추가·삭제할 수 있습니다.</li>
+<li><span class="guilabel">모든 멤버에게 이메일 보내기</span> 버튼을 클릭하면 해당 그룹에 소속된 모든 멤버에게 이메일을 보낼 수 있습니다.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -243,7 +255,7 @@
 <h2>그룹 등록<a class="headerlink" href="#id4" title="제목 주소">¶</a></h2>
 <p>홈 화면 우측 상단에서 <span class="guilabel">그룹 생성</span> 버튼을 클릭하면 아래와 같은 그룹 생성 팝업이 나타납니다.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_group.png" src="../../_images/create_group.png" />
 </div>
 </div></blockquote>

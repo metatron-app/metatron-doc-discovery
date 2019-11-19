@@ -21,6 +21,8 @@ Metatron Discovery
 	/discovery/part06/index
 	/discovery/part07/index
 	/discovery/part08/index
+	/discovery/part09/index
+	/discovery/part10/index		
 
 EX-pack for Workflow Integrator
 -----------------------------------------------

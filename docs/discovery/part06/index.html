@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>워크벤치 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>워크벤치 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,12 +20,22 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: '.txt'
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -66,7 +76,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -114,6 +124,8 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../part07/index.html">데이터 프리퍼레이션</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part08/index.html">계정 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
 <ul>
@@ -196,26 +208,28 @@
             
   <div class="section" id="id1">
 <h1>워크벤치<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
-<div class="figure align-default">
+<div class="figure">
 <img alt="../../_images/workbench_overview.png" src="../../_images/workbench_overview.png" />
 </div>
 <p>Metatron Discovery 워크벤치는 SQL을 기반으로 하는 데이터 전처리 및 분석 환경을 제공합니다. 주요 기능은 다음과 같습니다.</p>
 <blockquote>
 <div><ul>
-<li><p>다양한 외부 데이터베이스를 한꺼번에 작업공간에 조회 가능</p></li>
-<li><p>연동된 데이터베이스의 테이블과 컬럼을 쉽게 조회/선택하며 상세 정보 열람 가능</p></li>
-<li><p>쿼리 편집 도구가 내장되어 있으며 쿼리 결과를 실시간으로 확인하고 다양하게 활용 가능:</p>
+<li><p class="first">다양한 외부 데이터베이스를 한꺼번에 작업공간에 조회 가능</p>
+</li>
+<li><p class="first">연동된 데이터베이스의 테이블과 컬럼을 쉽게 조회/선택하며 상세 정보 열람 가능</p>
+</li>
+<li><p class="first">쿼리 편집 도구가 내장되어 있으며 쿼리 결과를 실시간으로 확인하고 다양하게 활용 가능:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>쿼리결과를 로컬 파일로 다운로드 또는 온라인 엑셀로 출력</p></li>
-<li><p>쿼리 결과를 즉시 시각화함으로써 쿼리 결과로 출력된 데이터 형태를 쉽게 파악</p></li>
-<li><p>쿼리 결과를 데이터 소스로 저장하여 워크북이나 노트북에서 분석에 활용 가능</p></li>
+<li>쿼리결과를 로컬 파일로 다운로드 또는 온라인 엑셀로 출력</li>
+<li>쿼리 결과를 즉시 시각화함으로써 쿼리 결과로 출력된 데이터 형태를 쉽게 파악</li>
+<li>쿼리 결과를 데이터 소스로 저장하여 워크북이나 노트북에서 분석에 활용 가능</li>
 </ul>
 </div></blockquote>
 </li>
 </ul>
 </div></blockquote>
-<p>SQL 기반 분석 쿼리를 보관하는 각각의 문서를 '워크벤치'라고 부릅니다. 본 단원에서는 워크벤치를 <strong>생성</strong>하고 <strong>활용</strong>하는 절차를 소개합니다.</p>
+<p>SQL 기반 분석 쿼리를 보관하는 각각의 문서를 &#8216;워크벤치&#8217;라고 부릅니다. 본 단원에서는 워크벤치를 <strong>생성</strong>하고 <strong>활용</strong>하는 절차를 소개합니다.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="06_02-create_a_workbench.html">워크벤치 만들기</a></li>
