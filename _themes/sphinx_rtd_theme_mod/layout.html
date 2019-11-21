@@ -165,7 +165,7 @@
                  {% else %} <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
 					{% set eng_path = (pathto(master_doc) | replace('index.html', 'en/index.html')) %} <!-- 하위 페이지에서 영문 페이지로의 링크 -->
 					{% set eng_path = (eng_path | replace('#', './en/index.html')) %} <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
-					{% set kor_pdf_path = (eng_path | replace('en/index.html', 'latex/metatron-doc-user_ko.pdf')) %} <!-- 영문 pdf 링크 -->
+					{% set kor_pdf_path = (kor_path | replace('index.html', 'latex/metatron-doc-user_ko.pdf')) %} <!-- 한글 pdf 링크 -->
 					<li><a class="lang_sel" href="{{ eng_path }}">VIEW IN ENGLISH</a></li>
 					<li><a class="lang_sel" href="{{ kor_pdf_path }}">PDF 버전으로 보기</a></li>
                  {% endif %}
