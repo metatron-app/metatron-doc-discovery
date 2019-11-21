@@ -59,7 +59,7 @@ extensions = [
     'sphinx.ext.doctest',
     'sphinx.ext.mathjax',
     'sphinx.ext.viewcode',
-    'sphinx.ext.githubpages',
+    'sphinx.ext.githubpages'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -149,13 +149,13 @@ latex_elements = {
 \renewcommand{\baselinestretch}{1.4}
 \usepackage[cjk]{kotex}
 \setmainfont{NanumBarunGothic}[
-	BoldFont       = * Bold,
+	BoldFont       = *Bold,
 ]
 \setsansfont{NanumBarunGothic}[
-	BoldFont       = * Bold,
+	BoldFont       = *Bold,
 ]
 \setmonofont{NanumGothicCoding}[
-	BoldFont       = * Bold,
+	BoldFont       = *-Bold,
 ]
 ''',
 'figure_align': 'H'
