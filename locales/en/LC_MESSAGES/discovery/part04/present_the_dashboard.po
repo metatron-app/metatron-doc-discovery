@@ -1,0 +1,56 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 5ded09f055f94c9fbcb5a391ea14fef1
+#: ../../discovery/part04/present_the_dashboard.rst:2
+msgid "대시보드 프리젠테이션 하기"
+msgstr "Presentation with a dashboard"
+
+# 4247f744ca794053bea2cb7ee8f3ad89
+#: ../../discovery/part04/present_the_dashboard.rst:4
+msgid ""
+"대시보드 기본 화면에서 **프레젠테이션 뷰** 버튼을 클릭하면 워크북의 대시보드들을 프레젠테이션에 적합한 UI로 열람할 수 "
+"있습니다. 이를 통해 사용자는 데이터 분석 결과를 쉽게 보고하고 공유할 수 있습니다."
+msgstr "Click **Presentation view** on the basic dashboard page to view workbook dashboards with a presentation UI. In this mode, you can easily report and share data analytics results."
+
+# 88c7c26f28654b2e9c830d9bc910c3a6
+#: ../../discovery/part04/present_the_dashboard.rst:8
+msgid "**이름:** 현재 표시 중인 대시보드의 이름입니다."
+msgstr "**Name:** Name of the current dashboard."
+
+# 8ddd749ab99e46b6827805efc0f9815e
+#: ../../discovery/part04/present_the_dashboard.rst:10
+msgid ""
+"**슬라이드 네비게이션:** 각 동그라미는 워크북 내 대시보드 각각을 가리킵니다. 예를 들어 네 번째 동그라미를 클릭하면 네 번째 "
+"대시보드 슬라이드로 이동하고 해당 동그라미가 강조됩니다."
+msgstr "**Slide navigation:** Each circle represents a different dashboard in the workbook. For example, if you click the 4th circle, the 4th dashboard slide will be displayed with that circle highlighted."
+
+# 0bfdbecf585048b3b55ff221103f1c3c
+#: ../../discovery/part04/present_the_dashboard.rst:12
+msgid ""
+"**자동 슬라이드 쇼 설정:** 시간 간격 선택 후 PLAY 버튼을 클릭하면, 자동 슬라이드 쇼가 시작되어 선택한 시간 간격을 "
+"주기로 슬라이드가 넘어갑니다."
+msgstr "**Auto slide show settings:** Select a duration for each slide and click PLAY to start an auto slide show."
+
+# db46f36f4bc94ab18e9d24fa617ba4b5
+#: ../../discovery/part04/present_the_dashboard.rst:14
+msgid "**나가기:** 프레젠테이션 뷰를 종료하고 워크북/대시보드 기본 화면으로 돌아갑니다."
+msgstr "**Exit:** Closes the presentation view and returns to the workbook/dashboard basic page."
+

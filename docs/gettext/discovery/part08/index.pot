@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part08/index.rst:2
+# 8866cc2bf40c4b25ae555a4df39862d3
+msgid "계정 관리"
+msgstr ""
+
+#: ../../discovery/part08/index.rst:4
+# 4dec218436d645f2a2415f165c8d097b
+msgid "관리자는 Metatron Discovery 사용자들의 멤버쉽과 사용 권한을 설정·관리할 수 있으며, **그룹** 기능을 이용하여 이러한 관리를 더욱 효율화할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part08/index.rst:6
+# c506ab7646ea4d69bc9aa8eaee9656e3
+msgid "사용자 관리를 위해서는 메인 화면 좌측 패널에서 :menuselection:`ADMINISTRATION --> 사용자` 클릭 후 원하는 하위 메뉴를 선택하면 됩니다."
+msgstr ""
+

@@ -1,0 +1,64 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 13234c35087e48e690e2a70aa514c9a7
+#: ../../discovery/part04/create_a_workbook.rst:2
+msgid "워크북 만들기"
+msgstr "Create a workbook"
+
+# 8bdda101d3224afc9ec076315508a2dd
+#: ../../discovery/part04/create_a_workbook.rst:4
+msgid ""
+"Metatron Discovery에서 **워크북**\\은 하나의 독립적인 데이터 분석 보고서로서 기능을 합니다. 하나의 워크북을 "
+"생성하면 그 안에 여러 **대시보드** 슬라이드를 담아서 적절한 순서대로 보여줄 수 있습니다."
+msgstr "In Metatron Discovery, a **workbook** functions as a standalone data analytics report. Once a workbook is created, you can store a number of **dashboard** slides in the workbook and present them in the proper order."
+
+# 01f6b78d35054faaa8e3213858451af7
+#: ../../discovery/part04/create_a_workbook.rst:6
+msgid "워크북 생성 절차는 다음과 같습니다."
+msgstr "A workbook is created as follows:"
+
+# bec7f8e053374d709bcdfa67da467244
+#: ../../discovery/part04/create_a_workbook.rst:8
+msgid "워크스페이스 하단에 있는 **+ 워크북** 버튼을 클릭하면 워크북을 생성할 수 있는 화면이 나타납니다."
+msgstr "Click the **+ Workbook** button at the bottom of the workspace to move to the workbook creation page."
+
+# 447b0ab419d54931a6a3a78671de5dce
+#: ../../discovery/part04/create_a_workbook.rst:13
+msgid ""
+"생성하고자 하는 워크북의 이름(필수 사항)과 설명을 입력하고 **마침** 버튼을 누릅니다. **Continue to create a"
+" dashboard of a new workbook** 박스에 체크하면 워크북 생성과 동시에 **대시보드 생성하기** 화면으로 "
+"넘어갑니다. 워크북은 그 안에 대시보드가 있어야 비로소 기능을 할 수 있기 때문에 이렇게 연결되는 것입니다."
+msgstr "Enter a name (required) and description for the workbook to be created and click **Done**. If you select **Continue to create a dashboard of a new workbook**, you’ll proceed directly to the **Create Dashboard** page. This option is provided because a workbook cannot work without dashboards in it."
+
+# d3f47be57dc846b88516b819cd807ddb
+#: ../../discovery/part04/create_a_workbook.rst:18
+msgid ""
+"화면 가운데의 '+ 데이터 소스 추가' 버튼을 클릭 후, 데이터 소스를 선택하여 대시보드를 생성합니다. 대시보드를 생성하는 절차에 "
+"관한 자세한 내용은 :doc:`create_a_dashboard` 항목을 참조하십시오."
+msgstr "After clicking the “+ Add Data Source” button in the middle of the screen, select a data source to create a dashboard. For details on how to create a dashboard, refer to :doc:`create_a_dashboard`."
+
+# 2dca07bd603f4a91a98059b8fbe330ff
+#: ../../discovery/part04/create_a_workbook.rst:26
+msgid ""
+"새로 생성된 워크북은 아래와 같이 워크스페이스 화면에서 확인할 수 있습니다. 클릭하면 해당 워크북을 사용할 수 있는 화면이 "
+"나타납니다."
+msgstr "You can check the new workbook in the workspace home as shown below. Click the workbook to enter it."
+

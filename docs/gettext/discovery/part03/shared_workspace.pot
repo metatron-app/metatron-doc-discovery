@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part03/shared_workspace.rst:2
+# ea1ff67afdba44a1ab40bd987715b0b3
+msgid "공유 워크스페이스"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:10
+# 2970ccab26544c9da72d9b493249a5e2
+msgid "공유 워크스페이스는 여러 사용자가 함께 열람하고 사용하는 워크스페이스입니다. 아래 각 절에서는 공유 워크스페이스를 조회하고 생성하는 법을 설명하고, 공유 워크스페이스에 접근 가능한 사용자나 그룹을 설정할 수 있는 권한 스키마에 대해서 살펴봅니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:15
+# b6ed39c5da6d4210a24977d2ffb924fa
+msgid "공유 워크스페이스 목록"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:17
+# 70ee269a8f0040b7845103241b25a156
+msgid "공유 워크스페이스 목록 화면에서는 로그인한 사용자가 접근할 수 있는 모든 공유 워크스페이스의 목록을 열람하고 원하는 워크스페이스로 이동할 수 있습니다. 이 화면은 다음과 같은 두 가지 방식으로 접근할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:20
+# 4c96281e3f37461a91260e1507936dbb
+msgid "Discovery 화면 좌측 상단에서 |icon_more2| 버튼을 클릭하여 메인 패널을 연 후 **워크스페이스 목록 >>**\\을 클릭합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:21
+# ea942e60a18c4fdaa9d6f65cead7f3bd
+msgid "워크스페이스 홈 화면 우측 상단의 **워크스페이스 목록** 버튼을 클릭합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:23
+# 5c2576fe7b6044d0a38445fd26f24e79
+msgid "공유 워크스페이스 목록 화면은 다음과 같이 구성됩니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:31
+# 9d8b1dc361134471a5b7c7e3b67f3afa
+msgid "**공유 워크스페이스 개수:** 목록에 나열된 공유 워크스페이스의 개수가 나타납니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:32
+# 8eb5e0bc662a4821b74e5790429d95d1
+msgid "**공유 워크스페이스 추가:** 이 버튼을 클릭하면 공유 워크스페이스를 추가하는 화면으로 이동합니다. (구체적인 절차는 :ref:`shared_workspace_creation` 참조)"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:33
+# c73d3973cccd4355ba58fbb02360660a
+msgid "**개인 워크스페이스:** 이 버튼을 클릭하면 로그인한 사용자의 개인 워크스페이스로 이동합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:34
+# 008904011f224d4b9b3202e5384249ac
+msgid "**검색:** 공유 워크스페이스를 이름으로 검색합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:35
+# c11f0f379cac4fa38e06e1dfb92e1cc2
+msgid "**즐겨찾기:** 즐겨찾기로 지정된 워크스페이스만 선별합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:36
+# 37e0a80ad0374dea895a61e87b6fda05
+msgid "**오직 공개만 보기:** 전체 공개 설정된 워크스페이스만 선별합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:37
+# 779cd28ba69b46f0a4667c593e491b16
+msgid "**소유자만 보기:** 로그인한 사용자가 관리자로 설정되어 있는 워크스페이스 목록이 나타납니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:38
+# 617c4079b5574bb58e742c3699096f4e
+msgid "**이름 내림차순/오름차순:** 공유 워크스페이스 이름을 내림차순/오름차순으로 정렬합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:39
+# 986465ea9541482dabcf1e69a84c1ad2
+msgid "**워크스페이스 목록:** 설정한 선별 조건에 맞는 워크스페이스들을 보여줍니다. 이 중 하나를 클릭하면 해당 워크스페이스에 입장합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:44
+# 4cb4195d8c294f4888e275095223eed1
+msgid "공유 워크스페이스 생성"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:46
+# 8f116a15e4c44f7b8f1fc3aade89e33d
+msgid "다음의 순서로 새 공유 워크스페이스를 생성할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:48
+# 2b3a841d0e1142c4a6937d5073ad4f95
+msgid "공유 워크스페이스 목록에서 |icon_plus| 버튼을 클릭하면 새 공유 워크스페이스를 생성하는 화면이 나타납니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:49
+# 36970dd2ff244a9d988d9d10f6a66a09
+msgid "**이름**\\과 **설명**\\을 입력한 후, 아래 설명을 참조하여 **Permission schema**\\를 설정합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:55
+# 7069be1714c14069b6d86497264b9749
+msgid "**프리셋 스키마 사용:** 관리자가 기존에 정의해놓은 권한 스키마를 불러옵니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:56
+# a960ecc611dd4d2bb1e06688007708cf
+msgid "**커스텀 스키마 사용:** 새 권한 스키마를 정의합니다. (새 권한 스키마를 정의하는 방식은 :ref:`shared_workspace_permission` 참조)"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:58
+# 5dff9d32a8ed43b79e6fef96e09e5b03
+msgid "**마침** 버튼을 눌러 워크스페이스 생성을 완료합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:63
+# f4449751f5bf47eab7e467c950090f06
+msgid "공유 워크스페이스 접근 권한 설정"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:65
+# 6cb2119f6bf848beb8d14210a02ea88b
+msgid "공유 워크스페이스 접근 권한 설정은 기본적으로 다음과 같은 두 단계로 이루어집니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:67
+# f481b7ad09b840a8a98be12d0259750e
+msgid "사용자 역할별 접근 권한 정의 (:ref:`permission_schema_setup` 참조)"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:68
+# 8a66c5fc6e114c07bf6ba7defdcbbfca
+msgid "개별 사용자 또는 사용자 그룹 각각에게 적합한 사용자 역할 부여 (:ref:`shared_members_setup` 참조)"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:73
+# c13b592ccffe46eca5afec283853956c
+msgid "권한 스키마 설정"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:78
+# f48998cb63604cbe8d373fc930e790dd
+msgid "권한 스키마 조회하기"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:80
+# 6ec2d675cf824d0b86c4b6d9158587ac
+msgid "공유 워크스페이스 홈 화면 우측 상단에 있는 |icon_more2| 버튼을 클릭한 후, **권한 스키마 설정**\\을 누르면 아래와 같이 현재 정의된 권한 스키마를 보여줍니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:86
+# b0985ba091bc40799346712f90758919
+msgid "위 예시 그림에서는 사용자 역할(User role)로서 Manager, Editor, Watcher, Guest가 정의되어 있습니다. '권한 스키마'란, 이와 같이 각각 고유한 접근 권한이 정의된 사용자 역할들의 집합을 일컫는 말입니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:88
+# fe792778467947a98028428cb29051d5
+msgid "각 사용자 역할에 대한 컬럼별 속성은 다음과 같습니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:90
+# 8ac57e88725a458abcfa30ad9f0ebd9c
+msgid "**Default role**"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:92
+# 3ce68575a58642299d61aa317099bda0
+msgid "새롭게 추가되는 개별 사용자나 사용자 그룹에게는 Default role로 지정된 사용자 역할이 기본적으로 부여됨"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:94
+# c3ded6d5f4e641198f1431f550d321a0
+msgid "**워크북/노트북/워크벤치 개체 타입별 권한**"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:96
+# c78b6901db0c4a3ca8aa7c12755278ff
+msgid "**View:** 해당 타입의 개체에 접근하여 데이터를 열람할 수 있음"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:97
+# 48a0070ca825486985bd55703d559ce5
+msgid "**Create:** 해당 타입의 개체를 생성, 수정, 삭제할 수 있음"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:98
+# 557d931c2d6040a9a660a84791895302
+msgid "**Edit any:** 다른 사용자가 생성한 해당 타입의 개체를 수정, 삭제할 수 있음"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:100
+# 3511d2b17caf47019927963d90dc19ef
+msgid "**워크스페이스 권한**"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:102
+# 49bfc7e681a44a7ca5865840dd3561a7
+msgid "Create folders: 워크스페이스 내 폴더를 생성, 수정, 삭제할 수 있음"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:103
+# 16b81d79089a4915b88b5e0935cbbed2
+msgid "Set config.: 워크스페이스의 이름과 설명을 수정하고 워크스페이스 권한 스키마를 바꿀 수 있음"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:106
+# afc8e019443f46d5a5cc63a1d5850185
+msgid "권한 스키마 설정 바꾸기"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:108
+# bea49c9359f048c0beab3ddfda388451
+msgid "권한 스키마 조회 화면에서 **스키마 변경** 버튼을 클릭하면 아래와 같이 기존에 정의된 권한 스키마를 변경할 수 있는 화면이 나타납니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:114
+# b73f64d1c7594a1aa4880aa57e34523a
+msgid "화면 우측에 있는 **Select Role Set** 콤보박스를 클릭하면 관리자가 정의해놓은 스키마들이 제시되고, 목록 맨 아래에는 새로운 사용자 역할을 정의할 수 있는 **커스텀 스키마** 항목이 있습니다. 이중 하나를 선택하면 아래와 같은 화면이 나타납니다. (**커스텀 스키마** 항목을 선택했을 경우 사용자 역할별 권한부터 정의해야 합니다. New schema 우측의 |icon_edit| 버튼을 눌러 권한 설정 화면으로 이동한 후 :ref:`permission_schema_view` 항목의 설명을 참조하여 사용자 역할별로 권한을 설정하십시오.)"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:120
+# 611b2839c9ce4eae8828c8df46e98227
+msgid "여기서는 현 권한 스키마의 각 사용자 역할을 새로운 권한 스키마에 정의된 사용자 역할로 치환하는 작업을 합니다. 각 사용자 역할 이름 옆에 있는 |icon_info| 아이콘에 마우스를 오버하면 해당 사용자 역할에 할당된 권한이 나타납니다. **마침** 버튼을 누르면 권한 스키마 설정이 완료됩니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:125
+# 4c946141ea514997804ccca9d12c8275
+msgid "공유 멤버 및 그룹 설정"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:127
+# 59f9c18497274c468e1c9dbd15680851
+msgid "공유 워크스페이스 홈 화면 우측 상단에 있는 더보기 아이콘을 클릭한 후 **공유 멤버 및 그룹 설정**\\을 누르면 아래와 같이 공유 멤버 및 그룹 설정 화면이 나타납니다. 여기서는 권한 스키마에서 정의된 각 사용자 역할을 개별 사용자 또는 사용자 그룹에 할당하는 작업을 합니다. 아래 설명을 참조하여 사용자 역할을 할당한 후 **마침** 버튼을 누르면 워크스페이스 접근 권한 설정이 완료됩니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:135
+# e5a1771b02cd4819acf47d7faefa1ea8
+msgid "**사용자 역할 할당 단위 선택**"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:137
+# 262442b38d854361821ada792d5b8587
+msgid "**멤버 탭:** 사용자 역할을 개별 사용자 단위로 할당합니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:138
+# ff4b368c321344dda74c4d097982bd8b
+msgid "**그룹 탭:** 사용자 역할을 사용자 그룹 단위로 할당합니다. (사용자 그룹은 관리자 권한으로 지정할 수 있습니다.)"
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:140
+# 3a3cbff079964cf2a1357d0a06561598
+msgid "**사용자 역할:** 클릭하면 권한 스키마(사용자 역할별 권한 정의) 정보가 팝업 창으로 나타납니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:141
+# d50f44b84be34ffe8db166b4101cc255
+msgid "**멤버/그룹 목록:** Discovery에 등록된 사용자들(그룹 탭에서는 그룹들)이 나열됩니다. 목록에 있는 사용자(그룹) 중 하나를 클릭하면 우측 역할 부여 영역에 추가됩니다. 이미 추가된 사용자(그룹)을 클릭하면 해당 사용자(그룹)가 우측 영역에서 제거됩니다."
+msgstr ""
+
+#: ../../discovery/part03/shared_workspace.rst:142
+# 388d5190b4214d0d885692cffaadaf70
+msgid "**사용자 역할 할당:** 이 콤보박스를 클릭하면 현재 적용 중인 권한 스키마에 정의된 사용자 역할들이 나타납니다. 이중에서 해당 사용자(그룹)에게 할당하고자 하는 역할을 선택하면 됩니다."
+msgstr ""
+

@@ -1,0 +1,150 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 73e4ac0f7db043eab8975e521b3fcdf1
+#: ../../discovery/part00/step3.rst:2
+msgid "Step3. 대시보드 구성하기"
+msgstr "Step 3. Organize a dashboard"
+
+# 2bd792d967c14ccea4ff4d01804dcd81
+#: ../../discovery/part00/step3.rst:9
+msgid ""
+"마지막 단계는 빈 대시보드에 차트 위젯, 텍스트 위젯, 필터 위젯을 생성하여 대시보드를 구성하는 작업입니다. 대시보드 편집은 아래와"
+" 같은 순서로 진행됩니다."
+msgstr "The final step is to create chart widgets, text widgets, and filter widgets to fill the empty dashboard. The dashboard can be edited in the following order:"
+
+# bf21e10931794da3ae74b53f6bc2d2db
+#: ../../discovery/part00/step3.rst:15
+msgid "이제 앞서 만든 ``판매현황 데이터``\\를 이용해 아래와 같이 핵심지표 차트와 선형 차트를 그려 대시보드를 만들어보겠습니다."
+msgstr "Using the ``Sales Report`` created earlier, let’s add a key performance indicator chart and a line chart to the dashboard."
+
+# 4cd32dbb4a0249b9b337d4c50360c55e
+#: ../../discovery/part00/step3.rst:21
+msgid "빈 대시보드에서 **차트** 버튼을 눌러서 차트를 만들어봅시다."
+msgstr "In the empty dashboard, click the **Chart** button to create a chart."
+
+# fb649d4bf9254d2a82d1376972e1f078
+#: ../../discovery/part00/step3.rst:28
+msgid "핵심지표 차트 만들기"
+msgstr "Creating a key performance indicator chart"
+
+# 48de1bb4fb9d4ca9b98388fd8b743183
+#: ../../discovery/part00/step3.rst:30
+msgid ""
+"처음 만들어 볼 차트는 핵심지표(KPI) 차트입니다. 핵심지표 차트는 조직의 목표를 가장 직관적으로 보여주는 가장 단순하면서도 "
+"강력한 차트입니다. 우리가 만들 대시보드는 판매 현황을 잘 나타내는 것이 목표입니다. 따라서 총 판매액, 예상 총 판매액, 총 "
+"이익을 핵심지표 차트로 보여주려고 합니다. 어떻게 해야 할까요? 단순히 Sales, SalesForcast, Profit 세 개의 "
+"측정값 컬럼을 데이터 메뉴에서 클릭하세요. 이 작업을 피봇팅(pivoting)이라고 합니다. 피봇된 칼럼들은 자동으로 집계되어 "
+"선반에 올라갑니다. 컬럼을 선반에 올리면 즉시 알맞는 차트 종류가 추천됩니다. 추천된 **핵심지표** 차트를 클릭해 볼까요?"
+msgstr "The first chart you will be creating is a key performance indicator (KPI) chart. The KPI chart is a simple yet powerful chart that displays the goals of an organization in an intuitive manner. The goal of our dashboard is to clearly present sales data. As such, the KPI chart should include total sales, sales forecast, and profit. What should we do? Simply click the three measurement columns named “Sales,” “SalesForecast,” and “Profit” under the Data menu. This task is called pivoting. The pivoted columns are automatically aggregated and placed on shelves. Once columns are on shelves, suitable charts are recommended. How about clicking the recommended **KPI** chart?"
+
+# 5ff0666ae632402e910ddf049a2a1a3a
+#: ../../discovery/part00/step3.rst:36
+msgid "아래와 같이 핵심지표 차트가 만들어졌습니다. 조금 더 보기 좋게 만들기 위해서 우측의 차트 속성 메뉴를 이용해봅시다."
+msgstr "The KPI chart is created as follows: To make it more presentable, let’s enter the chart properties menu on the right."
+
+# 8b0d3b25df9f428a9c4698d646e2a037
+#: ../../discovery/part00/step3.rst:42
+msgid "|icon_common|\\을 눌러 **공통 설정** 패널에서 각 측정값 컬럼에 아이콘을 추가하고"
+msgstr "Click |icon_common| to enter the **Common Setting** panel and add an icon to each measure column."
+
+# 0fd81d763c0c4518a427b33dda360a5c
+#: ../../discovery/part00/step3.rst:48
+msgid "|icon_number|\\을 눌러 **숫자 포멧** 패널에서 소수점 표기 방식과 약어 표기 방식을 변경해주었습니다."
+msgstr "Click |icon_number| to enter the **Number Format** panel and change the decimal place and abbreviation display."
+
+# aec8aa8e146c4dfb9167f6ec50caed23
+#: ../../discovery/part00/step3.rst:54
+msgid ""
+"핵심지표 차트에서 특히 중요한 건 이전 대비 얼마나 성과가 있는지를 파악하는 것 입니다. |icon_aux|\\을 눌러 **보조 "
+"지표 설정** 패널에서 보조 지표를 설정하고 전월 대비 몇 %나 잘하고 있는지 확인해보겠습니다. 원한다면 원 지표 대신 보조 지표를"
+" 강조할 수도 있습니다."
+msgstr "The most important feature of the KPI chart is comparing present achievements with past performance. Click |icon_aux| to enter the **Set up secondary indicators** panel. Set a secondary indicator, and check the % improvement in performance compared to the previous month. If you wish, you can emphasize the secondary indicator instead of the original indicator."
+
+# d6f79ce856ca4da590175fe76cc77841
+#: ../../discovery/part00/step3.rst:60
+msgid "**저장**\\을 누르면 차트가 대시보드에 나타납니다."
+msgstr "Click **Save** to display the chart in the dashboard."
+
+# 9da3a4e5dc0349c793f0893103ad0994
+#: ../../discovery/part00/step3.rst:67
+msgid "선형 차트 만들기"
+msgstr "Creating a line chart"
+
+# f7874d9b63a4490bb4439a33833be9d0
+#: ../../discovery/part00/step3.rst:69
+msgid ""
+"그 다음으로 가장 기본적인 차트인 선형 차트를 그려보겠습니다. 시간에 따라 매출과 수익이 어떻게 변하는지 한 눈에 볼 수 있도록 해"
+" 볼까요? 다시 **차트** 버튼을 눌러 새 차트 그리기로 들어갑니다. ``OrderDate``, ``Profit``, "
+"``Sales`` 컬럼을 눌러 시간 차원에 따라 값들이 변하는 모습을 보고자 합니다. 추천된 **선형 차트**\\를 클릭해보세요."
+msgstr "Next, let’s create a line chart, the most basic type of chart. Shall we take a look at how sales and profit change over time? Again, click the **Chart** button to begin drawing a new chart. Click the ``OrderDate``, ``Profit``, and ``Sales`` columns to see how the values change over time. Click the recommended **Line Chart**."
+
+# 407292618d1049e9871e86b484bea561
+#: ../../discovery/part00/step3.rst:75
+msgid "선형 차트가 그려졌습니다. 차트 속성창을 열어서 라인의 모양을 둥글게 변경해주었습니다."
+msgstr "A line chart is drawn. Open the chart properties panel, and change the line shape to “round.”"
+
+# 4037dabc3f45476389b10ec4ebc18e77
+#: ../../discovery/part00/step3.rst:81
+msgid ""
+"지금은 ``OrderDate``\\의 집계 단위가 시간이라 너무 데이터가 많습니다. 월 단위로 보기 위해서 선반에 올라간 "
+"``OrderDate`` 컬럼의 메뉴에서 **Granularity**\\를 **월(Month)**\\로 선택해줍니다. 이제 모든 "
+"데이터가 보이네요! 우측 상단의 **미니맵**\\을 클릭해서 차트에서 미니맵을 제거해줍니다."
+msgstr "There is too much data as ``OrderDate`` is aggregated on an hourly basis. To view by month, go to the menu of the ``OrderDate`` column, and set **Granularity** as **Month**. The entire data is displayed now! Click **Mini Map** on the upper right to remove the mini map from the chart."
+
+# 30fb113ca21a4abe859db33b7d9d3c9d
+#: ../../discovery/part00/step3.rst:87
+msgid "우측 메뉴에서 |icon_coloring|\\을 눌러 **색상 설정** 패널에서 색상 설정도 변경해줍니다."
+msgstr "Click |icon_coloring| on the right menu, and change colors using the **Color Setting** panel."
+
+# 1a8941f4414e4f70b7d3216d91435a11
+#: ../../discovery/part00/step3.rst:93
+msgid ""
+"저장을 누르고 차트를 drag & drop하여 적절하게 위치를 바꿔주세요. **텍스트 위젯**\\도 추가하여 대시보드에 적절한 "
+"정보를 추가합니다. **마침**\\을 누르면 대시보드 편집이 완료됩니다."
+msgstr "Click Save, and drag and drop the chart to the desired position. Add information to the dashboard by adding a **text widget**. Click **Done** to finish dashboard editing."
+
+# 7fbca9a369594a998d1a3e5e61db921b
+#: ../../discovery/part00/step3.rst:99
+msgid ""
+"본 튜토리얼을 통해 간단한 차트 두 가지를 완성해보았습니다. 대시보드는 인터랙티브하게 동작하여 차트를 선택하거나 필터를 추가하면 "
+"원하는 방식으로 프레젠테이션할 수 있습니다. 또 필요할 때마다 언제든지 차트를 수정하거나 추가·삭제할 수 있습니다."
+msgstr "In this tutorial, you learned how to draw two chart types. Using the interactive dashboard, you can select a chart or add filters to present data as desired. You can also modify, add, or delete charts if required."
+
+# f3bb0eff32444166b759f20c2919cbb2
+#: ../../discovery/part00/step3.rst:105
+msgid "이제 Metatron Discovery에 대해 더 알아보시겠어요?"
+msgstr "Are you ready to learn more about Metatron Discovery?"
+
+# d1f3cf8e667a495ea811989597676778
+#: ../../discovery/part00/step3.rst:107
+msgid ":doc:`../part01/overview`"
+msgstr ":doc:`../part01/overview`"
+
+# 07d7aa3641b04957a831d26a4e946cfa
+#: ../../discovery/part00/step3.rst:108
+msgid ":doc:`../part01/structure`"
+msgstr ":doc:`../part01/structure`"
+
+# b46980df5ff44764b57c380f80a29e93
+#: ../../discovery/part00/step3.rst:109
+msgid ":doc:`../part01/engine`"
+msgstr ":doc:`../part01/engine`\\"
+

@@ -1,0 +1,98 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 45bcf6a60cb8435a97ea6eaac3ba47cd
+#: ../../discovery/part07/index.rst:2
+msgid "데이터 프리퍼레이션"
+msgstr "Data Preparation"
+
+# 82cbd4bfce664d82ab3597370d7b763a
+#: ../../discovery/part07/index.rst:4
+msgid ""
+"**데이터 프리퍼레이션**\\은 파일, 테이블 등의 데이터셋을 분석에 용이한 형태로 정제하기 위한 변형 룰들을 생성하여, 그 결과를"
+" HDFS, Hive 등으로 저장하는 툴입니다."
+msgstr "**Data Preparation** is a tool that creates transformation rules to transform files and tables for more convenient analysis of datasets, and saves the results into HDFS or Hive."
+
+# 2d50b1dd4f804c0eb295d2340baf959b
+#: ../../discovery/part07/index.rst:6
+msgid "**Metatron Discovery 데이터 프리퍼레이션의 장점**"
+msgstr "**Advantages of data preparation in Metatron Discovery**"
+
+# e769e0fb66e347de8505952af9ff8541
+#: ../../discovery/part07/index.rst:10
+msgid ""
+"사용자는 위와 같이 GUI를 통해 Step-by-Step으로 변형 룰을 생성해낼 수 있습니다. 매 Step의 변형 결과가 데이터 "
+"분포도와 함께 메모리에 저장되기 때문에, 사용자는 이전 스텝 결과를 마우스 클릭만으로 쉽게 확인할 수 있을 뿐 아니라, 마치 텍스트"
+" 편집기를 쓰는 것처럼 **undo**, **redo** 등의 동작도 간단히 실행할 수 있습니다."
+msgstr "Users can create transformation rules by following the step-by-step process as shown in the above GUI. Since the transformation results from each step are stored  in memory together with the data distribution, users can easily check the results through the simple click of a button and perform **undo** and **redo** just like using a text editor."
+
+# 84a96279b1d04fc5b21a2e2a45dc4996
+#: ../../discovery/part07/index.rst:12
+msgid "이러한 특징을 기반으로 데이터 프리퍼레이션 툴에서는 다음과 같은 장점을 활용할 수 있습니다."
+msgstr "Based on these characteristics, the data preparation tool offers the following advantages:"
+
+# 1978f1bdf6494423b0bc930dfe3529d6
+#: ../../discovery/part07/index.rst:14
+msgid "프로그래밍이나 데이터 처리에 익숙하지 않아도 작업자가 원하는 형태의 결과를 얻을 수 있습니다."
+msgstr "Users unfamiliar with programming or data processing can obtain the desired results."
+
+# 8e7045b8f72c4db89a6116b7333c7f5a
+#: ../../discovery/part07/index.rst:15
+msgid ""
+"보통 변형 룰 하나를 추가하려면 프로그래밍을 하거나 최소한 SQL문을 작성해야하지만, 데이터 프리퍼레이션 GUI를 통한 **탐색적 "
+"변형**\\을 활용하면 몇 번의 마우스 클릭이나 타이핑만으로 간편하게 변형 룰을 만들어내어 시간을 크게 절약할 수 있습니다."
+msgstr "Adding a transformation rule usually involves programming or writing an SQL query. However, Metatron Discovery’s Data Preparation provides a GUI for **exploratory transformation** that enables the creation of transformation rules simply by clicking a button or typing."
+
+# a373cbde943445d99c53dd421d73651b
+#: ../../discovery/part07/index.rst:16
+msgid ""
+"기본적으로 수반되는 데이터 변형들은 자동으로 수행합니다. 예를 들어, 명백히 숫자로 보이는 컬럼에 대해 알아서 형변환 룰을 "
+"적용해줍니다. 이것은 언제나 **undo** 또는 룰 삭제가 용이하기 때문에 가능한 것입니다."
+msgstr "Basic data transformation is conducted automatically. For instance, a type cast is automatically applied to columns comprised of numerals. This is made possible by the **undo** and rule deletion functions."
+
+# d2d86e7fe15349c0baf3f249bb8fa3e1
+#: ../../discovery/part07/index.rst:17
+msgid "다양한 형태의 데이터를 결합하여 원하는 형태로 바꿔놓을 수 있습니다(예: 기준 파일 + 팩트 테이블)."
+msgstr "Data of different forms can be combined as desired (e.g. reference file + fact table)."
+
+# 1fa0ab0f236a477eabd3a61f81a858c8
+#: ../../discovery/part07/index.rst:18
+msgid "만들어 놓은 데이터 정제 결과를 다른 사람들과 공유함으로써, 물리적인 데이터를 주고 받는 부담을 줄여줍니다."
+msgstr "The results of data refinement can be shared with others, thus reducing the burden of exchanging physical data."
+
+# fe9f390426d8480aa05562f8ae8823bd
+#: ../../discovery/part07/index.rst:19
+msgid ""
+"실제 데이터는 지우고 그것을 만드는 방법만 유지함으로써, 저장 공간을 아끼고 **ILM (Information Life "
+"Cycle)**\\을 줄일 수 있습니다. 다시 필요할 때 실제 데이터를 만들어내는 데에 부담이 줄어들기 때문입니다."
+msgstr "Storage space is saved and **information life cycle (ILM)** shortened by deleting the actual data and retaining only the transformation rules involved. The actual data can be easily created whenever needed."
+
+# 2ababede1af44dcdaa82e9f8b3298537
+#: ../../discovery/part07/index.rst:21
+msgid "**Metatron Discovery 데이터 프리퍼레이션의 구조**"
+msgstr "**Structure of data preparation in Metatron Discovery**"
+
+# 4604f134dd204cf296fc961c92aae14e
+#: ../../discovery/part07/index.rst:25
+msgid ""
+"위 그림과 같이 데이터 프리퍼레이션은 정제할 대상 데이터를 참조하는 **데이터셋**, 지정된 데이터셋의 변형 룰들을 정의하는 "
+"**데이터플로우**, 그리고 그러한 룰들에 의해 변형된 결과물을 출력하는 **데이터 스냅샷**\\으로 구성됩니다."
+msgstr "As shown in the above figure, data preparation is comprised of a **dataset** built from the target data, a **dataflow** that defines transformation rules for the designated dataset, and a **data snapshot** that shows the transformation results."
+

@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part04/map_chart.rst:2
+# 54713925ca72420fa611444f7d5173df
+msgid "맵뷰와 공간 연산"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:4
+# de88932271624714bdb56a1b3cb64d6e
+msgid "메타트론 디스커버리는 3.1.0 버전부터 위치 데이터를 시각화할 수 있는 **맵뷰** 기능을 제공하고 있습니다. 맵뷰는 기존 차트 유형들과는 다른 차트 생성 조건을 갖고 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:9
+# 3deecf73b5d04b83ab284ed873463a8a
+msgid "**위치 속성** 의 차원값이 1개 이상 필요합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:10
+# ff6716ea19d148f480cf846b0630477f
+msgid "열/행/교차 선반이 아닌 **맵 레이어 선반** 에 데이터를 배치합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:11
+# 1fa91ee4e8b24df09fe0c5d42373a87e
+msgid "**레이어 별 스타일 속성** 을 지정합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:12
+# a828e3eb49e240d5802345742b9bd698
+msgid "**공간 연산** 이 가능합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:16
+# 9f7298d433434bddabfde41db3e7035c
+msgid "위치 속성의 차원값"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:18
+# 80645a88d83f45629b91da5fd9a607c1
+msgid "맵뷰를 사용하기 위해서는 ``Point``, ``LineString``, ``Polygon`` 과 같은 WKT Geometry 형식의 데이터로 이루어진 차원값(dimension) 칼럼을 레이어 선반에 올려야 합니다. 위치값의 종류는 크게 세 가지 종류가 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:20
+# c73308996d1c45eb999a9417d11c2c0b
+msgid "**Point:** x, y로 이루어진 2D 좌표 지오메트리 타입입니다. GPS 데이터처럼 위도와 경도값이 있는 경우입니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:21
+# a056b288c8624c2e97d0e4e25279c4f4
+msgid "**Line:** 라인 좌표를 가진 지오메트리 타입입니다. WKT 형식으로 만들어진 LineString, MultiLineString 지오메트리를 지원합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:22
+# bdac2bf2def74761b4fb8c036ddd7029
+msgid "**Polygon** : 도형 좌표를 가진 지오메트리 타입입니다. WKT 형식으로 만들어진 Polygon, MultiPolygon 지오메트리를 지원합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:29
+# ef0fde96785a413497b262f833dc4ae5
+msgid "맵 레이어 선반"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:34
+# d24ab1032d8b40c7960012edb5b10e90
+msgid "맵뷰에서는 다른 차트 유형과는 달리 열/행/교차 선반이 아닌 맵 레이어 선반을 갖고 있습니다. 맵 레이어 선반에는 반드시 위치 속성의 차원값을 1개 배치해야 합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:39
+# 6af34959a7ef466eab2cf05141fd48d4
+msgid "맵 레이어 선반에 문자 속성의 차원값을 배치하면 자동으로 해당 차원값으로 색상을 분류하여 표현하며 데이터 툴팁에 해당 차원값이 표기됩니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:44
+# fd3dec72b2074e389680c5d05dfbbda3
+msgid "또한 측정값을 레이어 선반에 배치하면 측정값으로 색상을 분류하고 동시에 해당 측정값을 기준으로 포인트 크기를 다르게 표현합니다. 차원값과 마찬가지로 툴팁에 해당 측정값이 표기됩니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:50
+# 17a352789803448e972c93da4ceba1b4
+msgid "레이어 선반 추가"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:52
+# 127143ec6aae4ee8a711e1fb99447436
+msgid "레이어 선반 우측의 ``+`` 버튼을 누르면 첫번째 레이어 위에 또 하나의 레이어를 추가할 수 있습니다. 각각의 레이어는 서로 다른 데이터소스를 사용해야 하며, 하나의 레이어에 두 개 이상의 데이터소스의 칼럼을 배치할 수 없습니다. 현재 최대 2개의 레이어 선반을 지원합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:59
+# 1bd396ec91cf4763869980de9f384a76
+msgid "맵뷰 레이어 스타일 속성"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:62
+# bc260e83a17a46cf9afc465e62ba8b2a
+msgid "공통 설정"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:63
+# 2b7afd92d2f745569b3d9d2cf685eece
+msgid "지도 레이어에서 기본 지도를 표현하는 맵 스타일의 유형을 선택할 수 있습니다. OpenStreetMap을 활용하여 세 가지의 맵 스타일을 기본적으로 제공하고 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:68
+# 01cd6872553d4edcb4269242364a3b0c
+msgid "Open Street Map **Light** (기본값)"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:69
+# 94d440b8a9a84457b4875753c03c9845
+msgid "Open Street Map **Dark**"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:70
+# 979bfda4592144f4aead0220533023ed
+msgid "Open Street Map **Colored**"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:74
+# 3dfa32b551794401a6ad8cff680fbf20
+msgid "레이어 설정"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:75
+# 753673587e7c46a4b2a89df6934b615c
+msgid "레이어의 표현 방식을 설정합니다. 레이어 선반을 추가하면 1번 레이어와 2번 레이어에 대한 설정 메뉴가 각각 별도로 생성됩니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:78
+# b98b9785fa434a3b8b2984bea5533b60
+msgid "Point 타입 레이어 속성"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:83
+#: ../../discovery/part04/map_chart.rst:99
+#: ../../discovery/part04/map_chart.rst:110
+# 04f8993796cc4a08b61dabe5fce9a749
+# df473b0ca7614951b887be25e69fdea1
+# b1b7c6721f1e4270b8c6899696066200
+msgid "**레이어 이름**: 맵뷰의 범례 및 툴팁 설정시 나타나는 레이어 명칭을 설정합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:84
+# 9c6db2a0236a420e925443bf4ad1beab
+msgid "**레이어 유형**: 데이터 포인트를 지도에 나타내는 유형을 ``포인트``/``히트맵``/``헥사곤``/``클러스터`` 중 하나로 변경할 수 있습니다. 기본값은 포인트입니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:85
+# 5aeb4d984dd34cf3ab7f0487c2070559
+msgid "**포인트 유형**: 레이어 유형이 ``포인트`` 인 경우 데이터 포인트의 모양을 변경할 수 있습니다. ``원형``/``사각형``/``삼각형`` 으로 표현 가능하며 기본값은 원형입니다. 클러스터 사용이 OFF 로 설정되어야 맵에 표현됩니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:86
+#: ../../discovery/part04/map_chart.rst:100
+#: ../../discovery/part04/map_chart.rst:111
+# 23c78fee3239429881719f0a8c18688c
+# b5c76bb8a4324af9b40969a9668c1077
+# 17ba9441459447cba5b5d236532f3530
+msgid "**색상**: 레이어 선반에 올린 문자 속성의 차원값이나 측정값으로 데이터 포인트의 색상을 구분하여 표현할 수 있습니다. 색상 기준이 없는 경우 팔레트에서 색상을 변경할 수 있습니다. 투명도를 %로 설정할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:87
+# 93333e5fbaf84dfca1f214e9a42f2f85
+msgid "**크기**: 레이어 유형이 ``포인트`` 인 경우 레이어 선반에 올린 측정값을 기준으로 데이터 포인트의 크기를 구분하여 표현할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:88
+# 3e253b7d801a49af98f3caa29d11b4b8
+msgid "**아웃라인**: ON으로 설정시 각 데이터 포인트의 아웃라인을 그립니다. 기본값은 OFF이며 색상 및 굵기를 설정할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:89
+# 24dd8efa872241bc97b0f86cb887a433
+msgid "**클러스터 범위**: 레이어 유형이 ``클러스터`` 인 경우 클러스터링 범위를 %로 지정할 수 있습니다. 데이터 포인트가 많을수록 클러스터를 사용하는 것이 브라우저 성능에 유리합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:90
+# e3e18c2ec49f416f960b6122f83ad51f
+msgid "**흐림효과**: 레이어 유형이 ``히트맵`` 일 경우 히트맵의 흐림 효과를 조절할 수 있습니다. 기본값은 20%입니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:91
+# 4e7291808d6642daa2e8b6e91b1739c5
+msgid "**반경값**: 레이어 유형이 ``히트맵`` 또는 ``헥사곤`` 일 경우 표시 반경을 1부터 100사이의 값으로 조절할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:94
+# fe3902a0b8a14becbabaafb8a7bdf5a3
+msgid "Line 타입 레이어 속성"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:101
+# 2f7698a215314ffa966a49e2ecebd143
+msgid "**굵기**: 라인의 굵기를 설정할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:102
+# 4bedd5c90b2c48d496dd7fa524ff25e9
+msgid "**선 유형**: 실선/점선/파선 중 하나를 선택합니다. 기본값은 실선입니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:105
+# fa97b57ecdd848b2930f840330ede09c
+msgid "Polygon 타입 레이어 속성"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:112
+# a54e202a545e4267b58b3a5c02db2c69
+msgid "**아웃라인**: ON으로 설정시 각 폴리곤의 아웃라인을 그립니다. 기본값은 OFF이며 색상 및 굵기를 설정할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:115
+# 7c0b8a08e43843db9aa9872a1046f58d
+msgid "범례 설정"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:117
+# 0634ebcabbd64be6be4f5cad77b407ae
+msgid "범례 표시 여부를 설정할 수 있습니다. 기본값은 OFF 이며, ON으로 변경 시 범례의 위치를 설정할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:124
+# 99546a931c9748a89d8c8d0f8ef43bd0
+msgid "공간 분석"
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:126
+# 34f504ec205a44dbb6e165b9deea29f8
+msgid "메타트론 디스커버리 맵뷰에서는 두 개의 레이어 간의 간단한 공간 분석 기능을 지원합니다. 왼쪽 분석 탭에서 연산식을 설정할 수 있으며, 현재 버전에서 공간 연산식은 두 종류를 지원합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:131
+# 641fb4df70cc494583ed1d3bee026a80
+msgid "**Within**: 기준 레이어의 요소와 비교 레이어의 요소 사이 거리를 지정하여 거리 내에 존재하는 값을 반환합니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:132
+# 9ad47b34a904457ba675fa76fc8ddc01
+msgid "**Intersection**: 기준 레이어에서 비교 레이어와 겹치는 부분을 반환하는 방식입니다. Polygon > Line > Point의 순서로 더 큰 Geometry가 기준이 되는 경우, 결과 반환값이 달라질 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:134
+# 4222c4b162d847d49025a3f80816072b
+msgid "각 연산식에서 추가적으로 설정할 수 있는 값은 아래와 같습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:136
+# e75815eba7654f6386b5931c19da5bbe
+msgid "**근접 거리 입력(Buffer)**: 기준 레이어와 비교 레이어 간에 비교할 거리를 숫자로 입력하도록 설정할 수 있습니다. 거리 단위를 미터 또는 킬로미터로 변경할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/map_chart.rst:137
+# e95f26bec15c46c88ce7b22f94098f5d
+msgid "**단계구분도 보기 (Choropleth map)**: 연산 결과 레이어를 단계구분도 형태로 표시할 수 있습니다. 단계구분도의 색상 기준을 선택할 수 있으며 겹치는 데이터의 수(COUNT)를 기본으로 색상을 나눕니다. 만약 기준 레이어에 측정값이 있을 경우 해당 측정값을 기준으로 색상을 변경할 수 있습니다."
+msgstr ""
+

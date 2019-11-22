@@ -1,0 +1,80 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 4ffaf9a39ff949569ce11f2d69bed9b9
+#: ../../discovery/part04/pivoting.rst:2
+msgid "차트 그리기(pivoting)"
+msgstr "Draw a chart (pivoting)"
+
+# 10169c8462bf4cd2b1ddb01a409fb927
+#: ../../discovery/part04/pivoting.rst:5
+msgid "'Pivoting'이란"
+msgstr "What is pivoting"
+
+# ea75ae56ab384079957fae7eea6adab1
+#: ../../discovery/part04/pivoting.rst:7
+msgid ""
+"Pivoting이란 주어진 테이블을 특정 컬럼들을 기준으로 그룹화하는 과정을 의미하며, 이를 통해 분석가는 원천 데이터의 특정한 "
+"측면을 그래픽 또는 도표로 확인할 수 있습니다. 이러한 과정에는 의미 있는 데이터를 포함하는 컬럼들을 열/행/교차 선반에 배치하는 "
+"것을 포함합니다."
+msgstr "Pivoting is a process of grouping the given table by specific columns, thereby helping the analyst view particular aspects of the source data in a graphic or tabular chart. This process includes selecting columns that contain meaningful data and placing them on the column/row/cross shelves."
+
+# 1c510457044045b499f4e1517f15b5a6
+#: ../../discovery/part04/pivoting.rst:12
+msgid ""
+"위 그림은 두 개의 차원값 컬럼을 열선반에 배치하고 하나의 측정값 컬럼을 교차선반에 배치 한 상태를 보여주고 있습니다. 차트에는 "
+"이렇게 선반에 올려놓은 컬럼들의 데이터가 표시됩니다."
+msgstr "In the example shown above, two dimension columns are placed on the column shelf and one measure column is placed on the cross shelf. The chart displays data resulting from the columns placed on the shelves in this way."
+
+# b6d83ef43d03450eb68b6ca7d775eb20
+#: ../../discovery/part04/pivoting.rst:15
+msgid ""
+"차트 유형별로 선반별 필수/권장 컬럼 유형이 다르며, 컬럼들을 선반에 올려놓기 전에 먼저 차트 유형을 선택하면 선반에 필요한 컬럼 "
+"유형이 제시됩니다."
+msgstr "Mandatory/recommended column types for each shelf vary depending on the chart type. Selecting a chart type before placing columns on a shelf shows the necessary column types for each shelf."
+
+# 066c558e3779439792d80b8eaa9e354f
+#: ../../discovery/part04/pivoting.rst:20
+msgid "열/행/교차 선반의 개념"
+msgstr "Column/row/cross shelves"
+
+# 0e3d11f0a9d34967a0a968b7782a75ef
+#: ../../discovery/part04/pivoting.rst:22
+msgid ""
+"열/행/교차 선반의 개념은 Excel의 구조를 생각하면 쉽게 이해할 수 있습니다. 아래 그림과 같이 열/행은 블록을 정의하는 역할을"
+" 하고, 교차는 블록 안에 들어갈 값을 정하는 역할을 합니다."
+msgstr "Think of the structure of Excel to understand what column/row/cross shelves work for. As shown below, the crossing of each column and row cross contains a value."
+
+# d40826181f964b3bacb04bdc31495f2c
+#: ../../discovery/part04/pivoting.rst:26
+msgid ""
+"Excel에서 데이터를 열/행/교차를 2차원 값인 그리드에 표현한 다면, Metatron은 OLAP Data Discovery "
+"도구로서, OLAP Cube를 통해 다차원에서 데이터를 조회합니다. 아래의 차트는 Metatron에서 3차원 큐브로 나타낸 "
+"열/행/교차 값의 축 그림 입니다."
+msgstr "Whereas Excel shows data in a two-dimensional grid composed of columns, rows and crosses, Metatron is an OLAP data discovery tool capable of multidimensional data representation. In the following Metatron chart, the column, row, and crossing axes form a three-dimensional cube."
+
+# da94c2f37d7a416cbc39b8adc3eaaa51
+#: ../../discovery/part04/pivoting.rst:31
+msgid ""
+"Excel 그리드의 값을 3차원 차트에서 표현한다면 그리드의 교차값이 막대바 형태로 여러 개 세워 지게 될 수 있습니다. "
+"Metatron에서는 2차원 단면으로 차트가 보여지기 때문에 열과 행 기준으로 막대 바를 쌓아 올려서 표현하게 됩니다. 결국 아래 "
+"그 림의 회색 부분과 같은 2차원 형태의 차트로 나타납니다."
+msgstr "If the values of an Excel grid are displayed in a three-dimensional chart, each crossing value will be represented by a bar. However, Metatron needs to display such a chart two-dimensionally; for this, bars either in the same column or in the same row get stacked at one point while remaining distinctive from one another. The resulting two-dimensional chart is shown in the gray area of the chart below."
+

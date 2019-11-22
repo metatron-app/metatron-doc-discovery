@@ -1,0 +1,191 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 80bab7ab52fa466cab51fa3d16ef9998
+#: ../../discovery/part04/chart_filter.rst:2
+msgid "차트 필터"
+msgstr "Chart filters"
+
+# c9cc719c275543c9ba0afa031543510e
+#: ../../discovery/part04/chart_filter.rst:4
+msgid ""
+"차트 필터는 각 컬럼별로 차트에 나타낼 데이터의 범위를 한정 짓는 기능을 합니다. 본 챕터에서는 차트 필터를 지정하고 활용하는 "
+"방법에 대해 설명합니다."
+msgstr "A chart filter defines what range of data is to be shown on the chart. This chapter describes how to set up and make use of chart filters."
+
+# ebed1bb7eb6e4f0d83d5b36f65887304
+#: ../../discovery/part04/chart_filter.rst:7
+msgid "자동으로 포함되는 필터들"
+msgstr "Automatically included filters"
+
+# 8052bb53ef154143aa2721e2df6b7729
+#: ../../discovery/part04/chart_filter.rst:9
+msgid "다음에 해당하는 컬럼들의 필터는 별도의 차트 필터를 추가하지 않아도 자동으로 포함됩니다."
+msgstr "The following column filters are included automatically when a chart is created:"
+
+# 046cc89f5220425d8a00817bafbcb876
+#: ../../discovery/part04/chart_filter.rst:11
+msgid "**타임스탬프 컬럼 필터:** Metatron 엔진의 시계열 특성 때문에 시간 조건 필터링이 필수적으로 사용됩니다."
+msgstr "**Timestamp column filter:** As a time-series data store, the Metatron engine necessarily uses a time filter."
+
+# 83a0d4d2ecfc4b2da31174eb5de3213f
+#: ../../discovery/part04/chart_filter.rst:12
+msgid "**추천 필터:** 데이터 소스 등록할 때 '추천 필터'로 지정된 컬럼 필터들입니다."
+msgstr "**Recommended filters:** Column filters designated as “recommended filters” during the registration of the data source."
+
+# 27c145cf9cab4c0cafe5b869ae6a05d5
+#: ../../discovery/part04/chart_filter.rst:13
+msgid "**글로벌 필터가 적용된 대시보드:** 해당 대시보드에 등록된 모든 차트에 공통적으로 적용되는 필터입니다."
+msgstr "**Dashboard filters set global:** Filters applied to all charts registered in the dashboard."
+
+# d1cd743ae1ae4cf39805cb398834d348
+#: ../../discovery/part04/chart_filter.rst:17
+msgid "차트 필터 패널"
+msgstr "Chart filter panel"
+
+# 987805956fcd4c608cb6d5bdab26a304
+#: ../../discovery/part04/chart_filter.rst:19
+msgid "차트 홈 화면 우측에는 차트 필터 패널이 있습니다. 이 패널에서는 등록된 필터를 간단하게 조회·설정할 수 있습니다."
+msgstr "The chart filter panel is located on the right-hand side of the chart home screen. On this panel, you can easily view and configure registered filters."
+
+# ebe223250e074b639a96b64dc5e89908
+#: ../../discovery/part04/chart_filter.rst:23
+msgid "**필터 수:** 차트 패널 이름 옆에는 현재 적용된 차트가 몇 개인지 표시됩니다."
+msgstr "**Filter number:** Displays how many filters are registered for the chart."
+
+# e7e0af6f3119445385d602b4eac22389
+#: ../../discovery/part04/chart_filter.rst:24
+msgid "**필터 추가/변경:** 우측 상단의 '+' 버튼을 누르면 새로운 필터를 추가하거나 기존 필터를 세부 설정하는 팝업이 나타납니다."
+msgstr "**Add/edit filter:** Click on “+” at the top right to either add a new filter or open a popup for configuring an existing filter."
+
+# 0541d251dde44faa94fc0a019e877558
+#: ../../discovery/part04/chart_filter.rst:25
+msgid "**필터 대상 컬럼:** 개별 필터의 상단에는 필터가 적용되는 컬럼 정보를 보여줍니다."
+msgstr "**Columns applied with the filter:** The top part of each individual filter displays which columns are applied with the filter."
+
+# 198d49b6096b4118abe0f1daad7891c5
+#: ../../discovery/part04/chart_filter.rst:26
+msgid "**필터 상세 설정:** 개별 필터 우측 상단에 햄버거 메뉴를 누르면 필터를 초기화하거나 상세 설정할 수 있습니다."
+msgstr "**Filter settings:** Click the hamburger menu at the top right of an individual filter either to reset the filter or configure the details of the filter."
+
+# fe2b83babda34bf09053be6057ead2f1
+#: ../../discovery/part04/chart_filter.rst:30
+msgid "차트 필터 대화 상자"
+msgstr "Chart filter dialog box"
+
+# cbcc7138a18c456590a9c23cb3122bf2
+#: ../../discovery/part04/chart_filter.rst:32
+msgid ""
+"차트 필터 패널 상단에서 버튼을 클릭하거나 각 필터 영역에서 버튼을 클릭하면 차트 필터 대화 상자를 열 수 있습니다. 이 대화 "
+"상자에서는 새로운 필터를 추가하거나 기존 필터를 세부적으로 설정할 수 있습니다."
+msgstr "Click the button at the top of the chart filter panel or click the button in each filter area to open the chart filter dialog box. With this dialog box, you can add a new filter or configure an existing filter."
+
+# 756c416ebc814425bb3767cbe873f0f9
+#: ../../discovery/part04/chart_filter.rst:34
+msgid "차트 필터 대화 상자는 다음과 같이 차원값과 측정값 영역으로 구성됩니다."
+msgstr "The chart filter dialog box is divided into the Dimension and Measure tabs as shown below:"
+
+# 3ef281068329470d83dc441a596e9518
+#: ../../discovery/part04/chart_filter.rst:40
+msgid "차원값 필터링"
+msgstr "Dimension filtering"
+
+# e99def91958e422cb043a4eab5bfe7c8
+#: ../../discovery/part04/chart_filter.rst:41
+msgid "해당 차트와 연동된 데이터 소스의 차원값을 필터로 지정할 수 있습니다."
+msgstr "From the connected data source, select a dimension on which to create a filter."
+
+# 64831edf60fb492c8728d3c16a902efa
+#: ../../discovery/part04/chart_filter.rst:45
+msgid "**범위 선택:** 선택한 필터의 컬럼에 들어있는 데이터 범주 중 필터링하여 차트에 표시할 범위를 선택합니다."
+msgstr "**Value range:** Select whether to filter the chart by a single or multiple data categories."
+
+# 3fff5ea76e8c45a08f01651070ed722a
+#: ../../discovery/part04/chart_filter.rst:47
+msgid "**단건:** 하나의 데이터 범주만 선택하여 차트에서 표시할 수 있습니다."
+msgstr "**Single:** Select one data category by which to filter the chart."
+
+# 554e680ad0ef4f92938de90e22ba67eb
+#: ../../discovery/part04/chart_filter.rst:48
+msgid "**다건:** 여러 개의 데이터 범주를 선택하여 차트에 표시할 수 있습니다."
+msgstr "**Multiple:** Select multiple data categories by which to filter the chart."
+
+# 8bfa7b8c2f38419fa2553e12ec3a56b9
+#: ../../discovery/part04/chart_filter.rst:50
+msgid "**검색:** 컬럼 속성 값이 너무 많은 경우, 원하는 결과만 볼 수 있도록 제한할 수 있습니다."
+msgstr "**Search:** If there are too many elements in the column, this function allows you to limit the results only to those you wish to see."
+
+# 3d350ea10425467facade66cf533fa31
+#: ../../discovery/part04/chart_filter.rst:52
+msgid "**이름으로 검색:** 컬럼의 속성값 이름으로 검색할 수 있습니다."
+msgstr "**Search by name:** Search the column element list by name."
+
+# 23f4eb1973bc418bbcf3961bc4b217f6
+#: ../../discovery/part04/chart_filter.rst:53
+msgid ""
+"**속성 필터링:** 속성 값 이름을 정규식이나 와일드 카드로 매칭하거나, 측정값의 범위를 기준으로 조건을 걸어서 속성을 선별할 수"
+" 있습니다."
+msgstr "**Element filtering:** Filters elements either by matching element names with regular expressions or wildcards, or by applying a range condition to a measure."
+
+# 37833ecedd8e4fe1baa47009d29b3289
+#: ../../discovery/part04/chart_filter.rst:58
+msgid ""
+"**Defined value:** 컬럼에 들어있지 않은 속성값을 필터 조건으로 추가하는 데 사용합니다. 현재 데이터 소스에는 없지만"
+" 추후에 들어올 수 있는 데이터를 미리 예측하여 필터를 생성하는 기능입니다."
+msgstr "**Defined value:** Used to add?as a filter criterion?a data element that is not contained in the column. This allows you to create a filter in advance for a data element that may be added later."
+
+# befafb92e5e345309f066ec1b6c7e477
+#: ../../discovery/part04/chart_filter.rst:62
+msgid "타임스탬프 컬럼 필터 설정"
+msgstr "Timestamp column filter settings"
+
+# d475d47b783243feaa3292833cc7889f
+#: ../../discovery/part04/chart_filter.rst:63
+msgid ""
+"시간 아이콘이 표시된 차원값은 타임스탬프 타입이며 해당 차원값은 타임스탬프 필터를 설정할 수 있습니다. 기본적으로 전체 시간(All"
+" time)으로 설정되어 있으며, 특정 기간의 데이터만 차트에 표출하고 싶은 경우 Relative 또는 Specific을 선택하여 "
+"설정합니다."
+msgstr "Dimensions with a time icon displayed are of a timestamp type for which a timestamp filter can be configured. Although they are set to “All time” by default, you can select Relative or Specific if you wish to display only data from a certain period in the chart."
+
+# e4e1a664d7cf45b7b0bbf280db7bbbe9
+#: ../../discovery/part04/chart_filter.rst:65
+msgid "Relative는 현재 시점을 기준으로 상대적인 기간을 설정하여 해당 기간 동안의 데이터만 차트에 표출하도록 합니다."
+msgstr "“Relative” sets a period of time relative to the present and displays only data from the applicable period of time in the chart."
+
+# b7b92adc1c464966a877e340d5564f71
+#: ../../discovery/part04/chart_filter.rst:69
+msgid "Specific은 데이터의 특정 기간을 직접 설정하여 해당 기간 동안의 데이터만 차트에 표출하도록 합니다."
+msgstr "“Specific” directly sets a certain period of time of data and displays only data from the applicable period of time in the chart."
+
+# 34585c21ad2d46a49ec1583b69d90038
+#: ../../discovery/part04/chart_filter.rst:74
+msgid "측정값 필터링"
+msgstr "Measure filtering"
+
+# 260c20f70bcc4879815c3ccc931dabcf
+#: ../../discovery/part04/chart_filter.rst:76
+msgid "해당 차트와 연동된 데이터 소스의 측정값을 필터로 지정할 수 있습니다."
+msgstr "From the connected data source, select a measure on which to create a filter."
+
+# f3619e0b1ec74850950b9b67fe39dd1e
+#: ../../discovery/part04/chart_filter.rst:80
+msgid "필터로 설정할 측정값을 선택했으면 필터링할 값의 범위를 지정합니다."
+msgstr "Once you have selected a measure, designate the range of values to filter."
+

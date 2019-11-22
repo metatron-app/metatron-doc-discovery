@@ -1,0 +1,143 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 071c265923e7426eb342084fead16736
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:2
+msgid "데이터 컬럼 리스트"
+msgstr "Data column list"
+
+# ebbea5f4238f43838310440c30ee0eac
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:4
+msgid ""
+"데이터 컬럼 리스트에 나열되는 컬럼들은 '차원값' 컬럼과 '측정값' 컬럼으로 분류됩니다. 차원값과 측정값의 개념에 대한 자세한 "
+"설명은 :doc:`../part02/dimension_and_measures` 항목을 참조하십시오."
+msgstr "The columns listed in the data column list are categorized into “dimensions” and “measures.” For the concept of dimensions and measures, refer to :doc:`../part02/dimension_and_measures`."
+
+# 415c375c1b70484b995245bd1775de37
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:7
+msgid "데이터 컬럼 리스트 구성"
+msgstr "Structure of the data column list"
+
+# 37aca08e10634414884895b87f7a48e7
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:12
+msgid "데이터 컬럼 리스트에서는 연동된 데이터 소스들의 정보를 열람·수정하고, 컬럼 필터를 간편하게 추가하거나 제거할 수 있습니다."
+msgstr "In the data column list, you can view and edit information on connected data sources, as well as add or remove column filters easily."
+
+# 58ff1c3ca61549cca46b66d76e0842eb
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:16
+msgid "**데이터 소스 선택/설정:** 데이터 소스를 선택하거나 해당 데이터 소스의 연결/join 관계를 설정합니다."
+msgstr "**Select/set data source:** Allows you to select a data source or configure its associations and joins."
+
+# a5effbfad10e4700a4626fb1968d8301
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:17
+msgid "**데이터 상세:** 클릭하면 새 대화 상자를 통해 선택된 데이터 소스에 관한 정보를 보여줍니다"
+msgstr "**Data details:** Click on it to pop up a dialog box displaying information about the selected data source."
+
+# 8d907267b78d44e8b56a56ef1f5d712e
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:18
+msgid "**컬럼 이름으로 검색:** 데이터 소스 내 컬럼을 이름으로 검색합니다."
+msgstr "**Search by column name:** Searches the column list by name."
+
+# 84bf9dcdf5cc4959ba7247a00a73a531
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:19
+msgid ""
+"**사용자 컬럼 추가:** 클릭하면 데이터 소스에 있는 컬럼들을 조합·가공하여 새로운 컬럼을 만들 수 있는 대화 상자가 열립니다. "
+"추가된 사용자 컬럼은 대시보드 전체에서 사용할 수 있습니다."
+msgstr "**Add custom column:** Click on it to open the dialog box to create a new column by combining/processing data source columns. Custom columns are commonly used throughout the dashboard."
+
+# f5854b6ad0074f8f8a3318ebcb0f0bcd
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:20
+msgid ""
+"**필터 지정/해제:** 이 버튼은 해당 컬럼에 마우스를 오버하면 생기며, 클릭 시 해당 컬럼을 차트 필터로 지정하고 다시 한번 "
+"클릭하면 지정된 차트 필터가 해제됩니다. 필터로 지정된 컬럼 항목에는 |more| 아이콘이 마우스 오버와 상관 없이 표시됩니다."
+msgstr "**Apply/clear filter:** Hover the mouse over a column to display this button. Click on it to apply a chart filter to the column, and click again to clear the chart filter. For columns to which a filter is applied, the |more| icon is displayed regardless of the mouse position."
+
+# ef1e994a3181401fa6e7373e7fc64fe5
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:21
+msgid "**더 보기:** 이 버튼은 해당 컬럼에 마우스를 오버하면 생기며, 컬럼에 대한 추가적인 정보를 확인하고 별칭을 지정할 수 있습니다."
+msgstr "**More:** Hover the mouse over a column to display this button. It is used to check additional information on the column and set an alias."
+
+# c1e19bed08b941ef9fc95a91ea6e4723
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:23
+msgid "|info| : 클릭하면 새 대화 상자가 나타나면서 해당 컬럼의 요약 정보와 데이터 값들을 보여줍니다."
+msgstr "|info| : Click on it to pop up a dialog box displaying a summary of the column and its data values."
+
+# 4ad44def660c44009d8c73f0283a223f
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:24
+msgid "**논리 컬럼 이름:** 해당 컬럼의 논리적 컬럼명을 보여줍니다."
+msgstr "**Logic column name:** Shows the logical name of the column."
+
+# 36c22f14440346faa5077fabfde1cffc
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:25
+msgid "**타입:** 해당 컬럼의 논리적 데이터 타입을 보여줍니다."
+msgstr "**Type:** Shows the logical type of the column."
+
+# 95e3c73cf42742c088fd98cc7a1b9fdc
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:26
+msgid ""
+"**Alias:** 해당 컬럼에 대한 별칭을 지정할 수 있습니다. 정식 컬럼명은 영숫자와 몇 가지 특수문자로 제한되며 공백도 포함할"
+" 수 없기 때문에 보다 구분하기 편한 별칭을 등록하면 분석 시 편의를 도모할 수 있습니다. 지정된 별칭은 대시보드 전체에 "
+"적용됩니다."
+msgstr "**Alias:** Sets a column alias. A regular column name can contain only alphanumeric characters and a limited number of special characters with no spaces allowed. Therefore, setting an alias may help to identify the column for convenient analytics work. Aliases are commonly used throughout the dashboard."
+
+# 4986eeb4f11d46a082ef1f0bf5b502f4
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:27
+msgid "**값 별칭:** 해당컬럼에포함된각데이터값에대해서도별칭을지정할수있습니다. 지정된 별칭은 대시보드 전체에 적용됩니다."
+msgstr "**Value alias:** You can also set an alias for each data value in the column. Aliases are commonly used throughout the dashboard."
+
+# dced1f94c5bd4a41aa88121f4f0e9a7e
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:30
+msgid "사용자 컬럼 추가"
+msgstr "Add a custom column"
+
+# cd758260a56f4365986f154a715a5a2d
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:32
+msgid ""
+"데이터 소스 컬럼 리스트에서 + 버튼을 클릭하면 사용자 컬럼 추가를 위한 대화 상자가 열립니다. 여기서는 데이터 소스에 있는 기존 "
+"컬럼들에 각종 공식을 적용하여 차트를 만드는 데 필요한 새로운 컬럼을 만들 수 있습니다."
+msgstr "Click the + button on the data source column list to open a dialog box for adding a custom column. By applying various formulas to existing columns of the data source, you can create a new column that helps create your desired chart."
+
+# 71675a4311b34b71a71ad1bcbf039c70
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:36
+msgid "**컬럼 이름:** 사용자 컬럼의 이름을 적는 란입니다."
+msgstr "**Column name:** Fill in a name for the custom column."
+
+# 0ca3492a3416492e9562fbb05fdb5618
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:37
+msgid ""
+"**코드 영역:** 사용자 컬럼을 만들기 위한 코드를 적는 란입니다. 아래의 컬럼 및 공식 목록에서 원하는 목록을 클릭하면 이 "
+"영역에 자동으로 타이핑 됩니다."
+msgstr "**Coding box:** Write a code for the custom column. Click a list from the column or formula list below to type your selection in this box automatically."
+
+# 9fe5b37518c8429898faf2c67519136c
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:38
+msgid ""
+"**컬럼 추가:** 데이터 소스에 주어진 기존 컬럼 목록입니다. 목록에 제시된 컬럼 항목 중 하나를 클릭하면 해당 컬럼이 코드 "
+"영역에 자동으로 타이핑됩니다."
+msgstr "**Add column:** Lists the columns of the data source. Click a column in the list to automatically type your selection in the coding box."
+
+# 59e02487502f4bc0bdf865aabc2a42ed
+#: ../../discovery/part04/composition_of_the_data_column_list.rst:39
+msgid ""
+"**공식 추가:** Metatron에서 지원하는 공식 목록입니다. 목록에 제시된 공식 중 하나를 클릭하면 해당 공식이 코드 영역에 "
+"자동으로 타아핑되고 타이핑 커서가 파라미터를 입력하는 부분으로 자동 이동됩니다. 각 공식의 용도와 사용법, 예제에 관해서는 화면 "
+"우측의 도움말 상자를 참조하세요."
+msgstr "**Add formula:** Lists the formulas supported by Metatron. Click a formula in the list to type your selection in the coding box automatically, with the text cursor relocated to where a parameter needs to be inserted. For details on each formula’s purpose, use, and examples, see the help box on the right."
+

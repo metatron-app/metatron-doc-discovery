@@ -1,0 +1,115 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# a2366282634f4a7497e43aced8cc7569
+#: ../../discovery/part01/overview.rst:2
+msgid "Metatron Discovery 개요"
+msgstr "Overview of Metatron Discovery"
+
+# 7641abe8b3b741f692d660deacc0ccd0
+#: ../../discovery/part01/overview.rst:4
+msgid ""
+"Metatron Discovery는 OLAP, 시각화, 머신러닝 기술이 융합하여 비전문가도 데이터로부터 상위 레벨의 가치를 빠르고 "
+"손쉽게 얻을 수 있는 4세대 OLAP 기반 Business Intelligence (BI) 솔루션입니다."
+msgstr "Metatron Discovery is a 4th-generation OLAP-based business intelligence (BI) solution that combines OLAP, visualization, and machine learning technologies for even non-experts to quickly and easily derive higher-level value from data."
+
+# 61acd7d0e53d4bfda167b9cefc7a0922
+#: ../../discovery/part01/overview.rst:11
+msgid "4세대 BI 솔루션"
+msgstr "4th-generation BI solution"
+
+# 13c634f8dc76476e918de594fa3f1a28
+#: ../../discovery/part01/overview.rst:13
+msgid "아래 그림은 1세대부터 4세대까지의 BI의 흐름을 나타낸 그림입니다."
+msgstr "The figure below shows BI trends from the 1st to 4th generation."
+
+# b158e761410846918ceaee627bfff30f
+#: ../../discovery/part01/overview.rst:19
+msgid ""
+"현재 BI 시장은 2세대, 3세대 제품이 주류를 이루고 있으며, 4세대 제품이 주목받고 있습니다. Metatron "
+"Discovery는 4세대 BI 솔루션으로서, Self & Ad-hoc Discovery를 지향하며 빅데이터에 대해서도 빠른 응답 "
+"속도를 보장합니다."
+msgstr "The mainstream products in the current BI market belong to the 2nd and 3rd generations, and 4th generation products are beginning to come under the spotlight. As a 4th generation BI solution, Metatron Discovery supports self & ad-hoc data discovery and guarantees rapid response to big data."
+
+# 14246bcbaeba4cd8a28c53a62fb71eea
+#: ../../discovery/part01/overview.rst:22
+msgid "Big OLAP 기반"
+msgstr "Built on Big OLAP"
+
+# df91d817da684b209a1e3261cf7c2207
+#: ../../discovery/part01/overview.rst:24
+msgid ""
+"Metatron Discovery는 대용량 Fact 데이터를 기준으로 다양한 차원(Dimension) 데이터를 결합하여 하나의 "
+"Big OLAP Cube(Mart)를 생성할 수 있습니다."
+msgstr "Metatron Discovery combines data of various dimensions for large-sized fact data to produce a single big OLAP cube (data mart)."
+
+# 83283eec362d45b2af4125998eba12ee
+#: ../../discovery/part01/overview.rst:30
+msgid "Big OLAP Cube로 사용 시, 다음과 같은 장점이 있습니다."
+msgstr "The use of a big OLAP cube offers the following advantages:"
+
+# 5e192a7fca2049e5831714e5f4cae494
+#: ../../discovery/part01/overview.rst:32
+msgid "데이터 마트(data mart)의 개수를 최소화"
+msgstr "Minimizes the number of data marts."
+
+# c04d9817599a449ca9511a1f755fd26b
+#: ../../discovery/part01/overview.rst:34
+msgid "데이터 마트 생성을 위한 ETL 비용 감소"
+msgstr "Lower ETL cost for data mart production."
+
+# 2cf982b9dba646b99163d71da0718d7f
+#: ../../discovery/part01/overview.rst:35
+msgid "구조 변경에 따른 영향도를 최소화 할 수 있음"
+msgstr "Influence of structural change can be minimized."
+
+# 3d8176dbf6cb4ad69cbc033c777f75e1
+#: ../../discovery/part01/overview.rst:36
+msgid "Fact 데이터를 모두 저장하므로, 다양한 요구사항에 대응 가능"
+msgstr "Satisfies diverse demands by saving all fact data."
+
+# 0a72d7e357744d468e6a72a6ea355566
+#: ../../discovery/part01/overview.rst:38
+msgid "분산 아키텍처 기반으로 큰 규모의 데이터도 저장 가능하며, 빠른 속도로 결과 출력"
+msgstr "Distributed architecture allows storing of large-scale data and ensures fast data processing."
+
+# 28e5101e3ec24e09bfcbf60af2185a6d
+#: ../../discovery/part01/overview.rst:39
+msgid "Dynamic 스키마 채용으로 스키마 변경 시에도 별도의 스키마 재정의가 필요치 않음"
+msgstr "With a dynamic schema approach, schema changes do not require schema redefining."
+
+# 0c8acc052d4d4a0ba52c457999dfa305
+#: ../../discovery/part01/overview.rst:40
+msgid "실시간 처리 테이블을 원본 그대로 저장하므로 레코드 단위의 실시간 처리 가능"
+msgstr "Data can be processed at the record level in real time as tables are saved with no data loss."
+
+# 10a64925e23d47bdbf3f200c0a1bff66
+#: ../../discovery/part01/overview.rst:43
+msgid "Metatron Discovery 아키텍처"
+msgstr "Architecture of Metatron Discovery"
+
+# 40ccef40350b4abbb9bbf94d0534a123
+#: ../../discovery/part01/overview.rst:45
+msgid ""
+"Metatron Discovery는 대용량 데이터에 대한 프리퍼레이션(preparation)부터 시각화 기반 데이터 탐색, 고급 "
+"분석까지 Data Discovery의 전 과정을 지원하는 End-to-End 솔루션입니다. 아래 그림은 Metatron의 아키텍쳐와"
+" 주요 특징을 정리한 것입니다."
+msgstr "Metatron Discovery is an end-to-end solution that supports the entire process of data discovery, from preparation of large-scale data to data visualization and exploration and to advanced analytics. The figure below is a summary of Metatron's architecture and key features."
+

@@ -1,0 +1,104 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+# 42627b522728429da4c15e6d7e03acc6
+#: ../../discovery/part08/members.rst:4
+msgid "멤버"
+msgstr "Members"
+
+# fcee7e63d98248b2b1fbb50e2e124504
+#: ../../discovery/part08/members.rst:6
+msgid "이 메뉴에서는 등록을 마친 사용자들을 열람·관리할 수 있습니다."
+msgstr "This menu allows you to view and manage registered users."
+
+# b8e36ff14671451abafde97a7c1cae01
+#: ../../discovery/part08/members.rst:8
+msgid "Metatron Discovery 가입은 다음 두 방법 중 하나로 이루어집니다."
+msgstr "Users can sign up for Metatron Discovery in one of the following two ways:"
+
+# 9cd2a829999b4f099702f0e1fd8da98f
+#: ../../discovery/part08/members.rst:10
+msgid "사용자가 회원 가입 신청 후 관리자가 승인(:ref:`membership_approval` 참조)"
+msgstr "Administrator’s approval of a user’s application for membership (see :ref:`membership_approval` )"
+
+# f99601c03e0649338ccdc1ea43472aa1
+#: ../../discovery/part08/members.rst:11
+msgid "관리자가 직접 등록(:ref:`user_registration` 참조)"
+msgstr "Registration by the administrator (see :ref:`user_registration`)"
+
+# cc0bde8cc4334775965a6a463a1faaf2
+#: ../../discovery/part08/members.rst:14
+msgid "멤버 홈 화면"
+msgstr "Members home"
+
+# c5629b45e15b41b3a8a290cd6e8f9975
+#: ../../discovery/part08/members.rst:16
+msgid ""
+"멤버 홈 화면에서는 Metatron Discovery 시스템에 가입된 사용자들을 열거하여 보여줍니다. 사용자 목록은 여러 기준으로 "
+"필터링할 수 있으며, 목록에 나타난 사용자 중 하나를 클릭하여 해당 사용자의 정보를 열람·수정할 수 있습니다."
+msgstr "The Members home shows a list of Metatron Discovery members. The member list can be filtered by various criteria, and clicking on an entry in the list allows you to view and edit the selected member’s information."
+
+# 648807162785491d9dbeb52bea4f4ad1
+#: ../../discovery/part08/members.rst:22
+msgid "사용자 정보 열람 및 수정"
+msgstr "View and edit member information"
+
+# e4a681cca8a344a982e66a20bc5d61ad
+#: ../../discovery/part08/members.rst:24
+msgid "홈 화면 목록에 나타난 사용자 중 하나를 클릭하면, 아래와 같이 해당 사용자의 정보를 보여주는 화면으로 이동합니다."
+msgstr "Clicking on a member in the list opens the member information page shown below:"
+
+# acb4b9c173cd4b6a81ddd2936640b19c
+#: ../../discovery/part08/members.rst:28
+msgid "이 화면에서는 기본 정보 열람과 더불어 몇 가지 설정이 가능합니다."
+msgstr "This page displays some basic information and allows a number of settings."
+
+# 3af48a841e4b4d55a7c0bb0d719af640
+#: ../../discovery/part08/members.rst:30
+msgid "**상태 설정(활성화/비활성화)**: 해당 사용자를 비활성화시키면 시스템에 로그인할 수 없게 됩니다."
+msgstr "**Status setting (Active/Inactive)**: An inactive member cannot log in to the system."
+
+# 96594994c52241bfb12a209489a19ab5
+#: ../../discovery/part08/members.rst:31
+msgid "**패스워드 초기화**: 해당 사용자가 비밀번호를 잊어버린 경우, 비밀번호를 초기화할 수 있는 메일을 보내줍니다."
+msgstr "**Reset password**: By clicking this, a user has forgotten the password can receive an email to reset it."
+
+# 9e0e3bd08d524b0aad5cdf2e080396ba
+#: ../../discovery/part08/members.rst:32
+msgid ""
+"**그룹 설정**: |setup| 아이콘을 클릭하면 해당 사용자가 속한 그룹을 추가·삭제할 수 있습니다. 그룹과 관련된 설명은 "
+":ref:`user_groups` 항목을 참조하십시오."
+msgstr "**Group setting**: Click on the |setup| icon to add or delete groups to which the member belongs. See :ref:`user_groups` for details on the user group."
+
+# 7b68c781da9e47f5bfe0d6439c3f1d40
+#: ../../discovery/part08/members.rst:37
+msgid "사용자 등록"
+msgstr "Register a member"
+
+# 18e9e082c8364940b262740da60f55cd
+#: ../../discovery/part08/members.rst:39
+msgid "홈 화면 우측 상단에서 :guilabel:`사용자 생성` 버튼을 클릭하면 아래와 같은 사용자 생성 팝업이 나타납니다."
+msgstr "Click the :guilabel:`Create member` button on the top right of the page to pop up the member creation dialog box below."
+
+# f367a07807c941ba9a42e786d27dfd52
+#: ../../discovery/part08/members.rst:43
+msgid "사용자의 실명과 ID, 이메일을 입력하면 사용자 등록이 완료되며, 해당 메일 주소로 가입 내역이 전달됩니다."
+msgstr "Enter the member’s real name, ID, and email address to register the member, and the membership details will be sent to the email address."
+

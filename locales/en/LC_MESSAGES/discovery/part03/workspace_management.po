@@ -1,0 +1,295 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# cd8d5e1e1ba84aa09cc7b4421b85dc45
+#: ../../discovery/part03/workspace_management.rst:2
+msgid "워크스페이스 홈"
+msgstr "Workspace home"
+
+# 1582942931534c0c8745a305d3736ca4
+#: ../../discovery/part03/workspace_management.rst:7
+msgid ""
+"워크스페이스 홈 화면에서는 Metatron Discovery의 분석 모듈(워크북, 노트북, 워크벤치)의 관리 기능을 수행할 수 "
+"있습니다."
+msgstr "On the workspace home page, you can perform manage the Metatron Discovery entities (workbooks, notebooks and workbenches) contained in the workspace."
+
+# 3a088f50967543d5bceb525a17ffee6d
+#: ../../discovery/part03/workspace_management.rst:10
+msgid "워크스페이스 홈 화면 구성"
+msgstr "Composition of the workspace home"
+
+# d879cf613d704f70a9a7721b4816be20
+#: ../../discovery/part03/workspace_management.rst:12
+msgid "아래는 워크스페이스 홈 화면의 전반적인 구성을 설명한 것입니다."
+msgstr "The overall composition of the workspace home is as follows:"
+
+# a1439eaea5074b95bcb55d92c2b4ef76
+#: ../../discovery/part03/workspace_management.rst:18
+msgid "**메인 메뉴 버튼:** 해당 버튼을 클릭하면 다른 워크스페이스로 접근할 수 있는 패널이 열립니다."
+msgstr "**Main menu button:** Click this button to open a panel to access another workspace."
+
+# 1fc793ae6e8a404b8cba400e045250df
+#: ../../discovery/part03/workspace_management.rst:19
+msgid ""
+"**워크스페이스 정보:** 해당 워크스페이스의 이름과 설명을 보여줍니다. 로그인한 사용자가 소유하는 워크스페이스일 경우, "
+"워크스페이스 이름 옆에 '소유자'라는 아이콘이 보입니다."
+msgstr "**Workspace information:** Displays the name and description of the workspace. If the logged-in user owns the workspace, an Owner icon will be displayed next to the name of the workspace."
+
+# 005a26e8e9824b729ee99d4d1ad7ef8a
+#: ../../discovery/part03/workspace_management.rst:20
+msgid "**등록 개체 현황:** 워크스페이스 내에 등록된 개체 타입별 개수를 보여줍니다."
+msgstr "**Registered entities:** Displays the number of entities registered in the workspace by entity type."
+
+# e6f582739bb64221b218e3a6c96e3605
+#: ../../discovery/part03/workspace_management.rst:21
+msgid ""
+"**데이터 소스:** 해당 워크스페이스에서 사용 중인 데이터 소스의 개수를 보여주며, 이 영역을 클릭하면 사용 중인 데이터 소스들의"
+" 목록이 나타납니다."
+msgstr "**Data source:** Displays the number of data sources used in the workspace. Click this area to show a list of these data sources."
+
+# 9c38f54c4a92442995ba07a3a5ef198c
+#: ../../discovery/part03/workspace_management.rst:22
+msgid ""
+"**워크스페이스 목록:** 이 버튼을 클릭하면 공유 워크스페이스의 목록이 나타납니다. (자세한 내용은 "
+":ref:`shared_workspace_list` 참조)"
+msgstr "**Workspace list:** Click this button to show a list of shared workspaces. (See :ref:`shared_workspace_list` for how to handle it.)"
+
+# cebaafa03c564a9ea934603c3cb57e61
+#: ../../discovery/part03/workspace_management.rst:23
+msgid "**생성 정보:** 해당 워크스페이스의 생성일과 만든 사용자 이름을 보여줍니다."
+msgstr "**Creation information:** Displays who and when created the workspace."
+
+# 65819a5b19bd4c92b8d63abdd47228b9
+#: ../../discovery/part03/workspace_management.rst:24
+msgid "**더 보기:** 해당 워크스페이스의 정보를 수정합니다."
+msgstr "**More:** Edit the settings of the workspace."
+
+# 51e480c5047042198e7f10d099c283bb
+#: ../../discovery/part03/workspace_management.rst:26
+msgid "**이름 및 설명 수정:** 해당 워크스페이스의 이름과 설명을 수정합니다."
+msgstr "**Edit the name and description:** Edits the name and description of the workspace."
+
+# 0b8227d56819471baa82ad457a2341e9
+#: ../../discovery/part03/workspace_management.rst:27
+msgid ""
+"**공유 회원 및 그룹 설정:** 해당 워크스페이스에 접근할 수 있는 사용자와 그룹을 지정합니다. (자세한 사항은 "
+":ref:`shared_workspace_permission` 참조)"
+msgstr "**Set shared member & group:** Sets the users and groups who can access the workspace. (See :ref:`shared_workspace_permission` for details.)"
+
+# 8cfd8d216b8a4e8ebac3afdf988f4c9e
+#: ../../discovery/part03/workspace_management.rst:28
+msgid "**노트북 서버 설정:** 노트북 모듈이 사용하는 외부 분석 도구 서버 접근 정보를 설정합니다."
+msgstr "**Set notebook server:** Sets access information for external analytics tool servers used by the Notebook module."
+
+# b6835aafb1d240a69d6da88b56d283f9
+#: ../../discovery/part03/workspace_management.rst:29
+msgid ""
+"**권한 스키마 설정:** 해당 워크스페이스에서의 사용자 역할별 접근 권한을 설정합니다. (자세한 사항은 "
+":ref:`shared_workspace_permission` 참조)"
+msgstr "**Set permission schema:** Sets the access permission of each user role for the workspace. (See :ref:`shared_workspace_permission` for details.)"
+
+# 44c8428585d04056b21dbffc13525d90
+#: ../../discovery/part03/workspace_management.rst:30
+msgid "**소유자 변경:** 해당 워크스페이스의 소유자를 바꿉니다."
+msgstr "**Change owner:** Changes the owner of the workspace."
+
+# d639e44482d7475196c081527fd2219e
+#: ../../discovery/part03/workspace_management.rst:31
+msgid "**워크스페이스 삭제:** 해당 워크스페이스를 삭제합니다."
+msgstr "**Delete workspace:** Deletes the workspace."
+
+# 5d90f63171ee4d78b403ae58c029c986
+#: ../../discovery/part03/workspace_management.rst:33
+msgid ""
+"**워크스페이스 경로:** 워크스페이스 내에서의 현재 위치를 확인합니다. 경로에 나열된 상위 폴더 중 하나를 클릭하면 해당 폴더로 "
+"이동합니다."
+msgstr "**Path in the workspace:** Displays the current location in the workspace. Click on a parent folder listed in the path to move to that folder."
+
+# e7e02436e8114d6a87479e90e7886e18
+#: ../../discovery/part03/workspace_management.rst:34
+msgid "**폴더 생성:** 클릭하면 현재 위치에 새 폴더를 생성합니다."
+msgstr "**Create a folder:** Click on it to create a new folder in the current location."
+
+# be25eccc76d641198951e7aecc0fb629
+#: ../../discovery/part03/workspace_management.rst:35
+msgid "**개체 목록 선별/정렬:**"
+msgstr "**Filter/sort the entity list:**"
+
+# 3ff428c0c0284d0089df15de94fb351a
+#: ../../discovery/part03/workspace_management.rst:37
+msgid "**검색:** 해당 워크스페이스 내에서 개체 또는 폴더를 이름으로 검색합니다."
+msgstr "**Search:** Searches for an entity or folder in the workspace by name."
+
+# 7f0f65e0c9854a0ca780ba61a5688321
+#: ../../discovery/part03/workspace_management.rst:38
+msgid "**개체 타입:** 워크북, 노트북, 워크벤치 중 원하는 개체 타입만을 선별해서 조회합니다."
+msgstr "**Entity type:** Displays only your selected type of entities among workbooks, notebooks, and workbenches."
+
+# 6e3f5ef66d184befbf393b30232ebba3
+#: ../../discovery/part03/workspace_management.rst:39
+msgid "**정렬 순서:** 폴더 및 개체를 이름 또는 업데이트 시간 순서로 정렬합니다."
+msgstr "**Sort:** Sorts folders and entities by their name or when they were last updated."
+
+# 5f3959c4b434462b96988f1f922cf1d4
+#: ../../discovery/part03/workspace_management.rst:40
+msgid "**뷰 형식:** 워크스페이스 내 개체들의 열거 방식을 카드뷰와 리스트뷰 중에서 선택합니다."
+msgstr "**View type:** Select either the grid view or list view as the format of how the entities are listed in the workspace."
+
+# 84b729337b684ab7aa5f0ea2a2ddd5dc
+#: ../../discovery/part03/workspace_management.rst:42
+msgid ""
+"**폴더 목록:** 현재 위치에서 검색 조건에 부합하는 폴더들을 보여줍니다. 이중 하나를 클릭하면 해당 폴더 안으로 이동합니다. "
+"(개별 폴더 항목에 대한 자세한 설명은 :ref:`folders` 참조)"
+msgstr "**Folder list:** Displays folders that meet search criteria in the current location. Click one to enter that folder. (For details on individual folders, see :ref:`folders`)"
+
+# d6a19d6bafbd4f6a9559f82c0daa04c4
+#: ../../discovery/part03/workspace_management.rst:43
+msgid ""
+"**개체 목록:** 현재 위치에서 검색 또는 선별 조건에 부합하는 개체들을 보여줍니다. 이 중 하나를 클릭하면 해당 개체의 홈 "
+"화면으로 이동합니다. (개별 개체 항목에 대한 자세한 설명은 :ref:`items` 참조)"
+msgstr "**Entity list:** Displays entities that meet search or sorting criteria in the current location. Click an entity to enter its home. (For details on individual entities, see :ref:`items`)"
+
+# e4aaac23ada74f4296734fd512c68d73
+#: ../../discovery/part03/workspace_management.rst:44
+msgid "**개체 선택/복사/이동/삭제:** 개체 전체 선택, 복사, 이동, 삭제를 합니다. (자세한 내용은 :ref:`actions` 참조)"
+msgstr "**Select/clone/move/delete entity:** Select all entities, or clone, move or delete an entity. (See :ref:`actions` for details.)"
+
+# da0e9a2bf226410eafe3418efa3c5757
+#: ../../discovery/part03/workspace_management.rst:45
+msgid ""
+"**개체 생성:** 해당 워크스페이스에서 원하는 타입의 개체를 만드는 데 사용되는 버튼들입니다. (구체적인 절차는 각각 "
+":doc:`../part04/create_a_workbook`, :doc:`../part05/create_a_notebook`, "
+":doc:`../part06/06_02-create_a_workbench` 참조)"
+msgstr "**Create an entity:** Buttons used to create a specific type of entity in the workspace. (For details, see :doc:`../part04/create_a_workbook`, :doc:`../part05/create_a_notebook`, and :doc:`../part06/06_02-create_a_workbench`, respectively.)"
+
+# 7e8cb126e9dc48faa844786a070adf70
+#: ../../discovery/part03/workspace_management.rst:50
+msgid "폴더 항목"
+msgstr "Folder items"
+
+# 4d864e9955a044a8868e904e649a112b
+#: ../../discovery/part03/workspace_management.rst:52
+msgid "각 폴더에 마우스를 올렸을 때 다음과 같이 항목들이 표시됩니다."
+msgstr "When the mouse cursor is over a folder, it is shown as follows:"
+
+# 6f3c9437c8144358b46b94de370e26e4
+#: ../../discovery/part03/workspace_management.rst:58
+msgid "**확인란:** 해당 폴더를 선택할 때 사용합니다. 선택한 폴더는 복제, 이동, 삭제할 수 있습니다."
+msgstr "**Check box:** Used to select the folder. You can clone, move or delete the selected folder."
+
+# cd7f1390093c498ba895a59bb89ca601
+#: ../../discovery/part03/workspace_management.rst:59
+msgid "**이름:** 해당 폴더의 이름입니다."
+msgstr "**Name:** Name of the folder."
+
+# 98d1ae96477544f79349c2e112e89445
+#: ../../discovery/part03/workspace_management.rst:60
+msgid "**수정:** 클릭하면 폴더의 이름을 수정할 수 있습니다. 이 버튼은 해당 폴더 항목에 마우스를 오버할 때만 나타납니다."
+msgstr "**Edit:** Click on it to modify the name of the folder. This button is displayed only when you hover the mouse over the folder item."
+
+# c27794deb6254347bd635ca4590a5e2b
+#: ../../discovery/part03/workspace_management.rst:61
+msgid "**삭제:** 클릭하면 해당 폴더가 삭제됩니다. 이 버튼은 해당 폴더 항목에 마우스를 오버할 때만 나타납니다."
+msgstr "**Delete:** Click on it to delete the folder. This button is displayed only when you hover the mouse over the folder item."
+
+# f7ca6ca46bff445caf3d6fe0e62f353f
+#: ../../discovery/part03/workspace_management.rst:66
+msgid "개체 항목"
+msgstr "Entity items"
+
+# e85758f66fb24f7991cee27c0754231f
+#: ../../discovery/part03/workspace_management.rst:68
+msgid "각 개체에 마우스를 올렸을 때 다음과 같이 항목들이 표시됩니다."
+msgstr "When the mouse cursor is over an entity, it is shown as follows:"
+
+# ea0705dc962a4d2b88cff527b137a846
+#: ../../discovery/part03/workspace_management.rst:74
+msgid "**확인란:** 해당 개체를 선택할 때 사용됩니다. 선택한 개체는 복제, 이동, 삭제할 수 있습니다."
+msgstr "**Check box:** Used to select the entity. You can clone, move or delete the selected entity."
+
+# d363e2769e6f4ebc896f0921b3527767
+#: ../../discovery/part03/workspace_management.rst:75
+msgid "**개체 타입:** 해당 개체가 워크북/노트북/워크벤치 중에서 어느 타입인지 보여줍니다."
+msgstr "**Entity type:** Displays the type of the entity (workbook/notebook/workbench)."
+
+# ab19d05794b2431f835a42b80ab13060
+#: ../../discovery/part03/workspace_management.rst:76
+msgid "**삭제:** 클릭하면 해당 개체가 삭제됩니다. 이 버튼은 해당 개체 항목에 마우스를 오버할 때만 나타납니다."
+msgstr "**Delete:** Click on it to delete the entity. This button is displayed only when you hover the mouse over the entity item."
+
+# b1541a6ea7e14debbed6a98004298137
+#: ../../discovery/part03/workspace_management.rst:77
+msgid "**이름:** 해당 개체의 이름입니다."
+msgstr "**Name:** Name of the entity."
+
+# b74185d31c944ba6a5533b43dd9515fa
+#: ../../discovery/part03/workspace_management.rst:78
+msgid "**업데이트 시점:** 해당 개체가 마지막으로 업데이트된 시점을 보여줍니다."
+msgstr "**Last updated:** Displays when the entity was last updated."
+
+# 466f4265167d41a6a2e1f7d4250d0b4c
+#: ../../discovery/part03/workspace_management.rst:79
+msgid "**데이터 소스/대시보드 개수:** 이 영역은 워크북 개체에만 고유합니다."
+msgstr "**Number of data sources/dashboards:** This is an exclusive area for the workbook type."
+
+# 1c29768cb19748379cb177f2a487d50d
+#: ../../discovery/part03/workspace_management.rst:81
+msgid "|icon_datasource| 아이콘 옆 숫자는 해당 워크북에 연동된 데이터 소스의 개수를 가리킵니다."
+msgstr "The number next to the |icon_datasource| icon refers to how many data sources are connected to the workbook."
+
+# 2a81dca7b50b4b55a555441fe16f8ef8
+#: ../../discovery/part03/workspace_management.rst:82
+msgid "|icon_dashboard| 아이콘 옆 숫자는 해당 워크북에 등록된 대시보드의 개수를 가리킵니다."
+msgstr "The number next to the |icon_dashboard| icon refers to how many dashboards are registered in the workbook."
+
+# 81c139d8cd9e4c4ea9a8859f35ae6ac8
+#: ../../discovery/part03/workspace_management.rst:87
+msgid "폴더 및 개체 선택/복사/이동/삭제"
+msgstr "Select/clone/move/delete folder and entity"
+
+# 443cb6595d284dbb980d5b310ed8989b
+#: ../../discovery/part03/workspace_management.rst:89
+msgid ""
+"워크스페이스 내 폴더와 개체는 복사/이동/삭제가 가능합니다. 복사/이동/삭제를 원하는 폴더 또는 개체를 선택하면 워크스페이스 홈 "
+"화면 좌측 하단의 동작 버튼들이 활성화됩니다."
+msgstr "You can clone, move or delete folders and entities in the workspace. Once you select a folder or entity, the clone, move, and delete buttons in the lower-left corner of the workspace home become active."
+
+# 4570406c2ece45cf8c37067cdf0250ab
+#: ../../discovery/part03/workspace_management.rst:95
+msgid "**전체 선택:** 현재 폴더 목록과 개체 목록에 나타난 모든 항목을 선택합니다."
+msgstr "**Select all:** Selects all items in the current folder and entity list."
+
+# 316e3f99fbb04ec5af2d3dca800f9a7f
+#: ../../discovery/part03/workspace_management.rst:96
+msgid "**워크북 복사:** 워크북에만 유효한 기능입니다. 이 버튼을 클릭하면 선택한 워크북이 복제됩니다."
+msgstr "**Clone workbook:** This is exclusive for the workbook type. Click this button to clone the selected workbooks."
+
+# bf750589bf514d5e9eecbd3b7404abdb
+#: ../../discovery/part03/workspace_management.rst:97
+msgid ""
+"**선택 이동:** 선택한 폴더 및 개체를 이동합니다. 워크북의 경우에는 다른 워크스페이스로 이동이 가능하고, 그 외의 항목들은 "
+"동일 워크스페이스 내 다른 폴더로 이동이 가능합니다. 워크북이 다른 개체와 함께 선택되어 있을 때는 이동을 실행할 수 없습니다."
+msgstr "**Move selections:** Moves the selected folders and entities. Workbooks can be moved to another workspace, and other types of items can be moved to another folder in the same workspace. However, it is impossible to move selections when workbooks and other types of entities are selected together."
+
+# 5dc48b1b1def45a0ad78211076428de8
+#: ../../discovery/part03/workspace_management.rst:98
+msgid "**선택 삭제:** 선택한 폴더 및 개체를 삭제합니다."
+msgstr "**Delete:** Deletes the selected folders and entities."
+

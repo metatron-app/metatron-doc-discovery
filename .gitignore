@@ -1,0 +1,9 @@
+.DS_Store
+.idea
+.vscode/
+
+# Build stuffs
+_build/
+.zip
+docs/latex/**
+!docs/latex/*.pdf

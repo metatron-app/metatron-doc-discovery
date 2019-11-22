@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Create a data source &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Data Connection" href="data_connection.html" />
+    <link rel="prev" title="Data source details" href="data_source_detail_view.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Management</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="data_source.html">Data Source</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dimension_and_measures.html">“Dimensions” and “Measures”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="manage_data_sources.html">Data source management home</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_source_detail_view.html">Data source details</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Create a data source</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#create-datasource-from-file">Create a data source from a file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#db">Create a data source from a database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stagingdb">Create a data source from a staging database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metatron">Add a data source with the Metatron engine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_connection.html">Data Connection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_monitoring.html">Data Monitoring</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Data Management</a> &raquo;</li>
+        
+          <li><a href="data_source.html">Data Source</a> &raquo;</li>
+        
+      <li>Create a data source</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part02/create_a_data_source.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Create a data source<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>This section explains the process of ingesting various types of source data into the Metatron engine and converting them into data sources.</p>
+<p>To create a data source, click the <strong>+ New</strong> button at the top right of the <strong>Data Source</strong> home screen.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_2.en.png" src="../../_images/create_datasource_2.en.png" />
+</div>
+</div></blockquote>
+<p>Then, select the type of source data.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_3.en.png" src="../../_images/create_datasource_3.en.png" />
+</div>
+<ul class="simple">
+<li><p><strong>File:</strong> Creates a data source from a file stored on your local PC (for details, refer to <a class="reference internal" href="#create-datasource-from-file"><span class="std std-ref">Create a data source from a file</span></a>).</p></li>
+<li><p><strong>Database:</strong> Creates a data source from an external database (for details, refer to <a class="reference internal" href="#create-datasource-from-db"><span class="std std-ref">Create a data source from a database</span></a>).</p></li>
+<li><p><strong>Staging DB:</strong> Creates a data source from Metatron’s internal Hive database (for details, refer to <a class="reference internal" href="#create-datasource-from-stagingdb"><span class="std std-ref">Create a data source from a staging database</span></a>).</p></li>
+<li><p><strong>Stream:</strong> This function is not currently supported.</p></li>
+<li><p><strong>Data Snapshot:</strong> This function is not currently supported.</p></li>
+<li><p><strong>Metatron Engine:</strong> Migrates a data source stored in a previous Metatron version (for details, refer to <a class="reference internal" href="#create-datasource-from-metatron"><span class="std std-ref">Add a data source with the Metatron engine</span></a>).</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="create-datasource-from-file">
+<span id="id2"></span><h2>Create a data source from a file<a class="headerlink" href="#create-datasource-from-file" title="Permalink to this headline">¶</a></h2>
+<p>Creates a data source from a file stored on your local PC.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>On the source data type selection page, select <strong>File</strong>.</p></li>
+<li><p>Select a file to be used as a data source from your local PC. You can either click the <strong>Import</strong> button and select the file, or drag and drop a file to the box. Once a file is selected, click Next.</p>
+<div class="figure align-default">
+<img alt="../../_images/create_datasource_file_1.en.png" src="../../_images/create_datasource_file_1.en.png" />
+</div>
+</li>
+<li><p>From the file, select the sheet to be included in the data source.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the “No preview data” message is shown in spite of there being data, check whether the <strong>Column delimiter</strong> and <strong>Line Separator</strong> have been configured correctly. In this example, the <strong>Line Separator</strong> must be set to “r”? the carriage return for MS Windows.</p>
+</div>
+<div class="figure align-default">
+<img alt="../../_images/create_datasource_file_3.en.png" src="../../_images/create_datasource_file_3.en.png" />
+</div>
+<ul class="simple">
+<li><p><strong>File name:</strong> Name of the imported file. You can replace it with another file.</p></li>
+<li><p><strong>File sheet list:</strong> Displays the sheets included in the imported file. Select the sheet from which you want to create a data source.</p></li>
+<li><p><strong>File sheet name:</strong> Name of the currently selected sheet.</p></li>
+<li><p><strong>Size:</strong> Size of the imported file.</p></li>
+<li><p><strong>Column:</strong> Number of columns in the imported file.</p></li>
+<li><p><strong>Row:</strong> Displayed number of rows and total number of rows in the imported file. Enter the number of rows to be displayed on the page.</p></li>
+<li><p><strong>Type:</strong> Displays how many data types are recognized from the columns. The data type of each column can be modified later.</p></li>
+<li><p><strong>Use the first row as the head column:</strong> Select the check box to use the first row of the file as column headers. If you don’t select it, a new row is inserted as a column header row.</p></li>
+</ul>
+</li>
+<li><p>Configure the schema of the data source.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_file_4.en.png" src="../../_images/create_datasource_file_4.en.png" />
+</div>
+<ul>
+<li><p><strong>Search by column header:</strong> Searches the imported file for columns by name.</p></li>
+<li><p><img alt="bin" src="../../_images/icon_bin.png" /> <strong>버튼(우측 상단):</strong> 선택한 컬럼을 삭제합니다.</p></li>
+<li><p><strong>Role:</strong> Displays all, dimension, or measure columns from the imported file.</p></li>
+<li><p><strong>Recommended filters:</strong> Displays columns to which a top-priority filter is applied.</p></li>
+<li><p><strong>Type:</strong> Filters the columns in the imported file by field type.</p></li>
+<li><p><strong>Column list section:</strong> Lists columns filtered by specified criteria. Once you have selected columns, a panel appears at the bottom of the screen. After selecting your desired batch action in the panel, click <strong>Apply</strong> to perform the batch action on the selected columns.</p></li>
+<li><p><strong>Individual column settings section:</strong> This area is used to set the attributes of a column selected from the column list. <strong>Missing</strong> is used to set nulls in the column.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Replace with:</strong> Replaces the nulls with the value typed in.</p></li>
+<li><p><strong>Discard:</strong> Discards the nulls.</p></li>
+<li><p><strong>Do not set:</strong> Leaves the nulls as nulls. However, the nulls in the timestamp column are mandatorily discarded.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Timestamp setting:</strong> Determines how to timestamp each row. You can either designate an existing time-type column as a timestamp column, or create a new time-type column whose values are all timestamped with the current time.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Metatron Druid is a time-series engine that requires a timestamp for each row when a data source is created.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>컬럼 추가:</strong> 데이터에 위도, 경도 컬럼이 있는 경우 이를 결합하여 <code class="docutils literal notranslate"><span class="pre">Point</span></code> 타입의 신규 컬럼을 추가할 수 있습니다. 이 컬럼을 지우면 다른 컬럼들과 동일하게 동작합니다.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Configure data source ingestion and click Next.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_file_10.en.png" src="../../_images/create_datasource_file_10.en.png" />
+</div>
+<ul>
+<li><p><strong>Segment Granularity:</strong> In Druid, a data source is stored into multiple segments to be processed over multiple nodes in the distributed cluster environment. This granularity setting defines the time intervals into which the data source is partitioned.</p></li>
+<li><p><strong>Query Granularity:</strong> Defines the minimum time period by which data is queried. This ensures faster returns by aggregating data per granularity interval.</p></li>
+<li><p><strong>Rollup:</strong> “Data rollup” summarizes data based on its dimension (for details on the concept of data rollup, refer to <a class="reference internal" href="../part01/druid_features.html#data-rollup"><span class="std std-ref">Data roll-up</span></a>). A summarization rule might be summing up all values in each column or applying a set of expressions such as <code class="docutils literal notranslate"><span class="pre">profit=sales=expenses</span></code>.</p></li>
+<li><p><strong>Advanced settings:</strong> Configures how to ingest data. Type in the text box in the JSON format. For example,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">maxRowsInMemory</span> <span class="p">:</span> <span class="mi">75000</span><span class="p">,</span>
+<span class="n">maxOccupationInMemory</span> <span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span>
+<span class="n">maxShardLength</span> <span class="p">:</span> <span class="o">-</span><span class="mi">2147483648</span><span class="p">,</span>
+<span class="n">leaveIntermediate</span> <span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+<span class="n">cleanupOnFailure</span> <span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+<span class="n">overwriteFiles</span> <span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+<span class="n">ignoreInvalidRows</span> <span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+<span class="n">assumeTimeSorted</span> <span class="p">:</span> <span class="n">false</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Confirm the information about the data set from the imported file, enter the <strong>Name</strong> and <strong>Description</strong>, and click <strong>Done</strong> to create a data source. It may take a few seconds or minutes depending on the amount of data as the source data is ingested into the internal Metatron engine (Druid).</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_file_12.en.png" src="../../_images/create_datasource_file_12.en.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>After data ingestion is complete, you can check the status. In the example below, the status is set to <strong>ENABLED</strong> and a histogram is displayed.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_file_13.en.png" src="../../_images/create_datasource_file_13.en.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>In the <strong>Data</strong> tab, you can check the ingested data in the form of a table.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_file_15.en.png" src="../../_images/create_datasource_file_15.en.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>On the <strong>Data Source</strong> management home screen, you will find a newly-created data source. While data is being ingested, the status is displayed as <strong>Disabled</strong> as shown below; the status changes to <strong>Enabled</strong> once ingestion is complete. After that, you can use the data source.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_file_16.en.png" src="../../_images/create_datasource_file_16.en.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="db">
+<span id="create-datasource-from-db"></span><h2>Create a data source from a database<a class="headerlink" href="#db" title="Permalink to this headline">¶</a></h2>
+<p>Creates a data source from an external database.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>On the source data type selection page, select <strong>Database</strong>.</p></li>
+<li><p>Enter the information to connect the database.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_db_2.en.png" src="../../_images/create_datasource_db_2.en.png" />
+</div>
+<ul>
+<li><p><strong>Ingestion type:</strong> Select how to ingest data into the data source.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Ingested data:</strong> Displays data sources that contain data ingested into the Metatron storage.</p></li>
+<li><p><strong>Linked data:</strong> Displays data sources that load data from linked databases whenever necessary.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Load a data connection:</strong> Automatically loads access information for a database that is already registered as a data connection. However, you must verify the connection by clicking the <strong>Validation check</strong> button.</p></li>
+<li><p><strong>DB type:</strong> Select the type of the database to be connected.</p></li>
+<li><p><strong>Host:</strong> Enter the hostname to connect to the database.</p></li>
+<li><p><strong>Port:</strong> Enter the port to connect to the database.</p></li>
+<li><p><strong>User name:</strong> Enter the username of the database.</p></li>
+<li><p><strong>Password:</strong> Enter the password of the database.</p></li>
+<li><p><strong>Validation check:</strong> Once you fill out all fields, the Test button becomes active. Click on it to verify if the connection is valid: The validity of the connection appears below the button.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Select data. You can either select a table from the connected database, or write a query yourself.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_db_4.en.png" src="../../_images/create_datasource_db_4.en.png" />
+</div>
+<ul class="simple">
+<li><p><strong>Table:</strong> Select a database and a table to display the table’s data. Once the data being ingested has been displayed, confirm the data and click <strong>Next</strong>.</p></li>
+<li><p><strong>Query:</strong> Write a query to import the data you want, and click <strong>Run</strong> to display the data in the lower section. Confirm the data and click <strong>Next</strong>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>The rest of the process is identical to <a class="reference internal" href="#create-datasource-from-file"><span class="std std-ref">Create a data source from a file</span></a>. However, when creating a data source from a database, you must configure additional <strong>ingestion settings</strong> as follows.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_db_6.en.png" src="../../_images/create_datasource_db_6.en.png" />
+</div>
+<ul>
+<li><p><strong>Ingest once:</strong> Ingest the data currently stored in the database only this once. When selecting the <strong>Limited record count</strong>, you can specify how many rows are to be ingested from the first row.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_db_7.en.png" src="../../_images/create_datasource_db_7.en.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p><strong>Ingest periodically:</strong> Saves data on a regular basis.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_db_8.en.png" src="../../_images/create_datasource_db_8.en.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="stagingdb">
+<span id="create-datasource-from-stagingdb"></span><h2>Create a data source from a staging database<a class="headerlink" href="#stagingdb" title="Permalink to this headline">¶</a></h2>
+<p>Creates a data source from Metatron’s internal Hive database.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>On the source data type selection page, select <strong>Staging DB</strong>.</p></li>
+<li><p>Once you select the database and its table to connect, the data is displayed.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_stagingdb_2.en.png" src="../../_images/create_datasource_stagingdb_2.en.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>The rest of the process is identical to <a class="reference internal" href="#create-datasource-from-db"><span class="std std-ref">Create a data source from a database</span></a>.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_stagingdb_3.en.png" src="../../_images/create_datasource_stagingdb_3.en.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="metatron">
+<span id="create-datasource-from-metatron"></span><h2>Add a data source with the Metatron engine<a class="headerlink" href="#metatron" title="Permalink to this headline">¶</a></h2>
+<p>Migrates a data source stored in a previous Metatron version.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>On the source data type selection page, select <strong>Metatron Engine</strong>.</p></li>
+<li><p>When data sources created in a previous version of Metatron are listed on the left as shown below, select the check boxes of the data sources you want to migrate to the current version.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_metatron_engine_2.en.png" src="../../_images/create_datasource_metatron_engine_2.en.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Click <strong>Done</strong> to migrate the selected data sources.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_metatron_engine_3.en.png" src="../../_images/create_datasource_metatron_engine_3.en.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data_connection.html" class="btn btn-neutral float-right" title="Data Connection" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data_source_detail_view.html" class="btn btn-neutral float-left" title="Data source details" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

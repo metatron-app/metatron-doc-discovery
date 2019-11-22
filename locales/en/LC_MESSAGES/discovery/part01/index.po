@@ -1,0 +1,38 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 88810f7bad0441ad8ed40c32c018981a
+#: ../../discovery/part01/index.rst:2
+msgid "Metatron Discovery 소개"
+msgstr "Introduction of Metatron Discovery"
+
+# 8706c22a2f624d31bf7b6d43154eb911
+#: ../../discovery/part01/index.rst:4
+msgid ""
+"Metatron Discovery는 Metatron 운용 서버 클러스터에 적재된 데이터를 단순하면서도 고도화된 방식으로 분석한 후 "
+"그 결과를 다양한 형식의 차트와 보고서로 사용자 PC에 출력해주는 솔루션입니다. 웹 템플릿 형식으로 구성되어 있으며 계정이 발급되면"
+" 아무 PC에서나 원격으로 접속할 수 있기 때문에 매우 편리한 접근성을 보장합니다."
+msgstr "Metatron Discovery is a solution that analyzes data ingested into the Metatron server cluster in a simple, sophisticated manner, and visualizes the results in the user PC in the form of charts and reports. A web-based application, it is highly accessible such that it can be remotely accessed by from any PC."
+
+# 2af7df42d2f041bf9ff00d9e80b10d7c
+#: ../../discovery/part01/index.rst:6
+msgid "본 장에서는 Metatron Discovery의 기술 기반과 구조, 그리고 Metatron 기본 엔진인 Druid에 대해 소개합니다."
+msgstr "This section introduces the technical background and structure of Metatron Discovery, and the Druid engine powering Metatron. "
+

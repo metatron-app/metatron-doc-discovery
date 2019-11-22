@@ -1,0 +1,32 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-22 21:30+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+# 3c8c21ecb00447038aa02d1e4cb6db3f
+#: ../../discovery/part08/membership_approval.rst:4
+msgid "멤버쉽 승인"
+msgstr "Membership Approval"
+
+# 260fe7a51d4141e396b8500e20721dd2
+#: ../../discovery/part08/membership_approval.rst:6
+msgid ""
+"이 메뉴에서는 사용자들의 가입 신청 내역을 보여줍니다. 아래 화면에서 보이는 것과 같이 가입이 거절되었거나, 승인을 대기 중인 신청"
+" 건들이 목록에 나타납니다. 승인을 마친 사용자는 이 메뉴가 아닌 **멤버** 메뉴에서 확인할 수 있습니다."
+msgstr "This menu shows applications for membership. As shown below, the list includes the applications that have been rejected or waiting for approval. But, approved users are listed here but can be found in the **Members** menu."
+

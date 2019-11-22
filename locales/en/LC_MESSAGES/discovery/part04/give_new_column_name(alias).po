@@ -1,0 +1,39 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 5609bc76f6224031972c17ee954d470a
+#: ../../discovery/part04/give_new_column_name(alias).rst:3
+msgid "컬럼에 새로운 이름 부여하기"
+msgstr "Renaming columns"
+
+# 264edb46c45a46e7b238b5ffa102b09a
+#: ../../discovery/part04/give_new_column_name(alias).rst:5
+msgid ""
+"대시보드 편집모드의 데이터 소스 패널에서 컬럼명에 마우스를 올린 후, 우측의 항목을 클릭하면 해당 컬럼의 Alias 값을 확인할 수"
+" 있습니다."
+msgstr "Hover the mouse over a column name on the data source panel in dashboard editing mode, and click the icon on the right to check the alias of the column."
+
+# 5767caf415b2479caa03d7d9630c81e6
+#: ../../discovery/part04/give_new_column_name(alias).rst:9
+msgid ""
+"Alias 항목에 마우스를 올리면 새로운 컬럼명을 입력할 수 있는 창이 열리며, 입력 후 **적용**\\을 누르면 반영된 것을 "
+"확인할 수 있습니다."
+msgstr "Hover the mouse over the alias to open a window where you can enter a new column name. After entering the name, click **Apply** to see the change applied."
+

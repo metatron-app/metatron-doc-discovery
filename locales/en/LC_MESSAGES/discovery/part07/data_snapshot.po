@@ -1,0 +1,122 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 9cc64c98cffc424abac0bb42d1d22b4b
+#: ../../discovery/part07/data_snapshot.rst:2
+msgid "데이터 스냅샷 결과 이용하기"
+msgstr "Use data snapshot results"
+
+# 7d2ca65693ca40eea8acca0d21c22086
+#: ../../discovery/part07/data_snapshot.rst:4
+msgid "데이터플로우를 통해 생성된 **데이터 스냅샷**\\은 다음과 같이 활용할 수 있습니다."
+msgstr "A **data snapshot** created through a dataflow can be used as follows:"
+
+# 6baf95a5dc7340ef828698e7cac971a9
+#: ../../discovery/part07/data_snapshot.rst:6
+msgid ":ref:`snapshot_result_check`"
+msgstr ":ref:`snapshot_result_check`"
+
+# 8778ca8befdb4a9e973e0bb55976b50b
+#: ../../discovery/part07/data_snapshot.rst:7
+msgid ":ref:`snapshot_into_druid`"
+msgstr ":ref:`snapshot_into_druid`"
+
+# fe830c01d45943b780e20d11975fd456
+#: ../../discovery/part07/data_snapshot.rst:8
+msgid ":ref:`snapshot_into_csv`"
+msgstr ":ref:`snapshot_into_csv`"
+
+# 04939e3ebed74741943ac399a2e659ce
+#: ../../discovery/part07/data_snapshot.rst:13
+msgid "데이터 스냅샷 결과 확인하기"
+msgstr "Check the data snapshot results"
+
+# 6ffc629cdcde48c4841578bc2f58b611
+#: ../../discovery/part07/data_snapshot.rst:15
+msgid "스냅샷의 생성 단계는 다음과 같은 3가지 경우로 분류됩니다."
+msgstr "The status of snapshot creation can be classified as follows:"
+
+# c0bcca626f0f404f836ab56fd22c2421
+#: ../../discovery/part07/data_snapshot.rst:17
+msgid "**성공** = SUCCEEDED"
+msgstr "**Success** = SUCCEEDED"
+
+# 0ef3c3bcb46942f2b28f8672b110134c
+#: ../../discovery/part07/data_snapshot.rst:18
+msgid "**실패** = FAILED"
+msgstr "**Failed** = FAILED"
+
+# 0b275e548f1349678aa0889e6fc3f344
+#: ../../discovery/part07/data_snapshot.rst:19
+msgid "**처리중** = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING"
+msgstr "**Preparing** = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING"
+
+# 22670c6265b546b48a066cfbca739378
+#: ../../discovery/part07/data_snapshot.rst:21
+msgid "스냅샷의 상세한 처리 결과는 다음 2가지 경로를 통해 확인할 수 있습니다."
+msgstr "You can view the details of snapshot creation through the two paths below:"
+
+# 0f9d43612dd24ca4ab4a5e3656c44a46
+#: ../../discovery/part07/data_snapshot.rst:23
+msgid "**MANAGEMENT** > **데이터 프리퍼레이션** > **데이터 스냅샷**\\의 스냅샷 목록을 통해서 확인"
+msgstr "Go to the snapshot list under **MANGEMENT** > **Data Preparation** > **Data Snapshot**."
+
+# 27bd30cafd2e476085758d348338ea96
+#: ../../discovery/part07/data_snapshot.rst:27
+msgid "**데이터플로우**\\의 :doc:`룰 편집 <edit_rules>` 화면 우측에서 **스냅샷(#)** 탭을 클릭"
+msgstr "Click the **Snapshot (#)** tab on the right of the :doc:`Edit rules <edit_rules>` page in **Dataflow**"
+
+# b08cc8ef6f854fccaba4a02d25cb2655
+#: ../../discovery/part07/data_snapshot.rst:31
+msgid ""
+"생성에 성공한 스냅샷의 상세 보기 화면으로 들어가면, 데이터의 유효성 비율, 생성된 스냅샷의 그리드 등을 확인할 수 있고, 스냅샷 "
+"결과를 :ref:`CSV 파일로 다운로드 <snapshot_into_csv>`\\할 수 있습니다."
+msgstr "In the snapshot details page, you can view details such as data validity ratio and a grid of the created snapshot, and download the results as a CSV file (:ref:`Download as CSV <snapshot_into_csv>`)."
+
+# 841ed37207314ae9a8477e64469b7176
+#: ../../discovery/part07/data_snapshot.rst:35
+msgid "유효한 데이터가 생성되지 못한 스냅샷의 상세 보기 화면으로 들어가면, 실패를 발생시킨 예외의 로그가 표시됩니다."
+msgstr "If valid data has not been created, the snapshot details page displays an error log."
+
+# 0252bc133733427e84401f0053cc617f
+#: ../../discovery/part07/data_snapshot.rst:42
+msgid "Metatron 엔진으로 적재하기"
+msgstr "Ingest into the Metatron engine"
+
+# 8ab75c543baa4995a4a3ee28c5541338
+#: ../../discovery/part07/data_snapshot.rst:44
+msgid "(개발예정)"
+msgstr "(upcoming feature)"
+
+# 717dc57824d24f43a047395cac958047
+#: ../../discovery/part07/data_snapshot.rst:49
+msgid "CSV파일로 다운로드 받기"
+msgstr "Download as a CSV file"
+
+# a56569ea79054b99a87d2c71c5ea67d7
+#: ../../discovery/part07/data_snapshot.rst:51
+msgid "생성에 성공한 스냅샷의 상세 보기에서는 **CSV로 다운로드**\\가 가능합니다."
+msgstr "In the details page of a successfully created snapshot, the **Download as CSV** option is enabled."
+
+# b9da2d7159b84235b856854bd3f56dd7
+#: ../../discovery/part07/data_snapshot.rst:55
+msgid "다운로드한 파일은 표준 CSV 형식으로, 'comma'로 구분되고 'new line'으로 개행합니다."
+msgstr "The downloaded file is a standard CSV, with each value separated by a “comma” and each row by a “new line.”"
+

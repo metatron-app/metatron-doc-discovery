@@ -1,0 +1,39 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 9efd89ab3269423aa53e3cfe2a67a243
+#: ../../discovery/part04/manage_dashboards.rst:2
+msgid "대시보드"
+msgstr "Dashboard"
+
+# b0a168260caa4036b1e45b3b5203d7e7
+#: ../../discovery/part04/manage_dashboards.rst:4
+msgid ""
+"**대시보드**\\는 워크북 안에 보관되며 특정한 데이터 소스를 사용자의 필요에 맞게 분석하고 시각화하는 기능을 제공합니다. 따라서"
+" 대시보드 생성 절차는 주로 데이터 소스를 연결하는 것부터 시작됩니다."
+msgstr "Stored in a workbook, a **dashboard** provides functions to analyze and visualize its connected data source as needed. Therefore, an important step to create a dashboard is connecting to a data source."
+
+# 343fe68108f04cbf81859bc4942a3326
+#: ../../discovery/part04/manage_dashboards.rst:9
+msgid ""
+"여러 데이터 소스를 기반으로 차트와 텍스트 기반의 시각화 분석에 더해, 피봇, 맵차트, 필터링 기능을 통해 분석 작업을 "
+"커스터마이징할 수 있습니다."
+msgstr "You can visualize analyses of various data sources into charts and texts; those visualizations are customizable using pivoting, chart mapping, and filtering."
+

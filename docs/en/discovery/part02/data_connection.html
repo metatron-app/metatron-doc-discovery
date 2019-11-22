@@ -1,0 +1,322 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Connection &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Data Monitoring" href="data_monitoring.html" />
+    <link rel="prev" title="Create a data source" href="create_a_data_source.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Management</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="data_source.html">Data Source</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Data Connection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Data connection management home</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#create-data-connection">Create a data connection</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_monitoring.html">Data Monitoring</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Data Management</a> &raquo;</li>
+        
+      <li>Data Connection</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part02/data_connection.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Data Connection<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Metatron Discovery can connect to an external database directly. To connect to an external database, you must create and manage a data connection containing the access information to that database. By registering such a data connection, you don’t need to enter the access information each time you connect to the same database.</p>
+<p>The Data Connection menu can be accessed under <strong>MANAGEMENT</strong> &gt; <strong>Data Storage</strong> &gt; <strong>Data Connection</strong> on the left-hand panel of the main screen.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/create_datasource_1.en.png" src="../../_images/create_datasource_1.en.png" />
+</div>
+</div></blockquote>
+<div class="section" id="id2">
+<h2>Data connection management home<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>On the <strong>Data Connection</strong> home page, you can create, edit and view database connections.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_connection_1.en.png" src="../../_images/data_connection_1.en.png" />
+</div>
+<ul class="simple">
+<li><p><strong>Publish:</strong> Filter the data connection list by public workspace.</p></li>
+<li><p><strong>Creator:</strong> Filter the data connection list by creator.</p></li>
+<li><p><strong>DB type:</strong> Filter the data connection list by database type (MySQL, PostgreSQL, Hive, or Presto).</p></li>
+<li><p><strong>Security:</strong> Filter the data connection list by security type (Always connect, connect by user’s account, or connect with ID and password).</p></li>
+<li><p><strong>Created time:</strong> Filter the data connection list by time of creation (Today, Last 7 days, or Between).</p></li>
+<li><p><strong>Search:</strong> Search the data connection list by data connection name.</p></li>
+<li><p><strong>Number of data connections:</strong> Displays how many data connections are returned in the list.</p></li>
+<li><p><strong>New:</strong> Click on it to create a new data connection.</p></li>
+<li><p><strong>Delete:</strong> Hover the mouse over a data connection to display a recycle bin icon. Click the icon to delete the data connection.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="create-data-connection">
+<span id="id3"></span><h2>Create a data connection<a class="headerlink" href="#create-data-connection" title="Permalink to this headline">¶</a></h2>
+<p>On the <strong>Create data connection</strong> screen, enter the required information to create a connection.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="../../_images/data_connection_creation.en.png" src="../../_images/data_connection_creation.en.png" />
+</div>
+<ul>
+<li><p><strong>DB type:</strong> Four database types are currently supported. (MySQL, PostgreSQL Hive, Presto)</p></li>
+<li><p><strong>Host:</strong> Enter the hostname to connect to the database.</p></li>
+<li><p><strong>Port:</strong> Enter the port to connect to the database.</p></li>
+<li><p><strong>URL only:</strong> Enter a database URL instead of a host and port.</p></li>
+<li><p><strong>User name:</strong> Enter the username of the database.</p></li>
+<li><p><strong>Password:</strong> Enter the password of the database.</p></li>
+<li><p><strong>Security:</strong> Set the type of security to be applied while using the data connection.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Always connect:</strong> Logs in using the account information the user has entered to create a new data connection.</p></li>
+<li><p><strong>Connect by user’s account:</strong> Logs in using the account information registered in Metatron Discovery.</p></li>
+<li><p><strong>Connect with ID and password:</strong> Requires to enter the account information every time the data connection is used.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Validation check:</strong> Checks whether the connection information entered is valid; the result is shown next to the button. The validity of the connection appears below the button.</p></li>
+<li><p><strong>Advanced settings:</strong> You can add a custom property key and value as options.</p></li>
+<li><p><strong>Publish:</strong> Set which workspaces have access to the data connection.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Allow all workspaces to use this data connection:</strong> Select this check box to make the data connection available in all workspaces.</p></li>
+<li><p><strong>Edit:</strong> Used to allow specific workspaces to access the data connection. This button will disappear if the data connection is set as open data.</p></li>
+<li><p><strong>Number of shared workspaces:</strong> Displays how many workspaces have access to the data connection.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data_monitoring.html" class="btn btn-neutral float-right" title="Data Monitoring" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="create_a_data_source.html" class="btn btn-neutral float-left" title="Create a data source" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

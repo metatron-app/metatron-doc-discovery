@@ -1,0 +1,61 @@
+Query,Interval,Filters,Group By,Aggregations
+Basic Aggregation.,None,None,"ReturnFlag
+:raw-html:`<br />`
+LineStatus","Count(*)
+:raw-html:`<br />`
+Sum(exdPrice)
+:raw-html:`<br />`
+Avg(avlQty)"
+Ship Date Range,1995-12/1997-09,None,"ReturnFlag
+:raw-html:`<br />`
+LineStatus",Count(*)
+"SubQry
+:raw-html:`<br />`
+Nation, pType
+:raw-html:`<br />`
+ShpDt Range",1995-12/1997-09,"P_Type
+:raw-html:`<br />`
+S_Nation +
+:raw-html:`<br />`
+C_Nation",S_Nation,"Count(*)
+:raw-html:`<br />`
+Sum(exdPrice)
+:raw-html:`<br />`
+Max(sCost)
+:raw-html:`<br />`
+Avg(avlQty)
+:raw-html:`<br />`
+Count(Distinct oKey)"
+TPCH Q1,None,None,"ReturnFlag
+:raw-html:`<br />`
+LineStatus","Count(*)
+:raw-html:`<br />`
+Sum(exdPrice)
+:raw-html:`<br />`
+Max(sCost)
+:raw-html:`<br />`
+Avg(avlQty)
+:raw-html:`<br />`
+Count(Distinct oKey)"
+TPCH Q3,1995-03-15-,"O_Date
+:raw-html:`<br />`
+MktSegment","Okey
+:raw-html:`<br />`
+Odate
+:raw-html:`<br />`
+ShipPri",Sum(exdPrice)
+TPCH Q5,None,"O_Date
+:raw-html:`<br />`
+Region",S_Nation,Sum(exdPrice)
+TPCH Q7,None,"S_Nation +
+:raw-html:`<br />`
+C_Nation","S_Nation
+:raw-html:`<br />`
+C_Nation
+:raw-html:`<br />`
+ShipDate.Year",Sum(exdPrice)
+TPCH Q8,None,"Region
+:raw-html:`<br />`
+Type
+:raw-html:`<br />`
+O_Date",ODate.Year,Sum(exdPrice)

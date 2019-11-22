@@ -1,0 +1,69 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 1af8d4563a82485aa3a7cc9b3007a3c3
+#: ../../discovery/part06/index.rst:2
+msgid "워크벤치"
+msgstr "Workbench"
+
+# 1ca03fdd17e8432da65d2f75e20018fd
+#: ../../discovery/part06/index.rst:6
+msgid ""
+"Metatron Discovery 워크벤치는 SQL을 기반으로 하는 데이터 전처리 및 분석 환경을 제공합니다. 주요 기능은 다음과 "
+"같습니다."
+msgstr "Metatron Workbench provides an environment for data preparation and analytics based on SQL. Its main functions are as follows:"
+
+# 5305f5f8a8a54a868bfe618b092e03dd
+#: ../../discovery/part06/index.rst:8
+msgid "다양한 외부 데이터베이스를 한꺼번에 작업공간에 조회 가능"
+msgstr "Various external databases can be loaded in one space."
+
+# ea362667ae83487ba50d7c89b8b71c17
+#: ../../discovery/part06/index.rst:9
+msgid "연동된 데이터베이스의 테이블과 컬럼을 쉽게 조회/선택하며 상세 정보 열람 가능"
+msgstr "The user can conveniently navigate/select linked tables and columns and view their details."
+
+# 6840e3086a2f4dddab359d4ede7bfc13
+#: ../../discovery/part06/index.rst:10
+msgid "쿼리 편집 도구가 내장되어 있으며 쿼리 결과를 실시간으로 확인하고 다양하게 활용 가능:"
+msgstr "Query edit tools are embedded and query results can be viewed interactively and available for various uses:"
+
+# 6be201dd1aeb46b383d6c94dc8fde69c
+#: ../../discovery/part06/index.rst:12
+msgid "쿼리결과를 로컬 파일로 다운로드 또는 온라인 엑셀로 출력"
+msgstr "Query results can be downloaded into a local file or exported to an online Excel."
+
+# 9b8ff12ebab5483a9945cdc53a097068
+#: ../../discovery/part06/index.rst:13
+msgid "쿼리 결과를 즉시 시각화함으로써 쿼리 결과로 출력된 데이터 형태를 쉽게 파악"
+msgstr "Query results can be interactively visualized to help the analyst see an outline of the resulting data table."
+
+# b1acc74fcddd4a36b03808b4a8a4e6c3
+#: ../../discovery/part06/index.rst:14
+msgid "쿼리 결과를 데이터 소스로 저장하여 워크북이나 노트북에서 분석에 활용 가능"
+msgstr "Query results can be stored as a data source available for analytics in a workbook or notebook."
+
+# 28db03c8c8a34e83b0cb71145cdb8db9
+#: ../../discovery/part06/index.rst:16
+msgid ""
+"SQL 기반 분석 쿼리를 보관하는 각각의 문서를 '워크벤치'라고 부릅니다. 본 단원에서는 워크벤치를 **생성**\\하고 "
+"**활용**\\하는 절차를 소개합니다."
+msgstr "Each document that stores SQL-based analytic queries is called a “workbench.” This chapter introduce how to **create** and **use** workbenches."
+

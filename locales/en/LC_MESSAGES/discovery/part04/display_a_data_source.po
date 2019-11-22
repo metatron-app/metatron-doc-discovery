@@ -1,0 +1,63 @@
+﻿# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-12 19:16+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.6.0\n"
+
+# 9cd6c8b8385249f28d8165f543ba58f1
+#: ../../discovery/part04/display_a_data_source.rst:2
+msgid "대시보드 내에 데이터 소스 확인하기"
+msgstr "Check data sources in a dashboard"
+
+# 00298ce4fbbe46ee9174ccefdaafecbd
+#: ../../discovery/part04/display_a_data_source.rst:5
+msgid ""
+"대시보드 기본 화면에서 |db_info| 버튼을 클릭하면 해당 대시보드에서 사용하는 데이터 소스들의 정보 를 보여주는 대화 상자가 "
+"나타납니다. 좌측 상단에서 확인하고자 하는 데이터 소스를 선택할 수 있 습니다. 이 대화 상자는 크게 3가지 탭(데이터 그리드, "
+"컬럼 상세 탭, 대시보드 데이터 정보)으로 구 성됩니다."
+msgstr "Click the |db_info| button on the basic dashboard page to display a dialog box displaying information about the data source used in the dashboard. At the top-left corner, you can choose the data source that you want to view. This dialog box consists of three tabs (Data grid, Column detail, Dashboard data information)."
+
+# 79c7b277ee804ca58ef4dd585b2044e0
+#: ../../discovery/part04/display_a_data_source.rst:8
+msgid "데이터 그리드 탭"
+msgstr "Data grid tab"
+
+# 78029534c8c64d91a9de37c2a35822df
+#: ../../discovery/part04/display_a_data_source.rst:10
+msgid "해당 데이터 소스의 레코드 값이 모두 표시됩니다."
+msgstr "Displays all values in the data source."
+
+# 78e9f191a58f48b1a84e5a6530c9692d
+#: ../../discovery/part04/display_a_data_source.rst:16
+msgid "컬럼 상세 탭"
+msgstr "Column details tab"
+
+# aca2dc1351194041a5c944777b2f3fbe
+#: ../../discovery/part04/display_a_data_source.rst:18
+msgid "해당 데이터 소스를 구성하는 각 컬럼에 관한 정보를 상세히 보여줍니다."
+msgstr "Displays details about each column of the data source."
+
+# b5d62c7f2e8e49738fe1840b06c01b67
+#: ../../discovery/part04/display_a_data_source.rst:24
+msgid "대시보드 데이터 정보 탭"
+msgstr "Dashboard data information tab"
+
+# b8c2961ad6c3447ea56c5dcedf111416
+#: ../../discovery/part04/display_a_data_source.rst:26
+msgid "해당 데이터 소스 전체에 대한 요약 정보를 보여줍니다."
+msgstr "Displays an overview of the data source."
+
