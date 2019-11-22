@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.21)  20 NOV 2019 18:09
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.5.21)  22 NOV 2019 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -483,6 +483,8 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \py=\skip56
 \pyy=\skip57
 \pxx=\skip58
+\c@AlphaCnt=\count271
+\c@AlphaDecCnt=\count272
 )
 (./sphinx.sty
 Package: sphinx 2019/01/12 v1.8.4 LaTeX package (Sphinx markup)
@@ -630,7 +632,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \backup@length=\skip71
 \ar@cellbox=\box51
 )
-\TY@count=\count271
+\TY@count=\count273
 \TY@linewidth=\dimen158
 \tymin=\dimen159
 \tymax=\dimen160
@@ -642,22 +644,22 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTright=\skip73
 \LTpre=\skip74
 \LTpost=\skip75
-\LTchunksize=\count272
+\LTchunksize=\count274
 \LTcapwidth=\dimen162
 \LT@head=\box52
 \LT@firsthead=\box53
 \LT@foot=\box54
 \LT@lastfoot=\box55
-\LT@cols=\count273
-\LT@rows=\count274
-\c@LT@tables=\count275
-\c@LT@chunks=\count276
+\LT@cols=\count275
+\LT@rows=\count276
+\c@LT@tables=\count277
+\c@LT@chunks=\count278
 \LT@p@ftn=\toks24
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box56
-\sift@deathcycles=\count277
+\sift@deathcycles=\count279
 \@vwid@loff=\dimen163
 \@vwid@roff=\dimen164
 )
@@ -697,11 +699,11 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 Package: fancyvrb 2019/01/15
 
 Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
-\FV@CodeLineNo=\count278
+\FV@CodeLineNo=\count280
 \FV@InFile=\read2
 \FV@TabBox=\box57
-\c@FancyVerbLine=\count279
-\FV@StepNumber=\count280
+\c@FancyVerbLine=\count281
+\FV@StepNumber=\count282
 \FV@OutFile=\write3
 ) (./footnotehyper-sphinx.sty
 Package: footnotehyper-sphinx 2017/10/27 v1.7 hyperref aware footnote.sty for s
@@ -710,7 +712,7 @@ phinx (JFB)
 \FNH@width=\dimen170
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count281
+\c@float@type=\count283
 \float@exts=\toks25
 \float@box=\box59
 \@float@everytoks=\toks26
@@ -719,7 +721,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen171
 \WF@size=\dimen172
-\c@WF@wrappedlines=\count282
+\c@WF@wrappedlines=\count284
 \WF@box=\box61
 \WF@everypar=\toks27
 Package: wrapfig 2003/01/31  v 3.6
@@ -767,7 +769,7 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 \spx@notice@border=\dimen178
 \spx@image@maxheight=\dimen179
 \spx@image@box=\dimen180
-\c@literalblock=\count283
+\c@literalblock=\count285
 \sphinxcontinuationbox=\box62
 \sphinxvisiblespacebox=\box63
 \sphinxVerbatim@TitleBox=\box64
@@ -785,9 +787,9 @@ Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-\Gm@cnth=\count284
-\Gm@cntv=\count285
-\c@Gm@tempcnt=\count286
+\Gm@cnth=\count286
+\Gm@cntv=\count287
+\c@Gm@tempcnt=\count288
 \Gm@bindingoffset=\dimen181
 \Gm@wd@mp=\dimen182
 \Gm@odd@mp=\dimen183
@@ -843,13 +845,13 @@ Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen189
-\Hy@linkcounter=\count287
-\Hy@pagecounter=\count288
+\Hy@linkcounter=\count289
+\Hy@pagecounter=\count290
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count289
+\Hy@SavedSpaceFactor=\count291
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -869,7 +871,7 @@ Package hyperref Info: Plain pages OFF on input line 4534.
 Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count290
+\c@Hy@tempcnt=\count292
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -877,7 +879,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5125.
 \XeTeXLinkMargin=\dimen190
-\Fld@menulength=\count291
+\Fld@menulength=\count293
 \Field@Width=\dimen191
 \Fld@charsize=\dimen192
 Package hyperref Info: Hyper figures OFF on input line 6380.
@@ -889,9 +891,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count292
-\c@Item=\count293
-\c@Hfootnote=\count294
+\Hy@abspage=\count294
+\c@Item=\count295
+\c@Hfootnote=\count296
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -903,10 +905,10 @@ Package: stringenc 2016/05/16 v1.11 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box65
-\c@Hy@AnnotLevel=\count295
-\HyField@AnnotCount=\count296
-\Fld@listcount=\count297
-\c@bookmark@seq@number=\count298
+\c@Hy@AnnotLevel=\count297
+\HyField@AnnotCount=\count298
+\Fld@listcount=\count299
+\c@bookmark@seq@number=\count300
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -929,102 +931,102 @@ Writing index file metatron-doc-user.idx
 (./metatron-doc-user.aux)
 \openout1 = `metatron-doc-user.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 63.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 63.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 63.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 63.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 63.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 63.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 63.
-LaTeX Font Info:    Redeclaring math accent \check on input line 63.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 63.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 63.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 63.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 61.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 61.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 61.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 61.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 61.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 61.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 61.
+LaTeX Font Info:    Redeclaring math accent \check on input line 61.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 61.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 61.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 61.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 61.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 63.
+(Font)              `operators' in the math version `normal' on input line 61.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/NanumBarunGothic(0)/m/n on input lin
-e 63.
+e 61.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 63.
+(Font)              `operators' in the math version `bold' on input line 61.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/NanumBarunGothic(0)/m/n on input li
-ne 63.
+ne 61.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/NanumBarunGothic(0)/m/n --> TU/NanumBarunGothic(0)/m
-/n on input line 63.
+/n on input line 61.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/NanumBarunGothic(0)/m/it on input l
-ine 63.
+ine 61.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/NanumBarunGothic(0)/bx/n on input l
-ine 63.
+ine 61.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/NanumBarunGothic(0)/m/n on input li
-ne 63.
+ne 61.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/NanumGothicCoding(0)/m/n on input l
-ine 63.
+ine 61.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/NanumBarunGothic(0)/m/n --> TU/NanumBarunGothic(0)/b
-x/n on input line 63.
+x/n on input line 61.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/NanumBarunGothic(0)/bx/it on input
- line 63.
+ line 61.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/NanumBarunGothic(0)/bx/n on input 
-line 63.
+line 61.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/NanumGothicCoding(0)/bx/n on input 
-line 63.
+line 61.
 \symmathhangul=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `mathhangul' in version `bold'
 (Font)                  TU/NanumBarunGothic(0)/m/n --> TU/NanumBarunGothic(0)/b
-x/n on input line 63.
+x/n on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1061,30 +1063,30 @@ x/n on input line 63.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box66
-Package hyperref Info: Link coloring ON on input line 63.
+Package hyperref Info: Link coloring ON on input line 61.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count299
+\c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
 
 (./metatron-doc-user.out) (./metatron-doc-user.out)
 \@outlinefile=\write5
 \openout5 = `metatron-doc-user.out'.
 
-Package hyperref Info: Option `pageanchor' set `false' on input line 66.
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+Package hyperref Info: Option `pageanchor' set `false' on input line 64.
+LaTeX Font Info:    Try loading font information for U+msa on input line 64.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 64.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1095,230 +1097,240 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 (./metatron-doc-user.toc
-Overfull \hbox (1.98997pt too wide) detected at line 88
+Overfull \hbox (1.98997pt too wide) detected at line 80
  []\TU/NanumBarunGothic(0)/m/n/10 107
  []
 
 
+Overfull \hbox (1.98997pt too wide) detected at line 83
+ []\TU/NanumBarunGothic(0)/m/n/10 110
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 88
+ []\TU/NanumBarunGothic(0)/m/n/10 118
+ []
+
+
 Overfull \hbox (1.98997pt too wide) detected at line 93
- []\TU/NanumBarunGothic(0)/m/n/10 111
+ []\TU/NanumBarunGothic(0)/m/n/10 122
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 102
- []\TU/NanumBarunGothic(0)/m/n/10 121
+ []\TU/NanumBarunGothic(0)/m/n/10 132
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 103
- []\TU/NanumBarunGothic(0)/m/n/10 125
+ []\TU/NanumBarunGothic(0)/m/n/10 136
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 117
- []\TU/NanumBarunGothic(0)/m/n/10 149
+ []\TU/NanumBarunGothic(0)/m/n/10 159
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 140
- []\TU/NanumBarunGothic(0)/m/n/10 182
+ []\TU/NanumBarunGothic(0)/m/n/10 194
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 150
- []\TU/NanumBarunGothic(0)/m/n/10 198
+ []\TU/NanumBarunGothic(0)/m/n/10 212
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 153
+ []\TU/NanumBarunGothic(0)/m/n/10 214
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 154
+ []\TU/NanumBarunGothic(0)/m/n/10 215
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 155
+ []\TU/NanumBarunGothic(0)/m/n/10 220
  []
 
 [1
 
 ]
-Overfull \hbox (1.98997pt too wide) detected at line 153
- []\TU/NanumBarunGothic(0)/m/n/10 200
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 154
- []\TU/NanumBarunGothic(0)/m/n/10 202
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 155
- []\TU/NanumBarunGothic(0)/m/n/10 205
- []
-
-
 Overfull \hbox (1.98997pt too wide) detected at line 160
- []\TU/NanumBarunGothic(0)/m/n/10 210
+ []\TU/NanumBarunGothic(0)/m/n/10 226
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 161
- []\TU/NanumBarunGothic(0)/m/n/10 212
+ []\TU/NanumBarunGothic(0)/m/n/10 228
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 173
- []\TU/NanumBarunGothic(0)/m/n/10 225
+ []\TU/NanumBarunGothic(0)/m/n/10 241
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 177
- []\TU/NanumBarunGothic(0)/m/n/10 237
+ []\TU/NanumBarunGothic(0)/m/n/10 254
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 215
- []\TU/NanumBarunGothic(0)/m/n/10 283
+ []\TU/NanumBarunGothic(0)/m/n/10 304
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 220
- []\TU/NanumBarunGothic(0)/m/n/10 288
+ []\TU/NanumBarunGothic(0)/m/n/10 310
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 221
- []\TU/NanumBarunGothic(0)/m/n/10 289
+ []\TU/NanumBarunGothic(0)/m/n/10 311
  []
 
 
 Overfull \hbox (1.98997pt too wide) detected at line 225
- []\TU/NanumBarunGothic(0)/m/n/10 292
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 229
- []\TU/NanumBarunGothic(0)/m/n/10 295
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 231
- []\TU/NanumBarunGothic(0)/m/n/10 299
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 236
- []\TU/NanumBarunGothic(0)/m/n/10 306
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 237
- []\TU/NanumBarunGothic(0)/m/n/10 308
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 238
- []\TU/NanumBarunGothic(0)/m/n/10 309
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 240
- []\TU/NanumBarunGothic(0)/m/n/10 312
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 245
  []\TU/NanumBarunGothic(0)/m/n/10 314
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 249
- []\TU/NanumBarunGothic(0)/m/n/10 320
+Overfull \hbox (1.98997pt too wide) detected at line 229
+ []\TU/NanumBarunGothic(0)/m/n/10 317
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 254
- []\TU/NanumBarunGothic(0)/m/n/10 329
+Overfull \hbox (1.98997pt too wide) detected at line 231
+ []\TU/NanumBarunGothic(0)/m/n/10 321
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 267
+Overfull \hbox (1.98997pt too wide) detected at line 236
+ []\TU/NanumBarunGothic(0)/m/n/10 328
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 237
+ []\TU/NanumBarunGothic(0)/m/n/10 330
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 238
  []\TU/NanumBarunGothic(0)/m/n/10 331
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 273
- []\TU/NanumBarunGothic(0)/m/n/10 332
- []
-
-[2]
-Overfull \hbox (1.98997pt too wide) detected at line 278
- []\TU/NanumBarunGothic(0)/m/n/10 339
+Overfull \hbox (1.98997pt too wide) detected at line 240
+ []\TU/NanumBarunGothic(0)/m/n/10 334
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 279
- []\TU/NanumBarunGothic(0)/m/n/10 339
+Overfull \hbox (1.98997pt too wide) detected at line 245
+ []\TU/NanumBarunGothic(0)/m/n/10 336
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 280
- []\TU/NanumBarunGothic(0)/m/n/10 339
+Overfull \hbox (1.98997pt too wide) detected at line 249
+ []\TU/NanumBarunGothic(0)/m/n/10 342
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 283
- []\TU/NanumBarunGothic(0)/m/n/10 343
+Overfull \hbox (1.98997pt too wide) detected at line 254
+ []\TU/NanumBarunGothic(0)/m/n/10 351
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 284
- []\TU/NanumBarunGothic(0)/m/n/10 344
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 285
- []\TU/NanumBarunGothic(0)/m/n/10 345
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 287
- []\TU/NanumBarunGothic(0)/m/n/10 347
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 288
- []\TU/NanumBarunGothic(0)/m/n/10 349
- []
-
-
-Overfull \hbox (1.98997pt too wide) detected at line 289
+Overfull \hbox (1.98997pt too wide) detected at line 267
  []\TU/NanumBarunGothic(0)/m/n/10 353
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 290
- []\TU/NanumBarunGothic(0)/m/n/10 355
+Overfull \hbox (1.98997pt too wide) detected at line 273
+ []\TU/NanumBarunGothic(0)/m/n/10 354
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 291
- []\TU/NanumBarunGothic(0)/m/n/10 356
+Overfull \hbox (1.98997pt too wide) detected at line 278
+ []\TU/NanumBarunGothic(0)/m/n/10 359
+ []
+
+[2]
+Overfull \hbox (1.98997pt too wide) detected at line 279
+ []\TU/NanumBarunGothic(0)/m/n/10 359
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 292
- []\TU/NanumBarunGothic(0)/m/n/10 358
+Overfull \hbox (1.98997pt too wide) detected at line 280
+ []\TU/NanumBarunGothic(0)/m/n/10 359
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 295
+Overfull \hbox (1.98997pt too wide) detected at line 283
+ []\TU/NanumBarunGothic(0)/m/n/10 363
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 284
+ []\TU/NanumBarunGothic(0)/m/n/10 364
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 285
  []\TU/NanumBarunGothic(0)/m/n/10 365
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 296
- []\TU/NanumBarunGothic(0)/m/n/10 366
+Overfull \hbox (1.98997pt too wide) detected at line 287
+ []\TU/NanumBarunGothic(0)/m/n/10 367
  []
 
 
-Overfull \hbox (1.98997pt too wide) detected at line 298
+Overfull \hbox (1.98997pt too wide) detected at line 288
  []\TU/NanumBarunGothic(0)/m/n/10 369
  []
 
 
+Overfull \hbox (1.98997pt too wide) detected at line 289
+ []\TU/NanumBarunGothic(0)/m/n/10 373
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 290
+ []\TU/NanumBarunGothic(0)/m/n/10 375
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 291
+ []\TU/NanumBarunGothic(0)/m/n/10 376
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 292
+ []\TU/NanumBarunGothic(0)/m/n/10 379
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 295
+ []\TU/NanumBarunGothic(0)/m/n/10 383
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 296
+ []\TU/NanumBarunGothic(0)/m/n/10 384
+ []
+
+
+Overfull \hbox (1.98997pt too wide) detected at line 298
+ []\TU/NanumBarunGothic(0)/m/n/10 387
+ []
+
+
 Overfull \hbox (1.98997pt too wide) detected at line 299
- []\TU/NanumBarunGothic(0)/m/n/10 371
+ []\TU/NanumBarunGothic(0)/m/n/10 389
  []
 
 )
@@ -1336,784 +1348,1621 @@ File: discovery-main.png Graphic file (type bmp)
 [3
 
 ]
-File: s1-1.png Graphic file (type bmp)
-<s1-1.png>
+File: s1-1.en.png Graphic file (type bmp)
+<s1-1.en.png>
  [4]
 
 LaTeX Font Warning: Font shape `TU/NanumBarunGothic(0)/m/it' undefined
 (Font)              using `TU/NanumBarunGothic(0)/m/n' instead on input line 13
-5.
+3.
 
-File: s1-2.png Graphic file (type bmp)
-<s1-2.png>
+File: s1-2.en.png Graphic file (type bmp)
+<s1-2.en.png>
 [5]
-File: s1-3.png Graphic file (type bmp)
-<s1-3.png>
+File: s1-3.en.png Graphic file (type bmp)
+<s1-3.en.png>
  [6]
-File: s1-4.png Graphic file (type bmp)
-<s1-4.png>
- [7]
-File: s1-5.png Graphic file (type bmp)
-<s1-5.png>
-File: s1-6.png Graphic file (type bmp)
-<s1-6.png>
- [8]
-File: s1-7.png Graphic file (type bmp)
-<s1-7.png>
+File: s1-4.en.png Graphic file (type bmp)
+<s1-4.en.png>
+ [7] [8]
+File: s1-5.en.png Graphic file (type bmp)
+<s1-5.en.png>
+File: s1-6.en.png Graphic file (type bmp)
+<s1-6.en.png>
  [9]
-File: s1-8.png Graphic file (type bmp)
-<s1-8.png>
-File: s1-9.png Graphic file (type bmp)
-<s1-9.png>
+File: s1-7.en.png Graphic file (type bmp)
+<s1-7.en.png>
  [10]
-File: s1-10.png Graphic file (type bmp)
-<s1-10.png>
+File: s1-8.en.png Graphic file (type bmp)
+<s1-8.en.png>
  [11]
-File: s1-11.png Graphic file (type bmp)
-<s1-11.png>
-File: tt02.png Graphic file (type bmp)
-<tt02.png>
+File: s1-9.en.png Graphic file (type bmp)
+<s1-9.en.png>
  [12]
-File: tt03.png Graphic file (type bmp)
-<tt03.png>
+File: s1-10.en.png Graphic file (type bmp)
+<s1-10.en.png>
  [13]
-File: tt03-2.png Graphic file (type bmp)
-<tt03-2.png>
-File: tt04.png Graphic file (type bmp)
-<tt04.png>
+File: s1-11.en.png Graphic file (type bmp)
+<s1-11.en.png>
  [14]
-File: tt03-3.png Graphic file (type bmp)
-<tt03-3.png>
+File: tt02.en.png Graphic file (type bmp)
+<tt02.en.png>
  [15]
-File: tt06.png Graphic file (type bmp)
-<tt06.png>
+File: tt03.en.png Graphic file (type bmp)
+<tt03.en.png>
+ [16]
+File: tt03-2.en.png Graphic file (type bmp)
+<tt03-2.en.png>
+ [17]
+File: tt04.en.png Graphic file (type bmp)
+<tt04.en.png>
+ [18]
+File: tt03-3.en.png Graphic file (type bmp)
+<tt03-3.en.png>
+ [19]
+File: tt06.en.png Graphic file (type bmp)
+<tt06.en.png>
+ [20]
 File: create_chart.png Graphic file (type bmp)
 <create_chart.png>
- [16]
-File: ttd.png Graphic file (type bmp)
-<ttd.png>
-File: ttd-1.png Graphic file (type bmp)
-<ttd-1.png>
- [17]
-File: ttd-3.png Graphic file (type bmp)
-<ttd-3.png>
- [18]
-File: ttd-4.png Graphic file (type bmp)
-<ttd-4.png>
- [19]
-File: icon_common.png Graphic file (type bmp)
-<icon_common.png>
-File: ttd-5.png Graphic file (type bmp)
-<ttd-5.png>
-File: icon_number.png Graphic file (type bmp)
-<icon_number.png>
-File: ttd-6.png Graphic file (type bmp)
-<ttd-6.png>
- [20]
-File: icon_aux.png Graphic file (type bmp)
-<icon_aux.png>
-File: ttd-7.png Graphic file (type bmp)
-<ttd-7.png>
 
 [21]
-File: ttd-8.png Graphic file (type bmp)
-<ttd-8.png>
+File: ttd.en.png Graphic file (type bmp)
+<ttd.en.png>
  [22]
-File: ttd-9.png Graphic file (type bmp)
-<ttd-9.png>
-File: ttd-10.png Graphic file (type bmp)
-<ttd-10.png>
+File: ttd-1.en.png Graphic file (type bmp)
+<ttd-1.en.png>
  [23]
-File: ttd-13.png Graphic file (type bmp)
-<ttd-13.png>
+File: ttd-3.en.png Graphic file (type bmp)
+<ttd-3.en.png>
  [24]
+File: ttd-4.en.png Graphic file (type bmp)
+<ttd-4.en.png>
+ [25]
+File: icon_common.png Graphic file (type bmp)
+<icon_common.png>
+File: ttd-5.en.png Graphic file (type bmp)
+<ttd-5.en.png>
+ [26]
+File: icon_number.png Graphic file (type bmp)
+<icon_number.png>
+File: ttd-6.en.png Graphic file (type bmp)
+<ttd-6.en.png>
+ [27]
+File: icon_aux.png Graphic file (type bmp)
+<icon_aux.png>
+File: ttd-7.en.png Graphic file (type bmp)
+<ttd-7.en.png>
+ [28]
+File: ttd-8.en.png Graphic file (type bmp)
+<ttd-8.en.png>
+ [29]
+File: ttd-9.en.png Graphic file (type bmp)
+<ttd-9.en.png>
+ [30]
+File: ttd-10.en.png Graphic file (type bmp)
+<ttd-10.en.png>
+ [31]
+File: ttd-13.en.png Graphic file (type bmp)
+<ttd-13.en.png>
+ [32]
 File: icon_coloring.png Graphic file (type bmp)
 <icon_coloring.png>
-File: ttd-16.png Graphic file (type bmp)
-<ttd-16.png>
-File: ttd-15.png Graphic file (type bmp)
-<ttd-15.png>
- [25]
-File: ttd.png Graphic file (type bmp)
-<ttd.png>
- [26] [27] [28
+File: ttd-16.en.png Graphic file (type bmp)
+<ttd-16.en.png>
+ [33]
+File: ttd-15.en.png Graphic file (type bmp)
+<ttd-15.en.png>
+ [34]
+File: ttd.en.png Graphic file (type bmp)
+<ttd.en.png>
+ [35]
+[36]
+Chapter 2.
+File: intro.en.png Graphic file (type bmp)
+<intro.en.png>
+[37
 
 ]
-Chapter 2.
-File: intro.png Graphic file (type bmp)
-<intro.png>
-[29]
-File: bi.png Graphic file (type bmp)
-<bi.png>
- [30]
-File: big_olap_cube.png Graphic file (type bmp)
-<big_olap_cube.png>
- [31]
-File: single_solution.png Graphic file (type bmp)
-<single_solution.png>
-File: diagram.png Graphic file (type bmp)
-<diagram.png>
- [32]
-File: prep.png Graphic file (type bmp)
-<prep.png>
-File: prep2.png Graphic file (type bmp)
-<prep2.png>
- [33]
-File: datasource.png Graphic file (type bmp)
-<datasource.png>
-File: datasource2.png Graphic file (type bmp)
-<datasource2.png>
- [34] [35]
-File: workspace.png Graphic file (type bmp)
-<workspace.png>
- [36]
-File: dashboard.png Graphic file (type bmp)
-<dashboard.png>
-File: chart.png Graphic file (type bmp)
-<chart.png>
- [37]
-File: map.png Graphic file (type bmp)
-<map.png>
+File: bi.en.png Graphic file (type bmp)
+<bi.en.png>
  [38]
-File: notebook_intro.png Graphic file (type bmp)
-<notebook_intro.png>
-File: sql.png Graphic file (type bmp)
-<sql.png>
+File: big_olap_cube.en.png Graphic file (type bmp)
+<big_olap_cube.en.png>
  [39]
-File: monitoring.png Graphic file (type bmp)
-<monitoring.png>
- [40] [41]
+File: single_solution.en.png Graphic file (type bmp)
+<single_solution.en.png>
+ [40]
+File: diagram.en.png Graphic file (type bmp)
+<diagram.en.png>
+File: prep.en.png Graphic file (type bmp)
+<prep.en.png>
+File: prep2.en.png Graphic file (type bmp)
+<prep2.en.png>
+ [41] [42]
+File: datasource.en.png Graphic file (type bmp)
+<datasource.en.png>
+File: datasource2.en.png Graphic file (type bmp)
+<datasource2.en.png>
+ [43]
+File: workspace.en.png Graphic file (type bmp)
+<workspace.en.png>
+ [44]
+File: dashboard.en.png Graphic file (type bmp)
+<dashboard.en.png>
+File: chart.en.png Graphic file (type bmp)
+<chart.en.png>
+ [45]
+File: map.en.png Graphic file (type bmp)
+<map.en.png>
+ [46]
+File: notebook_intro.en.png Graphic file (type bmp)
+<notebook_intro.en.png>
+File: sql.en.png Graphic file (type bmp)
+<sql.en.png>
+ [47]
+File: monitoring.en.png Graphic file (type bmp)
+<monitoring.en.png>
+ [48] [49]
 File: druid_logo.png Graphic file (type bmp)
 <druid_logo.png>
- [42]
-File: druid-features-time-series.png Graphic file (type bmp)
-<druid-features-time-series.png>
- [43]
-File: druid-features-rollup.png Graphic file (type bmp)
-<druid-features-rollup.png>
+ [50]
+Underfull \hbox (badness 10000) in paragraph at lines 783--784
+\TU/NanumBarunGothic(0)/m/it/10 Data tables in Druid (called data sources) are 
+collections of timestamped events designed
+ []
 
-[44]
+File: druid-features-time-series.en.png Graphic file (type bmp)
+<druid-features-time-series.en.png>
+[51] [52]
+File: druid-features-rollup.en.png Graphic file (type bmp)
+<druid-features-rollup.en.png>
+Missing character: There is no ␣ in font NanumGothicCoding/AAT!
+ [53]
+Missing character: There is no ␣ in font NanumGothicCoding/AAT!
+File: druid-features-wiki.en.png Graphic file (type bmp)
+<druid-features-wiki.en.png>
+ [54]
 Missing character: There is no ␣ in font NanumGothicCoding/AAT!
 Missing character: There is no ␣ in font NanumGothicCoding/AAT!
- [45]
-File: druid-features-wiki.png Graphic file (type bmp)
-<druid-features-wiki.png>
-Missing character: There is no ␣ in font NanumGothicCoding/AAT!
-Missing character: There is no ␣ in font NanumGothicCoding/AAT!
- [46]
 Missing character: There is no ␣ in font NanumGothicCoding/AAT!
 Missing character: There is no ␣ in font NanumGothicCoding/AAT!
 Missing character: There is no ␣ in font NanumGothicCoding/AAT!
 Missing character: There is no ␣ in font NanumGothicCoding/AAT!
+ [55]
 File: druid_node_architecture.png Graphic file (type bmp)
 <druid_node_architecture.png>
- [47]
+ [56]
 File: druid-archit-data-processing.png Graphic file (type bmp)
 <druid-archit-data-processing.png>
- [48] [49]
+ [57]
 File: druid-archit-historical.png Graphic file (type bmp)
 <druid-archit-historical.png>
- [50]
+ [58] [59]
 File: druid-archit-broker.png Graphic file (type bmp)
 <druid-archit-broker.png>
- [51]
+ [60]
 File: intro-to-druid.png Graphic file (type bmp)
 <intro-to-druid.png>
- [52]
-Missing character: There is no é in font NanumBarunGothic/OT:script=latn;langua
-ge=DFLT;mapping=tex-text;!
-Missing character: There is no é in font NanumBarunGothic/OT:script=latn;langua
-ge=DFLT;mapping=tex-text;!
- [53]
-File: druid-mysql-benchmark.png Graphic file (type bmp)
-<druid-mysql-benchmark.png>
-File: druid-scaling-benchmark.png Graphic file (type bmp)
-<druid-scaling-benchmark.png>
- [54]
-File: druid-ingestion-test.png Graphic file (type bmp)
-<druid-ingestion-test.png>
- [55]
-File: druid-mysql-benchmark2.png Graphic file (type bmp)
-<druid-mysql-benchmark2.png>
- [56] [57]
-File: druid-eval-by-sk.png Graphic file (type bmp)
-<druid-eval-by-sk.png>
+ [61] [62]
+File: druid-mysql-benchmark.en.png Graphic file (type bmp)
+<druid-mysql-benchmark.en.png>
+File: druid-scaling-benchmark.en.png Graphic file (type bmp)
+<druid-scaling-benchmark.en.png>
+ [63]
+File: druid-ingestion-test.en.png Graphic file (type bmp)
+<druid-ingestion-test.en.png>
+ [64]
+File: druid-mysql-benchmark2.en.png Graphic file (type bmp)
+<druid-mysql-benchmark2.en.png>
+ [65]
+File: druid-eval-by-sk.en.png Graphic file (type bmp)
+<druid-eval-by-sk.en.png>
 
-Underfull \hbox (badness 6236) in paragraph at lines 1273--1276
+Underfull \hbox (badness 6236) in paragraph at lines 1271--1274
 [][][]\TU/NanumBarunGothic(0)/m/it/8 Steven Acreman. (2016, Aug 26). Top 10 Tim
 e Series Databases. Retrieved from [][]$[][][][][] [] [] [] [][][][] [] [][][][
 ][][][] [] [][][] []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1298--1300
-[] \TU/NanumBarunGothic(0)/m/it/10 출 처 : [][]$[][][][][] [] [] [] [][][][][][] 
-[] [][][][][][] [] [][][] [] [][][][][] [] [] [] [][][][][][][][] []
+[66]
+Underfull \hbox (badness 7256) in paragraph at lines 1294--1296
+[]|\TU/NanumBarunGothic(0)/m/it/10 25k metrics/sec Source: [][]$[][][][][] [] [
+] [] [][][][][][] [] [][][][][][] [] [][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1298--1300
-[][][][][][][][][][][] [] [][][][][][][][][] [] [][][][][][] [] [][][][][][][][
-][] [] [][][][][][][][][][][] []
+Underfull \hbox (badness 10000) in paragraph at lines 1294--1296
+[][][][][] [] [] [] [][][][][][][][] [] [][][][][][][][][][][] [] [][][][][][][
+][][] [] [][][][][][] []
  []
 
-[58] [59]
-Underfull \hbox (badness 10000) in paragraph at lines 1425--1426
+[67] [68]
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
 []|\TU/NanumBarunGothic(0)/m/it/10 Basic Aggre-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1442--1443
+Underfull \hbox (badness 10000) in paragraph at lines 1438--1439
 []|\TU/NanumBarunGothic(0)/m/it/10 Ship Date
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1444--1445
+Underfull \hbox (badness 10000) in paragraph at lines 1440--1441
 []|\TU/NanumBarunGothic(0)/m/it/10 1995-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1461--1462
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1458
 []|\TU/NanumBarunGothic(0)/m/it/10 1995-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1479--1481
+Underfull \hbox (badness 10000) in paragraph at lines 1475--1477
 []\TU/NanumBarunGothic(0)/m/it/10 Count(Distinct
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1502
+Underfull \hbox (badness 10000) in paragraph at lines 1496--1498
 []\TU/NanumBarunGothic(0)/m/it/10 Count(Distinct
  []
 
-[60]
-File: druid-vs-spark.png Graphic file (type bmp)
-<druid-vs-spark.png>
- [61] [62] [63] [64] [65] [66
+[69]
+File: druid-vs-spark.en.png Graphic file (type bmp)
+<druid-vs-spark.en.png>
+ [70] [71] [72] [73] [74] [75] [76
 
 ]
 Chapter 3.
-File: datasource_management.png Graphic file (type bmp)
-<datasource_management.png>
-[67]
-File: create_datasource_1.png Graphic file (type bmp)
-<create_datasource_1.png>
- [68] [69]
-File: dimension_measure_01.png Graphic file (type bmp)
-<dimension_measure_01.png>
- [70]
-File: manage_datasource_01.png Graphic file (type bmp)
-<manage_datasource_01.png>
- [71]
-File: manage_datasource_02.png Graphic file (type bmp)
-<manage_datasource_02.png>
- [72]
-File: manage_datasource_03.png Graphic file (type bmp)
-<manage_datasource_03.png>
-File: manage_datasource_04.png Graphic file (type bmp)
-<manage_datasource_04.png>
- [73]
-File: manage_datasource_05.png Graphic file (type bmp)
-<manage_datasource_05.png>
- [74]
-File: manage_datasource_06.png Graphic file (type bmp)
-<manage_datasource_06.png>
- [75]
-File: manage_datasource_07.png Graphic file (type bmp)
-<manage_datasource_07.png>
-File: manage_datasource_08.png Graphic file (type bmp)
-<manage_datasource_08.png>
-File: manage_datasource_09.png Graphic file (type bmp)
-<manage_datasource_09.png>
- [76]
-File: manage_datasource_10.png Graphic file (type bmp)
-<manage_datasource_10.png>
- [77]
-File: create_datasource_2.png Graphic file (type bmp)
-<create_datasource_2.png>
-File: create_datasource_3.png Graphic file (type bmp)
-<create_datasource_3.png>
- [78] [79]
-File: create_datasource_file_1.png Graphic file (type bmp)
-<create_datasource_file_1.png>
+File: datasource_management.en.png Graphic file (type bmp)
+<datasource_management.en.png>
+[77]
+File: create_datasource_1.en.png Graphic file (type bmp)
+<create_datasource_1.en.png>
+ [78]
+File: dimension_measure_01.en.png Graphic file (type bmp)
+<dimension_measure_01.en.png>
+ [79]
+File: manage_datasource_01.en.png Graphic file (type bmp)
+<manage_datasource_01.en.png>
  [80]
-File: create_datasource_file_3.png Graphic file (type bmp)
-<create_datasource_file_3.png>
+File: manage_datasource_02.en.png Graphic file (type bmp)
+<manage_datasource_02.en.png>
  [81]
-[82]
-File: create_datasource_file_4.png Graphic file (type bmp)
-<create_datasource_file_4.png>
+File: manage_datasource_03.en.png Graphic file (type bmp)
+<manage_datasource_03.en.png>
+ [82]
+File: manage_datasource_04.en.png Graphic file (type bmp)
+<manage_datasource_04.en.png>
+File: manage_datasource_05.en.png Graphic file (type bmp)
+<manage_datasource_05.en.png>
+ [83] [84]
+File: manage_datasource_06.en.png Graphic file (type bmp)
+<manage_datasource_06.en.png>
+ [85]
+File: manage_datasource_07.en.png Graphic file (type bmp)
+<manage_datasource_07.en.png>
+File: manage_datasource_08.en.png Graphic file (type bmp)
+<manage_datasource_08.en.png>
+ [86]
+File: manage_datasource_09.en.png Graphic file (type bmp)
+<manage_datasource_09.en.png>
+File: manage_datasource_10.en.png Graphic file (type bmp)
+<manage_datasource_10.en.png>
+ [87]
+File: create_datasource_2.en.png Graphic file (type bmp)
+<create_datasource_2.en.png>
+File: create_datasource_3.en.png Graphic file (type bmp)
+<create_datasource_3.en.png>
+ [88] [89]
+File: create_datasource_file_1.en.png Graphic file (type bmp)
+<create_datasource_file_1.en.png>
+ [90] [91]
+File: create_datasource_file_3.en.png Graphic file (type bmp)
+<create_datasource_file_3.en.png>
+
+[92]
+File: create_datasource_file_4.en.png Graphic file (type bmp)
+<create_datasource_file_4.en.png>
+ [93]
 File: icon_bin.png Graphic file (type bmp)
 <icon_bin.png>
- [83]
-File: create_datasource_file_10.png Graphic file (type bmp)
-<create_datasource_file_10.png>
- [84]
-Missing character: There is no ␣ in font NanumGothicCoding/AAT!
-File: create_datasource_file_12.png Graphic file (type bmp)
-<create_datasource_file_12.png>
- [85]
-File: create_datasource_file_13.png Graphic file (type bmp)
-<create_datasource_file_13.png>
- [86]
-File: create_datasource_file_15.png Graphic file (type bmp)
-<create_datasource_file_15.png>
- [87]
-File: create_datasource_file_16.png Graphic file (type bmp)
-<create_datasource_file_16.png>
- [88]
-File: create_datasource_db_2.png Graphic file (type bmp)
-<create_datasource_db_2.png>
- [89]
-File: create_datasource_db_4.png Graphic file (type bmp)
-<create_datasource_db_4.png>
- [90]
-File: create_datasource_db_6.png Graphic file (type bmp)
-<create_datasource_db_6.png>
- [91]
-File: create_datasource_db_7.png Graphic file (type bmp)
-<create_datasource_db_7.png>
-File: create_datasource_db_8.png Graphic file (type bmp)
-<create_datasource_db_8.png>
- [92]
-File: create_datasource_stagingdb_2.png Graphic file (type bmp)
-<create_datasource_stagingdb_2.png>
- [93]
-File: create_datasource_stagingdb_3.png Graphic file (type bmp)
-<create_datasource_stagingdb_3.png>
-File: create_datasource_metatron_engine_2.png Graphic file (type bmp)
-<create_datasource_metatron_engine_2.png>
+File: create_datasource_file_10.en.png Graphic file (type bmp)
+<create_datasource_file_10.en.png>
  [94]
-File: create_datasource_metatron_engine_3.png Graphic file (type bmp)
-<create_datasource_metatron_engine_3.png>
- [95]
-File: create_datasource_1.png Graphic file (type bmp)
-<create_datasource_1.png>
- [96]
-File: data_connection_1.png Graphic file (type bmp)
-<data_connection_1.png>
+Missing character: There is no ␣ in font NanumGothicCoding/AAT!
 
-[97]
-File: data_connection_creation.png Graphic file (type bmp)
-<data_connection_creation.png>
+Overfull \vbox (2.93425pt too high) detected at line 2377
+ []
+
+[95]
+File: create_datasource_file_12.en.png Graphic file (type bmp)
+<create_datasource_file_12.en.png>
+File: create_datasource_file_13.en.png Graphic file (type bmp)
+<create_datasource_file_13.en.png>
+ [96]
+File: create_datasource_file_15.en.png Graphic file (type bmp)
+<create_datasource_file_15.en.png>
+ [97]
+File: create_datasource_file_16.en.png Graphic file (type bmp)
+<create_datasource_file_16.en.png>
  [98]
-File: data_monitoring_menu.png Graphic file (type bmp)
-<data_monitoring_menu.png>
+File: create_datasource_db_2.en.png Graphic file (type bmp)
+<create_datasource_db_2.en.png>
  [99]
-File: log-statistics.png Graphic file (type bmp)
-<log-statistics.png>
+File: create_datasource_db_4.en.png Graphic file (type bmp)
+<create_datasource_db_4.en.png>
  [100] [101]
-File: job-logs.png Graphic file (type bmp)
-<job-logs.png>
+File: create_datasource_db_6.en.png Graphic file (type bmp)
+<create_datasource_db_6.en.png>
+File: create_datasource_db_7.en.png Graphic file (type bmp)
+<create_datasource_db_7.en.png>
  [102]
-File: job-log-detail.png Graphic file (type bmp)
-<job-log-detail.png>
- [103] [104]
+File: create_datasource_db_8.en.png Graphic file (type bmp)
+<create_datasource_db_8.en.png>
+File: create_datasource_stagingdb_2.en.png Graphic file (type bmp)
+<create_datasource_stagingdb_2.en.png>
+ [103]
+File: create_datasource_stagingdb_3.en.png Graphic file (type bmp)
+<create_datasource_stagingdb_3.en.png>
+ [104]
+File: create_datasource_metatron_engine_2.en.png Graphic file (type bmp)
+<create_datasource_metatron_engine_2.en.png>
+ [105]
+File: create_datasource_metatron_engine_3.en.png Graphic file (type bmp)
+<create_datasource_metatron_engine_3.en.png>
+ [106]
+File: create_datasource_1.en.png Graphic file (type bmp)
+<create_datasource_1.en.png>
+ [107]
+File: data_connection_1.en.png Graphic file (type bmp)
+<data_connection_1.en.png>
+
+[108]
+File: data_connection_creation.en.png Graphic file (type bmp)
+<data_connection_creation.en.png>
+ [109]
+File: data_monitoring_menu.en.png Graphic file (type bmp)
+<data_monitoring_menu.en.png>
+ [110]
+File: log-statistics.en.png Graphic file (type bmp)
+<log-statistics.en.png>
+ [111] [112]
+File: job-logs.en.png Graphic file (type bmp)
+<job-logs.en.png>
+ [113] [114]
+File: job-log-detail.en.png Graphic file (type bmp)
+<job-log-detail.en.png>
+ [115] [116]
 Chapter 4.
-File: workspace_overview.png Graphic file (type bmp)
-<workspace_overview.png>
-[105
+File: workspace_overview.en.png Graphic file (type bmp)
+<workspace_overview.en.png>
+[117
 
 ]
-Overfull \vbox (8.07079pt too high) has occurred while \output is active []
-
-
-[106]
-File: workspace_home.png Graphic file (type bmp)
-<workspace_home.png>
- [107] [108]
-File: workspace_entity_folder.png Graphic file (type bmp)
-<workspace_entity_folder.png>
- [109]
-File: workspace_entity_object.png Graphic file (type bmp)
-<workspace_entity_object.png>
+File: workspace_home.en.png Graphic file (type bmp)
+<workspace_home.en.png>
+ [118] [119]
+File: workspace_entity_folder.en.png Graphic file (type bmp)
+<workspace_entity_folder.en.png>
+File: workspace_entity_object.en.png Graphic file (type bmp)
+<workspace_entity_object.en.png>
+ [120]
 File: icon_datasource.png Graphic file (type bmp)
 <icon_datasource.png>
- [110]
 File: icon_dashboard.png Graphic file (type bmp)
 <icon_dashboard.png>
-File: workspace_entity_folder_and_object_manipulation.png Graphic file (type bm
-p)
-<workspace_entity_folder_and_object_manipulation.png>
- [111]
+File: workspace_entity_folder_and_object_manipulation.en.png Graphic file (type
+ bmp)
+<workspace_entity_folder_and_object_manipulation.en.png>
+ [121]
 File: icon_more2.png Graphic file (type bmp)
 <icon_more2.png>
-File: shared_workspace_list.png Graphic file (type bmp)
-<shared_workspace_list.png>
- [112]
+ [122]
+File: shared_workspace_list.en.png Graphic file (type bmp)
+<shared_workspace_list.en.png>
+ [123]
 File: icon_plus.png Graphic file (type bmp)
 <icon_plus.png>
-File: shared_workspace_creation.png Graphic file (type bmp)
-<shared_workspace_creation.png>
- [113]
+File: shared_workspace_creation.en.png Graphic file (type bmp)
+<shared_workspace_creation.en.png>
+ [124] [125]
 File: icon_more2.png Graphic file (type bmp)
 <icon_more2.png>
-File: shared_workspace_permission_schema_view.png Graphic file (type bmp)
-<shared_workspace_permission_schema_view.png>
- [114]
-File: shared_workspace_permission_schema_change01.png Graphic file (type bmp)
-<shared_workspace_permission_schema_change01.png>
+File: shared_workspace_permission_schema_view.en.png Graphic file (type bmp)
+<shared_workspace_permission_schema_view.en.png>
+ [126]
+File: shared_workspace_permission_schema_change01.en.png Graphic file (type bmp
+)
+<shared_workspace_permission_schema_change01.en.png>
 File: icon_edit.png Graphic file (type bmp)
 <icon_edit.png>
 File: shared_workspace_permission_schema_change02.png Graphic file (type bmp)
 <shared_workspace_permission_schema_change02.png>
- [115]
+ [127]
 File: icon_info.png Graphic file (type bmp)
 <icon_info.png>
-File: shared_workspace_shared_member_group_setting.png Graphic file (type bmp)
-<shared_workspace_shared_member_group_setting.png>
- [116] [117]
-[118
+File: shared_workspace_shared_member_group_setting.en.png Graphic file (type bm
+p)
+<shared_workspace_shared_member_group_setting.en.png>
+ [128]
+[129] [130
 
 ]
 Chapter 5.
-File: workbook_overview_01.png Graphic file (type bmp)
-<workbook_overview_01.png>
-[119]
-Overfull \vbox (50.80064pt too high) has occurred while \output is active []
-
-
-[120]
-File: create_a_workbook_01.png Graphic file (type bmp)
-<create_a_workbook_01.png>
-File: create_a_workbook_02.png Graphic file (type bmp)
-<create_a_workbook_02.png>
- [121]
-File: create_a_workbook_03.png Graphic file (type bmp)
-<create_a_workbook_03.png>
-File: create_a_workbook_04.png Graphic file (type bmp)
-<create_a_workbook_04.png>
- [122] [123] [124]
-File: create_a_workbook_05.png Graphic file (type bmp)
-<create_a_workbook_05.png>
-File: dashboard_overview_01.png Graphic file (type bmp)
-<dashboard_overview_01.png>
- [125]
-File: dashboard.01.png Graphic file (type bmp)
-<dashboard.01.png>
- [126]
-File: dashboard.02.png Graphic file (type bmp)
-<dashboard.02.png>
- [127] [128]
-File: dashboard.03.png Graphic file (type bmp)
-<dashboard.03.png>
-File: dashboard.04.png Graphic file (type bmp)
-<dashboard.04.png>
- [129]
-File: dashboard.04-1.png Graphic file (type bmp)
-<dashboard.04-1.png>
- [130]
-File: dashboard.05.png Graphic file (type bmp)
-<dashboard.05.png>
- [131]
+File: workbook_overview_01.en.png Graphic file (type bmp)
+<workbook_overview_01.en.png>
+[131]
+File: create_a_workbook_01.en.png Graphic file (type bmp)
+<create_a_workbook_01.en.png>
+File: create_a_workbook_02.en.png Graphic file (type bmp)
+<create_a_workbook_02.en.png>
+ [132]
+File: create_a_workbook_03.en.png Graphic file (type bmp)
+<create_a_workbook_03.en.png>
+File: create_a_workbook_04.en.png Graphic file (type bmp)
+<create_a_workbook_04.en.png>
+ [133] [134]
+File: create_a_workbook_05.en.png Graphic file (type bmp)
+<create_a_workbook_05.en.png>
+ [135]
+File: dashboard_overview_01.en.png Graphic file (type bmp)
+<dashboard_overview_01.en.png>
+ [136]
+File: dashboard.01.en.png Graphic file (type bmp)
+<dashboard.01.en.png>
+ [137]
+File: dashboard.02.en.png Graphic file (type bmp)
+<dashboard.02.en.png>
+ [138] [139]
+File: dashboard.03.en.png Graphic file (type bmp)
+<dashboard.03.en.png>
+File: dashboard.04.en.png Graphic file (type bmp)
+<dashboard.04.en.png>
+ [140]
+File: dashboard.04-1.en.png Graphic file (type bmp)
+<dashboard.04-1.en.png>
+ [141]
+File: dashboard.05.en.png Graphic file (type bmp)
+<dashboard.05.en.png>
+ [142]
 File: dashboard.icon_plus.png Graphic file (type bmp)
 <dashboard.icon_plus.png>
 File: dashboard.icon_X.png Graphic file (type bmp)
 <dashboard.icon_X.png>
 
-[132]
-File: dashboard.05-1.png Graphic file (type bmp)
-<dashboard.05-1.png>
-File: dashboard.06.png Graphic file (type bmp)
-<dashboard.06.png>
- [133] [134] [135]
-File: dashboard.07.png Graphic file (type bmp)
-<dashboard.07.png>
- [136]
-File: dashboard.08.png Graphic file (type bmp)
-<dashboard.08.png>
- [137]
-File: dashboard.12.png Graphic file (type bmp)
-<dashboard.12.png>
- [138]
-File: dashboard.13.png Graphic file (type bmp)
-<dashboard.13.png>
- [139]
-File: dashboard-textwidget.png Graphic file (type bmp)
-<dashboard-textwidget.png>
- [140] [141]
-File: dashboard.15.png Graphic file (type bmp)
-<dashboard.15.png>
- [142]
-File: dashboard-datasource-panel.png Graphic file (type bmp)
-<dashboard-datasource-panel.png>
- [143]
-[144]
+[143]
+File: dashboard.05-1.en.png Graphic file (type bmp)
+<dashboard.05-1.en.png>
+File: dashboard.06.en.png Graphic file (type bmp)
+<dashboard.06.en.png>
+ [144] [145] [146]
+File: dashboard.07.en.png Graphic file (type bmp)
+<dashboard.07.en.png>
+ [147]
+File: dashboard.08.en.png Graphic file (type bmp)
+<dashboard.08.en.png>
+ [148]
+File: dashboard.12.en.png Graphic file (type bmp)
+<dashboard.12.en.png>
+ [149]
+File: dashboard.13.en.png Graphic file (type bmp)
+<dashboard.13.en.png>
+ [150]
+File: dashboard-textwidget.en.png Graphic file (type bmp)
+<dashboard-textwidget.en.png>
+ [151] [152]
+File: dashboard.15.en.png Graphic file (type bmp)
+<dashboard.15.en.png>
+ [153]
+File: dashboard-datasource-panel.en.png Graphic file (type bmp)
+<dashboard-datasource-panel.en.png>
+ [154]
 File: dashboard.icon_db_info.png Graphic file (type bmp)
 <dashboard.icon_db_info.png>
-File: dashboard.09.png Graphic file (type bmp)
-<dashboard.09.png>
-File: dashboard.10.png Graphic file (type bmp)
-<dashboard.10.png>
- [145]
-File: dashboard.11.png Graphic file (type bmp)
-<dashboard.11.png>
-File: presentation_view_2.png Graphic file (type bmp)
-<presentation_view_2.png>
- [146]
-File: give_new_column_name_1.png Graphic file (type bmp)
-<give_new_column_name_1.png>
- [147]
-File: give_new_column_name_2.png Graphic file (type bmp)
-<give_new_column_name_2.png>
- [148]
-File: part04-chart01.png Graphic file (type bmp)
-<part04-chart01.png>
- [149]
-File: part04-chart02.png Graphic file (type bmp)
-<part04-chart02.png>
- [150]
+File: dashboard.09.en.png Graphic file (type bmp)
+<dashboard.09.en.png>
+
+[155]
+File: dashboard.10.en.png Graphic file (type bmp)
+<dashboard.10.en.png>
+File: dashboard.11.en.png Graphic file (type bmp)
+<dashboard.11.en.png>
+ [156]
+File: presentation_view_2.en.png Graphic file (type bmp)
+<presentation_view_2.en.png>
+File: give_new_column_name_1.en.png Graphic file (type bmp)
+<give_new_column_name_1.en.png>
+ [157]
+File: give_new_column_name_2.en.png Graphic file (type bmp)
+<give_new_column_name_2.en.png>
+ [158]
+File: part04-chart01.en.png Graphic file (type bmp)
+<part04-chart01.en.png>
+ [159] [160]
+File: part04-chart02.en.png Graphic file (type bmp)
+<part04-chart02.en.png>
+ [161]
 File: chart_icon_more.png Graphic file (type bmp)
 <chart_icon_more.png>
 File: chart_icon_info.png Graphic file (type bmp)
 <chart_icon_info.png>
-File: part04-chart03.png Graphic file (type bmp)
-<part04-chart03.png>
- [151] [152]
-File: pivoting.01.png Graphic file (type bmp)
-<pivoting.01.png>
-File: pivoting.02.png Graphic file (type bmp)
-<pivoting.02.png>
- [153]
-File: pivoting.03.png Graphic file (type bmp)
-<pivoting.03.png>
-File: pivoting.04.png Graphic file (type bmp)
-<pivoting.04.png>
- [154]
-File: pivoting.05.png Graphic file (type bmp)
-<pivoting.05.png>
- [155]
-File: Chart_Types.00.png Graphic file (type bmp)
-<Chart_Types.00.png>
+File: part04-chart03.en.png Graphic file (type bmp)
+<part04-chart03.en.png>
+ [162] [163]
+File: pivoting.01.en.png Graphic file (type bmp)
+<pivoting.01.en.png>
+File: pivoting.02.en.png Graphic file (type bmp)
+<pivoting.02.en.png>
+ [164]
+File: pivoting.03.en.png Graphic file (type bmp)
+<pivoting.03.en.png>
+File: pivoting.04.en.png Graphic file (type bmp)
+<pivoting.04.en.png>
+ [165]
+File: pivoting.05.en.png Graphic file (type bmp)
+<pivoting.05.en.png>
+File: Chart_Types.00.en.png Graphic file (type bmp)
+<Chart_Types.00.en.png>
+ [166]
+Underfull \hbox (badness 10000) in paragraph at lines 4297--4298
+[]|\TU/NanumBarunGothic(0)/m/it/10 Chart
+ []
 
-[156]
+
+Underfull \hbox (badness 10000) in paragraph at lines 4299--4300
+[]|\TU/NanumBarunGothic(0)/m/it/10 Conditions to
+ []
+
+
+Overfull \hbox (2.62166pt too wide) in paragraph at lines 4301--4302
+[]|\TU/NanumBarunGothic(0)/m/it/10 Characteristics| 
+ []
+
 File: Chart_Types_Icon01.png Graphic file (type bmp)
 <Chart_Types_Icon01.png>
+
+Underfull \hbox (badness 7047) in paragraph at lines 4312--4313
+\TU/NanumBarunGothic(0)/m/it/10 more dimen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4312--4313
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4316--4317
+\TU/NanumBarunGothic(0)/m/it/10 trend is significantly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4318--4320
+[]|\TU/NanumBarunGothic(0)/m/it/10 Comparison
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4318--4320
+\TU/NanumBarunGothic(0)/m/it/10 between
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4318--4320
+\TU/NanumBarunGothic(0)/m/it/10 products re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4318--4320
+\TU/NanumBarunGothic(0)/m/it/10 garding their
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4318--4320
+\TU/NanumBarunGothic(0)/m/it/10 sales and
+ []
+
 File: Chart_Types_Icon02.png Graphic file (type bmp)
 <Chart_Types_Icon02.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4325--4326
+[]|\TU/NanumBarunGothic(0)/m/it/10 Column or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4325--4326
+\TU/NanumBarunGothic(0)/m/it/10 row: 1 or
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 4325--4326
+\TU/NanumBarunGothic(0)/m/it/10 more dimen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4325--4326
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4327--4328
+[]|\TU/NanumBarunGothic(0)/m/it/10 Displays the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4327--4328
+\TU/NanumBarunGothic(0)/m/it/10 values of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4327--4328
+\TU/NanumBarunGothic(0)/m/it/10 crossings
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4327--4328
+\TU/NanumBarunGothic(0)/m/it/10 between two
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4329--4330
+\TU/NanumBarunGothic(0)/m/it/10 values aggregated by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4329--4330
+\TU/NanumBarunGothic(0)/m/it/10 to check exact values
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4331--4333
+[]|\TU/NanumBarunGothic(0)/m/it/10 Sales details
+ []
+
 File: Chart_Types_Icon03.png Graphic file (type bmp)
 <Chart_Types_Icon03.png>
+
+Underfull \hbox (badness 7047) in paragraph at lines 4338--4339
+\TU/NanumBarunGothic(0)/m/it/10 more dimen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4338--4339
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 5726) in paragraph at lines 4340--4341
+[]|\TU/NanumBarunGothic(0)/m/it/10 Displays data
+ []
+
+
+Underfull \hbox (badness 6961) in paragraph at lines 4340--4341
+\TU/NanumBarunGothic(0)/m/it/10 changes over
+ []
+
+
+Underfull \hbox (badness 6220) in paragraph at lines 4342--4343
+\TU/NanumBarunGothic(0)/m/it/10 time. If changes are
+ []
+
 File: Chart_Types_Icon04.png Graphic file (type bmp)
 <Chart_Types_Icon04.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4349--4350
+[]\TU/NanumBarunGothic(0)/m/it/10 Scatter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4351--4352
+[]|\TU/NanumBarunGothic(0)/m/it/10 Column: 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4351--4352
+\TU/NanumBarunGothic(0)/m/it/10 measure /
+ []
+
+
+Underfull \hbox (badness 5302) in paragraph at lines 4351--4352
+\TU/NanumBarunGothic(0)/m/it/10 sure / Cross:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4351--4352
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 7740) in paragraph at lines 4355--4356
+\TU/NanumBarunGothic(0)/m/it/10 between two parame-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4357--4359
+[]|\TU/NanumBarunGothic(0)/m/it/10 Relations
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4357--4359
+\TU/NanumBarunGothic(0)/m/it/10 between
+ []
+
+
+Underfull \hbox (badness 7273) in paragraph at lines 4357--4359
+\TU/NanumBarunGothic(0)/m/it/10 product sales
+ []
+
 File: Chart_Types_Icon05.png Graphic file (type bmp)
 <Chart_Types_Icon05.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4364--4365
+[]|\TU/NanumBarunGothic(0)/m/it/10 Column or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4364--4365
+\TU/NanumBarunGothic(0)/m/it/10 row: 1 or
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 4364--4365
+\TU/NanumBarunGothic(0)/m/it/10 more dimen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4364--4365
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4366--4367
+[]|\TU/NanumBarunGothic(0)/m/it/10 Displays the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4366--4367
+\TU/NanumBarunGothic(0)/m/it/10 values of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4366--4367
+\TU/NanumBarunGothic(0)/m/it/10 crossings
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4366--4367
+\TU/NanumBarunGothic(0)/m/it/10 between two
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4366--4367
+\TU/NanumBarunGothic(0)/m/it/10 dimensions
+ []
+
+
+Underfull \hbox (badness 5388) in paragraph at lines 4366--4367
+\TU/NanumBarunGothic(0)/m/it/10 in colors and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4366--4367
+\TU/NanumBarunGothic(0)/m/it/10 sizes at dif-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4368--4369
+\TU/NanumBarunGothic(0)/m/it/10 between two dimen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4368--4369
+\TU/NanumBarunGothic(0)/m/it/10 sions represented by
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4368--4369
+\TU/NanumBarunGothic(0)/m/it/10 to a table chart, but
+ []
+
 File: Chart_Types_Icon06.png Graphic file (type bmp)
 <Chart_Types_Icon06.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4377--4378
+[]|\TU/NanumBarunGothic(0)/m/it/10 Cross: 1 or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4377--4378
+\TU/NanumBarunGothic(0)/m/it/10 more di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4377--4378
+\TU/NanumBarunGothic(0)/m/it/10 mensions,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4377--4378
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4379--4380
+[]|\TU/NanumBarunGothic(0)/m/it/10 Shows how
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4379--4380
+\TU/NanumBarunGothic(0)/m/it/10 much each
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4381--4382
+[]|\TU/NanumBarunGothic(0)/m/it/10 Used to compare the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4383--4385
+[]|\TU/NanumBarunGothic(0)/m/it/10 Comparison
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4383--4385
+\TU/NanumBarunGothic(0)/m/it/10 browsers re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4383--4385
+\TU/NanumBarunGothic(0)/m/it/10 garding their
+ []
+
 File: Chart_Types_Icon07.png Graphic file (type bmp)
 <Chart_Types_Icon07.png>
 
-Underfull \hbox (badness 5652) in paragraph at lines 4400--4401
-[]|\TU/NanumBarunGothic(0)/m/it/10 레 이 어 선 반 :
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4391
+[]|\TU/NanumBarunGothic(0)/m/it/10 Layer shelf:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4391
+\TU/NanumBarunGothic(0)/m/it/10 dimension
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4391
+\TU/NanumBarunGothic(0)/m/it/10 (location
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4391
+\TU/NanumBarunGothic(0)/m/it/10 attribute),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4391
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4391
+\TU/NanumBarunGothic(0)/m/it/10 dimensions,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4390--4391
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4392--4393
+[]|\TU/NanumBarunGothic(0)/m/it/10 Displays the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4392--4393
+\TU/NanumBarunGothic(0)/m/it/10 location on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4396--4398
+[]|\TU/NanumBarunGothic(0)/m/it/10 Comparison
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4396--4398
+\TU/NanumBarunGothic(0)/m/it/10 of sales of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4396--4398
+\TU/NanumBarunGothic(0)/m/it/10 each product
  []
 
 File: Chart_Types_Icon08.png Graphic file (type bmp)
 <Chart_Types_Icon08.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4403--4404
+[]|\TU/NanumBarunGothic(0)/m/it/10 Cross: 1 or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4403--4404
+\TU/NanumBarunGothic(0)/m/it/10 more mea-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4405--4406
+\TU/NanumBarunGothic(0)/m/it/10 indicators
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4405--4406
+\TU/NanumBarunGothic(0)/m/it/10 along with
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4407--4408
+[]|\TU/NanumBarunGothic(0)/m/it/10 Used to quickly con-
+ []
+
+
+Underfull \hbox (badness 6110) in paragraph at lines 4407--4408
+\TU/NanumBarunGothic(0)/m/it/10 vey information on an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4407--4408
+\TU/NanumBarunGothic(0)/m/it/10 organization[] s current
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4409--4411
+[]|\TU/NanumBarunGothic(0)/m/it/10 An
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4409--4411
+\TU/NanumBarunGothic(0)/m/it/10 performance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4409--4411
+\TU/NanumBarunGothic(0)/m/it/10 index, such
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4409--4411
+\TU/NanumBarunGothic(0)/m/it/10 customers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4409--4411
+\TU/NanumBarunGothic(0)/m/it/10 have been
+ []
+
 File: Chart_Types_Icon09.png Graphic file (type bmp)
 <Chart_Types_Icon09.png>
+
+Underfull \hbox (badness 7047) in paragraph at lines 4416--4417
+\TU/NanumBarunGothic(0)/m/it/10 more dimen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4416--4417
+\TU/NanumBarunGothic(0)/m/it/10 sions / Row:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4416--4417
+\TU/NanumBarunGothic(0)/m/it/10 1 dimension
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4416--4417
+\TU/NanumBarunGothic(0)/m/it/10 / Cross: 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4418--4419
+[]|\TU/NanumBarunGothic(0)/m/it/10 Indicates in-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4418--4419
+\TU/NanumBarunGothic(0)/m/it/10 crease and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4418--4419
+\TU/NanumBarunGothic(0)/m/it/10 decrease in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4422--4424
+[]|\TU/NanumBarunGothic(0)/m/it/10 Proportion of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4422--4424
+\TU/NanumBarunGothic(0)/m/it/10 flight delay
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4422--4424
+\TU/NanumBarunGothic(0)/m/it/10 by each air-
+ []
+
 File: Chart_Types_Icon10.png Graphic file (type bmp)
 <Chart_Types_Icon10.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4427--4428
+[]\TU/NanumBarunGothic(0)/m/it/10 Waterfall
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4429--4430
+[]|\TU/NanumBarunGothic(0)/m/it/10 Column:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4429--4430
+\TU/NanumBarunGothic(0)/m/it/10 1 time-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4429--4430
+\TU/NanumBarunGothic(0)/m/it/10 dimension
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4429--4430
+\TU/NanumBarunGothic(0)/m/it/10 / Cross: 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4431--4432
+[]|\TU/NanumBarunGothic(0)/m/it/10 Displays
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4431--4432
+\TU/NanumBarunGothic(0)/m/it/10 cumulative
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4431--4432
+\TU/NanumBarunGothic(0)/m/it/10 changes re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4431--4432
+\TU/NanumBarunGothic(0)/m/it/10 sulting from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4431--4432
+\TU/NanumBarunGothic(0)/m/it/10 the increase
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4435--4437
+[]|\TU/NanumBarunGothic(0)/m/it/10 Changes in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4435--4437
+\TU/NanumBarunGothic(0)/m/it/10 the num-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4435--4437
+\TU/NanumBarunGothic(0)/m/it/10 ber of team
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4435--4437
+\TU/NanumBarunGothic(0)/m/it/10 members
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4435--4437
+\TU/NanumBarunGothic(0)/m/it/10 for a certain
+ []
+
+
+Underfull \hbox (badness 5726) in paragraph at lines 4435--4437
+\TU/NanumBarunGothic(0)/m/it/10 period; stock
+ []
+
 File: Chart_Types_Icon11.png Graphic file (type bmp)
 <Chart_Types_Icon11.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4440--4441
+[]\TU/NanumBarunGothic(0)/m/it/10 Word
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4442--4443
+[]|\TU/NanumBarunGothic(0)/m/it/10 Cross: 1 or
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4442--4443
+\TU/NanumBarunGothic(0)/m/it/10 more di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4442--4443
+\TU/NanumBarunGothic(0)/m/it/10 mensions, 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4444--4445
+[]|\TU/NanumBarunGothic(0)/m/it/10 Displays
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4444--4445
+\TU/NanumBarunGothic(0)/m/it/10 proportion to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4446--4447
+\TU/NanumBarunGothic(0)/m/it/10 emphasize important
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4448--4450
+[]|\TU/NanumBarunGothic(0)/m/it/10 Summary of
+ []
+
 File: Chart_Types_Icon12.png Graphic file (type bmp)
 <Chart_Types_Icon12.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4453--4454
+[]\TU/NanumBarunGothic(0)/m/it/10 Combo
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 4455--4456
+\TU/NanumBarunGothic(0)/m/it/10 more dimen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4457--4458
+[]|\TU/NanumBarunGothic(0)/m/it/10 Compares
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4461--4463
+[]|\TU/NanumBarunGothic(0)/m/it/10 Simultaneous
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4461--4463
+\TU/NanumBarunGothic(0)/m/it/10 product price
+ []
+
 File: Chart_Types_Icon13.png Graphic file (type bmp)
 <Chart_Types_Icon13.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4468--4469
+[]|\TU/NanumBarunGothic(0)/m/it/10 Column: 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4468--4469
+\TU/NanumBarunGothic(0)/m/it/10 dimension
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 4468--4469
+\TU/NanumBarunGothic(0)/m/it/10 more dimen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4470--4471
+\TU/NanumBarunGothic(0)/m/it/10 archical data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4470--4471
+\TU/NanumBarunGothic(0)/m/it/10 using nested
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4474--4476
+\TU/NanumBarunGothic(0)/m/it/10 into major,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4474--4476
+\TU/NanumBarunGothic(0)/m/it/10 medium,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4474--4476
+\TU/NanumBarunGothic(0)/m/it/10 and minor
+ []
+
 File: Chart_Types_Icon14.png Graphic file (type bmp)
 <Chart_Types_Icon14.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4479--4480
+[]\TU/NanumBarunGothic(0)/m/it/10 Radar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4481--4482
+\TU/NanumBarunGothic(0)/m/it/10 mension,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4481--4482
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4483--4484
+[]|\TU/NanumBarunGothic(0)/m/it/10 Displays
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4483--4484
+\TU/NanumBarunGothic(0)/m/it/10 different
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4483--4484
+\TU/NanumBarunGothic(0)/m/it/10 quantitative
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4483--4484
+\TU/NanumBarunGothic(0)/m/it/10 variables on
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4483--4484
+\TU/NanumBarunGothic(0)/m/it/10 axes starting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4487--4489
+\TU/NanumBarunGothic(0)/m/it/10 in five as-
+ []
+
 File: Chart_Types_Icon15.png Graphic file (type bmp)
 <Chart_Types_Icon15.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4492--4493
+[]\TU/NanumBarunGothic(0)/m/it/10 Network
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4495
+\TU/NanumBarunGothic(0)/m/it/10 Target shelf:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4495
+\TU/NanumBarunGothic(0)/m/it/10 1 dimension
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4495
+\TU/NanumBarunGothic(0)/m/it/10 / Connect-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4494--4495
+\TU/NanumBarunGothic(0)/m/it/10 ing shelf: 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4497
+[]|\TU/NanumBarunGothic(0)/m/it/10 Diagram
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4497
+\TU/NanumBarunGothic(0)/m/it/10 connecting
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4497
+\TU/NanumBarunGothic(0)/m/it/10 elements in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4496--4497
+\TU/NanumBarunGothic(0)/m/it/10 dependence
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4500--4502
+[]|\TU/NanumBarunGothic(0)/m/it/10 Monitoring
+ []
+
 File: Chart_Types_Icon16.png Graphic file (type bmp)
 <Chart_Types_Icon16.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 4505--4506
+[]\TU/NanumBarunGothic(0)/m/it/10 Gauge
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4507--4508
+\TU/NanumBarunGothic(0)/m/it/10 1 or more
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4507--4508
+\TU/NanumBarunGothic(0)/m/it/10 dimensions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4507--4508
+\TU/NanumBarunGothic(0)/m/it/10 / Cross: 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4509--4510
+[]|\TU/NanumBarunGothic(0)/m/it/10 Visualizes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4509--4510
+\TU/NanumBarunGothic(0)/m/it/10 performance
+ []
+
 File: Chart_Types_Icon17.png Graphic file (type bmp)
 <Chart_Types_Icon17.png>
-[157]
-Overfull \vbox (1094.80234pt too high) has occurred while \output is active []
+
+Underfull \hbox (badness 7047) in paragraph at lines 4520--4521
+\TU/NanumBarunGothic(0)/m/it/10 more dimen-
+ []
 
 
-[158]
-File: Chart_Style.01.png Graphic file (type bmp)
-<Chart_Style.01.png>
- [159]
-File: Chart_Style.02.png Graphic file (type bmp)
-<Chart_Style.02.png>
- [160]
-File: Chart_Style.03.png Graphic file (type bmp)
-<Chart_Style.03.png>
- [161]
-File: Chart_Style.04.png Graphic file (type bmp)
-<Chart_Style.04.png>
-File: Chart_Style.05.png Graphic file (type bmp)
-<Chart_Style.05.png>
- [162]
-File: Chart_Style.12.png Graphic file (type bmp)
-<Chart_Style.12.png>
-File: Chart_Style.06.png Graphic file (type bmp)
-<Chart_Style.06.png>
- [163]
-File: Chart_Style.07.png Graphic file (type bmp)
-<Chart_Style.07.png>
- [164] [165]
-File: Chart_Style.08.png Graphic file (type bmp)
-<Chart_Style.08.png>
-File: Chart_Style.09.png Graphic file (type bmp)
-<Chart_Style.09.png>
- [166]
-File: Chart_Style.10.png Graphic file (type bmp)
-<Chart_Style.10.png>
- [167]
-File: Chart_Style.11.png Graphic file (type bmp)
-<Chart_Style.11.png>
- [168]
+Underfull \hbox (badness 10000) in paragraph at lines 4522--4523
+[]|\TU/NanumBarunGothic(0)/m/it/10 Displays the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4522--4523
+\TU/NanumBarunGothic(0)/m/it/10 proportion
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 4522--4523
+\TU/NanumBarunGothic(0)/m/it/10 of each data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4522--4523
+\TU/NanumBarunGothic(0)/m/it/10 flow by the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4522--4523
+\TU/NanumBarunGothic(0)/m/it/10 width of the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4522--4523
+\TU/NanumBarunGothic(0)/m/it/10 connection
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4524--4525
+[]|\TU/NanumBarunGothic(0)/m/it/10 Used to monitor data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4526--4528
+[]|\TU/NanumBarunGothic(0)/m/it/10 Monitoring
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4526--4528
+\TU/NanumBarunGothic(0)/m/it/10 energy flows
+ []
+
+[167]
+Overfull \vbox (1783.59933pt too high) has occurred while \output is active []
+
+
+[168]
+File: Chart_Style.01.en.png Graphic file (type bmp)
+<Chart_Style.01.en.png>
+ [169] [170]
+File: Chart_Style.02.en.png Graphic file (type bmp)
+<Chart_Style.02.en.png>
+ [171]
+File: Chart_Style.03.en.png Graphic file (type bmp)
+<Chart_Style.03.en.png>
+File: Chart_Style.04.en.png Graphic file (type bmp)
+<Chart_Style.04.en.png>
+ [172]
+File: Chart_Style.05.en.png Graphic file (type bmp)
+<Chart_Style.05.en.png>
+ [173]
+File: Chart_Style.12.en.png Graphic file (type bmp)
+<Chart_Style.12.en.png>
+File: Chart_Style.06.en.png Graphic file (type bmp)
+<Chart_Style.06.en.png>
+ [174]
+File: Chart_Style.07.en.png Graphic file (type bmp)
+<Chart_Style.07.en.png>
+ [175]
+File: Chart_Style.08.en.png Graphic file (type bmp)
+<Chart_Style.08.en.png>
+ [176]
+File: Chart_Style.09.en.png Graphic file (type bmp)
+<Chart_Style.09.en.png>
+ [177]
+File: Chart_Style.10.en.png Graphic file (type bmp)
+<Chart_Style.10.en.png>
+ [178]
+File: Chart_Style.11.en.png Graphic file (type bmp)
+<Chart_Style.11.en.png>
+ [179]
 File: mapview_main.jpg Graphic file (type bmp)
 <mapview_main.jpg>
- [169]
+
+[180] [181]
 File: map_01.jpg Graphic file (type bmp)
 <map_01.jpg>
-
-[170]
 File: map_02.jpg Graphic file (type bmp)
 <map_02.jpg>
- [171]
+ [182]
 File: map_03.jpg Graphic file (type bmp)
 <map_03.jpg>
 File: map_04.jpg Graphic file (type bmp)
 <map_04.jpg>
- [172]
+ [183]
 File: map_05.jpg Graphic file (type bmp)
 <map_05.jpg>
- [173]
+ [184]
 File: map_addlayer.jpg Graphic file (type bmp)
 <map_addlayer.jpg>
- [174]
+ [185]
 File: map_commonsetting.jpg Graphic file (type bmp)
 <map_commonsetting.jpg>
- [175]
+ [186]
 File: map_layersetting_point.jpg Graphic file (type bmp)
 <map_layersetting_point.jpg>
- [176]
+ [187]
 Overfull \vbox (37.79991pt too high) has occurred while \output is active []
 
 
-[177]
+[188]
 File: map_layersetting_line.jpg Graphic file (type bmp)
 <map_layersetting_line.jpg>
- [178]
+ [189]
 Overfull \vbox (17.72334pt too high) has occurred while \output is active []
 
 
-[179]
+[190]
 File: map_layersetting_polygon.jpg Graphic file (type bmp)
 <map_layersetting_polygon.jpg>
- [180]
+ [191]
 File: map_legend.jpg Graphic file (type bmp)
 <map_legend.jpg>
+ [192]
 File: map_analysis.jpg Graphic file (type bmp)
 <map_analysis.jpg>
- [181] [182]
-File: chart-panel.png Graphic file (type bmp)
-<chart-panel.png>
- [183]
-File: filter-dialog.png Graphic file (type bmp)
-<filter-dialog.png>
- [184] [185]
-File: filter-dialog-dimension.png Graphic file (type bmp)
-<filter-dialog-dimension.png>
- [186] [187]
-File: filter-dimension-searching.png Graphic file (type bmp)
-<filter-dimension-searching.png>
- [188]
-File: filter-timestamp-relative.png Graphic file (type bmp)
-<filter-timestamp-relative.png>
- [189]
-File: filter-timestamp-specific.png Graphic file (type bmp)
-<filter-timestamp-specific.png>
- [190]
-File: filter-measure1.png Graphic file (type bmp)
-<filter-measure1.png>
-
-[191] [192]
-File: filter-measure2.png Graphic file (type bmp)
-<filter-measure2.png>
  [193]
-File: global-filter.png Graphic file (type bmp)
-<global-filter.png>
- [194] [195] [196
+File: chart-panel.en.png Graphic file (type bmp)
+<chart-panel.en.png>
+ [194] [195]
+File: filter-dialog.en.png Graphic file (type bmp)
+<filter-dialog.en.png>
+ [196] [197]
+File: filter-dialog-dimension.en.png Graphic file (type bmp)
+<filter-dialog-dimension.en.png>
+ [198] [199]
+File: filter-dimension-searching.en.png Graphic file (type bmp)
+<filter-dimension-searching.en.png>
+ [200]
+File: filter-timestamp-relative.en.png Graphic file (type bmp)
+<filter-timestamp-relative.en.png>
+ [201]
+[202]
+File: filter-timestamp-specific.en.png Graphic file (type bmp)
+<filter-timestamp-specific.en.png>
+ [203] [204]
+File: filter-measure1.en.png Graphic file (type bmp)
+<filter-measure1.en.png>
+ [205] [206]
+File: filter-measure2.en.png Graphic file (type bmp)
+<filter-measure2.en.png>
+ [207] [208]
+File: global-filter.en.png Graphic file (type bmp)
+<global-filter.en.png>
+ [209] [210]
+Chapter 6.
+File: notebook_overview.en.png Graphic file (type bmp)
+<notebook_overview.en.png>
+[211
 
 ]
-Chapter 6.
-File: notebook_overview.png Graphic file (type bmp)
-<notebook_overview.png>
-[197]
-File: notebook_management0.png Graphic file (type bmp)
-<notebook_management0.png>
- [198]
+File: notebook_management0.en.png Graphic file (type bmp)
+<notebook_management0.en.png>
 File: icon_bin1.png Graphic file (type bmp)
 <icon_bin1.png>
-File: notebook_management1.png Graphic file (type bmp)
-<notebook_management1.png>
-File: notebook_management2.png Graphic file (type bmp)
-<notebook_management2.png>
- [199]
+ [212]
+File: notebook_management1.en.png Graphic file (type bmp)
+<notebook_management1.en.png>
+File: notebook_management2.en.png Graphic file (type bmp)
+<notebook_management2.en.png>
+ [213]
 File: icon_more.png Graphic file (type bmp)
 <icon_more.png>
-File: register_a_notebook_server_01.png Graphic file (type bmp)
-<register_a_notebook_server_01.png>
- [200]
-File: register_a_notebook_server_02.png Graphic file (type bmp)
-<register_a_notebook_server_02.png>
- [201]
-File: create_a_notebook_00.png Graphic file (type bmp)
-<create_a_notebook_00.png>
-File: create_a_notebook_01.png Graphic file (type bmp)
-<create_a_notebook_01.png>
-File: create_a_notebook_02.png Graphic file (type bmp)
-<create_a_notebook_02.png>
- [202]
-File: create_a_notebook_03.png Graphic file (type bmp)
-<create_a_notebook_03.png>
- [203]
-File: create_a_notebook_04.png Graphic file (type bmp)
-<create_a_notebook_04.png>
- [204]
-File: use_a_notebook_01.png Graphic file (type bmp)
-<use_a_notebook_01.png>
- [205]
+File: register_a_notebook_server_01.en.png Graphic file (type bmp)
+<register_a_notebook_server_01.en.png>
+ [214]
+File: register_a_notebook_server_02.en.png Graphic file (type bmp)
+<register_a_notebook_server_02.en.png>
+ [215]
+File: create_a_notebook_00.en.png Graphic file (type bmp)
+<create_a_notebook_00.en.png>
+File: create_a_notebook_01.en.png Graphic file (type bmp)
+<create_a_notebook_01.en.png>
+ [216]
+File: create_a_notebook_02.en.png Graphic file (type bmp)
+<create_a_notebook_02.en.png>
+ [217]
+File: create_a_notebook_03.en.png Graphic file (type bmp)
+<create_a_notebook_03.en.png>
+ [218] [219]
+File: create_a_notebook_04.en.png Graphic file (type bmp)
+<create_a_notebook_04.en.png>
+File: use_a_notebook_01.en.png Graphic file (type bmp)
+<use_a_notebook_01.en.png>
+ [220]
 File: use_a_notebook_02.png Graphic file (type bmp)
 <use_a_notebook_02.png>
- [206]
-File: use_a_notebook_03.png Graphic file (type bmp)
-<use_a_notebook_03.png>
-File: use_a_notebook_04.png Graphic file (type bmp)
-<use_a_notebook_04.png>
- [207] [208]
-Chapter 7.
-File: workbench_overview.png Graphic file (type bmp)
-<workbench_overview.png>
-[209
+ [221]
+File: use_a_notebook_03.en.png Graphic file (type bmp)
+<use_a_notebook_03.en.png>
+ [222]
+File: use_a_notebook_04.en.png Graphic file (type bmp)
+<use_a_notebook_04.en.png>
+
+[223] [224
 
 ]
-File: workbench_creation_01.png Graphic file (type bmp)
-<workbench_creation_01.png>
-File: workbench_creation_02.png Graphic file (type bmp)
-<workbench_creation_02.png>
- [210]
-File: workbench_creation_03.png Graphic file (type bmp)
-<workbench_creation_03.png>
- [211]
-File: workbench_basic.png Graphic file (type bmp)
-<workbench_basic.png>
- [212]
-File: workbench_lnb_header.png Graphic file (type bmp)
-<workbench_lnb_header.png>
- [213]
+Chapter 7.
+File: workbench_overview.en.png Graphic file (type bmp)
+<workbench_overview.en.png>
+[225]
+File: workbench_creation_01.en.png Graphic file (type bmp)
+<workbench_creation_01.en.png>
+File: workbench_creation_02.en.png Graphic file (type bmp)
+<workbench_creation_02.en.png>
+ [226]
+Underfull \hbox (badness 10000) in paragraph at lines 5662--5663
+[]\TU/NanumBarunGothic(0)/bx/it/10 DB type: \TU/NanumBarunGothic(0)/m/it/10 Fil
+ters data connections by database type (Ora-
+ []
+
+File: workbench_creation_03.en.png Graphic file (type bmp)
+<workbench_creation_03.en.png>
+[227]
+File: workbench_basic.en.png Graphic file (type bmp)
+<workbench_basic.en.png>
+ [228]
+File: workbench_lnb_header.en.png Graphic file (type bmp)
+<workbench_lnb_header.en.png>
+ [229]
 File: icon_exclamation.png Graphic file (type bmp)
 <icon_exclamation.png>
 File: icon_folding.png Graphic file (type bmp)
 <icon_folding.png>
-File: workbench_lnb.png Graphic file (type bmp)
-<workbench_lnb.png>
- [214] [215]
+File: workbench_lnb.en.png Graphic file (type bmp)
+<workbench_lnb.en.png>
+ [230] [231]
 File: workbench_query_editor.png Graphic file (type bmp)
 <workbench_query_editor.png>
 File: icon_arrow.png Graphic file (type bmp)
@@ -2124,357 +2973,358 @@ File: icon_plus1.png Graphic file (type bmp)
 <icon_plus1.png>
 File: icon_full.png Graphic file (type bmp)
 <icon_full.png>
- [216]
+ [232]
 File: workbench_query_result_ing.png Graphic file (type bmp)
 <workbench_query_result_ing.png>
- [217]
+ [233]
 File: workbench_query_result_complete.png Graphic file (type bmp)
 <workbench_query_result_complete.png>
- [218]
-File: workbench_global_variable.png Graphic file (type bmp)
-<workbench_global_variable.png>
- [219]
-File: workbench_navigation.png Graphic file (type bmp)
-<workbench_navigation.png>
- [220]
-File: workbench_schema_browser.png Graphic file (type bmp)
-<workbench_schema_browser.png>
-
-[221] [222
+ [234]
+File: workbench_global_variable.en.png Graphic file (type bmp)
+<workbench_global_variable.en.png>
+ [235]
+File: workbench_navigation.en.png Graphic file (type bmp)
+<workbench_navigation.en.png>
+ [236]
+File: workbench_schema_browser.en.png Graphic file (type bmp)
+<workbench_schema_browser.en.png>
+ [237] [238]
+Chapter 8.
+File: data_preparation_overview_1.en.png Graphic file (type bmp)
+<data_preparation_overview_1.en.png>
+[239
 
 ]
-Chapter 8.
-File: data_preparation_overview_1.png Graphic file (type bmp)
-<data_preparation_overview_1.png>
-[223]
-File: preparation_overview.png Graphic file (type bmp)
-<preparation_overview.png>
- [224]
-File: create_a_dataset_1.png Graphic file (type bmp)
-<create_a_dataset_1.png>
- [225]
-File: create_a_dataset_2.png Graphic file (type bmp)
-<create_a_dataset_2.png>
-File: create_a_dataset_3.png Graphic file (type bmp)
-<create_a_dataset_3.png>
- [226]
-File: create_a_dataset_of_file_1.png Graphic file (type bmp)
-<create_a_dataset_of_file_1.png>
- [227]
-File: create_a_dataset_of_file_2.png Graphic file (type bmp)
-<create_a_dataset_of_file_2.png>
- [228]
-File: create_a_dataset_of_file_3.png Graphic file (type bmp)
-<create_a_dataset_of_file_3.png>
- [229]
-File: create_a_dataset_of_file_4.png Graphic file (type bmp)
-<create_a_dataset_of_file_4.png>
- [230]
-File: create_a_dataset_of_database_1.png Graphic file (type bmp)
-<create_a_dataset_of_database_1.png>
-File: create_a_dataset_of_database_2.png Graphic file (type bmp)
-<create_a_dataset_of_database_2.png>
- [231]
-File: create_a_dataset_of_database_3.png Graphic file (type bmp)
-<create_a_dataset_of_database_3.png>
- [232]
-File: create_a_dataset_of_database_5.png Graphic file (type bmp)
-<create_a_dataset_of_database_5.png>
- [233]
-File: create_a_dataset_of_database_6.png Graphic file (type bmp)
-<create_a_dataset_of_database_6.png>
- [234]
-File: create_a_dataset_of_stagingdb_1.png Graphic file (type bmp)
-<create_a_dataset_of_stagingdb_1.png>
-
-[235]
-File: create_a_dataset_of_stagingdb_3.png Graphic file (type bmp)
-<create_a_dataset_of_stagingdb_3.png>
-File: create_a_dataset_of_stagingdb_4.png Graphic file (type bmp)
-<create_a_dataset_of_stagingdb_4.png>
- [236]
-File: add_datasets_1.png Graphic file (type bmp)
-<add_datasets_1.png>
- [237]
-File: create_a_dataset_1.png Graphic file (type bmp)
-<create_a_dataset_1.png>
- [238]
-File: add_datasets_2.png Graphic file (type bmp)
-<add_datasets_2.png>
- [239]
-File: add_datasets_3.png Graphic file (type bmp)
-<add_datasets_3.png>
+File: preparation_overview.en.png Graphic file (type bmp)
+<preparation_overview.en.png>
  [240]
-File: add_datasets_4.png Graphic file (type bmp)
-<add_datasets_4.png>
+File: create_a_dataset_1.en.png Graphic file (type bmp)
+<create_a_dataset_1.en.png>
+File: create_a_dataset_2.en.png Graphic file (type bmp)
+<create_a_dataset_2.en.png>
  [241]
-File: add_datasets_5.png Graphic file (type bmp)
-<add_datasets_5.png>
+File: create_a_dataset_3.en.png Graphic file (type bmp)
+<create_a_dataset_3.en.png>
  [242]
-File: add_datasets_6.png Graphic file (type bmp)
-<add_datasets_6.png>
- [243]
-File: edit_rules_1.png Graphic file (type bmp)
-<edit_rules_1.png>
- [244]
+File: create_a_dataset_of_file_1.en.png Graphic file (type bmp)
+<create_a_dataset_of_file_1.en.png>
+ [243] [244]
+File: create_a_dataset_of_file_2.en.png Graphic file (type bmp)
+<create_a_dataset_of_file_2.en.png>
+File: create_a_dataset_of_file_3.en.png Graphic file (type bmp)
+<create_a_dataset_of_file_3.en.png>
+ [245]
+File: create_a_dataset_of_file_4.en.png Graphic file (type bmp)
+<create_a_dataset_of_file_4.en.png>
+ [246]
+File: create_a_dataset_of_database_1.en.png Graphic file (type bmp)
+<create_a_dataset_of_database_1.en.png>
+File: create_a_dataset_of_database_2.en.png Graphic file (type bmp)
+<create_a_dataset_of_database_2.en.png>
+ [247]
+File: create_a_dataset_of_database_3.en.png Graphic file (type bmp)
+<create_a_dataset_of_database_3.en.png>
+ [248]
+File: create_a_dataset_of_database_5.en.png Graphic file (type bmp)
+<create_a_dataset_of_database_5.en.png>
+ [249]
+File: create_a_dataset_of_database_6.en.png Graphic file (type bmp)
+<create_a_dataset_of_database_6.en.png>
+ [250]
+File: create_a_dataset_of_stagingdb_1.en.png Graphic file (type bmp)
+<create_a_dataset_of_stagingdb_1.en.png>
+
+[251]
+File: create_a_dataset_of_stagingdb_3.en.png Graphic file (type bmp)
+<create_a_dataset_of_stagingdb_3.en.png>
+ [252]
+File: create_a_dataset_of_stagingdb_4.en.png Graphic file (type bmp)
+<create_a_dataset_of_stagingdb_4.en.png>
+ [253]
+File: add_datasets_1.en.png Graphic file (type bmp)
+<add_datasets_1.en.png>
+ [254]
+File: create_a_dataset_1.en.png Graphic file (type bmp)
+<create_a_dataset_1.en.png>
+ [255]
+File: add_datasets_2.en.png Graphic file (type bmp)
+<add_datasets_2.en.png>
+ [256]
+File: add_datasets_3.en.png Graphic file (type bmp)
+<add_datasets_3.en.png>
+ [257]
+File: add_datasets_4.en.png Graphic file (type bmp)
+<add_datasets_4.en.png>
+ [258]
+File: add_datasets_5.en.png Graphic file (type bmp)
+<add_datasets_5.en.png>
+ [259]
+File: add_datasets_6.en.png Graphic file (type bmp)
+<add_datasets_6.en.png>
+ [260]
+File: edit_rules_1.en.png Graphic file (type bmp)
+<edit_rules_1.en.png>
+ [261]
 Missing character: There is no ⌘ in font NanumBarunGothic/OT:script=latn;langua
 ge=DFLT;mapping=tex-text;!
+ [262]
 File: edit_rules_2.png Graphic file (type bmp)
 <edit_rules_2.png>
- [245]
 File: header_menu.png Graphic file (type bmp)
 <header_menu.png>
 File: edit_rules_3.png Graphic file (type bmp)
 <edit_rules_3.png>
- [246]
+
+[263]
 File: edit_rules_4.png Graphic file (type bmp)
 <edit_rules_4.png>
 File: edit_rules_13.png Graphic file (type bmp)
 <edit_rules_13.png>
-
-[247]
-File: edit_rules_5.png Graphic file (type bmp)
-<edit_rules_5.png>
-File: edit_rules_6.png Graphic file (type bmp)
-<edit_rules_6.png>
-File: edit_rules_7.png Graphic file (type bmp)
-<edit_rules_7.png>
- [248]
-File: edit_rules_6.png Graphic file (type bmp)
-<edit_rules_6.png>
+ [264]
+File: edit_rules_5.en.png Graphic file (type bmp)
+<edit_rules_5.en.png>
+File: edit_rules_6.en.png Graphic file (type bmp)
+<edit_rules_6.en.png>
+File: edit_rules_7.en.png Graphic file (type bmp)
+<edit_rules_7.en.png>
+ [265]
+File: edit_rules_6.en.png Graphic file (type bmp)
+<edit_rules_6.en.png>
 File: icon_edit1.png Graphic file (type bmp)
 <icon_edit1.png>
-File: edit_rules_8.png Graphic file (type bmp)
-<edit_rules_8.png>
- [249]
-File: edit_rules_12.png Graphic file (type bmp)
-<edit_rules_12.png>
+File: edit_rules_8.en.png Graphic file (type bmp)
+<edit_rules_8.en.png>
+ [266]
+File: edit_rules_12.en.png Graphic file (type bmp)
+<edit_rules_12.en.png>
 File: icon_delete.png Graphic file (type bmp)
 <icon_delete.png>
-File: edit_rules_10.png Graphic file (type bmp)
-<edit_rules_10.png>
- [250]
-File: edit_rules_11.png Graphic file (type bmp)
-<edit_rules_11.png>
+File: edit_rules_10.en.png Graphic file (type bmp)
+<edit_rules_10.en.png>
+ [267]
+File: edit_rules_11.en.png Graphic file (type bmp)
+<edit_rules_11.en.png>
 File: icon_undo.png Graphic file (type bmp)
 <icon_undo.png>
-File: icon_redo.png Graphic file (type bmp)
-<icon_redo.png>
-File: icon_redo.png Graphic file (type bmp)
-<icon_redo.png>
- [251] [252] [253]
-File: rule_kinds_setformat_1.png Graphic file (type bmp)
-<rule_kinds_setformat_1.png>
-File: rule_kinds_rename_1.png Graphic file (type bmp)
-<rule_kinds_rename_1.png>
- [254] [255]
-File: rule_kinds_keep_1.png Graphic file (type bmp)
-<rule_kinds_keep_1.png>
-File: rule_kinds_replace_1.png Graphic file (type bmp)
-<rule_kinds_replace_1.png>
- [256] [257]
-File: rule_kinds_set_1.png Graphic file (type bmp)
-<rule_kinds_set_1.png>
- [258]
-File: rule_kinds_set_2.png Graphic file (type bmp)
-<rule_kinds_set_2.png>
-
-[259] [260] [261]
-File: rule_kinds_nest_1.png Graphic file (type bmp)
-<rule_kinds_nest_1.png>
-File: rule_kinds_unnest_1.png Graphic file (type bmp)
-<rule_kinds_unnest_1.png>
- [262] [263]
-File: rule_kinds_flatten_1.png Graphic file (type bmp)
-<rule_kinds_flatten_1.png>
-File: rule_kinds_flatten_2.png Graphic file (type bmp)
-<rule_kinds_flatten_2.png>
- [264]
-File: rule_kinds_aggregate_1.png Graphic file (type bmp)
-<rule_kinds_aggregate_1.png>
- [265] [266]
-File: rule_kinds_aggregate_2.png Graphic file (type bmp)
-<rule_kinds_aggregate_2.png>
-File: rule_kinds_pivot_1.png Graphic file (type bmp)
-<rule_kinds_pivot_1.png>
- [267]
-File: rule_kinds_pivot_2.png Graphic file (type bmp)
-<rule_kinds_pivot_2.png>
  [268]
-File: rule_kinds_unpivot_1.png Graphic file (type bmp)
-<rule_kinds_unpivot_1.png>
- [269]
-File: rule_kinds_unpivot_2.png Graphic file (type bmp)
-<rule_kinds_unpivot_2.png>
- [270]
-File: rule_kinds_unpivot_3.png Graphic file (type bmp)
-<rule_kinds_unpivot_3.png>
-
-[271]
-File: rule_kinds_join_1.png Graphic file (type bmp)
-<rule_kinds_join_1.png>
+File: icon_redo.png Graphic file (type bmp)
+<icon_redo.png>
+File: icon_redo.png Graphic file (type bmp)
+<icon_redo.png>
+ [269] [270]
+File: rule_kinds_setformat_1.en.png Graphic file (type bmp)
+<rule_kinds_setformat_1.en.png>
+ [271]
+File: rule_kinds_rename_1.en.png Graphic file (type bmp)
+<rule_kinds_rename_1.en.png>
  [272] [273]
-File: rule_kinds_join_2.png Graphic file (type bmp)
-<rule_kinds_join_2.png>
-File: rule_kinds_union_1.png Graphic file (type bmp)
-<rule_kinds_union_1.png>
+File: rule_kinds_keep_1.en.png Graphic file (type bmp)
+<rule_kinds_keep_1.en.png>
+File: rule_kinds_replace_1.en.png Graphic file (type bmp)
+<rule_kinds_replace_1.en.png>
  [274]
-File: rule_kinds_union_2.png Graphic file (type bmp)
-<rule_kinds_union_2.png>
- [275]
-File: rule_kinds_window_1.png Graphic file (type bmp)
-<rule_kinds_window_1.png>
+[275]
+File: rule_kinds_set_1.en.png Graphic file (type bmp)
+<rule_kinds_set_1.en.png>
  [276]
-File: rule_kinds_window_2.png Graphic file (type bmp)
-<rule_kinds_window_2.png>
- [277] [278]
-File: create_a_datasnapshot_1.png Graphic file (type bmp)
-<create_a_datasnapshot_1.png>
- [279]
-File: create_a_datasnapshot_2.png Graphic file (type bmp)
-<create_a_datasnapshot_2.png>
-File: create_a_datasnapshot_3.png Graphic file (type bmp)
-<create_a_datasnapshot_3.png>
- [280]
-File: create_a_datasnapshot_4.png Graphic file (type bmp)
-<create_a_datasnapshot_4.png>
-File: create_a_datasnapshot_5.png Graphic file (type bmp)
-<create_a_datasnapshot_5.png>
- [281] [282]
-File: data_snapshot_1.png Graphic file (type bmp)
-<data_snapshot_1.png>
+File: rule_kinds_set_2.en.png Graphic file (type bmp)
+<rule_kinds_set_2.en.png>
+ [277] [278] [279] [280]
+File: rule_kinds_nest_1.en.png Graphic file (type bmp)
+<rule_kinds_nest_1.en.png>
+ [281]
+File: rule_kinds_unnest_1.en.png Graphic file (type bmp)
+<rule_kinds_unnest_1.en.png>
+ [282]
+File: rule_kinds_flatten_1.en.png Graphic file (type bmp)
+<rule_kinds_flatten_1.en.png>
+File: rule_kinds_flatten_2.en.png Graphic file (type bmp)
+<rule_kinds_flatten_2.en.png>
+ [283]
+File: rule_kinds_aggregate_1.en.png Graphic file (type bmp)
+<rule_kinds_aggregate_1.en.png>
+ [284] [285]
+File: rule_kinds_aggregate_2.en.png Graphic file (type bmp)
+<rule_kinds_aggregate_2.en.png>
+File: rule_kinds_pivot_1.en.png Graphic file (type bmp)
+<rule_kinds_pivot_1.en.png>
+ [286]
+[287]
+File: rule_kinds_pivot_2.en.png Graphic file (type bmp)
+<rule_kinds_pivot_2.en.png>
+File: rule_kinds_unpivot_1.en.png Graphic file (type bmp)
+<rule_kinds_unpivot_1.en.png>
+ [288] [289]
+File: rule_kinds_unpivot_2.en.png Graphic file (type bmp)
+<rule_kinds_unpivot_2.en.png>
+File: rule_kinds_unpivot_3.en.png Graphic file (type bmp)
+<rule_kinds_unpivot_3.en.png>
+ [290]
+File: rule_kinds_join_1.en.png Graphic file (type bmp)
+<rule_kinds_join_1.en.png>
+ [291] [292]
+File: rule_kinds_join_2.en.png Graphic file (type bmp)
+<rule_kinds_join_2.en.png>
+File: rule_kinds_union_1.en.png Graphic file (type bmp)
+<rule_kinds_union_1.en.png>
+ [293]
+File: rule_kinds_union_2.en.png Graphic file (type bmp)
+<rule_kinds_union_2.en.png>
+ [294]
+File: rule_kinds_window_1.en.png Graphic file (type bmp)
+<rule_kinds_window_1.en.png>
+ [295]
+File: rule_kinds_window_2.en.png Graphic file (type bmp)
+<rule_kinds_window_2.en.png>
+ [296] [297]
+File: create_a_datasnapshot_1.en.png Graphic file (type bmp)
+<create_a_datasnapshot_1.en.png>
+ [298]
+File: create_a_datasnapshot_2.en.png Graphic file (type bmp)
+<create_a_datasnapshot_2.en.png>
 
-[283]
-File: data_snapshot_2.png Graphic file (type bmp)
-<data_snapshot_2.png>
-File: data_snapshot_3.png Graphic file (type bmp)
-<data_snapshot_3.png>
- [284]
-File: data_snapshot_4.png Graphic file (type bmp)
-<data_snapshot_4.png>
-File: data_snapshot_5.png Graphic file (type bmp)
-<data_snapshot_5.png>
- [285]
+[299]
+File: create_a_datasnapshot_3.en.png Graphic file (type bmp)
+<create_a_datasnapshot_3.en.png>
+ [300]
+File: create_a_datasnapshot_4.en.png Graphic file (type bmp)
+<create_a_datasnapshot_4.en.png>
+ [301]
+File: create_a_datasnapshot_5.en.png Graphic file (type bmp)
+<create_a_datasnapshot_5.en.png>
+ [302] [303]
+File: data_snapshot_1.en.png Graphic file (type bmp)
+<data_snapshot_1.en.png>
+File: data_snapshot_2.en.png Graphic file (type bmp)
+<data_snapshot_2.en.png>
+ [304]
+File: data_snapshot_3.en.png Graphic file (type bmp)
+<data_snapshot_3.en.png>
+ [305]
+File: data_snapshot_4.en.png Graphic file (type bmp)
+<data_snapshot_4.en.png>
+File: data_snapshot_5.en.png Graphic file (type bmp)
+<data_snapshot_5.en.png>
+ [306]
 File: data_snapshot_6.png Graphic file (type bmp)
 <data_snapshot_6.png>
- [286]
+ [307] [308]
 Chapter 9.
-File: user_menu.png Graphic file (type bmp)
-<user_menu.png>
-[287
+File: user_menu.en.png Graphic file (type bmp)
+<user_menu.en.png>
+[309
 
 ]
-File: approval_home.png Graphic file (type bmp)
-<approval_home.png>
- [288] [289]
-File: members_home.png Graphic file (type bmp)
-<members_home.png>
-File: member_info.png Graphic file (type bmp)
-<member_info.png>
- [290]
+File: approval_home.en.png Graphic file (type bmp)
+<approval_home.en.png>
+ [310] [311]
+File: members_home.en.png Graphic file (type bmp)
+<members_home.en.png>
+File: member_info.en.png Graphic file (type bmp)
+<member_info.en.png>
+ [312]
 File: setup_icon.png Graphic file (type bmp)
 <setup_icon.png>
-File: create_member.png Graphic file (type bmp)
-<create_member.png>
- [291]
-File: groups_home.png Graphic file (type bmp)
-<groups_home.png>
- [292]
-File: group_info.png Graphic file (type bmp)
-<group_info.png>
- [293]
+File: create_member.en.png Graphic file (type bmp)
+<create_member.en.png>
+ [313] [314]
+File: groups_home.en.png Graphic file (type bmp)
+<groups_home.en.png>
+File: group_info.en.png Graphic file (type bmp)
+<group_info.en.png>
+ [315]
 File: setup_icon.png Graphic file (type bmp)
 <setup_icon.png>
-File: create_group.png Graphic file (type bmp)
-<create_group.png>
- [294]
-File: permissions.png Graphic file (type bmp)
-<permissions.png>
- [295]
-File: edit_permission.png Graphic file (type bmp)
-<edit_permission.png>
+File: create_group.en.png Graphic file (type bmp)
+<create_group.en.png>
+ [316]
+File: permissions.en.png Graphic file (type bmp)
+<permissions.en.png>
+ [317]
+File: edit_permission.en.png Graphic file (type bmp)
+<edit_permission.en.png>
 File: setup_icon.png Graphic file (type bmp)
 <setup_icon.png>
-File: shared_users.png Graphic file (type bmp)
-<shared_users.png>
- [296] [297] [298
+File: shared_users.en.png Graphic file (type bmp)
+<shared_users.en.png>
+ [318] [319] [320
 
 ]
 Chapter 10.
 File: exploration.png Graphic file (type bmp)
 <exploration.png>
-[299]
+[321]
 File: exploration01.png Graphic file (type bmp)
 <exploration01.png>
- [300]
+ [322]
 File: exploration_detail.png Graphic file (type bmp)
 <exploration_detail.png>
- [301]
+ [323]
 File: exploration_detail01.png Graphic file (type bmp)
 <exploration_detail01.png>
- [302]
+ [324]
 File: exploration_detail02.png Graphic file (type bmp)
 <exploration_detail02.png>
 File: popup.png Graphic file (type bmp)
 <popup.png>
- [303]
+ [325]
 File: exploration_detail03.png Graphic file (type bmp)
 <exploration_detail03.png>
 File: metadata.png Graphic file (type bmp)
 <metadata.png>
- [304]
+ [326]
 File: search.png Graphic file (type bmp)
 <search.png>
- [305]
+ [327]
 File: catalog.png Graphic file (type bmp)
 <catalog.png>
 File: metadata01.png Graphic file (type bmp)
 <metadata01.png>
 File: metadata.png Graphic file (type bmp)
 <metadata.png>
- [306]
+ [328]
 File: dictionary.png Graphic file (type bmp)
 <dictionary.png>
 File: dictionary01.png Graphic file (type bmp)
 <dictionary01.png>
- [307]
+ [329]
 File: dictionary02.png Graphic file (type bmp)
 <dictionary02.png>
- [308]
+ [330]
 File: codetable01.png Graphic file (type bmp)
 <codetable01.png>
 File: codetable02.png Graphic file (type bmp)
 <codetable02.png>
 File: codetable03.png Graphic file (type bmp)
 <codetable03.png>
- [309] [310]
+ [331] [332]
 Chapter 11.
 File: overview00.png Graphic file (type bmp)
 <overview00.png>
-[311
+[333
 
 ]
 File: configuration.png Graphic file (type bmp)
 <configuration.png>
 File: configuration01.png Graphic file (type bmp)
 <configuration01.png>
- [312] [313] [314]
+ [334] [335] [336]
 File: ingestion_task.png Graphic file (type bmp)
 <ingestion_task.png>
- [315]
+ [337]
 File: ingestion_task01.png Graphic file (type bmp)
 <ingestion_task01.png>
 File: ingestion_task02.png Graphic file (type bmp)
 <ingestion_task02.png>
- [316]
+ [338]
 File: ingestion_task03.png Graphic file (type bmp)
 <ingestion_task03.png>
- [317]
+ [339]
 File: ingestion_supervisor.png Graphic file (type bmp)
 <ingestion_supervisor.png>
 File: ingestion_supervisor01.png Graphic file (type bmp)
 <ingestion_supervisor01.png>
- [318]
+ [340]
 File: ingestion_middlemanager.png Graphic file (type bmp)
 <ingestion_middlemanager.png>
 File: ingestion_middlemanager01.png Graphic file (type bmp)
@@ -2483,214 +3333,209 @@ File: query.png Graphic file (type bmp)
 <query.png>
 File: query_detail.png Graphic file (type bmp)
 <query_detail.png>
- [319] [320] [321
+ [341] [342] [343
 
-] [322]
+] [344]
 Chapter 12.
-[323
+[345
 
-] [324
+] [346
 
 ]
 Chapter 13.
-File: workflow_list.png Graphic file (type bmp)
-<workflow_list.png>
-[325]
-File: create_workflow.png Graphic file (type bmp)
-<create_workflow.png>
- [326]
+File: workflow_list.en.png Graphic file (type bmp)
+<workflow_list.en.png>
+File: create_workflow.en.png Graphic file (type bmp)
+<create_workflow.en.png>
+[347] [348]
 Chapter 14.
 File: workflow_editor.png Graphic file (type bmp)
 <workflow_editor.png>
-[327
-
-]
 File: icon_unfold.png Graphic file (type bmp)
 <icon_unfold.png>
+[349
+
+]
 File: canvas.png Graphic file (type bmp)
 <canvas.png>
- [328]
 File: icon_do.png Graphic file (type bmp)
 <icon_do.png>
 File: icon_play.png Graphic file (type bmp)
 <icon_play.png>
 File: icon_play.png Graphic file (type bmp)
 <icon_play.png>
- [329] [330] [331]
+ [350] [351] [352] [353]
 File: icon_exec.png Graphic file (type bmp)
 <icon_exec.png>
 File: icon_bin2.png Graphic file (type bmp)
 <icon_bin2.png>
-File: schedule_list.png Graphic file (type bmp)
-<schedule_list.png>
- [332]
-File: create_schedule.png Graphic file (type bmp)
-<create_schedule.png>
- [333] [334] [335] [336
-
-]
+File: schedule_list.en.png Graphic file (type bmp)
+<schedule_list.en.png>
+File: create_schedule.en.png Graphic file (type bmp)
+<create_schedule.en.png>
+ [354] [355] [356]
 Chapter 15.
-File: monitoring_page.png Graphic file (type bmp)
-<monitoring_page.png>
-[337]
-File: status_bar.png Graphic file (type bmp)
-<status_bar.png>
- [338]
+File: monitoring_page.en.png Graphic file (type bmp)
+<monitoring_page.en.png>
+File: status_bar.en.png Graphic file (type bmp)
+<status_bar.en.png>
+[357
+
+] [358]
 Chapter 16.
-[339
+[359
 
-] [340
+] [360
 
-] [341] [342]
+] [361] [362]
 Chapter 17.
 File: features_01.png Graphic file (type bmp)
 <features_01.png>
-[343
-
-]
 File: features_02.png Graphic file (type bmp)
 <features_02.png>
- [344]
-File: structure_01.png Graphic file (type bmp)
-<structure_01.png>
- [345] [346
+[363
+
+] [364]
+File: structure_01.en.png Graphic file (type bmp)
+<structure_01.en.png>
+ [365] [366
 
 ]
 Chapter 18.
 File: create_rule_01.png Graphic file (type bmp)
 <create_rule_01.png>
-[347]
+[367]
 File: choose_data_source_01.png Graphic file (type bmp)
 <choose_data_source_01.png>
- [348]
+ [368]
 File: choose_metrics_select_measure_01.png Graphic file (type bmp)
 <choose_metrics_select_measure_01.png>
- [349]
+ [369]
 File: icon_custom_column.png Graphic file (type bmp)
 <icon_custom_column.png>
 File: choose_metrics_select_measure_04.png Graphic file (type bmp)
 <choose_metrics_select_measure_04.png>
- [350]
+ [370]
 File: choose_metrics_select_measure_02.png Graphic file (type bmp)
 <choose_metrics_select_measure_02.png>
 File: icon_split.png Graphic file (type bmp)
 <icon_split.png>
 File: choose_metrics_select_measure_05.png Graphic file (type bmp)
 <choose_metrics_select_measure_05.png>
- [351]
+ [371]
 File: icon_ano_filter.png Graphic file (type bmp)
 <icon_ano_filter.png>
 File: choose_metrics_add_filter_02.png Graphic file (type bmp)
 <choose_metrics_add_filter_02.png>
- [352]
+ [372]
 File: choose_metrics_select_training_interval_01.png Graphic file (type bmp)
 <choose_metrics_select_training_interval_01.png>
- [353]
+ [373]
 File: choose_metrics_select_training_interval_02.png Graphic file (type bmp)
 <choose_metrics_select_training_interval_02.png>
- [354]
+ [374]
 File: choose_model_01.png Graphic file (type bmp)
 <choose_model_01.png>
 File: choose_model_03.png Graphic file (type bmp)
 <choose_model_03.png>
- [355]
+ [375]
 File: icon_set.png Graphic file (type bmp)
 <icon_set.png>
 File: set_alarm_rules_04.png Graphic file (type bmp)
 <set_alarm_rules_04.png>
- [356]
+ [376]
 File: set_alarm_rules_01.png Graphic file (type bmp)
 <set_alarm_rules_01.png>
- [357]
+ [377]
 File: set_alarm_rules_02.png Graphic file (type bmp)
 <set_alarm_rules_02.png>
+ [378]
 File: complete_alarm_rules_01.png Graphic file (type bmp)
 <complete_alarm_rules_01.png>
- [358]
 File: complete_alarm_rules_02.png Graphic file (type bmp)
 <complete_alarm_rules_02.png>
 
-[359] [360]
+[379] [380]
 Chapter 19.
 File: overview_01.png Graphic file (type bmp)
 <overview_01.png>
-[361
+[381
 
 ]
 File: overview_02.png Graphic file (type bmp)
 <overview_02.png>
- [362] [363] [364
-
-]
+ [382]
 Chapter 20.
 File: complete_alarm_rules_021.png Graphic file (type bmp)
 <complete_alarm_rules_021.png>
-[365]
+[383
+
+]
 File: alarm_rule_detail_01.png Graphic file (type bmp)
 <alarm_rule_detail_01.png>
- [366]
+ [384]
 File: icon_period_edit.png Graphic file (type bmp)
 <icon_period_edit.png>
 File: alarm_rule_detail_02.png Graphic file (type bmp)
 <alarm_rule_detail_02.png>
 File: alarm_rule_detail_03.png Graphic file (type bmp)
 <alarm_rule_detail_03.png>
- [367]
 File: icon_alarm_history.png Graphic file (type bmp)
 <icon_alarm_history.png>
 File: icon_rule_settings_edit.png Graphic file (type bmp)
 <icon_rule_settings_edit.png>
+ [385]
 File: alarm_rule_detail_04.png Graphic file (type bmp)
 <alarm_rule_detail_04.png>
- [368]
+ [386]
 Chapter 21.
 File: alarm_list_01.png Graphic file (type bmp)
 <alarm_list_01.png>
-[369
+[387
 
 ]
 File: alarm_list_03.png Graphic file (type bmp)
 <alarm_list_03.png>
- [370]
+ [388]
 File: alarm_list_02.png Graphic file (type bmp)
 <alarm_list_02.png>
 File: alarm_detail_01.png Graphic file (type bmp)
 <alarm_detail_01.png>
- [371]
+ [389]
 File: alarm_detail_02.png Graphic file (type bmp)
 <alarm_detail_02.png>
- [372]
+ [390]
 File: alarm_detail_03.png Graphic file (type bmp)
 <alarm_detail_03.png>
- [373]
+ [391]
 File: alarm_detail_04.png Graphic file (type bmp)
 <alarm_detail_04.png>
- [374]
+ [392]
 File: alarm_detail_05.png Graphic file (type bmp)
 <alarm_detail_05.png>
- [375] (./metatron-doc-user.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9782.
- [376]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 9782.
+ [393] (./metatron-doc-user.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 9759.
+ [394]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 9759.
 
 (./metatron-doc-user.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 9782.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9782.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 9759.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 9759.
 
 Package rerunfilecheck Info: File `metatron-doc-user.out' has not changed.
-(rerunfilecheck)             Checksum: 986B32EE93FD300E2665824ADEF6170D.
+(rerunfilecheck)             Checksum: C4883E9977FB79CDB44F2DE15E57DE07.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 29590 strings out of 492916
- 537241 string characters out of 6133345
- 637923 words of memory out of 5000000
- 32904 multiletter control sequences out of 15000+600000
- 540844 words of font info for 89 fonts, out of 8000000 for 9000
+ 29594 strings out of 492916
+ 540561 string characters out of 6133345
+ 632237 words of memory out of 5000000
+ 32909 multiletter control sequences out of 15000+600000
+ 540836 words of font info for 88 fonts, out of 8000000 for 9000
  1349 hyphenation exceptions out of 8191
  40i,12n,67p,833b,2559s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on metatron-doc-user.pdf (382 pages).
+Output written on metatron-doc-user.pdf (400 pages).

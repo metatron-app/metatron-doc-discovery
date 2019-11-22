@@ -1,304 +1,304 @@
 \select@language {english}
 \contentsline {part}{I\hspace {1em}Metatron Discovery}{1}{part.1}% 
-\contentsline {chapter}{\numberline {1}디스커버리 퀵가이드}{3}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Step1. 데이터 소스 만들기}{4}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Step2. 워크북 만들기}{12}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}Step3. 대시보드 구성하기}{16}{section.1.3}% 
-\contentsline {subsection}{\numberline {1.3.1}핵심지표 차트 만들기}{18}{subsection.1.3.1}% 
-\contentsline {subsection}{\numberline {1.3.2}선형 차트 만들기}{23}{subsection.1.3.2}% 
-\contentsline {chapter}{\numberline {2}Metatron Discovery 소개}{29}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Metatron Discovery 개요}{29}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}4세대 BI 솔루션}{30}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}Big OLAP 기반}{31}{subsection.2.1.2}% 
-\contentsline {subsection}{\numberline {2.1.3}Metatron Discovery 아키텍처}{32}{subsection.2.1.3}% 
-\contentsline {section}{\numberline {2.2}Metatron Discovery 구성}{32}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}데이터 프리퍼레이션}{33}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}데이터 스토리지}{34}{subsection.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}데이터 분석 및 시각화}{36}{subsection.2.2.3}% 
-\contentsline {subsubsection}{워크스페이스}{36}{subsubsection*.3}% 
-\contentsline {subsubsection}{워크북, 대시보드, 차트}{37}{subsubsection*.4}% 
-\contentsline {subsubsection}{노트북}{39}{subsubsection*.5}% 
-\contentsline {subsubsection}{워크벤치}{39}{subsubsection*.6}% 
-\contentsline {subsection}{\numberline {2.2.4}데이터 모니터링}{40}{subsection.2.2.4}% 
-\contentsline {subsection}{\numberline {2.2.5}사용자 권한 및 계정}{41}{subsection.2.2.5}% 
-\contentsline {subsection}{\numberline {2.2.6}로그인/로그아웃}{41}{subsection.2.2.6}% 
-\contentsline {section}{\numberline {2.3}Metatron 기본 엔진: Druid}{42}{section.2.3}% 
-\contentsline {subsection}{\numberline {2.3.1}Druid 개발 배경}{43}{subsection.2.3.1}% 
-\contentsline {subsection}{\numberline {2.3.2}Druid 특징}{43}{subsection.2.3.2}% 
-\contentsline {subsubsection}{데이터 테이블 형태}{43}{subsubsection*.7}% 
-\contentsline {subsubsection}{데이터 ingestion}{44}{subsubsection*.8}% 
-\contentsline {subsubsection}{데이터 roll-up}{44}{subsubsection*.9}% 
-\contentsline {subsubsection}{데이터 sharding}{45}{subsubsection*.10}% 
-\contentsline {subsubsection}{데이터 저장 포맷 및 인덱싱}{46}{subsubsection*.11}% 
-\contentsline {paragraph}{컬럼 기반 저장 및 인덱싱}{46}{paragraph*.12}% 
-\contentsline {paragraph}{데이터 필터링을 위한 인덱싱}{46}{paragraph*.13}% 
-\contentsline {subsubsection}{쿼리 언어}{47}{subsubsection*.14}% 
-\contentsline {subsection}{\numberline {2.3.3}Druid 기본 클러스터 아키텍쳐}{47}{subsection.2.3.3}% 
-\contentsline {subsubsection}{Real-time 노드}{48}{subsubsection*.15}% 
-\contentsline {subsubsection}{Historical 노드}{50}{subsubsection*.16}% 
-\contentsline {subsubsection}{Broker 노드}{51}{subsubsection*.17}% 
-\contentsline {subsubsection}{Coordinator 노드}{51}{subsubsection*.18}% 
-\contentsline {subsubsection}{외부 종속 모듈}{52}{subsubsection*.19}% 
-\contentsline {subsubsection}{High Availability 특성}{52}{subsubsection*.20}% 
-\contentsline {subsubsection}{아키텍쳐 확장성}{52}{subsubsection*.21}% 
-\contentsline {subsection}{\numberline {2.3.4}Druid 성능 평가}{53}{subsection.2.3.4}% 
-\contentsline {subsubsection}{Druid 개발진의 자체 평가}{53}{subsubsection*.22}% 
-\contentsline {paragraph}{Query latency 성능}{54}{paragraph*.23}% 
-\contentsline {paragraph}{Ingestion latency 성능}{55}{paragraph*.24}% 
-\contentsline {subsubsection}{SK텔레콤의 Druid 성능 평가}{56}{subsubsection*.25}% 
-\contentsline {paragraph}{Query latency 테스트}{56}{paragraph*.26}% 
-\contentsline {paragraph}{Ingestion latency 테스트}{57}{paragraph*.27}% 
-\contentsline {subsubsection}{Druid에 대한 제3자의 평가}{58}{subsubsection*.28}% 
-\contentsline {paragraph}{Outlier의 Druid 평가}{58}{paragraph*.29}% 
-\contentsline {paragraph}{DB-Engines의 Druid 평가}{59}{paragraph*.30}% 
-\contentsline {subsubsection}{Apache Spark와의 비교}{60}{subsubsection*.31}% 
-\contentsline {paragraph}{Apache Spark의 특징}{60}{paragraph*.32}% 
-\contentsline {paragraph}{데이터셋, 쿼리, 성능 비교 결과}{60}{paragraph*.33}% 
-\contentsline {paragraph}{시사점}{62}{paragraph*.34}% 
-\contentsline {subsection}{\numberline {2.3.5}Metatron 엔진으로서 Druid}{62}{subsection.2.3.5}% 
-\contentsline {subsubsection}{Metatron 개발 배경과 Druid 기술의 도입}{63}{subsubsection*.35}% 
-\contentsline {paragraph}{빅데이터 분석 솔루션으로서 Metatron의 니즈}{63}{paragraph*.36}% 
-\contentsline {paragraph}{Druid를 엔진으로 채택한 이유}{63}{paragraph*.37}% 
-\contentsline {paragraph}{Druid 응용 방식}{63}{paragraph*.38}% 
-\contentsline {subsubsection}{Metatron에서 보강한 Druid 기능들}{64}{subsubsection*.39}% 
-\contentsline {paragraph}{오픈소스 Druid의 한계}{64}{paragraph*.40}% 
-\contentsline {paragraph}{Metatron에서 보강한 Druid 기능들}{64}{paragraph*.41}% 
-\contentsline {chapter}{\numberline {3}데이터 관리}{67}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}데이터 소스}{68}{section.3.1}% 
-\contentsline {subsection}{\numberline {3.1.1}'차원값'과 '측정값'의 개념}{70}{subsection.3.1.1}% 
-\contentsline {subsection}{\numberline {3.1.2}데이터 소스 관리 홈 화면}{71}{subsection.3.1.2}% 
-\contentsline {subsection}{\numberline {3.1.3}데이터 소스 상세 정보}{72}{subsection.3.1.3}% 
-\contentsline {subsubsection}{상단 공통 영역}{72}{subsubsection*.42}% 
-\contentsline {subsubsection}{데이터 정보 영역}{73}{subsubsection*.43}% 
-\contentsline {subsubsection}{데이터 스키마 변경하기}{74}{subsubsection*.44}% 
-\contentsline {subsubsection}{데이터 통계 분석하기}{76}{subsubsection*.45}% 
-\contentsline {subsection}{\numberline {3.1.4}데이터 소스 만들기}{78}{subsection.3.1.4}% 
-\contentsline {subsubsection}{파일로 데이터 소스 만들기}{80}{subsubsection*.46}% 
-\contentsline {subsubsection}{DB로 데이터 소스 만들기}{89}{subsubsection*.47}% 
-\contentsline {subsubsection}{StagingDB로 데이터 소스 만들기}{93}{subsubsection*.48}% 
-\contentsline {subsubsection}{Metatron 엔진을 통해 데이터 소스 추가하기}{94}{subsubsection*.49}% 
-\contentsline {section}{\numberline {3.2}데이터 커넥션}{95}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}데이터 커넥션 관리 홈 화면}{97}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}데이터 커넥션 만들기}{98}{subsection.3.2.2}% 
-\contentsline {section}{\numberline {3.3}데이터 모니터링}{99}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}로그 통계}{100}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}잡 로그}{102}{subsection.3.3.2}% 
-\contentsline {subsubsection}{쿼리 상세 정보}{103}{subsubsection*.50}% 
-\contentsline {chapter}{\numberline {4}워크스페이스}{105}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}워크스페이스 홈}{107}{section.4.1}% 
-\contentsline {subsection}{\numberline {4.1.1}워크스페이스 홈 화면 구성}{107}{subsection.4.1.1}% 
-\contentsline {subsection}{\numberline {4.1.2}폴더 항목}{109}{subsection.4.1.2}% 
-\contentsline {subsection}{\numberline {4.1.3}개체 항목}{110}{subsection.4.1.3}% 
-\contentsline {subsection}{\numberline {4.1.4}폴더 및 개체 선택/복사/이동/삭제}{111}{subsection.4.1.4}% 
-\contentsline {section}{\numberline {4.2}공유 워크스페이스}{111}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}공유 워크스페이스 목록}{112}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}공유 워크스페이스 생성}{113}{subsection.4.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}공유 워크스페이스 접근 권한 설정}{114}{subsection.4.2.3}% 
-\contentsline {subsubsection}{권한 스키마 설정}{114}{subsubsection*.51}% 
-\contentsline {paragraph}{권한 스키마 조회하기}{114}{paragraph*.52}% 
-\contentsline {paragraph}{권한 스키마 설정 바꾸기}{115}{paragraph*.53}% 
-\contentsline {subsubsection}{공유 멤버 및 그룹 설정}{116}{subsubsection*.54}% 
-\contentsline {chapter}{\numberline {5}워크북}{119}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}워크북 만들기}{121}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}대시보드}{125}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}대시보드 만들기}{126}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}대시보드 크기와 레이아웃 변경하기}{138}{subsection.5.2.2}% 
-\contentsline {subsubsection}{대시보드 위젯 배열 설정}{139}{subsubsection*.55}% 
-\contentsline {subsubsection}{차트 위젯 패널}{139}{subsubsection*.56}% 
-\contentsline {subsubsection}{텍스트 위젯 패널}{140}{subsubsection*.57}% 
-\contentsline {subsubsection}{레이아웃 패널}{142}{subsubsection*.58}% 
-\contentsline {subsubsection}{데이터 소스 패널}{143}{subsubsection*.59}% 
-\contentsline {subsection}{\numberline {5.2.3}대시보드 내에 데이터 소스 확인하기}{145}{subsection.5.2.3}% 
-\contentsline {subsubsection}{데이터 그리드 탭}{145}{subsubsection*.60}% 
-\contentsline {subsubsection}{컬럼 상세 탭}{145}{subsubsection*.61}% 
-\contentsline {subsubsection}{대시보드 데이터 정보 탭}{146}{subsubsection*.62}% 
-\contentsline {subsection}{\numberline {5.2.4}대시보드 프리젠테이션 하기}{146}{subsection.5.2.4}% 
-\contentsline {subsection}{\numberline {5.2.5}컬럼에 새로운 이름 부여하기}{147}{subsection.5.2.5}% 
-\contentsline {section}{\numberline {5.3}차트}{149}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}데이터 컬럼 리스트}{150}{subsection.5.3.1}% 
-\contentsline {subsubsection}{데이터 컬럼 리스트 구성}{150}{subsubsection*.63}% 
-\contentsline {subsubsection}{사용자 컬럼 추가}{151}{subsubsection*.64}% 
-\contentsline {subsection}{\numberline {5.3.2}차트 그리기(pivoting)}{153}{subsection.5.3.2}% 
-\contentsline {subsubsection}{'Pivoting'이란}{153}{subsubsection*.65}% 
-\contentsline {subsubsection}{열/행/교차 선반의 개념}{154}{subsubsection*.66}% 
-\contentsline {subsection}{\numberline {5.3.3}차트 유형 선택}{156}{subsection.5.3.3}% 
-\contentsline {subsection}{\numberline {5.3.4}차트 스타일 속성}{159}{subsection.5.3.4}% 
-\contentsline {subsubsection}{차트 스타일 설정 메뉴}{159}{subsubsection*.67}% 
-\contentsline {subsubsection}{차트 유형별 공통 설정 항목}{163}{subsubsection*.68}% 
-\contentsline {subsection}{\numberline {5.3.5}맵뷰와 공간 연산}{169}{subsection.5.3.5}% 
-\contentsline {subsubsection}{위치 속성의 차원값}{170}{subsubsection*.69}% 
-\contentsline {subsubsection}{맵 레이어 선반}{172}{subsubsection*.70}% 
-\contentsline {paragraph}{레이어 선반 추가}{174}{paragraph*.71}% 
-\contentsline {subsubsection}{맵뷰 레이어 스타일 속성}{174}{subsubsection*.72}% 
-\contentsline {paragraph}{공통 설정}{175}{paragraph*.73}% 
-\contentsline {paragraph}{레이어 설정}{175}{paragraph*.74}% 
-\contentsline {subparagraph}{Point 타입 레이어 속성}{177}{subparagraph*.75}% 
-\contentsline {subparagraph}{Line 타입 레이어 속성}{179}{subparagraph*.76}% 
-\contentsline {subparagraph}{Polygon 타입 레이어 속성}{180}{subparagraph*.77}% 
-\contentsline {paragraph}{범례 설정}{181}{paragraph*.78}% 
-\contentsline {subsubsection}{공간 분석}{181}{subsubsection*.79}% 
-\contentsline {section}{\numberline {5.4}필터}{182}{section.5.4}% 
-\contentsline {subsection}{\numberline {5.4.1}차트 필터}{183}{subsection.5.4.1}% 
-\contentsline {subsubsection}{자동으로 포함되는 필터들}{183}{subsubsection*.80}% 
-\contentsline {subsubsection}{차트 필터 패널}{183}{subsubsection*.81}% 
-\contentsline {subsubsection}{차트 필터 대화 상자}{184}{subsubsection*.82}% 
-\contentsline {paragraph}{차원값 필터링}{186}{paragraph*.83}% 
-\contentsline {paragraph}{타임스탬프 컬럼 필터 설정}{188}{paragraph*.84}% 
-\contentsline {paragraph}{측정값 필터링}{191}{paragraph*.85}% 
-\contentsline {subsection}{\numberline {5.4.2}글로벌 필터}{194}{subsection.5.4.2}% 
-\contentsline {chapter}{\numberline {6}노트북}{197}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}노트북 서버 관리}{198}{section.6.1}% 
-\contentsline {subsection}{\numberline {6.1.1}노트북 서버 목록}{199}{subsection.6.1.1}% 
-\contentsline {subsection}{\numberline {6.1.2}노트북 서버 추가}{199}{subsection.6.1.2}% 
-\contentsline {section}{\numberline {6.2}노트북 서버 등록하기}{200}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}신규 노트북 생성하기}{202}{section.6.3}% 
-\contentsline {section}{\numberline {6.4}노트북 활용하기}{205}{section.6.4}% 
-\contentsline {subsection}{\numberline {6.4.1}노트북 상세 조회}{205}{subsection.6.4.1}% 
-\contentsline {subsection}{\numberline {6.4.2}노트북 코딩}{206}{subsection.6.4.2}% 
-\contentsline {subsection}{\numberline {6.4.3}노트북 API 등록하기}{207}{subsection.6.4.3}% 
-\contentsline {chapter}{\numberline {7}워크벤치}{209}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}워크벤치 만들기}{210}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}워크벤치 사용하기}{212}{section.7.2}% 
-\contentsline {subsection}{\numberline {7.2.1}기본 정보 영역}{213}{subsection.7.2.1}% 
-\contentsline {subsection}{\numberline {7.2.2}스키마 및 테이블 영역}{214}{subsection.7.2.2}% 
-\contentsline {subsection}{\numberline {7.2.3}쿼리 에디터 영역}{216}{subsection.7.2.3}% 
-\contentsline {subsection}{\numberline {7.2.4}쿼리 결과 영역}{217}{subsection.7.2.4}% 
-\contentsline {subsubsection}{쿼리 수행 중}{217}{subsubsection*.86}% 
-\contentsline {subsubsection}{쿼리 수행 후}{218}{subsubsection*.87}% 
-\contentsline {subsection}{\numberline {7.2.5}추가 도구 영역}{219}{subsection.7.2.5}% 
-\contentsline {subsubsection}{글로벌 변수(Global variable) 편집 기능}{219}{subsubsection*.88}% 
-\contentsline {subsubsection}{워크벤치 네비게이션}{220}{subsubsection*.89}% 
-\contentsline {subsection}{\numberline {7.2.6}스키마 브라우저}{221}{subsection.7.2.6}% 
-\contentsline {chapter}{\numberline {8}데이터 프리퍼레이션}{223}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}데이터셋 만들기}{225}{section.8.1}% 
-\contentsline {subsection}{\numberline {8.1.1}파일 타입 데이터셋 생성하기}{227}{subsection.8.1.1}% 
-\contentsline {subsection}{\numberline {8.1.2}데이터베이스 타입 데이터셋 생성하기}{231}{subsection.8.1.2}% 
-\contentsline {subsection}{\numberline {8.1.3}Staging DB 타입 데이터셋 생성하기}{235}{subsection.8.1.3}% 
-\contentsline {section}{\numberline {8.2}데이터플로우 관리하기}{237}{section.8.2}% 
-\contentsline {subsection}{\numberline {8.2.1}데이터셋 추가하기}{239}{subsection.8.2.1}% 
-\contentsline {subsubsection}{빈 데이터플로우 생성 후 데이터셋 추가}{239}{subsubsection*.90}% 
-\contentsline {subsubsection}{데이터셋 상세 화면에서 바로 데이터플로우 생성}{243}{subsubsection*.91}% 
-\contentsline {subsection}{\numberline {8.2.2}룰 편집}{244}{subsection.8.2.2}% 
-\contentsline {subsubsection}{룰 생성하기}{245}{subsubsection*.92}% 
-\contentsline {paragraph}{컬럼 헤더 메뉴를 이용하는 방법}{245}{paragraph*.93}% 
-\contentsline {paragraph}{하단 명령 입력 패널을 이용하는 방법}{248}{paragraph*.94}% 
-\contentsline {paragraph}{룰 리스트 중간에 삽입하는 방법}{248}{paragraph*.95}% 
-\contentsline {subsubsection}{생성된 룰 편집하기}{249}{subsubsection*.96}% 
-\contentsline {paragraph}{룰 수정}{249}{paragraph*.97}% 
-\contentsline {paragraph}{룰 삭제}{250}{paragraph*.98}% 
-\contentsline {paragraph}{undo 및 redo}{251}{paragraph*.99}% 
-\contentsline {subsection}{\numberline {8.2.3}룰의 종류}{251}{subsection.8.2.3}% 
-\contentsline {subsubsection}{drop}{252}{subsubsection*.100}% 
-\contentsline {subsubsection}{header}{253}{subsubsection*.101}% 
-\contentsline {subsubsection}{settype}{253}{subsubsection*.102}% 
-\contentsline {subsubsection}{setformat}{253}{subsubsection*.103}% 
-\contentsline {subsubsection}{rename}{254}{subsubsection*.104}% 
-\contentsline {subsubsection}{keep}{256}{subsubsection*.105}% 
-\contentsline {subsubsection}{delete}{256}{subsubsection*.106}% 
-\contentsline {subsubsection}{replace}{257}{subsubsection*.107}% 
-\contentsline {subsubsection}{set}{258}{subsubsection*.108}% 
-\contentsline {subsubsection}{derive}{260}{subsubsection*.109}% 
-\contentsline {subsubsection}{split}{260}{subsubsection*.110}% 
-\contentsline {subsubsection}{merge}{260}{subsubsection*.111}% 
-\contentsline {subsubsection}{extract}{261}{subsubsection*.112}% 
-\contentsline {subsubsection}{countpattern}{261}{subsubsection*.113}% 
-\contentsline {subsubsection}{nest}{262}{subsubsection*.114}% 
-\contentsline {subsubsection}{unnest}{263}{subsubsection*.115}% 
-\contentsline {subsubsection}{flatten}{263}{subsubsection*.116}% 
-\contentsline {subsubsection}{aggregate}{266}{subsubsection*.117}% 
-\contentsline {subsubsection}{pivot}{268}{subsubsection*.118}% 
-\contentsline {subsubsection}{unpivot}{270}{subsubsection*.119}% 
-\contentsline {subsubsection}{join}{273}{subsubsection*.120}% 
-\contentsline {subsubsection}{union}{275}{subsubsection*.121}% 
-\contentsline {subsubsection}{window}{277}{subsubsection*.122}% 
-\contentsline {subsection}{\numberline {8.2.4}데이터 스냅샷 만들기}{279}{subsection.8.2.4}% 
-\contentsline {section}{\numberline {8.3}데이터 스냅샷 결과 이용하기}{283}{section.8.3}% 
-\contentsline {subsection}{\numberline {8.3.1}데이터 스냅샷 결과 확인하기}{283}{subsection.8.3.1}% 
-\contentsline {subsection}{\numberline {8.3.2}Metatron 엔진으로 적재하기}{285}{subsection.8.3.2}% 
-\contentsline {subsection}{\numberline {8.3.3}CSV파일로 다운로드 받기}{285}{subsection.8.3.3}% 
-\contentsline {chapter}{\numberline {9}계정 관리}{287}{chapter.9}% 
-\contentsline {section}{\numberline {9.1}멤버쉽 승인}{288}{section.9.1}% 
-\contentsline {section}{\numberline {9.2}멤버}{289}{section.9.2}% 
-\contentsline {subsection}{\numberline {9.2.1}멤버 홈 화면}{290}{subsection.9.2.1}% 
-\contentsline {subsection}{\numberline {9.2.2}사용자 정보 열람 및 수정}{290}{subsection.9.2.2}% 
-\contentsline {subsection}{\numberline {9.2.3}사용자 등록}{291}{subsection.9.2.3}% 
-\contentsline {section}{\numberline {9.3}그룹}{292}{section.9.3}% 
-\contentsline {subsection}{\numberline {9.3.1}그룹 홈 화면}{292}{subsection.9.3.1}% 
-\contentsline {subsection}{\numberline {9.3.2}그룹 정보 열람 및 수정}{293}{subsection.9.3.2}% 
-\contentsline {subsection}{\numberline {9.3.3}그룹 등록}{294}{subsection.9.3.3}% 
-\contentsline {section}{\numberline {9.4}사용자 권한}{295}{section.9.4}% 
-\contentsline {chapter}{\numberline {10}데이터 탐색}{299}{chapter.10}% 
-\contentsline {section}{\numberline {10.1}데이터 탐색하기}{299}{section.10.1}% 
-\contentsline {subsection}{\numberline {10.1.1}데이터 탐색 오버뷰 화면}{300}{subsection.10.1.1}% 
-\contentsline {subsection}{\numberline {10.1.2}데이터 탐색 상세 화면}{301}{subsection.10.1.2}% 
-\contentsline {subsection}{\numberline {10.1.3}Favorite Data 화면}{306}{subsection.10.1.3}% 
-\contentsline {subsection}{\numberline {10.1.4}Data Creator 화면}{306}{subsection.10.1.4}% 
-\contentsline {section}{\numberline {10.2}메타데이터 관리하기}{306}{section.10.2}% 
-\contentsline {section}{\numberline {10.3}Column Dictionary}{308}{section.10.3}% 
-\contentsline {section}{\numberline {10.4}Code Table}{309}{section.10.4}% 
-\contentsline {chapter}{\numberline {11}엔진 모니터링}{311}{chapter.11}% 
-\contentsline {section}{\numberline {11.1}Overview}{312}{section.11.1}% 
-\contentsline {subsection}{\numberline {11.1.1}Druid Setting Configuration}{312}{subsection.11.1.1}% 
-\contentsline {subsection}{\numberline {11.1.2}Historical 사용량}{313}{subsection.11.1.2}% 
-\contentsline {subsection}{\numberline {11.1.3}Cluster 전체 사용량}{313}{subsection.11.1.3}% 
-\contentsline {subsection}{\numberline {11.1.4}Historical 사용량}{314}{subsection.11.1.4}% 
-\contentsline {section}{\numberline {11.2}Ingestion}{314}{section.11.2}% 
-\contentsline {subsection}{\numberline {11.2.1}Tasks}{314}{subsection.11.2.1}% 
-\contentsline {subsection}{\numberline {11.2.2}Supervisors}{317}{subsection.11.2.2}% 
-\contentsline {subsection}{\numberline {11.2.3}MiddleManagers}{319}{subsection.11.2.3}% 
-\contentsline {section}{\numberline {11.3}Query}{320}{section.11.3}% 
-\contentsline {part}{II\hspace {1em}EX-pack for Workflow Integrator}{321}{part.2}% 
-\contentsline {chapter}{\numberline {12}Integrator 확장팩 소개}{323}{chapter.12}% 
-\contentsline {chapter}{\numberline {13}워크플로우 리스트}{325}{chapter.13}% 
-\contentsline {chapter}{\numberline {14}워크플로우 에디터}{327}{chapter.14}% 
-\contentsline {section}{\numberline {14.1}액션 노드}{329}{section.14.1}% 
-\contentsline {subsection}{\numberline {14.1.1}Sqoop}{330}{subsection.14.1.1}% 
-\contentsline {subsection}{\numberline {14.1.2}MR}{330}{subsection.14.1.2}% 
-\contentsline {subsection}{\numberline {14.1.3}EXEC}{330}{subsection.14.1.3}% 
-\contentsline {subsection}{\numberline {14.1.4}Java}{330}{subsection.14.1.4}% 
-\contentsline {subsection}{\numberline {14.1.5}HIVE Query}{330}{subsection.14.1.5}% 
-\contentsline {subsection}{\numberline {14.1.6}SSH}{330}{subsection.14.1.6}% 
-\contentsline {subsection}{\numberline {14.1.7}Spark}{331}{subsection.14.1.7}% 
-\contentsline {subsection}{\numberline {14.1.8}Sub-Workflow}{331}{subsection.14.1.8}% 
-\contentsline {subsection}{\numberline {14.1.9}DistCp}{331}{subsection.14.1.9}% 
-\contentsline {subsection}{\numberline {14.1.10}HDFS}{331}{subsection.14.1.10}% 
-\contentsline {subsection}{\numberline {14.1.11}Done}{331}{subsection.14.1.11}% 
-\contentsline {subsection}{\numberline {14.1.12}Druid}{331}{subsection.14.1.12}% 
-\contentsline {section}{\numberline {14.2}제어 흐름 노드}{331}{section.14.2}% 
-\contentsline {subsection}{\numberline {14.2.1}Start}{332}{subsection.14.2.1}% 
-\contentsline {subsection}{\numberline {14.2.2}End}{332}{subsection.14.2.2}% 
-\contentsline {subsection}{\numberline {14.2.3}Decision}{332}{subsection.14.2.3}% 
-\contentsline {subsection}{\numberline {14.2.4}Fork}{332}{subsection.14.2.4}% 
-\contentsline {subsection}{\numberline {14.2.5}Join}{332}{subsection.14.2.5}% 
-\contentsline {section}{\numberline {14.3}워크플로우 실행 예약하기}{332}{section.14.3}% 
-\contentsline {subsection}{\numberline {14.3.1}예약 실행 리스트}{332}{subsection.14.3.1}% 
-\contentsline {subsection}{\numberline {14.3.2}예약 실행 추가하기}{333}{subsection.14.3.2}% 
-\contentsline {chapter}{\numberline {15}모니터링}{337}{chapter.15}% 
-\contentsline {chapter}{\numberline {16}Use Case}{339}{chapter.16}% 
-\contentsline {section}{\numberline {16.1}데이터 소스 적재 위임}{339}{section.16.1}% 
-\contentsline {section}{\numberline {16.2}워크벤치와 연계}{339}{section.16.2}% 
-\contentsline {section}{\numberline {16.3}데이터 프리퍼레이션과 연계}{339}{section.16.3}% 
-\contentsline {part}{III\hspace {1em}EX-pack for Anomaly Detection}{341}{part.3}% 
-\contentsline {chapter}{\numberline {17}Anomaly 확장팩 소개}{343}{chapter.17}% 
-\contentsline {section}{\numberline {17.1}기본 원리}{343}{section.17.1}% 
-\contentsline {section}{\numberline {17.2}주요 기능}{344}{section.17.2}% 
-\contentsline {section}{\numberline {17.3}구조}{345}{section.17.3}% 
-\contentsline {chapter}{\numberline {18}알람 룰 만들기}{347}{chapter.18}% 
-\contentsline {section}{\numberline {18.1}데이터 소스 선정}{347}{section.18.1}% 
-\contentsline {section}{\numberline {18.2}모니터링할 지표 선택하기}{349}{section.18.2}% 
-\contentsline {section}{\numberline {18.3}트레이닝 기간 설정하기}{353}{section.18.3}% 
-\contentsline {section}{\numberline {18.4}모델 선택하기}{355}{section.18.4}% 
-\contentsline {section}{\numberline {18.5}알람 룰 조건 설정하기}{356}{section.18.5}% 
-\contentsline {section}{\numberline {18.6}알람 룰 완성하기}{358}{section.18.6}% 
-\contentsline {chapter}{\numberline {19}통계}{361}{chapter.19}% 
-\contentsline {chapter}{\numberline {20}얄람 룰 내역 열람·수정하기}{365}{chapter.20}% 
-\contentsline {section}{\numberline {20.1}알람 룰 리스트}{365}{section.20.1}% 
-\contentsline {section}{\numberline {20.2}알람 룰 상세}{366}{section.20.2}% 
-\contentsline {chapter}{\numberline {21}알람 내역 열람하기}{369}{chapter.21}% 
-\contentsline {section}{\numberline {21.1}알람 리스트}{369}{section.21.1}% 
-\contentsline {section}{\numberline {21.2}알람 상세}{371}{section.21.2}% 
-\contentsline {subsection}{\numberline {21.2.1}Alarm Info 영역}{371}{subsection.21.2.1}% 
-\contentsline {subsection}{\numberline {21.2.2}알람 현황 일람 상자}{372}{subsection.21.2.2}% 
-\contentsline {subsection}{\numberline {21.2.3}Alarm History 영역}{373}{subsection.21.2.3}% 
-\contentsline {subsection}{\numberline {21.2.4}Chart View 탭}{374}{subsection.21.2.4}% 
-\contentsline {subsection}{\numberline {21.2.5}Table View 탭}{375}{subsection.21.2.5}% 
+\contentsline {chapter}{\numberline {1}Discovery Quick Guide}{3}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Step 1. Create a data source}{4}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Step 2. Create a workbook}{15}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Step 3. Organize a dashboard}{21}{section.1.3}% 
+\contentsline {subsection}{\numberline {1.3.1}Creating a key performance indicator chart}{24}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.2}Creating a line chart}{30}{subsection.1.3.2}% 
+\contentsline {chapter}{\numberline {2}Introduction of Metatron Discovery}{37}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Overview of Metatron Discovery}{37}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}4th-generation BI solution}{38}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}Built on Big OLAP}{39}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}Architecture of Metatron Discovery}{40}{subsection.2.1.3}% 
+\contentsline {section}{\numberline {2.2}Components of Metatron Discovery}{40}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}Data Preparation}{41}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}Data Storage}{43}{subsection.2.2.2}% 
+\contentsline {subsection}{\numberline {2.2.3}Data analysis and visualization}{44}{subsection.2.2.3}% 
+\contentsline {subsubsection}{Workspace}{44}{subsubsection*.3}% 
+\contentsline {subsubsection}{Workbook, dashboard, chart}{45}{subsubsection*.4}% 
+\contentsline {subsubsection}{Notebook}{47}{subsubsection*.5}% 
+\contentsline {subsubsection}{Workbench}{47}{subsubsection*.6}% 
+\contentsline {subsection}{\numberline {2.2.4}Data Monitoring}{48}{subsection.2.2.4}% 
+\contentsline {subsection}{\numberline {2.2.5}User permission and account administration}{49}{subsection.2.2.5}% 
+\contentsline {subsection}{\numberline {2.2.6}로그인/로그아웃}{49}{subsection.2.2.6}% 
+\contentsline {section}{\numberline {2.3}Metatron engine: Druid}{50}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Background of Druid development}{51}{subsection.2.3.1}% 
+\contentsline {subsection}{\numberline {2.3.2}Druid features}{51}{subsection.2.3.2}% 
+\contentsline {subsubsection}{Data table components}{51}{subsubsection*.7}% 
+\contentsline {subsubsection}{Data ingestion}{52}{subsubsection*.8}% 
+\contentsline {subsubsection}{Data roll-up}{52}{subsubsection*.9}% 
+\contentsline {subsubsection}{Data sharding}{53}{subsubsection*.10}% 
+\contentsline {subsubsection}{Data storage format and indexing}{54}{subsubsection*.11}% 
+\contentsline {paragraph}{Columnar storage and indexing}{54}{paragraph*.12}% 
+\contentsline {paragraph}{Indices for filtering data}{55}{paragraph*.13}% 
+\contentsline {subsubsection}{Query languages}{56}{subsubsection*.14}% 
+\contentsline {subsection}{\numberline {2.3.3}Druid cluster architecture}{56}{subsection.2.3.3}% 
+\contentsline {subsubsection}{Real-time nodes}{57}{subsubsection*.15}% 
+\contentsline {subsubsection}{Historical nodes}{58}{subsubsection*.16}% 
+\contentsline {subsubsection}{Broker nodes}{60}{subsubsection*.17}% 
+\contentsline {subsubsection}{Coordinator nodes}{60}{subsubsection*.18}% 
+\contentsline {subsubsection}{External dependencies}{61}{subsubsection*.19}% 
+\contentsline {subsubsection}{High availability characteristics}{61}{subsubsection*.20}% 
+\contentsline {subsubsection}{Architecture extensibility}{61}{subsubsection*.21}% 
+\contentsline {subsection}{\numberline {2.3.4}Druid performance assessments}{62}{subsection.2.3.4}% 
+\contentsline {subsubsection}{Self-assessment by Druid developers}{62}{subsubsection*.22}% 
+\contentsline {paragraph}{Query latency}{62}{paragraph*.23}% 
+\contentsline {paragraph}{Ingestion latency}{64}{paragraph*.24}% 
+\contentsline {subsubsection}{Druid performance assessment by SK Telecom}{64}{subsubsection*.25}% 
+\contentsline {paragraph}{Query latency test}{65}{paragraph*.26}% 
+\contentsline {paragraph}{Ingestion latency test}{66}{paragraph*.27}% 
+\contentsline {subsubsection}{Druid assessments by third parties}{66}{subsubsection*.28}% 
+\contentsline {paragraph}{Druid assessment by Outlyer}{67}{paragraph*.29}% 
+\contentsline {paragraph}{Druid assessment by DB-Engines}{67}{paragraph*.30}% 
+\contentsline {subsubsection}{Comparison with Apache Spark}{68}{subsubsection*.31}% 
+\contentsline {paragraph}{Apache Spark characteristics}{68}{paragraph*.32}% 
+\contentsline {paragraph}{Dataset, queries, performance results}{68}{paragraph*.33}% 
+\contentsline {paragraph}{Implications}{71}{paragraph*.34}% 
+\contentsline {subsection}{\numberline {2.3.5}Metatron powered by Druid}{72}{subsection.2.3.5}% 
+\contentsline {subsubsection}{Metatron development background and Druid integration}{72}{subsubsection*.35}% 
+\contentsline {paragraph}{Metatron as a big data analytics solution}{72}{paragraph*.36}% 
+\contentsline {paragraph}{Why the Druid engine}{72}{paragraph*.37}% 
+\contentsline {paragraph}{Druid engine integration}{73}{paragraph*.38}% 
+\contentsline {subsubsection}{Druid functions reinforced in Metatron}{73}{subsubsection*.39}% 
+\contentsline {paragraph}{Limitations of the open-source Druid}{73}{paragraph*.40}% 
+\contentsline {paragraph}{Druid functions reinforced in Metatron}{74}{paragraph*.41}% 
+\contentsline {chapter}{\numberline {3}Data Management}{77}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Data Source}{78}{section.3.1}% 
+\contentsline {subsection}{\numberline {3.1.1}“Dimensions” and “Measures”}{79}{subsection.3.1.1}% 
+\contentsline {subsection}{\numberline {3.1.2}Data source management home}{80}{subsection.3.1.2}% 
+\contentsline {subsection}{\numberline {3.1.3}Data source details}{81}{subsection.3.1.3}% 
+\contentsline {subsubsection}{Common top area}{82}{subsubsection*.42}% 
+\contentsline {subsubsection}{Data information area}{82}{subsubsection*.43}% 
+\contentsline {subsubsection}{Change data schema}{83}{subsubsection*.44}% 
+\contentsline {subsubsection}{Analyze data statistics}{86}{subsubsection*.45}% 
+\contentsline {subsection}{\numberline {3.1.4}Create a data source}{88}{subsection.3.1.4}% 
+\contentsline {subsubsection}{Create a data source from a file}{90}{subsubsection*.46}% 
+\contentsline {subsubsection}{Create a data source from a database}{99}{subsubsection*.47}% 
+\contentsline {subsubsection}{Create a data source from a staging database}{103}{subsubsection*.48}% 
+\contentsline {subsubsection}{Add a data source with the Metatron engine}{105}{subsubsection*.49}% 
+\contentsline {section}{\numberline {3.2}Data Connection}{107}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Data connection management home}{108}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}Create a data connection}{109}{subsection.3.2.2}% 
+\contentsline {section}{\numberline {3.3}Data Monitoring}{110}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}Log Statistics}{111}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}Job Log}{113}{subsection.3.3.2}% 
+\contentsline {subsubsection}{Query details}{115}{subsubsection*.50}% 
+\contentsline {chapter}{\numberline {4}Workspace}{117}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Workspace home}{118}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Composition of the workspace home}{118}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Folder items}{120}{subsection.4.1.2}% 
+\contentsline {subsection}{\numberline {4.1.3}Entity items}{120}{subsection.4.1.3}% 
+\contentsline {subsection}{\numberline {4.1.4}Select/clone/move/delete folder and entity}{121}{subsection.4.1.4}% 
+\contentsline {section}{\numberline {4.2}Shared workspace}{122}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Shared workspace list}{122}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Create a shared workspace}{124}{subsection.4.2.2}% 
+\contentsline {subsection}{\numberline {4.2.3}Set access permissions for a shared workspace}{126}{subsection.4.2.3}% 
+\contentsline {subsubsection}{Set permission schema}{126}{subsubsection*.51}% 
+\contentsline {paragraph}{View permission schema}{126}{paragraph*.52}% 
+\contentsline {paragraph}{Change permission schema}{127}{paragraph*.53}% 
+\contentsline {subsubsection}{Set shared members \& groups}{128}{subsubsection*.54}% 
+\contentsline {chapter}{\numberline {5}Workbook}{131}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Create a workbook}{132}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Dashboard}{136}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}Create a dashboard}{137}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}Change dashboard size and layout}{149}{subsection.5.2.2}% 
+\contentsline {subsubsection}{Dashboard widget arrangement settings}{150}{subsubsection*.55}% 
+\contentsline {subsubsection}{Chart widget panel}{150}{subsubsection*.56}% 
+\contentsline {subsubsection}{Text widget panel}{151}{subsubsection*.57}% 
+\contentsline {subsubsection}{Layout panel}{153}{subsubsection*.58}% 
+\contentsline {subsubsection}{Data source panel}{154}{subsubsection*.59}% 
+\contentsline {subsection}{\numberline {5.2.3}Check data sources in a dashboard}{155}{subsection.5.2.3}% 
+\contentsline {subsubsection}{Data grid tab}{155}{subsubsection*.60}% 
+\contentsline {subsubsection}{Column details tab}{156}{subsubsection*.61}% 
+\contentsline {subsubsection}{Dashboard data information tab}{156}{subsubsection*.62}% 
+\contentsline {subsection}{\numberline {5.2.4}Presentation with a dashboard}{157}{subsection.5.2.4}% 
+\contentsline {subsection}{\numberline {5.2.5}Renaming columns}{157}{subsection.5.2.5}% 
+\contentsline {section}{\numberline {5.3}Chart}{159}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Data column list}{161}{subsection.5.3.1}% 
+\contentsline {subsubsection}{Structure of the data column list}{161}{subsubsection*.63}% 
+\contentsline {subsubsection}{Add a custom column}{162}{subsubsection*.64}% 
+\contentsline {subsection}{\numberline {5.3.2}Draw a chart (pivoting)}{164}{subsection.5.3.2}% 
+\contentsline {subsubsection}{What is pivoting}{164}{subsubsection*.65}% 
+\contentsline {subsubsection}{Column/row/cross shelves}{165}{subsubsection*.66}% 
+\contentsline {subsection}{\numberline {5.3.3}Select a chart type}{166}{subsection.5.3.3}% 
+\contentsline {subsection}{\numberline {5.3.4}Chart style attributes}{169}{subsection.5.3.4}% 
+\contentsline {subsubsection}{Chart style settings menu}{169}{subsubsection*.67}% 
+\contentsline {subsubsection}{Common settings for each chart type}{174}{subsubsection*.68}% 
+\contentsline {subsection}{\numberline {5.3.5}Map view and spatial operations}{180}{subsection.5.3.5}% 
+\contentsline {subsubsection}{Location dimensions}{181}{subsubsection*.69}% 
+\contentsline {subsubsection}{Map layer shelves}{183}{subsubsection*.70}% 
+\contentsline {paragraph}{Add layer shelf}{185}{paragraph*.71}% 
+\contentsline {subsubsection}{Style properties of map view layer}{185}{subsubsection*.72}% 
+\contentsline {paragraph}{Common setting}{186}{paragraph*.73}% 
+\contentsline {paragraph}{Layer settings}{186}{paragraph*.74}% 
+\contentsline {subparagraph}{Layer properties of point type}{188}{subparagraph*.75}% 
+\contentsline {subparagraph}{Layer properties of line type}{190}{subparagraph*.76}% 
+\contentsline {subparagraph}{Layer properties of polygon type}{191}{subparagraph*.77}% 
+\contentsline {paragraph}{Legend settings}{192}{paragraph*.78}% 
+\contentsline {subsubsection}{Spatial analysis}{193}{subsubsection*.79}% 
+\contentsline {section}{\numberline {5.4}Filter}{194}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}Chart filters}{194}{subsection.5.4.1}% 
+\contentsline {subsubsection}{Automatically included filters}{194}{subsubsection*.80}% 
+\contentsline {subsubsection}{Chart filter panel}{194}{subsubsection*.81}% 
+\contentsline {subsubsection}{Chart filter dialog box}{196}{subsubsection*.82}% 
+\contentsline {paragraph}{Dimension filtering}{198}{paragraph*.83}% 
+\contentsline {paragraph}{Timestamp column filter settings}{200}{paragraph*.84}% 
+\contentsline {paragraph}{Measure filtering}{205}{paragraph*.85}% 
+\contentsline {subsection}{\numberline {5.4.2}Global filters}{209}{subsection.5.4.2}% 
+\contentsline {chapter}{\numberline {6}Notebook}{211}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Manage notebook servers}{212}{section.6.1}% 
+\contentsline {subsection}{\numberline {6.1.1}Notebook server list}{213}{subsection.6.1.1}% 
+\contentsline {subsection}{\numberline {6.1.2}Add a notebook server}{213}{subsection.6.1.2}% 
+\contentsline {section}{\numberline {6.2}Register a notebook server}{214}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Create a notebook}{215}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}Use a notebook}{220}{section.6.4}% 
+\contentsline {subsection}{\numberline {6.4.1}Detailed notebook page}{220}{subsection.6.4.1}% 
+\contentsline {subsection}{\numberline {6.4.2}Notebook coding}{221}{subsection.6.4.2}% 
+\contentsline {subsection}{\numberline {6.4.3}Register a notebook API}{222}{subsection.6.4.3}% 
+\contentsline {chapter}{\numberline {7}Workbench}{225}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Create a workbench}{226}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Use a workbench}{228}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}Basic information section}{229}{subsection.7.2.1}% 
+\contentsline {subsection}{\numberline {7.2.2}Schema and table section}{230}{subsection.7.2.2}% 
+\contentsline {subsection}{\numberline {7.2.3}Query editor section}{232}{subsection.7.2.3}% 
+\contentsline {subsection}{\numberline {7.2.4}Query results section}{233}{subsection.7.2.4}% 
+\contentsline {subsubsection}{During query execution}{233}{subsubsection*.86}% 
+\contentsline {subsubsection}{After query execution}{234}{subsubsection*.87}% 
+\contentsline {subsection}{\numberline {7.2.5}Extra tools section}{235}{subsection.7.2.5}% 
+\contentsline {subsubsection}{Setting up global variables}{235}{subsubsection*.88}% 
+\contentsline {subsubsection}{Workbench Navigation}{236}{subsubsection*.89}% 
+\contentsline {subsection}{\numberline {7.2.6}Schema browser}{237}{subsection.7.2.6}% 
+\contentsline {chapter}{\numberline {8}Data Preparation}{239}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}Create a dataset}{241}{section.8.1}% 
+\contentsline {subsection}{\numberline {8.1.1}Create a dataset from a file}{243}{subsection.8.1.1}% 
+\contentsline {subsection}{\numberline {8.1.2}Create a dataset from a database}{247}{subsection.8.1.2}% 
+\contentsline {subsection}{\numberline {8.1.3}Create a dataset from staging DB}{251}{subsection.8.1.3}% 
+\contentsline {section}{\numberline {8.2}Manage a dataflow}{254}{section.8.2}% 
+\contentsline {subsection}{\numberline {8.2.1}Add a dataset}{256}{subsection.8.2.1}% 
+\contentsline {subsubsection}{Adding a dataset after creating an empty dataflow}{256}{subsubsection*.90}% 
+\contentsline {subsubsection}{Creating a dataflow in the dataset details page}{260}{subsubsection*.91}% 
+\contentsline {subsection}{\numberline {8.2.2}Edit rules}{261}{subsection.8.2.2}% 
+\contentsline {subsubsection}{Create a rule}{262}{subsubsection*.92}% 
+\contentsline {paragraph}{Using the column header menu}{262}{paragraph*.93}% 
+\contentsline {paragraph}{Using the command input panel}{265}{paragraph*.94}% 
+\contentsline {paragraph}{Inserting into a rule list}{265}{paragraph*.95}% 
+\contentsline {subsubsection}{Edit a created rule}{266}{subsubsection*.96}% 
+\contentsline {paragraph}{Editing a rule}{266}{paragraph*.97}% 
+\contentsline {paragraph}{Deleting a rule}{267}{paragraph*.98}% 
+\contentsline {paragraph}{Undo and redo}{268}{paragraph*.99}% 
+\contentsline {subsection}{\numberline {8.2.3}Rule types}{269}{subsection.8.2.3}% 
+\contentsline {subsubsection}{drop}{270}{subsubsection*.100}% 
+\contentsline {subsubsection}{header}{270}{subsubsection*.101}% 
+\contentsline {subsubsection}{settype}{271}{subsubsection*.102}% 
+\contentsline {subsubsection}{setformat}{271}{subsubsection*.103}% 
+\contentsline {subsubsection}{rename}{272}{subsubsection*.104}% 
+\contentsline {subsubsection}{keep}{273}{subsubsection*.105}% 
+\contentsline {subsubsection}{delete}{274}{subsubsection*.106}% 
+\contentsline {subsubsection}{replace}{275}{subsubsection*.107}% 
+\contentsline {subsubsection}{set}{276}{subsubsection*.108}% 
+\contentsline {subsubsection}{derive}{278}{subsubsection*.109}% 
+\contentsline {subsubsection}{split}{279}{subsubsection*.110}% 
+\contentsline {subsubsection}{merge}{279}{subsubsection*.111}% 
+\contentsline {subsubsection}{extract}{280}{subsubsection*.112}% 
+\contentsline {subsubsection}{countpattern}{280}{subsubsection*.113}% 
+\contentsline {subsubsection}{nest}{281}{subsubsection*.114}% 
+\contentsline {subsubsection}{unnest}{282}{subsubsection*.115}% 
+\contentsline {subsubsection}{flatten}{283}{subsubsection*.116}% 
+\contentsline {subsubsection}{aggregate}{285}{subsubsection*.117}% 
+\contentsline {subsubsection}{pivot}{287}{subsubsection*.118}% 
+\contentsline {subsubsection}{unpivot}{289}{subsubsection*.119}% 
+\contentsline {subsubsection}{join}{292}{subsubsection*.120}% 
+\contentsline {subsubsection}{union}{294}{subsubsection*.121}% 
+\contentsline {subsubsection}{window}{296}{subsubsection*.122}% 
+\contentsline {subsection}{\numberline {8.2.4}Create a data snapshot}{298}{subsection.8.2.4}% 
+\contentsline {section}{\numberline {8.3}Use data snapshot results}{304}{section.8.3}% 
+\contentsline {subsection}{\numberline {8.3.1}Check the data snapshot results}{304}{subsection.8.3.1}% 
+\contentsline {subsection}{\numberline {8.3.2}Ingest into the Metatron engine}{306}{subsection.8.3.2}% 
+\contentsline {subsection}{\numberline {8.3.3}Download as a CSV file}{306}{subsection.8.3.3}% 
+\contentsline {chapter}{\numberline {9}Account management}{309}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Membership Approval}{310}{section.9.1}% 
+\contentsline {section}{\numberline {9.2}Members}{311}{section.9.2}% 
+\contentsline {subsection}{\numberline {9.2.1}Members home}{311}{subsection.9.2.1}% 
+\contentsline {subsection}{\numberline {9.2.2}View and edit member information}{312}{subsection.9.2.2}% 
+\contentsline {subsection}{\numberline {9.2.3}Register a member}{313}{subsection.9.2.3}% 
+\contentsline {section}{\numberline {9.3}Groups}{314}{section.9.3}% 
+\contentsline {subsection}{\numberline {9.3.1}Groups home}{314}{subsection.9.3.1}% 
+\contentsline {subsection}{\numberline {9.3.2}View and edit group information}{315}{subsection.9.3.2}% 
+\contentsline {subsection}{\numberline {9.3.3}Register a group}{316}{subsection.9.3.3}% 
+\contentsline {section}{\numberline {9.4}Discovery Permissions}{317}{section.9.4}% 
+\contentsline {chapter}{\numberline {10}데이터 탐색}{321}{chapter.10}% 
+\contentsline {section}{\numberline {10.1}데이터 탐색하기}{321}{section.10.1}% 
+\contentsline {subsection}{\numberline {10.1.1}데이터 탐색 오버뷰 화면}{322}{subsection.10.1.1}% 
+\contentsline {subsection}{\numberline {10.1.2}데이터 탐색 상세 화면}{323}{subsection.10.1.2}% 
+\contentsline {subsection}{\numberline {10.1.3}Favorite Data 화면}{328}{subsection.10.1.3}% 
+\contentsline {subsection}{\numberline {10.1.4}Data Creator 화면}{328}{subsection.10.1.4}% 
+\contentsline {section}{\numberline {10.2}메타데이터 관리하기}{328}{section.10.2}% 
+\contentsline {section}{\numberline {10.3}Column Dictionary}{330}{section.10.3}% 
+\contentsline {section}{\numberline {10.4}Code Table}{331}{section.10.4}% 
+\contentsline {chapter}{\numberline {11}엔진 모니터링}{333}{chapter.11}% 
+\contentsline {section}{\numberline {11.1}Overview}{334}{section.11.1}% 
+\contentsline {subsection}{\numberline {11.1.1}Druid Setting Configuration}{334}{subsection.11.1.1}% 
+\contentsline {subsection}{\numberline {11.1.2}Historical 사용량}{335}{subsection.11.1.2}% 
+\contentsline {subsection}{\numberline {11.1.3}Cluster 전체 사용량}{335}{subsection.11.1.3}% 
+\contentsline {subsection}{\numberline {11.1.4}Historical 사용량}{336}{subsection.11.1.4}% 
+\contentsline {section}{\numberline {11.2}Ingestion}{336}{section.11.2}% 
+\contentsline {subsection}{\numberline {11.2.1}Tasks}{336}{subsection.11.2.1}% 
+\contentsline {subsection}{\numberline {11.2.2}Supervisors}{339}{subsection.11.2.2}% 
+\contentsline {subsection}{\numberline {11.2.3}MiddleManagers}{341}{subsection.11.2.3}% 
+\contentsline {section}{\numberline {11.3}Query}{342}{section.11.3}% 
+\contentsline {part}{II\hspace {1em}EX-pack for Workflow Integrator}{343}{part.2}% 
+\contentsline {chapter}{\numberline {12}Introduction of Integrator Expansion Pack}{345}{chapter.12}% 
+\contentsline {chapter}{\numberline {13}Workflow list}{347}{chapter.13}% 
+\contentsline {chapter}{\numberline {14}Workflow editor}{349}{chapter.14}% 
+\contentsline {section}{\numberline {14.1}Action nodes}{351}{section.14.1}% 
+\contentsline {subsection}{\numberline {14.1.1}Sqoop}{351}{subsection.14.1.1}% 
+\contentsline {subsection}{\numberline {14.1.2}MR}{351}{subsection.14.1.2}% 
+\contentsline {subsection}{\numberline {14.1.3}EXEC}{351}{subsection.14.1.3}% 
+\contentsline {subsection}{\numberline {14.1.4}Java}{352}{subsection.14.1.4}% 
+\contentsline {subsection}{\numberline {14.1.5}HIVE Query}{352}{subsection.14.1.5}% 
+\contentsline {subsection}{\numberline {14.1.6}SSH}{352}{subsection.14.1.6}% 
+\contentsline {subsection}{\numberline {14.1.7}Spark}{352}{subsection.14.1.7}% 
+\contentsline {subsection}{\numberline {14.1.8}Sub-Workflow}{352}{subsection.14.1.8}% 
+\contentsline {subsection}{\numberline {14.1.9}DistCp}{352}{subsection.14.1.9}% 
+\contentsline {subsection}{\numberline {14.1.10}HDFS}{352}{subsection.14.1.10}% 
+\contentsline {subsection}{\numberline {14.1.11}Done}{352}{subsection.14.1.11}% 
+\contentsline {subsection}{\numberline {14.1.12}Druid}{353}{subsection.14.1.12}% 
+\contentsline {section}{\numberline {14.2}Control flow nodes}{353}{section.14.2}% 
+\contentsline {subsection}{\numberline {14.2.1}Start}{353}{subsection.14.2.1}% 
+\contentsline {subsection}{\numberline {14.2.2}End}{353}{subsection.14.2.2}% 
+\contentsline {subsection}{\numberline {14.2.3}Decision}{353}{subsection.14.2.3}% 
+\contentsline {subsection}{\numberline {14.2.4}Fork}{353}{subsection.14.2.4}% 
+\contentsline {subsection}{\numberline {14.2.5}Join}{354}{subsection.14.2.5}% 
+\contentsline {section}{\numberline {14.3}Schedule a workflow run}{354}{section.14.3}% 
+\contentsline {subsection}{\numberline {14.3.1}List of scheduled runs}{354}{subsection.14.3.1}% 
+\contentsline {subsection}{\numberline {14.3.2}Add a scheduled run}{354}{subsection.14.3.2}% 
+\contentsline {chapter}{\numberline {15}Monitoring}{357}{chapter.15}% 
+\contentsline {chapter}{\numberline {16}Use cases}{359}{chapter.16}% 
+\contentsline {section}{\numberline {16.1}Hand over data source ingestion}{359}{section.16.1}% 
+\contentsline {section}{\numberline {16.2}Linkage with workbench}{359}{section.16.2}% 
+\contentsline {section}{\numberline {16.3}Linkage with data preparation}{359}{section.16.3}% 
+\contentsline {part}{III\hspace {1em}EX-pack for Anomaly Detection}{361}{part.3}% 
+\contentsline {chapter}{\numberline {17}Introduction of Anomaly Expansion Pack}{363}{chapter.17}% 
+\contentsline {section}{\numberline {17.1}Basic principles}{363}{section.17.1}% 
+\contentsline {section}{\numberline {17.2}Key functions}{364}{section.17.2}% 
+\contentsline {section}{\numberline {17.3}Structure}{365}{section.17.3}% 
+\contentsline {chapter}{\numberline {18}Create an alarm rule}{367}{chapter.18}% 
+\contentsline {section}{\numberline {18.1}Select a data source}{367}{section.18.1}% 
+\contentsline {section}{\numberline {18.2}Select a measure(s) to monitor}{369}{section.18.2}% 
+\contentsline {section}{\numberline {18.3}Specify a training interval}{373}{section.18.3}% 
+\contentsline {section}{\numberline {18.4}Select a model}{375}{section.18.4}% 
+\contentsline {section}{\numberline {18.5}Set alarm rule conditions}{376}{section.18.5}% 
+\contentsline {section}{\numberline {18.6}Complete the alarm rule}{379}{section.18.6}% 
+\contentsline {chapter}{\numberline {19}Statistics}{381}{chapter.19}% 
+\contentsline {chapter}{\numberline {20}View/edit alarm rule details}{383}{chapter.20}% 
+\contentsline {section}{\numberline {20.1}Alarm rule list}{383}{section.20.1}% 
+\contentsline {section}{\numberline {20.2}Alarm rule details}{384}{section.20.2}% 
+\contentsline {chapter}{\numberline {21}View alarm details}{387}{chapter.21}% 
+\contentsline {section}{\numberline {21.1}Alarm list}{387}{section.21.1}% 
+\contentsline {section}{\numberline {21.2}Alarm details}{389}{section.21.2}% 
+\contentsline {subsection}{\numberline {21.2.1}Alarm Info area}{389}{subsection.21.2.1}% 
+\contentsline {subsection}{\numberline {21.2.2}Alarm status boxes}{390}{subsection.21.2.2}% 
+\contentsline {subsection}{\numberline {21.2.3}Alarm History area}{391}{subsection.21.2.3}% 
+\contentsline {subsection}{\numberline {21.2.4}Chart View tab}{392}{subsection.21.2.4}% 
+\contentsline {subsection}{\numberline {21.2.5}Table View tab}{393}{subsection.21.2.5}% 

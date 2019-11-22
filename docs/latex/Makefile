@@ -15,7 +15,7 @@ export LATEXOPTS =
 # with latexmk version 4.52b or higher set LATEXMKOPTS to -xelatex either here
 # or on command line for faster builds.
 LATEXMKOPTS =
-export XINDYOPTS = -L general -C utf8  -M sphinx.xdy
+export XINDYOPTS = -L english -C utf8  -M sphinx.xdy
 # format: pdf or dvi (used only by archive targets)
 FMT = pdf
 
