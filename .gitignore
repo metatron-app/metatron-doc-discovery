@@ -5,5 +5,5 @@
 # Build stuffs
 _build/
 .zip
-docs/latex/
+docs/latex/**
 !docs/latex/*.pdf
