@@ -94,9 +94,9 @@
                   <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
 					 <!-- 하위 페이지에서 영문 페이지로의 링크 -->
 					 <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
-					 <!-- 영문 pdf 링크 -->
+					 <!-- 한글 pdf 링크 -->
 					<li><a class="lang_sel" href="../../en/index.html">VIEW IN ENGLISH</a></li>
-					<li><a class="lang_sel" href="../../latex/metatron-doc-user_ko.pdf">PDF 버전으로 보기</a></li>
+					<li><a class="lang_sel" href="">PDF 버전으로 보기</a></li>
                  
               </ul>
               <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -220,7 +220,7 @@
 <h1>Druid 특징<a class="headerlink" href="#druid" title="제목 주소">¶</a></h1>
 <div class="section" id="id1">
 <h2>데이터 테이블 형태<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
-<p>Druid의 데이터 테이블(Druid에서는 '데이터 소스'라고 함)은 OLAP 쿼리용으로 설계된 시계열 이벤트들로 구성됩니다. 데이터 소스는 세 종류의 컬럼으로 구성됩니다(여기서는 온라인 광고 데이터를 예시로 사용).</p>
+<p>Druid의 데이터 테이블(Druid에서는 〈데이터 소스’라고 함)은 OLAP 쿼리용으로 설계된 시계열 이벤트들로 구성됩니다. 데이터 소스는 세 종류의 컬럼으로 구성됩니다(여기서는 온라인 광고 데이터를 예시로 사용).</p>
 <blockquote>
 <div><div class="figure align-center" id="id6">
 <img alt="Time-series OLAP table example" src="../../_images/druid-features-time-series.png" />
@@ -244,7 +244,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id7">
 <img alt="Data roll-up example" src="../../_images/druid-features-rollup.png" />
-<p class="caption"><span class="caption-text">Source: Interactive Exploratory Analytics with Druid | DataEngConf SF '17</span><a class="headerlink" href="#id7" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p class="caption"><span class="caption-text">Source: Interactive Exploratory Analytics with Druid | DataEngConf SF 〈17</span><a class="headerlink" href="#id7" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 </div></blockquote>
 <p>왼쪽의 원본 이벤트 목록은 2011년 1월 1일 00:00:00~01:00:00 사이에 발생한 도메인 클릭 이벤트를 열거한 것입니다. 하지만 분석가 입장에서는 분 이하 단위의 개별 이벤트가 별다른 의미를 갖지 못하기 때문에 1시간의 granularity를 기준으로 데이터를 취합했습니다. 그 결과 오른쪽 테이블에 나타난 것처럼 2011년 1월 1일 00~01시 시간대에 각 도메인을 남성과 여성이 각각 클릭한 횟수를 보여주는 보다 의미 있는 결과물이 도출되었습니다.</p>
@@ -253,7 +253,7 @@
 </div>
 <div class="section" id="sharding">
 <h2>데이터 sharding<a class="headerlink" href="#sharding" title="제목 주소">¶</a></h2>
-<p>데이터 소스는 시계열 이벤트들의 집합으로서 여러 shard로 분할 저장되는데, Druid에서는 이를 '세그먼트'라고 부르며 각 세그먼트는 대개 500~1,000만 행으로 이루어집니다. Druid는 데이터 소스들을 정의된 시간 간격(통상적으로 1시간이나 하루)을 기준으로 분할하며, 그 밖의 컬럼에 있는 값들을 기준으로 추가 분할을 실시함으로써 세그먼트 크기를 적절하게 맞출 수 있습니다.</p>
+<p>데이터 소스는 시계열 이벤트들의 집합으로서 여러 shard로 분할 저장되는데, Druid에서는 이를 〈세그먼트’라고 부르며 각 세그먼트는 대개 500~1,000만 행으로 이루어집니다. Druid는 데이터 소스들을 정의된 시간 간격(통상적으로 1시간이나 하루)을 기준으로 분할하며, 그 밖의 컬럼에 있는 값들을 기준으로 추가 분할을 실시함으로써 세그먼트 크기를 적절하게 맞출 수 있습니다.</p>
 <p>아래는 1시간 단위로 분할된 데이터 테이블을 예시로 나타낸 것입니다.</p>
 <p>세그먼트 <code class="docutils literal notranslate"><span class="pre">sampleData_2011-01-01T01:00:00:00Z_2011-01-01T02:00:00:00Z_v1_0</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T01</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">ultratrimfast</span><span class="o">.</span><span class="n">com</span>   <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">USA</span>   <span class="mi">1800</span>   <span class="mi">25</span>   <span class="mf">15.70</span>
@@ -293,7 +293,7 @@ Ke$ha -&gt; 1
 </div>
 <div class="section" id="id4">
 <h3>데이터 필터링을 위한 인덱싱<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
-<p>Druid는 검색 인덱스를 추가로 만들어서 문자열 컬럼에 대한 필터링을 용이하게 할 수 있습니다. 위 예시 테이블을 다시 보자. 가령 &quot;샌프란시스코에 사는 남성 사용자들이 Wikipedia 편집을 한 횟수는?&quot;과 같은 쿼리가 있을 수 있습니다. 이 쿼리 예시에는 도시(San Francisco)와 성별(Male)이라는 두 가지 차원이 포함됩니다. 각 차원별로 아래와 같은 바이너리 배열이 생성되는데, 여기서 배열 인덱스 각각은 해당 행이 쿼리 필터 조건에 부합하는지 여부를 나타냅니다.</p>
+<p>Druid는 검색 인덱스를 추가로 만들어서 문자열 컬럼에 대한 필터링을 용이하게 할 수 있습니다. 위 예시 테이블을 다시 보자. 가령 《샌프란시스코에 사는 남성 사용자들이 Wikipedia 편집을 한 횟수는?》과 같은 쿼리가 있을 수 있습니다. 이 쿼리 예시에는 도시(San Francisco)와 성별(Male)이라는 두 가지 차원이 포함됩니다. 각 차원별로 아래와 같은 바이너리 배열이 생성되는데, 여기서 배열 인덱스 각각은 해당 행이 쿼리 필터 조건에 부합하는지 여부를 나타냅니다.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">San</span> <span class="n">Francisco</span> <span class="p">(</span><span class="n">City</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">Male</span> <span class="p">(</span><span class="n">Gender</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>

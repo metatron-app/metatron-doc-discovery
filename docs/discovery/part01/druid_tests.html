@@ -94,9 +94,9 @@
                   <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
 					 <!-- 하위 페이지에서 영문 페이지로의 링크 -->
 					 <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
-					 <!-- 영문 pdf 링크 -->
+					 <!-- 한글 pdf 링크 -->
 					<li><a class="lang_sel" href="../../en/index.html">VIEW IN ENGLISH</a></li>
-					<li><a class="lang_sel" href="../../latex/metatron-doc-user_ko.pdf">PDF 버전으로 보기</a></li>
+					<li><a class="lang_sel" href="">PDF 버전으로 보기</a></li>
                  
               </ul>
               <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -216,17 +216,17 @@
             
   <div class="section" id="druid">
 <h1>Druid 성능 평가<a class="headerlink" href="#druid" title="제목 주소">¶</a></h1>
-<p>Druid는 '실시간' 탐색이 가능한 데이터 스토어를 지향하는 만큼 수치화된 성능을 평가함에 있어서는 다음의 두 가지 측면에 초점이 맞춰집니다.</p>
+<p>Druid는 〈실시간〉 탐색이 가능한 데이터 스토어를 지향하는 만큼 수치화된 성능을 평가함에 있어서는 다음의 두 가지 측면에 초점이 맞춰집니다.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Query latency</p></li>
 <li><p>Ingestion latency</p></li>
 </ul>
 </div></blockquote>
-<p>쿼리 처리와 ingestion에서 소요되는 시간을 최소화하는 것이 '실시간'을 이루는 핵심이 되기 때문입니다. 지금까지 Druid 개발진을 비롯한 여러 기관 및 개인이 이러한 기준으로 Druid 성능을 평가한 benchmark들을 산출하고 그 밖의 지표를 통해 Druid를 다른 데이터베이스 관리 시스템들과 비교한 결과를 공개하였습니다.</p>
+<p>쿼리 처리와 ingestion에서 소요되는 시간을 최소화하는 것이 〈실시간’을 이루는 핵심이 되기 때문입니다. 지금까지 Druid 개발진을 비롯한 여러 기관 및 개인이 이러한 기준으로 Druid 성능을 평가한 benchmark들을 산출하고 그 밖의 지표를 통해 Druid를 다른 데이터베이스 관리 시스템들과 비교한 결과를 공개하였습니다.</p>
 <div class="section" id="id1">
 <h2>Druid 개발진의 자체 평가<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
-<p>Druid 개발진이 2014년 발표한 백서 'Druid: A Real-time Analytical Data Store'<a class="footnote-reference brackets" href="#f1" id="id2">1</a>의 Chapter 6 Performance에서는 Druid의 query 및 ingestion latency를 다방면에서 평가한 결과를 상세하게 설명하고 있습니다. 본 절에서는 이 중에서 Druid의 성능을 직관적으로 살펴볼 수 있는 지표 위주로 간단히 소개합니다.</p>
+<p>Druid 개발진이 2014년 발표한 백서 〈Druid: A Real-time Analytical Data Store〉<a class="footnote-reference brackets" href="#f1" id="id2">1</a>의 Chapter 6 Performance에서는 Druid의 query 및 ingestion latency를 다방면에서 평가한 결과를 상세하게 설명하고 있습니다. 본 절에서는 이 중에서 Druid의 성능을 직관적으로 살펴볼 수 있는 지표 위주로 간단히 소개합니다.</p>
 <div class="section" id="query-latency">
 <h3>Query latency 성능<a class="headerlink" href="#query-latency" title="제목 주소">¶</a></h3>
 <p>Druid의 query latency 성능에 대해 백서에서는 현장에서 실제 사용되는 데이터셋 8종과 TPC-H 데이터셋에 대한 쿼리 결과를 기준으로 평가하였는데, 여기서는 TPC-H 데이터셋에 대한 쿼리 결과를 소개합니다. TPC-H 데이터셋에 대한 query latency는 MySQL과의 비교 평가 방식으로 진행하였고, 이때 사용한 클러스터 사양은 다음과 같았습니다.</p>
@@ -269,7 +269,7 @@
 <p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id14" title="이 이미지에 대한 퍼머링크">¶</a></p>
 </div>
 </div></blockquote>
-<p>데이터 ingestion 속도는 데이터의 복잡성 등 여러 가지 변수의 영향을 받지만, 측정 결과를 놓고 볼 때 대체로 'interactivity'라는 Druid의 개발 목표에 부합한다고 할 수 있습니다.</p>
+<p>데이터 ingestion 속도는 데이터의 복잡성 등 여러 가지 변수의 영향을 받지만, 측정 결과를 놓고 볼 때 대체로 〈interactivity’라는 Druid의 개발 목표에 부합한다고 할 수 있습니다.</p>
 </div>
 </div>
 <div class="section" id="sk-druid">

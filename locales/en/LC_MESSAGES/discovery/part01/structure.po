@@ -160,7 +160,7 @@ msgstr "You can add/delete users or manage user permission."
 # 5f5c1ac46cc34783a17d6d4fb815ff22
 #: ../../discovery/part01/structure.rst:95
 msgid "로그인/로그아웃"
-msgstr ""
+msgstr "Login/Logout"
 
 # 1601d0905a504f60b2c6bf36152f8744
 #: ../../discovery/part01/structure.rst:96
@@ -168,10 +168,12 @@ msgid ""
 "계정을 부여받은 사용자는 Metatron Discovery에 로그인하여 사용 권한에 맞게 자유롭게 이용할 수 있습니다. 로그인 중인"
 " 계정은 외부 시스템에서도 로그아웃이 가능합니다."
 msgstr ""
+"Users with accounts can login to Metatron Discovery and freely use within the assigned permission."
+" Current login can be logged out from external systems as well."
 
 # 629a359d4f5a4f3b92cb56dd2c2427ed
 #~ msgid "로그인/로그아웃"
-#~ msgstr "Login/logout"
+#~ msgstr "Login/Logout"
 
 # 4cee8907e72c477faef9da7471584337
 #~ msgid ""

@@ -21,5 +21,5 @@ msgstr ""
 # 1f63009c85ba4047be4cce2a3d434697
 #: ../../discovery/part09/codetable.rst:2
 msgid "Code Table"
-msgstr ""
+msgstr "Code Table"
 

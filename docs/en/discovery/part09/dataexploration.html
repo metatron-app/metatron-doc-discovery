@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터 탐색하기 &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Data Exploration &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="메타데이터 관리하기" href="metadata.html" />
-    <link rel="prev" title="데이터 탐색" href="index.html" /> 
+    <link rel="next" title="Metadata Management" href="metadata.html" />
+    <link rel="prev" title="Data Exploration" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -109,20 +109,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 탐색</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">데이터 탐색하기</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">데이터 탐색 오버뷰 화면</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">데이터 탐색 상세 화면</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#favorite-data">Favorite Data 화면</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#data-creator">Data Creator 화면</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Exploration</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Data Exploration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Data Exploration Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Data Exploration Detail View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#favorite-data">Favorite Data view</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#data-creator">Data Creator view</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="metadata.html">메타데이터 관리하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata.html">Metadata Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="columndictionary.html">Column Dictionary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="codetable.html">Code Table</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">Engine Monitoring</a></li>
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
 <ul>
@@ -184,9 +184,9 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">데이터 탐색</a> &raquo;</li>
+          <li><a href="index.html">Data Exploration</a> &raquo;</li>
         
-      <li>데이터 탐색하기</li>
+      <li>Data Exploration</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -206,16 +206,16 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>데이터 탐색하기<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Metatron Discovery에서 제공하는 데이터 탐색의 목적은, 데이터가 어디 있던 쉽게 찾을 수 있고, 찾은 데이터로 시각화 할 수 있는 기능을 지원하고 있습니다.</p>
+<h1>Data Exploration<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>The aim of providing data exploration feature is to enable easy data search wherever the data is located at, and for visualizing the found data.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/exploration.png" src="../../_images/exploration.png" />
 </div>
 </div></blockquote>
 <div class="section" id="id2">
-<h2>데이터 탐색 오버뷰 화면<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>현재 사용하고 계신 원천 DB 내 데이터, 그리고 Metatron Discovery에서 제공하는 StagingDB(Slave DB) 및 Engine(Druid) 내 데이터를 관리할 수 있습니다.</p>
+<h2>Data Exploration Overview<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>At the Overview, you can manage data of the current source DB, StagingDB(Slave DB) - provided by Metatron Discovery - and the data in the Engine(Druid).</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/exploration01.png" src="../../_images/exploration01.png" />
@@ -223,34 +223,32 @@
 </div></blockquote>
 </div>
 <div class="section" id="id3">
-<h2>데이터 탐색 상세 화면<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>데이터 탐색을 통해 원하는 데이터를 빠르게 찾을 수 있도록 기능을 제공하고 있습니다.</p>
+<h2>Data Exploration Detail View<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>With Data Exploration, you can find the data you want fast.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/exploration_detail.png" src="../../_images/exploration_detail.png" />
 </div>
 </div></blockquote>
-<p>데이터는 크게 3부분으로 정보를 제공합니다. Overview, Column Scheme, Sample Data 입니다.
-각 데이터 타입에 따라, 워크북(Datasource 타입인 경우), 워크벤치(DB 타입인 경우)를 만들 수 있는 액션버튼도 제공합니다.</p>
+<p>Data information is provided with 3 main sections: Overview, Column Scheme, Sample Data. According to each data types, workbook(for Datasource type), workbench(for DB type) action button is enabled.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/exploration_detail01.png" src="../../_images/exploration_detail01.png" />
 </div>
 </div></blockquote>
-<p>샘플 데이터의 경우 현재 100건까지만 보여집니다. 권한이 있는 경우 ‘Management &gt; Exploration’을 통해 더 많은 데이터를 확인하고 다운로드 할 수 있습니다.
-권한의 여부는 해당 화면 상단에 ‘Edit data’라는 버튼의 유무로 확인할 수 있으며, 해당 버튼을 클릭하면 ‘Management &gt; Exploration’로 이동이 가능합니다.</p>
+<p>Sample data list displays up to 100 rows. If you are authorized, you can view more and download via ‘Management &gt; Exploration’. If you have ‘Edit data’ button on the top right of the detail view it means that you are authorized. The button leads you to ‘Management &gt; Exploration’.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/exploration_detail02.png" src="../../_images/exploration_detail02.png" />
 </div>
 </div></blockquote>
-<p>다른 메뉴로 점핑 시 다음과 같은 경고창이 보여집니다.</p>
+<p>When you jump to other menu, an alert like below appears.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/popup.png" src="../../_images/popup.png" />
 </div>
 </div></blockquote>
-<p>아래 화면은 ‘Management &gt; Exploration’로 이동하였을때 화면입니다. 해당 공간에서, 관리자로서의 좀 더 많은 메타 정보를 상세히 볼 수 있고 관리할 수 있습니다.</p>
+<p>The second below image is the view when proceeded to ‘Management &gt; Exploration’. Here, you can view more meta information in detail and manage them as the administrator.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/exploration_detail03.png" src="../../_images/exploration_detail03.png" />
@@ -259,13 +257,13 @@
 <img alt="../../_images/metadata.png" src="../../_images/metadata.png" />
 </div>
 </div></blockquote>
-<p>카타로그, 태그 등의 검색과 필터 기능을 통하여 데이터를 빠르게 찾을 수 있습니다.</p>
+<p>Find data fast with search and filter features such as catalog and tag.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/search.png" src="../../_images/search.png" />
 </div>
 </div></blockquote>
-<p>Metatron Discovery에서는 데이터를 카타로그로 관리할 수 있습니다. 카타로그을 그룹 등의 분류 군에 따라 구별해 두고 빠르게 데이터를 검색 하는 용도로 사용할 수 있습니다.</p>
+<p>In Metatron Discovery, you can manage data with catalogs. Classify catalogs according to classifications such as groups, and use the catalogs to fast search data.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/catalog.png" src="../../_images/catalog.png" />
@@ -273,12 +271,12 @@
 </div></blockquote>
 </div>
 <div class="section" id="favorite-data">
-<h2>Favorite Data 화면<a class="headerlink" href="#favorite-data" title="Permalink to this headline">¶</a></h2>
-<p>해당 기능은 준비 중입니다.</p>
+<h2>Favorite Data view<a class="headerlink" href="#favorite-data" title="Permalink to this headline">¶</a></h2>
+<p>This feature is in preparation.</p>
 </div>
 <div class="section" id="data-creator">
-<h2>Data Creator 화면<a class="headerlink" href="#data-creator" title="Permalink to this headline">¶</a></h2>
-<p>해당 기능은 준비 중입니다.</p>
+<h2>Data Creator view<a class="headerlink" href="#data-creator" title="Permalink to this headline">¶</a></h2>
+<p>This feature is in preparation.</p>
 </div>
 </div>
 
@@ -290,10 +288,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="metadata.html" class="btn btn-neutral float-right" title="메타데이터 관리하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="metadata.html" class="btn btn-neutral float-right" title="Metadata Management" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="데이터 탐색" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Data Exploration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

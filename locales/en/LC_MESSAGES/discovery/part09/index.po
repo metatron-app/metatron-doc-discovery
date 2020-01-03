@@ -21,7 +21,7 @@ msgstr ""
 # 7929b000c24a49ecbb6e64d393f16eae
 #: ../../discovery/part09/index.rst:2
 msgid "데이터 탐색"
-msgstr ""
+msgstr "Data Exploration"
 
 # 4ee215da2df74c689832975099bcdd71
 #: ../../discovery/part09/index.rst:4
@@ -29,6 +29,8 @@ msgid ""
 "관리자는 Metatron Discovery 사용자들의 멤버쉽과 사용 권한을 설정·관리할 수 있으며, **그룹** 기능을 이용하여 "
 "이러한 관리를 더욱 효율화할 수 있습니다."
 msgstr ""
+"The administrator can set·manage the membership and permissions of Metatron Discovery users."
+" By using **group** feature, you can be more effective with administration."
 
 # e85b4a9e910a4bfab2796eaafa7cd9ce
 #: ../../discovery/part09/index.rst:6
@@ -37,4 +39,6 @@ msgid ""
 "선택하면 됩니다. 또한 사용자의 원활한 데이터 탐색을 위해서 Admin은 Metadata를 관리하여야 합니다. "
 ":menuselection:`Management > Exploration` 클릭 후 원하는 하위 메뉴를 선택하면 됩니다."
 msgstr ""
-
+"For Data Exploration, click :menuselection:`Exploration` from the left panel of the main view"
+" and select the submenu you want. Also, for smooth data exploration of users, Admin should manage the Metadata."
+" Click :menuselection:`Management > Exploration` and select a submenu."

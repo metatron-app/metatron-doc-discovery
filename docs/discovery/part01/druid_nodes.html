@@ -94,9 +94,9 @@
                   <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
 					 <!-- 하위 페이지에서 영문 페이지로의 링크 -->
 					 <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
-					 <!-- 영문 pdf 링크 -->
+					 <!-- 한글 pdf 링크 -->
 					<li><a class="lang_sel" href="../../en/index.html">VIEW IN ENGLISH</a></li>
-					<li><a class="lang_sel" href="../../latex/metatron-doc-user_ko.pdf">PDF 버전으로 보기</a></li>
+					<li><a class="lang_sel" href="">PDF 버전으로 보기</a></li>
                  
               </ul>
               <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
@@ -237,7 +237,7 @@
 <li><p>유입되는 이벤트들은 메모리에 인덱싱되면서 즉시 쿼리에 사용될 수 있습니다.</p></li>
 <li><p>메모리 상의 데이터는 정기적으로 디스크에 저장되면서 수정 불가능한(읽기 전용) 컬럼형 포맷으로 변환됩니다.</p></li>
 <li><p>저장된 데이터는 off-heap 메모리로 로드되기 때문에 쿼리 가능한 상태가 유지됩니다.</p></li>
-<li><p>디스크에 저장된 인덱스들을 주기적으로 병합되어 데이터 '세그먼트'를 구성한 후 딥 스토리지로 이관됩니다.</p></li>
+<li><p>디스크에 저장된 인덱스들을 주기적으로 병합되어 데이터 〈세그먼트’를 구성한 후 딥 스토리지로 이관됩니다.</p></li>
 </ol>
 </div></blockquote>
 <p>이런 식으로 real-time 노드로 ingestion된 모든 이벤트는 디스크 저장 전후를 막론하고 on-heap 또는 off-heap 메모리 상에 존재하므로 쿼리가 가능한 상태를 유지합니다(쿼리는 메모리 상의 인덱스와 디스크에 저장된 인덱스 모두에 전달됩니다). 이러한 real-time 노드 기능을 통해 Druid는 실시간 데이터 ingestion을 수행할 수 있습니다. 즉, 이벤트들이 발생하면 곧 이어서 쿼리 대상이 됩니다. 그리고 이러한 과정에서 데이터 손실이 발생하지 않습니다.</p>

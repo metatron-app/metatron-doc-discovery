@@ -21,7 +21,7 @@ msgstr ""
 # 97a214e79a36459eaedeb333c57c1553
 #: ../../discovery/part10/index.rst:2
 msgid "엔진 모니터링"
-msgstr ""
+msgstr "Engine Monitoring"
 
 # 9415155204c94896a84fd632c0b89374
 #: ../../discovery/part10/index.rst:4

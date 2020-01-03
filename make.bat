@@ -12,6 +12,7 @@ set BUILDDIR=docs
 
 if "%1" == "" goto help
 if "%1" == "all" goto all
+if "%1" == "en" goto en
 if "%1" == "html" goto html
 
 %SPHINXBUILD% >NUL 2>NUL
@@ -37,6 +38,9 @@ goto end
 echo.#1 Build for Korean
 %SPHINXBUILD% -b html . %BUILDDIR%
 echo.#2 Build for English
+%SPHINXBUILD% -b html -D language=en . %BUILDDIR%\en
+
+:en
 %SPHINXBUILD% -b html -D language=en . %BUILDDIR%\en
 
 :html
