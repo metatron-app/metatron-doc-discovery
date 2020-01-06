@@ -21,5 +21,5 @@ msgstr ""
 # ac64a0a0eda943ce9a2abd2b286bb823
 #: ../../discovery/part10/query.rst:2
 msgid "Query"
-msgstr ""
+msgstr "Query"
 

@@ -21,12 +21,12 @@ msgstr ""
 # 8092b7d94d42436b94e870e9e3068682
 #: ../../discovery/part10/overview.rst:2
 msgid "Overview"
-msgstr ""
+msgstr "Overview"
 
 # 8ce6eb729a3a4456a1ed29e2c588a21e
 #: ../../discovery/part10/overview.rst:5
 msgid "Druid Setting Configuration"
-msgstr ""
+msgstr "Druid Setting Configuration"
 
 # 68af1ca0a04d438ca3b99d8d336ca38d
 #: ../../discovery/part10/overview.rst:6
@@ -34,6 +34,8 @@ msgid ""
 "Druid 설치 정보를 알 수 있습니다. 우측 상단을 보면 information버튼이 있습니다. 해당 버튼을 클릭하면, 설치된 "
 "정보를 확인 가능합니다."
 msgstr ""
+"You can check setting information of Druid here. On the right top side there is a information button(ⓘ)."
+" Click the button to check the details."
 
 # 3780e212d9924ce68c5d089e4b159883
 #: ../../discovery/part10/overview.rst:10
@@ -41,13 +43,15 @@ msgid ""
 "Druid 설치 설정을 Common, Historical Node, Broker Node, Coordinator Node, "
 "Middle Manager Node, Overlord Node로 각각 확인 가능합니다."
 msgstr ""
+"Below is the view that appears when you click the button. It shows the overall Druid setting information"
+" by common detail and 5 nodes section (Historical, Broker, Coordinator, Middle Manager, Overlord)."
 
 # 06ca91e4a5474219983adae49aac0108
 # 8f8683fa223f4179a1b22715a3afbabd
 #: ../../discovery/part10/overview.rst:15
 #: ../../discovery/part10/overview.rst:42
 msgid "Historical 사용량"
-msgstr ""
+msgstr "Historical Usage"
 
 # 64667eb4a9814157baee7bce1183e6a3
 # 2e9e0794a981476ca266e4500ab0f6a3
@@ -57,79 +61,80 @@ msgid ""
 "각 historical node 의 사용량 표시합니다. Coordinator의 servers 리스트에서 개별 서버 항목 추출하여 "
 "만들어집니다."
 msgstr ""
+"Displays the usage of each historical node. Each server entries are acquired from the servers list of the Coordinator."
 
 # 5cb573a7f5e441df81c77973fd9c0d4b
 #: ../../discovery/part10/overview.rst:20
 msgid "Cluster 전체 사용량"
-msgstr ""
+msgstr "Cluster Total Usage"
 
 # aee6043a7d454468a409605fb2795443
 #: ../../discovery/part10/overview.rst:21
 msgid "Druid historical 모니터링기능을 제공합니다."
-msgstr ""
+msgstr "Provides Druid historical monitoring feature."
 
 # 46ae97a4d5b1402cad816ab56eb9e73b
 #: ../../discovery/part10/overview.rst:23
 msgid "Cluster의 사용량 정보는 아래와 같습니다."
-msgstr ""
+msgstr "Cluser usage information identifies the following:"
 
 # 9c93ec9591424fd5942c7cd2b2c1444d
 #: ../../discovery/part10/overview.rst:25
 msgid "cluster 전체 사용량 확인 가능"
-msgstr ""
+msgstr "Total usage of cluster"
 
 # 6578b09e6cb94b1b8f9527b1d62c8304
 #: ../../discovery/part10/overview.rst:26
 msgid "개별 historical 사용량 확인 가능"
-msgstr ""
+msgstr "Usage of each historical"
 
 # d7f85e6138bd4ff9909b0914138aa653
 #: ../../discovery/part10/overview.rst:28
 msgid "Coordinator의 servers 리스트를 이용하여 만들어진 KPI 입니다."
-msgstr ""
+msgstr "Below is the KPI made by using the servers list of the Coordinator."
 
 # baf5ea79d1884588b58aa39187b5a42b
 #: ../../discovery/part10/overview.rst:31
 msgid "Field"
-msgstr ""
+msgstr "Field"
 
 # 776ffa4016714c27a2c84884d52fe2ca
 #: ../../discovery/part10/overview.rst:31
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 # 018420068f344183be7f62c0be762a59
 #: ../../discovery/part10/overview.rst:31
 msgid "Example"
-msgstr ""
+msgstr "Example"
 
 # 7566b7e5b151448ea13246dbdbbaec24
 #: ../../discovery/part10/overview.rst:33
 msgid "Node Count"
-msgstr ""
+msgstr "Node Count"
 
 # 497a944c6bf143c68e4c8e46c28170ac
 #: ../../discovery/part10/overview.rst:33
 msgid "historical node 수"
-msgstr ""
+msgstr "numbers of historical nodes"
 
 # 5538aac442314238a0af2fe4345b17bc
 #: ../../discovery/part10/overview.rst:34
 msgid "MaxSize"
-msgstr ""
+msgstr "MaxSize"
 
 # cba7cb00af8d4f64aaa8a59971de0b7b
 #: ../../discovery/part10/overview.rst:35
 msgid "currSize"
-msgstr ""
+msgstr "currSize"
 
 # 16b15c4595294e378bf965315d99121c
 #: ../../discovery/part10/overview.rst:36
 msgid "Used"
-msgstr ""
+msgstr "Used"
 
 # c1eecb53866d4b6cb851227f37788c78
 #: ../../discovery/part10/overview.rst:37
 msgid "FreeSize"
-msgstr ""
+msgstr "FreeSize"
 

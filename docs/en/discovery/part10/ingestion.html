@@ -110,7 +110,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Data Preparation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part09/index.html">Data Exploration</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">엔진 모니터링</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Engine Monitoring</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="overview.html">Overview</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Ingestion</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#tasks">Tasks</a></li>
@@ -182,7 +182,7 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-          <li><a href="index.html">엔진 모니터링</a> &raquo;</li>
+          <li><a href="index.html">Engine Monitoring</a> &raquo;</li>
         
       <li>Ingestion</li>
     
@@ -205,49 +205,49 @@
             
   <div class="section" id="ingestion">
 <h1>Ingestion<a class="headerlink" href="#ingestion" title="Permalink to this headline">¶</a></h1>
-<p>Druid Indexing Service 모니터링입니다. 해당 페이지에서는 Index task의 실행 상태 및 task 관련 정보를 제공합니다.</p>
-<p>아래와 같은 정보를 제공해줍니다.</p>
+<p>Ingestion is the monitoring of Druid Indexing Service. It provides performance status of the indexing tasks and related information.</p>
+<p>Provided information identifies the following:</p>
 <blockquote>
 <div><ul class="simple">
 <li><dl class="simple">
-<dt>MiddleManager 상태 확인 가능</dt><dd><ul>
-<li><p>worker 별 용량, 현재 사용량 현황</p></li>
+<dt>MiddleManager Status</dt><dd><ul>
+<li><p>Capacity of each worker and current usage amount</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Supervisor 상태 확인 가능</dt><dd><ul>
-<li><p>supervisor 별 상태</p></li>
-<li><p>terminate (suspend, reset) 기능 제공</p></li>
+<dt>Supervisor Status</dt><dd><ul>
+<li><p>Status of each supervisor</p></li>
+<li><p>provided feature: terminate (suspend, reset)</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>Task 상태 확인 가능</dt><dd><ul>
+<dt>Task Status</dt><dd><ul>
 <li><p>runningTasks, pendingTasks, waitingTasks, completedTasks</p></li>
-<li><p>log, kill 기능 제공</p></li>
+<li><p>provided feature: log, kill</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p>Lockbox 상태 확인 가능</p></li>
+<li><p>Lockbox Status</p></li>
 </ul>
 </div></blockquote>
-<p>Ingestion 에는 supervisor와 middle manager에 대한 정보도 같이 확인할 수 있다.</p>
+<p>Ingestion section displays details of both supervisor and middle manager.</p>
 <div class="section" id="tasks">
 <h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h2>
-<p>Task는 다음과 같이 4개로 분류할 수 있습니다.</p>
+<p>Tasks can be classified into 4 types of status:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>pending task:  worker 할당을 기다리는 task</p></li>
-<li><p>running task: 실행중인 task</p></li>
-<li><p>waiting task: lock을 기다리는 task</p></li>
-<li><p>completed task: 완료된 task로 SUCCESS, FAIL의 두 상태로 나뉜다.</p></li>
+<li><p>pending: task waiting to be assigned to a worker</p></li>
+<li><p>running: task currently running</p></li>
+<li><p>waiting: task waiting on lock</p></li>
+<li><p>completed: classified into two states - SUCCESS, FAIL</p></li>
 </ul>
 </div></blockquote>
-<p>Task 상세 정보 및 메뉴는 아래와 같습니다.</p>
+<p>Task details and menu are as follows.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 26%" />
@@ -306,7 +306,7 @@
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>status</p></td>
-<td><p>상태</p></td>
+<td><p>status</p></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>log</p></td>
@@ -327,13 +327,13 @@
 </tr>
 </tbody>
 </table>
-<p>이와 같습니다.</p>
+<p>It is displayed as shown below.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/ingestion_task.png" src="../../_images/ingestion_task.png" />
 </div>
 </div></blockquote>
-<p>상세 화면을 살펴보면 다음과 같습니다. (아래는 Kafka를 사용한 경우입니다)</p>
+<p>Following image is the detail view. (a case using Kafka)</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/ingestion_task01.png" src="../../_images/ingestion_task01.png" />
@@ -342,7 +342,7 @@
 <img alt="../../_images/ingestion_task02.png" src="../../_images/ingestion_task02.png" />
 </div>
 </div></blockquote>
-<p>아래는 Kafka가 아닌 일반 Task의 경우의 모습입니다.</p>
+<p>And below is a case of general Task, not using Kafka.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/ingestion_task03.png" src="../../_images/ingestion_task03.png" />
@@ -351,7 +351,7 @@
 </div>
 <div class="section" id="supervisors">
 <h2>Supervisors<a class="headerlink" href="#supervisors" title="Permalink to this headline">¶</a></h2>
-<p>실행중인 Supervisors의 모니터링을 할 수 있다. 확인 가능한 Supervisor 상세 정보 및 menu는 다음과 같다.</p>
+<p>You can monitor the running Supervisors. Details and menu available for monitoring is as follows:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 21%" />
@@ -366,8 +366,7 @@
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Status</p></td>
-<td><p>get supervisorIDs로 제공되는
-supervisor는 모두 running 상태임</p></td>
+<td><p>All of the supervisors provided by ‘get supervisorIDs’ are at running state</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>Datasource</p></td>
@@ -375,11 +374,11 @@ supervisor는 모두 running 상태임</p></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>Detailed Status</p></td>
-<td><p>status API 로 제공되는 정보</p></td>
+<td><p>Details provided by status API</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>Lag</p></td>
-<td><p>kafka의 lag 정보. emitter 사용</p></td>
+<td><p>Lag details of kafka, acquired using emitter</p></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>Spec</p></td>
@@ -387,12 +386,12 @@ supervisor는 모두 running 상태임</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>Shutdown</p></td>
-<td><p>Terminate supervisor. 관련된 task도 함께 kill 됨</p></td>
+<td><p>Terminates supervisor. Kills related tasks as well.</p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p>이와 같습니다.</p>
+<p>It is displayed as shown below.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/ingestion_supervisor.png" src="../../_images/ingestion_supervisor.png" />
@@ -404,7 +403,7 @@ supervisor는 모두 running 상태임</p></td>
 </div>
 <div class="section" id="middlemanagers">
 <h2>MiddleManagers<a class="headerlink" href="#middlemanagers" title="Permalink to this headline">¶</a></h2>
-<p>worker 리스트를 의미합니다.</p>
+<p>List of workers.</p>
 <blockquote>
 <div><div class="figure align-default">
 <img alt="../../_images/ingestion_middlemanager.png" src="../../_images/ingestion_middlemanager.png" />

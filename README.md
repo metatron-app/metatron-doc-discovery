@@ -30,7 +30,9 @@ This repository is for documenting about [metatron-discovery](https://github.com
 * Build documents using [Sphinx](http://sphinx-doc.org/)
   ```sh    
     make all
+    make en  //When building english version only.
   ```
+
 * HTML files are located in `docs/` directory.
 
 * Update

@@ -29,9 +29,10 @@ msgid ""
 "엔진 모니터링은 Metatron Engine의 모니터링을 의미합니다. Metatron Engine은 Druid를 사용한 시계열 "
 "기반의 엔진입니다. 엔진 모니터링은 Ingestion, Query에 대한 상태 모니터링과 로그 정보를 보여집니다."
 msgstr ""
+"Engine Monitoring is a feature to monitor the Metatron Engine. Metatron Engine is a time series-based engine"
+" using Druid. Engine Monitoring displays Ingestion, Query status monitoring and log details."
 
 # df587a97e20749fb8d0105336f2c665e
 #: ../../discovery/part10/index.rst:9
 msgid "해당 기능은 Metatron Discovery 3.4.0 이후 버젼부터 지원합니다."
-msgstr ""
-
+msgstr "This feature is supported for Metatron Discovery 3.4.0 and above."
