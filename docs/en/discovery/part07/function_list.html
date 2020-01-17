@@ -1,0 +1,2652 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Function list &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Create a data snapshot" href="create_a_datasnapshot.html" />
+    <link rel="prev" title="Rule types" href="rule_kinds.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Preparation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">Create a dataset</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="manage_dataflow.html">Manage a dataflow</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="add_datasets.html">Add a dataset</a></li>
+<li class="toctree-l3"><a class="reference internal" href="edit_rules.html">Edit rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rule_kinds.html">Rule types</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Function list</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#length">length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#if">if</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#isnull">isnull</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#isnan">isnan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#upper">upper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lower">lower</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#trim">trim</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ltrim">ltrim</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rtrim">rtrim</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#substring">substring</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#concat">concat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#concat-ws">concat_ws</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#year">year</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#month">month</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#day">day</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hour">hour</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#minute">minute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#second">second</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#millisecond">millisecond</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#now">now</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-time">add_time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sum">sum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#avg">avg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#max">max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#min">min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#count">count</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-abs">math.abs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-acos">math.acos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-asin">math.asin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-atan">math.atan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-cbrt">math.cbrt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-ceil">math.ceil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-cos">math.cos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-cosh">math.cosh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-exp">math.exp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-expm1">math.expm1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-getexponent">math.getExponent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-round">math.round</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-signum">math.signum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-sin">math.sin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-sinh">math.sinh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-sqrt">math.sqrt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-tan">math.tan</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#math-tanh">math.tanh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#time-diff">time_diff</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#timestamp">timestamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#row-number">row_number</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rolling-sum">rolling_sum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rolling-avg">rolling_avg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lag">lag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lead">lead</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ismismatched">ismismatched</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#contains">contains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#startswith">startswith</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#endswith">endswith</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="create_a_datasnapshot.html">Create a data snapshot</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">Use data snapshot results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">Data Exploration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">Engine Monitoring</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Data Preparation</a> &raquo;</li>
+        
+          <li><a href="manage_dataflow.html">Manage a dataflow</a> &raquo;</li>
+        
+      <li>Function list</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/function_list.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Function list<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>You can create rules using functions. This can be a very useful method</p>
+<p>This section describes each function in terms of the following.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Category</p></li>
+<li><p>Description</p></li>
+<li><p>Function interface</p></li>
+<li><p>Arguments</p></li>
+<li><p>Return type</p></li>
+<li><p>Example</p></li>
+<li><p>Remarks</p></li>
+</ul>
+</div></blockquote>
+<p>현재 데이터 프리퍼레이션에서 지원하는 룰 종류는 다음과 같습니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#length">length</a></p></li>
+<li><p><a class="reference internal" href="#if">if</a></p></li>
+<li><p><a class="reference internal" href="#isnull">isnull</a></p></li>
+<li><p><a class="reference internal" href="#isnan">isnan</a></p></li>
+<li><p><a class="reference internal" href="#upper">upper</a></p></li>
+<li><p><a class="reference internal" href="#lower">lower</a></p></li>
+<li><p><a class="reference internal" href="#trim">trim</a></p></li>
+<li><p><a class="reference internal" href="#ltrim">ltrim</a></p></li>
+<li><p><a class="reference internal" href="#rtrim">rtrim</a></p></li>
+<li><p><a class="reference internal" href="#substring">substring</a></p></li>
+<li><p><a class="reference internal" href="#concat">concat</a></p></li>
+<li><p><a class="reference internal" href="#concat-ws">concat_ws</a></p></li>
+<li><p><a class="reference internal" href="#year">year</a></p></li>
+<li><p><a class="reference internal" href="#month">month</a></p></li>
+<li><p><a class="reference internal" href="#day">day</a></p></li>
+<li><p><a class="reference internal" href="#hour">hour</a></p></li>
+<li><p><a class="reference internal" href="#minute">minute</a></p></li>
+<li><p><a class="reference internal" href="#second">second</a></p></li>
+<li><p><a class="reference internal" href="#millisecond">millisecond</a></p></li>
+<li><p><a class="reference internal" href="#now">now</a></p></li>
+<li><p><a class="reference internal" href="#add-time">add_time</a></p></li>
+<li><p><a class="reference internal" href="#sum">sum</a></p></li>
+<li><p><a class="reference internal" href="#avg">avg</a></p></li>
+<li><p><a class="reference internal" href="#max">max</a></p></li>
+<li><p><a class="reference internal" href="#min">min</a></p></li>
+<li><p><a class="reference internal" href="#count">count</a></p></li>
+<li><p><a class="reference internal" href="#math-abs">math.abs</a></p></li>
+<li><p><a class="reference internal" href="#math-acos">math.acos</a></p></li>
+<li><p><a class="reference internal" href="#math-asin">math.asin</a></p></li>
+<li><p><a class="reference internal" href="#math-atan">math.atan</a></p></li>
+<li><p><a class="reference internal" href="#math-cbrt">math.cbrt</a></p></li>
+<li><p><a class="reference internal" href="#math-ceil">math.ceil</a></p></li>
+<li><p><a class="reference internal" href="#math-cos">math.cos</a></p></li>
+<li><p><a class="reference internal" href="#math-cosh">math.cosh</a></p></li>
+<li><p><a class="reference internal" href="#math-exp">math.exp</a></p></li>
+<li><p><a class="reference internal" href="#math-expm1">math.expm1</a></p></li>
+<li><p><a class="reference internal" href="#math-getexponent">math.getExponent</a></p></li>
+<li><p><a class="reference internal" href="#math-round">math.round</a></p></li>
+<li><p><a class="reference internal" href="#math-signum">math.signum</a></p></li>
+<li><p><a class="reference internal" href="#math-sin">math.sin</a></p></li>
+<li><p><a class="reference internal" href="#math-sinh">math.sinh</a></p></li>
+<li><p><a class="reference internal" href="#math-sqrt">math.sqrt</a></p></li>
+<li><p><a class="reference internal" href="#math-tan">math.tan</a></p></li>
+<li><p><a class="reference internal" href="#math-tanh">math.tanh</a></p></li>
+<li><p><a class="reference internal" href="#time-diff">time_diff</a></p></li>
+<li><p><a class="reference internal" href="#timestamp">timestamp</a></p></li>
+<li><p><a class="reference internal" href="#row-number">row_number</a></p></li>
+<li><p><a class="reference internal" href="#rolling-sum">rolling_sum</a></p></li>
+<li><p><a class="reference internal" href="#rolling-avg">rolling_avg</a></p></li>
+<li><p><a class="reference internal" href="#lag">lag</a></p></li>
+<li><p><a class="reference internal" href="#lead">lead</a></p></li>
+<li><p><a class="reference internal" href="#ismismatched">ismismatched</a></p></li>
+<li><p><a class="reference internal" href="#contains">contains</a></p></li>
+<li><p><a class="reference internal" href="#startswith">startswith</a></p></li>
+<li><p><a class="reference internal" href="#endswith">endswith</a></p></li>
+</ul>
+</div></blockquote>
+<p>Functions can be supplemented on an ongoing basis.</p>
+<div class="section" id="length">
+<h2>length<a class="headerlink" href="#length" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the length of the input string</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>length(string_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>string_value: the string whose length you want to find.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>length(first_name)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="if">
+<h2>if<a class="headerlink" href="#if" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Logical Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Examine the conditional statement and return a value corresponding to TRUE or FALSE.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>if(condition)</p></li>
+<li><p>if(condition, true_value, false_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>condition: The condition to check for true / false</p></li>
+<li><p>true_value: The value returned if the conditional statement is true.</p></li>
+<li><p>false_value: The value returned if the conditional statement is false.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Any</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>if(gender==‘male’) : TRUE</p></li>
+<li><p>if(age&lt;18, ‘kid’, ‘adult’) : ‘adult’</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If true_value/false_value does not exist, it returns TURE or FALSE as a result of Boolean type.</p></li>
+<li><p>ture_value와 false_value의 데이터 타입은 동일해야 합니다.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="isnull">
+<h2>isnull<a class="headerlink" href="#isnull" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Logical Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Determines whether the value of the input column is null. Returns TRUE if null, or FALSE.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>isnull(condition)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>condition: The column to determine if null.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Boolean</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>isnull(telephone) : FALSE</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="isnan">
+<h2>isnan<a class="headerlink" href="#isnan" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Logical Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Determines if input value is NaN (Not-a-Number). Returns TRUE if NaN, FALSE otherwise.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>isnan(condition)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>condition: The column or formula for which to determine NaN.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Boolean</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>isnan(1000/ratio)</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The result of the condition must be a Double Value.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="upper">
+<h2>upper<a class="headerlink" href="#upper" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns all uppercase letters of the alphabet entered.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>upper(string_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>string_value: The string to replace with an uppercase letter.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>upper(last_name)</p></li>
+<li><p>upper(‘Hello world’) : ’HELLO WORLD’</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="lower">
+<h2>lower<a class="headerlink" href="#lower" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns all lowercase letters of the entered string.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>lower(string_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>string_value: the string you want to replace with lowercase.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>lower(last_name)</p></li>
+<li><p>lower(‘Hello WORLD’) : ’hello world’</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="trim">
+<h2>trim<a class="headerlink" href="#trim" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the spaces before and after the input string.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>trim(string_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>string_value: The string to remove whitespace from.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>trim(comment)</p></li>
+<li><p>trim(‘  .   Hi!   ‘) : ‘.   Hi!’</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="ltrim">
+<h2>ltrim<a class="headerlink" href="#ltrim" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Remove and return the space before the input string.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ltrim(string_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>string_value: The string to remove whitespace from.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ltrim(comment)</p></li>
+<li><p>ltrim(‘  .   Hi!   ‘) : ’.   Hi!   ‘</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="rtrim">
+<h2>rtrim<a class="headerlink" href="#rtrim" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the space after the input string.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>rtrim(string_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>string_value: The string to remove whitespace from.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>rtrim(comment)</p></li>
+<li><p>rtrim(‘  .   Hi!   ‘) :  ‘  .   Hi!’</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="substring">
+<h2>substring<a class="headerlink" href="#substring" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns part of the input string.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>substring(string_value, begin_index, offset)</p></li>
+<li><p>substring(string_value, begin_index)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>string_value: The string to edit.</p></li>
+<li><p>begin_index: Start index of the part to extract from the target string. The beginning of the string is 0. If you enter a negative number, it goes back to the last character of the string.</p></li>
+<li><p>offset: The length of the string to extract from the target string. If not entered, extracts from begine_index to the end of the string.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>substring(user_id, 0, 5)</p></li>
+<li><p>substring(‘hello world’, 1, 7) : ‘ello w’</p></li>
+<li><p>substring(‘metatron’, -2) : ‘on’</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="concat">
+<h2>concat<a class="headerlink" href="#concat" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>입력된 복수의 문자열을 연결하여 반환합니다.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Concatenate and return multiple input strings.</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>string_value (X): String to concatenate. You can enter multiple n items.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>concat(first_name, ‘-‘, last_name) : ‘Jane-Doe’</p></li>
+<li><p>concat(‘1980’, ’02’) : ‘198002’</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="concat-ws">
+<h2>concat_ws<a class="headerlink" href="#concat-ws" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Concatenates multiple input strings and returns a Separator between them.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>concat(separator, stirng_value1, string_value2)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>separator: Separator to insert between strings to be concatenated.</p></li>
+<li><p>string_value (X): String to concatenate. You can enter multiple n items.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>concat_ws(‘, ’, first_name, last_name) : ‘Jane, Doe’</p></li>
+<li><p>concat_ws(‘-‘, ‘010’, ‘1234’, ‘5678’) : ’010-1234-5678’</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="year">
+<h2>year<a class="headerlink" href="#year" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns a value corresponding to the year from the entered Timestamp value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>year(timestamp_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp_value: 연도를 추출하고자 하는 timestamp</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>year(birthday)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="month">
+<h2>month<a class="headerlink" href="#month" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the value corresponding to the month in the entered Timestamp value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>month(timestamp_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp_value: the timestamp from which you want to extract the month</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>month(birthday)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="day">
+<h2>day<a class="headerlink" href="#day" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns a value corresponding to day from an entered Timestamp value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>day(timestamp_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp_value: the timestamp from which you want to extract the day</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>day(birthday)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="hour">
+<h2>hour<a class="headerlink" href="#hour" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns a value corresponding to a time from an entered Timestamp value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>hour(timestamp_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp_value: timestamp from which you want to extract time</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>hour(last_login)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="minute">
+<h2>minute<a class="headerlink" href="#minute" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns a value corresponding to minutes from the entered Timestamp value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>minute(timestamp_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp_value: the timestamp from which you want to extract minutes</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>minute(last_login)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="second">
+<h2>second<a class="headerlink" href="#second" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the value corresponding to seconds from the entered Timestamp value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>second(timestamp_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp_value: the timestamp from which you want to extract seconds</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>second(last_login)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="millisecond">
+<h2>millisecond<a class="headerlink" href="#millisecond" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the value corresponding to milliseconds (1/1000 second) from the entered Timestamp value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>millisecond(timestamp_value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp_value: the timestamp from which you want to extract milliseconds</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>millisecond(last_login)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="now">
+<h2>now<a class="headerlink" href="#now" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the current time based on the entered Timezone.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>now()</p></li>
+<li><p>now(timezone)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timzone: 현재시간을 구하고자 하는 Timezone의 fulll-name.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>now()</p></li>
+<li><p>now(‘Asia/Seoul’)</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If no Timezone value is entered, returns the time in UTC.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="add-time">
+<h2>add_time<a class="headerlink" href="#add-time" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the value added or subtracted from the input Timestamp value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>add_time(timestamp, delta, time_unit)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp: the original timestamp value being targeted</p></li>
+<li><p>delta: the date / time value to add or subtract</p></li>
+<li><p>time_unit: The unit of date / time to add or subtract (in string). year, month, day, hour, minute, second, millisecond.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Integer</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>add_time(end_date, 10, ‘day’)</p></li>
+<li><p>add_time(end_date, -1, ‘month’)</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="sum">
+<h2>sum<a class="headerlink" href="#sum" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Aggregation Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the sum of the target values.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>sum(target_col)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: Target column to sum</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>sum(profit)</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available for aggregation and window rules.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="avg">
+<h2>avg<a class="headerlink" href="#avg" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Aggregation Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the average of the target values.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>avg(target_col)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: Target column to average</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>avg(profit)</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available for aggregation and window rules.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="max">
+<h2>max<a class="headerlink" href="#max" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Aggregation Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the largest of the target values.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>max(target_col)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: Target column to get the maximum value</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>max(profit)</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available for aggregation and window rules.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="min">
+<h2>min<a class="headerlink" href="#min" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Aggregation Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the smallest of the target values.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>min(target_col)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: Target column to get the minimum value</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>min(profit)</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available for aggregation and window rules.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="count">
+<h2>count<a class="headerlink" href="#count" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Aggregation Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the number of rows in the target.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>count()</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>count()</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available for aggregation and window rules.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-abs">
+<h2>math.abs<a class="headerlink" href="#math-abs" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the absolute value of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.abs(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: A number whose absolute value you want to find.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.abs(-10) : 10</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-acos">
+<h2>math.acos<a class="headerlink" href="#math-acos" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the arc cosine of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.acos(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The cosine of which you want to find the arc cosine.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.acos(-1) : 3.141592653589793</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-asin">
+<h2>math.asin<a class="headerlink" href="#math-asin" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the arc sine of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.asin(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The sine of which you want to find the arc sine, in the range -1 to 1.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.asin(-1) : -1.5707963267948966</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-atan">
+<h2>math.atan<a class="headerlink" href="#math-atan" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the arc sine of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.atan(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The sine of which you want to find the arc sine, in the range -1 to 1.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.asin(-1) : -1.5707963267948966</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-cbrt">
+<h2>math.cbrt<a class="headerlink" href="#math-cbrt" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the cube root of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.cbrt(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The number whose cube root you want to find.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.cbrt(5) : 1.709975946676697</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-ceil">
+<h2>math.ceil<a class="headerlink" href="#math-ceil" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the value rounded up to be a multiple of day.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.ceil(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The number you want to round to one’s place.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.ceil(15.142) : 16</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-cos">
+<h2>math.cos<a class="headerlink" href="#math-cos" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the cosine of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.cos(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: the radian angle to get the cosine of</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.cos(45) : 0.5253219888177297</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-cosh">
+<h2>math.cosh<a class="headerlink" href="#math-cosh" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the hyperbolic cosine of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.cosh(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The number whose hyperbolic cosine is to be obtained.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.cosh(9) : COSH(9) =&gt; 4051.5420254925943</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-exp">
+<h2>math.exp<a class="headerlink" href="#math-exp" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the natural logarithm of e raised to the power of the input value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.exp(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The number of times to want to log the natural logarithm e.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.exp(4) : 54.598150033144236</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-expm1">
+<h2>math.expm1<a class="headerlink" href="#math-expm1" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the natural logarithm e, multiplied by the value entered, minus one.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.expm1(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The number of times to want to log the natural logarithm e.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.expm1(4) : 53.598150033144236</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-getexponent">
+<h2>math.getExponent<a class="headerlink" href="#math-getexponent" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the largest of exp values ​​that satisfy 2exp &lt;= N for the entered value N.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.getExponent(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The number corresponding to N when looking for an exp value that satisfies 2exp &lt;= N.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.getExponent(9) : 3</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-round">
+<h2>math.round<a class="headerlink" href="#math-round" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the value rounded to the ones place.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.round(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: the number to be rounded to</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.round(14.2) : 14</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-signum">
+<h2>math.signum<a class="headerlink" href="#math-signum" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the sign of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.signum(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: the number to extract the sign of</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.signum(-24) : -1</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If the number entered is 1, it is 1, 0 is 0, and -1 if it is negative.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-sin">
+<h2>math.sin<a class="headerlink" href="#math-sin" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the sine of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.sin(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: the radian angle for which you want to find the sine</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.sin(90) : 0.8939966636005579</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-sinh">
+<h2>math.sinh<a class="headerlink" href="#math-sinh" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the hyperbolic sine of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.sinh(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: the number whose hyperbolic sine is to be obtained</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.sinh(1) : 1.1752011936438014</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-sqrt">
+<h2>math.sqrt<a class="headerlink" href="#math-sqrt" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the square root of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.sqrt(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: the number whose square root you want to find</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.sqrt(4) : 2</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-tan">
+<h2>math.tan<a class="headerlink" href="#math-tan" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the tangent of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.tan(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: the radian angle for the tangent value</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.tan(10) : 0.6483608274590866</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="math-tanh">
+<h2>math.tanh<a class="headerlink" href="#math-tanh" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Math Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the hyperbolic tangent of the entered value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.tanh(value)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: The angle to get the hyperbolic tangent of.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>math.tanh(4) : 0.999329299739067</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="time-diff">
+<h2>time_diff<a class="headerlink" href="#time-diff" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Calculates and returns the difference between two input Timestamp values ​​in milliseconds.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>time_diff(timestamp1, timestamp2)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp1:C = B - A 에서 A에 해당하는 시간 값.</p></li>
+<li><p>timestamp1: C = B - A, the timestamp of B</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>time_diff(order_date, shipped_date)</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>result value = timestamp2 - timestamp1</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="timestamp">
+<h2>timestamp<a class="headerlink" href="#timestamp" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Create a new Timestamp value.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp(value, format)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>value: Date/Time value to create as timestamp value.</p></li>
+<li><p>format: The time format of the value value.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Timestamp</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>timestamp(‘2011-01-01’, ‘yyyy-MM-dd’) : 2011-01-01T00:00:00.000Z</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="row-number">
+<h2>row_number<a class="headerlink" href="#row-number" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Window Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Generates serial numbers of rows arranged in order in the partition.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>row_number()</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Long</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>row_number()</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available with Window Rule.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="rolling-sum">
+<h2>rolling_sum<a class="headerlink" href="#rolling-sum" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Window Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the sum of the values ​​of the specified number of rows before and after within the partition.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>rolling_sum(target_col, before, after)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: Target column name to sum.</p></li>
+<li><p>before: Number of preceding rows to sum.</p></li>
+<li><p>after: The number of trailing rows to sum.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Long/Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>rolling_sum (profit, 3, 3): Combines profits for a total of seven rows, including three rows before and after the same partition.</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available with Window Rule.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="rolling-avg">
+<h2>rolling_avg<a class="headerlink" href="#rolling-avg" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Window Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the average of the values ​​of the specified number of rows before and after in the partition.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>rolling_avg(target_col, before, after)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: The target column name for which you want to average.</p></li>
+<li><p>before: The number of preceding rows to average.</p></li>
+<li><p>after: number of trailing rows to average.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Long/Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>rolling_avg (profit, 3, 3): average of 7 rows’ profits including 3 rows before and after the same partition</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available with Window Rule.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="lag">
+<h2>lag<a class="headerlink" href="#lag" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Window Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the value of the row that is earlier than the specified number in the partition.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>lag(target_col, before)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: Target column name.</p></li>
+<li><p>before: A number that specifies how far back to return the current row.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Long/Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>lag (profit, 2): Returns the profit value of the row above 2 lines in the same partition. If there is no value above line 2, it returns null.</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available with Window Rule.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="lead">
+<h2>lead<a class="headerlink" href="#lead" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Window Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the value of Row after the specified number within the partition.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>lead(target_col, after)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: Target column name.</p></li>
+<li><p>after: A number that specifies how far behind the current row to return.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Long/Double</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>lead (profit, 2): returns the profit value of a row below 2 lines in the same partition. If there is no value under line 2, it returns null.</p></li>
+</ul>
+</div></blockquote>
+<p>Remarks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Only available with Window Rule.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="ismismatched">
+<h2>ismismatched<a class="headerlink" href="#ismismatched" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Logical Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns whether the Value of the specified column matches a specific Column Type.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ismismatched(target_col, column_type)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: Column name to check type.</p></li>
+<li><p>column_type: Type to check for match. (Type as string) String, Boolean, Timestamp, Long, Double</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Boolean</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>ismismatched (birth_date, timestamp): false if the value of the row is timestamp, true otherwise.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="contains">
+<h2>contains<a class="headerlink" href="#contains" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns whether the Value of the specified column contains a specific string.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>contains(target_col, search_word)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: The column name to search for a string.</p></li>
+<li><p>search_word: The string to search for in the column.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Boolean</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>contains (name, ‘son’): True if name contains son. ‘Micheal Jackson’, ‘Son Heung Min’, etc.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="startswith">
+<h2>startswith<a class="headerlink" href="#startswith" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns whether the Value of the specified column starts with a specific string.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>startswith(target_col, search_word)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: The column name to search for a string.</p></li>
+<li><p>search_word: The string to search for in the column.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Boolean</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>startswith (name, ‘kim’): True if name starts with ‘kim’. Kim Chul-soo, Kim Soo-ji, etc.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="endswith">
+<h2>endswith<a class="headerlink" href="#endswith" title="Permalink to this headline">¶</a></h2>
+<p>Category</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>String Function</p></li>
+</ul>
+</div></blockquote>
+<p>Description</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns whether the Value of the specified column ends a specific string.</p></li>
+</ul>
+</div></blockquote>
+<p>Function interface</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>endswith(target_col, search_word)</p></li>
+</ul>
+</div></blockquote>
+<p>Arguments</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>target_col: The column name to search for a string.</p></li>
+<li><p>search_word: The string to search for in the column.</p></li>
+</ul>
+</div></blockquote>
+<p>Return type</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Boolean</p></li>
+</ul>
+</div></blockquote>
+<p>Example</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>endswith (customer_code, ‘M’): True if customer_code ends with M ‘1340M’, ‘0020M’, etc.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create_a_datasnapshot.html" class="btn btn-neutral float-right" title="Create a data snapshot" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="rule_kinds.html" class="btn btn-neutral float-left" title="Rule types" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
