@@ -22,4 +22,5 @@
    add_datasets
    edit_rules
    rule_kinds
+   function_list
    create_a_datasnapshot
