@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,112 +17,112 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../anomaly/part04/index.rst:2
-# f894f7fae21842b6ab432ad5d5d191ab
+# 3c699a8ca5a74ea2a805b38ac212fab4
 msgid "얄람 룰 내역 열람·수정하기"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:9
-# 5ddd24972c90445bb3037f810ccfc48f
+# 9ecf092a9c544ddfb1e60ca9da7f4613
 msgid "**Alarm Rule** 탭 메뉴에서는 등록된 알람 룰을 열람·수정할 수 있습니다. 또한 이 메뉴에서는 선택한 예측 모델에 따라 산출되고 있는 데이터 abnormal score 현황도 쉽게 파악할 수 있습니다."
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:11
-# 5417f67c994e415fac4409f56c03bfad
+# 6b5450d29ecd485ba512474e2b6233c3
 msgid "알람 룰 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다."
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:13
-# 08bd85ae875b43e1bc377de641dfd569
+# a479b7c1de09402f87a6176886cdc0b8
 msgid ":ref:`alarm_rule_list`"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:14
-# b52444e8a99a4de1a0e138a35e55f313
+# e219f20ff8454201b6b9dd365efd3163
 msgid ":ref:`alarm_rule_details`"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:19
-# 67b05c6f673647518bfd3b9a3cf1f4cd
+# 8fa843cb3c34479688209c2c90649137
 msgid "알람 룰 리스트"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:21
-# 6c6a8ea1ae79495ea94a7ff448547254
+# 6d3a8b42c5394b728e3bfa873067c0fd
 msgid "**Alarm Rule** 탭으로 들어가면 현재 등록된 알람 룰들을 열거하여 보여줍니다."
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:27
-# 3ba90809f4e74578b4cc8a1f4922b78a
+# cd47410d3e334d0dae47fa2146f42a3b
 msgid "리스트에 표시되는 정보는 아래와 같으며, 이를 기준으로 열거할 룰을 필터링하거나 검색할 수 있습니다."
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:29
-# 0ade1147935e46cfaa7b1ad66058847b
+# 6edfd97dda48429e9f2e32e51bf06dfb
 msgid "**Current Status:** 해당 룰에 따른 모니터링 결과 상태"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:30
-# a57d51da7cf54e0a9a949f166ed113fd
+# 5776f7dffe7e4a18823b776564827b80
 msgid "**Alarm Rule Name:** 해당 룰의 이름"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:31
-# a7245a86e25c48f789478a2c9a6e16b1
+# 7b1171f2be334db8ae7560ac575bee8f
 msgid "**DataSource:** 모니터링 대상 데이터 소스"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:32
-# 694360c47e7e4cbcb8993dbb4c7d5fa2
+# cb1662b489d54fd9b5c039c5ab249b19
 msgid "**Measure:** 모니터링 대상 측정값 컬럼"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:33
-# 62468dff50974e9cb8b42c7dbd494442
+# 2ac0acf290704336b007df95bf20cc9d
 msgid "**Alarm Interval:** 알람 발생 주기"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:34
-# 23fb0526e67b47af8a18f04923a7901d
+# 6bca948f5ff64a82a5479fc360a0d425
 msgid "**Condition:** 해당 룰에 적용된 알람 발생 조건의 개수"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:35
-# 6ff8b4d53563457593728f7371091c10
+# 04d7c45d887042d3b39e8720567abdf3
 msgid "**Alarm:** 해당 룰에 의해 발생한 알람의 수"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:36
-# 8d3d7b94d4094489b87f3568ee09d23f
+# 8c8acdc9173f4220a93760f3ade4ad5f
 msgid "**Running:** 해당 룰의 모니터링 활성 여부"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:37
-# 7111c46ca83c44a6b77a473a2fd07975
+# 8d6cbcbf25e3436280ff0f179acee648
 msgid "**Updated:** 해당 룰을 마지막으로 업데이트한 시간과 사용자"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:42
-# 45578003b09242ccb3e29c54e5d55068
+# 8a7f0fb1671c4c6ba2575a616a1e74e2
 msgid "알람 룰 상세"
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:44
-# 15c089b0c1c6406bb94d00d19578161f
+# 63b0a57eadfb4b76a3e0beb821aa0f81
 msgid "알람 룰 리스트에 열거된 항목 중 하나를 선택하면 해당 알람 룰에 대한 상세 정보를 열람하고 설정을 수정할 수 있습니다. 화면 좌측에서는 모니터링 현황을 시각화하여 보여주고, 우측에는 알람 룰 조건 설정값이 표시됩니다."
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:50
-# b0b9cd944c6a4f1fb380bdd56e86aee4
+# 9ce6db412720453588fd4925bc2c07d3
 msgid "모니터링 현황 영역 상단에는 화면에 보여주는 모니터링 기간 설정값이 표시되어 있습니다. |icon_period_edit| 아이콘을 클릭하면 기간 설정값을 변경할 수 있습니다."
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:56
-# a9e90823228149f1813de112244f7af7
+# 02d816592c1f4dbc8f8c811aa5024c69
 msgid "알람 룰 조건 설정 영역에서는 기존에 설정된 알람 룰 설정값을 수정할 수 있습니다. 자세한 내용은 :ref:`alarm_rule_settings` 항목을 참조하십시오."
 msgstr ""
 
 #: ../../anomaly/part04/index.rst:62
-# 0eb238d8611d4f7d9701b638f40210d6
+# cc171a18acec41b0989405123bc296e9
 msgid "우측 끝단에서 |icon_alarm_history| 버튼을 누르면 **Conditions** 패널이 **Alarm History** 패널로 전환되어 지금까지 발생한 알람 이력을 보여줍니다(다시 |icon_rule_settings_edit| 버튼을 누르면 **Conditions** 패널로 되돌아옵니다)."
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part07/manage_dataflow.rst:2
-# 58dfed99cbdc4c1abbfa0ebaa2ad938c
+# 0d7d32ed9a434e759554ab4556db04eb
 msgid "데이터플로우 관리하기"
 msgstr ""
 
 #: ../../discovery/part07/manage_dataflow.rst:4
-# e3a23ad8bd3e4b79a102b7bfca08112f
+# fe1190936d8e4c25bb7f9ba88863f4a2
 msgid "**데이터플로우**\\는 **데이터셋**\\을 처리하는 단위입니다. 한 데이터플로우는 다수의 데이터셋들을 가져와 연관지어서 변형을 가할 수 있습니다. 다시 말해, 어떤 데이터셋이 변형 룰을 가지려면 반드시 한 데이터플로우에 속해야 하며, 그 안의 다른 데이터셋들과 join, union 등의 관계를 가질 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part07/manage_dataflow.rst:7
-# 42f2da8fa14341a9b6c7ae7ea4d7be51
+# 1b36a2a68d7b427cba75a61089ff9ce0
 msgid "아래와 같이 데이터플로우 상세 화면에서는 해당 데이터플로우에 속한 모든 데이터셋과 이들 간의 의존 관계, 그리고 각 데이터셋에 적용된 변형 룰들을 보여줍니다."
 msgstr ""
 
 #: ../../discovery/part07/manage_dataflow.rst:11
-# 8f5c8257fb75426ca9d53b6949c0ee46
+# 63415b28b2ee4134a0df9b894bd22a51
 msgid "아래 각 하위 단원에서는 이러한 데이터플로우를 정의하기 위해 **데이터셋을 추가**\\하고, **변형 룰들을 편집**\\하고, **변형 결과물을 데이터 스냅샷으로 출력**\\하는 과정을 살펴봅니다."
 msgstr ""
 
 #: ../../discovery/part07/manage_dataflow.rst:13
-# 07709d54eef9403bb6d762541a444903
+# bc75f24b72bd4e53a1a4ffabd069c182
 msgid "데이터플로우 메뉴는 메인 화면 좌측 패널에서 **MANAGEMENT** > **데이터 프리퍼레이션** > **데이터플로우**\\를 통해 진입할 수 있습니다."
 msgstr ""
 

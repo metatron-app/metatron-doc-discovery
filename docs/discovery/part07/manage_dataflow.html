@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터플로우 관리하기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>데이터플로우 관리하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,12 +20,22 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -36,8 +46,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="색인" href="../../genindex.html" />
-    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="데이터셋 추가하기" href="add_datasets.html" />
     <link rel="prev" title="데이터셋 만들기" href="create_a_dataset.html" /> 
 </head>
@@ -66,7 +74,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -109,6 +117,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation_detailed.html">상세 설치 가이드 (CentOS 7 기준)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">데이터플로우 관리하기</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="add_datasets.html">데이터셋 추가하기</a></li>
@@ -193,7 +202,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part07/manage_dataflow.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part07/manage_dataflow.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -212,7 +221,7 @@
 다시 말해, 어떤 데이터셋이 변형 룰을 가지려면 반드시 한 데이터플로우에 속해야 하며, 그 안의 다른 데이터셋들과 join, union 등의 관계를 가질 수 있습니다.</p>
 <p>아래와 같이 데이터플로우 상세 화면에서는 해당 데이터플로우에 속한 모든 데이터셋과 이들 간의 의존 관계, 그리고 각 데이터셋에 적용된 변형 룰들을 보여줍니다.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/add_datasets_1.png" src="../../_images/add_datasets_1.png" />
 </div>
 </div></blockquote>

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,67 +17,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part07/add_datasets.rst:2
-# 179d48f5f19a49fabc324c5983e6464f
+# c64eb8568e314088afcf58ead7abf790
 msgid "데이터셋 추가하기"
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:4
-# 9968a70490064b86b1c2849bcd707795
+# 27aff9d73b924d3e82841b8b12ffcc5f
 msgid "데이터플로우 정의의 첫 단계는 데이터셋을 추가하는 것입니다. 이를 위해서는 아래와 같은 두 가지 방법이 있습니다."
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:6
-# 8560ae32dc5f4590b09610ccea1f29e2
+# 827d64d17ef249dfbf58fe3f72bec601
 msgid ":ref:`dataflow_creation_first`"
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:7
-# 9e59cbcec92346a08850ea7680823330
+# 2c812f0cb0ac43faa329b443c7717c5f
 msgid ":ref:`dataflow_from_dataset`"
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:12
-# 95818a5e08284b2d91f5ba3017e22c9d
+# 7cbe0b52bf0b4447a7bb9c82941dcaf9
 msgid "빈 데이터플로우 생성 후 데이터셋 추가"
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:14
-# a9071f8eac0d4483952fa7ec60d58d47
+# a6e4d34b021e46cf806a9f4cc42466c0
 msgid "**데이터플로우** 홈 화면 우측 상단에서 **데이터플로우 추가**\\를 클릭합니다."
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:16
-# 61de4d53e87440759f5e979d54fc310e
+# 7dc5255d73374906ab4791bb7c10cddd
 msgid "생성할 데이터플로우의 **이름**\\과 **설명**\\을 입력하고 **완료**\\를 누르면, 빈 데이터플로우가 생성됩니다."
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:20
-# 07b06e0922764314863f3ebfa715c0af
+# 66b2cd7df6414e32a5f8d5d2b5d252e3
 msgid "화면 중앙에 위치한 **이 데이터플로우에 데이터셋 추가** 버튼을 누릅니다."
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:24
-# a2e3aa17f5cc48eea8eba8b8b12c31a1
+# cd2cdc771675408d88e5a701251bd972
 msgid "추가할 데이터셋들을 선택합니다."
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:28
-# 0ec133206e8e419a837293507f1a2ecc
+# ec931162241a487d849f6c4a94303d5c
 msgid "선택한 Imported Dataset과 그에 상응하는 Wrangled Dataset이 생성되었으면, **룰 편집** 버튼을 눌러 룰 편집을 실시합니다(자세한 절차는 :doc:`edit_rules` 참조)"
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:35
-# 5b9c383e62ff4ce085b493cd08490e5d
+# c0cc8b0451d14220aa6d58036dbc5cbd
 msgid "데이터셋 상세 화면에서 바로 데이터플로우 생성"
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:37
-# 0084b5080fb24324b3f795486800c9af
+# 8c2c43f73fea478f9ec132784942ea2b
 msgid "데이터셋 상세 화면에서 **이 데이터셋으로 새로운 데이터플로우 생성** 버튼을 누르면, 자동으로 데이터플로우를 만들고 **룰 편집** 직전의 단계까지 진행합니다."
 msgstr ""
 
 #: ../../discovery/part07/add_datasets.rst:42
-# 69a999ba46ff423283b6e2784b15a83c
+# 8a59a25689dc4f70adf44227ecf2feaf
 msgid "데이터플로우의 이름은 데이터셋 이름을 기반해서 자동으로 지어집니다."
 msgstr ""
 

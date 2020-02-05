@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>얄람 룰 내역 열람·수정하기 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>얄람 룰 내역 열람·수정하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,12 +20,22 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -36,8 +46,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="색인" href="../../genindex.html" />
-    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="알람 내역 열람하기" href="../part05/index.html" />
     <link rel="prev" title="통계" href="../part03/index.html" /> 
 </head>
@@ -66,7 +74,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -183,7 +191,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/anomaly/part04/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/anomaly/part04/index.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -202,8 +210,8 @@
 <p>알람 룰 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference internal" href="#alarm-rule-list"><span class="std std-ref">알람 룰 리스트</span></a></p></li>
-<li><p><a class="reference internal" href="#alarm-rule-details"><span class="std std-ref">알람 룰 상세</span></a></p></li>
+<li><a class="reference internal" href="#alarm-rule-list"><span class="std std-ref">알람 룰 리스트</span></a></li>
+<li><a class="reference internal" href="#alarm-rule-details"><span class="std std-ref">알람 룰 상세</span></a></li>
 </ul>
 </div></blockquote>
 <div class="section" id="alarm-rule-list">
@@ -217,15 +225,15 @@
 <p>리스트에 표시되는 정보는 아래와 같으며, 이를 기준으로 열거할 룰을 필터링하거나 검색할 수 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>Current Status:</strong> 해당 룰에 따른 모니터링 결과 상태</p></li>
-<li><p><strong>Alarm Rule Name:</strong> 해당 룰의 이름</p></li>
-<li><p><strong>DataSource:</strong> 모니터링 대상 데이터 소스</p></li>
-<li><p><strong>Measure:</strong> 모니터링 대상 측정값 컬럼</p></li>
-<li><p><strong>Alarm Interval:</strong> 알람 발생 주기</p></li>
-<li><p><strong>Condition:</strong> 해당 룰에 적용된 알람 발생 조건의 개수</p></li>
-<li><p><strong>Alarm:</strong> 해당 룰에 의해 발생한 알람의 수</p></li>
-<li><p><strong>Running:</strong> 해당 룰의 모니터링 활성 여부</p></li>
-<li><p><strong>Updated:</strong> 해당 룰을 마지막으로 업데이트한 시간과 사용자</p></li>
+<li><strong>Current Status:</strong> 해당 룰에 따른 모니터링 결과 상태</li>
+<li><strong>Alarm Rule Name:</strong> 해당 룰의 이름</li>
+<li><strong>DataSource:</strong> 모니터링 대상 데이터 소스</li>
+<li><strong>Measure:</strong> 모니터링 대상 측정값 컬럼</li>
+<li><strong>Alarm Interval:</strong> 알람 발생 주기</li>
+<li><strong>Condition:</strong> 해당 룰에 적용된 알람 발생 조건의 개수</li>
+<li><strong>Alarm:</strong> 해당 룰에 의해 발생한 알람의 수</li>
+<li><strong>Running:</strong> 해당 룰의 모니터링 활성 여부</li>
+<li><strong>Updated:</strong> 해당 룰을 마지막으로 업데이트한 시간과 사용자</li>
 </ul>
 </div></blockquote>
 </div>

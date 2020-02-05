@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Select a chart type &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Select a chart type &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,8 +45,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Chart style attributes" href="chart_style.html" />
     <link rel="prev" title="Draw a chart (pivoting)" href="pivoting.html" /> 
 </head>
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -195,7 +203,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part04/chart_types.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part04/chart_types.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -216,164 +224,237 @@
         .rst-content table.docutils td:nth-child(1) p{ margin-bottom: 10px;}
 </style><p>Metatron Discovery provides about 20 types of charts. If you place columns on shelves before selecting a chart, suitable charts are highlighted in purple.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/Chart_Types.00.en.png" src="../../_images/Chart_Types.00.en.png" />
 </div>
 </div></blockquote>
 <p>The table below summarizes conditions to create, uses, and examples for each chart.</p>
 <blockquote>
-<div><table class="colwidths-given docutils align-default">
+<div><table border="1" class="docutils">
 <colgroup>
-<col style="width: 15%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 30%" />
-<col style="width: 19%" />
+<col width="15%" />
+<col width="19%" />
+<col width="19%" />
+<col width="30%" />
+<col width="19%" />
 </colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Chart name/icon</p></th>
-<th class="head"><p>Conditions to create</p></th>
-<th class="head"><p>Characteristics</p></th>
-<th class="head"><p>Uses</p></th>
-<th class="head"><p>Examples</p></th>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><p class="first last">Chart name/icon</p>
+</th>
+<th class="head"><p class="first last">Conditions to create</p>
+</th>
+<th class="head"><p class="first last">Characteristics</p>
+</th>
+<th class="head"><p class="first last">Uses</p>
+</th>
+<th class="head"><p class="first last">Examples</p>
+</th>
 </tr>
 </thead>
-<tbody>
-<tr class="row-even"><td><p><img alt="icon01" src="../../_images/Chart_Types_Icon01.png" /></p>
-<p>Bar chart</p>
+<tbody valign="top">
+<tr class="row-even"><td><p class="first"><img alt="icon01" src="../../_images/Chart_Types_Icon01.png" /></p>
+<p class="last">Bar chart</p>
 </td>
-<td><p>Column: 1 or more dimensions / Cross: 1 or more measures</p></td>
-<td><p>Compares the value of each item.</p></td>
-<td><p>Used to compare groups or view trends over time. Very effective when the trend is significantly fluctuating.</p></td>
-<td><p>Comparison between products regarding their sales and profits</p></td>
+<td><p class="first last">Column: 1 or more dimensions / Cross: 1 or more measures</p>
+</td>
+<td><p class="first last">Compares the value of each item.</p>
+</td>
+<td><p class="first last">Used to compare groups or view trends over time. Very effective when the trend is significantly fluctuating.</p>
+</td>
+<td><p class="first last">Comparison between products regarding their sales and profits</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p><img alt="icon02" src="../../_images/Chart_Types_Icon02.png" /></p>
-<p>Table</p>
+<tr class="row-odd"><td><p class="first"><img alt="icon02" src="../../_images/Chart_Types_Icon02.png" /></p>
+<p class="last">Table</p>
 </td>
-<td><p>Column or row: 1 or more dimensions / Cross: 1 or more measures</p></td>
-<td><p>Displays the values of crossings between two dimensions as text.</p></td>
-<td><p>Used to view measure values aggregated by certain criteria. Useful to check exact values rather than a visualization of them.</p></td>
-<td><p>Sales details by year</p></td>
+<td><p class="first last">Column or row: 1 or more dimensions / Cross: 1 or more measures</p>
+</td>
+<td><p class="first last">Displays the values of crossings between two dimensions as text.</p>
+</td>
+<td><p class="first last">Used to view measure values aggregated by certain criteria. Useful to check exact values rather than a visualization of them.</p>
+</td>
+<td><p class="first last">Sales details by year</p>
+</td>
 </tr>
-<tr class="row-even"><td><p><img alt="icon03" src="../../_images/Chart_Types_Icon03.png" /></p>
-<p>Line chart</p>
+<tr class="row-even"><td><p class="first"><img alt="icon03" src="../../_images/Chart_Types_Icon03.png" /></p>
+<p class="last">Line chart</p>
 </td>
-<td><p>Column: 1 or more dimensions / Cross: 1 or more measures</p></td>
-<td><p>Displays data changes over time.</p></td>
-<td><p>Used to view trends over time. If changes are moderate, a line chart is more effective than a bar chart.</p></td>
-<td><p>Monthly sales trend</p></td>
+<td><p class="first last">Column: 1 or more dimensions / Cross: 1 or more measures</p>
+</td>
+<td><p class="first last">Displays data changes over time.</p>
+</td>
+<td><p class="first last">Used to view trends over time. If changes are moderate, a line chart is more effective than a bar chart.</p>
+</td>
+<td><p class="first last">Monthly sales trend</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p><img alt="icon04" src="../../_images/Chart_Types_Icon04.png" /></p>
-<p>Scatter chart</p>
+<tr class="row-odd"><td><p class="first"><img alt="icon04" src="../../_images/Chart_Types_Icon04.png" /></p>
+<p class="last">Scatter chart</p>
 </td>
-<td><p>Column: 1 measure / Row: 1 measure / Cross: 1 or more dimensions</p></td>
-<td><p>Displays relations between items.</p></td>
-<td><p>Used to define relations between two parameters.</p></td>
-<td><p>Relations between product sales and profits</p></td>
+<td><p class="first last">Column: 1 measure / Row: 1 measure / Cross: 1 or more dimensions</p>
+</td>
+<td><p class="first last">Displays relations between items.</p>
+</td>
+<td><p class="first last">Used to define relations between two parameters.</p>
+</td>
+<td><p class="first last">Relations between product sales and profits</p>
+</td>
 </tr>
-<tr class="row-even"><td><p><img alt="icon05" src="../../_images/Chart_Types_Icon05.png" /></p>
-<p>Heatmap</p>
+<tr class="row-even"><td><p class="first"><img alt="icon05" src="../../_images/Chart_Types_Icon05.png" /></p>
+<p class="last">Heatmap</p>
 </td>
-<td><p>Column or row: 1 or more dimensions / Cross: 1 or more measures</p></td>
-<td><p>Displays the values of crossings between two dimensions in colors and sizes at different points.</p></td>
-<td><p>Used to provide an intuitive view of relations between two dimensions represented by colors and sizes. Similar to a table chart, but more of a visual type.</p></td>
-<td><p>Sales of each product by region</p></td>
+<td><p class="first last">Column or row: 1 or more dimensions / Cross: 1 or more measures</p>
+</td>
+<td><p class="first last">Displays the values of crossings between two dimensions in colors and sizes at different points.</p>
+</td>
+<td><p class="first last">Used to provide an intuitive view of relations between two dimensions represented by colors and sizes. Similar to a table chart, but more of a visual type.</p>
+</td>
+<td><p class="first last">Sales of each product by region</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p><img alt="icon06" src="../../_images/Chart_Types_Icon06.png" /></p>
-<p>Pie chart</p>
+<tr class="row-odd"><td><p class="first"><img alt="icon06" src="../../_images/Chart_Types_Icon06.png" /></p>
+<p class="last">Pie chart</p>
 </td>
-<td><p>Cross: 1 or more dimensions, 1 or more measures</p></td>
-<td><p>Shows how much each item accounts for.</p></td>
-<td><p>Used to compare the compositions of something.</p></td>
-<td><p>Comparison between web browsers regarding their market share</p></td>
+<td><p class="first last">Cross: 1 or more dimensions, 1 or more measures</p>
+</td>
+<td><p class="first last">Shows how much each item accounts for.</p>
+</td>
+<td><p class="first last">Used to compare the compositions of something.</p>
+</td>
+<td><p class="first last">Comparison between web browsers regarding their market share</p>
+</td>
 </tr>
-<tr class="row-even"><td><p><img alt="icon07" src="../../_images/Chart_Types_Icon07.png" /></p>
-<p>Map view</p>
+<tr class="row-even"><td><p class="first"><img alt="icon07" src="../../_images/Chart_Types_Icon07.png" /></p>
+<p class="last">Map view</p>
 </td>
-<td><p>Layer shelf: dimension (location attribute), 1 or more dimensions, 1 or more measures</p></td>
-<td><p>Displays the data for each location on the map.</p></td>
-<td><p>Used for intuitive comparisons of variables by using colors for each region. Used to emphasize visual elements.</p></td>
-<td><p>Comparison of sales of each product by region</p></td>
+<td><p class="first last">Layer shelf: dimension (location attribute), 1 or more dimensions, 1 or more measures</p>
+</td>
+<td><p class="first last">Displays the data for each location on the map.</p>
+</td>
+<td><p class="first last">Used for intuitive comparisons of variables by using colors for each region. Used to emphasize visual elements.</p>
+</td>
+<td><p class="first last">Comparison of sales of each product by region</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p><img alt="icon08" src="../../_images/Chart_Types_Icon08.png" /></p>
-<p>KPI</p>
+<tr class="row-odd"><td><p class="first"><img alt="icon08" src="../../_images/Chart_Types_Icon08.png" /></p>
+<p class="last">KPI</p>
 </td>
-<td><p>Cross: 1 or more measures</p></td>
-<td><p>Displays main indicators along with their trends.</p></td>
-<td><p>Used to quickly convey information on an organization’s current achievement.</p></td>
-<td><p>An organization’s performance index, such as how many customers have been brought in this year</p></td>
+<td><p class="first last">Cross: 1 or more measures</p>
+</td>
+<td><p class="first last">Displays main indicators along with their trends.</p>
+</td>
+<td><p class="first last">Used to quickly convey information on an organization’s current achievement.</p>
+</td>
+<td><p class="first last">An organization’s performance index, such as how many customers have been brought in this year</p>
+</td>
 </tr>
-<tr class="row-even"><td><p><img alt="icon09" src="../../_images/Chart_Types_Icon09.png" /></p>
-<p>Box plot</p>
+<tr class="row-even"><td><p class="first"><img alt="icon09" src="../../_images/Chart_Types_Icon09.png" /></p>
+<p class="last">Box plot</p>
 </td>
-<td><p>Column: 1 or more dimensions / Row: 1 dimension / Cross: 1 measure</p></td>
-<td><p>Indicates increase and decrease in value.</p></td>
-<td><p>Used to compare groups regarding their share.</p></td>
-<td><p>Proportion of flight delay accounted for by each airplane model</p></td>
+<td><p class="first last">Column: 1 or more dimensions / Row: 1 dimension / Cross: 1 measure</p>
+</td>
+<td><p class="first last">Indicates increase and decrease in value.</p>
+</td>
+<td><p class="first last">Used to compare groups regarding their share.</p>
+</td>
+<td><p class="first last">Proportion of flight delay accounted for by each airplane model</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p><img alt="icon10" src="../../_images/Chart_Types_Icon10.png" /></p>
-<p>Waterfall chart</p>
+<tr class="row-odd"><td><p class="first"><img alt="icon10" src="../../_images/Chart_Types_Icon10.png" /></p>
+<p class="last">Waterfall chart</p>
 </td>
-<td><p>Column: 1 time-dimension / Cross: 1 measure</p></td>
-<td><p>Displays cumulative changes resulting from the increase or decrease in value for each time interval.</p></td>
-<td><p>Used to emphasize increase and decrease in value over time.</p></td>
-<td><p>Changes in the number of team members for a certain period; stock price trends</p></td>
+<td><p class="first last">Column: 1 time-dimension / Cross: 1 measure</p>
+</td>
+<td><p class="first last">Displays cumulative changes resulting from the increase or decrease in value for each time interval.</p>
+</td>
+<td><p class="first last">Used to emphasize increase and decrease in value over time.</p>
+</td>
+<td><p class="first last">Changes in the number of team members for a certain period; stock price trends</p>
+</td>
 </tr>
-<tr class="row-even"><td><p><img alt="icon11" src="../../_images/Chart_Types_Icon11.png" /></p>
-<p>Word cloud</p>
+<tr class="row-even"><td><p class="first"><img alt="icon11" src="../../_images/Chart_Types_Icon11.png" /></p>
+<p class="last">Word cloud</p>
 </td>
-<td><p>Cross: 1 or more dimensions, 1 measure</p></td>
-<td><p>Displays words sized in proportion to the number of mentions.</p></td>
-<td><p>Used to summarize and emphasize important words.</p></td>
-<td><p>Summary of the voices of customers</p></td>
+<td><p class="first last">Cross: 1 or more dimensions, 1 measure</p>
+</td>
+<td><p class="first last">Displays words sized in proportion to the number of mentions.</p>
+</td>
+<td><p class="first last">Used to summarize and emphasize important words.</p>
+</td>
+<td><p class="first last">Summary of the voices of customers</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p><img alt="icon12" src="../../_images/Chart_Types_Icon12.png" /></p>
-<p>Combo chart</p>
+<tr class="row-odd"><td><p class="first"><img alt="icon12" src="../../_images/Chart_Types_Icon12.png" /></p>
+<p class="last">Combo chart</p>
 </td>
-<td><p>Column: 1 or more dimensions / Cross: 2?4 measures</p></td>
-<td><p>Compares data by combining bar and line charts.</p></td>
-<td><p>Used to visualize different types of data simultaneously.</p></td>
-<td><p>Simultaneous monitoring of product price and sales</p></td>
+<td><p class="first last">Column: 1 or more dimensions / Cross: 2?4 measures</p>
+</td>
+<td><p class="first last">Compares data by combining bar and line charts.</p>
+</td>
+<td><p class="first last">Used to visualize different types of data simultaneously.</p>
+</td>
+<td><p class="first last">Simultaneous monitoring of product price and sales</p>
+</td>
 </tr>
-<tr class="row-even"><td><p><img alt="icon13" src="../../_images/Chart_Types_Icon13.png" /></p>
-<p>Treemap</p>
+<tr class="row-even"><td><p class="first"><img alt="icon13" src="../../_images/Chart_Types_Icon13.png" /></p>
+<p class="last">Treemap</p>
 </td>
-<td><p>Column: 1 dimension / Row: 1 or more dimensions / Cross: 1 measure</p></td>
-<td><p>Displays hierarchical data using nested rectangles.</p></td>
-<td><p>Used to visualize hierarchical data.</p></td>
-<td><p>Monitoring of sales of products classified into major, medium, and minor categories.</p></td>
+<td><p class="first last">Column: 1 dimension / Row: 1 or more dimensions / Cross: 1 measure</p>
+</td>
+<td><p class="first last">Displays hierarchical data using nested rectangles.</p>
+</td>
+<td><p class="first last">Used to visualize hierarchical data.</p>
+</td>
+<td><p class="first last">Monitoring of sales of products classified into major, medium, and minor categories.</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p><img alt="icon14" src="../../_images/Chart_Types_Icon14.png" /></p>
-<p>Radar chart</p>
+<tr class="row-odd"><td><p class="first"><img alt="icon14" src="../../_images/Chart_Types_Icon14.png" /></p>
+<p class="last">Radar chart</p>
 </td>
-<td><p>Cross: 1 dimension, 1 or more measures</p></td>
-<td><p>Displays different quantitative variables on axes starting from the same point.</p></td>
-<td><p>Used for a visual comparison among different quantitative variables.</p></td>
-<td><p>Product quality evaluation in five aspects.</p></td>
+<td><p class="first last">Cross: 1 dimension, 1 or more measures</p>
+</td>
+<td><p class="first last">Displays different quantitative variables on axes starting from the same point.</p>
+</td>
+<td><p class="first last">Used for a visual comparison among different quantitative variables.</p>
+</td>
+<td><p class="first last">Product quality evaluation in five aspects.</p>
+</td>
 </tr>
-<tr class="row-even"><td><p><img alt="icon15" src="../../_images/Chart_Types_Icon15.png" /></p>
-<p>Network diagram</p>
+<tr class="row-even"><td><p class="first"><img alt="icon15" src="../../_images/Chart_Types_Icon15.png" /></p>
+<p class="last">Network diagram</p>
 </td>
-<td><p>Subject shelf: 1 dimension / Target shelf: 1 dimension / Connecting shelf: 1 measure</p></td>
-<td><p>Diagram connecting elements in dependence relations</p></td>
-<td><p>Used to view data flows regarding where data elements are generated.</p></td>
-<td><p>Monitoring the task flows of a project</p></td>
+<td><p class="first last">Subject shelf: 1 dimension / Target shelf: 1 dimension / Connecting shelf: 1 measure</p>
+</td>
+<td><p class="first last">Diagram connecting elements in dependence relations</p>
+</td>
+<td><p class="first last">Used to view data flows regarding where data elements are generated.</p>
+</td>
+<td><p class="first last">Monitoring the task flows of a project</p>
+</td>
 </tr>
-<tr class="row-odd"><td><p><img alt="icon16" src="../../_images/Chart_Types_Icon16.png" /></p>
-<p>Gauge chart</p>
+<tr class="row-odd"><td><p class="first"><img alt="icon16" src="../../_images/Chart_Types_Icon16.png" /></p>
+<p class="last">Gauge chart</p>
 </td>
-<td><p>Column: Row: 1 or more dimensions / Cross: 1 measure</p></td>
-<td><p>Visualizes performance for the specified target.</p></td>
-<td><p>Used to view the proportions of data elements.</p></td>
-<td><p>Monitoring of profits by region</p></td>
+<td><p class="first last">Column: Row: 1 or more dimensions / Cross: 1 measure</p>
+</td>
+<td><p class="first last">Visualizes performance for the specified target.</p>
+</td>
+<td><p class="first last">Used to view the proportions of data elements.</p>
+</td>
+<td><p class="first last">Monitoring of profits by region</p>
+</td>
 </tr>
-<tr class="row-even"><td><p><img alt="icon17" src="../../_images/Chart_Types_Icon17.png" /></p>
-<p>Sankey diagram</p>
+<tr class="row-even"><td><p class="first"><img alt="icon17" src="../../_images/Chart_Types_Icon17.png" /></p>
+<p class="last">Sankey diagram</p>
 </td>
-<td><p>Column: 3 or more dimensions / Cross: 1 measure</p></td>
-<td><p>Displays the proportion of each data flow by the width of the connection line.</p></td>
-<td><p>Used to monitor data flows and their respective sizes.</p></td>
-<td><p>Monitoring energy flows in a factory</p></td>
+<td><p class="first last">Column: 3 or more dimensions / Cross: 1 measure</p>
+</td>
+<td><p class="first last">Displays the proportion of each data flow by the width of the connection line.</p>
+</td>
+<td><p class="first last">Used to monitor data flows and their respective sizes.</p>
+</td>
+<td><p class="first last">Monitoring energy flows in a factory</p>
+</td>
 </tr>
 </tbody>
 </table>

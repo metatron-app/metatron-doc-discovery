@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>“Dimensions” and “Measures” &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>“Dimensions” and “Measures” &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,8 +45,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Data source management home" href="manage_data_sources.html" />
     <link rel="prev" title="Data Source" href="data_source.html" /> 
 </head>
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -193,7 +201,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part02/dimension_and_measures.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part02/dimension_and_measures.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -210,7 +218,7 @@
 <h1>“Dimensions” and “Measures”<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>The columns of a data source linked to the dashboard are categorized into <strong>dimension</strong> and <strong>measure</strong> columns as explained below. To make full use of Discovery’s data analysis and visualization features, you must understand the concepts of dimensions and measures clearly.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/dimension_measure_01.en.png" src="../../_images/dimension_measure_01.en.png" />
 </div>
 </div></blockquote>
@@ -218,16 +226,20 @@
 <p>A column containing categorical data with the following characteristics:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>The values in this type of column are not for aggregation but to be categorized (e.g.: Category, Region, Organization)</p></li>
-<li><p>By each of these categories, measure values are aggregated.</p></li>
+<li><p class="first">The values in this type of column are not for aggregation but to be categorized (e.g.: Category, Region, Organization)</p>
+</li>
+<li><p class="first">By each of these categories, measure values are aggregated.</p>
+</li>
 </ul>
 </div></blockquote>
 <p><strong>Measure columns</strong></p>
 <p>A column containing quantitative data with the following characteristics:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>The values in this type of column are subject to aggregation or contain quantitative information (e.g.: Sales)</p></li>
-<li><p>These values are aggregated based on dimensions.</p></li>
+<li><p class="first">The values in this type of column are subject to aggregation or contain quantitative information (e.g.: Sales)</p>
+</li>
+<li><p class="first">These values are aggregated based on dimensions.</p>
+</li>
 </ul>
 </div></blockquote>
 </div>

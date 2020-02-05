@@ -1,0 +1,469 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>상세 설치 가이드 (CentOS 7 기준) &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="next" title="데이터셋 만들기" href="create_a_dataset.html" />
+    <link rel="prev" title="데이터 프리퍼레이션" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
+					 <!-- 하위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 한글 pdf 링크 -->
+					<li><a class="lang_sel" href="../../en/index.html">VIEW IN ENGLISH</a></li>
+					<li><a class="lang_sel" href="">PDF 버전으로 보기</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">상세 설치 가이드 (CentOS 7 기준)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1. 필수 패키지 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hadoop">2. Hadoop 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mysql">3. MySQL 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hive">4. Hive 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metatron">5. Metatron 설치</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">데이터플로우 관리하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">데이터 스냅샷 결과 이용하기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">계정 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Integrator 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">워크플로우 리스트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">워크플로우 에디터</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">모니터링</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use Case</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">데이터 프리퍼레이션</a> &raquo;</li>
+        
+      <li>상세 설치 가이드 (CentOS 7 기준)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/installation_detailed.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="centos-7">
+<h1>상세 설치 가이드 (CentOS 7 기준)<a class="headerlink" href="#centos-7" title="제목 주소">¶</a></h1>
+<p>Linux OS만 제공된 환경(클라우드 서비스)을 기준으로, 데이터 프리퍼레이션 기능을 모두 사용해볼 수 있도록 메타트론을 설치, 설정하는 것에 대한 가이드 문서입니다.</p>
+<div class="section" id="id1">
+<h2>1. 필수 패키지 설치<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
+<p>루트로 다음 명령들을 실행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>yum clean all &amp;&amp; yum repolist &amp;&amp; yum -y update
+yum -y install tar unzip vi vim telnet apr apr-util apr-devel apr-util-devel net-tools curl openssl elinks locate python-setuptools
+yum -y install java-1.8.0-openjdk-devel.x86_64
+export JAVA_HOME=/usr/lib/jvm/java
+export PATH=$PATH:$JAVA_HOME/bin
+</pre></div>
+</div>
+</div>
+<div class="section" id="hadoop">
+<h2>2. Hadoop 설치<a class="headerlink" href="#hadoop" title="제목 주소">¶</a></h2>
+<p>루트로 다음 명령들을 실행합니다.
+Hadoop 바이너리는 가까운 mirror를 통해서 다운로드 받는 것이 더 좋습니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>yum -y install openssh-server openssh-clients rsync netstat wget
+yum -y update libselinux
+
+ssh-keygen -q -N &quot;&quot; -t dsa -f /etc/ssh/ssh_host_dsa_key
+ssh-keygen -q -N &quot;&quot; -t rsa -f /etc/ssh/ssh_host_rsa_key
+ssh-keygen -q -N &quot;&quot; -t rsa -f /root/.ssh/id_rsa
+cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
+
+wget http://archive.apache.org/dist/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz
+tar -zxvf hadoop-2.7.3.tar.gz -C /opt
+rm -f hadoop-2.7.3.tar.gz
+ln -s /opt/hadoop-2.7.3 /opt/hadoop
+
+export HADOOP_PREFIX=/opt/hadoop
+export HADOOP_COMMON_HOME=$HADOOP_PREFIX
+export HADOOP_HDFS_HOME=$HADOOP_PREFIX
+export HADOOP_MAPRED_HOME=$HADOOP_PREFIX
+export HADOOP_YARN_HOME=$HADOOP_PREFIX
+export HADOOP_CONF_DIR=$HADOOP_PREFIX/etc/hadoop
+export YARN_CONF_DIR=$HADOOP_PREFIX
+export PATH=$PATH:$HADOOP_PREFIX/bin:$HADOOP_PREFIX/sbin
+
+sed -i &quot;/^export JAVA_HOME/ s:.*:export JAVA_HOME=$JAVA_HOME:&quot; $HADOOP_CONF_DIR/hadoop-env.sh
+sed -i &quot;/^export HADOOP_CONF_DIR/ s:.*:export HADOOP_CONF_DIR=$HADOOP_CONF_DIR:&quot; $HADOOP_CONF_DIR/hadoop-env.sh
+</pre></div>
+</div>
+<p>다음 파일들을 $HADOOP_CONF_DIR에 넣어주세요.</p>
+<blockquote>
+<div><a class="reference download internal" href="../../_downloads/core-site.xml" download=""><code class="xref download docutils literal"><span class="pre">core-site.xml</span></code></a>
+<a class="reference download internal" href="../../_downloads/hdfs-site.xml" download=""><code class="xref download docutils literal"><span class="pre">hdfs-site.xml</span></code></a>
+<a class="reference download internal" href="../../_downloads/mapred-site.xml" download=""><code class="xref download docutils literal"><span class="pre">mapred-site.xml</span></code></a>
+<a class="reference download internal" href="../../_downloads/yarn-site.xml" download=""><code class="xref download docutils literal"><span class="pre">yarn-site.xml</span></code></a></div></blockquote>
+<p>계속해서 루트로 다음 명령들을 실행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>$HADOOP_PREFIX/bin/hdfs namenode -format
+</pre></div>
+</div>
+<p>다음 내용을 /root/.ssh/config에 다음 내용을 추가해주세요.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">Host</span> <span class="o">*</span>
+  <span class="n">UserKnownHostsFile</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span>
+  <span class="n">StrictHostKeyChecking</span> <span class="n">no</span>
+  <span class="n">LogLevel</span> <span class="n">quiet</span>
+  <span class="n">Port</span> <span class="mi">2122</span>
+</pre></div>
+</div>
+<p>계속해서 루트로 다음 명령들을 실행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>chmod 600 /root/.ssh/config
+chown root:root /root/.ssh/config
+
+chmod +x $HADOOP_CONF_DIR/*-env.sh
+
+sed  -i &quot;/^[^#]*UsePAM/ s/.*/#&amp;/&quot;  /etc/ssh/sshd_config
+echo &quot;UsePAM no&quot; &gt;&gt; /etc/ssh/sshd_config
+echo &quot;Port 2122&quot; &gt;&gt; /etc/ssh/sshd_config
+</pre></div>
+</div>
+<p>SSH 서버를 다시 시작합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">service</span> <span class="n">sshd</span> <span class="n">restart</span>
+</pre></div>
+</div>
+<p>HDFS 및 Yarn을 실행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">start</span><span class="o">-</span><span class="n">dfs</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">start</span><span class="o">-</span><span class="n">yarn</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Hadoop이 제대로 설치되었는지 테스트해봅니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>hdfs dfs -mkdir -p /user/hadoop/input
+hdfs dfs -put $HADOOP_PREFIX/LICENSE.txt /user/hadoop/input
+hadoop jar $HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /user/hadoop/input /user/hadoop/output
+</pre></div>
+</div>
+</div>
+<div class="section" id="mysql">
+<h2>3. MySQL 설치<a class="headerlink" href="#mysql" title="제목 주소">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dev</span><span class="o">.</span><span class="n">mysql</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">get</span><span class="o">/</span><span class="n">mysql57</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="n">el7</span><span class="o">-</span><span class="mf">7.</span><span class="n">noarch</span><span class="o">.</span><span class="n">rpm</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">localinstall</span> <span class="n">mysql57</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="n">el7</span><span class="o">-</span><span class="mf">7.</span><span class="n">noarch</span><span class="o">.</span><span class="n">rpm</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="n">repolist</span> <span class="n">enabled</span> <span class="o">|</span> <span class="n">grep</span> <span class="s2">&quot;mysql.*-community.*&quot;</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">mysql</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">server</span> <span class="n">mysql</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">mysql57</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="n">el7</span><span class="o">-</span><span class="mf">7.</span><span class="n">noarch</span><span class="o">.</span><span class="n">rpm</span>
+<span class="n">service</span> <span class="n">mysqld</span> <span class="n">start</span>
+</pre></div>
+</div>
+<p>다음의 명령을 통해 임시패스워드를 알아냅니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">grep</span> <span class="s1">&#39;temporary password&#39;</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">mysqld</span><span class="o">.</span><span class="n">log</span> <span class="o">|</span> <span class="n">awk</span> <span class="p">{</span><span class="s1">&#39;print $11&#39;</span><span class="p">}</span>
+<span class="n">Z</span><span class="o">&amp;</span><span class="n">O</span><span class="o">+</span><span class="n">estx9vTt</span>
+</pre></div>
+</div>
+<p>위 패스워드를 이용해서 mysql_secure_installation을 실행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql_secure_installation
+Enter password for user root: -&gt; Z&amp;O+estx9vTt
+New password: -&gt; Metatron123$
+Re-enter new password: -&gt; Metatron123$
+Change the password for root ? ((Press y|Y for Yes, any other key for No) : y
+New password: -&gt; Metatron123$
+Re-enter new password: -&gt; Metatron123$
+Do you wish to continue with the password provided? -&gt; y
+Remove anonymous users? -&gt; enter
+Disallow root login remotely? -&gt; enter
+Remove test database and access to it? -&gt; enter
+Reload privilege tables now? -&gt; enter
+</pre></div>
+</div>
+<p>MySQL에 접속해봅니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
+</pre></div>
+</div>
+</div>
+<div class="section" id="hive">
+<h2>4. Hive 설치<a class="headerlink" href="#hive" title="제목 주소">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>wget http://mirror.navercorp.com/apache/hive/hive-2.3.6/apache-hive-2.3.6-bin.tar.gz \
+      &amp;&amp; tar -zxvf apache-hive-2.3.6-bin.tar.gz -C /opt \
+      &amp;&amp; rm -f apache-hive-2.3.6-bin.tar.gz \
+      &amp;&amp; ln -s /opt/apache-hive-2.3.6-bin /opt/hive
+export HIVE_HOME=/opt/hive
+export PATH=$PATH:$HIVE_HOME/bin:$HIVE_HOME/hcatalog/sbin
+wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar
+mv mysql-connector-java-5.1.38.jar $HIVE_HOME/lib/
+</pre></div>
+</div>
+<p>다음 파일을 $HIVE_HOME/conf에 넣어주세요.</p>
+<blockquote>
+<div><a class="reference download internal" href="../../_downloads/hive-site.xml" download=""><code class="xref download docutils literal"><span class="pre">hive-site.xml</span></code></a></div></blockquote>
+<p>Hive metastore를 초기화합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
+create database hive_metastore;
+create user &#39;hive&#39;@&#39;%&#39; identified by &#39;Metatron123$&#39;;
+grant all privileges on *.* to &#39;hive&#39;@&#39;%&#39;;
+grant all privileges on hive_metastore.* to &#39;hive&#39;@&#39;%&#39;;
+create user &#39;hive&#39;@&#39;localhost&#39; identified by &#39;Metatron123$&#39;;
+grant all privileges on *.* to &#39;hive&#39;@&#39;localhost&#39;;
+grant all privileges on hive_metastore.* to &#39;hive&#39;@&#39;localhost&#39;;
+flush privileges;
+quit
+schematool -initSchema -dbType mysql
+</pre></div>
+</div>
+<p>Hive를 시작합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>hdfs dfs -mkdir -p /user/hive/warehouse
+mkdir -p $HIVE_HOME/hcatalog/var/log
+hcat_server.sh start
+hiveserver2 &amp;
+</pre></div>
+</div>
+<p>Hive에 접속해봅니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">beeline</span> <span class="o">-</span><span class="n">u</span> <span class="n">jdbc</span><span class="p">:</span><span class="n">hive2</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">10000</span> <span class="s2">&quot;&quot;</span> <span class="s2">&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="metatron">
+<h2>5. Metatron 설치<a class="headerlink" href="#metatron" title="제목 주소">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">mkdir</span> <span class="o">/</span><span class="n">servers</span>
+<span class="n">tar</span> <span class="n">zxf</span> <span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">servers</span>
+<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-*</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span>
+<span class="n">export</span> <span class="n">METATRON_HOME</span><span class="o">=/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span>
+</pre></div>
+</div>
+<p>다음 파일들을 $METATRON_HOME/conf에 넣어주세요.</p>
+<blockquote>
+<div><a class="reference download internal" href="../../_downloads/application-config.yaml" download=""><code class="xref download docutils literal"><span class="pre">application-config.yaml</span></code></a>
+<a class="reference download internal" href="../../_downloads/metatron-env.sh" download=""><code class="xref download docutils literal"><span class="pre">metatron-env.sh</span></code></a>
+<a class="reference download internal" href="../../_downloads/logback-console.xml" download=""><code class="xref download docutils literal"><span class="pre">logback-console.xml</span></code></a></div></blockquote>
+<p>Metatron을 초기화합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
+create database polaris;
+create user &#39;polaris&#39;@&#39;%&#39; identified by &#39;Metatron123$&#39;;
+grant all privileges on *.* to &#39;polaris&#39;@&#39;%&#39;;
+grant all privileges on hive_metastore.* to &#39;polaris&#39;@&#39;%&#39;;
+create user &#39;polaris&#39;@&#39;localhost&#39; identified by &#39;Metatron123$&#39;;
+grant all privileges on *.* to &#39;polaris&#39;@&#39;localhost&#39;;
+grant all privileges on hive_metastore.* to &#39;polaris&#39;@&#39;localhost&#39;;
+flush privileges;
+quit
+cd $METATRON_HOME
+bin/metatron.sh --init start
+</pre></div>
+</div>
+<p>진행상황을 보려면 log 파일을 tail 하세요.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">tail</span> <span class="o">-</span><span class="n">f</span> <span class="n">logs</span><span class="o">/</span><span class="n">metatron</span><span class="o">-*.</span><span class="n">out</span>
+</pre></div>
+</div>
+<p>이제 <a class="reference external" href="http://localhost:8180/">http://localhost:8180/</a> 으로 접속하면 됩니다.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create_a_dataset.html" class="btn btn-neutral float-right" title="데이터셋 만들기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="데이터 프리퍼레이션" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

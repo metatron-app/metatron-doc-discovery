@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part02/index.rst:2
-# a9d0a95735a741619eb01aab3ebf6e0a
+# e3ce4c1c8c714aa6bb3969f3ace86e09
 msgid "데이터 관리"
 msgstr ""
 
 #: ../../discovery/part02/index.rst:7
-# 72ebc2cf87c3455aa52ec32ab797ef8b
+# 2d11be9571e44fec9c56be19c8fc2416
 msgid "위 그림과 같이 Metatron Discovery의 3가지 분석 모듈(워크북, 노트북, 워크벤치)에서 사용하는 데이터는 다양한 원천 데이터 유형과 여러 엔진 및 저장소를 통해 마련됩니다. 따라서 이러한 데이터 흐름을 정형화 및 관리하고 여러 원천 데이터를 연결시켜주는 작업이 반드시 필요합니다."
 msgstr ""
 
 #: ../../discovery/part02/index.rst:9
-# b4692f4cb5a843e3bc38225405d689b6
+# ff4e1f9cfbe44f49bd6145a3c5abd4b8
 msgid "데이터 분석 및 시각화에 필요한 원천 데이터는 Metatron 내부 엔진로 가져와 **데이터 소스** 단위로 저장하거나, 아니면 **데이터 커넥션**\\을 통해 외부 데이터베이스와 직접 연결하여 사용할 수 있습니다. 그리고 이러한 데이터의 사용 현황은 **데이터 모니터링**\\을 이용하여 감독하고 추적할 수 있습니다."
 msgstr ""
 

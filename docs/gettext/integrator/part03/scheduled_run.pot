@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,92 +17,92 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../integrator/part03/scheduled_run.rst:4
-# 5e51e8dcb10245f99978a349e17067d4
+# 460f5ec6d22e4d91a2636faf64952242
 msgid "워크플로우 실행 예약하기"
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:9
-# bfcf03ee9eac42ae9a6fb8684e5a4771
+# 9040ab62e8414284921639b80fad1e01
 msgid "워크플로우를 정해진 주기에 따라 반복적으로 실행해야할 경우 이러한 실행을 예약하고, 그 결과를 SMS, 메신저, 이메일 등으로 보고받을 수 있습니다."
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:12
-# 08030900bc1f4979bb6708c79f57f88c
+# 2bc1480591f24ac1b3de37391c347b9b
 msgid "예약 실행 리스트"
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:14
-# 54e5cefe124e4e58b7ef09eed7bf2707
+# 269bda8a9952464fb071e0caf028b6d2
 msgid "워크플로우 에디터 우측 하단의 실행 내역 표시 영역에서 **Scheduled run** 탭을 클릭하면, 아래와 같이 해당 워크플로우에 대해 등록된 예약 실행 리스트가 나타납니다. 이 리스트에는 각 예약 실행 항목의 실행 현황이 표시되며, |exec| 버튼을 누르면 해당 예약 건이 실행되고 |bin| 버튼을 누르면 삭제됩니다."
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:20
-# c10e94f00d70472b85fdbb49d7f5036d
+# f2ed4db1f0f1465e9c3230a128d908dd
 msgid "예약 실행 추가하기"
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:22
-# ae96e085569b4c6cbbc82c6738306a11
+# be83dbc5587e4b1d836a8119e40d2883
 msgid "Scheduled run 영역에서 **+ Create execution schedule**\\을 클릭하면 다음과 같이 새 예약 실행을 생성하는 대화 상자가 열립니다. 아래 설명을 참조하여 각 필드 입력 후 **생성** 버튼을 클릭하십시오."
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:26
-# 9534e59f7306443997f0e33043cd9125
+# 5b9706bf95a24bd1b09a09e50160a82c
 msgid "**Name:** 예약 실행의 이름을 입력합니다."
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:27
-# fc22389a4d344a71b22b16cbf98de441
+# 3f8ac2c991664016be57d375cb5ddcbc
 msgid "**Description:** 예약 실행에 대한 설명을 입력합니다."
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:28
-# 72bd7fe93b6849eb97aa6184138590cd
+# e0e6c94eed124eff98ae5ac006707143
 msgid "**Tags:**"
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:29
-# f09e52c727724f70a772a1086ba58026
+# ead0340c8cba424ab706b3a2efd5f6da
 msgid "**Workflow:** 예약 실행할 워크플로우를 선택합니다."
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:30
-# 1f40f2fd46be4bc1b20bcff753bc694c
+# 25b78e6bd4474a8b975c681b0968786c
 msgid "**Period:** 예약 실행될 기간의 시작과 끝을 설정합니다."
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:31
-# 3975cd1f1d584390b8c6247896f78122
+# 409e42cc6f3a48949ea7bd2b9aded7b7
 msgid "**Frequency:** 예약실행되는 기간 중 반복 주기를 설정합니다."
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:32
-# ecf249594a46436aab287b0c39f23077
+# 9a404d812d5d470aa22ac67ab2ccf758
 msgid "**Concurrency:**"
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:33
-# 6059ebf5b40a4f53aee09093a52a1a66
+# 90715e9243554754b674296039f852b2
 msgid "**Timeout(min):**"
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:34
-# b9301f51a03e403bbead5c92d979050f
+# d4016d35eb874fd4a94a8e4810e0c7b9
 msgid "**Datasets:**"
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:35
-# 5de58b510e874016912b22c01c7f2a37
+# 2c0ef549411945039a9c3e75ea711f51
 msgid "**Configuration:**"
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:36
-# 9b47cf856aec480a99fb4c28a17a3232
+# 36c847accfb94737a4ba4bbc51c67782
 msgid "**Variables:**"
 msgstr ""
 
 #: ../../integrator/part03/scheduled_run.rst:37
-# 3cf3a452c03c4003939e7914796ca748
+# a1e1720c467d45d482630feec22fdd3d
 msgid "**Alert:**"
 msgstr ""
 

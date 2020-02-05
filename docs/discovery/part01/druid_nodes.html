@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Druid 기본 클러스터 아키텍쳐 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>Druid 기본 클러스터 아키텍쳐 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,12 +20,22 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -36,8 +46,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="색인" href="../../genindex.html" />
-    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="Druid 성능 평가" href="druid_tests.html" />
     <link rel="prev" title="Druid 특징" href="druid_features.html" /> 
 </head>
@@ -66,7 +74,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -204,7 +212,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part01/druid_nodes.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part01/druid_nodes.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -231,13 +239,13 @@
 <blockquote>
 <div><div class="figure align-center" id="id5">
 <img alt="Data processing in real-time nodes" src="../../_images/druid-archit-data-processing.png" />
-<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id5" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
 </div>
 <ol class="arabic simple">
-<li><p>유입되는 이벤트들은 메모리에 인덱싱되면서 즉시 쿼리에 사용될 수 있습니다.</p></li>
-<li><p>메모리 상의 데이터는 정기적으로 디스크에 저장되면서 수정 불가능한(읽기 전용) 컬럼형 포맷으로 변환됩니다.</p></li>
-<li><p>저장된 데이터는 off-heap 메모리로 로드되기 때문에 쿼리 가능한 상태가 유지됩니다.</p></li>
-<li><p>디스크에 저장된 인덱스들을 주기적으로 병합되어 데이터 〈세그먼트’를 구성한 후 딥 스토리지로 이관됩니다.</p></li>
+<li>유입되는 이벤트들은 메모리에 인덱싱되면서 즉시 쿼리에 사용될 수 있습니다.</li>
+<li>메모리 상의 데이터는 정기적으로 디스크에 저장되면서 수정 불가능한(읽기 전용) 컬럼형 포맷으로 변환됩니다.</li>
+<li>저장된 데이터는 off-heap 메모리로 로드되기 때문에 쿼리 가능한 상태가 유지됩니다.</li>
+<li>디스크에 저장된 인덱스들을 주기적으로 병합되어 데이터 &#8216;세그먼트&#8217;를 구성한 후 딥 스토리지로 이관됩니다.</li>
 </ol>
 </div></blockquote>
 <p>이런 식으로 real-time 노드로 ingestion된 모든 이벤트는 디스크 저장 전후를 막론하고 on-heap 또는 off-heap 메모리 상에 존재하므로 쿼리가 가능한 상태를 유지합니다(쿼리는 메모리 상의 인덱스와 디스크에 저장된 인덱스 모두에 전달됩니다). 이러한 real-time 노드 기능을 통해 Druid는 실시간 데이터 ingestion을 수행할 수 있습니다. 즉, 이벤트들이 발생하면 곧 이어서 쿼리 대상이 됩니다. 그리고 이러한 과정에서 데이터 손실이 발생하지 않습니다.</p>
@@ -250,7 +258,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id6">
 <img alt="Historical nodes download data from deep storage and load it in memory" src="../../_images/druid-archit-historical.png" />
-<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id6" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
 </div>
 </div></blockquote>
 <p>쿼리를 받으면 historical 노드는 우선 자신에게 이미 어떤 세그먼트가 존재하는지에 관한 정보를 보관하는 로컬 캐시를 확인합니다. 어떤 세그먼트에 관한 정보가 캐시에 없으면 노드는 딥 스토리지에서 해당 세그먼트를 다운로드합니다. 그런 다음, 해당 세그먼트는 Zookeeper에서 선언되어 쿼리가 가능한 대상이 되며, 노드는 이 세그먼트에 대해 요청된 쿼리를 수행합니다.</p>
@@ -264,7 +272,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id7">
 <img alt="Caching in broker nodes" src="../../_images/druid-archit-broker.png" />
-<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id7" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
 </div>
 </div></blockquote>
 <p>어떤 쿼리가 여러 세그먼트를 포괄할 경우 broker 노드는 캐시에 이미 존재하는 세그먼트들을 우선 확인합니다. 그리고 캐시에 없는 세그먼트들에 대해서는 그것이 보관된 historical 및 real-time 노드로 쿼리를 전달합니다. historical 노드들이 결과를 반환하면, broker 노드는 이 결과를 나중에 사용할 수 있도록 세그먼트별로 캐시에 저장합니다. real-time 노드의 데이터는 캐시에 저장되지 않으며, 따라서 real-time 데이터에 대한 요청은 항상 real-time 노드로 전달됩니다. real-time 노드의 데이터는 가변적이기 때문에 그 결과를 캐시에 저장하는 것은 안정적이지 않기 때문입니다.</p>
@@ -280,9 +288,9 @@
 <p>Druid는 클러스터 동작을 위해 몇 가지 외부 종속 모듈을 사용합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>Zookeeper:</strong> Druid는 Zookeeper를 통해 클러스터 내부 통신을 합니다.</p></li>
-<li><p><strong>메타데이터 스토리지:</strong> Druid는 메타데이터 스토리지를 통해 데이터 세그먼트 및 구성에 관한 메타데이터를 저장합니다. 메타데이터 스토리지로는 주로 MySQL과 PostgreSQL이 사용됩니다.</p></li>
-<li><p><strong>딥 스토리지:</strong> Druid 세그먼트들을 영구적으로 백업 저장하는 공간입니다. Druid에 ingestion되는 데이터는 세그먼트 형태로 딥 스토리지에 업로드되고, historical 노드들이 필요한 세그먼트를 여기서 다운로드합니다. 딥 스토리지로는 주로 S3 및 HDFS가 사용됩니다.</p></li>
+<li><strong>Zookeeper:</strong> Druid는 Zookeeper를 통해 클러스터 내부 통신을 합니다.</li>
+<li><strong>메타데이터 스토리지:</strong> Druid는 메타데이터 스토리지를 통해 데이터 세그먼트 및 구성에 관한 메타데이터를 저장합니다. 메타데이터 스토리지로는 주로 MySQL과 PostgreSQL이 사용됩니다.</li>
+<li><strong>딥 스토리지:</strong> Druid 세그먼트들을 영구적으로 백업 저장하는 공간입니다. Druid에 ingestion되는 데이터는 세그먼트 형태로 딥 스토리지에 업로드되고, historical 노드들이 필요한 세그먼트를 여기서 다운로드합니다. 딥 스토리지로는 주로 S3 및 HDFS가 사용됩니다.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -296,7 +304,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id8">
 <img alt="Example of Druid’s extended architecture" src="../../_images/intro-to-druid.png" />
-<p class="caption"><span class="caption-text">Source: MetaMarkets - Introduction to Druid by Fangjin Yang</span><a class="headerlink" href="#id8" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p class="caption"><span class="caption-text">Source: MetaMarkets - Introduction to Druid by Fangjin Yang</span></p>
 </div>
 </div></blockquote>
 <p>Metatron Discovery 엔진도 역시 비즈니스 인텔리전스를 위한 end-to-end 솔루션으로서 기능하기 위해 Druid 엔진 전후단에 다양한 모듈을 추가한 것입니다.</p>

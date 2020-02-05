@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Change dashboard size and layout &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Change dashboard size and layout &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,8 +45,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Check data sources in a dashboard" href="display_a_data_source.html" />
     <link rel="prev" title="Create a dashboard" href="create_a_dashboard.html" /> 
 </head>
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -202,7 +210,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part04/change_dashboard_layout_and_size.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part04/change_dashboard_layout_and_size.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -221,14 +229,18 @@
 <div class="section" id="id2">
 <h2>Dashboard widget arrangement settings<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/dashboard.12.en.png" src="../../_images/dashboard.12.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>Change widget location:</strong> Drag the title of a widget to move the widget.</p></li>
-<li><p><strong>Adjust widget width:</strong> Move the distance between widgets to adjust their widths.</p></li>
-<li><p><strong>Add a widget to the display area:</strong> Drag a widget from the widget list on the right panel to the left widget display area to add the widget to the display area.</p></li>
-<li><p><strong>Delete a widget from the display area:</strong> Click the X button on a widget shown in the widget display area to delete the widget from the display area.</p></li>
+<li><p class="first"><strong>Change widget location:</strong> Drag the title of a widget to move the widget.</p>
+</li>
+<li><p class="first"><strong>Adjust widget width:</strong> Move the distance between widgets to adjust their widths.</p>
+</li>
+<li><p class="first"><strong>Add a widget to the display area:</strong> Drag a widget from the widget list on the right panel to the left widget display area to add the widget to the display area.</p>
+</li>
+<li><p class="first"><strong>Delete a widget from the display area:</strong> Click the X button on a widget shown in the widget display area to delete the widget from the display area.</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
@@ -236,14 +248,18 @@
 <h2>Chart widget panel<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>On the chart widget panel, you can add/edit/delete a chart in the dashboard.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/dashboard.13.en.png" src="../../_images/dashboard.13.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>Number of chart widgets:</strong> Displays how many chart widgets are registered in the dashboard.</p></li>
-<li><p><strong>Add a chart widget:</strong> Click on it to create a new chart widget in the dashboard.</p></li>
-<li><p><strong>Chart widget list:</strong> Lists chart widgets registered in the dashboard. Hover the mouse over a widget to display the edit and delete icons. Drag a widget to the widget display area to display the widget in the display area.</p></li>
-<li><p><strong>Set chart hierarchy:</strong> Click on it to set parent/child relationships between charts in the dashboard. Selecting a data item from the parent chart filters the child chart by the selection. To set a hierarchy, drag the chart to be set as a child under the chart to be set as a parent. Once you finish setting the chart hierarchy, the chart menu is restructured accordingly.</p></li>
+<li><p class="first"><strong>Number of chart widgets:</strong> Displays how many chart widgets are registered in the dashboard.</p>
+</li>
+<li><p class="first"><strong>Add a chart widget:</strong> Click on it to create a new chart widget in the dashboard.</p>
+</li>
+<li><p class="first"><strong>Chart widget list:</strong> Lists chart widgets registered in the dashboard. Hover the mouse over a widget to display the edit and delete icons. Drag a widget to the widget display area to display the widget in the display area.</p>
+</li>
+<li><p class="first"><strong>Set chart hierarchy:</strong> Click on it to set parent/child relationships between charts in the dashboard. Selecting a data item from the parent chart filters the child chart by the selection. To set a hierarchy, drag the chart to be set as a child under the chart to be set as a parent. Once you finish setting the chart hierarchy, the chart menu is restructured accordingly.</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
@@ -251,13 +267,16 @@
 <h2>Text widget panel<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>On the text widget panel, you can add/edit/delete a text widget in the dashboard.</p>
 <blockquote>
-<div><div class="figure align-default">
-<a class="reference internal image-reference" href="../../_images/dashboard-textwidget.en.png"><img alt="../../_images/dashboard-textwidget.en.png" src="../../_images/dashboard-textwidget.en.png" style="width: 471.79999999999995px; height: 642.5999999999999px;" /></a>
+<div><div class="figure">
+<a class="reference internal image-reference" href="../../_images/dashboard-textwidget.en.png"><img alt="../../_images/dashboard-textwidget.en.png" src="../../_images/dashboard-textwidget.en.png" style="width: 471.8px; height: 642.6px;" /></a>
 </div>
 <ol class="arabic simple">
-<li><p><strong>Number of text widgets:</strong> Displays how many text widgets are registered in the dashboard.</p></li>
-<li><p><strong>Add a text widget:</strong> Click on it to create a new text widget in the dashboard.</p></li>
-<li><p><strong>Text widget list:</strong> Lists text widgets registered in the dashboard. Hover the mouse over a widget to display the edit and delete icons. Drag a widget to the widget display area to display the widget in the display area.</p></li>
+<li><p class="first"><strong>Number of text widgets:</strong> Displays how many text widgets are registered in the dashboard.</p>
+</li>
+<li><p class="first"><strong>Add a text widget:</strong> Click on it to create a new text widget in the dashboard.</p>
+</li>
+<li><p class="first"><strong>Text widget list:</strong> Lists text widgets registered in the dashboard. Hover the mouse over a widget to display the edit and delete icons. Drag a widget to the widget display area to display the widget in the display area.</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
@@ -265,22 +284,28 @@
 <h2>Layout panel<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>On the layout panel, you can adjust some settings on how to arrange widgets and display each widget in the widget display area.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <a class="reference internal image-reference" href="../../_images/dashboard.15.en.png"><img alt="../../_images/dashboard.15.en.png" src="../../_images/dashboard.15.en.png" style="width: 162.5px; height: 256.0px;" /></a>
 </div>
 <ul>
-<li><p><strong>Set board height</strong></p>
+<li><p class="first"><strong>Set board height</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>Fix to screen:</strong> Maximizes the height of the dashboard to fill the screen.</p></li>
-<li><p><strong>Fix to height:</strong> Set the height of the dashboard to a specific pixel value.</p></li>
-<li><p><strong>Margin between widgets:</strong> Sets the margin between widgets in the widget display area.</p></li>
+<li><p class="first"><strong>Fix to screen:</strong> Maximizes the height of the dashboard to fill the screen.</p>
+</li>
+<li><p class="first"><strong>Fix to height:</strong> Set the height of the dashboard to a specific pixel value.</p>
+</li>
+<li><p class="first"><strong>Margin between widgets:</strong> Sets the margin between widgets in the widget display area.</p>
+</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>Chart title:</strong> Sets whether to display the title of each chart and filter widget in the widget display area.</p></li>
-<li><p><strong>Legend:</strong> Sets whether to display a legend for each chart widget in the widget display area.</p></li>
-<li><p><strong>Mini-map:</strong> Sets whether to display a mini-map for each chart widget in the widget display area.</p></li>
+<li><p class="first"><strong>Chart title:</strong> Sets whether to display the title of each chart and filter widget in the widget display area.</p>
+</li>
+<li><p class="first"><strong>Legend:</strong> Sets whether to display a legend for each chart widget in the widget display area.</p>
+</li>
+<li><p class="first"><strong>Mini-map:</strong> Sets whether to display a mini-map for each chart widget in the widget display area.</p>
+</li>
 </ul>
 </div></blockquote>
 </div>
@@ -288,7 +313,7 @@
 <h2>Data source panel<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>In the data source panel, you can view and edit information on connected data sources, as well as add column filters easily. Click on a filter icon on a dimension or measure on the right-hand side to add a filter.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/dashboard-datasource-panel.en.png" src="../../_images/dashboard-datasource-panel.en.png" />
 </div>
 </div></blockquote>

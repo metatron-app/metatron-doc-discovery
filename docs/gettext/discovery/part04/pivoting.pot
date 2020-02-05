@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,47 +17,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part04/pivoting.rst:2
-# 5beb0e4052eb4492bc03198d5ee15804
+# a62696b31f6149a0820dffc954e31e11
 msgid "차트 그리기(pivoting)"
 msgstr ""
 
 #: ../../discovery/part04/pivoting.rst:5
-# baebf43dac0e4bea988cec042bf2cda3
+# e67da387da9e462680dc4869b8ac0428
 msgid "'Pivoting'이란"
 msgstr ""
 
 #: ../../discovery/part04/pivoting.rst:7
-# 9aa0c3cfdd934c3d9c78004943c90d1b
+# 261c86682a954ad5a3d50cd0384dbd73
 msgid "Pivoting이란 주어진 테이블을 특정 컬럼들을 기준으로 그룹화하는 과정을 의미하며, 이를 통해 분석가는 원천 데이터의 특정한 측면을 그래픽 또는 도표로 확인할 수 있습니다. 이러한 과정에는 의미 있는 데이터를 포함하는 컬럼들을 열/행/교차 선반에 배치하는 것을 포함합니다."
 msgstr ""
 
 #: ../../discovery/part04/pivoting.rst:12
-# 57168b6d96cc4bd5a7ab3d7e680c8d6d
+# 109a510dca06449093aae359742eee51
 msgid "위 그림은 두 개의 차원값 컬럼을 열선반에 배치하고 하나의 측정값 컬럼을 교차선반에 배치 한 상태를 보여주고 있습니다. 차트에는 이렇게 선반에 올려놓은 컬럼들의 데이터가 표시됩니다."
 msgstr ""
 
 #: ../../discovery/part04/pivoting.rst:15
-# 7b341786cc504271be5f5ad9f9bcef1f
+# dc696f572eb6492fb1d64c749995b664
 msgid "차트 유형별로 선반별 필수/권장 컬럼 유형이 다르며, 컬럼들을 선반에 올려놓기 전에 먼저 차트 유형을 선택하면 선반에 필요한 컬럼 유형이 제시됩니다."
 msgstr ""
 
 #: ../../discovery/part04/pivoting.rst:20
-# 110d2152b9884305a8bc1327d0819f96
+# efdcaa69e27943998b72b1923afcb3c9
 msgid "열/행/교차 선반의 개념"
 msgstr ""
 
 #: ../../discovery/part04/pivoting.rst:22
-# 52a2ff1e662f4eafbb9b37c3ba0d18c8
+# e6eb8f07429e4961b046c48e5a6e7cbd
 msgid "열/행/교차 선반의 개념은 Excel의 구조를 생각하면 쉽게 이해할 수 있습니다. 아래 그림과 같이 열/행은 블록을 정의하는 역할을 하고, 교차는 블록 안에 들어갈 값을 정하는 역할을 합니다."
 msgstr ""
 
 #: ../../discovery/part04/pivoting.rst:26
-# e9372422c113463f99d47bb4f1f0f07c
+# 7dfb8b8f31e94d9181b4562f3c0d9a18
 msgid "Excel에서 데이터를 열/행/교차를 2차원 값인 그리드에 표현한 다면, Metatron은 OLAP Data Discovery 도구로서, OLAP Cube를 통해 다차원에서 데이터를 조회합니다. 아래의 차트는 Metatron에서 3차원 큐브로 나타낸 열/행/교차 값의 축 그림 입니다."
 msgstr ""
 
 #: ../../discovery/part04/pivoting.rst:31
-# 7e0c4313251a4b67a6f96f92b48dec7a
+# e3284d02244e4fb293a21ab2dfa83c21
 msgid "Excel 그리드의 값을 3차원 차트에서 표현한다면 그리드의 교차값이 막대바 형태로 여러 개 세워 지게 될 수 있습니다. Metatron에서는 2차원 단면으로 차트가 보여지기 때문에 열과 행 기준으로 막대 바를 쌓아 올려서 표현하게 됩니다. 결국 아래 그 림의 회색 부분과 같은 2차원 형태의 차트로 나타납니다."
 msgstr ""
 

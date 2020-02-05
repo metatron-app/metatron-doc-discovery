@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create a notebook &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Create a notebook &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,8 +45,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Use a notebook" href="use_a_notebook.html" />
     <link rel="prev" title="Register a notebook server" href="register_a_notebook_server.html" /> 
 </head>
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -186,7 +194,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part05/create_a_notebook.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part05/create_a_notebook.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -204,35 +212,35 @@
 <p>Once the notebook server has been set up, you can create a notebook. A notebook is created as follows:</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>Click the <strong>+ Notebook</strong> button at the bottom of the workspace. You’ll be prompted to create a notebook.</p>
+<li><p class="first">Click the <strong>+ Notebook</strong> button at the bottom of the workspace. You’ll be prompted to create a notebook.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="노트북 생성 버튼" src="../../_images/create_a_notebook_00.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Select the type of data set that you wish to analyze in the notebook. You can choose between <strong>Data source</strong>, the unit of data used in Metatron Discovery, <strong>Dashboard</strong>, <strong>Chart</strong>, and <strong>Not selected</strong>. If you want to use Zeppelin, select <strong>Not selected</strong>.</p>
+<li><p class="first">Select the type of data set that you wish to analyze in the notebook. You can choose between <strong>Data source</strong>, the unit of data used in Metatron Discovery, <strong>Dashboard</strong>, <strong>Chart</strong>, and <strong>Not selected</strong>. If you want to use Zeppelin, select <strong>Not selected</strong>.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="노트북 새로 만들기 – 타입 선택" src="../../_images/create_a_notebook_01.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>After selecting either <strong>Data Source</strong>, <strong>Dashboard</strong>, or <strong>Chart</strong>, you can see a list of data currently registered in Metatron Discovery. Select the data to analyze and click Next.</p>
+<li><p class="first">After selecting either <strong>Data Source</strong>, <strong>Dashboard</strong>, or <strong>Chart</strong>, you can see a list of data currently registered in Metatron Discovery. Select the data to analyze and click Next.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="노트북 새로 만들기 – 데이터 소스 상세 정보" src="../../_images/create_a_notebook_02.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Enter the information about the notebook that you want to use as an analytics tool for data. The <strong>server type</strong> can only be selected for a notebook server connected at the initial notebook server setup. If <strong>Jupyter</strong> is selected, “R” or “Python” can be selected for analysis, whereas “Spark” (Scala) is used when <strong>Zeppelin</strong> is selected.</p>
+<li><p class="first">Enter the information about the notebook that you want to use as an analytics tool for data. The <strong>server type</strong> can only be selected for a notebook server connected at the initial notebook server setup. If <strong>Jupyter</strong> is selected, “R” or “Python” can be selected for analysis, whereas “Spark” (Scala) is used when <strong>Zeppelin</strong> is selected.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="노트북 새로 만들기 - 설정 요약 및 생성" src="../../_images/create_a_notebook_03.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Once a notebook has been created, you can find it in the workspace.</p>
+<li><p class="first">Once a notebook has been created, you can find it in the workspace.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="노트북 목록" src="../../_images/create_a_notebook_04.en.png" />

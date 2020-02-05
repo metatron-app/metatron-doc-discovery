@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part05/index.rst:2
-# fb4c2decb90d49ad98c92dd9483c3090
+# a8c117e87ee441cda4a475d8addf5736
 msgid "노트북"
 msgstr ""
 
 #: ../../discovery/part05/index.rst:7
-# 45038abaa77e4dfb8366c7bcc23a54fd
+# 02ed02dfd99442e6a965011f389757e3
 msgid "Metatron Discovery에서는 노트북 기능을 수행할 수 있습니다. 노트북이란, 라이브 코드, 등식, 시각화와 설명을 위한 텍스트 등을 포함한 문서를 만들고 공유할 수 있는 도구입니다. 주로 데이터 클리닝과 변형, 수치 시뮬레이션, 통계 모델링, 머신 러닝 등에 사용할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part05/index.rst:10
-# d3cf7ec3c5e243d3a393c86c4ee7df6c
+# 90b3b79f03f64f8eb23397de834aad91
 msgid "Metatron Discovery에서는 Jupyter와 Zeppelin을 등록하여 사용할 수 있도록 기능을 제공하고 있습니다. Jupyter는 데이터 과학 분야에서 주로 사용하는 Python, R 프로그래밍 언어를, Zeppelin은 Spark(scala) 프로그래밍 언어를 활용하여 실시간으로 인터렉티브하게 데이터를 분석하고 시각화할 수 있도록 도와줍니다. 노트북을 수행하기 전, 노트북 서버 세팅이 되어있어야 합니다."
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,87 +17,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../integrator/part03/control_flow.rst:4
-# e9f6b3bed1b24e69a7cf7205607f7316
+# 270bb3464008459db433b2bfa7a06c10
 msgid "제어 흐름 노드"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:6
-# 72d48a4ab33b45538f01d1f4c0f3f5fa
+# ce008b069649405ab92900ba28c5dfe5
 msgid "Integrator의 제어 흐름 노드들(control-flow nodes)은 워크플로우의 시작과 끝을 정의하고, :ref:`액션 노드 <action_nodes>`\\들의 흐름 경로를 결정하는 역할을 합니다. 지원하는 노드는 다음과 같습니다."
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:9
-# 6ae369dd5427413aacd792cf6c2fb46a
+# 268273e06094415a94e481564663e78b
 msgid "`Start`_"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:10
-# fa31408dbd9c479d9d4d7c4f4830069a
+# d54a4fde2e8e4dd387be5d574c503a50
 msgid "`End`_"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:11
-# f395b193b1a8485c88941770e71bfe80
+# c3a44290dc054477a8866c1a58fa6f7e
 msgid "`Decision`_"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:12
-# ab8719377c504dcc95cc39cebabc2460
+# f5168bf36a7443a281eb24285dfcd8ac
 msgid "`Fork`_"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:13
-# c10549b33bf146aebcdd643dfbd5e53b
+# d10dbeb67fb645d5b2534fda541b1c7b
 msgid "`Join`_"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:16
-# 00896b4c35ad4686842e72fbaeee8521
+# 8e99cf9bd1cf48e08423a96c8f4cc41c
 msgid "Start"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:18
-# 402c93cf26ca4e5da19236f574ca77bd
+# 4fce333b1c2f408594151a4c1161f06f
 msgid "모든 워크플로우의 시작점입니다. 워크플로우를 실행하기 위해서는 필수로 들어가야 합니다."
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:21
-# e711e905e7b64b9091e61d55dfddf1e8
+# 335ebd9b8cca4faf9613cc5cfd117f21
 msgid "End"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:23
-# 548c3ed9fddc4062b296554ec6cca974
+# b9906f6b78c443feadcf17bf04cb28cf
 msgid "모든 워크플로우의 종료점입니다. 워크플로우를 종료하기 위해서는 필수로 들어가야 합니다."
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:26
-# caf963debb6d4493adf97e4358de30bb
+# aa206277102c4a6a8fa8365b26f700cc
 msgid "Decision"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:28
-# f1482e3cde5d4eff9e3546340889d7ac
+# f69fc5f00c0342eeaa370989e24c16bb
 msgid "조건에 따라 분기할 수 있게 하는 노드입니다. 가지수 만큼의 Switch case 문이 발생합니다."
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:31
-# 91556dfb1b75417591842a4b0b274938
+# daaeaa5d63344294a603b7bedd45a452
 msgid "Fork"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:33
-# 7c420748d809496d85577987f232f198
+# f4ee73da7d414dc9b9433ba61d5e8ea3
 msgid "조건 없이 분기하여 무조건 실행하는 동시실행 분기함수(parallel execution)입니다."
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:36
-# 06278c7199444d3791393a92d5125016
+# e40c330f28404cde985d78fb99325d2a
 msgid "Join"
 msgstr ""
 
 #: ../../integrator/part03/control_flow.rst:38
-# 462f0eb27c4b4779842931f98b7f74bc
+# 1d143f83e76d4f92a0f7ef5ffb42a4fe
 msgid "여러 노드를 합쳐주는 역할을 합니다."
 msgstr ""
 

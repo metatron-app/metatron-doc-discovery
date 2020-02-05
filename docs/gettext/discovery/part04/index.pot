@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,37 +17,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part04/index.rst:2
-# 4dab803e1e2843aab5255cf9f2ac8124
+# 294a02ea1bac41b1a1d1f7a3151eac7a
 msgid "워크북"
 msgstr ""
 
 #: ../../discovery/part04/index.rst:7
-# 1a37c80a8b2541c18f78b9d2f631367c
+# 4656ab1bc00e4c7c897d42c93a9f8645
 msgid "워크북은 Metatron Discovery의 Druid 엔진을 기반으로 하는 비주얼 데이터 분석 모듈입니다. 위 그림과 같이 하나의 독립된 보고서 단위에 해당하는 각 **워크북**\\은 다양한 **대시보드**\\로 구성되며, 각 대시보드는 원천 데이터 분석 결과를 시각화해서 보여주는 각종 **차트**\\로 구성되어 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/index.rst:10
-# ab9fed94972b41c882175a8c456f9aa2
+# 544ce9bfc0874cb08270036835353233
 msgid "워크북의 기본적인 특징은 다음과 같습니다."
 msgstr ""
 
 #: ../../discovery/part04/index.rst:12
-# 1c91d317296b42cfa9a31ce7d5fdd5bf
+# f68d73f623264c18bb5560c854de26bd
 msgid "시계열 기반의 다차원 데이터 소스를 이용하여 신속하고 유연한 데이터 분석 가능."
 msgstr ""
 
 #: ../../discovery/part04/index.rst:13
-# a546f323702949d29f4702153f5d9728
+# f7fe0084dc164330acc787f6c97ec6a9
 msgid "각 대시보드에서 각종 차트와 텍스트 등의 시각화 위젯을 배치함으로써 프레젠테이션 형식의 보고서로 활용 가능."
 msgstr ""
 
 #: ../../discovery/part04/index.rst:14
-# 9654c543a05249dc9b1185f2f2c690fb
+# becdf5d08fb64636a967e957eecbe98e
 msgid "클러스터링, 예측선, 추세선 등의 자주 쓰는 알고리즘을 GUI(Graphical User Interface)로 구현 가능."
 msgstr ""
 
 #: ../../discovery/part04/index.rst:16
-# 148e2a26ad6442e9b93e260c466a872b
+# d362574d6da644c086cb98f0f0aea4c8
 msgid "본 단원의 구성은 아래와 같습니다."
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +17,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part04/display_a_data_source.rst:2
-# 90e1c7be8d904a93afb9930d9ac5773b
+# 6cbc1fc0064b4079ac0341d4da5bb81c
 msgid "대시보드 내에 데이터 소스 확인하기"
 msgstr ""
 
 #: ../../discovery/part04/display_a_data_source.rst:5
-# e24ef49afa874772b82ae36e793c0510
+# d16f009b036a4686a38d36629d565c88
 msgid "대시보드 기본 화면에서 |db_info| 버튼을 클릭하면 해당 대시보드에서 사용하는 데이터 소스들의 정보 를 보여주는 대화 상자가 나타납니다. 좌측 상단에서 확인하고자 하는 데이터 소스를 선택할 수 있 습니다. 이 대화 상자는 크게 3가지 탭(데이터 그리드, 컬럼 상세 탭, 대시보드 데이터 정보)으로 구 성됩니다."
 msgstr ""
 
 #: ../../discovery/part04/display_a_data_source.rst:8
-# 5a26b9abc0464d6ba57778a02e619099
+# 16a47d7b5a0d4bcf87055308a0ca9766
 msgid "데이터 그리드 탭"
 msgstr ""
 
 #: ../../discovery/part04/display_a_data_source.rst:10
-# 47236d12f5fa4c8d9d0bf809cc5452c2
+# 5618975a7dac46ecae5fa32ab48ae082
 msgid "해당 데이터 소스의 레코드 값이 모두 표시됩니다."
 msgstr ""
 
 #: ../../discovery/part04/display_a_data_source.rst:16
-# f1f3d7b2ddf14e99b05f5109d1bb3efd
+# 0c27d454b1e643ab9966cae1c8bbe157
 msgid "컬럼 상세 탭"
 msgstr ""
 
 #: ../../discovery/part04/display_a_data_source.rst:18
-# 067b33adf2814a26957d04a4ca29336c
+# 7aff2002d89342bd8ca6ec570ba5a0a5
 msgid "해당 데이터 소스를 구성하는 각 컬럼에 관한 정보를 상세히 보여줍니다."
 msgstr ""
 
 #: ../../discovery/part04/display_a_data_source.rst:24
-# 691a677ab66742289089fda493134559
+# 7f2cbe56de6e471bbe82c421189352cf
 msgid "대시보드 데이터 정보 탭"
 msgstr ""
 
 #: ../../discovery/part04/display_a_data_source.rst:26
-# 0804814986834910bde562c7a4fced12
+# 8d24008193b74c1f9db43213ee5cba03
 msgid "해당 데이터 소스 전체에 대한 요약 정보를 보여줍니다."
 msgstr ""
 

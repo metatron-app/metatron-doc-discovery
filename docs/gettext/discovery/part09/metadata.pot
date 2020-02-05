@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part09/metadata.rst:2
-# 49b8eb0d49de4f80ad4739e112a574af
+# 1c21302c217340e382fa5536c73a54f1
 msgid "메타데이터 관리하기"
 msgstr ""
 
 #: ../../discovery/part09/metadata.rst:3
-# e505ee087fb14378aa069dad28024206
+# af1233e0a1914ce78e4f373ca15a3a1e
 msgid "메타데이터는 Exploration에서 보여지는 각 데이터를 관리하고 더 자세하게 분석하기 위한 용도로 만들어졌습니다."
 msgstr ""
 

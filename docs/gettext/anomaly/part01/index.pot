@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,102 +17,102 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../anomaly/part01/index.rst:2
-# 6e31abb0f6b94c2d81ce7ec58a46a2de
+# 20b6fea1fc1042c58f0a8ea555ee6936
 msgid "Anomaly 확장팩 소개"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:4
-# 9eb20d9425254e65a6fc1931c0f07578
+# c574254561f44e99990618aaa7628ef1
 msgid "이상 탐지 확장팩 Anomaly는 Machine Learning 예측 모델을 기반으로 데이터 흐름의 비정상적인 상황을 감지하여 사용자가 즉각적으로 확인할 수 있도록 도와주는 도구입니다."
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:9
-# 2cc83ed6de804ddc8b041fa3656dd2aa
+# 97c811d19ae44688863b786b63b6bd5f
 msgid "기본 원리"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:11
-# 0c269c9743a740388546c86fc2ab66d0
+# 45ea4dcfcdf64229a41bfc290da71b65
 msgid "아래 그림과 같이 Anomaly는 대상 데이터 소스의 집계값을 실시간으로 예측하고 실제 값을 모니터링합니다."
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:17
-# 682a5bc96125496289ef8894b214877d
+# 15093c9b22f7401dbee70215a839410a
 msgid "여기서 **Predict**\\로 표시된 값은 머신러닝 기반으로 예측한 데이터 집계값이고, **Actual**\\로 표시된 값은 실제로 모니터링한 결과 값입니다. 아래 그림과 같이 두 값 간의 격차가 커질수록 **total abnormal score**\\가 증가하게 됩니다. 즉, 실제치가 예상치와 다르면 데이터 집계값이 그만큼 정상 범위를 벗어났다고 간주하는 것입니다."
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:23
-# 481a3b4a20cb442ba03cdeee1fbdbded
+# 9b1fb19839d048468c8bb83a13afc795
 msgid "이 예시에서는 abnormal score가 10점에 도달하면 ``Moderate`` 알람을 발생시키고, 80점에 도달하면 ``Critical`` 알람을 발생시키도록 설정되어 있습니다."
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:25
-# ffd5963f18304f13974b0d1d03524d29
+# 6ba1e6554e11498bb2da4f1db9c1f534
 msgid "이렇게 발생하는 알람은 다양한 채널로 사용자에게 통보되어, 사용자는 데이터 이상 상황에 즉각 대처할 수 있습니다."
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:28
-# d35977c31ca84d4092f80e1b2c912643
+# 600dacb87b66427c981899e122fb025f
 msgid "주요 기능"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:30
-# e61de398c3cc403abfcbe24423eda715
+# 1eda6945b06a4e1b831a2f9ad7656030
 msgid "Anomaly의 주요 기능은 다음과 같습니다."
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:32
-# 7e4f7d1b7d8c4166b801191ac9d5d218
+# 5a022886e7de47fabe9f349263831bf9
 msgid "**Machine Learning**"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:34
-# 9deecb6b19584980ab70c110e7a81063
+# 11c0f0e1add645119dcc771d9cdf10a2
 msgid "머신러닝에 기반한 예측 모델이 자동으로 추천되어 사용자 편의 증대"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:36
-# 3baa17e058bd4846af960850c24a8977
+# 7e182cbcc17f49f580597f5ff2186019
 msgid "**Alarm & Report**"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:38
-# 74c297659e7b4d29841ca0013c5e3db4
+# 15e1dcf75fda4dd5ab38e4ba960b0ad9
 msgid "비정상적인 상황 발생 시 즉각 알람 발동 및 보고서 생성"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:40
-# 5445685795364cbf8c80feb41036a8ac
+# b2e346bf4796439397104dcd1d2bdcd2
 msgid "**Analyze**"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:42
-# 35e5e74ad3924930b6cbba03e895d4f5
+# 12fb4380543e4f189544ddff36c534fd
 msgid "데이터로 차트 생성하고 분석하는 서비스 메타트론 디스커버리와 연계 가능"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:44
-# 336c185f97414bedbb2b3004fb1bbf22
+# 64a6859f64ea48a7bafe2d19b2d21dce
 msgid "**Link with Learning System**"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:46
-# 3a2f6c18b3d849a4b1aef68b1e37fbda
+# d385a52b007349199d152c3dabc66018
 msgid "새로운 분석을 적용할 수 있도록 외부 분석 시스템과의 연계를 지원"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:49
-# 06adbc50a97c49acb2ab13f5bd2d5355
+# 35fbb86f72ac47fb9da6d7ee5088cdfc
 msgid "구조"
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:51
-# d569ef0811b84745bf7830b3d9d9251f
+# b535b6389203498aa03a8cf1a64bb271
 msgid "Anomaly의 메뉴 구성은 다음과 같습니다."
 msgstr ""
 
 #: ../../anomaly/part01/index.rst:57
-# de27a3a30de44de5b8236dfb0487f2a4
+# 57e1af439a774a51922445058770caef
 msgid "주요 메뉴 간 이동이 쉽고 세부 항목 간 참조 기능도 잘 구축되어 있어, 알람 룰 설정값과 발생한 알람 내역, 그리고 전반적인 알람 현황 간의 유기적인 파악이 용이합니다."
 msgstr ""
 

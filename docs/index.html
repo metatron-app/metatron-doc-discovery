@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>메타트론 사용자 문서 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>메타트론 사용자 문서 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,12 +20,22 @@
   <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'./',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="_static/jquery.js"></script>
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
         <script type="text/javascript" src="_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -36,8 +46,6 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="_static/css/layout.css" type="text/css" />
-    <link rel="index" title="색인" href="genindex.html" />
-    <link rel="search" title="검색" href="search.html" />
     <link rel="next" title="디스커버리 퀵가이드" href="discovery/part00/index.html" /> 
 </head>
 
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -178,7 +186,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -195,8 +203,8 @@
 <h1>메타트론 사용자 문서<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <div class="section" id="metatron-discovery">
 <h2>Metatron Discovery<a class="headerlink" href="#metatron-discovery" title="제목 주소">¶</a></h2>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<div class="toctree-wrapper compound" id="id2">
+<p class="caption"><span class="caption-text">Metatron Discovery</span><a class="headerlink" href="#id2" title="Permalink to this toctree">¶</a></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part00/index.html">디스커버리 퀵가이드</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part00/step1.html">Step1. 데이터 소스 만들기</a></li>
@@ -299,7 +307,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part02/index.html">데이터 관리</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part02/data_source.html">데이터 소스</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/dimension_and_measures.html">〈차원값’과 〈측정값’의 개념</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part02/dimension_and_measures.html">&#8216;차원값&#8217;과 &#8216;측정값&#8217;의 개념</a></li>
 <li class="toctree-l3"><a class="reference internal" href="discovery/part02/manage_data_sources.html">데이터 소스 관리 홈 화면</a></li>
 <li class="toctree-l3"><a class="reference internal" href="discovery/part02/data_source_detail_view.html">데이터 소스 상세 정보</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="discovery/part02/data_source_detail_view.html#id2">상단 공통 영역</a></li>
@@ -385,7 +393,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="discovery/part04/pivoting.html">차트 그리기(pivoting)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/pivoting.html#id1">〈Pivoting’이란</a></li>
+<li class="toctree-l4"><a class="reference internal" href="discovery/part04/pivoting.html#id1">&#8216;Pivoting&#8217;이란</a></li>
 <li class="toctree-l4"><a class="reference internal" href="discovery/part04/pivoting.html#id2">열/행/교차 선반의 개념</a></li>
 </ul>
 </li>
@@ -472,6 +480,14 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part07/index.html">데이터 프리퍼레이션</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part07/installation_detailed.html">상세 설치 가이드 (CentOS 7 기준)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#id1">1. 필수 패키지 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#hadoop">2. Hadoop 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#mysql">3. MySQL 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#hive">4. Hive 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#metatron">5. Metatron 설치</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part07/create_a_dataset.html">데이터셋 만들기</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="discovery/part07/create_a_dataset.html#create-a-dataset-of-file">파일 타입 데이터셋 생성하기</a></li>
 <li class="toctree-l3"><a class="reference internal" href="discovery/part07/create_a_dataset.html#create-a-dataset-of-database">데이터베이스 타입 데이터셋 생성하기</a></li>
@@ -646,8 +662,8 @@
 </div>
 <div class="section" id="ex-pack-for-workflow-integrator">
 <h2>EX-pack for Workflow Integrator<a class="headerlink" href="#ex-pack-for-workflow-integrator" title="제목 주소">¶</a></h2>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<div class="toctree-wrapper compound" id="id3">
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span><a class="headerlink" href="#id3" title="Permalink to this toctree">¶</a></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="integrator/part01/index.html">Integrator 확장팩 소개</a></li>
 <li class="toctree-l1"><a class="reference internal" href="integrator/part02/index.html">워크플로우 리스트</a></li>
@@ -694,8 +710,8 @@
 </div>
 <div class="section" id="ex-pack-for-anomaly-detection">
 <h2>EX-pack for Anomaly Detection<a class="headerlink" href="#ex-pack-for-anomaly-detection" title="제목 주소">¶</a></h2>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<div class="toctree-wrapper compound" id="id4">
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span><a class="headerlink" href="#id4" title="Permalink to this toctree">¶</a></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="anomaly/part01/index.html">Anomaly 확장팩 소개</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="anomaly/part01/index.html#basic-principles">기본 원리</a></li>

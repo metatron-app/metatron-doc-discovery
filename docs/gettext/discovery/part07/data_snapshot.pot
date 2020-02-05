@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,102 +17,102 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part07/data_snapshot.rst:2
-# 496f3f820b894482a45dfaf5971f6274
+# f285cdb26faa45648ffa348646f1b86d
 msgid "데이터 스냅샷 결과 이용하기"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:4
-# f6cb50c0724e4dc1a7013b1158fbca25
+# 3b5d139893b54f7f9c99b670298c481e
 msgid "데이터플로우를 통해 생성된 **데이터 스냅샷**\\은 다음과 같이 활용할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:6
-# d45cd961d12f436d9980f5163a8de27f
+# 455d82bb83134c80ac30a0b06a925dc0
 msgid ":ref:`snapshot_result_check`"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:7
-# ce9eeaab8f9b4a8b9498bd632f434fc5
+# 9b16d836cd4c4ec188b25112520995ac
 msgid ":ref:`snapshot_into_druid`"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:8
-# 59883b92ebc14ade9bf7c101298f7471
+# 541105626b9643b7b3db3455f81f9c5b
 msgid ":ref:`snapshot_into_csv`"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:13
-# f6e247706ce1474f8246d46cfc6aea10
+# b5b51b8a585f4c608530c1efb6f4f821
 msgid "데이터 스냅샷 결과 확인하기"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:15
-# 703ec5b3b1d04db8a2c7191bff0ba55a
+# 800ba334ce0b49dd9d3185ab5f91adc7
 msgid "스냅샷의 생성 단계는 다음과 같은 3가지 경우로 분류됩니다."
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:17
-# 83a301c9657d44cd813907b6cf6dc06d
+# 791d5c26fb3f4bf78331a26e96c0b9fa
 msgid "**성공** = SUCCEEDED"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:18
-# 7cc2e4f1c89f4d0cb9589aa60f575cb5
+# 4cb084e0519248178141e652d05eacb1
 msgid "**실패** = FAILED"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:19
-# 4208b189912146648beeea86df9db567
+# 11d9c611e7a84f119143131de8bfdde8
 msgid "**처리중** = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:21
-# 95822bf180ba4aa48ee377ff568442da
+# 1910475e3796436ebb149e6a7538260d
 msgid "스냅샷의 상세한 처리 결과는 다음 2가지 경로를 통해 확인할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:23
-# 7b5020e3a627462fab235e5395893bd5
+# 275bce7680c94b928093591b26811c5a
 msgid "**MANAGEMENT** > **데이터 프리퍼레이션** > **데이터 스냅샷**\\의 스냅샷 목록을 통해서 확인"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:27
-# ac4b8d9efc984673a150eb9607758268
+# 08bbe00f2dd04135ac814ca239ee50c4
 msgid "**데이터플로우**\\의 :doc:`룰 편집 <edit_rules>` 화면 우측에서 **스냅샷(#)** 탭을 클릭"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:31
-# 9c60ffbd3d104378816e4541a1478a41
+# f2fecd5080a4430b9d0d43905aecf4ad
 msgid "생성에 성공한 스냅샷의 상세 보기 화면으로 들어가면, 데이터의 유효성 비율, 생성된 스냅샷의 그리드 등을 확인할 수 있고, 스냅샷 결과를 :ref:`CSV 파일로 다운로드 <snapshot_into_csv>`\\할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:35
-# eb6a20957507445a9f982458b32d817c
+# 4af76f94b3a24536a15055edeb3471a9
 msgid "유효한 데이터가 생성되지 못한 스냅샷의 상세 보기 화면으로 들어가면, 실패를 발생시킨 예외의 로그가 표시됩니다."
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:42
-# e77d4569a232435fbb4908c1227ec0fc
+# f2f5e706a40f41a9b6ab30497b5ffeeb
 msgid "Metatron 엔진으로 적재하기"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:44
-# 439e26af27ce4365b81dd645b0cb5ca4
+# 85e0ab2d4cdb4e638ed29bbcf6454e0c
 msgid "(개발예정)"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:49
-# 299d2b5699d44f15bcbc282f9eab90a5
+# 5080f63ed2714bca81e22ee3ae67f576
 msgid "CSV파일로 다운로드 받기"
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:51
-# 53bd10709c024813bb902f7a8fdccd1e
+# a864e75a32d34cdb8b2f3e62de7f1683
 msgid "생성에 성공한 스냅샷의 상세 보기에서는 **CSV로 다운로드**\\가 가능합니다."
 msgstr ""
 
 #: ../../discovery/part07/data_snapshot.rst:55
-# efdba1279cdc4aa4aa6e5a23a50cb9fd
+# 41ac52c997c84520bdd0e9fa01cc7b14
 msgid "다운로드한 파일은 표준 CSV 형식으로, 'comma'로 구분되고 'new line'으로 개행합니다."
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part08/permissions.rst:4
-# 6d119909828446d9885ffa4d4f1b316c
+# e23e3d4992734770a2393736fc2e0b69
 msgid "사용자 권한"
 msgstr ""
 
 #: ../../discovery/part08/permissions.rst:6
-# 192a57cd5f414c68b16568af61a0e107
+# 2a4f6a3d01c64475ba9dfd75df4fc0c0
 msgid "Metatron Discovery는 아래 화면과 같이 총 4종류의 권한을 지원하여 사용자 계정별로 접근 권한에 차등을 둘 수 있습니다. 본 메뉴에서는 개별 사용자 또는 그룹에게 부여하는 권한을 설정할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part08/permissions.rst:10
-# 9b423b068c7a462781fbbed3ced8098e
+# cd7782a71e6a4e47964cc01f699705e6
 msgid "홈 화면에 제시된 4개의 권한 중 하나를 클릭하면 아래와 같이 해당 권한이 부여된 개인 사용자와 그룹이 표시됩니다."
 msgstr ""
 
 #: ../../discovery/part08/permissions.rst:14
-# 554634758e8f4077a792453b9320fe21
+# ccf5214e77b34f6cbe612836e7db7b00
 msgid "**멤버** 또는 **그룹** 영역에서 |setup| 아이콘을 클릭하면 아래와 같은 설정 팝업이 나타나서 해당 권한을 부여받는 멤버/그룹을 설정할 수 있습니다."
 msgstr ""
 

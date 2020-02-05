@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Control flow nodes &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Control flow nodes &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,8 +45,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Schedule a workflow run" href="scheduled_run.html" />
     <link rel="prev" title="Action nodes" href="tasks.html" /> 
 </head>
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -192,7 +200,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/integrator/part03/control_flow.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/integrator/part03/control_flow.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -210,11 +218,11 @@
 <p>The control flow nodes of Integrator define the start and end of a workflow and determine the flow path of <a class="reference internal" href="tasks.html#action-nodes"><span class="std std-ref">action nodes</span></a>. The supported nodes are as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference internal" href="#start">Start</a></p></li>
-<li><p><a class="reference internal" href="#end">End</a></p></li>
-<li><p><a class="reference internal" href="#decision">Decision</a></p></li>
-<li><p><a class="reference internal" href="#fork">Fork</a></p></li>
-<li><p><a class="reference internal" href="#join">Join</a></p></li>
+<li><a class="reference internal" href="#start">Start</a></li>
+<li><a class="reference internal" href="#end">End</a></li>
+<li><a class="reference internal" href="#decision">Decision</a></li>
+<li><a class="reference internal" href="#fork">Fork</a></li>
+<li><a class="reference internal" href="#join">Join</a></li>
 </ul>
 </div></blockquote>
 <div class="section" id="start">

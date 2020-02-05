@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../integrator/part02/index.rst:4
-# 83e31ea2cd484877844b10e22841675d
+# 3972d506c46742d09c896582c8e6d940
 msgid "워크플로우 리스트"
 msgstr ""
 
 #: ../../integrator/part02/index.rst:6
-# 72438186d3ad47778a8cc895fcc8411f
+# cb630fb707c44f4194b4edc160d435bf
 msgid "Integrator 메인 홈에서 **워크플로우** 탭으로 들어가면, 아래와 같이 현재 등록된 워크플로우들을 열거하여 보여줍니다. **상태** 컬럼에서는 각 워크플로우의 진행 현황을 간략하게 보여줍니다."
 msgstr ""
 
 #: ../../integrator/part02/index.rst:11
-# 206d54a001e545a7b40120b2c18bed82
+# 26c216450b724f7c9891c4197a2b1c9c
 msgid "리스트에 나열된 워크플로우 중 하나를 클릭하면 해당 워크플로우의 에디터 화면으로 이동합니다. 워크플로우 에디터에 대한 자세한 설명은 :ref:`workflow_editor` 항목을 참조하십시오."
 msgstr ""
 
 #: ../../integrator/part02/index.rst:13
-# 4472358ea973423eb18fd0d7bd044c55
+# 859f5ab4417e414585e65b0d7f3f0b77
 msgid "화면 우측 상단의 **+ 워크플로우 생성**\\을 클릭하면 새로운 워크플로우를 생성할 수 있는 대화 상자가 열립니다. 만들고자하는 워크플로우의 이름과 설명을 입력한 후 **마침** 버튼을 클릭하면 새로운 워크플로우가 생성됩니다."
 msgstr ""
 

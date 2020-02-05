@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,57 +17,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part05/notebook_management.rst:4
-# d2ffc1c305c449e29264c997d737a09a
+# 86158f90d6dd4da18567a9bad3264c49
 msgid "노트북 서버 관리"
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:6
-# 908848218e8a48ddbff70e5c02c3bc13
+# 4e5d6a670bfe44038c6ed21c5b6e4e37
 msgid "노트북 모듈의 사용을 허용하기 위해서는 먼저 **관리자**\\가 외부 분석 도구가 설치되어 있는 서버, 즉 '노트북 서버'와 연동을 해야 합니다."
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:8
-# aebc5bb1a9bf4a01ad3601958ccc4ccc
+# a7cbc3df694142269b55b4bd6329ecfd
 msgid "메인 화면 좌측 패널에서 :menuselection:`MANAGEMENT --> 노트북 관리 --> 노트북 서버` 메뉴로 이동하면 노트북 서버를 새로 등록하거나 기존에 등록된 노트북 서버를 조회·수정할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:13
-# 8f9ec7007ed74a91bb85115ea453e711
+# 4072bac9529046cab5321d7fa227f8fc
 msgid "노트북 서버 목록"
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:15
-# fac0dc7f421a472b9e6a2f29c428c6f4
+# 1bfc4690c9084c59b3f9cc335fc5d292
 msgid "이 화면에서는 노트북 서버들을 보여줍니다. 노트북 서버 목록은 서버 이름과 타입으로 필터링할 수 있으며, 목록에 나타난 서버 중 하나를 클릭하여 해당 서버의 정보를 열람·수정할 수 있습니다. 또한 서버 중 하나에 마우스를 오버하면 나타나는 |bin| 버튼을 클릭하거나, 좌측에서 삭제하고자 하는 서버들의 체크란을 선택한 후 우측 상단에 있는 :guilabel:`선택 삭제` 버튼을 클릭하면 해당 노트북 서버가 삭제됩니다."
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:23
-# e5141c55c3ec446e873e46b749802573
+# d56f5b1f31504676b1a5f6e5daafb428
 msgid "노트북 서버 추가"
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:25
-# 2ca5199364864c6d824fa64d40241205
+# 8b2ec42433c0493896ab9ef7c49bb0e1
 msgid "노트북 관리 화면에서 :guilabel:`노트북 서버 추가` 버튼을 클릭하면 다음과 같은 노트북 서버 등록 화면이 팝업이 됩니다."
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:31
-# 69b2bd1d77a941ee849dc9bede07da37
+# a2c7f3a8ef3e4fad8b3e7722550becb1
 msgid "**타입:** 등록하려는 노트북 서버에 설치된 외부 분석 도구를 선택합니다. **Jupyter**\\와 **zeppelin** 중 선택이 가능합니다."
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:32
-# 2e59f97cc1014550a64b43f9e1ca179f
+# cc0be607ed85473b8e5206bb24bcef7a
 msgid "**URL:** 등록하려는 노트북 서버의 URL을 입력합니다. \\http://\\와 \\https://\\를 지원합니다."
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:33
-# 6a19ff9d016440afb5a75504aef9fa07
+# ff92078e92e5419aa71aebe7667e1a3d
 msgid "**이름:** 등록하려는 노트북 서버의 이름을 입력합니다."
 msgstr ""
 
 #: ../../discovery/part05/notebook_management.rst:34
-# bede6b62fdfb4612bd12a193582fa421
+# 9bbe01f456904d67a5516b14ea857969
 msgid "**설명:** 등록하려는 노트북 서버에 대한 설명을 입력합니다."
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part03/index.rst:2
-# d175f945b7c14e2f99d859a2642b7d46
+# cf5f75fe70d0437780f77076528d01df
 msgid "워크스페이스"
 msgstr ""
 
 #: ../../discovery/part03/index.rst:8
-# 233deab6ed9c4181998d4271172e9d96
+# 79a0605ae7af4c93acaef8560236e78c
 msgid "워크스페이스는 Metatron Discovery의 분석 모듈인 워크북, 노트북, 워크벤치를 보관하는 작업 공간으로, 개인용 워크스페이스와 공유용 워크스페이스로 분류됩니다."
 msgstr ""
 
 #: ../../discovery/part03/index.rst:10
-# 72e857987a9b403f911fcbda994fa0f2
+# add89a82f0d54445ad0dbc57a4316bdf
 msgid "**개인 워크스페이스:** Discovery 회원별로 하나씩 할당되는 개인용 워크스페이스입니다. 이 워크스페이스는 본인만 접근 가능합니다."
 msgstr ""
 
 #: ../../discovery/part03/index.rst:11
-# b2493ec26ac649b7b9f2cca89496cbea
+# a21ed9c73a73492897a8d4ecba7300db
 msgid "**공유 워크스페이스:** 여러 사용자가 함께 사용할 수 있는 워크스페이스입니다. 분석 과정과 결과를 다른 사용자들과 공유하기 위한 공간입니다. 각 공유 워크스페이스의 소유자 또는 관리자는 Discovery 회원들에게 다양한 수준의 접근 권한을 부여할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part03/index.rst:13
-# 0593d657aa504179aa2a1c2a77733d0a
+# 1eebdef63702416a950bb95a09633c53
 msgid "본 단원에서는 **워크스페이스 홈 화면 구성과 UI**, 그리고 **공유 워크스페이스**\\를 활용하는 방식에 대해 소개합니다."
 msgstr ""
 

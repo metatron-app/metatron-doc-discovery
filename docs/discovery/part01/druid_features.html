@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Druid 특징 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>Druid 특징 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,12 +20,22 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -36,8 +46,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="색인" href="../../genindex.html" />
-    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="Druid 기본 클러스터 아키텍쳐" href="druid_nodes.html" />
     <link rel="prev" title="Druid 개발 배경" href="druid_background.html" /> 
 </head>
@@ -66,7 +74,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -203,7 +211,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part01/druid_features.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part01/druid_features.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -220,16 +228,16 @@
 <h1>Druid 특징<a class="headerlink" href="#druid" title="제목 주소">¶</a></h1>
 <div class="section" id="id1">
 <h2>데이터 테이블 형태<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
-<p>Druid의 데이터 테이블(Druid에서는 〈데이터 소스’라고 함)은 OLAP 쿼리용으로 설계된 시계열 이벤트들로 구성됩니다. 데이터 소스는 세 종류의 컬럼으로 구성됩니다(여기서는 온라인 광고 데이터를 예시로 사용).</p>
+<p>Druid의 데이터 테이블(Druid에서는 &#8216;데이터 소스&#8217;라고 함)은 OLAP 쿼리용으로 설계된 시계열 이벤트들로 구성됩니다. 데이터 소스는 세 종류의 컬럼으로 구성됩니다(여기서는 온라인 광고 데이터를 예시로 사용).</p>
 <blockquote>
 <div><div class="figure align-center" id="id6">
 <img alt="Time-series OLAP table example" src="../../_images/druid-features-time-series.png" />
-<p class="caption"><span class="caption-text">Source: <a class="reference external" href="http://druid.io">http://druid.io</a></span><a class="headerlink" href="#id6" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p class="caption"><span class="caption-text">Source: <a class="reference external" href="http://druid.io">http://druid.io</a></span></p>
 </div>
 <ul class="simple">
-<li><p><strong>타임스탬프 컬럼(Timestamp column):</strong> Druid는 데이터 소스에서 타임스탬프 컬럼을 별도로 구성함으로써 모든 쿼리가 시간 축을 중심으로 이루어지게 합니다(시계열 속성이 없는 데이터를 일괄적으로 ingestion할 경우에는 현재 시간을 기준으로 타임스탬프가 부여되어 Druid에서 활용할 수 있는 형태가 됩니다).</p></li>
-<li><p><strong>차원 컬럼(Dimension columns):</strong> 차원 컬럼은 각 이벤트의 문자열 속성들을 담고 있으며, 데이터 필터링 시 가장 흔히 사용됩니다. 위 데이터셋 예시에서는 publisher, advertiser, gender, country가 차원 컬럼입니다. 데이터 탐색 시에는 이러한 차원 컬럼들을 축으로 하여 데이터를 slice하게 됩니다.</p></li>
-<li><p><strong>측정값 컬럼(Metric columns):</strong> 측정값 컬럼들은 집계 및 연산에 사용됩니다. 위 예에서는 clicks 및 price가 측정값 컬럼입니다. 측정값 컬럼의 자료형은 대체로 수치 값이며, 이들은 계수, 합산, 평균 등의 방식으로 집계할 수 있습니다(Metatron에서는 지원되는 자료형을 증대하였습니다).</p></li>
+<li><strong>타임스탬프 컬럼(Timestamp column):</strong> Druid는 데이터 소스에서 타임스탬프 컬럼을 별도로 구성함으로써 모든 쿼리가 시간 축을 중심으로 이루어지게 합니다(시계열 속성이 없는 데이터를 일괄적으로 ingestion할 경우에는 현재 시간을 기준으로 타임스탬프가 부여되어 Druid에서 활용할 수 있는 형태가 됩니다).</li>
+<li><strong>차원 컬럼(Dimension columns):</strong> 차원 컬럼은 각 이벤트의 문자열 속성들을 담고 있으며, 데이터 필터링 시 가장 흔히 사용됩니다. 위 데이터셋 예시에서는 publisher, advertiser, gender, country가 차원 컬럼입니다. 데이터 탐색 시에는 이러한 차원 컬럼들을 축으로 하여 데이터를 slice하게 됩니다.</li>
+<li><strong>측정값 컬럼(Metric columns):</strong> 측정값 컬럼들은 집계 및 연산에 사용됩니다. 위 예에서는 clicks 및 price가 측정값 컬럼입니다. 측정값 컬럼의 자료형은 대체로 수치 값이며, 이들은 계수, 합산, 평균 등의 방식으로 집계할 수 있습니다(Metatron에서는 지원되는 자료형을 증대하였습니다).</li>
 </ul>
 </div></blockquote>
 </div>
@@ -244,7 +252,7 @@
 <blockquote>
 <div><div class="figure align-center" id="id7">
 <img alt="Data roll-up example" src="../../_images/druid-features-rollup.png" />
-<p class="caption"><span class="caption-text">Source: Interactive Exploratory Analytics with Druid | DataEngConf SF 〈17</span><a class="headerlink" href="#id7" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p class="caption"><span class="caption-text">Source: Interactive Exploratory Analytics with Druid | DataEngConf SF &#8216;17</span></p>
 </div>
 </div></blockquote>
 <p>왼쪽의 원본 이벤트 목록은 2011년 1월 1일 00:00:00~01:00:00 사이에 발생한 도메인 클릭 이벤트를 열거한 것입니다. 하지만 분석가 입장에서는 분 이하 단위의 개별 이벤트가 별다른 의미를 갖지 못하기 때문에 1시간의 granularity를 기준으로 데이터를 취합했습니다. 그 결과 오른쪽 테이블에 나타난 것처럼 2011년 1월 1일 00~01시 시간대에 각 도메인을 남성과 여성이 각각 클릭한 횟수를 보여주는 보다 의미 있는 결과물이 도출되었습니다.</p>
@@ -253,15 +261,15 @@
 </div>
 <div class="section" id="sharding">
 <h2>데이터 sharding<a class="headerlink" href="#sharding" title="제목 주소">¶</a></h2>
-<p>데이터 소스는 시계열 이벤트들의 집합으로서 여러 shard로 분할 저장되는데, Druid에서는 이를 〈세그먼트’라고 부르며 각 세그먼트는 대개 500~1,000만 행으로 이루어집니다. Druid는 데이터 소스들을 정의된 시간 간격(통상적으로 1시간이나 하루)을 기준으로 분할하며, 그 밖의 컬럼에 있는 값들을 기준으로 추가 분할을 실시함으로써 세그먼트 크기를 적절하게 맞출 수 있습니다.</p>
+<p>데이터 소스는 시계열 이벤트들의 집합으로서 여러 shard로 분할 저장되는데, Druid에서는 이를 &#8216;세그먼트&#8217;라고 부르며 각 세그먼트는 대개 500~1,000만 행으로 이루어집니다. Druid는 데이터 소스들을 정의된 시간 간격(통상적으로 1시간이나 하루)을 기준으로 분할하며, 그 밖의 컬럼에 있는 값들을 기준으로 추가 분할을 실시함으로써 세그먼트 크기를 적절하게 맞출 수 있습니다.</p>
 <p>아래는 1시간 단위로 분할된 데이터 테이블을 예시로 나타낸 것입니다.</p>
-<p>세그먼트 <code class="docutils literal notranslate"><span class="pre">sampleData_2011-01-01T01:00:00:00Z_2011-01-01T02:00:00:00Z_v1_0</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T01</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">ultratrimfast</span><span class="o">.</span><span class="n">com</span>   <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">USA</span>   <span class="mi">1800</span>   <span class="mi">25</span>   <span class="mf">15.70</span>
+<p>세그먼트 <code class="docutils literal"><span class="pre">sampleData_2011-01-01T01:00:00:00Z_2011-01-01T02:00:00:00Z_v1_0</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T01</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">ultratrimfast</span><span class="o">.</span><span class="n">com</span>   <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">USA</span>   <span class="mi">1800</span>   <span class="mi">25</span>   <span class="mf">15.70</span>
 <span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T01</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">bieberfever</span><span class="o">.</span><span class="n">com</span>     <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">USA</span>   <span class="mi">2912</span>   <span class="mi">42</span>   <span class="mf">29.18</span>
 </pre></div>
 </div>
-<p>세그먼트 <code class="docutils literal notranslate"><span class="pre">sampleData_2011-01-01T02:00:00:00Z_2011-01-01T03:00:00:00Z_v1_0</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T02</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">ultratrimfast</span><span class="o">.</span><span class="n">com</span>   <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">UK</span>    <span class="mi">1953</span>   <span class="mi">17</span>   <span class="mf">17.31</span>
+<p>세그먼트 <code class="docutils literal"><span class="pre">sampleData_2011-01-01T02:00:00:00Z_2011-01-01T03:00:00:00Z_v1_0</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T02</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">ultratrimfast</span><span class="o">.</span><span class="n">com</span>   <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">UK</span>    <span class="mi">1953</span>   <span class="mi">17</span>   <span class="mf">17.31</span>
 <span class="mi">2011</span><span class="o">-</span><span class="mi">01</span><span class="o">-</span><span class="mi">01</span><span class="n">T02</span><span class="p">:</span><span class="mi">00</span><span class="p">:</span><span class="mi">00</span><span class="n">Z</span>   <span class="n">bieberfever</span><span class="o">.</span><span class="n">com</span>     <span class="n">google</span><span class="o">.</span><span class="n">com</span>   <span class="n">Male</span>   <span class="n">UK</span>    <span class="mi">3194</span>   <span class="mi">170</span>  <span class="mf">34.01</span>
 </pre></div>
 </div>
@@ -275,41 +283,41 @@
 <blockquote>
 <div><div class="figure align-center" id="id8">
 <img alt="Druid table example for edits that have occurred on Wikipedia" src="../../_images/druid-features-wiki.png" />
-<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span><a class="headerlink" href="#id8" title="이 이미지에 대한 퍼머링크">¶</a></p>
+<p class="caption"><span class="caption-text">Source: Druid: A Real-time Analytical Data Store</span></p>
 </div>
 </div></blockquote>
 <div class="section" id="id3">
 <h3>컬럼 기반 저장 및 인덱싱<a class="headerlink" href="#id3" title="제목 주소">¶</a></h3>
 <p>Druid는 컬럼들을 각각 따로 저장합니다. Druid가 주로 이벤트 스트림을 집계하는 데 사용된다는 점을 고려할 때, 이러한 컬럼 기반 저장 방식을 취하면 각 쿼리에 관련된 컬럼만을 로드·스캔하므로 CPU 리소스를 보다 효율적으로 사용할 수 있습니다. 행 기반 데이터 스토어에서는 집계 시 대상 행과 관련된 모든 컬럼을 컬럼별로 상이한 방식으로 압축할 수 있으며 그에 따라 각기 다른 인덱스를 활용함으로써 컬럼을 메모리나 디스크에 저장하는 데 드는 리소스 비용을 줄일 수 있습니다. 위 예에서 page, user, gender, city 컬럼은 문자열만을 포함합니다. 직접 문자열들을 저장하는 것은 불필요한 비용을 발생시키므로 이들을 고유한 정수 식별자로 매핑할 수 있습니다. 예를 들면,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Justin Bieber -&gt; 0
+<div class="highlight-default"><div class="highlight"><pre><span></span>Justin Bieber -&gt; 0
 Ke$ha -&gt; 1
 </pre></div>
 </div>
 <p>이 매핑을 사용하면 page 컬럼을 정수 배열로 나타낼 수 있는데, 여기서 배열 인덱스 각각은 원본 데이터셋의 각 행에 해당합니다. page 컬럼의 경우, 각 행의 page 값을 아래와 같이 표시할 수 있습니다.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>이처럼 문자열들이 고정 길이 정수들로 바뀌어 저장되므로 압축하기가 훨씬 더 수월합니다. Druid는 각 shard(세그먼트) 단위로 데이터를 인덱싱합니다.</p>
 </div>
 <div class="section" id="id4">
 <h3>데이터 필터링을 위한 인덱싱<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
-<p>Druid는 검색 인덱스를 추가로 만들어서 문자열 컬럼에 대한 필터링을 용이하게 할 수 있습니다. 위 예시 테이블을 다시 보자. 가령 《샌프란시스코에 사는 남성 사용자들이 Wikipedia 편집을 한 횟수는?》과 같은 쿼리가 있을 수 있습니다. 이 쿼리 예시에는 도시(San Francisco)와 성별(Male)이라는 두 가지 차원이 포함됩니다. 각 차원별로 아래와 같은 바이너리 배열이 생성되는데, 여기서 배열 인덱스 각각은 해당 행이 쿼리 필터 조건에 부합하는지 여부를 나타냅니다.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">San</span> <span class="n">Francisco</span> <span class="p">(</span><span class="n">City</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<p>Druid는 검색 인덱스를 추가로 만들어서 문자열 컬럼에 대한 필터링을 용이하게 할 수 있습니다. 위 예시 테이블을 다시 보자. 가령 &#8220;샌프란시스코에 사는 남성 사용자들이 Wikipedia 편집을 한 횟수는?&#8221;과 같은 쿼리가 있을 수 있습니다. 이 쿼리 예시에는 도시(San Francisco)와 성별(Male)이라는 두 가지 차원이 포함됩니다. 각 차원별로 아래와 같은 바이너리 배열이 생성되는데, 여기서 배열 인덱스 각각은 해당 행이 쿼리 필터 조건에 부합하는지 여부를 나타냅니다.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">San</span> <span class="n">Francisco</span> <span class="p">(</span><span class="n">City</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">Male</span> <span class="p">(</span><span class="n">Gender</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>그런 다음 쿼리 필터는 이러한 두 배열에 대해 AND 연산을 실시합니다.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="n">AND</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="n">AND</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>그 결과, 행 1만 스캔 대상이 됩니다. 이런 식으로 필터링된 행만 검색함으로써 불필요한 부하를 방지하는 것입니다. 이러한 바이너리 배열은 압축하기도 매우 쉽습니다.</p>
 <p>이러한 검색 인덱싱은 OR 연산에도 사용할 수 있습니다. 어떤 쿼리가 San Francisco 또는 Calgary을 필터링하는 경우, 배열 인덱스들은 차원값별로 다음과 같을 것입니다.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">San</span> <span class="n">Francisco</span> <span class="p">(</span><span class="n">City</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">San</span> <span class="n">Francisco</span> <span class="p">(</span><span class="n">City</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">Calgary</span> <span class="p">(</span><span class="n">City</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">rows</span> <span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>그런 다음 두 배열에 대해 OR 연산이 수행됩니다.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="n">OR</span> <span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="n">OR</span> <span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>그 결과, 쿼리는 행 1과 3만 스캔합니다.</p>
@@ -321,11 +329,11 @@ Ke$ha -&gt; 1
 <p>Druid의 네이티브 쿼리 언어는 JSON over HTTP이며, 주요 쿼리는 다음과 같습니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Group By</p></li>
-<li><p>시계열 기반 roll-up</p></li>
-<li><p>임의적 boolean 필터링</p></li>
-<li><p>Sum, Min, Max, Avg 등의 집계 연산</p></li>
-<li><p>차원값 검색</p></li>
+<li>Group By</li>
+<li>시계열 기반 roll-up</li>
+<li>임의적 boolean 필터링</li>
+<li>Sum, Min, Max, Avg 등의 집계 연산</li>
+<li>차원값 검색</li>
 </ul>
 </div></blockquote>
 <p>하지만 이 외에도 SQL을 비롯한 다양한 언어로 이루어진 쿼리 라이브러리가 생성·공유되고있습니다.</p>

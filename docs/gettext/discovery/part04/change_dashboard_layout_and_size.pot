@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,152 +17,152 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:2
-# 0269c2a10fbc42d7a827a880968881e3
+# 56e9afe979154159bced0999fb733bbd
 msgid "대시보드 크기와 레이아웃 변경하기"
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:4
-# fd6562bdf6d649dea46cafcffe79f247
+# cb9fd26ca3a84bee954cad2143ac6b05
 msgid "대시보드 기본 화면에서 **대시보드 편집** 버튼을 클릭하면 해당 대시보드의 구성을 편집할 수 있는 화면으로 이동합니다. 여기서는 위젯 추가 기능을 포함하여 대시보드의 편집 및 계층 구조 설정, 레이아웃 변경 기능을 사용할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:7
-# e1bf6c56328c4b9dbeba1daf106544a4
+# fcf6e936988c43d6bd1009b9c84b2e27
 msgid "대시보드 위젯 배열 설정"
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:11
-# 019740cb958a4db78a0b24bcdbd68345
+# a42efd6aada2417dbcd308cd369444a0
 msgid "**위젯 위치 변경:** 위젯 제목 부분을 드래그하여 위젯의 위치를 변경할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:12
-# a2053cb149ce4885849e39c3aa64825e
+# d837b8546af041da87761cc5933764d2
 msgid "**위젯 너비 조정:** 위젯과 위젯의 사이를 움직여 위젯의 너비를 조정할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:13
-# 78d73c138b1644198ec7812b287f4694
+# f6de402465614e3dbeb30f73797cebf6
 msgid "**화면에 위젯 추가:** 우측 패널에 있는 위젯 목록에서 원하는 위젯을 좌측 위젯 레이아웃 영역으로 드래그하면 해당 위젯이 레이아웃 영역에 추가됩니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:14
-# b2120875282c47b2874d2f6d22d320cd
+# 8b9ee0ed322845a58846837bdd0d8e06
 msgid "**화면에서 위젯 삭제:** 위젯 레이아웃 영역에 표시된 각 위젯에서 X 버튼을 클릭하면 해당 위젯이 레이아웃 영역에서 제거됩니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:17
-# f74c89c7cb4b4dd39945fcef97f27c0a
+# 427238cbc78746e385381e5c801e32f8
 msgid "차트 위젯 패널"
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:19
-# d311f6a15ee34fb9ba3950be52b5937f
+# e53b0f82443b493e9da48c269266629d
 msgid "차트 위젯 패널에서는 대시보드 내 차트의 추가, 수정, 삭제 등이 가능합니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:23
-# 93e4ba9637b243d5bd4e5b8d274e8598
+# 659ff1b8cdc64dd89931db031f241714
 msgid "**차트 위젯 수:** 현재 대시보드에 등록된 차트 위젯의 개수를 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:24
-# 572d343a3861424c95c8fe2235eebdd4
+# 056724af97ac4158bb0059136ff10c79
 msgid "**차트 위젯 추가:** 대시보드 내에 새로운 차트 위젯을 생성할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:25
-# 3148523ba7564fc3ae5f63d571c11190
+# 8992e0e3465742bf97b5c2a87ad898d8
 msgid "**차트 위젯 목록:** 현재 대시보드에 등록된 차트 위젯들이 열거됩니다. 수정 또는 삭제를 원하는 위젯 항목에 마우스를 오버하면 이를 위한 아이콘이 나타납니다. 또한 위젯 항목을 위젯 레이아웃 영역으로 드래그하면 해당 위젯이 레이아웃 영역에 표시됩니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:26
-# c3e934d1e7bf40eb9f4cea5ae46c09f1
+# 363be221ae8f4e0d8100a5ef8e48e244
 msgid "**차트 계층 구조 설정:** 대시보드 내 차트 간 상하 관계를 설정할 수 있습니다. 부모 차트에서 데이터 항목을 하나 선택하면 자식 차트가 그 항목을 기준으로 필터링됩니다. 계층 구조를 설정하려면 하위 관계로 설정할 차트를 드래그하여 원하는 상위 관계 차트 밑으로 옮기면 됩니다. 차트 계층 구조 설정이 완료되면 차트 메뉴 상에서도 구조가 변경된 것을 확인할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:29
-# b020e2d631f442358096b317f3a1a856
+# e3fcc3877736492e8240507980b82ff6
 msgid "텍스트 위젯 패널"
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:31
-# faa3b20d263c465ea8f6eedb229296cb
+# 85ed4ff718b54a20bf5e1080d0d41d78
 msgid "텍스트 위젯 패널에서는 대시보드 내 텍스트 위젯의 추가, 수정, 삭제 등이 가능합니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:36
-# 84249a97339843ee87b499a0e9c1b109
+# 1bc78317c604470685e455d6df82d537
 msgid "**텍스트 위젯 수:** 현재 대시보드에 등록된 텍스트 위젯의 개수를 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:37
-# bf13631485eb48c895bfdddc4f280992
+# 81021afc5b7041c1905f6c08d1ccb96c
 msgid "**텍스트 위젯 추가:** 대시보드 내에 새로운 텍스트 위젯을 생성할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:38
-# 3de70158556d467b842861f56b0773f8
+# 99c44b0a25ae4addb51bf7ee0baac10a
 msgid "**텍스트 위젯 목록:** 현재 대시보드에 등록된 텍스트 위젯들이 열거됩니다. 수정 또는 삭제를 원하는 위젯 항목에 마우스를 오버하면 이를 위한 아이콘이 나타납니다. 또한 위젯 항목을 위젯 레이아웃 영역으로 드래그하면 해당 위젯이 레이아웃 영역에 표시됩니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:41
-# 952f211e524e4be784b9b68e9e0cb904
+# f6e2b04a5f9a491a8ae00d313b31c862
 msgid "레이아웃 패널"
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:43
-# 260f59bd58ce4d9f9d2db8a9d35f7f10
+# 4d6aec6cfb644611acef19215a76f66d
 msgid "레이아웃 패널에서는 위젯 레이아웃 영역에서 위젯의 배열과 개별 위젯 표시 방법에 관하여 몇 가지 설정을 설정합니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:48
-# ba0d4b27afb042d09f2b3485d672b038
+# d82be4b6dfd748399d81da7a24927e03
 msgid "**보드 높이 설정**"
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:50
-# 482c01ed592242fc83dae64e633d7253
+# 0506c69f3470474db0000d16e640fdcc
 msgid "**너비 고정:** 보드의 높이를 화면에 맞춥니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:51
-# 61cfc80f21734549b674057473cd9e4e
+# 646475941813410aa6ed8293dc0e12f5
 msgid "**높이 고정:** 보드의 높이를 고유한 픽셀 값으로 설정합니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:52
-# 0efc3d6d69174211ac017cef1620dee4
+# ee3dbe88782943fd80c903612709dc06
 msgid "**위젯 사이 간격:** 위젯 레이아웃 영역에 표시되는 위젯 간의 간격을 지정합니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:54
-# deabdfaea4a14cd3ba66e96eec0c2793
+# aa5161eac2474455aaed5c6d87d8b03d
 msgid "**차트 제목:** 위젯 레이아웃 영역 내 차트 및 필터 위젯들의 제목 표시 여부를 일괄 설정합니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:55
-# bd246ce1489d45b8969bd6ec45c26a46
+# 001432af7b9449ed96ec683c367ff3fe
 msgid "**범례:** 위젯 레이아웃 영역 내 차트 위젯들의 범례 표시 여부를 일괄 설정합니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:56
-# 05b6e0103c5a4b8b827e74daf62f9587
+# d2331ce9d0ca47b7892112c5b4df42cb
 msgid "**미니맵:** 위젯 레이아웃 영역 내 차트 위젯들의 미니맵 표시 여부를 일괄 설정합니다."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:59
-# 038098c4db1648be8a0973fb93a91cb1
+# 7df36e0cf49d4310978ba510f600e153
 msgid "데이터 소스 패널"
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:61
-# e98f876984a24ded89913e301e9a9e2e
+# a7ccbc2e407547f4a7a4f550db82256d
 msgid "데이터 소스 패널에서는 연동된 데이터 소스의 정보를 열람·수정하고, 컬럼 필터를 간편하게 추가할 수 있습니다. 각 차원값 또는 측정값 우측의 필터 아이콘을 눌러서 필터를 추가해 보십시오."
 msgstr ""
 
 #: ../../discovery/part04/change_dashboard_layout_and_size.rst:65
-# bb802d1da25a4262800b9e542a09f78e
+# 91e769d3199b4585b6ed31e770330c05
 msgid "단, 여기서 지정/해제하는 필터는 대시보드 전체에 적용되는 글로벌 필터이고, 차트 에디터에서 지정/해제하는 필터는 차트 내 필터임을 유의하십시오."
 msgstr ""
 

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>워크플로우 에디터 &mdash; metatron discovery docs 0.4.3 문서</title>
+  <title>워크플로우 에디터 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,12 +20,22 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -36,8 +46,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="색인" href="../../genindex.html" />
-    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="액션 노드" href="tasks.html" />
     <link rel="prev" title="워크플로우 리스트" href="../part02/index.html" /> 
 </head>
@@ -66,7 +74,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -184,7 +192,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/integrator/part03/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/integrator/part03/index.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -201,32 +209,33 @@
 <span id="id1"></span><h1>워크플로우 에디터<a class="headerlink" href="#workflow-editor" title="제목 주소">¶</a></h1>
 <p>워크플로우 에디터는 선택한 Hadoop 워크플로우를 손쉽게 편집하고 실행을 스케줄링할 수 있는 GUI를 제공합니다. <a class="reference internal" href="../part02/index.html#workflow-list"><span class="std std-ref">워크플로우 리스트</span></a>에 열거된 워크플로우 중 하나를 클릭하면 워크플로우 에디터로 이동하며, 화면 구성은 아래와 같습니다.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/workflow_editor.png" src="../../_images/workflow_editor.png" />
 </div>
 <ol class="arabic">
-<li><p><strong>워크플로우 노드 선택 영역:</strong> 워크플로우에 추가할 노드들을 선택하는 영역입니다. <img alt="unfold" src="../../_images/icon_unfold.png" /> 버튼을 클릭하면 패널이 확장되어 각 노드의 명칭을 확인할 수 있습니다. 다음과 같은 두 종류의 노드로 구분됩니다.</p>
+<li><p class="first"><strong>워크플로우 노드 선택 영역:</strong> 워크플로우에 추가할 노드들을 선택하는 영역입니다. <img alt="unfold" src="../../_images/icon_unfold.png" /> 버튼을 클릭하면 패널이 확장되어 각 노드의 명칭을 확인할 수 있습니다. 다음과 같은 두 종류의 노드로 구분됩니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>액션 노드(에디터에서 〈Task’로 분류):</strong> 원천 데이터를 Hadoop 클러스터에서 수집·가공·적재하기 위한 각각의 연산처리 작업을 정의합니다. 자세한 내용은 <a class="reference internal" href="tasks.html#action-nodes"><span class="std std-ref">액션 노드</span></a> 항목을 참조하십시오.</p></li>
-<li><p><strong>제어 흐름 노드(에디터에서 〈General’로 분류):</strong> 워크플로우의 시작과 끝을 정의하고, 액션 노드들의 흐름 경로를 결정하는 역할을 합니다. 자세한 내용은 <a class="reference internal" href="control_flow.html#control-flow-nodes"><span class="std std-ref">제어 흐름 노드</span></a> 항목을 참조하십시오.</p></li>
+<li><strong>액션 노드(에디터에서 &#8216;Task&#8217;로 분류):</strong> 원천 데이터를 Hadoop 클러스터에서 수집·가공·적재하기 위한 각각의 연산처리 작업을 정의합니다. 자세한 내용은 <a class="reference internal" href="tasks.html#action-nodes"><span class="std std-ref">액션 노드</span></a> 항목을 참조하십시오.</li>
+<li><strong>제어 흐름 노드(에디터에서 &#8216;General&#8217;로 분류):</strong> 워크플로우의 시작과 끝을 정의하고, 액션 노드들의 흐름 경로를 결정하는 역할을 합니다. 자세한 내용은 <a class="reference internal" href="control_flow.html#control-flow-nodes"><span class="std std-ref">제어 흐름 노드</span></a> 항목을 참조하십시오.</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>워크플로우 차트 캔버스:</strong> 추가한 노드들 간의 시퀀스를 정의하는 영역입니다. 아래 그림과 같이 노드 선택 영역에서 원하는 노드들을 캔버스로 드래그한 후, 원하는 시퀀스에 맞춰서 노드끼리 연결을 하면 워크플로우 차트가 간단하게 완성됩니다.</p>
+<li><p class="first"><strong>워크플로우 차트 캔버스:</strong> 추가한 노드들 간의 시퀀스를 정의하는 영역입니다. 아래 그림과 같이 노드 선택 영역에서 원하는 노드들을 캔버스로 드래그한 후, 원하는 시퀀스에 맞춰서 노드끼리 연결을 하면 워크플로우 차트가 간단하게 완성됩니다.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/canvas.png" src="../../_images/canvas.png" />
 </div>
 <p>영역 상단에 있는 <img alt="do" src="../../_images/icon_do.png" /> 버튼을 사용하여 undo와 redo가 가능하며, <img alt="play" src="../../_images/icon_play.png" /> 버튼을 클릭하면 현재 정의된 워크플로우가 실행됩니다. 또한 <strong>Draft</strong> 버튼을 클릭하면 현재까지 작업한 워크플로우가 저장되고, <strong>Save</strong> 버튼을 클릭하면 실제 워크플로우로서 반영이 됩니다.</p>
 </div></blockquote>
 </li>
-<li><p><strong>워크플로우 노드 설정 영역:</strong> 워크플로우 차트 캔버스에서 선택한 각 개별 노드의 상세 작업 내역을 설정하는 영역입니다. 자세한 설정 방식은 <a class="reference internal" href="tasks.html#action-nodes"><span class="std std-ref">액션 노드</span></a> 및 <a class="reference internal" href="control_flow.html#control-flow-nodes"><span class="std std-ref">제어 흐름 노드</span></a>에서 해당 노드 항목을 참조하십시오.</p></li>
-<li><p><strong>워크플로우 실행 내역 표시 영역:</strong> 정의된 워크플로우의 실행 내역을 보여주는 영역입니다.</p>
+<li><p class="first"><strong>워크플로우 노드 설정 영역:</strong> 워크플로우 차트 캔버스에서 선택한 각 개별 노드의 상세 작업 내역을 설정하는 영역입니다. 자세한 설정 방식은 <a class="reference internal" href="tasks.html#action-nodes"><span class="std std-ref">액션 노드</span></a> 및 <a class="reference internal" href="control_flow.html#control-flow-nodes"><span class="std std-ref">제어 흐름 노드</span></a>에서 해당 노드 항목을 참조하십시오.</p>
+</li>
+<li><p class="first"><strong>워크플로우 실행 내역 표시 영역:</strong> 정의된 워크플로우의 실행 내역을 보여주는 영역입니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>Manual run 탭:</strong> 에디터 좌측 상단에 있는 <img alt="play" src="../../_images/icon_play.png" /> 버튼을 클릭하여 수동으로 워크플로우를 실행한 내역을 보여줍니다.</p></li>
-<li><p><strong>Scheduled run 탭:</strong> 정해진 시간에 따라 워크플로우 실행을 예약하는 UI를 제공하고 예약된 내역을 보여줍니다. 자세한 내용은 <a class="reference internal" href="scheduled_run.html#scheduled-run"><span class="std std-ref">워크플로우 실행 예약하기</span></a> 항목을 참조하십시오.</p></li>
+<li><strong>Manual run 탭:</strong> 에디터 좌측 상단에 있는 <img alt="play" src="../../_images/icon_play.png" /> 버튼을 클릭하여 수동으로 워크플로우를 실행한 내역을 보여줍니다.</li>
+<li><strong>Scheduled run 탭:</strong> 정해진 시간에 따라 워크플로우 실행을 예약하는 UI를 제공하고 예약된 내역을 보여줍니다. 자세한 내용은 <a class="reference internal" href="scheduled_run.html#scheduled-run"><span class="std std-ref">워크플로우 실행 예약하기</span></a> 항목을 참조하십시오.</li>
 </ul>
 </div></blockquote>
 </li>

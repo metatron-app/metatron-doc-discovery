@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,37 +17,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part04/create_a_workbook.rst:2
-# fe48cf5fcd584343ab1650c399c9fd7a
+# 2795c9f48a6940e6a9b55ee464784b54
 msgid "워크북 만들기"
 msgstr ""
 
 #: ../../discovery/part04/create_a_workbook.rst:4
-# e0b1b99586324f14ac068ff059389ede
+# b81808146d634d0ebaaa585175b6f280
 msgid "Metatron Discovery에서 **워크북**\\은 하나의 독립적인 데이터 분석 보고서로서 기능을 합니다. 하나의 워크북을 생성하면 그 안에 여러 **대시보드** 슬라이드를 담아서 적절한 순서대로 보여줄 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/create_a_workbook.rst:6
-# 48726f31fa9748528de69e1a90be8db9
+# 61d4d7c9e2db4b4a95fe47298169d9e8
 msgid "워크북 생성 절차는 다음과 같습니다."
 msgstr ""
 
 #: ../../discovery/part04/create_a_workbook.rst:8
-# f1498a99560049cebd901c8e6739b2c7
+# 14874695e87848e7880d4d574fb99aaa
 msgid "워크스페이스 하단에 있는 **+ 워크북** 버튼을 클릭하면 워크북을 생성할 수 있는 화면이 나타납니다."
 msgstr ""
 
 #: ../../discovery/part04/create_a_workbook.rst:13
-# 41ebef5772684f90855ffb0a522312d3
+# 0329944634644bc281ec54ffa74e625c
 msgid "생성하고자 하는 워크북의 이름(필수 사항)과 설명을 입력하고 **마침** 버튼을 누릅니다. **Continue to create a dashboard of a new workbook** 박스에 체크하면 워크북 생성과 동시에 **대시보드 생성하기** 화면으로 넘어갑니다. 워크북은 그 안에 대시보드가 있어야 비로소 기능을 할 수 있기 때문에 이렇게 연결되는 것입니다."
 msgstr ""
 
 #: ../../discovery/part04/create_a_workbook.rst:18
-# 8e88321f838f4c6e80d4d4d2c4c41853
+# 7a98a5dc5c164e108b5e9918724ba148
 msgid "화면 가운데의 '+ 데이터 소스 추가' 버튼을 클릭 후, 데이터 소스를 선택하여 대시보드를 생성합니다. 대시보드를 생성하는 절차에 관한 자세한 내용은 :doc:`create_a_dashboard` 항목을 참조하십시오."
 msgstr ""
 
 #: ../../discovery/part04/create_a_workbook.rst:26
-# 45f269e0fea2420a9f898cb843606caa
+# 10dbf1f026394a32ab0f744fd8ff9f13
 msgid "새로 생성된 워크북은 아래와 같이 워크스페이스 화면에서 확인할 수 있습니다. 클릭하면 해당 워크북을 사용할 수 있는 화면이 나타납니다."
 msgstr ""
 

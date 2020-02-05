@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,177 +17,177 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part04/chart_style.rst:2
-# a3c6ed16879f4fd2a12e8f9ed72d4c6e
+# b2ef64ec7845407588fc7da2bf131fec
 msgid "차트 스타일 속성"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:4
-# dd453ca19dda492eb86353997cf58f3c
+# 0882f100bd594d91bc5244ae1a50ab30
 msgid "데이터를 피봇팅하고 나면 우측에 차트 스타일을 설정할 수 있는 옵션 메뉴가 나타납니다. 메뉴의 구성은 각 차트의 종류별로 다르게 나타납니다. 모든 차트 유형에 일반적으로 적용되는 설정 항목을 설명하고, 차트 유형별로 고유한 '공통 설정' 유형에 대해서 설명합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:9
-# 40d671da0ce2484a92994a74f091c87b
+# 4c1ab0e5b2fb4c54ba5b56f0e4053111
 msgid "차트 스타일 설정 메뉴"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:11
-# 66a024791b6f47b18ec206566e56bcb9
+# 44aca967b8334bf7bdb92342f8166779
 msgid "차트 스타일 설정 메뉴를 구성하는 각 항목별로 설정 방식을 설명합니다. 사용하는 차트 유형에 따라 아래 제시된 항목 중 일부가 사용되지 않을 수 있음을 유의하십시오."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:13
-# 05e8f0211e8d46738029a3ded47f8b1a
+# bd5f1fd309684be3a5353ce202e7d891
 msgid "**색상 설정**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:15
-# 8fbf68b999cf44bfa5c854fac827d92b
+# eb97d0b950ea4c40a1d07ff304c68cbe
 msgid "차트에 들어가는 각종 색상을 정의합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:21
-# 57977c9b5ea044dcadbb855aaa32d0b6
+# ee6147d2e9f745bbad91a5f500b30a7b
 msgid "**그래프 색상 설정:** 그래프에서 데이터 표시 항목별 색상을 구분하는 기준을 정한 후 색상 테마를 선택합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:23
-# b93cd72f89bc42628dfe036ff3d8187c
+# 453c95f6f92344a9af6abb5c0bfa4d21
 msgid "**Series:** 측정값의 종류에 따라 색상을 구분합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:24
-# e7d52c0b54b94875870554d470ab5834
+# 5bc9a7472a4b4bc3b0e65a85c2adb974
 msgid "**Dimension:** 차원값의 종류에 따라 색상을 구분합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:25
-# 1aba6774d5ad4460a2e7800d697e7ac4
+# 4daca1877aee435995fe0cb5f6d812e1
 msgid "**Measure:** 측정값의 크기에 따라 색상을 구분합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:27
-# bdb9385d14f74b1d84ef89fe9212ffd8
+# e0f9313ae8fa41e186a623b9750584d3
 msgid "**색상범위 설정:** 데이터 표시 색상 구분 기준을 **Measure**\\로 선택할 때 나오는 항목으로서, ON으로 설정하면 측정값의 범위에 따라 색상을 다르게 나타낼 수 있습니다. 색상범위는 최저 구간부터 시작해서 원하는 개수만큼 세분화할 수 있는데, 새로운 구간을 추가하려면 현재의 마지막 구간의 최댓값을 먼저 조정한 다음 **새 범위 추가** 버튼을 클릭해야 합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:29
-# 691dab6126534ece988a13905583cd81
+# 10cf8f00f4a941fdaf26984fd617a664
 msgid "**숫자 포멧**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:31
-# fadcc0393f4342289308cce1cae8e348
+# fe3bdf9648294a089f04b961980d7dbb
 msgid "차트 내 그래프에 텍스트로 나타나는 데이터값 의 표시 형식을 정의합니다. 이 기능을 사용하려면 데이터 레이블 설정 메뉴에서 레이블 표시 기능을 먼저 켜주십시오."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:37
-# 71b5f8b68cb543e6b32efd3556ad849a
+# 1360b67e10274697a440d28d4f68fafd
 msgid "**표시 형식:** 데이터 값을 숫자, 통화, 퍼센트, 지수 중 어떤 형식으로 표시할지 선택합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:38
-# 0e9ccba1211e46d78dedd547dda6dad4
+# fcd0d668c41b4605b9facdb95749ef14
 msgid "**소수점 자리 설정:** 데이터 값을 소수점 몇 번째 자리까지 표시할지 결정합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:39
-# 5fdf9d0350dc43c89ad520a8b7293ee4
+# 0ae11fe0a1ac44adabe2878b61233799
 msgid "**수치표시 약어 설정:** 데이터 값의 자릿수가 클 경우 천 단위(K), 백만 단위(M), 십억 단위(B) 중 하나를 약어로 설정할 수 있습니다. **자동 조정**\\을 선택하면, 데이터 값들의 자릿수에 가장 적절한 단위가 자동으로 결정됩니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:40
-# 0dc67e8d0aac40bfb82648cf52fe1554
+# 6138803fba5c4fffb3a9321e4321ee89
 msgid "**천단위 구분자 사용:** 데이터 값들을 천단위 구분자를 사용하여 표시할 것인지 선택합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:41
-# adedfc2a8f214d75822b874b7fd43b89
+# 32e1b27b1625406781997bb64db63acd
 msgid "**사용자 기호 설정:** 데이터 값들의 앞/뒤에 사용자가 원하는 텍스트를 삽입하여 표시할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:42
-# da2379a54ab0407bbaa97b568db015d2
+# 013be530c2e34146934f47d060c6be43
 msgid "**미리 보기:** 정의한 숫자 형식에 따른 결과를 예시로 보여줍니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:44
-# 1a0d1bc9f4104660a07c5f30ea18326d
+# 1b6491c4c2e0446c933c061bd2c41075
 msgid "**Y축 설정(차트 유형 세로형 기준)**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:46
-# 6323a4078ad8461983d17f04737ff4b1
+# 86b84d1c99384896874aa68ed1d09cc3
 msgid "공통 설정 항목에서 차트 유형을 **가로형**\\으로 바꾸면 X축과 Y축 설정 항목이 뒤바뀝니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:52
-# 0803d7e26ac04c3880db1b5ac47bfe8d
+# 29fc88fa56ac40a896592c92b330fc7e
 msgid "**축 제목 입력:** 차트의 Y축에 제목을 입력할 수 있습니다. 해당 기능을 사용하지 않으면 Y축에 제목이 나타나지 않게 됩니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:53
-# 2bbbd4a700d745618ee5f9c4e8c22035
+# 7ce41a7559364b07a8d68951282b91bd
 msgid "**레이블 표시:** 차트의 Y축에 데이터 레이블을 표시할 것인지 선택합니다. 해당 기능을 사용하지 않으면 Y축에 데이터 레이블은 나타나지 않게 됩니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:55
-# 363c1fd9de674e9bb5cecafe00d63fb4
+# 58edb3f94bc045599e0f3fa46865fb46
 msgid "**레이블 설정:** Y축 데이터 레이블에 표시되는 숫자의 형식을 지정합니다. 자동으로 설정하면 **숫자 포멧** 항목의 설정값이 동일하게 반영되며, 수동으로 설정하면 Y축 데이터 레이블만의 고유한 형식을 지정할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:57
-# e933c0124f834e7aa0b9d1e8dd0d3153
+# 14ab16f55ec548f1a0156367445fa0d1
 msgid "**X축 설정(차트 유형 세로형 기준)**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:59
-# 5df622f65631411a9ea3ce03221ddab3
+# b43659bbf7ee47e8a34f118fd5d1519d
 msgid "여기서는 차트의 X축 표시 방식을 정의합니다. 공통 설정 항목에서 차트 유형을 **가로형**\\으로 바꾸면 X축과 Y축 설정 항목이 뒤바뀝니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:65
-# 7e338d6ba92c4ba480195bfbcce3816c
+# 954e06ce105c49cca8865d22b31421d5
 msgid "**축 제목 입력:** 차트의 X축에 제목을 입력할 수 있습니다. 해당 기능을 사용하지 않으면 X축에 제목이 나타나지 않게 됩니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:66
-# d7cca0814867450884ba71dfbe651a76
+# cba7bf79819c449ea63af48dd7d5a023
 msgid "**레이블 표시:** 차트의 X축에 데이터 레이블을 표시할 것인지 선택합니다. 해당 기능을 사용하지 않으면 X축에 데이터 레이블은 나타나지 않게 됩니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:68
-# 70731d37b7ee430aa0e663a203e18cc4
+# c0a1e6b1d682446bb39ad76b1e1f6b6a
 msgid "**레이블 회전:** 차트의 X축에 나타나는 데이터 레이블을 0도/45도/90도 중 어떤 각도로 표시할 것인지 선택합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:70
-# eee760bbef6a46baa93f1c66f4e63ad5
+# 19aa820476bd44dbbd515b4e49573341
 msgid "**데이터 레이블 설정**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:72
-# 82848ac294dc4106b0bc1f6356066c9f
+# 01e22f612a51431da4ddb7505eb647ea
 msgid "차트 내 그래프에 데이터 값을 표시할 것인지 여부를 선택합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:80
-# 542eb23421d546bfb9210341ee73e9ac
+# 346c114b62924bcabc9de359d49c50bd
 msgid "차트 유형별 공통 설정 항목"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:81
-# b95d0171c8dc4a11bb6188b13ec9f2e0
+# 5aff45c3982a42de998b68c288fa5338
 msgid "가장 보편적으로 사용되는 상위 6개 차트(막대형 차트, 표, 선형 차트, 분산형 차트, 히 트맵, 원형 차트)의 스타일 설정 방법에 대해 설명합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:87
-# 849cc06457ed448db625acb7ad91b87a
+# b8d7cdebc29a4ca99ce7a6dd66b6d382
 msgid "**막대형 차트**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:89
-# 08e3deeddac940ad92b245a0337ec5c8
+# 0691d7878f1243b59eb5928c2815ad7f
 msgid "차원값 컬럼을 구성하는 각 범주 항목에 속한 데이터 값이 막대 모양으로 표시됩니다."
 msgstr ""
 
@@ -195,165 +195,165 @@ msgstr ""
 #: ../../discovery/part04/chart_style.rst:109
 #: ../../discovery/part04/chart_style.rst:124
 #: ../../discovery/part04/chart_style.rst:155
-# bb575145ef6647f3bc475e4ef7e20f98
-# a356c586abfd416d9d31a6e44feda8f4
-# 8821c24680f54185bacb4d1cc41396c5
-# 73e25a254dd540858ddbaa83db03f2b0
+# 7d4c736f1aca4b81962cc37be44771b3
+# 7ed38e507ae5402cb40292ca5b98372c
+# 76cbaa0414cc43cbb32b487733220107
+# 2644924308054f5aa96c881f1d5156cb
 msgid "**차트 유형**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:95
-# fac7567a6358487faecaa99737a4a4db
+# 991ba38832dd49aa801553ddaf1b5f9e
 msgid "**세로형:** 차원값 축이 세로를 기준으로 하여 데이터 값 막대가 세로로 나타납니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:96
-# 9b967c61ddbc44fd93a67ea0dfa8f760
+# 1fafbf5f8aa54dc4ae17ffe6a25afe13
 msgid "**가로형:** 차원값 축이 가로를 기준으로 하여 데이터 값 막대가 가로로 나타납니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:97
-# 6dcdafd01f3a47bfa0df0a7290237646
+# a678954b32cd4f0b890ea14e7876d648
 msgid "**병렬형:** 측정값을 2개 이상 선택했을 때 측정값별로 각각 다른 막대로 병렬하여 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:98
-# 060be6d59a7444758633db4cba292bfe
+# 310f65ab08f645f0adecb1e386ab477d
 msgid "**중첩형:** 측정값을 2개 이상 선택했을 때 모든 측정값을 한 막대에 중첩시켜 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:100
-# a33e3ea156b84d24af841ff250657860
+# 0af7df4cfd944e71a5406adf7fbd0b36
 msgid "**Limitation:** 차트에 나타나는 컬럼의 개수를 결정합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:103
-# 440aa230d91f4ed0aa0144b06af9bd88
+# e5687da71d624c179f7834911cc03ab7
 msgid "**표**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:105
-# f59e41273a944cb0937579dccafb8f02
+# 14ca9cdfcd404819aee3c29f75bd98df
 msgid "열/행 선반에 올려놓은 차원값 컬럼들의 범주 항목을 토대로 표 블록이 형성되며 그에 상응하는 측정값이 교차 영역에 텍스트로 표시됩니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:111
-# f51468a4f5ad4acfae32dc813a54b3e7
+# 14bc65b71a2a477f833726a820af9276
 msgid "**피봇 데이터:** 분류 기준이 되는 차원값 범주가 동일한 측정값끼리는 한 셀에 집계(``SUM``, ``MIN``, ``MAX`` 등)되는 방식으로 보여집니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:112
-# 3f2ba68960874c619631a0e9e070d20c
+# 1179d51458584f93b098e779cab8f086
 msgid "**원본 데이터:** 원본 측정값이 집계되지 않은 채로 특정한 차원값 컬럼을 기준으로 전부 출력됩니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:113
-# fd0a8f65dfa94f7d80b308747bdc93cc
+# caaf56bbb20344978589195ecdeea6fb
 msgid "**세로보기:** 측정값의 데이터를 표에서 세로로 표시합니다. 원본 데이터 유형으로 표를 나타낼 때는 사용할 수 없습니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:114
-# daaaca077ea74b8fb22e99dff795f36e
+# d7473a78ac4a443aad5313efb78be646
 msgid "**가로보기:** 피봇데이터 유형으로 표를 나타낼 경우 표를 가로보기 할 수 있습니다. 측정값의 데이터를 표에서 가로로 표시합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:116
-# d9f5a3a234e04c4fb5af97f2907463f7
+# e8138f0090af47cd86a15bf81dba2c04
 msgid "**Show Head Colum:** 헤드 칼럼에 표시되는 텍스트 정렬 방식을 가로와 세로 별로 설정할 수 있습니다. 원본 데이터로 표시할 경우에는 헤드 칼럼은 필수로 표시됩니다. 피봇 데이터 유형일 경우에 헤드 칼럼을 사용하지 않을 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:118
-# 24682571da774873b42531b50a81a705
+# 133e417970654bee9cbbbf3b012bd489
 msgid "**선형 차트**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:120
-# 74ed15d0e1d842e09537f96e940a66da
+# 04a3cac4495442dbbc8f1210f787eda8
 msgid "차원값 컬럼을 구성하는 각 범주 항목에 속한 데이터 값이 점 모양으로 표시됩니다. 인접하는 범주 항목의 점끼리는 서로 연결되어 변화 추이를 확인할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:126
-# bcd5114b8cf54e9bb4b85b23a840c1e9
+# 68d5e1a9480340b396df5078e476c154
 msgid "**선형:** 측정값을 기준점으로 선을 이어서 차트를 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:127
-# 4c691ed4a766468a8309037803755fae
+# 45bdad2b8da1499188a59e6c40d562b6
 msgid "**면적형:** 선으로 이어진 면적에 색상을 입혀 차트를 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:128
-# 9fb5c421ff744914ba7954cce01f524f
+# dbdf40cfd89d44f8bf790368eabc9ecd
 msgid "**라인&포인트:** 측정값을 기준점으로 한 점과 그 점을 연결한 선을 함께 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:129
-# e86d6163a5134b558d061ae5fd836731
+# 37aade444d0e40d5aaa4ed93f3319383
 msgid "**포인트:** 포인트는 측정값을 기준으로 한 점만 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:130
-# dc3f67c925834210b87054a53b125b12
+# 06515ba67f454e41bfb3bc65bef6cdb4
 msgid "**라인:** 선의 연결만을 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:131
-# b6c3c691ecbc464493360d56024f24a1
+# 314fdf87c22c4115b12b134b683a91ca
 msgid "**기본형:** 측정값을 그대로 차트에 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:132
-# 5a5a6097b7cb4d00bab054b77ad3ffa7
+# fffc042d34c14f7f8e6bbe2d46c63bcc
 msgid "**누적형:** 측정값을 누적한 값을 차트에 나타냅니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:134
-# 6445cf0ddcad418bb4187674728a85e0
+# e881d3f4df634646958dce470d8ad075
 msgid "**분산형 차트**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:136
-# 98bb0a27849a423485ef7f7e08da3663
+# e550574d3f424288a01339b7f21d5d24
 msgid "차원값 컬럼을 구성하는 각 범주 항목에 속한 데이터 값이 정의된 기호 모양으로 표시됩니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:140
-# be226042b74f41d88649030d5ed447ac
+# a002aa0f849a492393a9bf277c8cd18a
 msgid "**기호 유형:** 차트에 표시되는 기호의 모양을 설정합니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:141
-# 0276b81494774cb9a6e363935ff1325b
+# a287e65baf9142498fc474a8cc27e5fb
 msgid "**기호 투명도:** 차트에 표시되는 기호의 투명도를 설정합니다. 단색/반투명 중 선택하여 나타낼 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:143
-# 40a262438b604c79b3aeca3b994da980
+# 760140c8b2b54587b7e31e7ea8973654
 msgid "**히트맵**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:145
-# b438c9d1f1c442a2b0377ff43d31e7a0
+# 1d56bb6b7c8046d38c1f4e92b529868d
 msgid "교차선반에 올려진 측정값 컬럼의 각 데이터 값이 색상으로 표시됩니다. 데이터 값이 클수록 색상 농도가 짙어집니다. 히트맵의 공통 설정 항목에는 설정할 사항이 없습니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:149
-# 8dac803b97c14e3597e6ea6b6fe9e5c7
+# d4614f72cc7d4e8cace9129237f4cfdf
 msgid "**원형 차트**"
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:151
-# 5b36c69307c84503af4a99cfa3782177
+# 52b0b0d0665c46c49ddce18a37ea7cdb
 msgid "차원값 컬럼의 각 범주 항목별로 차지하는 비중을 시각화하는 차트입니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:157
-# 0897bbd59339493784ef041fea7e5dcc
+# 19ae0da7fff24ee1aa4dcb03c744c35d
 msgid "**부채꼴형:** 차트가 원형으로 나타납니다."
 msgstr ""
 
 #: ../../discovery/part04/chart_style.rst:158
-# 45698e79c7cb40e190ec411ddfecbf8e
+# 8c8339b546a34bd6afd93c0aa45d943f
 msgid "**도넛형:** 차트가 도넛형으로 나타납니다."
 msgstr ""
 

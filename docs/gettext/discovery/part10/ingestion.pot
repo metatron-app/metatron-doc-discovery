@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,297 +17,297 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part10/ingestion.rst:2
-# bad3091470e14616a19b0723d33975d7
+# 7039dd451ca642c687fb7a8ace4bf521
 msgid "Ingestion"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:3
-# ed599059ad354f34ba053b071731ba28
+# 167d339ee8604d9bac20c2a1cdab8f99
 msgid "Druid Indexing Service 모니터링입니다. 해당 페이지에서는 Index task의 실행 상태 및 task 관련 정보를 제공합니다."
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:5
-# 23a712a19f484ce6983676b5ea19eef1
+# 9b3330bd72f245368c21d9eed7545f98
 msgid "아래와 같은 정보를 제공해줍니다."
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:7
-# 94abb70bdf314ae7aa093277f37fbf96
+# 7a95d1d582ad4dd6887aae56a5a14c34
 msgid "MiddleManager 상태 확인 가능"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:8
-# 342f815f507247b5991e538784eb379e
+# ced4b3f3095f4f11951b9d32b7637147
 msgid "worker 별 용량, 현재 사용량 현황"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:10
-# c2e593973be843b4903d44fe628485a5
+# 59bf9e57ffe14637879ad812e134b51d
 msgid "Supervisor 상태 확인 가능"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:10
-# af0f887de4a1491081e235d63f8754fa
+# f235b07edc664f53a9d4072a6e6b4094
 msgid "supervisor 별 상태"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:11
-# 4d96af21cced4f35bc48ddc144b74461
+# 39824c4b801b41848bded7cca429a73a
 msgid "terminate (suspend, reset) 기능 제공"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:13
-# 3fc4c42a46d64fd2adfaa8ce82ae35a5
+# 3b90aa617e0a416999c493db647427fc
 msgid "Task 상태 확인 가능"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:13
-# 5200269989604d4fac34c3c2b9c1fe35
+# c259e7178c454ebfb21174e326faed6b
 msgid "runningTasks, pendingTasks, waitingTasks, completedTasks"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:14
-# 0287cac2f641458ab2367f02e19c6cef
+# 1dfb3bb003084fbc887b46d3f3f378c7
 msgid "log, kill 기능 제공"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:15
-# d8ccbda47ec04ed88416615eff74c611
+# 85a588322c764dcc97f340a4c7a450e9
 msgid "Lockbox 상태 확인 가능"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:17
-# a334e514eb09416fb17f528390ac45dc
+# b8b0aa6aa39f40fca104931e1cc9f4d5
 msgid "Ingestion 에는 supervisor와 middle manager에 대한 정보도 같이 확인할 수 있다."
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:21
-# e1e4883d7e72462c80627fa25bba9b72
+# 374173d847d54450831033619eedbf36
 msgid "Tasks"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:22
-# 6caf585295af44a886a4b9d15f348955
+# 83185d7456cd4bdaa2baaca217496f10
 msgid "Task는 다음과 같이 4개로 분류할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:24
-# 690d54dd3a8c472ab62f821909721105
+# bc3e4fb5f68a4cec82c1899c628cb349
 msgid "pending task:  worker 할당을 기다리는 task"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:25
-# b74e412d67ce4adca629b56dd95f1d7b
+# 0c9b1b6ff62642288b7b419f265ae7c2
 msgid "running task: 실행중인 task"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:26
-# 89aca5d16f264ca498d98b676184fb47
+# b248d24b0d804364b0cb6fa80666803b
 msgid "waiting task: lock을 기다리는 task"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:27
-# 3081ee9c9b4b42d9ac7f0fff2323e5d6
+# 7bafb6d4eaf444a488ee4f180d08a7ce
 msgid "completed task: 완료된 task로 SUCCESS, FAIL의 두 상태로 나뉜다."
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:30
-# 1fdf86aacc6b4b41b589ddd1bb57482e
+# b372ddae1dba4337ac6dc8e767c44bea
 msgid "Task 상세 정보 및 메뉴는 아래와 같습니다."
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:33
 #: ../../discovery/part10/ingestion.rst:72
-# 489b40bb2f074e3d93f07eb10edad814
-# a5267c6d73a94de39af50338ef28e8b5
+# 7c3fb4b2c36e44a593a1d27b1f4ea5f1
+# d6fbd57360e645afac9dc7b4aa8d8bef
 msgid "Field"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:33
 #: ../../discovery/part10/ingestion.rst:72
-# c5f261a2beef46eabb6dec62794d314f
-# 992c0589f8044098b90bfeb754b77092
+# 2f72b7c30d324583a146d3d7d23af4a7
+# 060cf9b8430e4d0c976be094929c5280
 msgid "Description"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:33
 #: ../../discovery/part10/ingestion.rst:72
-# c00a81c39c9448b7be380381901e7da6
-# 04ff9f73b5fb48d28183b4b816095408
+# 22b3ebe82e5f43b5bd27f9630eb69e0e
+# a055cc1784c7411f9f3f37d65b68937a
 msgid "Example"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:35
-# 96d7993aafb147be9c42de0d70b28f79
+# 444faf5fc9eb4ccaa680dcfb06049f3d
 msgid "id"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:35
-# b553bec5d61744cf86c8f5a952a854c6
+# d40ce28a5f2f4ec8980861ad5a6620f3
 msgid "taskId"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:36
-# 3d293c6645474a48a80547ede15b78ff
+# c069b538d9974b9480a36c65c8a66272
 msgid "type"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:37
-# 9ac32913120142bab09963baa31ce2d1
+# 5e9b4407f5854b49b9da1da0d5031119
 msgid "dataSource"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:38
-# f19e549a849b4790a81b71a369730b93
+# 9d1d61102e054a52a11d0c41f8729ac9
 msgid "createdTime"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:39
-# 218cb758a14e47718d880556d8d86cee
+# fbddd3b2431a43f1952baca3d20b2406
 msgid "queueInsertionTime"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:40
 #: ../../discovery/part10/ingestion.rst:46
-# e4cd89da65dd4e53b7063c032462561c
-# 08b97904f72b428b863e602cf51c8d86
+# 9517ed5a6e964dbd871e792d2a01fd79
+# 8ca5b56b3318448eb12abb657f79e274
 msgid "status"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:41
-# d2f4628e39d24d9caa7bd423a55ff2f2
+# cb50a232f639496ea76c00ace326ae4d
 msgid "runnerStatusCode"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:42
-# 4e03082b03ad48c690f8baabc1506016
+# ce64816bca244cd79a5a0f634f126756
 msgid "duration"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:43
-# 67a35cf178184dc5b55e1b892ef27902
+# fd794e48ee144d2d81ad6b158887a9be
 msgid "locationhost"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:44
-# f6ec124c64fe407ab8a93701ecdc53f9
+# 2ea182174ccc468fb2bfd64409f7379c
 msgid "locationport"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:45
-# a4bc52b216b140a5bf54a0dea775c389
+# 4dedc4f866b44fe3b08fc9d4e806b760
 msgid "payload"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:46
-# 32fee41200ef49feb1ce784fbd6117fb
+# 4b968f4665624d31865e229621666ddb
 msgid "상태"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:47
-# c2f66a99e7e5430db77ce3f85a354f3d
+# ae788c8a1e08415d8db1a14ecde6ed0d
 msgid "log"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:48
-# 667583f310db46d7b2b5163169f8f266
+# 9f135c54140440989da6b3a314ea4140
 msgid "log last 8k"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:49
-# 9d7077359abc4828ad7e910d2975dfdd
+# e7c89a91d1be498bb4a97faf9fba8302
 msgid "kill"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:50
-# 792fad36e2134dfc9fcb173f01793ea8
+# c15f405cce46441eaf55716d5f7ea450
 msgid "ingestion"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:53
 #: ../../discovery/part10/ingestion.rst:83
-# 5054a44bbab14e37ba3c790903ef5c96
-# ea86732843ab443e9c0397518421bd33
+# 83015967e3614f4f8fefd89690111749
+# 73d8fce79c364d7cab42895cfda9bfa3
 msgid "이와 같습니다."
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:57
-# 79bdcb335d274eed9e4dbdc1c6f2e184
+# 44ad1f726d7c403b8d66d70a364ce0b4
 msgid "상세 화면을 살펴보면 다음과 같습니다. (아래는 Kafka를 사용한 경우입니다)"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:63
-# 6307dffcd98140fe9439a495584ba9b8
+# 90beae1c2246452f8e8af61bd8fd769d
 msgid "아래는 Kafka가 아닌 일반 Task의 경우의 모습입니다."
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:68
-# f1d02d96e81441a78748317104d17922
+# aa43d51ed9e54eb8a82baca8bed47b34
 msgid "Supervisors"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:69
-# 64e8930206dc4b33a84d78f8b355a320
+# 95bf36cbdf6e48f99c186481e99665ac
 msgid "실행중인 Supervisors의 모니터링을 할 수 있다. 확인 가능한 Supervisor 상세 정보 및 menu는 다음과 같다."
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:74
-# 6896880c4ffc4d729003db3df310b974
+# 28033c1c643f4591969796e347836597
 msgid "Status"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:74
-# b661ad19c3e14836a88c4d88355b23ad
+# 38ef3695e2244851b933c3ee6fe60857
 msgid "get supervisorIDs로 제공되는 supervisor는 모두 running 상태임"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:76
-# 5cf3740528814079bcb2bf1175a5a58c
+# c981524b6cf34d40a54097aa2037d1c1
 msgid "Datasource"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:77
-# 12c9ff055c6642beb4c2a4f1cd076421
+# 810878b554794f1db99f46ffb2a0b941
 msgid "Detailed Status"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:77
-# 6c6972db39514664a7152bf93fde575e
+# edc356160ef649c28dfa532c06bab7d8
 msgid "status API 로 제공되는 정보"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:78
-# aeac8ab36a4b4a9aa55e42db64996495
+# 7f539f24673449c8ba463ea3b870565d
 msgid "Lag"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:78
-# 551b03296977400db48816f29a31687f
+# 25b81afd64274ed3a11c97c26e846156
 msgid "kafka의 lag 정보. emitter 사용"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:79
-# b08824b7fd654fe384df6179d8030c67
+# 1ffa0f0f20b349c4984a4e540979dca4
 msgid "Spec"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:80
-# 2864b57e978e450c91b5faa0af612699
+# 1987dfa34d564abbb10d61c90ce4cd7a
 msgid "Shutdown"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:80
-# 9aa834b28ee4482dba4fecff338f5390
+# fade6b630cd941f7b589516f844bfbe2
 msgid "Terminate supervisor. 관련된 task도 함께 kill 됨"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:90
-# 4a5849df182c4bde80a7e75ac547a410
+# 5bca848abdbd43c4a73b436883b84cfe
 msgid "MiddleManagers"
 msgstr ""
 
 #: ../../discovery/part10/ingestion.rst:91
-# d4dc8f50ffdc4e77ba608f0709802bbb
+# 43481240dbeb4e0480028e800e303357
 msgid "worker 리스트를 의미합니다."
 msgstr ""
 

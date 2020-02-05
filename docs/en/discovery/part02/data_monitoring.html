@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Monitoring &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Data Monitoring &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,8 +45,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Workspace" href="../part03/index.html" />
     <link rel="prev" title="Data Connection" href="data_connection.html" /> 
 </head>
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -192,7 +200,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part02/data_monitoring.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part02/data_monitoring.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -210,7 +218,7 @@
 <p>Data monitoring supports monitoring the logs of all queries submitted by users in Metatron Workbench to the staging database (internal Hive database) and external databases connected to Metatron.</p>
 <p>The Data Monitoring menu can be accessed under <strong>MANAGEMENT</strong> &gt; <strong>Data Storage</strong> &gt; <strong>Data Monitoring</strong> on the left-hand panel of the main screen.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/data_monitoring_menu.en.png" src="../../_images/data_monitoring_menu.en.png" />
 </div>
 </div></blockquote>
@@ -218,19 +226,28 @@
 <h2>Log Statistics<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>This page collects and reports various statistics related to the performance of queries in Metatron Discovery. You can view the following nine types of basic statistics.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/log-statistics.en.png" src="../../_images/log-statistics.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>Query success/failure rate:</strong> Displays the daily success/failure rates of queries performed in Metatron.</p></li>
-<li><p><strong>Query frequency by user:</strong> Graph indicating how many queries were performed by each user. Click a bar to view the job log for the user.</p></li>
-<li><p><strong>In order of longest:</strong> Displays the performed queries in the order of the longest running time.</p></li>
-<li><p><strong>Amount of scan data:</strong> Displays the performed queries in the order of the highest amount of scanned data.</p></li>
-<li><p><strong>Frequency of successful queries:</strong> Displays the performed queries in the order of the highest frequency of success.</p></li>
-<li><p><strong>Frequency of failed queries:</strong> Displays the performed queries in the order of the highest frequency of failure.</p></li>
-<li><p><strong>Total memory usage:</strong> Displays the performed queries in the order of the largest memory usage in total.</p></li>
-<li><p><strong>Total CPU usage:</strong> Displays the performed queries in the order of the largest CPU usage in total.</p></li>
-<li><p><strong>Resource usage by queue:</strong> Displays the resource usage in each YARN queue in the Hadoop environment.</p></li>
+<li><p class="first"><strong>Query success/failure rate:</strong> Displays the daily success/failure rates of queries performed in Metatron.</p>
+</li>
+<li><p class="first"><strong>Query frequency by user:</strong> Graph indicating how many queries were performed by each user. Click a bar to view the job log for the user.</p>
+</li>
+<li><p class="first"><strong>In order of longest:</strong> Displays the performed queries in the order of the longest running time.</p>
+</li>
+<li><p class="first"><strong>Amount of scan data:</strong> Displays the performed queries in the order of the highest amount of scanned data.</p>
+</li>
+<li><p class="first"><strong>Frequency of successful queries:</strong> Displays the performed queries in the order of the highest frequency of success.</p>
+</li>
+<li><p class="first"><strong>Frequency of failed queries:</strong> Displays the performed queries in the order of the highest frequency of failure.</p>
+</li>
+<li><p class="first"><strong>Total memory usage:</strong> Displays the performed queries in the order of the largest memory usage in total.</p>
+</li>
+<li><p class="first"><strong>Total CPU usage:</strong> Displays the performed queries in the order of the largest CPU usage in total.</p>
+</li>
+<li><p class="first"><strong>Resource usage by queue:</strong> Displays the resource usage in each YARN queue in the Hadoop environment.</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
@@ -238,34 +255,48 @@
 <h2>Job Log<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>This page reports the history of all queries performed in Metatron. You can easily view previous jobs by searching the history of queries with your customized filters. The following are the filters applicable to job searching.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/job-logs.en.png" src="../../_images/job-logs.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>Status:</strong> Filters queries by whether they were successful or failed.</p></li>
-<li><p><strong>Limited elapsed time:</strong> Filters queries by long running time. You can set a reference time for this filtering.</p></li>
-<li><p><strong>Performed start time:</strong> Determines a time range by which to filter queries. This time range is based on when each query started running.</p></li>
-<li><p><strong>Search by job or application:</strong> Searches the query history by query statement or application ID.</p></li>
-<li><p><strong>Number of entries:</strong> Displays how many queries are returned in the list.</p></li>
-<li><p><strong>Job list:</strong> Lists queries filtered by specified criteria. Click an entry in the list to view its details.</p></li>
+<li><p class="first"><strong>Status:</strong> Filters queries by whether they were successful or failed.</p>
+</li>
+<li><p class="first"><strong>Limited elapsed time:</strong> Filters queries by long running time. You can set a reference time for this filtering.</p>
+</li>
+<li><p class="first"><strong>Performed start time:</strong> Determines a time range by which to filter queries. This time range is based on when each query started running.</p>
+</li>
+<li><p class="first"><strong>Search by job or application:</strong> Searches the query history by query statement or application ID.</p>
+</li>
+<li><p class="first"><strong>Number of entries:</strong> Displays how many queries are returned in the list.</p>
+</li>
+<li><p class="first"><strong>Job list:</strong> Lists queries filtered by specified criteria. Click an entry in the list to view its details.</p>
+</li>
 </ol>
 </div></blockquote>
 <div class="section" id="id4">
 <h3>Query details<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Click a query listed in the job log home to view details on that query. The following information can be viewed in the details page.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/job-log-detail.en.png" src="../../_images/job-log-detail.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>Status:</strong> Displays whether the query was successful or failed.</p></li>
-<li><p><strong>Job name:</strong> Statement used to perform the query.</p></li>
-<li><p><strong>Start time:</strong> Time when the query started running.</p></li>
-<li><p><strong>Elapsed time:</strong> Time taken to perform the query.</p></li>
-<li><p><strong>User:</strong> User ID who performed the query.</p></li>
-<li><p><strong>Connection:</strong> For a query performed in a workbench, the connection information of the database is displayed.</p></li>
-<li><p><strong>Recent history of the same connection:</strong> For a query performed in a workbench, the latest five queries performed in the database and their results are displayed. Click Detail to pop up a window showing the query statement.</p></li>
-<li><p><strong>Plan:</strong> Implements the query plan.</p></li>
+<li><p class="first"><strong>Status:</strong> Displays whether the query was successful or failed.</p>
+</li>
+<li><p class="first"><strong>Job name:</strong> Statement used to perform the query.</p>
+</li>
+<li><p class="first"><strong>Start time:</strong> Time when the query started running.</p>
+</li>
+<li><p class="first"><strong>Elapsed time:</strong> Time taken to perform the query.</p>
+</li>
+<li><p class="first"><strong>User:</strong> User ID who performed the query.</p>
+</li>
+<li><p class="first"><strong>Connection:</strong> For a query performed in a workbench, the connection information of the database is displayed.</p>
+</li>
+<li><p class="first"><strong>Recent history of the same connection:</strong> For a query performed in a workbench, the latest five queries performed in the database and their results are displayed. Click Detail to pop up a window showing the query statement.</p>
+</li>
+<li><p class="first"><strong>Plan:</strong> Implements the query plan.</p>
+</li>
 </ol>
 </div></blockquote>
 </div>

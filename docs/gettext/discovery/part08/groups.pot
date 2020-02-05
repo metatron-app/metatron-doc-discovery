@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,77 +17,77 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../discovery/part08/groups.rst:6
-# f38217960ecb4738b54dd84a6dd6f9d4
+# 58c75a960dcc41e4b368c3b5a0b593ad
 msgid "그룹"
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:8
-# ee3836a6f50148709202186c02c74505
+# 24b7c46d967b477abeeeb1ecf837720e
 msgid "Metatron Discovery 사용자들을 그룹으로 지정하면 다음과 같은 편의 기능을 사용할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:10
-# 2d496db9ec6947e2a2881a4a19f43eca
+# f35ce34d34484298a4f64332249a9636
 msgid "그룹에 속한 사용자들의 권한 일괄 설정"
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:11
-# 85481799c11b4f32a49e8d42a40485f7
+# 6657b619220b497984fb938863f99128
 msgid "그룹에 속한 사용자들에게 일괄 메일 전송"
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:14
-# 546f524b25cb432c900314cb80f6d5e8
+# 481aa897f5754a70bd2f49b1cc99c9bb
 msgid "그룹 홈 화면"
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:16
-# 1449d7f4d9164bedb0ce68e53a1067a6
+# bba3a3bab9a64d57bc32546334004ace
 msgid "그룹 홈 화면에는 현재 Metatron Discovery에 등록된 사용자 그룹들을 보여줍니다. 그룹 목록은 여러 기준으로 필터링할 수 있으며, 목록에 나타난 그룹 중 하나를 클릭하여 해당 그룹의 정보를 열람·수정할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:22
-# 071c825fcdfb442a9c4debbbf5ac5d55
+# 46b30a716c294e52a6e3309245b6bb9d
 msgid "그룹 정보 열람 및 수정"
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:24
-# f8c787712f66426da646bfb832f65dc2
+# b0aa0407f98045ea9af6881569ec6513
 msgid "홈 화면 목록에 나타난 그룹 중 하나를 클릭하면, 아래와 같이 해당 그룹의 정보를 보여주는 화면으로 이동합니다."
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:28
-# cffc52ca8fe44190971b4d6768ed6a0f
+# d49951451ffc4c6d929511614f91b938
 msgid "이 화면에서 제공되는 기능은 다음과 같습니다."
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:30
-# 2e7e51d394424b049e690cb029bc67f8
+# 7323cbbe8aca4dd089d11458da7de5ab
 msgid "해당 그룹의 기본 정보와 부여된 권한, 그리고 소속된 사용자들을 확인할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:31
-# fe5860d7b37048d5a071e91f0d0b542c
+# 5520d9f44f094360ba68c661ce0ddb04
 msgid "|setup| 아이콘을 클릭하면 해당 그룹의 소속 멤버를 추가·삭제할 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:32
-# b6029d8c7ea149e18a54a53e2d88ce6b
+# 99b098157475489bb95262b393f37302
 msgid ":guilabel:`모든 멤버에게 이메일 보내기` 버튼을 클릭하면 해당 그룹에 소속된 모든 멤버에게 이메일을 보낼 수 있습니다."
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:35
-# 5334dedd18764d49a77554ff601b86bc
+# 4a0108a030614bfcaa57f2295fbf3b36
 msgid "그룹 등록"
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:37
-# 5ce01cae78224aefa59630448ae43095
+# 3908182982fd4c0e8ad0eb733a486e47
 msgid "홈 화면 우측 상단에서 :guilabel:`그룹 생성` 버튼을 클릭하면 아래와 같은 그룹 생성 팝업이 나타납니다."
 msgstr ""
 
 #: ../../discovery/part08/groups.rst:41
-# 0de1773c01314586be96aa9d36950aa0
+# 0917ea0b554a4587a1c0adb0e5fc7e6f
 msgid "이름과 설명을 입력한 후 :guilabel:`마침` 버튼을 클릭하면 새로운 그룹이 생성됩니다."
 msgstr ""
 

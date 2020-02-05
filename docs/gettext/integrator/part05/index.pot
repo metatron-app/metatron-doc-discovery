@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +17,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../integrator/part05/index.rst:2
-# 7c9561f6d9a34cd889a0c1dd54a14657
+# 267e8bd59e3d43b2a3e4b84066d2be4c
 msgid "Use Case"
 msgstr ""
 
 #: ../../integrator/part05/index.rst:5
-# 68da32a9e49a40bdbcbd06b7e2255359
+# da44544a3a534f65b21485958bc9275e
 msgid "데이터 소스 적재 위임"
 msgstr ""
 
 #: ../../integrator/part05/index.rst:7
-# 0616d80b0113491a8d3aa97a0b6cb524
+# 48952e2b62d349d9acd32c1fc37466bb
 msgid "대용량의 데이터 적재 시 발생하는 시스템 부하를 방지하기 위해 background 처리"
 msgstr ""
 
 #: ../../integrator/part05/index.rst:10
-# 5ddbe1d610134c84b81fddc92e2204a1
+# 39e6255cd0f1489ba2eacfa10e827638
 msgid "워크벤치와 연계"
 msgstr ""
 
 #: ../../integrator/part05/index.rst:12
-# 34d5b88076344cd284d247f530280ad3
+# 41362359da9541f38bd0668ede173903
 msgid "특정 쿼리의 반복 실행"
 msgstr ""
 
 #: ../../integrator/part05/index.rst:13
-# b8e9942cc7dd47aaa55b0cad9e14c204
+# 2086b37d5d84470d824279beb4d1abc7
 msgid "오래 걸리는 쿼리의 위임"
 msgstr ""
 
 #: ../../integrator/part05/index.rst:16
-# e5dca3c51b594f548e97f497c7353455
+# cde5e1cc8a854c829a612bbaa01606f0
 msgid "데이터 프리퍼레이션과 연계"
 msgstr ""
 
 #: ../../integrator/part05/index.rst:18
-# cf293020caf645fdb0e4a1645f563790
+# 1f5ea95101364241a98a4dca1f65ca28
 msgid "Wrangled dataset 반복 사용"
 msgstr ""
 

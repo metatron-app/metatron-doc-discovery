@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Create a dataset &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Create a dataset &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,10 +45,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Manage a dataflow" href="manage_dataflow.html" />
-    <link rel="prev" title="Data Preparation" href="index.html" /> 
+    <link rel="prev" title="Installationo Detail Guide (on CentOS 7)" href="installation_detailed.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -108,6 +116,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Preparation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation_detailed.html">Installationo Detail Guide (on CentOS 7)</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Create a dataset</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#create-a-dataset-of-file">Create a dataset from a file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#create-a-dataset-of-database">Create a dataset from a database</a></li>
@@ -190,7 +199,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part07/create_a_dataset.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part07/create_a_dataset.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -208,8 +217,10 @@
 <p>A <strong>dataset</strong>, which is the basic unit of data preparation, refers to an entity subject to data operations. Datasets are either <strong>imported datasets</strong> and <strong>wrangled datasets</strong>.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>Imported Dataset:</strong> A source data entity before the implementation of transformation rules</p></li>
-<li><p><strong>Wrangled dataset:</strong> A data entity subject to analysis following the implementation of transformation rules</p></li>
+<li><p class="first"><strong>Imported Dataset:</strong> A source data entity before the implementation of transformation rules</p>
+</li>
+<li><p class="first"><strong>Wrangled dataset:</strong> A data entity subject to analysis following the implementation of transformation rules</p>
+</li>
 </ul>
 </div></blockquote>
 <p>A wrangled dataset is created during the <strong>dataflow</strong> setting process, which defines transformation rules, while an imported dataset is created during this dataset creation procedure.</p>
@@ -221,23 +232,26 @@
 </div></blockquote>
 <p>Next, on the upper right of the <strong>dataset</strong> page, click the <strong>+ Generate new dataset</strong> button to create a new dataset.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_2.en.png" src="../../_images/create_a_dataset_2.en.png" />
 </div>
 </div></blockquote>
 <p>In the dataset creation page, select the dataset type.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <a class="reference internal image-reference" href="../../_images/create_a_dataset_3.en.png"><img alt="../../_images/create_a_dataset_3.en.png" src="../../_images/create_a_dataset_3.en.png" style="width: 277.0px; height: 310.5px;" /></a>
 </div>
 <ul class="simple">
-<li><p><strong>My file:</strong> Create a dataset by opening the user’s local file or via a URI (upcoming feature) (See <a class="reference internal" href="#create-a-dataset-of-file"><span class="std std-ref">Create a dataset from a file</span></a> for a detailed procedure).</p></li>
-<li><p><strong>Database:</strong> Create a dataset using external database access information and queries (See <a class="reference internal" href="#create-a-dataset-of-database"><span class="std std-ref">Create a dataset from a database</span></a> for a detailed procedure).</p></li>
-<li><p><strong>Staging DB:</strong> Create a dataset from the staging DB built in Metatron (See <a class="reference internal" href="#create-a-dataset-of-stagingdb"><span class="std std-ref">Create a dataset from staging DB</span></a> for a detailed procedure).</p></li>
+<li><p class="first"><strong>My file:</strong> Create a dataset by opening the user’s local file or via a URI (upcoming feature) (See <a class="reference internal" href="#create-a-dataset-of-file"><span class="std std-ref">Create a dataset from a file</span></a> for a detailed procedure).</p>
+</li>
+<li><p class="first"><strong>Database:</strong> Create a dataset using external database access information and queries (See <a class="reference internal" href="#create-a-dataset-of-database"><span class="std std-ref">Create a dataset from a database</span></a> for a detailed procedure).</p>
+</li>
+<li><p class="first"><strong>Staging DB:</strong> Create a dataset from the staging DB built in Metatron (See <a class="reference internal" href="#create-a-dataset-of-stagingdb"><span class="std std-ref">Create a dataset from staging DB</span></a> for a detailed procedure).</p>
+</li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The Staging DB is an in-cluster database that stores data temporarily in order to facilitate data loading. Hive is generally used for it.</p>
+<p class="first admonition-title">Note</p>
+<p class="last">The Staging DB is an in-cluster database that stores data temporarily in order to facilitate data loading. Hive is generally used for it.</p>
 </div>
 </div></blockquote>
 <div class="section" id="create-a-dataset-of-file">
@@ -245,31 +259,32 @@
 <p>Create a dataset by opening the user’s local file or via a URI (upcoming feature).</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>On the data type selection page, select <strong>My File</strong>.</p></li>
-<li><p>Select a file to be used as a data source from your local PC. You can click the <strong>Import</strong> button to select a file, or drag and drop the file into the box. Once a file is selected, click Next.</p>
+<li><p class="first">On the data type selection page, select <strong>My File</strong>.</p>
+</li>
+<li><p class="first">Select a file to be used as a data source from your local PC. You can click the <strong>Import</strong> button to select a file, or drag and drop the file into the box. Once a file is selected, click Next.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_file_1.en.png" src="../../_images/create_a_dataset_of_file_1.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Check the grid of the uploaded file, and designate a column delimiter. Proceed if the data is successfully displayed.</p>
+<li><p class="first">Check the grid of the uploaded file, and designate a column delimiter. Proceed if the data is successfully displayed.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_file_2.en.png" src="../../_images/create_a_dataset_of_file_2.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Enter the <strong>Name</strong> and <strong>Description</strong> of the dataset, and click the <strong>Done</strong> button.</p>
+<li><p class="first">Enter the <strong>Name</strong> and <strong>Description</strong> of the dataset, and click the <strong>Done</strong> button.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_file_3.en.png" src="../../_images/create_a_dataset_of_file_3.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Once the dataset is created, the dataset list is displayed. You can check that the list contains the newly created dataset.</p>
+<li><p class="first">Once the dataset is created, the dataset list is displayed. You can check that the list contains the newly created dataset.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_file_4.en.png" src="../../_images/create_a_dataset_of_file_4.en.png" />
 </div>
 </div></blockquote>
@@ -282,42 +297,45 @@
 <p>Create a dataset using external database access information and queries.</p>
 <p>To create a dataset from a database, you should first create a data connection. See <a class="reference internal" href="../part02/data_connection.html#create-data-connection"><span class="std std-ref">Create a data connection</span></a> for a detailed procedure.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_database_1.en.png" src="../../_images/create_a_dataset_of_database_1.en.png" />
 </div>
 </div></blockquote>
 <p>After establishing the data connection, go to <strong>MANAGEMENT</strong> &gt; <strong>Data Preparation</strong> &gt; <strong>Dataset</strong> &gt; <strong>+ Generate new dataset</strong>.</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>On the data type selection page, select <strong>Database</strong>.</p></li>
-<li><p>Select the data connection, and press the <strong>Test</strong> button to check that the connection is valid.</p>
+<li><p class="first">On the data type selection page, select <strong>Database</strong>.</p>
+</li>
+<li><p class="first">Select the data connection, and press the <strong>Test</strong> button to check that the connection is valid.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_database_2.en.png" src="../../_images/create_a_dataset_of_database_2.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Select the data. You can either select a table from the connected database, or write a query yourself.</p>
+<li><p class="first">Select the data. You can either select a table from the connected database, or write a query yourself.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_database_3.en.png" src="../../_images/create_a_dataset_of_database_3.en.png" />
 </div>
 <ul class="simple">
-<li><p><strong>Table:</strong> Select a database and a table to display the table’s data. Once the data being ingested has been displayed, confirm the data and click <strong>Next</strong>.</p></li>
-<li><p><strong>Query:</strong> Write a query to import the data you want, and click <strong>Run</strong> to display the data in the lower section. Confirm the data and click <strong>Next</strong>.</p></li>
+<li><p class="first"><strong>Table:</strong> Select a database and a table to display the table’s data. Once the data being ingested has been displayed, confirm the data and click <strong>Next</strong>.</p>
+</li>
+<li><p class="first"><strong>Query:</strong> Write a query to import the data you want, and click <strong>Run</strong> to display the data in the lower section. Confirm the data and click <strong>Next</strong>.</p>
+</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Enter the <strong>Name</strong> and <strong>Description</strong> of the dataset, and click the <strong>Done</strong> button.</p>
+<li><p class="first">Enter the <strong>Name</strong> and <strong>Description</strong> of the dataset, and click the <strong>Done</strong> button.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_database_5.en.png" src="../../_images/create_a_dataset_of_database_5.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Once the dataset is created, the dataset list is displayed. You can check that the list contains the newly created dataset.</p>
+<li><p class="first">Once the dataset is created, the dataset list is displayed. You can check that the list contains the newly created dataset.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_database_6.en.png" src="../../_images/create_a_dataset_of_database_6.en.png" />
 </div>
 </div></blockquote>
@@ -331,28 +349,31 @@
 <p>The creation of a staging DB dataset is the same as dataset creation from a database, but does not involve the selection of a data connection.</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>On the data type selection page, select <strong>Staging DB</strong>.</p></li>
-<li><p>Select the data. You can either select a table from the connected database, or write a query yourself.</p>
+<li><p class="first">On the data type selection page, select <strong>Staging DB</strong>.</p>
+</li>
+<li><p class="first">Select the data. You can either select a table from the connected database, or write a query yourself.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_stagingdb_1.en.png" src="../../_images/create_a_dataset_of_stagingdb_1.en.png" />
 </div>
 <ul class="simple">
-<li><p><strong>Table:</strong> Select a database and a table to display the table’s data. Once the data being ingested has been displayed, confirm the data and click <strong>Next</strong>.</p></li>
-<li><p><strong>Query:</strong> Write a query to import the data you want, and click <strong>Run</strong> to display the data in the lower section. Confirm the data and click <strong>Next</strong>.</p></li>
+<li><p class="first"><strong>Table:</strong> Select a database and a table to display the table’s data. Once the data being ingested has been displayed, confirm the data and click <strong>Next</strong>.</p>
+</li>
+<li><p class="first"><strong>Query:</strong> Write a query to import the data you want, and click <strong>Run</strong> to display the data in the lower section. Confirm the data and click <strong>Next</strong>.</p>
+</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Enter the <strong>Name</strong> and <strong>Description</strong> of the dataset, and click the <strong>Done</strong> button.</p>
+<li><p class="first">Enter the <strong>Name</strong> and <strong>Description</strong> of the dataset, and click the <strong>Done</strong> button.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_stagingdb_3.en.png" src="../../_images/create_a_dataset_of_stagingdb_3.en.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Once the dataset is created, the dataset list is displayed. You can check that the list contains the newly created dataset.</p>
+<li><p class="first">Once the dataset is created, the dataset list is displayed. You can check that the list contains the newly created dataset.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/create_a_dataset_of_stagingdb_4.en.png" src="../../_images/create_a_dataset_of_stagingdb_4.en.png" />
 </div>
 </div></blockquote>
@@ -373,7 +394,7 @@
         <a href="manage_dataflow.html" class="btn btn-neutral float-right" title="Manage a dataflow" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral float-left" title="Data Preparation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="installation_detailed.html" class="btn btn-neutral float-left" title="Installationo Detail Guide (on CentOS 7)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

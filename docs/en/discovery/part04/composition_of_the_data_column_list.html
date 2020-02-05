@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data column list &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Data column list &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,8 +45,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Draw a chart (pivoting)" href="pivoting.html" />
     <link rel="prev" title="Chart" href="manage_charts.html" /> 
 </head>
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -199,7 +207,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part04/composition_of_the_data_column_list.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part04/composition_of_the_data_column_list.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -219,23 +227,33 @@
 <h2>Structure of the data column list<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>In the data column list, you can view and edit information on connected data sources, as well as add or remove column filters easily.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/part04-chart02.en.png" src="../../_images/part04-chart02.en.png" />
 </div>
 <ol class="arabic">
-<li><p><strong>Select/set data source:</strong> Allows you to select a data source or configure its associations and joins.</p></li>
-<li><p><strong>Data details:</strong> Click on it to pop up a dialog box displaying information about the selected data source.</p></li>
-<li><p><strong>Search by column name:</strong> Searches the column list by name.</p></li>
-<li><p><strong>Add custom column:</strong> Click on it to open the dialog box to create a new column by combining/processing data source columns. Custom columns are commonly used throughout the dashboard.</p></li>
-<li><p><strong>Apply/clear filter:</strong> Hover the mouse over a column to display this button. Click on it to apply a chart filter to the column, and click again to clear the chart filter. For columns to which a filter is applied, the <img alt="more" src="../../_images/chart_icon_more.png" /> icon is displayed regardless of the mouse position.</p></li>
-<li><p><strong>More:</strong> Hover the mouse over a column to display this button. It is used to check additional information on the column and set an alias.</p>
+<li><p class="first"><strong>Select/set data source:</strong> Allows you to select a data source or configure its associations and joins.</p>
+</li>
+<li><p class="first"><strong>Data details:</strong> Click on it to pop up a dialog box displaying information about the selected data source.</p>
+</li>
+<li><p class="first"><strong>Search by column name:</strong> Searches the column list by name.</p>
+</li>
+<li><p class="first"><strong>Add custom column:</strong> Click on it to open the dialog box to create a new column by combining/processing data source columns. Custom columns are commonly used throughout the dashboard.</p>
+</li>
+<li><p class="first"><strong>Apply/clear filter:</strong> Hover the mouse over a column to display this button. Click on it to apply a chart filter to the column, and click again to clear the chart filter. For columns to which a filter is applied, the <img alt="more" src="../../_images/chart_icon_more.png" /> icon is displayed regardless of the mouse position.</p>
+</li>
+<li><p class="first"><strong>More:</strong> Hover the mouse over a column to display this button. It is used to check additional information on the column and set an alias.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><img alt="info" src="../../_images/chart_icon_info.png" /> : Click on it to pop up a dialog box displaying a summary of the column and its data values.</p></li>
-<li><p><strong>Logic column name:</strong> Shows the logical name of the column.</p></li>
-<li><p><strong>Type:</strong> Shows the logical type of the column.</p></li>
-<li><p><strong>Alias:</strong> Sets a column alias. A regular column name can contain only alphanumeric characters and a limited number of special characters with no spaces allowed. Therefore, setting an alias may help to identify the column for convenient analytics work. Aliases are commonly used throughout the dashboard.</p></li>
-<li><p><strong>Value alias:</strong> You can also set an alias for each data value in the column. Aliases are commonly used throughout the dashboard.</p></li>
+<li><p class="first"><img alt="info" src="../../_images/chart_icon_info.png" /> : Click on it to pop up a dialog box displaying a summary of the column and its data values.</p>
+</li>
+<li><p class="first"><strong>Logic column name:</strong> Shows the logical name of the column.</p>
+</li>
+<li><p class="first"><strong>Type:</strong> Shows the logical type of the column.</p>
+</li>
+<li><p class="first"><strong>Alias:</strong> Sets a column alias. A regular column name can contain only alphanumeric characters and a limited number of special characters with no spaces allowed. Therefore, setting an alias may help to identify the column for convenient analytics work. Aliases are commonly used throughout the dashboard.</p>
+</li>
+<li><p class="first"><strong>Value alias:</strong> You can also set an alias for each data value in the column. Aliases are commonly used throughout the dashboard.</p>
+</li>
 </ul>
 </div></blockquote>
 </li>
@@ -246,14 +264,18 @@
 <h2>Add a custom column<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Click the + button on the data source column list to open a dialog box for adding a custom column. By applying various formulas to existing columns of the data source, you can create a new column that helps create your desired chart.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/part04-chart03.en.png" src="../../_images/part04-chart03.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>Column name:</strong> Fill in a name for the custom column.</p></li>
-<li><p><strong>Coding box:</strong> Write a code for the custom column. Click a list from the column or formula list below to type your selection in this box automatically.</p></li>
-<li><p><strong>Add column:</strong> Lists the columns of the data source. Click a column in the list to automatically type your selection in the coding box.</p></li>
-<li><p><strong>Add formula:</strong> Lists the formulas supported by Metatron. Click a formula in the list to type your selection in the coding box automatically, with the text cursor relocated to where a parameter needs to be inserted. For details on each formula’s purpose, use, and examples, see the help box on the right.</p></li>
+<li><p class="first"><strong>Column name:</strong> Fill in a name for the custom column.</p>
+</li>
+<li><p class="first"><strong>Coding box:</strong> Write a code for the custom column. Click a list from the column or formula list below to type your selection in this box automatically.</p>
+</li>
+<li><p class="first"><strong>Add column:</strong> Lists the columns of the data source. Click a column in the list to automatically type your selection in the coding box.</p>
+</li>
+<li><p class="first"><strong>Add formula:</strong> Lists the formulas supported by Metatron. Click a formula in the list to type your selection in the coding box automatically, with the text cursor relocated to where a parameter needs to be inserted. For details on each formula’s purpose, use, and examples, see the help box on the right.</p>
+</li>
 </ol>
 </div></blockquote>
 </div>

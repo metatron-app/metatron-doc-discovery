@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 14:45+0900\n"
+"POT-Creation-Date: 2020-02-06 01:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,192 +17,192 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../integrator/part03/tasks.rst:4
-# ea9c316e876b4fdcab8aab6f5e769a3d
+# 9c4a65cfb1034d2b9da358449b07938d
 msgid "액션 노드"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:6
-# d63816b5d16348f6873e05f40a475b24
+# 2b3c155db72a4a81925f96d30976173a
 msgid "Integrator의 액션 노드들(action nodes)은 원천 데이터를 Hadoop 클러스터에서 수집·가공·적재하기 위한 각각의 연산처리 작업을 정의합니다. 아래와 같이 여러 가지 Hadoop 작업과 몇몇 추가적인 개별 시스템 작업(Java, Shell 등)을 지원합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:9
-# 8e564547ecd04aed9acd50651bcd264e
+# 6f42b66dbc4c4d04834510ce72254e48
 msgid "`Sqoop`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:10
-# 81949743f2154b358d35680bf1b8bf0d
+# a243de1c45fa468ab06f7e4d2951fef4
 msgid "`MR`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:11
-# 9fc5da1ef3f142f68a034b44392d75b8
+# ed756e01de9f4d94ad252752d115a51f
 msgid "`EXEC`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:12
-# 828a56f493cc42d88f7748d19dbf798c
+# 7f6057c40a874f58a5076c199d6d1c9a
 msgid "`Java`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:13
-# cb4c22055a034c9a89d01d084bf8493b
+# 8805abf348834297a1a1656ef2f1dc92
 msgid "`HIVE Query`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:14
-# d84172b8ac90400486c3550d32c4dba8
+# 4e7d4b141b0840b3957d7b8909909dc8
 msgid "`SSH`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:15
-# 609313f591e2426c80ff413f8907bf67
+# 0c88281fe0754f84a5e33f41c2a4417f
 msgid "`Spark`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:16
-# 5dc308ffc43843efa1bc9e49ba491e56
+# 47fbca01ef97410fb11683248b4821e7
 msgid "`Sub-Workflow`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:17
-# 6e03bf274ac845389b361cda1dd74b4f
+# b1f4b1c659c54bb59de1b97ffb83810b
 msgid "`DistCp`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:18
-# 2f91e1022e974cafab548f194ed26681
+# 8145f3fceb1f4e99a9bf50717db8e8f2
 msgid "`HDFS`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:19
-# 375c7861a9524457b89dfef25fe6329d
+# ae76b3b1d07b47deb4b2e7359138c9f5
 msgid "`Done`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:20
-# cdbce4c4ce9448f3a768cd7abfc2830c
+# 54b2135deb3b4aa5ba35e575c6ef6453
 msgid "`Druid`_"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:23
-# fd63708525ac452082013c6edbffe695
+# 520a3af2311f41fd9de92126cf52f33b
 msgid "Sqoop"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:25
-# 500ff89b4cfd42b9b8e67ef2e0152971
+# 77592a6830c549b09688134743357aad
 msgid "RDB 상의 데이터를 가져오거나 간단한 쿼리를 실행할 수 있는 task 입니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:28
-# 724530e3d40e47c688ee73fe2f5c0f98
+# 71c64bf2048a4a2eaae8b3993db9bcd4
 msgid "MR"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:30
-# e153d58907e942ff897d4e7185a0f0cf
+# e87d8598dd1749be9020ee619e3e86f8
 msgid "Local에 있는 jar를 실행하는 데 사용합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:33
-# 433ecf7a3bdd4595b4a8103984b5d4f4
+# b43de5ada39740bab9a838a74d23e253
 msgid "EXEC"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:35
-# c713aba613284c949d0a15b5012de4cb
+# be401320dec2486d8c9c1a52dfe4f5e3
 msgid "Python, shell 등 로컬에 있는 파일을 실행하는데 사용합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:38
-# dfb6e59663ed490eb071bc39080eb45f
+# 101a09c2e0b74c2ba65f491b75ef9a11
 msgid "Java"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:40
-# 4f6c4436d3ac483c907d966192e03acc
+# 0dae6c4998494f9aa97ca1c86171212b
 msgid "Java Task는 Java Class를 실행하고자 할 때 사용합니다. (단, main 함수가 구현되어 있어야 합니다.)"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:44
-# ca3de1b838f142abb9a63825c4d683e2
+# 630466a285684a6cbd8ef967eb27d7f6
 msgid "HIVE Query"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:46
-# 37bcb8a731224b5291dc93edabcc1292
+# b04a3339800044078b9eb13482e821a1
 msgid "Hive 쿼리를 실행할 때 사용합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:49
-# 7fe616757baf4b428b243e238e6892c3
+# 18a5cefe305d4990b6affa520d55ae95
 msgid "SSH"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:51
-# 76347eea0f844e05a5ad46f08dee7726
+# 07217c9ac3a546638489dcf6f095c73b
 msgid "원격지(remote)에 있는 명령어를 실행할 때 사용합니다. 다만, remote 서버는 SSH password-less login 설정이 되어 있어야 합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:55
-# 50a70033c2f14a90901ba2e306264eec
+# 3293d6d24b634b3fadba3bb03cedff64
 msgid "Spark"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:57
-# bcd30ec97983471a8c4dde54835ed359
+# 5bf8cb8c6d444ac09e077ef592f9f95a
 msgid "SPARK를 실행하는데 사용합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:60
-# 79d1cbfde1df4a2c9d35aa70990a23be
+# 5816ca1d6237449382d87cb2bc92ca60
 msgid "Sub-Workflow"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:62
-# b7430e73a0c2479dbcce4ae5281568a0
+# dfd0a99460e842f4864a7160a6c1d9fe
 msgid "기존 만들어진 Workflow와 연계 시 사용됩니다. 여러개의 Workflow 를 묶어서 실행하고자 할 때 각각의 Workflow 를 Task 로 정의합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:66
-# c59b8bde15294180bc06ad1c7915686a
+# 1eb5a5a3982a4e8487f894cf8b7a3c4f
 msgid "DistCp"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:68
-# 39f6b1d72a37451cb4928d09311678ae
+# ffa2fe449a9a4a1b8b60ff746713848f
 msgid "Source Hadoop Cluster 에서 Target Hadoop Cluster에 파일 복사시 사용합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:71
-# d70134701d2b46049af6a94327c6ecb4
+# f83d21f1675b4de4909e6ca14de0def6
 msgid "HDFS"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:73
-# 4d4bfc135fad47fa90425aedb896f701
+# a807ad11defd41dcb7af300ca1b2f57e
 msgid "Hadoop File 관리시 사용합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:76
-# 20a8798bdd914c428aa3776f3db6150f
+# 52c6a061221f478781f4987345f19a3b
 msgid "Done"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:78
-# 8025fddd6f29439baef50c38ff5be31f
+# e90c464daa944f7dbd3aad264d5937f4
 msgid "완료시 Done 파일을 생성합니다."
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:81
-# ddacb0abe34f4581a1a0ca301439e6f5
+# 8182d00e02734d908583319e153de70f
 msgid "Druid"
 msgstr ""
 
 #: ../../integrator/part03/tasks.rst:83
-# 8bc5706200184d7c9fc87c9580e3c291
+# 6510b75bd3d34d6db857ac913656c219
 msgid "Druid 엔진에 데이터 증분적재하기 위해 사용합니다."
 msgstr ""
 

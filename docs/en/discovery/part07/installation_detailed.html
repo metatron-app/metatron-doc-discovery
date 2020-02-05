@@ -1,0 +1,467 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation Detailed (CentOS 7) &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="next" title="Create a dataset" href="create_a_dataset.html" />
+    <link rel="prev" title="Data Preparation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Preparation</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Installation Detailed (CentOS 7)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1. Install requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hadoop">2. Install Hadoop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mysql">3. Install MySQL</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hive">4. Install Hive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metatron">5. Install Metatron</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">Create a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">Manage a dataflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">Use data snapshot results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">Data Exploration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">Engine Monitoring</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Data Preparation</a> &raquo;</li>
+        
+      <li>Installation Detailed (CentOS 7)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/installation_detailed.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="centos-7">
+<h1>Installation Detailed (CentOS 7)<a class="headerlink" href="#centos-7" title="Permalink to this headline">¶</a></h1>
+<p>This document is a guide for installing metatron and using data preparation feature from the scratch Linux OS environment.</p>
+<div class="section" id="id1">
+<h2>1. Install requirements<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Run following commands by root.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>yum clean all &amp;&amp; yum repolist &amp;&amp; yum -y update
+yum -y install tar unzip vi vim telnet apr apr-util apr-devel apr-util-devel net-tools curl openssl elinks locate python-setuptools
+yum -y install java-1.8.0-openjdk-devel.x86_64
+export JAVA_HOME=/usr/lib/jvm/java
+export PATH=$PATH:$JAVA_HOME/bin
+</pre></div>
+</div>
+</div>
+<div class="section" id="hadoop">
+<h2>2. Install Hadoop<a class="headerlink" href="#hadoop" title="Permalink to this headline">¶</a></h2>
+<p>Run below commands by root. You&#8217;d better to download the Hadoop binary from the closest mirror.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>yum -y install openssh-server openssh-clients rsync netstat wget
+yum -y update libselinux
+
+ssh-keygen -q -N &quot;&quot; -t dsa -f /etc/ssh/ssh_host_dsa_key
+ssh-keygen -q -N &quot;&quot; -t rsa -f /etc/ssh/ssh_host_rsa_key
+ssh-keygen -q -N &quot;&quot; -t rsa -f /root/.ssh/id_rsa
+cp /root/.ssh/id_rsa.pub /root/.ssh/authorized_keys
+
+wget http://archive.apache.org/dist/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz
+tar -zxvf hadoop-2.7.3.tar.gz -C /opt
+rm -f hadoop-2.7.3.tar.gz
+ln -s /opt/hadoop-2.7.3 /opt/hadoop
+
+export HADOOP_PREFIX=/opt/hadoop
+export HADOOP_COMMON_HOME=$HADOOP_PREFIX
+export HADOOP_HDFS_HOME=$HADOOP_PREFIX
+export HADOOP_MAPRED_HOME=$HADOOP_PREFIX
+export HADOOP_YARN_HOME=$HADOOP_PREFIX
+export HADOOP_CONF_DIR=$HADOOP_PREFIX/etc/hadoop
+export YARN_CONF_DIR=$HADOOP_PREFIX
+export PATH=$PATH:$HADOOP_PREFIX/bin:$HADOOP_PREFIX/sbin
+
+sed -i &quot;/^export JAVA_HOME/ s:.*:export JAVA_HOME=$JAVA_HOME:&quot; $HADOOP_CONF_DIR/hadoop-env.sh
+sed -i &quot;/^export HADOOP_CONF_DIR/ s:.*:export HADOOP_CONF_DIR=$HADOOP_CONF_DIR:&quot; $HADOOP_CONF_DIR/hadoop-env.sh
+</pre></div>
+</div>
+<p>Put files below into $HADOOP_CONF_DIR.</p>
+<blockquote>
+<div><a class="reference download internal" href="../../_downloads/core-site.xml" download=""><code class="xref download docutils literal"><span class="pre">core-site.xml</span></code></a>
+<a class="reference download internal" href="../../_downloads/hdfs-site.xml" download=""><code class="xref download docutils literal"><span class="pre">hdfs-site.xml</span></code></a>
+<a class="reference download internal" href="../../_downloads/mapred-site.xml" download=""><code class="xref download docutils literal"><span class="pre">mapred-site.xml</span></code></a>
+<a class="reference download internal" href="../../_downloads/yarn-site.xml" download=""><code class="xref download docutils literal"><span class="pre">yarn-site.xml</span></code></a></div></blockquote>
+<p>Run followings by root.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>$HADOOP_PREFIX/bin/hdfs namenode -format
+</pre></div>
+</div>
+<p>Append following contents into /root/.ssh/config</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">Host</span> <span class="o">*</span>
+  <span class="n">UserKnownHostsFile</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span>
+  <span class="n">StrictHostKeyChecking</span> <span class="n">no</span>
+  <span class="n">LogLevel</span> <span class="n">quiet</span>
+  <span class="n">Port</span> <span class="mi">2122</span>
+</pre></div>
+</div>
+<p>Run followings by root.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>chmod 600 /root/.ssh/config
+chown root:root /root/.ssh/config
+
+chmod +x $HADOOP_CONF_DIR/*-env.sh
+
+sed  -i &quot;/^[^#]*UsePAM/ s/.*/#&amp;/&quot;  /etc/ssh/sshd_config
+echo &quot;UsePAM no&quot; &gt;&gt; /etc/ssh/sshd_config
+echo &quot;Port 2122&quot; &gt;&gt; /etc/ssh/sshd_config
+</pre></div>
+</div>
+<p>Restart SSH server.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">service</span> <span class="n">sshd</span> <span class="n">restart</span>
+</pre></div>
+</div>
+<p>Run HDFS and Yarn daemons.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">start</span><span class="o">-</span><span class="n">dfs</span><span class="o">.</span><span class="n">sh</span>
+<span class="n">start</span><span class="o">-</span><span class="n">yarn</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Test if Hadoop works fine.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>hdfs dfs -mkdir -p /user/hadoop/input
+hdfs dfs -put $HADOOP_PREFIX/LICENSE.txt /user/hadoop/input
+hadoop jar $HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /user/hadoop/input /user/hadoop/output
+</pre></div>
+</div>
+</div>
+<div class="section" id="mysql">
+<h2>3. Install MySQL<a class="headerlink" href="#mysql" title="Permalink to this headline">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dev</span><span class="o">.</span><span class="n">mysql</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">get</span><span class="o">/</span><span class="n">mysql57</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="n">el7</span><span class="o">-</span><span class="mf">7.</span><span class="n">noarch</span><span class="o">.</span><span class="n">rpm</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">localinstall</span> <span class="n">mysql57</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="n">el7</span><span class="o">-</span><span class="mf">7.</span><span class="n">noarch</span><span class="o">.</span><span class="n">rpm</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="n">repolist</span> <span class="n">enabled</span> <span class="o">|</span> <span class="n">grep</span> <span class="s2">&quot;mysql.*-community.*&quot;</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">mysql</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">server</span> <span class="n">mysql</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">rm</span> <span class="o">-</span><span class="n">f</span> <span class="n">mysql57</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="n">el7</span><span class="o">-</span><span class="mf">7.</span><span class="n">noarch</span><span class="o">.</span><span class="n">rpm</span>
+<span class="n">service</span> <span class="n">mysqld</span> <span class="n">start</span>
+</pre></div>
+</div>
+<p>Get the temporary password with the following command.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">grep</span> <span class="s1">&#39;temporary password&#39;</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">mysqld</span><span class="o">.</span><span class="n">log</span> <span class="o">|</span> <span class="n">awk</span> <span class="p">{</span><span class="s1">&#39;print $11&#39;</span><span class="p">}</span>
+<span class="n">Z</span><span class="o">&amp;</span><span class="n">O</span><span class="o">+</span><span class="n">estx9vTt</span>
+</pre></div>
+</div>
+<p>Run mysql_secure_installation with the temporary password.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql_secure_installation
+Enter password for user root: -&gt; Z&amp;O+estx9vTt
+New password: -&gt; Metatron123$
+Re-enter new password: -&gt; Metatron123$
+Change the password for root ? ((Press y|Y for Yes, any other key for No) : y
+New password: -&gt; Metatron123$
+Re-enter new password: -&gt; Metatron123$
+Do you wish to continue with the password provided? -&gt; y
+Remove anonymous users? -&gt; enter
+Disallow root login remotely? -&gt; enter
+Remove test database and access to it? -&gt; enter
+Reload privilege tables now? -&gt; enter
+</pre></div>
+</div>
+<p>Connect to MySQL.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
+</pre></div>
+</div>
+</div>
+<div class="section" id="hive">
+<h2>4. Install Hive<a class="headerlink" href="#hive" title="Permalink to this headline">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>wget http://mirror.navercorp.com/apache/hive/hive-2.3.6/apache-hive-2.3.6-bin.tar.gz \
+      &amp;&amp; tar -zxvf apache-hive-2.3.6-bin.tar.gz -C /opt \
+      &amp;&amp; rm -f apache-hive-2.3.6-bin.tar.gz \
+      &amp;&amp; ln -s /opt/apache-hive-2.3.6-bin /opt/hive
+export HIVE_HOME=/opt/hive
+export PATH=$PATH:$HIVE_HOME/bin:$HIVE_HOME/hcatalog/sbin
+wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar
+mv mysql-connector-java-5.1.38.jar $HIVE_HOME/lib/
+</pre></div>
+</div>
+<p>Put files below into $HIVE_HOME/conf.</p>
+<blockquote>
+<div><a class="reference download internal" href="../../_downloads/hive-site.xml" download=""><code class="xref download docutils literal"><span class="pre">hive-site.xml</span></code></a></div></blockquote>
+<p>Initialize the Hive metastore.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
+create database hive_metastore;
+create user &#39;hive&#39;@&#39;%&#39; identified by &#39;Metatron123$&#39;;
+grant all privileges on *.* to &#39;hive&#39;@&#39;%&#39;;
+grant all privileges on hive_metastore.* to &#39;hive&#39;@&#39;%&#39;;
+create user &#39;hive&#39;@&#39;localhost&#39; identified by &#39;Metatron123$&#39;;
+grant all privileges on *.* to &#39;hive&#39;@&#39;localhost&#39;;
+grant all privileges on hive_metastore.* to &#39;hive&#39;@&#39;localhost&#39;;
+flush privileges;
+quit
+schematool -initSchema -dbType mysql
+</pre></div>
+</div>
+<p>Start Hive.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>hdfs dfs -mkdir -p /user/hive/warehouse
+mkdir -p $HIVE_HOME/hcatalog/var/log
+hcat_server.sh start
+hiveserver2 &amp;
+</pre></div>
+</div>
+<p>Connect to Hive.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">beeline</span> <span class="o">-</span><span class="n">u</span> <span class="n">jdbc</span><span class="p">:</span><span class="n">hive2</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">10000</span> <span class="s2">&quot;&quot;</span> <span class="s2">&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="metatron">
+<h2>5. Install Metatron<a class="headerlink" href="#metatron" title="Permalink to this headline">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">mkdir</span> <span class="o">/</span><span class="n">servers</span>
+<span class="n">tar</span> <span class="n">zxf</span> <span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">servers</span>
+<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-*</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span>
+<span class="n">export</span> <span class="n">METATRON_HOME</span><span class="o">=/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span>
+</pre></div>
+</div>
+<p>Put files below into $METATRON_HOME/conf.</p>
+<blockquote>
+<div><a class="reference download internal" href="../../_downloads/application-config.yaml" download=""><code class="xref download docutils literal"><span class="pre">application-config.yaml</span></code></a>
+<a class="reference download internal" href="../../_downloads/metatron-env.sh" download=""><code class="xref download docutils literal"><span class="pre">metatron-env.sh</span></code></a>
+<a class="reference download internal" href="../../_downloads/logback-console.xml" download=""><code class="xref download docutils literal"><span class="pre">logback-console.xml</span></code></a></div></blockquote>
+<p>Initialize Metatron.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
+create database polaris;
+create user &#39;polaris&#39;@&#39;%&#39; identified by &#39;Metatron123$&#39;;
+grant all privileges on *.* to &#39;polaris&#39;@&#39;%&#39;;
+grant all privileges on hive_metastore.* to &#39;polaris&#39;@&#39;%&#39;;
+create user &#39;polaris&#39;@&#39;localhost&#39; identified by &#39;Metatron123$&#39;;
+grant all privileges on *.* to &#39;polaris&#39;@&#39;localhost&#39;;
+grant all privileges on hive_metastore.* to &#39;polaris&#39;@&#39;localhost&#39;;
+flush privileges;
+quit
+cd $METATRON_HOME
+bin/metatron.sh --init start
+</pre></div>
+</div>
+<p>To watch the progress, tail the log file.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">tail</span> <span class="o">-</span><span class="n">f</span> <span class="n">logs</span><span class="o">/</span><span class="n">metatron</span><span class="o">-*.</span><span class="n">out</span>
+</pre></div>
+</div>
+<p>Connect to <a class="reference external" href="http://localhost:8180/">http://localhost:8180/</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create_a_dataset.html" class="btn btn-neutral float-right" title="Create a dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Data Preparation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

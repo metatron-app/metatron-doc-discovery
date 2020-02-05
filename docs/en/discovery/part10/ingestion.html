@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Ingestion &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Ingestion &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,8 +45,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Query" href="query.html" />
     <link rel="prev" title="Overview" href="overview.html" /> 
 </head>
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -190,7 +198,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part10/ingestion.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part10/ingestion.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -208,31 +216,39 @@
 <p>Ingestion is the monitoring of Druid Indexing Service. It provides performance status of the indexing tasks and related information.</p>
 <p>Provided information identifies the following:</p>
 <blockquote>
-<div><ul class="simple">
-<li><dl class="simple">
-<dt>MiddleManager Status</dt><dd><ul>
-<li><p>Capacity of each worker and current usage amount</p></li>
+<div><ul>
+<li><dl class="first docutils">
+<dt>MiddleManager Status</dt>
+<dd><ul class="first last simple">
+<li><p class="first">Capacity of each worker and current usage amount</p>
+</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt>Supervisor Status</dt><dd><ul>
-<li><p>Status of each supervisor</p></li>
-<li><p>provided feature: terminate (suspend, reset)</p></li>
+<li><dl class="first docutils">
+<dt>Supervisor Status</dt>
+<dd><ul class="first last simple">
+<li><p class="first">Status of each supervisor</p>
+</li>
+<li><p class="first">provided feature: terminate (suspend, reset)</p>
+</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><dl class="simple">
-<dt>Task Status</dt><dd><ul>
-<li><p>runningTasks, pendingTasks, waitingTasks, completedTasks</p></li>
-<li><p>provided feature: log, kill</p></li>
+<li><dl class="first docutils">
+<dt>Task Status</dt>
+<dd><ul class="first last simple">
+<li>runningTasks, pendingTasks, waitingTasks, completedTasks</li>
+<li><p class="first">provided feature: log, kill</p>
+</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p>Lockbox Status</p></li>
+<li><p class="first">Lockbox Status</p>
+</li>
 </ul>
 </div></blockquote>
 <p>Ingestion section displays details of both supervisor and middle manager.</p>
@@ -241,110 +257,115 @@
 <p>Tasks can be classified into 4 types of status:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>pending: task waiting to be assigned to a worker</p></li>
-<li><p>running: task currently running</p></li>
-<li><p>waiting: task waiting on lock</p></li>
-<li><p>completed: classified into two states - SUCCESS, FAIL</p></li>
+<li><p class="first">pending: task waiting to be assigned to a worker</p>
+</li>
+<li><p class="first">running: task currently running</p>
+</li>
+<li><p class="first">waiting: task waiting on lock</p>
+</li>
+<li><p class="first">completed: classified into two states - SUCCESS, FAIL</p>
+</li>
 </ul>
 </div></blockquote>
 <p>Task details and menu are as follows.</p>
-<table class="docutils align-default">
+<table border="1" class="docutils">
 <colgroup>
-<col style="width: 26%" />
-<col style="width: 62%" />
-<col style="width: 12%" />
+<col width="26%" />
+<col width="62%" />
+<col width="12%" />
 </colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Field</p></th>
-<th class="head"><p>Description</p></th>
-<th class="head"><p>Example</p></th>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+<th class="head">Example</th>
 </tr>
 </thead>
-<tbody>
-<tr class="row-even"><td><p>id</p></td>
-<td><p>taskId</p></td>
-<td></td>
+<tbody valign="top">
+<tr class="row-even"><td>id</td>
+<td>taskId</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>type</p></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td>type</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><p>dataSource</p></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td>dataSource</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>createdTime</p></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td>createdTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><p>queueInsertionTime</p></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td>queueInsertionTime</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>status</p></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td>status</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><p>runnerStatusCode</p></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td>runnerStatusCode</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>duration</p></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td>duration</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><p>locationhost</p></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td>locationhost</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>locationport</p></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td>locationport</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><p>payload</p></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td>payload</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>status</p></td>
-<td><p>status</p></td>
-<td></td>
+<tr class="row-odd"><td>status</td>
+<td><p class="first last">status</p>
+</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><p>log</p></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td>log</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>log last 8k</p></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td>log last 8k</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><p>kill</p></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td>kill</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>ingestion</p></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td>ingestion</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 </tbody>
 </table>
 <p>It is displayed as shown below.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/ingestion_task.png" src="../../_images/ingestion_task.png" />
 </div>
 </div></blockquote>
 <p>Following image is the detail view. (a case using Kafka)</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/ingestion_task01.png" src="../../_images/ingestion_task01.png" />
 </div>
-<div class="figure align-default">
+<div class="figure">
 <img alt="../../_images/ingestion_task02.png" src="../../_images/ingestion_task02.png" />
 </div>
 </div></blockquote>
 <p>And below is a case of general Task, not using Kafka.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/ingestion_task03.png" src="../../_images/ingestion_task03.png" />
 </div>
 </div></blockquote>
@@ -352,51 +373,55 @@
 <div class="section" id="supervisors">
 <h2>Supervisors<a class="headerlink" href="#supervisors" title="Permalink to this headline">¶</a></h2>
 <p>You can monitor the running Supervisors. Details and menu available for monitoring is as follows:</p>
-<table class="docutils align-default">
+<table border="1" class="docutils">
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 68%" />
-<col style="width: 12%" />
+<col width="21%" />
+<col width="68%" />
+<col width="12%" />
 </colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Field</p></th>
-<th class="head"><p>Description</p></th>
-<th class="head"><p>Example</p></th>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Field</th>
+<th class="head">Description</th>
+<th class="head">Example</th>
 </tr>
 </thead>
-<tbody>
-<tr class="row-even"><td><p>Status</p></td>
-<td><p>All of the supervisors provided by ‘get supervisorIDs’ are at running state</p></td>
-<td></td>
+<tbody valign="top">
+<tr class="row-even"><td>Status</td>
+<td><p class="first last">All of the supervisors provided by &#8216;get supervisorIDs&#8217; are at running state</p>
+</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>Datasource</p></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td>Datasource</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><p>Detailed Status</p></td>
-<td><p>Details provided by status API</p></td>
-<td></td>
+<tr class="row-even"><td>Detailed Status</td>
+<td><p class="first last">Details provided by status API</p>
+</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>Lag</p></td>
-<td><p>Lag details of kafka, acquired using emitter</p></td>
-<td></td>
+<tr class="row-odd"><td>Lag</td>
+<td><p class="first last">Lag details of kafka, acquired using emitter</p>
+</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-even"><td><p>Spec</p></td>
-<td></td>
-<td></td>
+<tr class="row-even"><td>Spec</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
-<tr class="row-odd"><td><p>Shutdown</p></td>
-<td><p>Terminates supervisor. Kills related tasks as well.</p></td>
-<td></td>
+<tr class="row-odd"><td>Shutdown</td>
+<td><p class="first last">Terminates supervisor. Kills related tasks as well.</p>
+</td>
+<td>&nbsp;</td>
 </tr>
 </tbody>
 </table>
 <p>It is displayed as shown below.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/ingestion_supervisor.png" src="../../_images/ingestion_supervisor.png" />
 </div>
-<div class="figure align-default">
+<div class="figure">
 <img alt="../../_images/ingestion_supervisor01.png" src="../../_images/ingestion_supervisor01.png" />
 </div>
 </div></blockquote>
@@ -405,10 +430,10 @@
 <h2>MiddleManagers<a class="headerlink" href="#middlemanagers" title="Permalink to this headline">¶</a></h2>
 <p>List of workers.</p>
 <blockquote>
-<div><div class="figure align-default">
+<div><div class="figure">
 <img alt="../../_images/ingestion_middlemanager.png" src="../../_images/ingestion_middlemanager.png" />
 </div>
-<div class="figure align-default">
+<div class="figure">
 <img alt="../../_images/ingestion_middlemanager01.png" src="../../_images/ingestion_middlemanager01.png" />
 </div>
 </div></blockquote>

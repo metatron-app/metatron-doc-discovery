@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Shared workspace &mdash; metatron discovery docs 0.4.3 documentation</title>
+  <title>Shared workspace &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -20,11 +20,21 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -35,8 +45,6 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Workbook" href="../part04/index.html" />
     <link rel="prev" title="Workspace home" href="workspace_management.html" /> 
 </head>
@@ -65,7 +73,7 @@
             
             
               <div class="version">
-                0.4.3
+                0.4.2
               </div>
             
           
@@ -193,7 +201,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part03/shared_workspace.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part03/shared_workspace.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -214,8 +222,10 @@
 <p>The shared workspace list page is used to view a list of all shared workspaces accessible to the logged-in user and to move to a specific workspace. This page can be accessed via two methods:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Click the <img alt="icon_more2" src="../../_images/icon_more2.png" /> button at the top-left of the Discovery screen to open the main panel, and click <strong>Workspace list &gt;&gt;</strong>.</p></li>
-<li><p>Click <strong>Workspace list</strong> at the top-right of the workspace home.</p></li>
+<li><p class="first">Click the <img alt="icon_more2" src="../../_images/icon_more2.png" /> button at the top-left of the Discovery screen to open the main panel, and click <strong>Workspace list &gt;&gt;</strong>.</p>
+</li>
+<li><p class="first">Click <strong>Workspace list</strong> at the top-right of the workspace home.</p>
+</li>
 </ul>
 </div></blockquote>
 <p>The shared workspace list page is composed as follows:</p>
@@ -224,15 +234,24 @@
 <img alt="공유 워크스페이스 목록 화면" src="../../_images/shared_workspace_list.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>Number of shared workspaces:</strong> Displays how many shared workspaces are listed.</p></li>
-<li><p><strong>Add a shared workspace:</strong> Click this button to move to the page to add a shared workspace. (See <a class="reference internal" href="#shared-workspace-creation"><span class="std std-ref">Create a shared workspace</span></a> for a deailed procedure)</p></li>
-<li><p><strong>Personal workspace:</strong> Click this button to move to the personal workspace owned by the logged-in user.</p></li>
-<li><p><strong>Search:</strong> Searches the shared workspace list by the name you typed in.</p></li>
-<li><p><strong>Favorites:</strong> Displays only those workspaces designated as favorites.</p></li>
-<li><p><strong>Public only:</strong> Displays only those workspaces set as public.</p></li>
-<li><p><strong>I’m the owner:</strong> Displays only those workspaces for which the logged-in user is the administrator.</p></li>
-<li><p><strong>Name ascending/descending:</strong> Sorts the shared workspace list by name ascending/descending.</p></li>
-<li><p><strong>Workspace list:</strong> Lists workspaces filtered by specified criteria. Click one to move to enter that workspace.</p></li>
+<li><p class="first"><strong>Number of shared workspaces:</strong> Displays how many shared workspaces are listed.</p>
+</li>
+<li><p class="first"><strong>Add a shared workspace:</strong> Click this button to move to the page to add a shared workspace. (See <a class="reference internal" href="#shared-workspace-creation"><span class="std std-ref">Create a shared workspace</span></a> for a deailed procedure)</p>
+</li>
+<li><p class="first"><strong>Personal workspace:</strong> Click this button to move to the personal workspace owned by the logged-in user.</p>
+</li>
+<li><p class="first"><strong>Search:</strong> Searches the shared workspace list by the name you typed in.</p>
+</li>
+<li><p class="first"><strong>Favorites:</strong> Displays only those workspaces designated as favorites.</p>
+</li>
+<li><p class="first"><strong>Public only:</strong> Displays only those workspaces set as public.</p>
+</li>
+<li><p class="first"><strong>I’m the owner:</strong> Displays only those workspaces for which the logged-in user is the administrator.</p>
+</li>
+<li><p class="first"><strong>Name ascending/descending:</strong> Sorts the shared workspace list by name ascending/descending.</p>
+</li>
+<li><p class="first"><strong>Workspace list:</strong> Lists workspaces filtered by specified criteria. Click one to move to enter that workspace.</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
@@ -241,19 +260,23 @@
 <p>A new shared workspace is created as follows:</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>Click the <img alt="icon_plus" src="../../_images/icon_plus.png" /> button on the shared workspace list page to move the page to create a new shared workspace.</p></li>
-<li><p>Enter a <strong>Name</strong> and <strong>Description</strong>, and then set up the <strong>Permission schema</strong> by referring to the descriptions below:</p>
+<li><p class="first">Click the <img alt="icon_plus" src="../../_images/icon_plus.png" /> button on the shared workspace list page to move the page to create a new shared workspace.</p>
+</li>
+<li><p class="first">Enter a <strong>Name</strong> and <strong>Description</strong>, and then set up the <strong>Permission schema</strong> by referring to the descriptions below:</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="공유 워크스페이스 생성 화면" src="../../_images/shared_workspace_creation.en.png" />
 </div>
 <ul class="simple">
-<li><p><strong>Use a preset schema:</strong> Load the permission schema defined by the administrator.</p></li>
-<li><p><strong>Use a custom schema:</strong> Define a new permission schema. (See <a class="reference internal" href="#shared-workspace-permission"><span class="std std-ref">Set access permissions for a shared workspace</span></a> for how to define a new permission schema.)</p></li>
+<li><p class="first"><strong>Use a preset schema:</strong> Load the permission schema defined by the administrator.</p>
+</li>
+<li><p class="first"><strong>Use a custom schema:</strong> Define a new permission schema. (See <a class="reference internal" href="#shared-workspace-permission"><span class="std std-ref">Set access permissions for a shared workspace</span></a> for how to define a new permission schema.)</p>
+</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Click <strong>Done</strong> to finish creating a workspace.</p></li>
+<li><p class="first">Click <strong>Done</strong> to finish creating a workspace.</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
@@ -262,8 +285,10 @@
 <p>Setting the access permission for a shared workspace is conducted in the following two steps:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Set an access permission for each user role (See <a class="reference internal" href="#permission-schema-setup"><span class="std std-ref">Set permission schema</span></a>)</p></li>
-<li><p>Grant a role to each user or user group (See <a class="reference internal" href="#shared-members-setup"><span class="std std-ref">Set shared members &amp; groups</span></a>)</p></li>
+<li><p class="first">Set an access permission for each user role (See <a class="reference internal" href="#permission-schema-setup"><span class="std std-ref">Set permission schema</span></a>)</p>
+</li>
+<li><p class="first">Grant a role to each user or user group (See <a class="reference internal" href="#shared-members-setup"><span class="std std-ref">Set shared members &amp; groups</span></a>)</p>
+</li>
 </ul>
 </div></blockquote>
 <div class="section" id="permission-schema-setup">
@@ -284,16 +309,21 @@
 <p><strong>Permission for each entity type (workbook/notebook/workbench)</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>View:</strong> Allows to access and view data in entities of the type.</p></li>
-<li><p><strong>Create:</strong> Allows to create, edit, and delete entities of the type.</p></li>
-<li><p><strong>Edit any:</strong> Allows to edit or delete entities of the type created by another user.</p></li>
+<li><p class="first"><strong>View:</strong> Allows to access and view data in entities of the type.</p>
+</li>
+<li><p class="first"><strong>Create:</strong> Allows to create, edit, and delete entities of the type.</p>
+</li>
+<li><p class="first"><strong>Edit any:</strong> Allows to edit or delete entities of the type created by another user.</p>
+</li>
 </ul>
 </div></blockquote>
 <p><strong>Workspace permission</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Create folders: Allows to create, edit, and delete folders in the workspace.</p></li>
-<li><p>Set config.: Allows to modify the name and description of the workspace and to change the workspace permission schema.</p></li>
+<li><p class="first">Create folders: Allows to create, edit, and delete folders in the workspace.</p>
+</li>
+<li><p class="first">Set config.: Allows to modify the name and description of the workspace and to change the workspace permission schema.</p>
+</li>
 </ul>
 </div></blockquote>
 </div></blockquote>
@@ -323,17 +353,22 @@
 <img alt="공유 워크스페이스 권한 스키마 변경 화면 #2" src="../../_images/shared_workspace_shared_member_group_setting.en.png" />
 </div>
 <ol class="arabic">
-<li><p><strong>Select whether to assign user roles individually or in groups</strong></p>
+<li><p class="first"><strong>Select whether to assign user roles individually or in groups</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>Member tab:</strong> Assign user roles to individual users.</p></li>
-<li><p><strong>Group tab:</strong> Assign user roles in groups. (A user group can be established by administrator permission.)</p></li>
+<li><p class="first"><strong>Member tab:</strong> Assign user roles to individual users.</p>
+</li>
+<li><p class="first"><strong>Group tab:</strong> Assign user roles in groups. (A user group can be established by administrator permission.)</p>
+</li>
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>User roles:</strong> Click on it to pop up a dialog box showing the permission schema, which defines a permission for each user role.</p></li>
-<li><p><strong>Member/group list:</strong> Lists the users (groups in the case of the group tab) registered in Discovery. Click a user (group) in the list to add it to the role assignment section on the right. Click an added user (group) to remove it from the section on the right.</p></li>
-<li><p><strong>Assign a user role:</strong> Click this combo box to display user roles defined in the active permission schema. Select the role you want to assign to the user (group).</p></li>
+<li><p class="first"><strong>User roles:</strong> Click on it to pop up a dialog box showing the permission schema, which defines a permission for each user role.</p>
+</li>
+<li><p class="first"><strong>Member/group list:</strong> Lists the users (groups in the case of the group tab) registered in Discovery. Click a user (group) in the list to add it to the role assignment section on the right. Click an added user (group) to remove it from the section on the right.</p>
+</li>
+<li><p class="first"><strong>Assign a user role:</strong> Click this combo box to display user roles defined in the active permission schema. Select the role you want to assign to the user (group).</p>
+</li>
 </ol>
 </div></blockquote>
 </div>
