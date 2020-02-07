@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part04/index.rst:2
+# b7182810ae8049788fb98154488d77fe
+msgid "워크북"
+msgstr ""
+
+#: ../../discovery/part04/index.rst:7
+# 0c1371109d9d4930910a7beae7d0e659
+msgid "워크북은 Metatron Discovery의 Druid 엔진을 기반으로 하는 비주얼 데이터 분석 모듈입니다. 위 그림과 같이 하나의 독립된 보고서 단위에 해당하는 각 **워크북**\\은 다양한 **대시보드**\\로 구성되며, 각 대시보드는 원천 데이터 분석 결과를 시각화해서 보여주는 각종 **차트**\\로 구성되어 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/index.rst:10
+# c3d603f4f603410fba32e428d2ac4db5
+msgid "워크북의 기본적인 특징은 다음과 같습니다."
+msgstr ""
+
+#: ../../discovery/part04/index.rst:12
+# 70002492728c47e8b61f740f70b6f94d
+msgid "시계열 기반의 다차원 데이터 소스를 이용하여 신속하고 유연한 데이터 분석 가능."
+msgstr ""
+
+#: ../../discovery/part04/index.rst:13
+# 9001b98942724a6f9cead30c8cdcc108
+msgid "각 대시보드에서 각종 차트와 텍스트 등의 시각화 위젯을 배치함으로써 프레젠테이션 형식의 보고서로 활용 가능."
+msgstr ""
+
+#: ../../discovery/part04/index.rst:14
+# b959f08ad64847cabe9c74533c57dfce
+msgid "클러스터링, 예측선, 추세선 등의 자주 쓰는 알고리즘을 GUI(Graphical User Interface)로 구현 가능."
+msgstr ""
+
+#: ../../discovery/part04/index.rst:16
+# bf14befaeff045aab8670bd9bb1a9012
+msgid "본 단원의 구성은 아래와 같습니다."
+msgstr ""
+

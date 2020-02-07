@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part04/manage_charts.rst:2
+# 1482c11e17a742d18c71cd37d5ee645c
+msgid "차트"
+msgstr ""
+
+#: ../../discovery/part04/manage_charts.rst:4
+# e15b9a5768ad49df87375af8ef6be30d
+msgid "기본적으로 워크북 내 각 대시보드는 분석한 데이터를 시각화하여 보여주는 다양한 차트로 구성됩니다. 데이터 분석 목적에 맞게 차트를 만들기 위해 필수적으로 알아야할 몇 가지 개념과 Discovery의 차트 구성 UI에 대해 설명합니다."
+msgstr ""
+
+#: ../../discovery/part04/manage_charts.rst:6
+# ce61c0d227514637b77faab646831596
+msgid "차트 홈 화면은 다음과 같이 세 영역으로 구분됩니다."
+msgstr ""
+
+#: ../../discovery/part04/manage_charts.rst:10
+# 22a8a490bc51461eb1266f2d8d3dfd55
+msgid "**컬럼/차트 선택 영역:** 차트를 만들기 위해 필수적으로 행해야 하는 액션의 순서대로 UI가 구성되어 있습니다. Data(데이터 컬럼 리스트)선택을 통해 차트를 피봇팅할 수 있으며, Chart(차트 종류 리스트)를 선택하여 데이터를 시각화할 수 있습니다. 또한 Analytics(분석)을 통해 원하는 분석 조건을 차트에 탑재할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/manage_charts.rst:12
+# 3de7d3aa0e6d43fab58c8f52903b86e7
+msgid "**시각화 영역:** 피봇팅할 수 있는 선반영역과 실제 차트가 그려지는 시각화 영역으로 구성됩니다. 컬럼/차트 선택 영역에서 차트를 그릴 수 있는 데이터와 차트가 선택되면 이 곳에서 차트가 나타납니다."
+msgstr ""
+
+#: ../../discovery/part04/manage_charts.rst:14
+# 817e071a5ad34e82837e3888285348ef
+msgid "**옵션 영역:** 차트를 보기 좋게 꾸미고, 차트가 보여지는 방식을 사용자의 기호에 맞게 선택할 수 있습니다. 옵션 영역은 필터, 파레트, 축, 숫자표현, 차트표현으로 이루어져 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/manage_charts.rst:16
+# e5ead2c37a524038b6a0453a228c0719
+msgid "아래 각 절에서는 이러한 사용자 인터페이스를 이용하여 각종 차트를 만들고 관리하는 방식을 소개합니다."
+msgstr ""
+

@@ -4,12 +4,11 @@
 # docs package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-07 18:59+0900\n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,232 +17,184 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
 
-# d49ac3cdf34c47b687ab741fbe850379
+# e26c6c503b6d42a9a98b6d74066e7848
 #: ../../discovery/part07/docker_migration.rst:2
-msgid "상세 설치 가이드 (CentOS 7 기준)"
-msgstr ""
+msgid "Docker Migration 가이드"
+msgstr "Docker Migration Guide"
 
-# 2a272e0ff98945d7afb40e8bf235a315
+# 39c0e4a6e3444625a0eaa2a315c93616
 #: ../../discovery/part07/docker_migration.rst:4
+msgid "Docker로 배포된 Metatron Discovery를 다른 docker image로 이관하는 작업에 대한 가이드 문서입니다."
+msgstr ""
+"This document is a guide on migrating a Metatron Discovery service across"
+" docker instances."
+
+# ed11c345e0424c56862ce96637baa4da
+#: ../../discovery/part07/docker_migration.rst:6
 msgid ""
-"Linux OS만 제공된 환경(클라우드 서비스)을 기준으로, 데이터 프리퍼레이션 기능을 모두 사용해볼 수 있도록 메타트론을 설치, "
-"설정하는 것에 대한 가이드 문서입니다."
+"https://github.com/teamsprint/docker-metatron.git/ 을 사용한다고 가정합니다. 이에 대해선 "
+"https://metatron.app/2020/01/21/deploying-metatron-with-the-fully-"
+"engineered-docker-image/ 를 참고하세요."
 msgstr ""
+"I suppose that you use https://github.com/teamsprint/docker-metatron.git/"
+" for convenience on docker commands. Refer to "
+"https://metatron.app/2020/01/21/deploying-metatron-with-the-fully-"
+"engineered-docker-image/"
 
-# 10de9b4bf1ad4a7faf41a49dc6ebc64f
-#: ../../discovery/part07/docker_migration.rst:7
-msgid "1. 필수 패키지 설치"
-msgstr ""
-
-# 7309624030dd4c07ae043ba6c7a5318e
+# 9841846707124906983538e4a1f827d5
 #: ../../discovery/part07/docker_migration.rst:9
-msgid "루트로 다음 명령들을 실행합니다."
-msgstr ""
+msgid "메타데이터 스토어로 MySQL을 사용한 경우에 대해서만 기술합니다."
+msgstr "I assume that you use MySQL as the metadata store."
 
-# 0f08afa4d8c24dd9ad63154ffb2ce63c
-#: ../../discovery/part07/docker_migration.rst:20
-msgid "2. Hadoop 설치"
-msgstr ""
+# c1ecd8a0c9ad448b9ee636aa5e745c94
+#: ../../discovery/part07/docker_migration.rst:12
+msgid "1. 메타트론 서비스 중단"
+msgstr "1\\. Stop Metatron Service"
 
-# 2e08aaa065f349e8b80b4eddf836b6d5
+# bb67459f26554a78a136015945567998
+#: ../../discovery/part07/docker_migration.rst:14
+msgid "Docker 외부에서 다음 명령을 수행하면 docker instance 내부로 들어갑니다."
+msgstr "Run the following command to get into the docker instance."
+
+# 540e809feec243d38b638ed7ecb91756
 #: ../../discovery/part07/docker_migration.rst:22
-msgid "루트로 다음 명령들을 실행합니다. Hadoop 바이너리는 가까운 mirror를 통해서 다운로드 받는 것이 더 좋습니다."
-msgstr ""
+msgid "Docker 내부에서 다음의 명령을 통해 메타트론 서비스를 중지시킵니다."
+msgstr "Stop Metatron service with the following command."
 
-# efd9ccca48494cbab794ce695fef6c85
-#: ../../discovery/part07/docker_migration.rst:52
-msgid "다음 파일들을 $HADOOP_CONF_DIR에 넣어주세요."
-msgstr ""
+# ca4c4ed630df4592860c62824f1e1056
+#: ../../discovery/part07/docker_migration.rst:31
+msgid "2. 메타데이터 스토어 백업"
+msgstr "2\\. Backup Metadata Store"
 
-# 955c0ae6eda044d79c6da2eb7e023ec0
+# b56e3435361b4ab3af34b4de55e6bede
+#: ../../discovery/part07/docker_migration.rst:33
+msgid ""
+"메타트론에서 사용하는 데이터셋, 데이터 플로우 등에 대한 정보를 먼저 백업해야합니다. Docker 외부에서 다음 명령을 수행합니다."
+" (Container의 이름이 metatron, 메타데이터 스토어로 사용한 데이터베이스의 이름이 polaris 경우)"
+msgstr ""
+"We must backup all metadata used in Metatron like datasets, dataflows, "
+"etc. Run the following commands from host machine. (Container name is "
+"\"metatron\", the database name of metadata store is \"polaris\"."
+
+# 150ba81355314516a080a7e492f11318
+#: ../../discovery/part07/docker_migration.rst:42
+msgid "3. 설정 및 실행 스크립트 백업"
+msgstr "3\\. Backup configuration files and run scripts."
+
+# 8acf1779d2d24bbca80d86c51fa2bcac
 #: ../../discovery/part07/docker_migration.rst:54
+msgid "4. 업로드된 파일 데이터셋, 데이터 스냅샷 백업"
+msgstr "4\\. Backup uploaded file datasets, data snapshots."
+
+# a6afed62a3204a9aa85bd1e88a4f7e15
+#: ../../discovery/part07/docker_migration.rst:61
 msgid ""
-":download:`core-site.xml </_static/data/discovery/part07/core-site.xml>` "
-":download:`hdfs-site.xml </_static/data/discovery/part07/hdfs-site.xml>` "
-":download:`mapred-site.xml </_static/data/discovery/part07/mapred-"
-"site.xml>` :download:`yarn-site.xml </_static/data/discovery/part07/yarn-"
-"site.xml>`"
+"일반적인 경우 데이터 스냅샷은 백업할 필요가 없습니다. 데이터 스냅샷이 작은 경우라면 금방 다시 만들어낼 수 있고, 다시 만들어내기"
+" 부담스러울 정도로 크다면 백업에 대한 부담도 크기 때문입니다."
 msgstr ""
+"Generally, you don't need to backup data snapshots. If the snapshot is "
+"small enough, you can easily remake the snapshots. Or if it's too big, "
+"backup size might be also too big."
 
-# 7587766c8bb1434780732877d5227167
-# b44d6e2c5b9d4d139bc7d566bc40c15a
-#: ../../discovery/part07/docker_migration.rst:59
-#: ../../discovery/part07/docker_migration.rst:75
-msgid "계속해서 루트로 다음 명령들을 실행합니다."
-msgstr ""
-
-# 50474781adac4e75b82a358818542efc
-#: ../../discovery/part07/docker_migration.rst:65
-msgid "다음 내용을 /root/.ssh/config에 다음 내용을 추가해주세요."
-msgstr ""
-
-# 963595911d31418f8ca01674247204e9
-#: ../../discovery/part07/docker_migration.rst:88
-msgid "SSH 서버를 다시 시작합니다."
-msgstr ""
-
-# ce39d157c79549d5ba93408a533ec998
-#: ../../discovery/part07/docker_migration.rst:94
-msgid "HDFS 및 Yarn을 실행합니다."
-msgstr ""
-
-# e0bcc31f267e4d12b4c15d7f024b2b8d
-#: ../../discovery/part07/docker_migration.rst:101
-msgid "Hadoop이 제대로 설치되었는지 테스트해봅니다."
-msgstr ""
-
-# c70244ac01eb48c5b6850f3e81d0195d
-#: ../../discovery/part07/docker_migration.rst:110
-msgid "3. MySQL 설치"
-msgstr ""
-
-# 786cce7fd7a642afbf8d9dc52fe89a5a
-#: ../../discovery/part07/docker_migration.rst:121
-msgid "다음의 명령을 통해 임시패스워드를 알아냅니다."
-msgstr ""
-
-# 4ced04656b914dc89032733f8f688a56
-#: ../../discovery/part07/docker_migration.rst:128
-msgid "위 패스워드를 이용해서 mysql_secure_installation을 실행합니다."
-msgstr ""
-
-# 527357818db144b6bbcc74b043dd6338
-#: ../../discovery/part07/docker_migration.rst:145
-msgid "MySQL에 접속해봅니다."
-msgstr ""
-
-# b20e116481154b7ca76e67420edf1e61
-#: ../../discovery/part07/docker_migration.rst:152
-msgid "4. Hive 설치"
-msgstr ""
-
-# bc3775007aa84ea395f1e1aa7e6bdbe9
-#: ../../discovery/part07/docker_migration.rst:165
-msgid "다음 파일을 $HIVE_HOME/conf에 넣어주세요."
-msgstr ""
-
-# ae667aa12798446aa57138ca0588565f
-#: ../../discovery/part07/docker_migration.rst:167
-msgid ":download:`hive-site.xml </_static/data/discovery/part07/hive-site.xml>`"
-msgstr ""
-
-# 64593871531743a59312796290eecf49
-#: ../../discovery/part07/docker_migration.rst:169
-msgid "Hive metastore를 초기화합니다."
-msgstr ""
-
-# 51f3e1106d8448dfbff8961b1196201d
-#: ../../discovery/part07/docker_migration.rst:185
-msgid "Hive를 시작합니다."
-msgstr ""
-
-# 43f6d9023cfb4aaba8f65036d6fbaba9
-#: ../../discovery/part07/docker_migration.rst:194
-msgid "Hive에 접속해봅니다."
-msgstr ""
-
-# 919ef7c6062d47e99834d0d8468c4b17
-#: ../../discovery/part07/docker_migration.rst:201
-msgid "5. Druid 설치"
-msgstr ""
-
-# 8d570daf272843f99c9dd535fe8990e9
-#: ../../discovery/part07/docker_migration.rst:211
-msgid "다음 파일들을 다운로드 받아서 지정된 위치로 넣어주세요."
-msgstr ""
-
-# cf369fbd5c4349ecac1839cbf761aa99
-#: ../../discovery/part07/docker_migration.rst:214
-msgid "Download URL"
-msgstr ""
-
-# f89b3bcb387a427cbd62c83a0723de3c
-#: ../../discovery/part07/docker_migration.rst:214
-msgid "Target Location"
-msgstr ""
-
-# 9ee7bc53dcbc479891b8be393f407a0f
-#: ../../discovery/part07/docker_migration.rst:216
-msgid ":download:`jvm.config </_static/data/discovery/part07/single.jvm.config>`"
-msgstr ""
-
-# ee03bda97c5442de815a21abbfd1e001
-#: ../../discovery/part07/docker_migration.rst:216
-msgid "$DRUID_HOME/conf/druid/single/jvm.config"
-msgstr ""
-
-# 7e99ae1de4024369ba5728040859a9b9
-#: ../../discovery/part07/docker_migration.rst:218
+# 047b7b180dde4d04904cefda76da0407
+#: ../../discovery/part07/docker_migration.rst:64
 msgid ""
-":download:`runtime.properties "
-"</_static/data/discovery/part07/broker.runtime.properties>`"
+"Docker instance 내부의 데이터베이스에 저장한 데이터 스냅샷은 백업할 수 없습니다. Staging DB에 대한 설정을 "
+"따로 하지 않았다면 (docker instance의 초기 설정 그대로인 경우), staging DB 타입의 데이터 스냅샷도 백업할 "
+"수 없습니다."
 msgstr ""
+"By the way, you cannot backup snapshots stored in internal databases. If "
+"you didn't modify configurations about staging DB (if the configuration "
+"is the default of initial image), then you cannot backup staging DB type "
+"snapshots."
 
-# d09a709a4bac469cb39dc5a758814563
-#: ../../discovery/part07/docker_migration.rst:218
-msgid "$DRUID_HOME/conf/druid/single/broker/runtime.properties"
+# 1c778c41a0584c73982cc6111cd3e2ba
+#: ../../discovery/part07/docker_migration.rst:69
+msgid "5. 기존 docker instance 제거"
+msgstr "5\\. Remove old docker instance"
+
+# 5c37194df731405c9ccab496eb3cd4f3
+#: ../../discovery/part07/docker_migration.rst:71
+msgid "다음의 명령을 수행하면 docker instance가 제거됩니다."
+msgstr "Run the following commands to remove the old docker instance."
+
+# 186ffe96d0de4ddfb0b01c3b9d8f818e
+#: ../../discovery/part07/docker_migration.rst:79
+msgid "6. 새로운 docker instance 실행"
+msgstr "6\\. Run new docker instance"
+
+# e4eb70318abe4ac9a99e326f81cd4833
+# ac1239d8e89e434b807835f2978bf5bf
+# 23fcc27895fb46908610daeb4acce623
+# 8095a1986250493397d3253da661ba74
+#: ../../discovery/part07/docker_migration.rst:81
+#: ../../discovery/part07/docker_migration.rst:106
+#: ../../discovery/part07/docker_migration.rst:131
+#: ../../discovery/part07/docker_migration.rst:143
+msgid "Docker instance 외부에서 다음의 명령을 수행합니다."
+msgstr "Run the following commands from the host machine."
+
+# a0c740ebabf5459396e68c297b142eb3
+#: ../../discovery/part07/docker_migration.rst:87
+msgid "새 바이너리로 패치하려면 run.sh을 편집하여 IMAGE_NAME을 수정해야합니다."
+msgstr "In case you patch the binary, you might need to edit run.sh to modify IMAGE_NAME."
+
+# b2f5bda6e93e40c2bab10738ea717fdb
+# f1ccbb5c378b4d7c8c181bad0a7c5af9
+#: ../../discovery/part07/docker_migration.rst:89
+#: ../../discovery/part07/docker_migration.rst:149
+msgid "Docker instance 내부에서 다음의 명령을 수행합니다."
+msgstr "Run the following commands inside the docker instance."
+
+# b5b01553d9264dfa84a7f0ea10ffe3b5
+#: ../../discovery/part07/docker_migration.rst:95
+msgid "보통 2~3분 내로 메타트론 서비스가 시작됩니다. 서비스 시작을 확인한 후 바로 서버를 내리고 복원을 시작합니다."
 msgstr ""
+"Normally, Metatron service will be ready in about 2~3 minutes. Check the "
+"service running, then shutdown right after. Let's start to restore."
 
-# 02965d2c50984e969c68de155c4ca2b7
-#: ../../discovery/part07/docker_migration.rst:220
+# 03b05fd2b34d403daf9a2fd2bb85881f
+#: ../../discovery/part07/docker_migration.rst:104
+msgid "7. 메타데이터 스토어 복원"
+msgstr "7\\. Restore Metadata Store"
+
+# c429a65c36eb4eeb8ca5c1eafdfd7276
+#: ../../discovery/part07/docker_migration.rst:114
+msgid "8. 설정 및 실행 스크립트 복원"
+msgstr "8\\. Restore configrations, run scripts"
+
+# f00da28d48d44d30b99e36082de2a443
+#: ../../discovery/part07/docker_migration.rst:116
 msgid ""
-":download:`runtime.properties "
-"</_static/data/discovery/part07/historical.runtime.properties>`"
+"Docker instance 외부에서 다음의 명령을 수행합니다. 바이너리를 패치하는 경우, 설정 또는 실행 스크립트의 내용이 변한 "
+"경우 수정사항을 반영해주어야 합니다."
 msgstr ""
+"Run the following commands from the host machine. In case you patch the "
+"binary, you should apply the changes to the corresponding files."
 
-# 9aa36033a7ce43d788a5a03e2fb2467a
-#: ../../discovery/part07/docker_migration.rst:220
-msgid "$DRUID_HOME/conf/druid/single/historical/runtime.properties"
-msgstr ""
+# 85970bd46f5648ceb11088f81190df89
+#: ../../discovery/part07/docker_migration.rst:129
+msgid "9. 백업된 파일 데이터셋, 데이터 스냅샷 복원"
+msgstr "9\\. Restore file datasets and snapshots"
 
-# 8ae4d44f5f6f4f56bd44fc7f0f80d66e
-#: ../../discovery/part07/docker_migration.rst:222
-msgid ""
-":download:`runtime.properties "
-"</_static/data/discovery/part07/middleManager.runtime.properties>`"
-msgstr ""
+# cf218d76732a44eb8fd0432e16fc73bf
+#: ../../discovery/part07/docker_migration.rst:141
+msgid "10. 메타트론 서비스 시작"
+msgstr "10\\. Start New Metatron Service"
 
-# 347c0a6671b5473f893b6714ad7f90b3
-#: ../../discovery/part07/docker_migration.rst:222
-msgid "$DRUID_HOME/conf/druid/single/middleManager/runtime.properties"
-msgstr ""
+# 510d3fb04bdd43568bc3ad44ccb979a4
+#: ../../discovery/part07/docker_migration.rst:155
+msgid "보통 1~2분 내로 메타트론 서비스가 시작됩니다."
+msgstr "Generally, Metatron service will be ready in about 1~2 minuts."
 
-# 54faab97eff3453fb50ae5ff0ec1be96
-#: ../../discovery/part07/docker_migration.rst:230
-msgid "잠시 기다린 후 http://localhost:8090/ 에 접속을 할 수 있다면 성공한 것입니다."
-msgstr ""
+# e328aa1d060b44ab812477c66d0a5aca
+#~ msgid "새 바이너리로 패치하려면 run.sh을 편집하여 IMAGE_NAME을 수정해야합니다."
+#~ msgstr ""
 
-# 6d34e94f56f44fe3bc8ae1e7f870b6cf
-#: ../../discovery/part07/docker_migration.rst:234
-msgid "6. Metatron 설치"
-msgstr ""
-
-# 1065af0d0e154992b8bea4e319fcfd8f
-#: ../../discovery/part07/docker_migration.rst:244
-msgid "다음 파일들을 $METATRON_HOME/conf에 넣어주세요."
-msgstr ""
-
-# f2ca56a526c44a6c9dc28e36bfa52490
-#: ../../discovery/part07/docker_migration.rst:246
-msgid ""
-":download:`application-config.yaml </_static/data/discovery/part07"
-"/application-config.yaml>` :download:`metatron-env.sh "
-"</_static/data/discovery/part07/metatron-env.sh>` :download:`logback-"
-"console.xml </_static/data/discovery/part07/logback-console.xml>`"
-msgstr ""
-
-# 19d67f659b424225a97e19a720b4cce6
-#: ../../discovery/part07/docker_migration.rst:250
-msgid "Metatron을 초기화합니다."
-msgstr ""
-
-# c1a7f2e0d3bf4279af3f6ff75d808acf
-#: ../../discovery/part07/docker_migration.rst:267
-msgid "진행상황을 보려면 log 파일을 tail 하세요."
-msgstr ""
-
-# 0ecccb36f7ce4b2c8bc637debd737529
-#: ../../discovery/part07/docker_migration.rst:273
-msgid "이제 http://localhost:8180/ 으로 접속하면 됩니다."
-msgstr ""
+# 33cd61e3ffef4690902d0fdb8739df75
+#~ msgid ""
+#~ "새 바이너리로 패치하려면 run.sh을 편집하여 IMAGE_NAME을"
+#~ " 수정해야합니다. Docker instance 내부에서 다음의 "
+#~ "명령을 수행합니다."
+#~ msgstr ""
 

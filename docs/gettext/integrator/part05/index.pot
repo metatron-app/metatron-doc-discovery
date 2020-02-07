@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../integrator/part05/index.rst:2
+# 758e9519e9144b87b471ac9cab42d030
+msgid "Use Case"
+msgstr ""
+
+#: ../../integrator/part05/index.rst:5
+# e821ed23632d418e9fad02873129d7c7
+msgid "데이터 소스 적재 위임"
+msgstr ""
+
+#: ../../integrator/part05/index.rst:7
+# b18c7b6d79724fbeab0e05217b850e61
+msgid "대용량의 데이터 적재 시 발생하는 시스템 부하를 방지하기 위해 background 처리"
+msgstr ""
+
+#: ../../integrator/part05/index.rst:10
+# 4a56d0a6fc7e4522b0b14bf5ae2a0e05
+msgid "워크벤치와 연계"
+msgstr ""
+
+#: ../../integrator/part05/index.rst:12
+# 8143782a66d649a2b1f6cffc5fde1f00
+msgid "특정 쿼리의 반복 실행"
+msgstr ""
+
+#: ../../integrator/part05/index.rst:13
+# 78800ce3641b42849ad491fbd6cd4362
+msgid "오래 걸리는 쿼리의 위임"
+msgstr ""
+
+#: ../../integrator/part05/index.rst:16
+# 8ebc6c281daf427eae85399b2dc1c276
+msgid "데이터 프리퍼레이션과 연계"
+msgstr ""
+
+#: ../../integrator/part05/index.rst:18
+# 32bf9cd6d8c34e57bc18a5bc585c309f
+msgid "Wrangled dataset 반복 사용"
+msgstr ""
+

@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../integrator/part04/index.rst:2
+# 84d6d62ed60943c49b92234cf0ded2ce
+msgid "모니터링"
+msgstr ""
+
+#: ../../integrator/part04/index.rst:4
+# b06a6a60cd68430c880ed2d850218538
+msgid "Integrator 메인 홈에서 **모니터링** 탭으로 들어가면 등록된 각 워크플로우의 시간대별 실행 현황과 예약 정보를 그래프 형식으로 보여줍니다."
+msgstr ""
+
+#: ../../integrator/part04/index.rst:8
+# ba0991b01f334c6287f26e6a9806f904
+msgid "그래프에 표시된 상태 바 각각은 예약 또는 직접 명령한 워크플로우 실행 건을 가리키며, 다음과 같은 방식으로 실행 정보를 보여줍니다."
+msgstr ""
+
+#: ../../integrator/part04/index.rst:10
+# 93af42bb0fd54af3b4b59343d6b77ba0
+msgid "위치와 길이: 해당 건이 실행된 기간에 해당하는 타임라인 구간에 표시됩니다."
+msgstr ""
+
+#: ../../integrator/part04/index.rst:11
+# c289892e1f36482c872357028a499e5b
+msgid "색상: 화면 상단에 범례로 표시된 **Status** 항목의 표시 색상과 동일한 색상으로 표시됩니다. 예를 들어 녹색으로 표시된 상태 바는 해당 실행 건이 running 상태임을 의미합니다."
+msgstr ""
+
+#: ../../integrator/part04/index.rst:13
+# 1ee5151a5b0249d9b910e8ea1f6e32c7
+msgid "상태 바 위에 마우스 커서를 오버하면 아래와 같은 실행 내역이 나타나며, 대화 상자 우측 상단의 **상세보기**\\를 클릭하면 자세한 정보를 확인할 수 있습니다."
+msgstr ""
+

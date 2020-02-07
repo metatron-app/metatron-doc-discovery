@@ -1,0 +1,381 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Docker Migration Guide &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'en',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="next" title="Create a dataset" href="create_a_dataset.html" />
+    <link rel="prev" title="Install Guide Detailed" href="installation_detailed.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Preparation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation_detailed.html">Install Guide Detailed</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Docker Migration Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1. Stop Metatron Service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2. Backup Metadata Store</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">3. Backup configuration files and run scripts.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">4. Backup uploaded file datasets, data snapshots.</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#docker-instance">5. Remove old docker instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">6. Run new docker instance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">7. Restore Metadata Store</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">8. Restore configrations, run scripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">9. Restore file datasets and snapshots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">10. Start New Metatron Service</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">Create a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">Manage a dataflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">Use data snapshot results</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">Data Exploration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">Engine Monitoring</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Data Preparation</a> &raquo;</li>
+        
+      <li>Docker Migration Guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/docker_migration.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="docker-migration">
+<h1>Docker Migration Guide<a class="headerlink" href="#docker-migration" title="Permalink to this headline">¶</a></h1>
+<p>This document is a guide on migrating a Metatron Discovery service across docker instances.</p>
+<p>I suppose that you use <a class="reference external" href="https://github.com/teamsprint/docker-metatron.git/">https://github.com/teamsprint/docker-metatron.git/</a> for convenience on docker commands. Refer to <a class="reference external" href="https://metatron.app/2020/01/21/deploying-metatron-with-the-fully-engineered-docker-image/">https://metatron.app/2020/01/21/deploying-metatron-with-the-fully-engineered-docker-image/</a></p>
+<p>I assume that you use MySQL as the metadata store.</p>
+<div class="section" id="id1">
+<h2>1. Stop Metatron Service<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Run the following command to get into the docker instance.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">teamsprint</span><span class="o">/</span><span class="n">docker</span><span class="o">-</span><span class="n">metatron</span><span class="o">.</span><span class="n">git</span><span class="o">/</span>
+<span class="n">cd</span> <span class="n">docker</span><span class="o">-</span><span class="n">metatron</span>
+<span class="o">./</span><span class="n">attach</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Stop Metatron service with the following command.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>cd $METATRON_HOME
+bin/metatron.sh stop
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>2. Backup Metadata Store<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>We must backup all metadata used in Metatron like datasets, dataflows, etc. Run the following commands from host machine. (Container name is &#8220;metatron&#8221;, the database name of metadata store is &#8220;polaris&#8221;.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>sudo docker exec metatron /usr/bin/mysqldump -uroot -pMetatron123$ polaris &gt; metadata_store_backup.sql
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>3. Backup configuration files and run scripts.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span><span class="n">application</span><span class="o">-</span><span class="n">config</span><span class="o">.</span><span class="n">yaml</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">env</span><span class="o">.</span><span class="n">sh</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span><span class="n">logback</span><span class="o">-</span><span class="n">console</span><span class="o">.</span><span class="n">sh</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">metatron</span><span class="o">.</span><span class="n">sh</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">common</span><span class="o">.</span><span class="n">sh</span> <span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>4. Backup uploaded file datasets, data snapshots.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span><span class="n">uploads</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span><span class="n">snapshots</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>Generally, you don&#8217;t need to backup data snapshots. If the snapshot is small enough, you can easily remake the snapshots. Or if it&#8217;s too big, backup size might be also too big.</p>
+<p>By the way, you cannot backup snapshots stored in internal databases. If you didn&#8217;t modify configurations about staging DB (if the configuration is the default of initial image), then you cannot backup staging DB type snapshots.</p>
+</div>
+<div class="section" id="docker-instance">
+<h2>5. Remove old docker instance<a class="headerlink" href="#docker-instance" title="Permalink to this headline">¶</a></h2>
+<p>Run the following commands to remove the old docker instance.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">destroy</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>6. Run new docker instance<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Run the following commands from the host machine.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>In case you patch the binary, you might need to edit run.sh to modify IMAGE_NAME.</p>
+<p>Run the following commands inside the docker instance.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">prepare</span><span class="o">-</span><span class="nb">all</span><span class="o">-</span><span class="n">metatron</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Normally, Metatron service will be ready in about 2~3 minutes. Check the service running, then shutdown right after. Let&#8217;s start to restore.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">stop</span><span class="o">-</span><span class="n">metatron</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>7. Restore Metadata Store<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Run the following commands from the host machine.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>cat metadata_store_backup.sql | sudo docker exec -i metatron /usr/bin/mysql -uroot -pMetatron123$ polaris
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>8. Restore configrations, run scripts<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Run the following commands from the host machine. In case you patch the binary, you should apply the changes to the corresponding files.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">application</span><span class="o">-</span><span class="n">config</span><span class="o">.</span><span class="n">yaml</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="o">-</span><span class="n">env</span><span class="o">.</span><span class="n">sh</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">logback</span><span class="o">-</span><span class="n">console</span><span class="o">.</span><span class="n">sh</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="o">.</span><span class="n">sh</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">common</span><span class="o">.</span><span class="n">sh</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>9. Restore file datasets and snapshots<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Run the following commands from the host machine.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">metatron</span> <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">uploads</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">snapshots</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>10. Start New Metatron Service<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Run the following commands from the host machine.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">attach</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Run the following commands inside the docker instance.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">start</span><span class="o">-</span><span class="n">metatron</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Generally, Metatron service will be ready in about 1~2 minuts.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create_a_dataset.html" class="btn btn-neutral float-right" title="Create a dataset" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation_detailed.html" class="btn btn-neutral float-left" title="Install Guide Detailed" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

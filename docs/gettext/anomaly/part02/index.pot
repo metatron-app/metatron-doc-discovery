@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../anomaly/part02/index.rst:2
+# 856de66801db47ab90125895eaba7056
+msgid "알람 룰 만들기"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:9
+# 6b5a828191bf491d8f649bae13ba1d89
+msgid "Anomaly는 다음의 절차를 순차적으로 수행하도록 안내하여 사용자가 원하는 알람 룰을 쉽게 생성할 수 있도록 지원해줍니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:11
+# ea4312377727434cbb19515e54291156
+msgid ":ref:`select_datasource`"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:12
+# 32377e389dc646a7a61bfe8c40f56209
+msgid ":ref:`select_columns`"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:13
+# 967d15c4b3cb46a6a538d612283fde7f
+msgid ":ref:`configure_training`"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:14
+# b63d9173cc574c9bb9be13d6a67d0676
+msgid ":ref:`select_model`"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:15
+# 953245a207ca4e0db712765f1d838426
+msgid ":ref:`alarm_rule_settings`"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:16
+# 3893b1a8703c4d92a8c0479de3eb6b9a
+msgid ":ref:`complete_rule`"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:21
+# 27c1b112d6964c24a1b3188b1cb33d75
+msgid "데이터 소스 선정"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:23
+# dfb5cb12c6c743a19cb8c8b027df6683
+msgid "아래와 같이 알람 룰 만들기 절차를 시작하십시오."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:25
+# 019a61805d2541b9a373876b68336f0f
+msgid "Anomaly 홈 우측 상단에 있는 **Create Alarm Rule** 버튼을 클릭합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:31
+# 00a4e91713494246a2716b9314a63b01
+msgid "모니터링하고자 하는 데이터 소스를 선택합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:40
+# a32d5aca0ca04c60b45477e021ccdcb4
+msgid "모니터링할 지표 선택하기"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:42
+# 2bad15eae3f14ecd9febe85e97447b84
+msgid "데이터 소스를 선택하면 다음 화면으로 넘어가면서 좌측에 **Data** 패널이 열립니다. 이 패널을 이용하여 아래와 같이 모니터링할 지표를 선택하십시오."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:44
+# e7e886502cc4420bbeee04391fbfafc5
+msgid "**Measure** 영역에서 알람을 설정하고자 하는 측정값 컬럼을 선택합니다. 클릭한 측정값 컬럼은 Aggregate 선반에 자동으로 옮겨집니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:50
+# defa91e8f6ed4b44a53221b572225512
+msgid "필요할 경우 기존 컬럼에 수식을 적용하여 사용자 컬럼을 새로 만들 수도 있습니다. **Measure** 영역의 우측 상단에서 |icon_custom_column| 버튼을 클릭하여 대화 상자를 열고 사용자 컬럼을 설정하십시오."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:56
+# 559a269e82794543b35b6f36a8bc43fb
+msgid "Aggregate 선반에 올려진 각 컬럼의 aggregate 타입 항목을 클릭하여 원하는 타입을 선택합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:62
+# a30a663057e34e009a51bad4c32b35eb
+msgid "필요할 경우 차원값 컬럼을 기준으로 aggregate 데이터를 분할할 수 있습니다. **Dimension** 영역에서 분할의 기준으로 삼을 측정값 컬럼에 마우스 커서를 오버한 후 |icon_split| 버튼을 클릭하십시오."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:68
+# fc21cc1fd97a41638e77cbd311620ff6
+msgid "필요할 경우 차원값 컬럼을 기준으로 aggregate 데이터를 필터링할 수 있습니다. **Dimension** 영역에서 필터를 설정할 측정값 컬럼에 마우스 커서를 오버한 후 |icon_ano_filter| 버튼을 클릭하십시오. 그런 다음, 모니터링하고자 하는 특정 범주들을 선택하십시오."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:77
+# 6abbb526a82e443a9629e1592f7408b5
+msgid "트레이닝 기간 설정하기"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:79
+# 869d5e7c2f3b41168306fe384ae61691
+msgid "모니터링할 지표 선택을 마쳤으면, **Training interval** 패널에서 예측 모델 트레이닝에 사용할 데이터 범위를 선택할 수 있습니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:81
+# 367c32683fa7490394f21a9a8d952235
+msgid "모델을 트레이닝시키는 데 사용할 데이터 세트의 주기를 **Granularity** 선택란에서 선택합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:87
+# 9513204df5b14ea19738264e30430ab2
+msgid "모델을 트레이닝시키는 데 사용할 데이터 세트의 기간 범위를 설정합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:93
+#: ../../anomaly/part02/index.rst:146
+# 6fea0dbc644c418298fe06be135173c7
+# 9b919ddb6ecc46129080ad73d6186fd5
+msgid "모든 설정을 마쳤으면 **Next**\\를 클릭합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:98
+# 06ee58bfb12b4dff8e326bbf137b8d35
+msgid "모델 선택하기"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:100
+# e588ea1a0d48458f89e7fd6aa9e75fa8
+msgid "이제 **Model** 패널로 넘어가서 어떠한 예측 모델을 사용할지 선택합니다. Anomaly는 주어진 트레이닝 데이터 세트를 이용하여 각각의 모델을 트레이닝시킨 후 그 결과를 산출해줍니다. 아래 두 방법 중 하나를 통해 적합한 예측 모델을 선택하십시오."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:102
+# c39205f51ad64c9f814d5338e5fcf318
+msgid "기본적으로 우측에 표시되는 정확도 점수(100점 만점)가 가장 높은 모델이 **Recommend** 표시와 함께 자동 선택됩니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:108
+# 115c1fe21d6c4ce5858f4fdc7a626ebd
+msgid "각 모델 항목 위에 마우스 커서를 오버하면 나타나는 상세 정보를 확인하여 가장 적합한 예측 모델을 직접 선택할 수 있습니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:117
+# 3a60d7d1b432407c9021241fcdedd28d
+msgid "알람 룰 조건 설정하기"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:119
+# 2b209da95b9c41f980f41ebcef60ac87
+msgid "사용할 예측 모델을 선택하였으면, **Condition** 패널에서 알람이 발생하는 조건을 설정할 수 있습니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:121
+# 4c660aea742244679a3e9ff94dd2bf43
+msgid "**Subscribers** 항목의 우측에 있는 |icon_set| 버튼을 클릭하여 대화 상자를 연 후, 알람 발생 시 통보를 받는 대상과 방법을 설정합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:127
+# 30b7ab06996b4367935156f563c7ac78
+msgid "아래 각 항목의 설명을 참고하여 알람이 발동되는 시기를 설정합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:133
+# ba6273ca7f1a49b7a96cd3d509903c5f
+msgid "**Alarm Start:** 알람을 개시할 때를 설정합니다. 이 설정값에 해당하는 시간 이후부터 알람이 개시됩니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:134
+# fc02870544744ae086ffc7113fb3d354
+msgid "**Alarm Interval:** 알람의 조건이 충족되었을 때 알람을 발생시키는 주기를 설정합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:136
+# 558873da53444eadb8e28778a082a800
+msgid "아래 각 항목의 설명을 참고하여 모니터링 대상 데이터의 abnormal score에 따른 알람 발동 조건을 설정합니다. 기본적으로 하나의 조건이 주어지며, **+ Add Condition** 버튼을 클릭하면 조건을 추가할 수 있습니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:142
+# ac5d5961c3994efd87a349ac53517c8e
+msgid "**Severity:** 주어진 조건에 해당하는 알람의 심각도를 설정합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:143
+# 1c58e7a3f0604119b5481560100829f3
+msgid "**Threshold:** abnormal score가 이 설정값을 초과하면 데이터 이상 상태로 간주됩니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:144
+# 1aebcde86d4c4edabf9da6dbaf776863
+msgid "**Frequency:** abnormal score가 한계값을 초과하는 빈도가 어떠할 때 알람을 발생시킬지 결정합니다. 예를 들어, \"3 within 5 minute\"로 설정한 경우에는 abnormal score가 5분 안에 3회 이상 한계값을 초과하면 알람이 발생합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:151
+# 2701fe7a63be4e97afe00c335fe90cd8
+msgid "알람 룰 완성하기"
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:153
+# 410722d8777d4f858548386e4442a413
+msgid "알람 룰 설정이 끝났으면 아래와 같이 알람 룰 만들기 절차를 마무리합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:155
+# a08da95b05ff44cbbd28fefe48c1d323
+msgid "알람 룰의 이름과 설명을 기입한 후 **Done** 버튼을 클릭합니다."
+msgstr ""
+
+#: ../../anomaly/part02/index.rst:161
+# 05fda68c413740ff945b0389888e6f81
+msgid "생성된 알람 룰은 알람 룰 리스트의 최상단에 노출되고, 첫 알람 수행이 있기 전까지 **Prepare** 상태로 표시됩니다."
+msgstr ""
+

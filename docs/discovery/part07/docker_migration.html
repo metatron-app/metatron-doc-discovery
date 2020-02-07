@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Docker Migration 가이드 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript">
+          var DOCUMENTATION_OPTIONS = {
+              URL_ROOT:'../../',
+              VERSION:'0.4.2',
+              LANGUAGE:'ko',
+              COLLAPSE_INDEX:false,
+              FILE_SUFFIX:'.html',
+              HAS_SOURCE:  true,
+              SOURCELINK_SUFFIX: ''
+          };
+      </script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="next" title="데이터셋 만들기" href="create_a_dataset.html" />
+    <link rel="prev" title="상세 설치 가이드" href="installation_detailed.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
+					 <!-- 하위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 한글 pdf 링크 -->
+					<li><a class="lang_sel" href="../../en/index.html">VIEW IN ENGLISH</a></li>
+					<li><a class="lang_sel" href="">PDF 버전으로 보기</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation_detailed.html">상세 설치 가이드</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Docker Migration 가이드</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">1. 메타트론 서비스 중단</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2. 메타데이터 스토어 백업</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">3. 설정 및 실행 스크립트 백업</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">4. 업로드된 파일 데이터셋, 데이터 스냅샷 백업</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#docker-instance">5. 기존 docker instance 제거</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">6. 새로운 docker instance 실행</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">7. 메타데이터 스토어 복원</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">8. 설정 및 실행 스크립트 복원</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">9. 백업된 파일 데이터셋, 데이터 스냅샷 복원</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">10. 메타트론 서비스 시작</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manage_dataflow.html">데이터플로우 관리하기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_snapshot.html">데이터 스냅샷 결과 이용하기</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part08/index.html">계정 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Integrator 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">워크플로우 리스트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">워크플로우 에디터</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">모니터링</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use Case</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">데이터 프리퍼레이션</a> &raquo;</li>
+        
+      <li>Docker Migration 가이드</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/discovery/part07/docker_migration.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="docker-migration">
+<h1>Docker Migration 가이드<a class="headerlink" href="#docker-migration" title="제목 주소">¶</a></h1>
+<p>Docker로 배포된 Metatron Discovery를 다른 docker image로 이관하는 작업에 대한 가이드 문서입니다.</p>
+<p><a class="reference external" href="https://github.com/teamsprint/docker-metatron.git/">https://github.com/teamsprint/docker-metatron.git/</a> 을 사용한다고 가정합니다.
+이에 대해선 <a class="reference external" href="https://metatron.app/2020/01/21/deploying-metatron-with-the-fully-engineered-docker-image/">https://metatron.app/2020/01/21/deploying-metatron-with-the-fully-engineered-docker-image/</a> 를 참고하세요.</p>
+<p>메타데이터 스토어로 MySQL을 사용한 경우에 대해서만 기술합니다.</p>
+<div class="section" id="id1">
+<h2>1. 메타트론 서비스 중단<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
+<p>Docker 외부에서 다음 명령을 수행하면 docker instance 내부로 들어갑니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">teamsprint</span><span class="o">/</span><span class="n">docker</span><span class="o">-</span><span class="n">metatron</span><span class="o">.</span><span class="n">git</span><span class="o">/</span>
+<span class="n">cd</span> <span class="n">docker</span><span class="o">-</span><span class="n">metatron</span>
+<span class="o">./</span><span class="n">attach</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Docker 내부에서 다음의 명령을 통해 메타트론 서비스를 중지시킵니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>cd $METATRON_HOME
+bin/metatron.sh stop
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>2. 메타데이터 스토어 백업<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
+<p>메타트론에서 사용하는 데이터셋, 데이터 플로우 등에 대한 정보를 먼저 백업해야합니다.
+Docker 외부에서 다음 명령을 수행합니다. (Container의 이름이 metatron, 메타데이터 스토어로 사용한 데이터베이스의 이름이 polaris 경우)</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>sudo docker exec metatron /usr/bin/mysqldump -uroot -pMetatron123$ polaris &gt; metadata_store_backup.sql
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>3. 설정 및 실행 스크립트 백업<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span><span class="n">application</span><span class="o">-</span><span class="n">config</span><span class="o">.</span><span class="n">yaml</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">env</span><span class="o">.</span><span class="n">sh</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span><span class="n">logback</span><span class="o">-</span><span class="n">console</span><span class="o">.</span><span class="n">sh</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">metatron</span><span class="o">.</span><span class="n">sh</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">common</span><span class="o">.</span><span class="n">sh</span> <span class="o">.</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>4. 업로드된 파일 데이터셋, 데이터 스냅샷 백업<a class="headerlink" href="#id4" title="제목 주소">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span><span class="n">uploads</span> <span class="o">.</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span><span class="n">snapshots</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>일반적인 경우 데이터 스냅샷은 백업할 필요가 없습니다.
+데이터 스냅샷이 작은 경우라면 금방 다시 만들어낼 수 있고, 다시 만들어내기 부담스러울 정도로 크다면 백업에 대한 부담도 크기 때문입니다.</p>
+<p>Docker instance 내부의 데이터베이스에 저장한 데이터 스냅샷은 백업할 수 없습니다.
+Staging DB에 대한 설정을 따로 하지 않았다면 (docker instance의 초기 설정 그대로인 경우), staging DB 타입의 데이터 스냅샷도 백업할 수 없습니다.</p>
+</div>
+<div class="section" id="docker-instance">
+<h2>5. 기존 docker instance 제거<a class="headerlink" href="#docker-instance" title="제목 주소">¶</a></h2>
+<p>다음의 명령을 수행하면 docker instance가 제거됩니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">destroy</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>6. 새로운 docker instance 실행<a class="headerlink" href="#id5" title="제목 주소">¶</a></h2>
+<p>Docker instance 외부에서 다음의 명령을 수행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">run</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>새 바이너리로 패치하려면 run.sh을 편집하여 IMAGE_NAME을 수정해야합니다.</p>
+<p>Docker instance 내부에서 다음의 명령을 수행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">prepare</span><span class="o">-</span><span class="nb">all</span><span class="o">-</span><span class="n">metatron</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>보통 2~3분 내로 메타트론 서비스가 시작됩니다.
+서비스 시작을 확인한 후 바로 서버를 내리고 복원을 시작합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">stop</span><span class="o">-</span><span class="n">metatron</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>7. 메타데이터 스토어 복원<a class="headerlink" href="#id6" title="제목 주소">¶</a></h2>
+<p>Docker instance 외부에서 다음의 명령을 수행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>cat metadata_store_backup.sql | sudo docker exec -i metatron /usr/bin/mysql -uroot -pMetatron123$ polaris
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>8. 설정 및 실행 스크립트 복원<a class="headerlink" href="#id7" title="제목 주소">¶</a></h2>
+<p>Docker instance 외부에서 다음의 명령을 수행합니다.
+바이너리를 패치하는 경우, 설정 또는 실행 스크립트의 내용이 변한 경우 수정사항을 반영해주어야 합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">application</span><span class="o">-</span><span class="n">config</span><span class="o">.</span><span class="n">yaml</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="o">-</span><span class="n">env</span><span class="o">.</span><span class="n">sh</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">logback</span><span class="o">-</span><span class="n">console</span><span class="o">.</span><span class="n">sh</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">conf</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">metatron</span><span class="o">.</span><span class="n">sh</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">common</span><span class="o">.</span><span class="n">sh</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>9. 백업된 파일 데이터셋, 데이터 스냅샷 복원<a class="headerlink" href="#id8" title="제목 주소">¶</a></h2>
+<p>Docker instance 외부에서 다음의 명령을 수행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">docker</span> <span class="n">exec</span> <span class="n">metatron</span> <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">uploads</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span>
+<span class="n">sudo</span> <span class="n">docker</span> <span class="n">cp</span> <span class="n">snapshots</span> <span class="n">metatron</span><span class="p">:</span><span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">/</span><span class="n">dataprep</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>10. 메타트론 서비스 시작<a class="headerlink" href="#id9" title="제목 주소">¶</a></h2>
+<p>Docker instance 외부에서 다음의 명령을 수행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">attach</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>Docker instance 내부에서 다음의 명령을 수행합니다.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">start</span><span class="o">-</span><span class="n">metatron</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<p>보통 1~2분 내로 메타트론 서비스가 시작됩니다.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="create_a_dataset.html" class="btn btn-neutral float-right" title="데이터셋 만들기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation_detailed.html" class="btn btn-neutral float-left" title="상세 설치 가이드" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

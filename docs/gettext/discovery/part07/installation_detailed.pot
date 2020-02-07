@@ -1,0 +1,250 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part07/installation_detailed.rst:2
+# d6075730a68a4342b7672d8f6bc6daa4
+msgid "상세 설치 가이드"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:4
+# 848eedddf15e4a99983a0b5f7cf259c4
+msgid "Linux OS만 제공된 환경(CentOS 7)을 기준으로, 데이터 프리퍼레이션 기능을 모두 사용해볼 수 있도록 메타트론을 설치, 설정하는 것에 대한 가이드 문서입니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:7
+# 01988dc23a154f73874ede094c84d6c6
+msgid "1. 필수 패키지 설치"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:9
+# 19c008ec38dd40d08cf9187c50fd59be
+msgid "루트로 다음 명령들을 실행합니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:20
+# fb59f1d7ebcb491f92408d13e0c97dc3
+msgid "2. Hadoop 설치"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:22
+# 62ef4f75b67a4e65a46e8e0323ddfbf0
+msgid "루트로 다음 명령들을 실행합니다. Hadoop 바이너리는 가까운 mirror를 통해서 다운로드 받는 것이 더 좋습니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:52
+# f3524b7228d34898bef269847f64f3bf
+msgid "다음 파일들을 $HADOOP_CONF_DIR에 넣어주세요."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:54
+# f096c2bbf5ef4e2cb11e56aeae11c964
+msgid ":download:`core-site.xml </_static/data/discovery/part07/core-site.xml>` :download:`hdfs-site.xml </_static/data/discovery/part07/hdfs-site.xml>` :download:`mapred-site.xml </_static/data/discovery/part07/mapred-site.xml>` :download:`yarn-site.xml </_static/data/discovery/part07/yarn-site.xml>`"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:59
+#: ../../discovery/part07/installation_detailed.rst:75
+# 4e0d423337d741a3bd4db067ae947aef
+# dd8b42fed92d4be8a3c8c78e93557375
+msgid "계속해서 루트로 다음 명령들을 실행합니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:65
+# dfb36d18726c4a4dad5f79c29bc7b7a4
+msgid "다음 내용을 /root/.ssh/config에 다음 내용을 추가해주세요."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:88
+# 8ae89e413bb04e59ad8d1b2126bca409
+msgid "SSH 서버를 다시 시작합니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:94
+# c1a26afe477142efa3948498b6944d17
+msgid "HDFS 및 Yarn을 실행합니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:101
+# 2277fcf9ab274409891fe1ebe3d50cf9
+msgid "Hadoop이 제대로 설치되었는지 테스트해봅니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:110
+# 036f356c44374a15a4d715df3697311f
+msgid "3. MySQL 설치"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:121
+# e3c83a654e53472faf8fe2807c357f64
+msgid "다음의 명령을 통해 임시패스워드를 알아냅니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:128
+# 8404dc889ab240bda46e774761a5b6ba
+msgid "위 패스워드를 이용해서 mysql_secure_installation을 실행합니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:145
+# 767f451946bc4e38b330ec94547d54fa
+msgid "MySQL에 접속해봅니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:152
+# 5040b342650549afb19043c1215613b6
+msgid "4. Hive 설치"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:165
+# 139b5cf30224414a91693f925038dd15
+msgid "다음 파일을 $HIVE_HOME/conf에 넣어주세요."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:167
+# 088f42244bee4cd9b9f140c3fc2c7451
+msgid ":download:`hive-site.xml </_static/data/discovery/part07/hive-site.xml>`"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:169
+# a5fb3800ddc74a7f82019f0575ba242f
+msgid "Hive metastore를 초기화합니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:185
+# ec81445df6c6409c8abe92b211210f05
+msgid "Hive를 시작합니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:194
+# 9f2ad789dd53494489e2b7becd32c29b
+msgid "Hive에 접속해봅니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:201
+# 2ba55e30b6184390b41d2e25dbe5e5b4
+msgid "5. Druid 설치"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:211
+# 5042b9432f4c4cc6a5f3a83ae1ec95e4
+msgid "다음 파일들을 다운로드 받아서 지정된 위치로 넣어주세요."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:214
+# cb0e09b2241343468e8326f5aea43758
+msgid "Download URL"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:214
+# 09cb31d3a4384a12890365d47a956818
+msgid "Target Location"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:216
+# 0fc84b89aad24668ba3e82018325bbb0
+msgid ":download:`jvm.config </_static/data/discovery/part07/single.jvm.config>`"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:216
+# a2bcb9d663ac43c2b8d1205d1ad5bdcd
+msgid "$DRUID_HOME/conf/druid/single/jvm.config"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:218
+# 3aecf461ce5a4b0ea850c76e34e67aae
+msgid ":download:`runtime.properties </_static/data/discovery/part07/broker.runtime.properties>`"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:218
+# 182225178a234b9383273712af64fb50
+msgid "$DRUID_HOME/conf/druid/single/broker/runtime.properties"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:220
+# dfa5a65d18714043a2b3a0602a78f612
+msgid ":download:`runtime.properties </_static/data/discovery/part07/historical.runtime.properties>`"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:220
+# 140134b4f3304941a18e725b9828c96f
+msgid "$DRUID_HOME/conf/druid/single/historical/runtime.properties"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:222
+# 5e8a27b7bce148df8f7df66d476c7eb5
+msgid ":download:`runtime.properties </_static/data/discovery/part07/middleManager.runtime.properties>`"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:222
+# ce429cd2a570450598d6f2a91b540e78
+msgid "$DRUID_HOME/conf/druid/single/middleManager/runtime.properties"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:230
+# d221ad8b128e4313a5c93c3c508235c3
+msgid "http://localhost:8090/ 으로 접속이 된다면 성공한 것입니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:233
+# 8a93194108dd44b785b9646e2d3f7aac
+msgid "6. Metatron 설치"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:243
+# 22421933a86b4a31938ae98965607ae3
+msgid "다음 파일들을 $METATRON_HOME/conf에 넣어주세요."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:245
+# 81c20c4ab3504986a1cb7fff33292e74
+msgid ":download:`application-config.yaml </_static/data/discovery/part07/application-config.yaml>` :download:`metatron-env.sh </_static/data/discovery/part07/metatron-env.sh>` :download:`logback-console.xml </_static/data/discovery/part07/logback-console.xml>`"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:249
+# 6449672fd1ae4e47b6af691536d40cd3
+msgid "Metatron을 초기화합니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:266
+# da6a255969534877854d275b948b3a10
+msgid "진행상황을 보려면 log 파일을 tail 하세요."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:272
+# e4545bc98b7342adb33f77492a83f07e
+msgid "이제 http://localhost:8180/ 으로 접속하면 됩니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:275
+# a58dfcfbde8e4436880c4168df9564cc
+msgid "7. Preptool 설치"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:288
+# ddbcf86ce73940ef8dc9b030e0d03d2a
+msgid "테스트용 파일을 다운로드 받습니다."
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:290
+# 89b40ab5e78e4deabd10975a77ced391
+msgid ":download:`sales-data-sample.csv </_static/data/sales-data-sample.csv>`"
+msgstr ""
+
+#: ../../discovery/part07/installation_detailed.rst:296
+# 895b9a961dd041beb101fd0da190411b
+msgid "File dataset created라고 나오면 preptool이 제대로 동작하는 것입니다."
+msgstr ""
+

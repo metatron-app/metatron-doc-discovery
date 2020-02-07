@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part09/dataexploration.rst:2
+# 42577294b4b149648a9d4dbd7661e92f
+msgid "데이터 탐색하기"
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:3
+# 724c2b7b1ec148e3a68bc005e4952f26
+msgid "Metatron Discovery에서 제공하는 데이터 탐색의 목적은, 데이터가 어디 있던 쉽게 찾을 수 있고, 찾은 데이터로 시각화 할 수 있는 기능을 지원하고 있습니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:8
+# 5f907adabe394e4aa0f3938252ab287d
+msgid "데이터 탐색 오버뷰 화면"
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:9
+# 64e30382b83e428cae22f7fa4300ebe4
+msgid "현재 사용하고 계신 원천 DB 내 데이터, 그리고 Metatron Discovery에서 제공하는 StagingDB(Slave DB) 및 Engine(Druid) 내 데이터를 관리할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:14
+# 9e33f8841bc247848b2ef2802e208250
+msgid "데이터 탐색 상세 화면"
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:15
+# fa79019b55b042b48da6f93fd7315ba5
+msgid "데이터 탐색을 통해 원하는 데이터를 빠르게 찾을 수 있도록 기능을 제공하고 있습니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:19
+# f3ebafae7014430ba5329cd211f45195
+msgid "데이터는 크게 3부분으로 정보를 제공합니다. Overview, Column Scheme, Sample Data 입니다. 각 데이터 타입에 따라, 워크북(Datasource 타입인 경우), 워크벤치(DB 타입인 경우)를 만들 수 있는 액션버튼도 제공합니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:24
+# fc0aac6c15e445d58c7295333891f02b
+msgid "샘플 데이터의 경우 현재 100건까지만 보여집니다. 권한이 있는 경우 'Management > Exploration'을 통해 더 많은 데이터를 확인하고 다운로드 할 수 있습니다. 권한의 여부는 해당 화면 상단에 'Edit data'라는 버튼의 유무로 확인할 수 있으며, 해당 버튼을 클릭하면 'Management > Exploration'로 이동이 가능합니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:29
+# 60132579e66048d6a6deb985948c62a0
+msgid "다른 메뉴로 점핑 시 다음과 같은 경고창이 보여집니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:33
+# 0f39797ac2b74b04a58c6d4372ea9b3b
+msgid "아래 화면은 'Management > Exploration'로 이동하였을때 화면입니다. 해당 공간에서, 관리자로서의 좀 더 많은 메타 정보를 상세히 볼 수 있고 관리할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:39
+# 74578c1e0a954632832b3b962128035c
+msgid "카타로그, 태그 등의 검색과 필터 기능을 통하여 데이터를 빠르게 찾을 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:43
+# 459b9836996e4a859b957be2e4de145f
+msgid "Metatron Discovery에서는 데이터를 카타로그로 관리할 수 있습니다. 카타로그을 그룹 등의 분류 군에 따라 구별해 두고 빠르게 데이터를 검색 하는 용도로 사용할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:49
+# 5f10466b68f5404ab93478d0ef81846b
+msgid "Favorite Data 화면"
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:50
+#: ../../discovery/part09/dataexploration.rst:55
+# 5bd82194c3f04f2da6139495fdb51f0f
+# d18e5762e1c14f859aece23933556d3c
+msgid "해당 기능은 준비 중입니다."
+msgstr ""
+
+#: ../../discovery/part09/dataexploration.rst:54
+# cc0fd58246e24e448d67ffbc4bfa6944
+msgid "Data Creator 화면"
+msgstr ""
+

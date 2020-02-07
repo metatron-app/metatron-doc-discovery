@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part04/present_the_dashboard.rst:2
+# 7fd880c4f568470e84cb1a1f5fb56aa1
+msgid "대시보드 프리젠테이션 하기"
+msgstr ""
+
+#: ../../discovery/part04/present_the_dashboard.rst:4
+# a8807883f81e4c239256f1ccaafcb35d
+msgid "대시보드 기본 화면에서 **프레젠테이션 뷰** 버튼을 클릭하면 워크북의 대시보드들을 프레젠테이션에 적합한 UI로 열람할 수 있습니다. 이를 통해 사용자는 데이터 분석 결과를 쉽게 보고하고 공유할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part04/present_the_dashboard.rst:8
+# 68a9cdc525c1401caac1861c651f6f36
+msgid "**이름:** 현재 표시 중인 대시보드의 이름입니다."
+msgstr ""
+
+#: ../../discovery/part04/present_the_dashboard.rst:10
+# c6a5e87f51a644a082e5c720604ca31e
+msgid "**슬라이드 네비게이션:** 각 동그라미는 워크북 내 대시보드 각각을 가리킵니다. 예를 들어 네 번째 동그라미를 클릭하면 네 번째 대시보드 슬라이드로 이동하고 해당 동그라미가 강조됩니다."
+msgstr ""
+
+#: ../../discovery/part04/present_the_dashboard.rst:12
+# 524e7cfa234a48ad9f0be371d068d7df
+msgid "**자동 슬라이드 쇼 설정:** 시간 간격 선택 후 PLAY 버튼을 클릭하면, 자동 슬라이드 쇼가 시작되어 선택한 시간 간격을 주기로 슬라이드가 넘어갑니다."
+msgstr ""
+
+#: ../../discovery/part04/present_the_dashboard.rst:14
+# 85407579ab7a4395ba385d8785fb8eb7
+msgid "**나가기:** 프레젠테이션 뷰를 종료하고 워크북/대시보드 기본 화면으로 돌아갑니다."
+msgstr ""
+

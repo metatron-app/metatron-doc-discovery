@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part00/demo-video.rst:2
+# 1431e6d4aaac4ec58726562acdc0ca8b
+msgid "데모 영상"
+msgstr ""
+
+#: ../../discovery/part00/demo-video.rst:4
+# 9a3569f23fca4ec09284b3cfc3a1baf4
+msgid "영상을 통해 메타트론 디스커버리에 대해 더 자세히 알아보세요."
+msgstr ""
+
+#: ../../discovery/part00/demo-video.rst:7
+# 9789fe3a5ce44d57829e69a3fc46dbee
+msgid "대표 기능 소개"
+msgstr ""
+
+#: ../../discovery/part00/demo-video.rst:9
+# f1d00793dc924beca1cf4b4172515435
+msgid "워크북, 워크벤치, 프리퍼레이션"
+msgstr ""
+
+#: ../../discovery/part00/demo-video.rst:11
+# 0cace6ff46ca4e4c92e8796d80e5dcba
+msgid "https://www.youtube.com/watch?v=BW5kmzJVTSQ&list=PLLw0V5hZrHJwAXyAlmRCUbTrm83WGOTmt"
+msgstr ""
+
+#: ../../discovery/part00/demo-video.rst:17
+# d2b3044c0b40444bbf085f31bb5e8d60
+msgid "실 데이터 활용 사례"
+msgstr ""
+
+#: ../../discovery/part00/demo-video.rst:19
+# 14e1d4084bc14bc387c38279643e19f1
+msgid "Kaggle 데이터를 활용하여 데이터 전처리부터 시각화까지 메타트론 디스커버리와 함께한 사례를 확인해보세요."
+msgstr ""
+

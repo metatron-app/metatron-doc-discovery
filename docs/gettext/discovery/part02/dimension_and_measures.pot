@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 00:00+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part02/dimension_and_measures.rst:2
+# 318e508c5e9e4b31a3e2eaf2290c660d
+msgid "'차원값'과 '측정값'의 개념"
+msgstr ""
+
+#: ../../discovery/part02/dimension_and_measures.rst:4
+# 4bf1e45239ae494ead021174fc6117c2
+msgid "대시보드에 연동된 데이터 소스의 컬럼들은 아래와 같이 **차원값** 컬럼과 **측정값** 컬럼으로 구분됩니다. Discovery의 데이터 분석·시각화 기능을 온전히 활용하기 위해서는 차원값과 측정값의 개념을 명확하게 이해해야 합니다."
+msgstr ""
+
+#: ../../discovery/part02/dimension_and_measures.rst:8
+# 84c9bdbeb0f343d58485419c1ceb6dc6
+msgid "**차원값(Dimension) 컬럼**"
+msgstr ""
+
+#: ../../discovery/part02/dimension_and_measures.rst:10
+# 01deda10e3f34c938f980026d073b2e9
+msgid "범주형 데이터 컬럼을 가리키며, 특징은 아래와 같습니다."
+msgstr ""
+
+#: ../../discovery/part02/dimension_and_measures.rst:12
+# 4bf2f71f8a1e4774abdb96488f293b27
+msgid "집계(aggregated)보다는 분류(categorical)에 의미가 있는 데이터 필드(예: Category, Region, Organization 등)"
+msgstr ""
+
+#: ../../discovery/part02/dimension_and_measures.rst:13
+# d9fceb61130144fe905d8a1ce9cd3b09
+msgid "측정값을 표시하는 데 기준이 됨."
+msgstr ""
+
+#: ../../discovery/part02/dimension_and_measures.rst:15
+# 5a5d6384139b4b6cbdde235bdba6b994
+msgid "**측정값(Measure) 컬럼**"
+msgstr ""
+
+#: ../../discovery/part02/dimension_and_measures.rst:17
+# dc6d344dc665437e9821fe22c40ac9f2
+msgid "수량적 데이터 필드를 가리키며, 특징은 아래와 같습니다."
+msgstr ""
+
+#: ../../discovery/part02/dimension_and_measures.rst:19
+# 1e40c21307424348b524d3a2de989af4
+msgid "집계(aggregated)할 수 있거나 양적인(quantitative) 정보를 포함하는 필드(예: Sales 등)"
+msgstr ""
+
+#: ../../discovery/part02/dimension_and_measures.rst:20
+# d7a4dfa3e1ed432386344d8320113df3
+msgid "차원값에 의해 제시된 기준을 토대로 차트에 표현되는 데이터"
+msgstr ""
+
