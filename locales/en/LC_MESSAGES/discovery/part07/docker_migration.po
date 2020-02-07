@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-07 18:59+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+# d49ac3cdf34c47b687ab741fbe850379
+#: ../../discovery/part07/docker_migration.rst:2
+msgid "상세 설치 가이드 (CentOS 7 기준)"
+msgstr ""
+
+# 2a272e0ff98945d7afb40e8bf235a315
+#: ../../discovery/part07/docker_migration.rst:4
+msgid ""
+"Linux OS만 제공된 환경(클라우드 서비스)을 기준으로, 데이터 프리퍼레이션 기능을 모두 사용해볼 수 있도록 메타트론을 설치, "
+"설정하는 것에 대한 가이드 문서입니다."
+msgstr ""
+
+# 10de9b4bf1ad4a7faf41a49dc6ebc64f
+#: ../../discovery/part07/docker_migration.rst:7
+msgid "1. 필수 패키지 설치"
+msgstr ""
+
+# 7309624030dd4c07ae043ba6c7a5318e
+#: ../../discovery/part07/docker_migration.rst:9
+msgid "루트로 다음 명령들을 실행합니다."
+msgstr ""
+
+# 0f08afa4d8c24dd9ad63154ffb2ce63c
+#: ../../discovery/part07/docker_migration.rst:20
+msgid "2. Hadoop 설치"
+msgstr ""
+
+# 2e08aaa065f349e8b80b4eddf836b6d5
+#: ../../discovery/part07/docker_migration.rst:22
+msgid "루트로 다음 명령들을 실행합니다. Hadoop 바이너리는 가까운 mirror를 통해서 다운로드 받는 것이 더 좋습니다."
+msgstr ""
+
+# efd9ccca48494cbab794ce695fef6c85
+#: ../../discovery/part07/docker_migration.rst:52
+msgid "다음 파일들을 $HADOOP_CONF_DIR에 넣어주세요."
+msgstr ""
+
+# 955c0ae6eda044d79c6da2eb7e023ec0
+#: ../../discovery/part07/docker_migration.rst:54
+msgid ""
+":download:`core-site.xml </_static/data/discovery/part07/core-site.xml>` "
+":download:`hdfs-site.xml </_static/data/discovery/part07/hdfs-site.xml>` "
+":download:`mapred-site.xml </_static/data/discovery/part07/mapred-"
+"site.xml>` :download:`yarn-site.xml </_static/data/discovery/part07/yarn-"
+"site.xml>`"
+msgstr ""
+
+# 7587766c8bb1434780732877d5227167
+# b44d6e2c5b9d4d139bc7d566bc40c15a
+#: ../../discovery/part07/docker_migration.rst:59
+#: ../../discovery/part07/docker_migration.rst:75
+msgid "계속해서 루트로 다음 명령들을 실행합니다."
+msgstr ""
+
+# 50474781adac4e75b82a358818542efc
+#: ../../discovery/part07/docker_migration.rst:65
+msgid "다음 내용을 /root/.ssh/config에 다음 내용을 추가해주세요."
+msgstr ""
+
+# 963595911d31418f8ca01674247204e9
+#: ../../discovery/part07/docker_migration.rst:88
+msgid "SSH 서버를 다시 시작합니다."
+msgstr ""
+
+# ce39d157c79549d5ba93408a533ec998
+#: ../../discovery/part07/docker_migration.rst:94
+msgid "HDFS 및 Yarn을 실행합니다."
+msgstr ""
+
+# e0bcc31f267e4d12b4c15d7f024b2b8d
+#: ../../discovery/part07/docker_migration.rst:101
+msgid "Hadoop이 제대로 설치되었는지 테스트해봅니다."
+msgstr ""
+
+# c70244ac01eb48c5b6850f3e81d0195d
+#: ../../discovery/part07/docker_migration.rst:110
+msgid "3. MySQL 설치"
+msgstr ""
+
+# 786cce7fd7a642afbf8d9dc52fe89a5a
+#: ../../discovery/part07/docker_migration.rst:121
+msgid "다음의 명령을 통해 임시패스워드를 알아냅니다."
+msgstr ""
+
+# 4ced04656b914dc89032733f8f688a56
+#: ../../discovery/part07/docker_migration.rst:128
+msgid "위 패스워드를 이용해서 mysql_secure_installation을 실행합니다."
+msgstr ""
+
+# 527357818db144b6bbcc74b043dd6338
+#: ../../discovery/part07/docker_migration.rst:145
+msgid "MySQL에 접속해봅니다."
+msgstr ""
+
+# b20e116481154b7ca76e67420edf1e61
+#: ../../discovery/part07/docker_migration.rst:152
+msgid "4. Hive 설치"
+msgstr ""
+
+# bc3775007aa84ea395f1e1aa7e6bdbe9
+#: ../../discovery/part07/docker_migration.rst:165
+msgid "다음 파일을 $HIVE_HOME/conf에 넣어주세요."
+msgstr ""
+
+# ae667aa12798446aa57138ca0588565f
+#: ../../discovery/part07/docker_migration.rst:167
+msgid ":download:`hive-site.xml </_static/data/discovery/part07/hive-site.xml>`"
+msgstr ""
+
+# 64593871531743a59312796290eecf49
+#: ../../discovery/part07/docker_migration.rst:169
+msgid "Hive metastore를 초기화합니다."
+msgstr ""
+
+# 51f3e1106d8448dfbff8961b1196201d
+#: ../../discovery/part07/docker_migration.rst:185
+msgid "Hive를 시작합니다."
+msgstr ""
+
+# 43f6d9023cfb4aaba8f65036d6fbaba9
+#: ../../discovery/part07/docker_migration.rst:194
+msgid "Hive에 접속해봅니다."
+msgstr ""
+
+# 919ef7c6062d47e99834d0d8468c4b17
+#: ../../discovery/part07/docker_migration.rst:201
+msgid "5. Druid 설치"
+msgstr ""
+
+# 8d570daf272843f99c9dd535fe8990e9
+#: ../../discovery/part07/docker_migration.rst:211
+msgid "다음 파일들을 다운로드 받아서 지정된 위치로 넣어주세요."
+msgstr ""
+
+# cf369fbd5c4349ecac1839cbf761aa99
+#: ../../discovery/part07/docker_migration.rst:214
+msgid "Download URL"
+msgstr ""
+
+# f89b3bcb387a427cbd62c83a0723de3c
+#: ../../discovery/part07/docker_migration.rst:214
+msgid "Target Location"
+msgstr ""
+
+# 9ee7bc53dcbc479891b8be393f407a0f
+#: ../../discovery/part07/docker_migration.rst:216
+msgid ":download:`jvm.config </_static/data/discovery/part07/single.jvm.config>`"
+msgstr ""
+
+# ee03bda97c5442de815a21abbfd1e001
+#: ../../discovery/part07/docker_migration.rst:216
+msgid "$DRUID_HOME/conf/druid/single/jvm.config"
+msgstr ""
+
+# 7e99ae1de4024369ba5728040859a9b9
+#: ../../discovery/part07/docker_migration.rst:218
+msgid ""
+":download:`runtime.properties "
+"</_static/data/discovery/part07/broker.runtime.properties>`"
+msgstr ""
+
+# d09a709a4bac469cb39dc5a758814563
+#: ../../discovery/part07/docker_migration.rst:218
+msgid "$DRUID_HOME/conf/druid/single/broker/runtime.properties"
+msgstr ""
+
+# 02965d2c50984e969c68de155c4ca2b7
+#: ../../discovery/part07/docker_migration.rst:220
+msgid ""
+":download:`runtime.properties "
+"</_static/data/discovery/part07/historical.runtime.properties>`"
+msgstr ""
+
+# 9aa36033a7ce43d788a5a03e2fb2467a
+#: ../../discovery/part07/docker_migration.rst:220
+msgid "$DRUID_HOME/conf/druid/single/historical/runtime.properties"
+msgstr ""
+
+# 8ae4d44f5f6f4f56bd44fc7f0f80d66e
+#: ../../discovery/part07/docker_migration.rst:222
+msgid ""
+":download:`runtime.properties "
+"</_static/data/discovery/part07/middleManager.runtime.properties>`"
+msgstr ""
+
+# 347c0a6671b5473f893b6714ad7f90b3
+#: ../../discovery/part07/docker_migration.rst:222
+msgid "$DRUID_HOME/conf/druid/single/middleManager/runtime.properties"
+msgstr ""
+
+# 54faab97eff3453fb50ae5ff0ec1be96
+#: ../../discovery/part07/docker_migration.rst:230
+msgid "잠시 기다린 후 http://localhost:8090/ 에 접속을 할 수 있다면 성공한 것입니다."
+msgstr ""
+
+# 6d34e94f56f44fe3bc8ae1e7f870b6cf
+#: ../../discovery/part07/docker_migration.rst:234
+msgid "6. Metatron 설치"
+msgstr ""
+
+# 1065af0d0e154992b8bea4e319fcfd8f
+#: ../../discovery/part07/docker_migration.rst:244
+msgid "다음 파일들을 $METATRON_HOME/conf에 넣어주세요."
+msgstr ""
+
+# f2ca56a526c44a6c9dc28e36bfa52490
+#: ../../discovery/part07/docker_migration.rst:246
+msgid ""
+":download:`application-config.yaml </_static/data/discovery/part07"
+"/application-config.yaml>` :download:`metatron-env.sh "
+"</_static/data/discovery/part07/metatron-env.sh>` :download:`logback-"
+"console.xml </_static/data/discovery/part07/logback-console.xml>`"
+msgstr ""
+
+# 19d67f659b424225a97e19a720b4cce6
+#: ../../discovery/part07/docker_migration.rst:250
+msgid "Metatron을 초기화합니다."
+msgstr ""
+
+# c1a7f2e0d3bf4279af3f6ff75d808acf
+#: ../../discovery/part07/docker_migration.rst:267
+msgid "진행상황을 보려면 log 파일을 tail 하세요."
+msgstr ""
+
+# 0ecccb36f7ce4b2c8bc637debd737529
+#: ../../discovery/part07/docker_migration.rst:273
+msgid "이제 http://localhost:8180/ 으로 접속하면 됩니다."
+msgstr ""
+

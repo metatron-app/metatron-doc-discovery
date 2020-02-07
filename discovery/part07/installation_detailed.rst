@@ -1,7 +1,7 @@
-상세 설치 가이드 (CentOS 7 기준)
+상세 설치 가이드
 ================================
 
-Linux OS만 제공된 환경(클라우드 서비스)을 기준으로, 데이터 프리퍼레이션 기능을 모두 사용해볼 수 있도록 메타트론을 설치, 설정하는 것에 대한 가이드 문서입니다.
+Linux OS만 제공된 환경(CentOS 7)을 기준으로, 데이터 프리퍼레이션 기능을 모두 사용해볼 수 있도록 메타트론을 설치, 설정하는 것에 대한 가이드 문서입니다.
 
 1. 필수 패키지 설치
 -------------------
@@ -197,7 +197,39 @@ Hive에 접속해봅니다.
 
   beeline -u jdbc:hive2://localhost:10000 "" ""
 
-5. Metatron 설치
+5. Druid 설치
+-------------------
+
+.. code::
+
+  wget https://sktmetatronkrsouthshared.blob.core.windows.net/metatron-public/discovery-dist/latest/druid-0.9.1-latest-hadoop-2.7.3-bin.tar.gz
+  mkdir /servers
+  tar zxf druid-0.9.1-latest-hadoop-2.7.3-bin.tar.gz -C /servers
+  ln -s /servers/druid-* /servers/druid
+  export DRUID_HOME=/servers/druid
+
+다음 파일들을 다운로드 받아서 지정된 위치로 넣어주세요.
+
++--------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+| Download URL                                                                                     | Target Location                                                |
++==================================================================================================+================================================================+
+| :download:`jvm.config </_static/data/discovery/part07/single.jvm.config>`                        | $DRUID_HOME/conf/druid/single/jvm.config                       |
++--------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+| :download:`runtime.properties </_static/data/discovery/part07/broker.runtime.properties>`        | $DRUID_HOME/conf/druid/single/broker/runtime.properties        |
++--------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+| :download:`runtime.properties </_static/data/discovery/part07/historical.runtime.properties>`    | $DRUID_HOME/conf/druid/single/historical/runtime.properties    |
++--------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+| :download:`runtime.properties </_static/data/discovery/part07/middleManager.runtime.properties>` | $DRUID_HOME/conf/druid/single/middleManager/runtime.properties |
++--------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+
+.. code::
+
+  cd $DRUID_HOME
+  ./start-single.sh
+
+http://localhost:8090/ 으로 접속이 된다면 성공한 것입니다.
+
+6. Metatron 설치
 -------------------
 
 .. code::
@@ -238,4 +270,28 @@ Metatron을 초기화합니다.
   tail -f logs/metatron-*.out
 
 이제 http://localhost:8180/ 으로 접속하면 됩니다.
+
+7. Preptool 설치
+-------------------
+
+.. code::
+
+  yum -y install https://centos7.iuscommunity.org/ius-release.rpm \
+        && yum install -y python36u python36u-libs python36u-devel python36u-pip git \
+        && ln -s /bin/python3.6 /bin/python3 \
+        && ln -s /bin/pip3.6 /bin/pip3 \
+        && pip3 install requests
+  yum -y install git
+  git clone https://github.com/metatron-app/discovery-prep-tool.git
+  cd discovery-prep-tool
+
+테스트용 파일을 다운로드 받습니다.
+
+    :download:`sales-data-sample.csv </_static/data/sales-data-sample.csv>`
+
+.. code::
+
+  python3 preptool -f sales-data-sample.csv
+
+File dataset created라고 나오면 preptool이 제대로 동작하는 것입니다.
 

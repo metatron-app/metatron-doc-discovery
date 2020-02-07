@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>상세 설치 가이드 (CentOS 7 기준) &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>상세 설치 가이드 &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -117,12 +117,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">노트북</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">워크벤치</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">데이터 프리퍼레이션</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">상세 설치 가이드 (CentOS 7 기준)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">1. 필수 패키지 설치</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">상세 설치 가이드</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1. 필수 패키지 설치</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hadoop">2. Hadoop 설치</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mysql">3. MySQL 설치</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hive">4. Hive 설치</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#metatron">5. Metatron 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#druid">5. Druid 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metatron">6. Metatron 설치</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preptool">7. Preptool 설치</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">데이터셋 만들기</a></li>
@@ -196,7 +198,7 @@
         
           <li><a href="index.html">데이터 프리퍼레이션</a> &raquo;</li>
         
-      <li>상세 설치 가이드 (CentOS 7 기준)</li>
+      <li>상세 설치 가이드</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -215,11 +217,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="centos-7">
-<h1>상세 설치 가이드 (CentOS 7 기준)<a class="headerlink" href="#centos-7" title="제목 주소">¶</a></h1>
-<p>Linux OS만 제공된 환경(클라우드 서비스)을 기준으로, 데이터 프리퍼레이션 기능을 모두 사용해볼 수 있도록 메타트론을 설치, 설정하는 것에 대한 가이드 문서입니다.</p>
-<div class="section" id="id1">
-<h2>1. 필수 패키지 설치<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
+  <div class="section" id="id1">
+<h1>상세 설치 가이드<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>Linux OS만 제공된 환경(CentOS 7)을 기준으로, 데이터 프리퍼레이션 기능을 모두 사용해볼 수 있도록 메타트론을 설치, 설정하는 것에 대한 가이드 문서입니다.</p>
+<div class="section" id="id2">
+<h2>1. 필수 패키지 설치<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
 <p>루트로 다음 명령들을 실행합니다.</p>
 <div class="code highlight-default"><div class="highlight"><pre><span></span>yum clean all &amp;&amp; yum repolist &amp;&amp; yum -y update
 yum -y install tar unzip vi vim telnet apr apr-util apr-devel apr-util-devel net-tools curl openssl elinks locate python-setuptools
@@ -380,8 +382,49 @@ hiveserver2 &amp;
 </pre></div>
 </div>
 </div>
+<div class="section" id="druid">
+<h2>5. Druid 설치<a class="headerlink" href="#druid" title="제목 주소">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">druid</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">hadoop</span><span class="o">-</span><span class="mf">2.7</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">mkdir</span> <span class="o">/</span><span class="n">servers</span>
+<span class="n">tar</span> <span class="n">zxf</span> <span class="n">druid</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">hadoop</span><span class="o">-</span><span class="mf">2.7</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">servers</span>
+<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">druid</span><span class="o">-*</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">druid</span>
+<span class="n">export</span> <span class="n">DRUID_HOME</span><span class="o">=/</span><span class="n">servers</span><span class="o">/</span><span class="n">druid</span>
+</pre></div>
+</div>
+<p>다음 파일들을 다운로드 받아서 지정된 위치로 넣어주세요.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Download URL</th>
+<th class="head">Target Location</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference download internal" href="../../_downloads/single.jvm.config" download=""><code class="xref download docutils literal"><span class="pre">jvm.config</span></code></a></td>
+<td>$DRUID_HOME/conf/druid/single/jvm.config</td>
+</tr>
+<tr class="row-odd"><td><a class="reference download internal" href="../../_downloads/broker.runtime.properties" download=""><code class="xref download docutils literal"><span class="pre">runtime.properties</span></code></a></td>
+<td>$DRUID_HOME/conf/druid/single/broker/runtime.properties</td>
+</tr>
+<tr class="row-even"><td><a class="reference download internal" href="../../_downloads/historical.runtime.properties" download=""><code class="xref download docutils literal"><span class="pre">runtime.properties</span></code></a></td>
+<td>$DRUID_HOME/conf/druid/single/historical/runtime.properties</td>
+</tr>
+<tr class="row-odd"><td><a class="reference download internal" href="../../_downloads/middleManager.runtime.properties" download=""><code class="xref download docutils literal"><span class="pre">runtime.properties</span></code></a></td>
+<td>$DRUID_HOME/conf/druid/single/middleManager/runtime.properties</td>
+</tr>
+</tbody>
+</table>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>cd $DRUID_HOME
+./start-single.sh
+</pre></div>
+</div>
+<p><a class="reference external" href="http://localhost:8090/">http://localhost:8090/</a> 으로 접속이 된다면 성공한 것입니다.</p>
+</div>
 <div class="section" id="metatron">
-<h2>5. Metatron 설치<a class="headerlink" href="#metatron" title="제목 주소">¶</a></h2>
+<h2>6. Metatron 설치<a class="headerlink" href="#metatron" title="제목 주소">¶</a></h2>
 <div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 <span class="n">mkdir</span> <span class="o">/</span><span class="n">servers</span>
 <span class="n">tar</span> <span class="n">zxf</span> <span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">servers</span>
@@ -414,6 +457,26 @@ bin/metatron.sh --init start
 </pre></div>
 </div>
 <p>이제 <a class="reference external" href="http://localhost:8180/">http://localhost:8180/</a> 으로 접속하면 됩니다.</p>
+</div>
+<div class="section" id="preptool">
+<h2>7. Preptool 설치<a class="headerlink" href="#preptool" title="제목 주소">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">centos7</span><span class="o">.</span><span class="n">iuscommunity</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">ius</span><span class="o">-</span><span class="n">release</span><span class="o">.</span><span class="n">rpm</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">python36u</span> <span class="n">python36u</span><span class="o">-</span><span class="n">libs</span> <span class="n">python36u</span><span class="o">-</span><span class="n">devel</span> <span class="n">python36u</span><span class="o">-</span><span class="n">pip</span> <span class="n">git</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python3</span><span class="o">.</span><span class="mi">6</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python3</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">pip3</span><span class="o">.</span><span class="mi">6</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">pip3</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">pip3</span> <span class="n">install</span> <span class="n">requests</span>
+<span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">git</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">app</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">prep</span><span class="o">-</span><span class="n">tool</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">discovery</span><span class="o">-</span><span class="n">prep</span><span class="o">-</span><span class="n">tool</span>
+</pre></div>
+</div>
+<p>테스트용 파일을 다운로드 받습니다.</p>
+<blockquote>
+<div><a class="reference download internal" href="../../_downloads/sales-data-sample.csv" download=""><code class="xref download docutils literal"><span class="pre">sales-data-sample.csv</span></code></a></div></blockquote>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">preptool</span> <span class="o">-</span><span class="n">f</span> <span class="n">sales</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">sample</span><span class="o">.</span><span class="n">csv</span>
+</pre></div>
+</div>
+<p>File dataset created라고 나오면 preptool이 제대로 동작하는 것입니다.</p>
 </div>
 </div>
 

@@ -28,6 +28,7 @@
    :maxdepth: 2
 
    installation_detailed
+   docker_migration
    create_a_dataset
    manage_dataflow
    data_snapshot

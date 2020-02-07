@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation Detailed (CentOS 7) &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Install Guide Detailed &mdash; metatron discovery docs 0.4.2 documentation</title>
   
 
   
@@ -116,12 +116,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Notebook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Workbench</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Data Preparation</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Installation Detailed (CentOS 7)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">1. Install requirements</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Install Guide Detailed</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">1. Install requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hadoop">2. Install Hadoop</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mysql">3. Install MySQL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hive">4. Install Hive</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#metatron">5. Install Metatron</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#druid">5. Install Druid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metatron">6. Install Metatron</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preptool">7. Install Preptool</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="create_a_dataset.html">Create a dataset</a></li>
@@ -195,7 +197,7 @@
         
           <li><a href="index.html">Data Preparation</a> &raquo;</li>
         
-      <li>Installation Detailed (CentOS 7)</li>
+      <li>Install Guide Detailed</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -214,11 +216,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="centos-7">
-<h1>Installation Detailed (CentOS 7)<a class="headerlink" href="#centos-7" title="Permalink to this headline">¶</a></h1>
-<p>This document is a guide for installing metatron and using data preparation feature from the scratch Linux OS environment.</p>
-<div class="section" id="id1">
-<h2>1. Install requirements<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="id1">
+<h1>Install Guide Detailed<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>This document is a guide for installing metatron and using data preparation feature from the scratch Linux OS environment (CentOS 7).</p>
+<div class="section" id="id2">
+<h2>1. Install requirements<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Run following commands by root.</p>
 <div class="code highlight-default"><div class="highlight"><pre><span></span>yum clean all &amp;&amp; yum repolist &amp;&amp; yum -y update
 yum -y install tar unzip vi vim telnet apr apr-util apr-devel apr-util-devel net-tools curl openssl elinks locate python-setuptools
@@ -378,8 +380,49 @@ hiveserver2 &amp;
 </pre></div>
 </div>
 </div>
+<div class="section" id="druid">
+<h2>5. Install Druid<a class="headerlink" href="#druid" title="Permalink to this headline">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">druid</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">hadoop</span><span class="o">-</span><span class="mf">2.7</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<span class="n">mkdir</span> <span class="o">/</span><span class="n">servers</span>
+<span class="n">tar</span> <span class="n">zxf</span> <span class="n">druid</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">hadoop</span><span class="o">-</span><span class="mf">2.7</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">servers</span>
+<span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">druid</span><span class="o">-*</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">druid</span>
+<span class="n">export</span> <span class="n">DRUID_HOME</span><span class="o">=/</span><span class="n">servers</span><span class="o">/</span><span class="n">druid</span>
+</pre></div>
+</div>
+<p>Put files below into each target locations.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Download URL</th>
+<th class="head">Target Location</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference download internal" href="../../_downloads/single.jvm.config" download=""><code class="xref download docutils literal"><span class="pre">jvm.config</span></code></a></td>
+<td>$DRUID_HOME/conf/druid/single/jvm.config</td>
+</tr>
+<tr class="row-odd"><td><a class="reference download internal" href="../../_downloads/broker.runtime.properties" download=""><code class="xref download docutils literal"><span class="pre">runtime.properties</span></code></a></td>
+<td>$DRUID_HOME/conf/druid/single/broker/runtime.properties</td>
+</tr>
+<tr class="row-even"><td><a class="reference download internal" href="../../_downloads/historical.runtime.properties" download=""><code class="xref download docutils literal"><span class="pre">runtime.properties</span></code></a></td>
+<td>$DRUID_HOME/conf/druid/single/historical/runtime.properties</td>
+</tr>
+<tr class="row-odd"><td><a class="reference download internal" href="../../_downloads/middleManager.runtime.properties" download=""><code class="xref download docutils literal"><span class="pre">runtime.properties</span></code></a></td>
+<td>$DRUID_HOME/conf/druid/single/middleManager/runtime.properties</td>
+</tr>
+</tbody>
+</table>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>cd $DRUID_HOME
+./start-single.sh
+</pre></div>
+</div>
+<p>Check if you connect to <a class="reference external" href="http://localhost:8090/">http://localhost:8090/</a></p>
+</div>
 <div class="section" id="metatron">
-<h2>5. Install Metatron<a class="headerlink" href="#metatron" title="Permalink to this headline">¶</a></h2>
+<h2>6. Install Metatron<a class="headerlink" href="#metatron" title="Permalink to this headline">¶</a></h2>
 <div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 <span class="n">mkdir</span> <span class="o">/</span><span class="n">servers</span>
 <span class="n">tar</span> <span class="n">zxf</span> <span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">servers</span>
@@ -412,6 +455,26 @@ bin/metatron.sh --init start
 </pre></div>
 </div>
 <p>Connect to <a class="reference external" href="http://localhost:8180/">http://localhost:8180/</a></p>
+</div>
+<div class="section" id="preptool">
+<h2>7. Install Preptool<a class="headerlink" href="#preptool" title="Permalink to this headline">¶</a></h2>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">centos7</span><span class="o">.</span><span class="n">iuscommunity</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">ius</span><span class="o">-</span><span class="n">release</span><span class="o">.</span><span class="n">rpm</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">python36u</span> <span class="n">python36u</span><span class="o">-</span><span class="n">libs</span> <span class="n">python36u</span><span class="o">-</span><span class="n">devel</span> <span class="n">python36u</span><span class="o">-</span><span class="n">pip</span> <span class="n">git</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python3</span><span class="o">.</span><span class="mi">6</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python3</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">pip3</span><span class="o">.</span><span class="mi">6</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">pip3</span> \
+      <span class="o">&amp;&amp;</span> <span class="n">pip3</span> <span class="n">install</span> <span class="n">requests</span>
+<span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">git</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">app</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">prep</span><span class="o">-</span><span class="n">tool</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">discovery</span><span class="o">-</span><span class="n">prep</span><span class="o">-</span><span class="n">tool</span>
+</pre></div>
+</div>
+<p>Download a test file.</p>
+<blockquote>
+<div><a class="reference download internal" href="../../_downloads/sales-data-sample.csv" download=""><code class="xref download docutils literal"><span class="pre">sales-data-sample.csv</span></code></a></div></blockquote>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">preptool</span> <span class="o">-</span><span class="n">f</span> <span class="n">sales</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">sample</span><span class="o">.</span><span class="n">csv</span>
+</pre></div>
+</div>
+<p>If you get &#8220;File dataset created&#8221;, then it works.</p>
 </div>
 </div>
 
