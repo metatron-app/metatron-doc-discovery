@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-13 11:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+# 8e3bf68f55ba4cea95bfadb2f2e9c5d0
+#: ../../anomaly/part07/index.rst:2
+msgid "검색"
+msgstr "Search"
+
+# b9033861c4c541d9a1796050e839e344
+#: ../../anomaly/part07/index.rst:8
+msgid ""
+"일반적으로는 이상치를 검출하는 시스템과 데이터를 조회하는 시스템이 별도로 존재하여 이상 탐지 직후 원인을 찾기 위해 데이터를 "
+"조회하려면 또 다른 시스템에 접근해야만 합니다. Metatron Anomaly는 이상 탐지 알람을 받은 직후 동일한 시스템 내에서 "
+"사용자가 선정한 데이터 소스에 대해 다양한 조건으로 조회할 수 있는 기능을 제공합니다."
+msgstr ""
+
+# 21eeab69e3fc4946af95c94858a17fca
+#: ../../anomaly/part07/index.rst:11
+msgid "데이터 소스 선정"
+msgstr "Selecting Data Source"
+
+# 6ef6770e472944c39418bc79f93477ec
+#: ../../anomaly/part07/index.rst:13
+msgid ""
+"검색 화면에 초기 접근 시 가장 먼저 데이터 소스를 선택해야 합니다. 선택한 데이터 소스는 다른 데이터 소스로 변경하기 전에는 다른"
+" 화면으로 이동해도 계속 유지됩니다."
+msgstr ""
+
+# 62688700ec2148b6a1b2894fd0123eaa
+#: ../../anomaly/part07/index.rst:19
+msgid "하단의 데이터소스 선택 버튼을 누르면 데이터 소스 선택 창으로 이동합니다."
+msgstr ""
+
+# 617c9c07ddd545e980116b8ab6bdc9d9
+#: ../../anomaly/part07/index.rst:25
+msgid ""
+"데이터 소스가 선택되면 기본적으로 전체 필드에 대한 결과 값이 조회됩니다. 조회 기간은 데이터 소스 수집 시간 단위에 따라 기본값이"
+" 다르게 설정되어 있습니다."
+msgstr ""
+
+# 798dbf65d09c444db3cc1ab53c0e588a
+#: ../../anomaly/part07/index.rst:32
+msgid "필드 선택 및 조건 설정"
+msgstr "Choosing Fields & Conditions"
+
+# 298ed935b34d409cb2850fe837ef6709
+#: ../../anomaly/part07/index.rst:35
+msgid "필드 선택"
+msgstr ""
+
+# 319533399ecc4eab8b54d3d2b583f662
+#: ../../anomaly/part07/index.rst:37
+msgid ""
+"각 필드 값 우측에는 측정값(measure)의 경우 값의 범위를, 차원값(dimension)의 경우 값의 개수를 보여줍니다. 검색을"
+" 원하는 필드를 선택하여 적용을 누르면 해당하는 필드 값에 대해서만 조회할 수 있습니다."
+msgstr ""
+
+# 3ae2031368504dc2b86412092b2e97ca
+#: ../../anomaly/part07/index.rst:44
+msgid "조건 설정"
+msgstr ""
+
+# c31a87ea8c8446049172168a2d068a3d
+#: ../../anomaly/part07/index.rst:46
+msgid ""
+"조건 설정 탭으로 이동하면 각 필드에 대한 검색 조건을 상세히 설정할 수 있습니다. 데이터 조회 질의문을 작성하지 못하는 시스템 "
+"운영자 및 현업 사용자들도 손쉽게 복잡한 조건을 설정하여 데이터를 조회할 수 있도록 UI를 제공하고 있습니다."
+msgstr ""
+
+# ad04c5ee50c24be7a0315aa3d4c8b152
+#: ../../anomaly/part07/index.rst:48
+msgid ""
+"개별 필드값에 대한 조건식들은 서로 and / or 관계를 설정할 수 있으며, 상단의 그룹 추가를 통해 그룹 간에도 and / or"
+" 관계를 설정할 수 있습니다."
+msgstr ""
+
+# 115e104a618647599057bba365f0c8a6
+#: ../../anomaly/part07/index.rst:54
+msgid "측정값 필드 조건식에 제공되는 비교 연산자는 다음 6가지입니다."
+msgstr ""
+
+# ad57385ebf4b477a9d1459a80713191d
+#: ../../anomaly/part07/index.rst:56
+msgid "=(같음)"
+msgstr ""
+
+# 8f739b512337481a948541743a5810f3
+#: ../../anomaly/part07/index.rst:57
+msgid "< (작음)"
+msgstr ""
+
+# 958ffa46d17b44f1b1774a25ed16632a
+#: ../../anomaly/part07/index.rst:58
+msgid "≤ (작거나 같음)"
+msgstr ""
+
+# 9a2ab1a580684e50ad4ef90ace25c50d
+#: ../../anomaly/part07/index.rst:59
+msgid "≥ (크거나 같음)"
+msgstr ""
+
+# 366d020d1dd94ec3bcff347bbe645549
+#: ../../anomaly/part07/index.rst:60
+msgid "~ (사잇값)"
+msgstr ""
+
+# 6b853f63b2fb4e19bbea7b4b4461bff2
+#: ../../anomaly/part07/index.rst:67
+msgid ""
+"측정값에 대한 조건값 입력창에 커서가 입력되면 최소값과 최대값이 툴팁으로 조회됩니다. 해당 값을 참조하여. 조건식을 입력할 수 "
+"있습니다."
+msgstr ""
+
+# c001c707fc0f437a8b34a5c6ac257d06
+#: ../../anomaly/part07/index.rst:74
+msgid "차원값 필드 조건식에 제공되는 연산자는 다음 4가지입니다."
+msgstr ""
+
+# 6d8ed561eafc4eef99732e77501221eb
+#: ../../anomaly/part07/index.rst:76
+msgid "시작"
+msgstr ""
+
+# 3d46fcd2592f4c6a85b0b50b883e34a9
+#: ../../anomaly/part07/index.rst:77
+msgid "포함"
+msgstr ""
+
+# a12eb0d635ec4e95bd1fe8ba71e6ea8d
+#: ../../anomaly/part07/index.rst:78
+msgid "시작 단어"
+msgstr ""
+
+# 7329e0e952274787ac4a5fc0d52a6de0
+#: ../../anomaly/part07/index.rst:79
+msgid "종료 단어"
+msgstr ""
+
+# 11c11fb04543449da02c0d992064d47a
+#: ../../anomaly/part07/index.rst:86
+msgid ""
+"모든 검색 이력들은 |icon_history| 을 눌러 해당 데이터 소스에 대한 조회할 수 있습니다. 각 검색 이력에 대해 검색 "
+"시간, 조건 등을 조회할 수 있으며 우측의 적용을 누르면 동일한 조건으로 데이터를 조회합니다."
+msgstr ""
+
+# d8095008ef704d36a43c93fdf37dd792
+#: ../../anomaly/part07/index.rst:94
+msgid "검색 결과"
+msgstr "Search Result"
+
+# bbc7d0df8c1848a5b029ad6913eeccf7
+#: ../../anomaly/part07/index.rst:100
+msgid ""
+"**조회 기간 설정**\\: 검색 결과 창 상단에는 조회 대상이 되는 데이터 기간을 설정할 수 있습니다. 현재 시간 대비 상대적인 "
+"기간을 drop-down 메뉴에서 선택하거나, 특정 시간 범위를 지정하여 조회할 수 있습니다."
+msgstr ""
+
+# 1d7a541ec858408ca7cdcdde429e8265
+#: ../../anomaly/part07/index.rst:102
+msgid ""
+"**검색 결과 실시간 갱신**\\: 우측의 |icon_reset| 버튼을 누르면 10초 간격으로 검색 결과를 업데이트하여 신규로 "
+"들어오는 데이터에 대해 조회를 지원합니다. 갱신 주기는 30초 또는 60초로 변경 가능하며, 다시 |icon_reset|을 누르면 "
+"갱신을 중지할 수 있습니다."
+msgstr ""
+
+# 6821a4fe62e3424cb4e0a2f433c3e13a
+#: ../../anomaly/part07/index.rst:104
+msgid "**엑셀파일 다운로드**\\: |icon_download|\\를 누르면 현재 조회 결과를 엑셀파일(.xls)로 다운로드 합니다."
+msgstr ""
+
+# 550440da45084f7e8c091da7cca2064d
+#: ../../anomaly/part07/index.rst:106
+msgid "**히스토그램**\\: 막대 차트는 데이터가 저장된 시간 단위 별로 데이터 개수를 count한 히스토그램(histogram)입니다."
+msgstr ""
+
+# fb756da08fa4489d946f3b3b0dd2c524
+#: ../../anomaly/part07/index.rst:108
+msgid ""
+"**리스트 항목 노출 개수 변경**\\: 한번에 조회되는 데이터 레코드 수는 최대 1000개이며, 한 화면에 보여줄 레코드 수를 "
+"하단의 drop-down 메뉴에서 15개, 30개, 또는 50개로 변경할 수 있습니다."
+msgstr ""
+

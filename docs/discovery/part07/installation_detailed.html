@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>상세 설치 가이드 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>상세 설치 가이드 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -46,6 +36,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="Docker Migration 가이드" href="docker_migration.html" />
     <link rel="prev" title="데이터 프리퍼레이션" href="index.html" /> 
 </head>
@@ -74,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -147,11 +139,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Metatron Anomaly 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">알람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알고리즘</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">대시보드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">검색</a></li>
 </ul>
 
             
@@ -205,7 +199,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part07/installation_detailed.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part07/installation_detailed.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -224,7 +218,7 @@
 <div class="section" id="id2">
 <h2>1. 필수 패키지 설치<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
 <p>루트로 다음 명령들을 실행합니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>yum clean all &amp;&amp; yum repolist &amp;&amp; yum -y update
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>yum clean all &amp;&amp; yum repolist &amp;&amp; yum -y update
 yum -y install tar unzip vi vim telnet apr apr-util apr-devel apr-util-devel net-tools curl openssl elinks locate python-setuptools
 yum -y install java-1.8.0-openjdk-devel.x86_64
 export JAVA_HOME=/usr/lib/jvm/java
@@ -236,7 +230,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 <h2>2. Hadoop 설치<a class="headerlink" href="#hadoop" title="제목 주소">¶</a></h2>
 <p>루트로 다음 명령들을 실행합니다.
 Hadoop 바이너리는 가까운 mirror를 통해서 다운로드 받는 것이 더 좋습니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>yum -y install openssh-server openssh-clients rsync netstat wget
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>yum -y install openssh-server openssh-clients rsync netstat wget
 yum -y update libselinux
 
 ssh-keygen -q -N &quot;&quot; -t dsa -f /etc/ssh/ssh_host_dsa_key
@@ -264,16 +258,17 @@ sed -i &quot;/^export HADOOP_CONF_DIR/ s:.*:export HADOOP_CONF_DIR=$HADOOP_CONF_
 </div>
 <p>다음 파일들을 $HADOOP_CONF_DIR에 넣어주세요.</p>
 <blockquote>
-<div><a class="reference download internal" href="../../_downloads/core-site.xml" download=""><code class="xref download docutils literal"><span class="pre">core-site.xml</span></code></a>
-<a class="reference download internal" href="../../_downloads/hdfs-site.xml" download=""><code class="xref download docutils literal"><span class="pre">hdfs-site.xml</span></code></a>
-<a class="reference download internal" href="../../_downloads/mapred-site.xml" download=""><code class="xref download docutils literal"><span class="pre">mapred-site.xml</span></code></a>
-<a class="reference download internal" href="../../_downloads/yarn-site.xml" download=""><code class="xref download docutils literal"><span class="pre">yarn-site.xml</span></code></a></div></blockquote>
+<div><p><a class="reference download internal" download="" href="../../_downloads/21c773492602268d86bcd2e32c30ef7d/core-site.xml"><code class="xref download docutils literal notranslate"><span class="pre">core-site.xml</span></code></a>
+<a class="reference download internal" download="" href="../../_downloads/f1f32884226e515b53f4f0a38884c3d3/hdfs-site.xml"><code class="xref download docutils literal notranslate"><span class="pre">hdfs-site.xml</span></code></a>
+<a class="reference download internal" download="" href="../../_downloads/80c040df9c643f1ab9d826f032498dab/mapred-site.xml"><code class="xref download docutils literal notranslate"><span class="pre">mapred-site.xml</span></code></a>
+<a class="reference download internal" download="" href="../../_downloads/4dc1c490a4a48e52999737382f6b2e41/yarn-site.xml"><code class="xref download docutils literal notranslate"><span class="pre">yarn-site.xml</span></code></a></p>
+</div></blockquote>
 <p>계속해서 루트로 다음 명령들을 실행합니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>$HADOOP_PREFIX/bin/hdfs namenode -format
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$HADOOP_PREFIX/bin/hdfs namenode -format
 </pre></div>
 </div>
 <p>다음 내용을 /root/.ssh/config에 다음 내용을 추가해주세요.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">Host</span> <span class="o">*</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Host</span> <span class="o">*</span>
   <span class="n">UserKnownHostsFile</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span>
   <span class="n">StrictHostKeyChecking</span> <span class="n">no</span>
   <span class="n">LogLevel</span> <span class="n">quiet</span>
@@ -281,7 +276,7 @@ sed -i &quot;/^export HADOOP_CONF_DIR/ s:.*:export HADOOP_CONF_DIR=$HADOOP_CONF_
 </pre></div>
 </div>
 <p>계속해서 루트로 다음 명령들을 실행합니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>chmod 600 /root/.ssh/config
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>chmod 600 /root/.ssh/config
 chown root:root /root/.ssh/config
 
 chmod +x $HADOOP_CONF_DIR/*-env.sh
@@ -292,16 +287,16 @@ echo &quot;Port 2122&quot; &gt;&gt; /etc/ssh/sshd_config
 </pre></div>
 </div>
 <p>SSH 서버를 다시 시작합니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">service</span> <span class="n">sshd</span> <span class="n">restart</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">service</span> <span class="n">sshd</span> <span class="n">restart</span>
 </pre></div>
 </div>
 <p>HDFS 및 Yarn을 실행합니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">start</span><span class="o">-</span><span class="n">dfs</span><span class="o">.</span><span class="n">sh</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">start</span><span class="o">-</span><span class="n">dfs</span><span class="o">.</span><span class="n">sh</span>
 <span class="n">start</span><span class="o">-</span><span class="n">yarn</span><span class="o">.</span><span class="n">sh</span>
 </pre></div>
 </div>
 <p>Hadoop이 제대로 설치되었는지 테스트해봅니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>hdfs dfs -mkdir -p /user/hadoop/input
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>hdfs dfs -mkdir -p /user/hadoop/input
 hdfs dfs -put $HADOOP_PREFIX/LICENSE.txt /user/hadoop/input
 hadoop jar $HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3.jar wordcount /user/hadoop/input /user/hadoop/output
 </pre></div>
@@ -309,7 +304,7 @@ hadoop jar $HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3
 </div>
 <div class="section" id="mysql">
 <h2>3. MySQL 설치<a class="headerlink" href="#mysql" title="제목 주소">¶</a></h2>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dev</span><span class="o">.</span><span class="n">mysql</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">get</span><span class="o">/</span><span class="n">mysql57</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="n">el7</span><span class="o">-</span><span class="mf">7.</span><span class="n">noarch</span><span class="o">.</span><span class="n">rpm</span> \
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">dev</span><span class="o">.</span><span class="n">mysql</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">get</span><span class="o">/</span><span class="n">mysql57</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="n">el7</span><span class="o">-</span><span class="mf">7.</span><span class="n">noarch</span><span class="o">.</span><span class="n">rpm</span> \
       <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">localinstall</span> <span class="n">mysql57</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">release</span><span class="o">-</span><span class="n">el7</span><span class="o">-</span><span class="mf">7.</span><span class="n">noarch</span><span class="o">.</span><span class="n">rpm</span> \
       <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="n">repolist</span> <span class="n">enabled</span> <span class="o">|</span> <span class="n">grep</span> <span class="s2">&quot;mysql.*-community.*&quot;</span> \
       <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">mysql</span><span class="o">-</span><span class="n">community</span><span class="o">-</span><span class="n">server</span> <span class="n">mysql</span> \
@@ -318,12 +313,12 @@ hadoop jar $HADOOP_PREFIX/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.3
 </pre></div>
 </div>
 <p>다음의 명령을 통해 임시패스워드를 알아냅니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">grep</span> <span class="s1">&#39;temporary password&#39;</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">mysqld</span><span class="o">.</span><span class="n">log</span> <span class="o">|</span> <span class="n">awk</span> <span class="p">{</span><span class="s1">&#39;print $11&#39;</span><span class="p">}</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">grep</span> <span class="s1">&#39;temporary password&#39;</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">log</span><span class="o">/</span><span class="n">mysqld</span><span class="o">.</span><span class="n">log</span> <span class="o">|</span> <span class="n">awk</span> <span class="p">{</span><span class="s1">&#39;print $11&#39;</span><span class="p">}</span>
 <span class="n">Z</span><span class="o">&amp;</span><span class="n">O</span><span class="o">+</span><span class="n">estx9vTt</span>
 </pre></div>
 </div>
 <p>위 패스워드를 이용해서 mysql_secure_installation을 실행합니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql_secure_installation
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mysql_secure_installation
 Enter password for user root: -&gt; Z&amp;O+estx9vTt
 New password: -&gt; Metatron123$
 Re-enter new password: -&gt; Metatron123$
@@ -338,13 +333,13 @@ Reload privilege tables now? -&gt; enter
 </pre></div>
 </div>
 <p>MySQL에 접속해봅니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
 </pre></div>
 </div>
 </div>
 <div class="section" id="hive">
 <h2>4. Hive 설치<a class="headerlink" href="#hive" title="제목 주소">¶</a></h2>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>wget http://mirror.navercorp.com/apache/hive/hive-2.3.6/apache-hive-2.3.6-bin.tar.gz \
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>wget http://mirror.navercorp.com/apache/hive/hive-2.3.6/apache-hive-2.3.6-bin.tar.gz \
       &amp;&amp; tar -zxvf apache-hive-2.3.6-bin.tar.gz -C /opt \
       &amp;&amp; rm -f apache-hive-2.3.6-bin.tar.gz \
       &amp;&amp; ln -s /opt/apache-hive-2.3.6-bin /opt/hive
@@ -356,9 +351,10 @@ mv mysql-connector-java-5.1.38.jar $HIVE_HOME/lib/
 </div>
 <p>다음 파일을 $HIVE_HOME/conf에 넣어주세요.</p>
 <blockquote>
-<div><a class="reference download internal" href="../../_downloads/hive-site.xml" download=""><code class="xref download docutils literal"><span class="pre">hive-site.xml</span></code></a></div></blockquote>
+<div><p><a class="reference download internal" download="" href="../../_downloads/46ba865a7167d40bd2a4008c17471720/hive-site.xml"><code class="xref download docutils literal notranslate"><span class="pre">hive-site.xml</span></code></a></p>
+</div></blockquote>
 <p>Hive metastore를 초기화합니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
 create database hive_metastore;
 create user &#39;hive&#39;@&#39;%&#39; identified by &#39;Metatron123$&#39;;
 grant all privileges on *.* to &#39;hive&#39;@&#39;%&#39;;
@@ -372,20 +368,20 @@ schematool -initSchema -dbType mysql
 </pre></div>
 </div>
 <p>Hive를 시작합니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>hdfs dfs -mkdir -p /user/hive/warehouse
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>hdfs dfs -mkdir -p /user/hive/warehouse
 mkdir -p $HIVE_HOME/hcatalog/var/log
 hcat_server.sh start
 hiveserver2 &amp;
 </pre></div>
 </div>
 <p>Hive에 접속해봅니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">beeline</span> <span class="o">-</span><span class="n">u</span> <span class="n">jdbc</span><span class="p">:</span><span class="n">hive2</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">10000</span> <span class="s2">&quot;&quot;</span> <span class="s2">&quot;&quot;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">beeline</span> <span class="o">-</span><span class="n">u</span> <span class="n">jdbc</span><span class="p">:</span><span class="n">hive2</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="p">:</span><span class="mi">10000</span> <span class="s2">&quot;&quot;</span> <span class="s2">&quot;&quot;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="druid">
 <h2>5. Druid 설치<a class="headerlink" href="#druid" title="제목 주소">¶</a></h2>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">druid</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">hadoop</span><span class="o">-</span><span class="mf">2.7</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">druid</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">hadoop</span><span class="o">-</span><span class="mf">2.7</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 <span class="n">mkdir</span> <span class="o">/</span><span class="n">servers</span>
 <span class="n">tar</span> <span class="n">zxf</span> <span class="n">druid</span><span class="o">-</span><span class="mf">0.9</span><span class="o">.</span><span class="mi">1</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="n">hadoop</span><span class="o">-</span><span class="mf">2.7</span><span class="o">.</span><span class="mi">3</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">servers</span>
 <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">druid</span><span class="o">-*</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">druid</span>
@@ -393,32 +389,32 @@ hiveserver2 &amp;
 </pre></div>
 </div>
 <p>다음 파일들을 다운로드 받아서 지정된 위치로 넣어주세요.</p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="60%" />
-<col width="40%" />
+<col style="width: 60%" />
+<col style="width: 40%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Download URL</th>
-<th class="head">Target Location</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Download URL</p></th>
+<th class="head"><p>Target Location</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference download internal" href="../../_downloads/single.jvm.config" download=""><code class="xref download docutils literal"><span class="pre">jvm.config</span></code></a></td>
-<td>$DRUID_HOME/conf/druid/single/jvm.config</td>
+<tbody>
+<tr class="row-even"><td><p><a class="reference download internal" download="" href="../../_downloads/2aa0262b0d105d9ff5d0b9febae9585a/single.jvm.config"><code class="xref download docutils literal notranslate"><span class="pre">jvm.config</span></code></a></p></td>
+<td><p>$DRUID_HOME/conf/druid/single/jvm.config</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference download internal" href="../../_downloads/broker.runtime.properties" download=""><code class="xref download docutils literal"><span class="pre">runtime.properties</span></code></a></td>
-<td>$DRUID_HOME/conf/druid/single/broker/runtime.properties</td>
+<tr class="row-odd"><td><p><a class="reference download internal" download="" href="../../_downloads/011152cb7cf334573ddc86c54efed55d/broker.runtime.properties"><code class="xref download docutils literal notranslate"><span class="pre">runtime.properties</span></code></a></p></td>
+<td><p>$DRUID_HOME/conf/druid/single/broker/runtime.properties</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference download internal" href="../../_downloads/historical.runtime.properties" download=""><code class="xref download docutils literal"><span class="pre">runtime.properties</span></code></a></td>
-<td>$DRUID_HOME/conf/druid/single/historical/runtime.properties</td>
+<tr class="row-even"><td><p><a class="reference download internal" download="" href="../../_downloads/1497fff0e6dad2dd649ebea4677c7c38/historical.runtime.properties"><code class="xref download docutils literal notranslate"><span class="pre">runtime.properties</span></code></a></p></td>
+<td><p>$DRUID_HOME/conf/druid/single/historical/runtime.properties</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference download internal" href="../../_downloads/middleManager.runtime.properties" download=""><code class="xref download docutils literal"><span class="pre">runtime.properties</span></code></a></td>
-<td>$DRUID_HOME/conf/druid/single/middleManager/runtime.properties</td>
+<tr class="row-odd"><td><p><a class="reference download internal" download="" href="../../_downloads/f2078891066e5a74237f925ad79e87e7/middleManager.runtime.properties"><code class="xref download docutils literal notranslate"><span class="pre">runtime.properties</span></code></a></p></td>
+<td><p>$DRUID_HOME/conf/druid/single/middleManager/runtime.properties</p></td>
 </tr>
 </tbody>
 </table>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>cd $DRUID_HOME
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd $DRUID_HOME
 ./start-single.sh
 </pre></div>
 </div>
@@ -426,7 +422,7 @@ hiveserver2 &amp;
 </div>
 <div class="section" id="metatron">
 <h2>6. Metatron 설치<a class="headerlink" href="#metatron" title="제목 주소">¶</a></h2>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sktmetatronkrsouthshared</span><span class="o">.</span><span class="n">blob</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">windows</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">public</span><span class="o">/</span><span class="n">discovery</span><span class="o">-</span><span class="n">dist</span><span class="o">/</span><span class="n">latest</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span>
 <span class="n">mkdir</span> <span class="o">/</span><span class="n">servers</span>
 <span class="n">tar</span> <span class="n">zxf</span> <span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-</span><span class="n">latest</span><span class="o">-</span><span class="nb">bin</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="o">-</span><span class="n">C</span> <span class="o">/</span><span class="n">servers</span>
 <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span><span class="o">-*</span> <span class="o">/</span><span class="n">servers</span><span class="o">/</span><span class="n">metatron</span><span class="o">-</span><span class="n">discovery</span>
@@ -435,11 +431,12 @@ hiveserver2 &amp;
 </div>
 <p>다음 파일들을 $METATRON_HOME/conf에 넣어주세요.</p>
 <blockquote>
-<div><a class="reference download internal" href="../../_downloads/application-config.yaml" download=""><code class="xref download docutils literal"><span class="pre">application-config.yaml</span></code></a>
-<a class="reference download internal" href="../../_downloads/metatron-env.sh" download=""><code class="xref download docutils literal"><span class="pre">metatron-env.sh</span></code></a>
-<a class="reference download internal" href="../../_downloads/logback-console.xml" download=""><code class="xref download docutils literal"><span class="pre">logback-console.xml</span></code></a></div></blockquote>
+<div><p><a class="reference download internal" download="" href="../../_downloads/d28aa08f19bf54581b90e6acbf438eec/application-config.yaml"><code class="xref download docutils literal notranslate"><span class="pre">application-config.yaml</span></code></a>
+<a class="reference download internal" download="" href="../../_downloads/f9bc0542b4eec34d675a1c3a7d1323bc/metatron-env.sh"><code class="xref download docutils literal notranslate"><span class="pre">metatron-env.sh</span></code></a>
+<a class="reference download internal" download="" href="../../_downloads/69c92b28ff64ac8eae2cd4ae2fb62f47/logback-console.xml"><code class="xref download docutils literal notranslate"><span class="pre">logback-console.xml</span></code></a></p>
+</div></blockquote>
 <p>Metatron을 초기화합니다.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mysql -uroot -pMetatron123$
 create database polaris;
 create user &#39;polaris&#39;@&#39;%&#39; identified by &#39;Metatron123$&#39;;
 grant all privileges on *.* to &#39;polaris&#39;@&#39;%&#39;;
@@ -454,14 +451,14 @@ bin/metatron.sh --init start
 </pre></div>
 </div>
 <p>진행상황을 보려면 log 파일을 tail 하세요.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">tail</span> <span class="o">-</span><span class="n">f</span> <span class="n">logs</span><span class="o">/</span><span class="n">metatron</span><span class="o">-*.</span><span class="n">out</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tail</span> <span class="o">-</span><span class="n">f</span> <span class="n">logs</span><span class="o">/</span><span class="n">metatron</span><span class="o">-*.</span><span class="n">out</span>
 </pre></div>
 </div>
 <p>이제 <a class="reference external" href="http://localhost:8180/">http://localhost:8180/</a> 으로 접속하면 됩니다.</p>
 </div>
 <div class="section" id="preptool">
 <h2>7. Preptool 설치<a class="headerlink" href="#preptool" title="제목 주소">¶</a></h2>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">centos7</span><span class="o">.</span><span class="n">iuscommunity</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">ius</span><span class="o">-</span><span class="n">release</span><span class="o">.</span><span class="n">rpm</span> \
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">yum</span> <span class="o">-</span><span class="n">y</span> <span class="n">install</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">centos7</span><span class="o">.</span><span class="n">iuscommunity</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">ius</span><span class="o">-</span><span class="n">release</span><span class="o">.</span><span class="n">rpm</span> \
       <span class="o">&amp;&amp;</span> <span class="n">yum</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">python36u</span> <span class="n">python36u</span><span class="o">-</span><span class="n">libs</span> <span class="n">python36u</span><span class="o">-</span><span class="n">devel</span> <span class="n">python36u</span><span class="o">-</span><span class="n">pip</span> <span class="n">git</span> \
       <span class="o">&amp;&amp;</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python3</span><span class="o">.</span><span class="mi">6</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python3</span> \
       <span class="o">&amp;&amp;</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">pip3</span><span class="o">.</span><span class="mi">6</span> <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">pip3</span> \
@@ -473,8 +470,9 @@ bin/metatron.sh --init start
 </div>
 <p>테스트용 파일을 다운로드 받습니다.</p>
 <blockquote>
-<div><a class="reference download internal" href="../../_downloads/sales-data-sample.csv" download=""><code class="xref download docutils literal"><span class="pre">sales-data-sample.csv</span></code></a></div></blockquote>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">preptool</span> <span class="o">-</span><span class="n">f</span> <span class="n">sales</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">sample</span><span class="o">.</span><span class="n">csv</span>
+<div><p><a class="reference download internal" download="" href="../../_downloads/cc9902f6341763f1bbbc1ea3306e13ab/sales-data-sample.csv"><code class="xref download docutils literal notranslate"><span class="pre">sales-data-sample.csv</span></code></a></p>
+</div></blockquote>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">preptool</span> <span class="o">-</span><span class="n">f</span> <span class="n">sales</span><span class="o">-</span><span class="n">data</span><span class="o">-</span><span class="n">sample</span><span class="o">.</span><span class="n">csv</span>
 </pre></div>
 </div>
 <p>File dataset created라고 나오면 preptool이 제대로 동작하는 것입니다.</p>

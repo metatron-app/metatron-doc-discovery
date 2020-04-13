@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-13 11:14+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+# 0dbb8cd1761d453580c16d3ce62dcb92
+#: ../../anomaly/part06/index.rst:2
+msgid "대시보드"
+msgstr "Dashboard"
+
+# f305fe3e848c4470bbbc84d0b81fff76
+#: ../../anomaly/part06/index.rst:9
+msgid ""
+"Metatron Anomaly는 머신러닝 모델을 활용한 이상 탐지 기능과 별도로 데이터 소스 자체에 대한 모니터링 기능을 "
+"제공합니다. 알람이 발생한 후에 원인을 찾기 위해서 활용하거나, 어떤 측정값(measure)에 어떤 차원값(dimension)을 "
+"대상으로 알람 룰을 생성할지 확인하기 위해서도 활용할 수 있습니다."
+msgstr ""
+
+# 9a5927a8596047e7a7a3f4bcb2e1b914
+#: ../../anomaly/part06/index.rst:11
+msgid ""
+"그 중 대시보드는 Data Monitoring의 하위 메뉴로, 정해진 차트 몇 가지로 빠르게 데이터 소스에 대한 현황을 파악할 수 "
+"있도록 만들어진 기능입니다."
+msgstr ""
+
+# 1c61db190db04612b99068cb5e970a38
+#: ../../anomaly/part06/index.rst:19
+msgid "데이터 소스 선정"
+msgstr "Selecting Data Source"
+
+# bd097a14e2d8417cbc19b8b5b7e7b00b
+#: ../../anomaly/part06/index.rst:21
+msgid "가장 먼저 모니터링할 데이터 소스를 골라야 합니다. 대시보드에 처음으로 진입하면 데이터소스를 선택하는 버튼이 다음과 같이 나타납니다."
+msgstr ""
+
+# e15b8f83968e409f899368a2ae56723c
+#: ../../anomaly/part06/index.rst:27
+msgid "버튼을 클릭 후 모니터링할 데이터 소스를 선택합니다."
+msgstr ""
+
+# e83f6ae5c12b4cb082de07eb099d4064
+#: ../../anomaly/part06/index.rst:34
+msgid "실시간 대시보드"
+msgstr "Real-time Dashboard"
+
+# 68d4c832765548838d85ea251e4181a4
+#: ../../anomaly/part06/index.rst:36
+msgid ""
+"데이터 소스를 선택하면 즉시 주요 측정 값 4개에 대한 차트들로 이루어진 대시보드가 만들어집니다. 이 대시보드는 사용자가 다른 "
+"화면으로 이동 후에 다시 돌아오더라도 유지됩니다."
+msgstr ""
+
+# 2d0fe0b2c6654d72a9a3cdcd5ecb45f6
+#: ../../anomaly/part06/index.rst:43
+msgid ""
+"대시보드의 상단에는 데이터소스의 정보를 보여줍니다. 모니터링 하고자 하는 데이터 소스를 변경하려면 데이터 소스 이름 우측의 "
+"|icon_edit| 을 누릅니다."
+msgstr ""
+
+# e9834f5a68db4fea89925f1f889c1905
+#: ../../anomaly/part06/index.rst:50
+msgid ""
+"만약 데이터 소스 선택 후 아무런 차트도 그려지지 않는다면 우측 메뉴에서 모니터링 대상이 되는 기간을 확인하세요. 이 대시보드는 "
+"지속적으로 업데이트 되는 데이터 소스를 모니터링한다고 가정하고 있습니다."
+msgstr ""
+
+# f40fe02b7d664a01a1f8497309b4f86a
+#: ../../anomaly/part06/index.rst:56
+msgid ""
+"상단의 |icon_update| 를 누르면 대시보드를 정해진 시간마다 갱신합니다. 기본적으로는 10초마다 업데이트하며 갱신 주기는 "
+"20초 또는 30초로 변경할 수 있습니다."
+msgstr ""
+
+# d40b89d3ac9742fda4f3a46bd2054a95
+#: ../../anomaly/part06/index.rst:62
+msgid ""
+"|icon_full| 을 누르면 전체화면 모드로 전환됩니다. 전체화면 모드에서 다시 |icon_full| 을 누르면 본 화면으로 "
+"돌아옵니다."
+msgstr ""
+
+# e63464523bd84fad9f9d79620ec23a9e
+#: ../../anomaly/part06/index.rst:69
+msgid "차트"
+msgstr "Chart"
+
+# 803078874b664bbcae49af7e9aa9d945
+#: ../../anomaly/part06/index.rst:71
+msgid "대시보드에는 선정된 데이터 소스에서 임의의 측정값(measure) 4개에 대한 11개의 차트가 자동으로 그려집니다."
+msgstr ""
+
+# 936486869f7b4959bf70b831d16377b6
+#: ../../anomaly/part06/index.rst:73
+msgid "**측정값(measure) KPI 차트** : 개별 측정값 4개에 대해 현재값 및 평균 값에 대한 KPI 차트입니다."
+msgstr ""
+
+# 52ff08ca890b4893a90bc8f3111c2dc8
+#: ../../anomaly/part06/index.rst:79
+msgid ""
+"**차원값(dimension) 별 측정값 라인 차트** : 임의로 선택된 차원값 1개에 대해 개별 측정값 4개에 대한 라인 차트를 "
+"그립니다."
+msgstr ""
+
+# 51cf647e18904ef98e836bf24bf53b9a
+#: ../../anomaly/part06/index.rst:85
+msgid "**데이터 수집 현황** : 24시간 동안 몇 개의 데이터 레코드가 수집되었는지 기록한 막대 차트입니다."
+msgstr ""
+
+# 7d7a636c163641af8e0a211a8da77494
+#: ../../anomaly/part06/index.rst:92
+msgid "**데이터 수집 지연 시간** : 가장 최근 데이터가 수집된 시간과 현재 시간과의 차이로 수집 지연 시간을 나타낸 차트입니다."
+msgstr ""
+
+# 9a6e217e240246a8b9e1ee2486c45eba
+#: ../../anomaly/part06/index.rst:99
+msgid "**알람 발생 분포** : 해당 데이터 소스로 발생한 알람들을 심각도 별로 나누어 개수를 나타내는 파이 차트입니다."
+msgstr ""
+
+# 7d17dba04a204070aa252141102ca2f0
+#: ../../anomaly/part06/index.rst:107
+msgid "차트 변경"
+msgstr ""
+
+# 5ca5c32433b346ac8c086b800e5525e6
+#: ../../anomaly/part06/index.rst:109
+msgid "각 차트들은 우측의 |icon_more| 버튼을 누르면 정보를 변경할 수 있습니다."
+msgstr ""
+
+# 123a1b52019244c8983da30d7085824a
+#: ../../anomaly/part06/index.rst:116
+msgid "**차트 정보 수정** : 차트의 이름을 변경하거나 설명을 추가할 수 있습니다."
+msgstr ""
+
+# 76347e30a54343239f8ae9118341383d
+#: ../../anomaly/part06/index.rst:123
+msgid "**차트 데이터 변경** : 차트에 그려지는 측정값 또는 차원값을 변경할 수 있습니다."
+msgstr ""
+
+# 5aedd1d40bea4bff9ffb8adeb3d0d773
+#: ../../anomaly/part06/index.rst:130
+msgid "**차트 새로고침** : 해당 차트에 대해 최신 데이터로 업데이트 합니다."
+msgstr ""
+
+# 33ac58337cd042ce8847e6c786fd2996
+#: ../../anomaly/part06/index.rst:132
+msgid "**차트 초기화** : 최초 설정된 측정값 및 차원값으로 그려진 차트로 초기화합니다."
+msgstr ""
+

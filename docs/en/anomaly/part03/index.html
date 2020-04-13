@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Statistics &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Viewing alarms &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,8 +35,10 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="next" title="View/edit alarm rule details" href="../part04/index.html" />
-    <link rel="prev" title="Create an alarm rule" href="../part02/index.html" /> 
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Alarm Rule" href="../part04/index.html" />
+    <link rel="prev" title="Statistics" href="../part02/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -130,11 +122,25 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Statistics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Viewing alarms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#alarm-list">Alarm List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alarm-details">Alarm Details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#summary">Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-history">Alarm History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-confirmation">Alarm Confirmation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-rule">Alarm Rule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chart-view">Chart View</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#table-view">Table View</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Search</a></li>
 </ul>
 
             
@@ -180,13 +186,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Statistics</li>
+      <li>Viewing alarms</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/anomaly/part03/index.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/anomaly/part03/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -199,33 +205,118 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="statistics">
-<span id="id1"></span><h1>Statistics<a class="headerlink" href="#statistics" title="Permalink to this headline">¶</a></h1>
-<p>The <strong>Statistics</strong> tab menu displays general statistics regarding alarms. This page gives users a view of various statistics regarding alarms including their severity, occurrence time, and rules.</p>
-<p>The page is comprised as follows:</p>
+  <div class="section" id="id1">
+<h1>Viewing alarms<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>In the ** Alarm ** tab menu, you can check the alarm history that has occurred so far. Unlike the: ref: <cite>Statistics</cite> page, which shows the overall status of the alarm, this menu provides an optimized UI for viewing and browsing more individual alarms.</p>
+<p>This tab consists of the following two pages.</p>
 <blockquote>
-<div><div class="figure align-center">
-<img alt="statistics my alarms" src="../../_images/overview_01.png" />
-</div>
-<ul class="simple">
-<li><p class="first"><strong>Alarm Distribution by Severity:</strong> The distribution of alarms by severity is displayed.</p>
-</li>
-<li><p class="first"><strong>Alarm Count per Time:</strong> The alarm frequency by time is displayed.</p>
-</li>
-<li><p class="first"><strong>Top 5 Subscribers:</strong> The top 5 subscribers who have been notified of the highest number of alarms are displayed.</p>
-</li>
-<li><p class="first"><strong>Top 5 Alarm Rules:</strong> The top 5 alarm rules that resulted in the highest number of alarms are displayed.</p>
-</li>
-<li><p class="first"><strong>Latest Alarms:</strong> The most recent alarms are displayed.</p>
-</li>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#alarm-list"><span class="std std-ref">Alarm List</span></a></p></li>
+<li><p><a class="reference internal" href="#alarm-details"><span class="std std-ref">Alarm Details</span></a></p></li>
 </ul>
 </div></blockquote>
-<p>The period used to generate statistics can be modified in the period menu on the top of the page.</p>
+<div class="section" id="alarm-list">
+<span id="id2"></span><h2>Alarm List<a class="headerlink" href="#alarm-list" title="Permalink to this headline">¶</a></h2>
+<p>When entering the <strong>Alarm</strong> tab, the alarms that have occurred so far are listed and displayed.Using the <strong>Alarm rule</strong> / <strong>Timeline</strong> selection box at the top of the screen, you can sort the alarm list by alarm rule or by the time that occurred.</p>
+<ul>
+<li><p><strong>Alarm rule</strong> (sort by alarm rule)</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="statistics other interval" src="../../_images/overview_02.png" />
+<img alt="alarm list" src="../../_images/alarm_list_01.png" />
 </div>
 </div></blockquote>
+</li>
+<li><p><strong>Timeline</strong> (sort by occurrence time)</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="timeline type display" src="../../_images/alarm_list_03.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p>Click <strong>+ Load more</strong>at the end of a category to show more alarm entries in that category.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm list show more" src="../../_images/alarm_list_02.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-details">
+<span id="id3"></span><h2>Alarm Details<a class="headerlink" href="#alarm-details" title="Permalink to this headline">¶</a></h2>
+<p>Select one of the items listed in the alarm list to view detailed information about the alarm. Below is the description of each area of the alarm detail page.</p>
+<div class="section" id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h3>
+<p>This area shows the occurrence status of the alarm. If an alarm occurs continuously according to a specified period, it is maintained as one alarm item, and the number of data points exceeding the severity level of the alarm is also displayed. After confirming, it provides a link to record the result of the processing. If it is not the alarm rule that I created, you can receive the alarm by pressing <strong>Subscribe</strong>.</p>
+<p>The example below shows that the alarm occurred twice in a row (<strong>Alarms</strong>), and because the alarm check interval is 1 minute, two alarms lasted for a total of 120 seconds. (<strong>Elapsed Time</strong>).</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_01.png"><img alt="alarm overview" src="../../_images/alarm_detail_01.png" style="width: 446.0px; height: 223.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-history">
+<h3>Alarm History<a class="headerlink" href="#alarm-history" title="Permalink to this headline">¶</a></h3>
+<p>This area shows the history of alarms generated by alarm rules applied to the alarm.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_02.png"><img alt="alarm history" src="../../_images/alarm_detail_02.png" style="width: 442.0px; height: 494.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-confirmation">
+<h3>Alarm Confirmation<a class="headerlink" href="#alarm-confirmation" title="Permalink to this headline">¶</a></h3>
+<p>The first menu on the right tab provides a communication function to check the alarm subscriber list after checking the alarm (<strong>Subscriber</strong>), check the alarm to record the status (<strong>Alarm Confirm</strong>), and leave a worker record.</p>
+<p>There are four types of alarm confirmation items.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Not Processed</strong>: No action has been taken on the alarm</p></li>
+<li><p><strong>Stop notification</strong>: The user acknowledges the alarm and no longer receives notification</p></li>
+<li><p><strong>Processing completed</strong>: After checking the alarm, the action is completed. Alarm related tags can be added</p></li>
+<li><p><strong>False Alarm</strong>: An alarm that occurs when the condition is not abnormal</p></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_03.png"><img alt="alarm confirmation" src="../../_images/alarm_detail_03.png" style="width: 413.0px; height: 744.0px;" /></a>
+</div>
+</div></blockquote>
+<p>Subscribers can search and add users related to the alarm by ID, and can set the alarm to be sent by e-mail if necessary.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_04.png"><img alt="alarm confirmation" src="../../_images/alarm_detail_04.png" style="width: 595.0px; height: 766.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-rule">
+<h3>Alarm Rule<a class="headerlink" href="#alarm-rule" title="Permalink to this headline">¶</a></h3>
+<p>This area shows the severity of the alarm, the time the alarm occurred, and the settings of the rule that triggered the alarm and information related to the data source.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_05.png"><img alt="alarm info" src="../../_images/alarm_detail_05.png" style="width: 413.0px; height: 456.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="chart-view">
+<h3>Chart View<a class="headerlink" href="#chart-view" title="Permalink to this headline">¶</a></h3>
+<p>This tab area shows the trend of abnormal scores of the aggregated data monitored within the corresponding alarm section.The number of occurrences according to the alarm severity (<code class="docutils literal notranslate"><span class="pre">Critical</span></code>, <code class="docutils literal notranslate"><span class="pre">Major</span></code>, <code class="docutils literal notranslate"><span class="pre">Moderate</span></code>, <code class="docutils literal notranslate"><span class="pre">Low</span></code>) is also shown at the top of the chart. Please refer to: ref: <cite>basic_principles</cite> for how the chart is calculated.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="chart view" src="../../_images/alarm_detail_06.png" />
+</div>
+<ul class="simple">
+<li><p><strong>Total abnormal score:</strong> Shows abnormal score for all measure columns included in the alarm rule.</p></li>
+<li><p><strong>Chart by measures:</strong> Shows the trend between the predicted value and the actual value of each individual measure column data included in the alarm rule.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="table-view">
+<h3>Table View<a class="headerlink" href="#table-view" title="Permalink to this headline">¶</a></h3>
+<p>This area shows the actual and predicted data and abnormal score for each alarm occurrence.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="table view" src="../../_images/alarm_detail_07.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
 </div>
 
 
@@ -236,10 +327,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../part04/index.html" class="btn btn-neutral float-right" title="View/edit alarm rule details" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../part04/index.html" class="btn btn-neutral float-right" title="Alarm Rule" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../part02/index.html" class="btn btn-neutral float-left" title="Create an alarm rule" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../part02/index.html" class="btn btn-neutral float-left" title="Statistics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

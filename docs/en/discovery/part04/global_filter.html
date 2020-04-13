@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Global filters &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Global filters &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Notebook" href="../part05/index.html" />
     <link rel="prev" title="Chart filters" href="chart_filter.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -140,11 +132,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -200,7 +194,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part04/global_filter.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part04/global_filter.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -217,16 +211,13 @@
 <h1>Global filters<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Global filters specify which data is to be displayed in all charts of a dashboard. They can be added, edited, or deleted in the filter panel in the dashboard editing window.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/global-filter.en.png" src="../../_images/global-filter.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p class="first"><strong>Number of filter widgets:</strong> Displays how many filter widgets are currently registered in the dashboard next to the global filter heading.</p>
-</li>
-<li><p class="first"><strong>Add a filter widget:</strong> Click the “+” icon at the top right to create a new filter widget in the dashboard. The filter creation popup interface and process for creating filters are the same as the process for creating chart filters described in the previous section.</p>
-</li>
-<li><p class="first"><strong>Filter widget list:</strong> Lists filter widgets registered in the dashboard. Hover the mouse over a widget to display the edit and delete icons. Drag a widget to the widget display area to display the widget in the display area.</p>
-</li>
+<li><p><strong>Number of filter widgets:</strong> Displays how many filter widgets are currently registered in the dashboard next to the global filter heading.</p></li>
+<li><p><strong>Add a filter widget:</strong> Click the “+” icon at the top right to create a new filter widget in the dashboard. The filter creation popup interface and process for creating filters are the same as the process for creating chart filters described in the previous section.</p></li>
+<li><p><strong>Filter widget list:</strong> Lists filter widgets registered in the dashboard. Hover the mouse over a widget to display the edit and delete icons. Drag a widget to the widget display area to display the widget in the display area.</p></li>
 </ol>
 </div></blockquote>
 <p>Global filters applied to the entire dashboard are also listed when creating an individual filter for a new chart. When creating a global filter, if there are any individual chart filters, it intuitively notifies you of which column the filter was created from.</p>

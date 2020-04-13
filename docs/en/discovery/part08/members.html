@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Members &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Members &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Groups" href="groups.html" />
     <link rel="prev" title="Membership Approval" href="membership_approval.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -141,11 +133,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -199,7 +193,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part08/members.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part08/members.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -218,17 +212,15 @@
 <p>Users can sign up for Metatron Discovery in one of the following two ways:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Administrator’s approval of a user’s application for membership (see <a class="reference internal" href="membership_approval.html#membership-approval"><span class="std std-ref">Membership Approval</span></a> )</p>
-</li>
-<li><p class="first">Registration by the administrator (see <a class="reference internal" href="#user-registration"><span class="std std-ref">Register a member</span></a>)</p>
-</li>
+<li><p>Administrator’s approval of a user’s application for membership (see <a class="reference internal" href="membership_approval.html#membership-approval"><span class="std std-ref">Membership Approval</span></a> )</p></li>
+<li><p>Registration by the administrator (see <a class="reference internal" href="#user-registration"><span class="std std-ref">Register a member</span></a>)</p></li>
 </ul>
 </div></blockquote>
 <div class="section" id="id2">
 <h2>Members home<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>The Members home shows a list of Metatron Discovery members. The member list can be filtered by various criteria, and clicking on an entry in the list allows you to view and edit the selected member’s information.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/members_home.en.png" src="../../_images/members_home.en.png" />
 </div>
 </div></blockquote>
@@ -237,19 +229,16 @@
 <h2>View and edit member information<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Clicking on a member in the list opens the member information page shown below:</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/member_info.en.png" src="../../_images/member_info.en.png" />
 </div>
 </div></blockquote>
 <p>This page displays some basic information and allows a number of settings.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first"><strong>Status setting (Active/Inactive)</strong>: An inactive member cannot log in to the system.</p>
-</li>
-<li><p class="first"><strong>Reset password</strong>: By clicking this, a user has forgotten the password can receive an email to reset it.</p>
-</li>
-<li><p class="first"><strong>Group setting</strong>: Click on the <img alt="setup" src="../../_images/setup_icon.png" /> icon to add or delete groups to which the member belongs. See <a class="reference internal" href="groups.html#user-groups"><span class="std std-ref">Groups</span></a> for details on the user group.</p>
-</li>
+<li><p><strong>Status setting (Active/Inactive)</strong>: An inactive member cannot log in to the system.</p></li>
+<li><p><strong>Reset password</strong>: By clicking this, a user has forgotten the password can receive an email to reset it.</p></li>
+<li><p><strong>Group setting</strong>: Click on the <img alt="setup" src="../../_images/setup_icon.png" /> icon to add or delete groups to which the member belongs. See <a class="reference internal" href="groups.html#user-groups"><span class="std std-ref">Groups</span></a> for details on the user group.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -257,7 +246,7 @@
 <span id="id4"></span><h2>Register a member<a class="headerlink" href="#user-registration" title="Permalink to this headline">¶</a></h2>
 <p>Click the <span class="guilabel">Create member</span> button on the top right of the page to pop up the member creation dialog box below.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/create_member.en.png" src="../../_images/create_member.en.png" />
 </div>
 </div></blockquote>

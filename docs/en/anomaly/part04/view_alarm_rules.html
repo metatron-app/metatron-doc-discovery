@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Viewing and modifying alarm rule details &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Model Manager" href="model_manager.html" />
+    <link rel="prev" title="Creating an Alarm Rule" href="create_alarm_rule.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part09/index.html">Data Exploration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part10/index.html">Engine Monitoring</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Alarm Rule</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_alarm_rule.html">Creating an Alarm Rule</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Viewing and modifying alarm rule details</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-rule-list">Alarm Rule List</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-rule-details">Alarm Rule Details</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="model_manager.html">Model Manager</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Search</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Alarm Rule</a> &raquo;</li>
+        
+      <li>Viewing and modifying alarm rule details</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/anomaly/part04/view_alarm_rules.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Viewing and modifying alarm rule details<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><strong>Alarm Rule</strong> tab menu allows you to view and modify registered alarm rules. In addition, in this menu, you can easily grasp the status of data abnormal scores calculated according to the selected prediction model.</p>
+<p>The alarm rule menu consists of the following two pages.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#alarm-rule-list"><span class="std std-ref">Alarm Rule List</span></a></p></li>
+<li><p><a class="reference internal" href="#alarm-rule-details"><span class="std std-ref">Alarm Rule Details</span></a></p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="alarm-rule-list">
+<span id="id2"></span><h2>Alarm Rule List<a class="headerlink" href="#alarm-rule-list" title="Permalink to this headline">¶</a></h2>
+<p>When entering the <strong>Alarm Rule</strong> tab, the currently registered alarm rules are listed and displayed.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm rule list" src="../../_images/complete_alarm_rules_02.png" />
+</div>
+</div></blockquote>
+<p>The information displayed in the list is as follows, and you can filter or search the rules to list based on this.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Current Status:</strong> Monitoring result status according to the rule</p></li>
+<li><p><strong>Alarm Rule Name:</strong> Rule names</p></li>
+<li><p><strong>DataSource:</strong> Data sources being monitored</p></li>
+<li><p><strong>Measure:</strong> Measure columns being monitored</p></li>
+<li><p><strong>Alarm Interval:</strong> Alarm generation time interval</p></li>
+<li><p><strong>Condition:</strong> The number of alarm occurrence conditions applied to the rule</p></li>
+<li><p><strong>Alarm:</strong> Number of alarms triggered by the rule</p></li>
+<li><p><strong>Running:</strong> Whether the rule is running or not</p></li>
+<li><p><strong>Updated:</strong> Time and user who last updated the rule</p></li>
+<li><p><strong>Owner:</strong> User who created the rule</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-rule-details">
+<span id="id3"></span><h2>Alarm Rule Details<a class="headerlink" href="#alarm-rule-details" title="Permalink to this headline">¶</a></h2>
+<p>If you select one of the alarm rule list items, you can view detailed information about the alarm rule and modify some settings. On the left side of the screen, the monitoring status is visualized and the alarm rule condition setting value is displayed on the right side.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm rule detail" src="../../_images/alarm_rule_detail_01.png" />
+</div>
+</div></blockquote>
+<p>The monitoring period setting value displayed on the screen is displayed at the top of the monitoring status area. You can change the period setting value by clicking the <img alt="icon_period_edit" src="../../_images/icon_period_edit.png" /> icon.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="change visualize range" src="../../_images/alarm_rule_detail_02.png" />
+</div>
+</div></blockquote>
+<p>In the condition area on the right, you can adjust the overall settings of the rule.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Alarm Start:</strong> Time to start checking for alarms</p></li>
+<li><p><strong>Alarm Interval:</strong> Period to check alarm occurrence conditions</p></li>
+<li><p><strong>Running State:</strong> Whether the alarm rule condition is being checked (running) or not (stopped)</p></li>
+</ul>
+<div class="figure align-center">
+<img alt="change alarm rule condition" src="../../_images/alarm_rule_detail_03_01.png" />
+</div>
+</div></blockquote>
+<p>If you click the icon to the right of Subscribers, you can add / change subscribers of the corresponding alarm rule.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="change alarm rule condition" src="../../_images/alarm_rule_detail_03_02.png" />
+</div>
+</div></blockquote>
+<p>Metatron Anomaly provides <strong>Post Processing</strong> that can be configured to take additional action when an alarm occurs due to the rule. Post processing currently provides two functions.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Script Execution:</strong> Register and run a shell script행</p></li>
+<li><p><strong>Additional Chart:</strong> Expose table chart to alarm details</p></li>
+</ul>
+<div class="figure align-center">
+<img alt="change alarm rule condition" src="../../_images/alarm_rule_detail_03_03.png" />
+</div>
+</div></blockquote>
+<p>In addition, the existing alarm occurrence condition can be modified. See: ref: <cite>alarm_rule_settings</cite> for more information.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="change alarm rule condition" src="../../_images/alarm_rule_detail_03.png" />
+</div>
+</div></blockquote>
+<p>If you click the <img alt="icon_alarm_history" src="../../_images/icon_alarm_history.png" /> button at the right end, the <strong>Conditions</strong> panel will switch to the <strong>Alarm History</strong> panel to show the alarm history that has occurred so far (again, press the <img alt="icon_rule_settings_edit" src="../../_images/icon_rule_settings_edit.png" /> button to go back to the <strong>Conditions</strong> panel).</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="list alarm history" src="../../_images/alarm_rule_detail_04.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="model_manager.html" class="btn btn-neutral float-right" title="Model Manager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="create_alarm_rule.html" class="btn btn-neutral float-left" title="Creating an Alarm Rule" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

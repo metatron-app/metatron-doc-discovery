@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Schedule a workflow run &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Schedule a workflow run &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Monitoring" href="../part04/index.html" />
     <link rel="prev" title="Control flow nodes" href="control_flow.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -139,11 +131,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -197,7 +191,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/integrator/part03/scheduled_run.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/integrator/part03/scheduled_run.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -217,7 +211,7 @@
 <h2>List of scheduled runs<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Click the <strong>Scheduled run</strong> tab in the run details area on the bottom right of the workflow editor, and a list of scheduled runs will be displayed as follows. The list displays the run status of each scheduled run. Click <img alt="exec" src="../../_images/icon_exec.png" /> to execute the scheduled run, and <img alt="bin" src="../../_images/icon_bin2.png" /> to delete.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/schedule_list.en.png" src="../../_images/schedule_list.en.png" />
 </div>
 </div></blockquote>
@@ -226,29 +220,22 @@
 <h2>Add a scheduled run<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Click <strong>+ Create execution schedule</strong> in the scheduled run area. A dialog box to create a new scheduled run is displayed as follows. Fill out each field as instructed below, and click <strong>Create</strong>.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/create_schedule.en.png" src="../../_images/create_schedule.en.png" />
 </div>
 <ul class="simple">
-<li><p class="first"><strong>Name:</strong> Enter a name for the scheduled run.</p>
-</li>
-<li><p class="first"><strong>Description:</strong> Describe the scheduled run.</p>
-</li>
-<li><strong>Tags:</strong></li>
-<li><p class="first"><strong>Workflow:</strong> Select a workflow to schedule to run.</p>
-</li>
-<li><p class="first"><strong>Period:</strong> Set the start and end times of the scheduled run.</p>
-</li>
-<li><p class="first"><strong>Frequency:</strong> Set the frequency of the scheduled run.</p>
-</li>
-<li><strong>Concurrency:</strong></li>
-<li><p class="first"><strong>Timeout (min):</strong></p>
-</li>
-<li><strong>Datasets:</strong></li>
-<li><strong>Configuration:</strong></li>
-<li><strong>Variables:</strong></li>
-<li><p class="first"><strong>Alert:</strong></p>
-</li>
+<li><p><strong>Name:</strong> Enter a name for the scheduled run.</p></li>
+<li><p><strong>Description:</strong> Describe the scheduled run.</p></li>
+<li><p><strong>Tags:</strong></p></li>
+<li><p><strong>Workflow:</strong> Select a workflow to schedule to run.</p></li>
+<li><p><strong>Period:</strong> Set the start and end times of the scheduled run.</p></li>
+<li><p><strong>Frequency:</strong> Set the frequency of the scheduled run.</p></li>
+<li><p><strong>Concurrency:</strong></p></li>
+<li><p><strong>Timeout (min):</strong></p></li>
+<li><p><strong>Datasets:</strong></p></li>
+<li><p><strong>Configuration:</strong></p></li>
+<li><p><strong>Variables:</strong></p></li>
+<li><p><strong>Alert:</strong></p></li>
 </ul>
 </div></blockquote>
 </div>

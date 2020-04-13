@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Creating an Alarm Rule &mdash; metatron discovery docs 0.4.3 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Viewing and modifying alarm rule details" href="view_alarm_rules.html" />
+    <link rel="prev" title="Alarm Rule" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 영어일 때 한국어 링크 삽입 -->
+					 <!-- 하위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 한국어 페이지로의 링크 -->
+					 <!-- 영문 pdf 링크 -->
+					<li><a class="lang_sel" href="../../../index.html">한국어로 보기</a></li>
+					<li><a class="lang_sel" href="../../../latex/metatron-doc-user_en.pdf">View PDF version</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part00/index.html">Discovery Quick Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part01/index.html">Introduction of Metatron Discovery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part02/index.html">Data Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part03/index.html">Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part04/index.html">Workbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part05/index.html">Notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part06/index.html">Workbench</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part07/index.html">Data Preparation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part08/index.html">Account management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part09/index.html">Data Exploration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part10/index.html">Engine Monitoring</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">Workflow list</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">Workflow editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use cases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Alarm Rule</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Creating an Alarm Rule</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#select-datasource">Selecting Data Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#select-columns">Selecting metrics to monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configure-training">Setting the training data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#select-model">Choosing a Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-rule-settings">Setting alarm rule conditions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#complete-rule">Complete the Rule</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="view_alarm_rules.html">Viewing and modifying alarm rule details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_manager.html">Model Manager</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Search</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Alarm Rule</a> &raquo;</li>
+        
+      <li>Creating an Alarm Rule</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/anomaly/part04/create_alarm_rule.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>Creating an Alarm Rule<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Anomaly guides users through the following procedures in order to help users easily create the desired alarm rules.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#select-datasource"><span class="std std-ref">Selecting Data Source</span></a></p></li>
+<li><p><a class="reference internal" href="#select-columns"><span class="std std-ref">Selecting metrics to monitor</span></a></p></li>
+<li><p><a class="reference internal" href="#configure-training"><span class="std std-ref">Setting the training data</span></a></p></li>
+<li><p><a class="reference internal" href="#select-model"><span class="std std-ref">Choosing a Model</span></a></p></li>
+<li><p><a class="reference internal" href="#alarm-rule-settings"><span class="std std-ref">Setting alarm rule conditions</span></a></p></li>
+<li><p><a class="reference internal" href="#complete-rule"><span class="std std-ref">Complete the Rule</span></a></p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="select-datasource">
+<span id="id2"></span><h2>Selecting Data Source<a class="headerlink" href="#select-datasource" title="Permalink to this headline">¶</a></h2>
+<p>To create an alarm rule, you must first set up a data source to monitor.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Click the <strong>Create Alarm Rule</strong> button at the top right of the Alarm Rule page.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create rule" src="../../_images/create_rule_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Select the data source you want to monitor.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select datasource" src="../../_images/choose_data_source_01.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="select-columns">
+<span id="id3"></span><h2>Selecting metrics to monitor<a class="headerlink" href="#select-columns" title="Permalink to this headline">¶</a></h2>
+<p>Selecting a data source will take you to the next screen and the <strong>Data</strong> panel on the left will open. Use this panel to select metrics to monitor as shown below.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>In the <strong>Measure</strong> area, select the measure column you want to monitor. The clicked measure column is automatically moved to the aggregation shelf.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select measure" src="../../_images/choose_metrics_select_measure_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>If necessary, you can create a new user column by applying a formula to an existing column. In the upper right corner of the <strong>Measure</strong> area, Click the <img alt="icon_custom_column" src="../../_images/icon_custom_column.png" /> button to open a dialog box and set up a custom column.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="make custem measure rule" src="../../_images/choose_metrics_select_measure_02.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>You can change the aggregation method of each column on the shelf. The default is SUM.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select aggregation type" src="../../_images/choose_metrics_select_measure_03.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>You can split aggregated data based on dimension value columns. In the <strong>Dimension</strong> area, move the mouse cursor over the measure column to be used as the basis for division, and then click the <img alt="icon_split" src="../../_images/icon_split.png" /> button. The maximum number of splits is 10, and if the dimension value is 10 or more, 10 random values are selected.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="splite measure by dimension" src="../../_images/choose_metrics_select_measure_04.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>If necessary, you can filter aggregate data based on dimension value columns. In the <strong>Dimension</strong> area, move the mouse cursor over the measure column to set the filter, and click the <img alt="icon_ano_filter" src="../../_images/icon_ano_filter.png" /> button. Then select the specific category you need to monitor as shown below.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select filter value" src="../../_images/choose_metrics_add_filter_01.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="configure-training">
+<span id="id4"></span><h2>Setting the training data<a class="headerlink" href="#configure-training" title="Permalink to this headline">¶</a></h2>
+<p>When you finished selecting metrics to monitor, now you can select the data range to use for training the predictive model in the <strong>Training Interval</strong> panel.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>모델을 트레이닝시키는 데 사용할 데이터 세트의 주기를 <strong>Granularity</strong> 선택란에서 선택합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select granularity" src="../../_images/choose_metrics_select_training_interval_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Set the range of periods in the dataset to use for training the model.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="select specific time" src="../../_images/choose_metrics_select_training_interval_02.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>When all settings are complete, click <strong>Next</strong>.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="select-model">
+<span id="id5"></span><h2>Choosing a Model<a class="headerlink" href="#select-model" title="Permalink to this headline">¶</a></h2>
+<p>Now go to the <strong>Model</strong> panel and choose which prediction model to use. Metatron Anomaly trains each model using a given set of training data and produces the results. Choose a suitable prediction model through one of the two methods below.</p>
+<blockquote>
+<div><ul>
+<li><p>By default, the model with the highest accuracy score (out of 100) displayed on the right is automatically selected with a <strong>Recommend</strong> mark.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="auto training model" src="../../_images/choose_model_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>By hovering the mouse cursor over each model item, you can see the details that appear and choose the best prediction model yourself.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="model details" src="../../_images/choose_model_02.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-rule-settings">
+<span id="id6"></span><h2>Setting alarm rule conditions<a class="headerlink" href="#alarm-rule-settings" title="Permalink to this headline">¶</a></h2>
+<p>After selecting the predictive model to use, now you need to set the conditions for the alarm to occur in the <strong>Condition</strong> panel.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Click <img alt="icon_info" src="../../_images/icon_info.png" /> to the right of the <strong>Subscribers</strong> to open a dialog box, and set the target and method to be notified when an alarm occurs.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="set alarm noti detail" src="../../_images/set_alarm_rules_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Set the time when the alarm is triggered by referring to the description of each item below.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="set alarm interval" src="../../_images/set_alarm_rules_02.png" />
+</div>
+<ul class="simple">
+<li><p><strong>Alarm Start:</strong> Set when to start an alarm. The alarm starts after the time corresponding to this setting value.</p></li>
+<li><p><strong>Alarm Interval:</strong> Set the interval to generate an alarm when the condition of the alarm is met.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>Scoring Method</strong>determines how abnormal socres are calculated from multiple measue values split by dimension. The default value is calculated as the average of the abnormal scores of all measures, and can be changed to the maximum or the minimum.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="set scoring method" src="../../_images/set_alarm_rules_03.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Set the alarm trigger conditions according to the abnormal score of monitored data with reference to the description of the following items. By default, one <code class="docutils literal notranslate"><span class="pre">Majot</span></code> level condition is given and you can set more conditions with <strong>+ Add Condition</strong> button.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="set alarm condition" src="../../_images/set_alarm_rules_04.png" />
+</div>
+<ul class="simple">
+<li><p><strong>Severity:</strong> Set the severity of the alarm for a given condition.</p></li>
+<li><p><strong>Threshold:</strong> If the abnormal score exceeds this setting, the data is considered abnormal.</p></li>
+<li><p><strong>Frequency:</strong> Determines how often an alarm is triggered when the frequency of abnormal scores exceeds the threshold. For example, if it is set to “3 within 5 minute “, an alarm is generated if the abnormal score exceeds the limit value more than 3 times within 5 minutes.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>When all settings are complete, click <strong>Next</strong>.</p></li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="complete-rule">
+<span id="id7"></span><h2>Complete the Rule<a class="headerlink" href="#complete-rule" title="Permalink to this headline">¶</a></h2>
+<p>After all the settings you’ve done, finish the process of creating the alarm rule as shown below.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Enter the name and description of the alarm rule and click the <strong>Done</strong> button.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="write alarm rule name" src="../../_images/complete_alarm_rules_01.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>The created alarm rule is exposed at the top of the alarm rule list, and is immediately changed to the running state.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm rule list" src="../../_images/complete_alarm_rules_02.png" />
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="view_alarm_rules.html" class="btn btn-neutral float-right" title="Viewing and modifying alarm rule details" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Alarm Rule" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

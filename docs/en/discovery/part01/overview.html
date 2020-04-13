@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Overview of Metatron Discovery &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Overview of Metatron Discovery &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Components of Metatron Discovery" href="structure.html" />
     <link rel="prev" title="Introduction of Metatron Discovery" href="index.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -140,11 +132,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -198,7 +192,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part01/overview.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part01/overview.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -240,30 +234,24 @@
 <p>The use of a big OLAP cube offers the following advantages:</p>
 <blockquote>
 <div><ul>
-<li><p class="first">Minimizes the number of data marts.</p>
+<li><p>Minimizes the number of data marts.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Lower ETL cost for data mart production.</p>
-</li>
-<li><p class="first">Influence of structural change can be minimized.</p>
-</li>
-<li><p class="first">Satisfies diverse demands by saving all fact data.</p>
-</li>
+<li><p>Lower ETL cost for data mart production.</p></li>
+<li><p>Influence of structural change can be minimized.</p></li>
+<li><p>Satisfies diverse demands by saving all fact data.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first">Distributed architecture allows storing of large-scale data and ensures fast data processing.</p>
-</li>
-<li><p class="first">With a dynamic schema approach, schema changes do not require schema redefining.</p>
-</li>
-<li><p class="first">Data can be processed at the record level in real time as tables are saved with no data loss.</p>
-</li>
+<li><p>Distributed architecture allows storing of large-scale data and ensures fast data processing.</p></li>
+<li><p>With a dynamic schema approach, schema changes do not require schema redefining.</p></li>
+<li><p>Data can be processed at the record level in real time as tables are saved with no data loss.</p></li>
 </ul>
 </div></blockquote>
 </div>
 <div class="section" id="id1">
 <h2>Architecture of Metatron Discovery<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>Metatron Discovery is an end-to-end solution that supports the entire process of data discovery, from preparation of large-scale data to data visualization and exploration and to advanced analytics. The figure below is a summary of Metatron&#8217;s architecture and key features.</p>
+<p>Metatron Discovery is an end-to-end solution that supports the entire process of data discovery, from preparation of large-scale data to data visualization and exploration and to advanced analytics. The figure below is a summary of Metatron’s architecture and key features.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Single Solution for Data Discovery" src="../../_images/single_solution.en.png" />

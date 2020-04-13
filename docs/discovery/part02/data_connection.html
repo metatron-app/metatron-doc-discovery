@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>데이터 커넥션 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>데이터 커넥션 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -46,6 +36,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="데이터 모니터링" href="data_monitoring.html" />
     <link rel="prev" title="데이터 소스 만들기" href="create_a_data_source.html" /> 
 </head>
@@ -74,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -140,11 +132,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Metatron Anomaly 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">알람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알고리즘</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">대시보드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">검색</a></li>
 </ul>
 
             
@@ -198,7 +192,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part02/data_connection.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part02/data_connection.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -216,7 +210,7 @@
 <p>Metatron Discovery는 외부 데이터베이스를 직접 연결하는 기능을 지원합니다. 외부 데이터베이스를 연결하려면 해당 데이터베이스에 대한 접근 정보가 담긴 데이터 커넥션을 생성·관리해야 합니다. 데이터 커넥션을 등록해 두면 새로운 데이터베이스 접속 정보를 다시 입력해야 하는 수고를 덜 수 있습니다.</p>
 <p>데이터 커넥션 메뉴는 메인 화면 좌측 패널에서 <strong>MANAGEMENT</strong> &gt; <strong>데이터 스토리지</strong> &gt; <strong>데이터 커넥션</strong>을 통해 진입할 수 있습니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/create_datasource_1.png" src="../../_images/create_datasource_1.png" />
 </div>
 </div></blockquote>
@@ -228,15 +222,15 @@
 <img alt="../../_images/data_connection_1.png" src="../../_images/data_connection_1.png" />
 </div>
 <ul class="simple">
-<li><strong>공개:</strong> 데이터 커넥션을 공개 워크스페이스별로 선별하여 조회합니다.</li>
-<li><strong>생성한 사람:</strong> 데이터 커넥션을 생성한 사람별로 선별하여 조회합니다.</li>
-<li><strong>DB 타입:</strong> 데이터 커넥션을 DB 타입(MySQL, PostgreSQL, Hive, Presto)별로 선별하여 조회합니다.</li>
-<li><strong>보안:</strong> 데이터 커넥션을 보안 유형(항상 연결, 사용자 계정, 아이디와 비밀번호)별로 선별하여 조회합니다.</li>
-<li><strong>생성한 시간:</strong> 데이터 커넥션을 생성한 시간(오늘, 지난 7일, 사용자설정 기간)별로 선별하여 조회합니다.</li>
-<li><strong>검색:</strong> 데이터 커넥션을 데이터 커넥션의 이름으로 검색하여 조회합니다.</li>
-<li><strong>데이터 커넥션 개수:</strong> 현재 목록에 조회된 데이터 커넥션의 개수를 나타냅니다.</li>
-<li><strong>새로 만들기:</strong> 클릭하면 새로운 데이터 커넥션을 생성할 수 있습니다.</li>
-<li><strong>삭제:</strong> 데이터 커넥션에 마우스 오버 시 휴지통 아이콘이 나타납니다. 클릭하면 해당 데이터 커넥션을 삭제할 수 있습니다.</li>
+<li><p><strong>공개:</strong> 데이터 커넥션을 공개 워크스페이스별로 선별하여 조회합니다.</p></li>
+<li><p><strong>생성한 사람:</strong> 데이터 커넥션을 생성한 사람별로 선별하여 조회합니다.</p></li>
+<li><p><strong>DB 타입:</strong> 데이터 커넥션을 DB 타입(MySQL, PostgreSQL, Hive, Presto)별로 선별하여 조회합니다.</p></li>
+<li><p><strong>보안:</strong> 데이터 커넥션을 보안 유형(항상 연결, 사용자 계정, 아이디와 비밀번호)별로 선별하여 조회합니다.</p></li>
+<li><p><strong>생성한 시간:</strong> 데이터 커넥션을 생성한 시간(오늘, 지난 7일, 사용자설정 기간)별로 선별하여 조회합니다.</p></li>
+<li><p><strong>검색:</strong> 데이터 커넥션을 데이터 커넥션의 이름으로 검색하여 조회합니다.</p></li>
+<li><p><strong>데이터 커넥션 개수:</strong> 현재 목록에 조회된 데이터 커넥션의 개수를 나타냅니다.</p></li>
+<li><p><strong>새로 만들기:</strong> 클릭하면 새로운 데이터 커넥션을 생성할 수 있습니다.</p></li>
+<li><p><strong>삭제:</strong> 데이터 커넥션에 마우스 오버 시 휴지통 아이콘이 나타납니다. 클릭하면 해당 데이터 커넥션을 삭제할 수 있습니다.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -248,37 +242,29 @@
 <img alt="../../_images/data_connection_creation.png" src="../../_images/data_connection_creation.png" />
 </div>
 <ul>
-<li><p class="first"><strong>DB 타입:</strong> 현재 총 4개 타입의 데이터베이스를 지원합니다. (MySQL, PostgreSQL Hive, Presto)</p>
-</li>
-<li><p class="first"><strong>Host:</strong> 연결할 호스트 값을 입력합니다.</p>
-</li>
-<li><p class="first"><strong>Port:</strong> 연결할 포트 번호를 입력합니다.</p>
-</li>
-<li><p class="first"><strong>URL 만:</strong> Host, Port 대신 DB URL을 입력합니다.</p>
-</li>
-<li><p class="first"><strong>사용자이름:</strong> 데이터베이스의 사용자 이름을 입력합니다.</p>
-</li>
-<li><p class="first"><strong>비밀번호:</strong> 데이터베이스의 비밀번호를 입력합니다.</p>
-</li>
-<li><p class="first"><strong>보안:</strong> 데이터 커넥션을 이용할 때 적용할 보안 방식을 설정합니다.</p>
+<li><p><strong>DB 타입:</strong> 현재 총 4개 타입의 데이터베이스를 지원합니다. (MySQL, PostgreSQL Hive, Presto)</p></li>
+<li><p><strong>Host:</strong> 연결할 호스트 값을 입력합니다.</p></li>
+<li><p><strong>Port:</strong> 연결할 포트 번호를 입력합니다.</p></li>
+<li><p><strong>URL 만:</strong> Host, Port 대신 DB URL을 입력합니다.</p></li>
+<li><p><strong>사용자이름:</strong> 데이터베이스의 사용자 이름을 입력합니다.</p></li>
+<li><p><strong>비밀번호:</strong> 데이터베이스의 비밀번호를 입력합니다.</p></li>
+<li><p><strong>보안:</strong> 데이터 커넥션을 이용할 때 적용할 보안 방식을 설정합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>항상 연결:</strong> 데이터 커넥션 생성 시 사용자가 직접 입력한 정보를 사용하여 로그인합니다.</li>
-<li><strong>사용자의 계정으로 연결:</strong> Metatron Discovery에 등록되어 있는 사용자 계정 정보를 사용하여 로그인합니다.</li>
-<li><strong>아이디와 비밀번호로 연결:</strong> 데이터 커넥션을 사용할 때마다 계정 정보를 입력 받아서 로그인합니다.</li>
+<li><p><strong>항상 연결:</strong> 데이터 커넥션 생성 시 사용자가 직접 입력한 정보를 사용하여 로그인합니다.</p></li>
+<li><p><strong>사용자의 계정으로 연결:</strong> Metatron Discovery에 등록되어 있는 사용자 계정 정보를 사용하여 로그인합니다.</p></li>
+<li><p><strong>아이디와 비밀번호로 연결:</strong> 데이터 커넥션을 사용할 때마다 계정 정보를 입력 받아서 로그인합니다.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>유효성 체크:</strong> 입력한 커넥션 정보가 유효한지 검사하며, 그 결과가 버튼 옆에 나타납니다. 정상적이라면 <strong>유효한 커넥션</strong>, 비정상적이라면 <strong>잘못된 커넥션</strong>이라는 문구가 나타납니다.</p>
-</li>
-<li><p class="first"><strong>고급설정:</strong> 옵션으로 커스텀 프로퍼티 키와 값을 추가할 수 있습니다.</p>
-</li>
-<li><p class="first"><strong>할당:</strong> 생성할 데이터 커넥션의 사용을 허용할 워크스페이스를 지정합니다.</p>
+<li><p><strong>유효성 체크:</strong> 입력한 커넥션 정보가 유효한지 검사하며, 그 결과가 버튼 옆에 나타납니다. 정상적이라면 <strong>유효한 커넥션</strong>, 비정상적이라면 <strong>잘못된 커넥션</strong>이라는 문구가 나타납니다.</p></li>
+<li><p><strong>고급설정:</strong> 옵션으로 커스텀 프로퍼티 키와 값을 추가할 수 있습니다.</p></li>
+<li><p><strong>할당:</strong> 생성할 데이터 커넥션의 사용을 허용할 워크스페이스를 지정합니다.</p>
 <blockquote>
 <div><ul class="simple">
-<li><strong>모든 워크스페이스에서 이 데이터 커넥션 사용을 허용:</strong> 이 확인란에 체크하면 모든 워크스페이스에서 해당 데이터 커넥션을 사용할 수 있습니다.</li>
-<li><strong>수정:</strong> 해당 데이터 커넥션의 사용을 허용할 특정 워크스페이스를 지정할 때 사용합니다. 해당 데이터 커넥션을 오픈 데이터로 지정할 경우 이 버튼이 사라집니다.</li>
-<li><strong>공유 워크스페이스 수:</strong> 해당 데이터 커넥션을 사용할 수 있도록 허용된 워크스페이스의 수를 나타냅니다.</li>
+<li><p><strong>모든 워크스페이스에서 이 데이터 커넥션 사용을 허용:</strong> 이 확인란에 체크하면 모든 워크스페이스에서 해당 데이터 커넥션을 사용할 수 있습니다.</p></li>
+<li><p><strong>수정:</strong> 해당 데이터 커넥션의 사용을 허용할 특정 워크스페이스를 지정할 때 사용합니다. 해당 데이터 커넥션을 오픈 데이터로 지정할 경우 이 버튼이 사라집니다.</p></li>
+<li><p><strong>공유 워크스페이스 수:</strong> 해당 데이터 커넥션을 사용할 수 있도록 허용된 워크스페이스의 수를 나타냅니다.</p></li>
 </ul>
 </div></blockquote>
 </li>

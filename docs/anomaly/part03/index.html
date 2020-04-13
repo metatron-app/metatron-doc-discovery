@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>통계 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>알람 내역 열람하기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -46,8 +36,10 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="next" title="얄람 룰 내역 열람·수정하기" href="../part04/index.html" />
-    <link rel="prev" title="알람 룰 만들기" href="../part02/index.html" /> 
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="알람 룰" href="../part04/index.html" />
+    <link rel="prev" title="통계" href="../part02/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -74,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -131,11 +123,25 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Anomaly 확장팩 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">알람 룰 만들기</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">통계</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Anomaly 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">통계</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">알람 내역 열람하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#alarm-list">알람 리스트</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#alarm-details">알람 상세</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#summary">Summary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-history">Alarm History 영역</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-confirmation">Alarm Confirmation 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-rule">Alarm Rule 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chart-view">Chart View 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#table-view">Table View 탭</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">알람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">알고리즘</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">대시보드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">검색</a></li>
 </ul>
 
             
@@ -181,13 +187,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>통계</li>
+      <li>알람 내역 열람하기</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/anomaly/part03/index.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/anomaly/part03/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -200,28 +206,118 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="statistics">
-<span id="id1"></span><h1>통계<a class="headerlink" href="#statistics" title="제목 주소">¶</a></h1>
-<p><strong>Statistics</strong> 탭 메뉴에서는 발생한 알람의 전반적인 통계를 보여줍니다. 이 페이지에서는 사용자가 지금까지 발생한 알람의 현황을 다각도로 파악할 수 있도록 중요도, 알람 발생 시기, 알람 룰 등의 다양한 기준으로 통계를 산출하여 제시합니다.</p>
-<p>페이지 기본 구성은 다음과 같습니다.</p>
+  <div class="section" id="id1">
+<h1>알람 내역 열람하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p><strong>Alarm</strong> 탭 메뉴에서는 지금까지 발생한 알람 내역을 확인할 수 있습니다. 알람의 전체적인 현황을 보여주는 <a class="reference internal" href="../part02/index.html#statistics"><span class="std std-ref">통계</span></a> 페이지와는 다르게 이 메뉴에서는 보다 개별적인 알람들을 열람하고 탐색하는 데 최적화된 UI를 제공합니다.</p>
+<p>이 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다.</p>
 <blockquote>
-<div><div class="figure align-center">
-<img alt="statistics my alarms" src="../../_images/overview_01.png" />
-</div>
-<ul class="simple">
-<li><strong>Alarm Distribution by Severity:</strong> 심각도별 알람 발생 비중을 보여줍니다.</li>
-<li><strong>Alarm Count per Time:</strong> 시간대별 알람 빈도를 보여줍니다.</li>
-<li><strong>Top 5 Subscribers:</strong> 가장 많은 알람을 통보받은 사용자 5명을 보여줍니다.</li>
-<li><strong>Top 5 Alarm rules:</strong> 가장 많은 알람을 일으킨 알람 룰 5개를 보여줍니다.</li>
-<li><strong>Latest Alarms:</strong> 가장 최근에 발생한 알람들을 보여줍니다.</li>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#alarm-list"><span class="std std-ref">알람 리스트</span></a></p></li>
+<li><p><a class="reference internal" href="#alarm-details"><span class="std std-ref">알람 상세</span></a></p></li>
 </ul>
 </div></blockquote>
-<p>페이지 상단의 기간 설정 메뉴를 이용하면 통계를 산출하는 기준 기간을 변경할 수 있습니다.</p>
+<div class="section" id="alarm-list">
+<span id="id2"></span><h2>알람 리스트<a class="headerlink" href="#alarm-list" title="제목 주소">¶</a></h2>
+<p><strong>Alarm</strong> 탭으로 들어가면 현재까지 발생한 알람들을 열거하여 보여줍니다. 화면 상단에 있는 <strong>Alarm rule</strong> / <strong>Timeline</strong> 선택 박스를 이용하여, 알람 리스트를 알람 룰 기준으로 정렬할 수도 있고, 발생한 시간 기준으로 정렬할 수도 있습니다.</p>
+<ul>
+<li><p><strong>Alarm rule</strong> (알람 룰 기준으로 정렬)</p>
 <blockquote>
 <div><div class="figure align-center">
-<img alt="statistics other interval" src="../../_images/overview_02.png" />
+<img alt="alarm list" src="../../_images/alarm_list_01.png" />
 </div>
 </div></blockquote>
+</li>
+<li><p><strong>Timeline</strong> (발생 시간 기준으로 정렬)</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="timeline type display" src="../../_images/alarm_list_03.png" />
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p>카테고리 맨 끝에 있는 <strong>+ Load more</strong>를 클릭하면 해당 카테고리 내 더 많은 알람 항목을 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm list show more" src="../../_images/alarm_list_02.png" />
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-details">
+<span id="id3"></span><h2>알람 상세<a class="headerlink" href="#alarm-details" title="제목 주소">¶</a></h2>
+<p>알람 리스트에 열거된 항목 중 하나를 선택하면 해당 알람에 대한 상세 정보를 열람할 수 있습니다. 아래는 알람 상세 페이지의 각 영역별 설명입니다.</p>
+<div class="section" id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="제목 주소">¶</a></h3>
+<p>이 영역에서는 해당 알람의 발생 현황을 보여줍니다. 정해진 주기에 따라 알람이 연속적으로 발생하면 1개의 알람 항목으로 계속 유지되며, 알람의 심각도(severity) 기준을 넘은 데이터 포인트 수가 함께 표기됩니다. 또한 알람을 확인한 후 처리 결과를 기록할 수 있도록 링크를 제공합니다. 내가 생성한 알람 룰이 아닌 경우 <a href="#id4"><span class="problematic" id="id5">**</span></a>Subscribe**을 눌러 해당 알람 받아볼 수 있습니다.</p>
+<p>아래 그림 예시에서는 알람이 2번 연속적으로 발생하였고(<strong>Alarms</strong>), 알람 확인 주기가 1분이기 때문에 2건의 알람이 총 120초 동안 지속된 것을 보여주고 있습니다.(<strong>Elapsed Time</strong>).</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_01.png"><img alt="alarm overview" src="../../_images/alarm_detail_01.png" style="width: 446.0px; height: 223.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-history">
+<h3>Alarm History 영역<a class="headerlink" href="#alarm-history" title="제목 주소">¶</a></h3>
+<p>이 영역에서는 해당 알람에 적용된 알람 룰에 의해 발생한 알람의 이력을 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_02.png"><img alt="alarm history" src="../../_images/alarm_detail_02.png" style="width: 442.0px; height: 494.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-confirmation">
+<h3>Alarm Confirmation 탭<a class="headerlink" href="#alarm-confirmation" title="제목 주소">¶</a></h3>
+<p>우측 탭 첫번째 메뉴에서는 알람 확인 후 해당 알람 구독자 리스트를 확인하고(<strong>Subscriber</strong>) 알람을 확인하여 상태를 기록하고(<strong>Alarm Confirm</strong>) 작업자 기록을 남길 수 있는 커뮤니케이션 기능을 제공합니다.</p>
+<p>알람 확인 항목은 4가지로 구분됩니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>미처리</strong> : 해당 알람에 대해 어떠한 조치도 취하지 않은 상태</p></li>
+<li><p><strong>알림 중지</strong> : 해당 알람을 사용자가 확인하여 더이상 알림(notification)을 받지 않는 상태</p></li>
+<li><p><strong>처리 완료</strong> : 해당 알람을 확인하고 조치를 취한 상태로, 해당 알람에 관련된 tag을 기록할 수 있음</p></li>
+<li><p><strong>오탐</strong> : 이상 상태가 아닌데 발생한 알람</p></li>
+</ul>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_03.png"><img alt="alarm confirmation" src="../../_images/alarm_detail_03.png" style="width: 413.0px; height: 744.0px;" /></a>
+</div>
+</div></blockquote>
+<p>구독자(Subscriber)는 해당 알람에 관계된 유저를 아이디로 검색하여 추가할 수 있으며, 필요시 E-mail로 알람을 보내도록 설정할 수도 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_04.png"><img alt="alarm confirmation" src="../../_images/alarm_detail_04.png" style="width: 595.0px; height: 766.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-rule">
+<h3>Alarm Rule 탭<a class="headerlink" href="#alarm-rule" title="제목 주소">¶</a></h3>
+<p>이 영역에서는 해당 알람의 심각도와 알람 발생 시각, 그리고 이 알람을 발생시킨 룰의 설정값 및 데이터 소스 관련 정보를 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/alarm_detail_05.png"><img alt="alarm info" src="../../_images/alarm_detail_05.png" style="width: 413.0px; height: 456.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="chart-view">
+<h3>Chart View 탭<a class="headerlink" href="#chart-view" title="제목 주소">¶</a></h3>
+<p>이 탭 영역에서는 해당 알람 구간 내에서 모니터링한 aggregate 데이터의 abnormal score 추이를 차트로 보여줍니다. 여기서는 각 조건별 점수 한계값에 도달하여 상응하는 알람(<code class="docutils literal notranslate"><span class="pre">Critical</span></code>, <code class="docutils literal notranslate"><span class="pre">Major</span></code>, <code class="docutils literal notranslate"><span class="pre">Moderate</span></code>, <code class="docutils literal notranslate"><span class="pre">Low</span></code>)을 일으킨 발생 건도 보고해줍니다. 차트 산출 방식에 관해서는 <a class="reference internal" href="../part01/index.html#basic-principles"><span class="std std-ref">기본 원리</span></a> 항목을 참조하십시오.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="chart view" src="../../_images/alarm_detail_06.png" />
+</div>
+<ul class="simple">
+<li><p><strong>Total abnormal score:</strong> 알람 룰에 포함된 모든 측정값 컬럼에 대한 abnormal score를 보여줍니다.</p></li>
+<li><p><strong>Chart by measures:</strong> 알람 룰에 포함된 각 개별 측정값 컬럼 데이터의 예측치와 실제치의 추이를 보여줍니다.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="table-view">
+<h3>Table View 탭<a class="headerlink" href="#table-view" title="제목 주소">¶</a></h3>
+<p>이 탭 영역에서는 각 알람 발생 건별로 데이터 실제치와 예측치, 그리고 abnormal score를 보여줍니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="table view" src="../../_images/alarm_detail_07.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
 </div>
 
 
@@ -232,10 +328,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../part04/index.html" class="btn btn-neutral float-right" title="얄람 룰 내역 열람·수정하기" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../part04/index.html" class="btn btn-neutral float-right" title="알람 룰" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../part02/index.html" class="btn btn-neutral float-left" title="알람 룰 만들기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../part02/index.html" class="btn btn-neutral float-left" title="통계" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

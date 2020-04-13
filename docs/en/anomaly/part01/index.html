@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction of Anomaly Expansion Pack &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Introduction of Metatron Anomaly &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,7 +35,9 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="next" title="Create an alarm rule" href="../part02/index.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Statistics" href="../part02/index.html" />
     <link rel="prev" title="Use cases" href="../../integrator/part05/index.html" /> 
 </head>
 
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -130,16 +122,18 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction of Anomaly Expansion Pack</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction of Metatron Anomaly</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#basic-principles">Basic principles</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">Key functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">Structure</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Search</a></li>
 </ul>
 
             
@@ -185,13 +179,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>Introduction of Anomaly Expansion Pack</li>
+      <li>Introduction of Metatron Anomaly</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/anomaly/part01/index.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/anomaly/part01/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -204,8 +198,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="anomaly">
-<h1>Introduction of Anomaly Expansion Pack<a class="headerlink" href="#anomaly" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="metatron-anomaly">
+<h1>Introduction of Metatron Anomaly<a class="headerlink" href="#metatron-anomaly" title="Permalink to this headline">¶</a></h1>
 <p>The Anomaly Expansion Pack is a tool that detects abnormal data flow and immediately alerts users. For this detection, it uses prediction models built based on machine learning.</p>
 <div class="section" id="basic-principles">
 <span id="id1"></span><h2>Basic principles<a class="headerlink" href="#basic-principles" title="Permalink to this headline">¶</a></h2>
@@ -221,37 +215,29 @@
 <img alt="total abnormal score" src="../../_images/features_02.png" />
 </div>
 </div></blockquote>
-<p>In this example, a <code class="docutils literal"><span class="pre">Moderate</span></code> alarm is triggered when the abnormal score reaches 10, and a <code class="docutils literal"><span class="pre">Critical</span></code> alarm when the score reaches 80.</p>
+<p>In this example, it is set to generate a low level alarm when the abnormal score reaches 20 points, a moderate if it exceeds 40 points, a major alarm if it exceeds 60 points, and a critical level alarm if it exceeds 80 points. ” According to the training data, It can be predicted that a critical class alarm was generated on April 6th at 3pm.</p>
 <p>The alarms are reported through various channels to the user, so that immediate action can be taken in response to anomalies.</p>
 </div>
 <div class="section" id="id2">
 <h2>Key functions<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>The key functions of Anomaly are as follows:</p>
-<p><strong>Machine learning</strong></p>
-<blockquote>
-<div><p>User convenience enhanced with automatic recommendation of a prediction model based on machine learning</p>
-</div></blockquote>
-<p><strong>Alarms &amp; reports</strong></p>
-<blockquote>
-<div><p>Immediate alarm triggering and report generation in case of anomaly</p>
-</div></blockquote>
-<p><strong>Analyze</strong></p>
-<blockquote>
-<div><p>Chart generation and analysis service linkable with Metatron Discovery</p>
-</div></blockquote>
-<p><strong>Linkage with learning system</strong></p>
-<blockquote>
-<div><p>New forms of analysis possible through linkage with external analytics systems</p>
-</div></blockquote>
+<ul class="simple">
+<li><p>User convenience enhanced with automatic recommendation of a prediction model based on machine learning</p></li>
+<li><p>Immediate alarm triggering and report generation in case of anomaly</p></li>
+<li><p>Support real-time dashboard and real-time search function to analyze data source</p></li>
+<li><p>Support 3rd-party system linkage to apply new algorithm model</p></li>
+</ul>
 </div>
 <div class="section" id="id3">
 <h2>Structure<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>The menus in Anomaly are organized as follows:</p>
+<p>Anomaly’s menu is divided into two categories: <strong>Anomaly Detection</strong>and <strong>Data Management</strong>.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="metatron anomaly structure" src="../../_images/structure_01.en.png" />
 </div>
 </div></blockquote>
+<p>Under <strong>Anomaly Detection</strong> menu, features support overall anomaly detection statistics, alarm information, alarm rule setting, and new algorithm addition.</p>
+<p>Under <strong>Data Monitoring</strong> menu, features provide a real-time dashboard and a search function that allows you to query the data source.</p>
 <p>Users can easily navigate across menus, use references to detailed items, and gain organic understanding of alarms including their rule settings, past occurrences, and overall statistics.</p>
 </div>
 </div>
@@ -264,7 +250,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../part02/index.html" class="btn btn-neutral float-right" title="Create an alarm rule" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../part02/index.html" class="btn btn-neutral float-right" title="Statistics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../../integrator/part05/index.html" class="btn btn-neutral float-left" title="Use cases" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

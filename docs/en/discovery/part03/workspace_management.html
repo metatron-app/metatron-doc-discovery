@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Workspace home &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Workspace home &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Shared workspace" href="shared_workspace.html" />
     <link rel="prev" title="Workspace" href="index.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -140,11 +132,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -198,7 +192,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part03/workspace_management.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part03/workspace_management.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -222,62 +216,40 @@
 <img alt="워크스페이스 홈 화면" src="../../_images/workspace_home.en.png" />
 </div>
 <ol class="arabic">
-<li><p class="first"><strong>Main menu button:</strong> Click this button to open a panel to access another workspace.</p>
-</li>
-<li><p class="first"><strong>Workspace information:</strong> Displays the name and description of the workspace. If the logged-in user owns the workspace, an Owner icon will be displayed next to the name of the workspace.</p>
-</li>
-<li><p class="first"><strong>Registered entities:</strong> Displays the number of entities registered in the workspace by entity type.</p>
-</li>
-<li><p class="first"><strong>Data source:</strong> Displays the number of data sources used in the workspace. Click this area to show a list of these data sources.</p>
-</li>
-<li><p class="first"><strong>Workspace list:</strong> Click this button to show a list of shared workspaces. (See <a class="reference internal" href="shared_workspace.html#shared-workspace-list"><span class="std std-ref">Shared workspace list</span></a> for how to handle it.)</p>
-</li>
-<li><p class="first"><strong>Creation information:</strong> Displays who and when created the workspace.</p>
-</li>
-<li><p class="first"><strong>More:</strong> Edit the settings of the workspace.</p>
+<li><p><strong>Main menu button:</strong> Click this button to open a panel to access another workspace.</p></li>
+<li><p><strong>Workspace information:</strong> Displays the name and description of the workspace. If the logged-in user owns the workspace, an Owner icon will be displayed next to the name of the workspace.</p></li>
+<li><p><strong>Registered entities:</strong> Displays the number of entities registered in the workspace by entity type.</p></li>
+<li><p><strong>Data source:</strong> Displays the number of data sources used in the workspace. Click this area to show a list of these data sources.</p></li>
+<li><p><strong>Workspace list:</strong> Click this button to show a list of shared workspaces. (See <a class="reference internal" href="shared_workspace.html#shared-workspace-list"><span class="std std-ref">Shared workspace list</span></a> for how to handle it.)</p></li>
+<li><p><strong>Creation information:</strong> Displays who and when created the workspace.</p></li>
+<li><p><strong>More:</strong> Edit the settings of the workspace.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first"><strong>Edit the name and description:</strong> Edits the name and description of the workspace.</p>
-</li>
-<li><p class="first"><strong>Set shared member &amp; group:</strong> Sets the users and groups who can access the workspace. (See <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">Set access permissions for a shared workspace</span></a> for details.)</p>
-</li>
-<li><p class="first"><strong>Set notebook server:</strong> Sets access information for external analytics tool servers used by the Notebook module.</p>
-</li>
-<li><p class="first"><strong>Set permission schema:</strong> Sets the access permission of each user role for the workspace. (See <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">Set access permissions for a shared workspace</span></a> for details.)</p>
-</li>
-<li><p class="first"><strong>Change owner:</strong> Changes the owner of the workspace.</p>
-</li>
-<li><p class="first"><strong>Delete workspace:</strong> Deletes the workspace.</p>
-</li>
+<li><p><strong>Edit the name and description:</strong> Edits the name and description of the workspace.</p></li>
+<li><p><strong>Set shared member &amp; group:</strong> Sets the users and groups who can access the workspace. (See <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">Set access permissions for a shared workspace</span></a> for details.)</p></li>
+<li><p><strong>Set notebook server:</strong> Sets access information for external analytics tool servers used by the Notebook module.</p></li>
+<li><p><strong>Set permission schema:</strong> Sets the access permission of each user role for the workspace. (See <a class="reference internal" href="shared_workspace.html#shared-workspace-permission"><span class="std std-ref">Set access permissions for a shared workspace</span></a> for details.)</p></li>
+<li><p><strong>Change owner:</strong> Changes the owner of the workspace.</p></li>
+<li><p><strong>Delete workspace:</strong> Deletes the workspace.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>Path in the workspace:</strong> Displays the current location in the workspace. Click on a parent folder listed in the path to move to that folder.</p>
-</li>
-<li><p class="first"><strong>Create a folder:</strong> Click on it to create a new folder in the current location.</p>
-</li>
-<li><p class="first"><strong>Filter/sort the entity list:</strong></p>
+<li><p><strong>Path in the workspace:</strong> Displays the current location in the workspace. Click on a parent folder listed in the path to move to that folder.</p></li>
+<li><p><strong>Create a folder:</strong> Click on it to create a new folder in the current location.</p></li>
+<li><p><strong>Filter/sort the entity list:</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first"><strong>Search:</strong> Searches for an entity or folder in the workspace by name.</p>
-</li>
-<li><p class="first"><strong>Entity type:</strong> Displays only your selected type of entities among workbooks, notebooks, and workbenches.</p>
-</li>
-<li><p class="first"><strong>Sort:</strong> Sorts folders and entities by their name or when they were last updated.</p>
-</li>
-<li><p class="first"><strong>View type:</strong> Select either the grid view or list view as the format of how the entities are listed in the workspace.</p>
-</li>
+<li><p><strong>Search:</strong> Searches for an entity or folder in the workspace by name.</p></li>
+<li><p><strong>Entity type:</strong> Displays only your selected type of entities among workbooks, notebooks, and workbenches.</p></li>
+<li><p><strong>Sort:</strong> Sorts folders and entities by their name or when they were last updated.</p></li>
+<li><p><strong>View type:</strong> Select either the grid view or list view as the format of how the entities are listed in the workspace.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>Folder list:</strong> Displays folders that meet search criteria in the current location. Click one to enter that folder. (For details on individual folders, see <a class="reference internal" href="#folders"><span class="std std-ref">Folder items</span></a>)</p>
-</li>
-<li><p class="first"><strong>Entity list:</strong> Displays entities that meet search or sorting criteria in the current location. Click an entity to enter its home. (For details on individual entities, see <a class="reference internal" href="#items"><span class="std std-ref">Entity items</span></a>)</p>
-</li>
-<li><p class="first"><strong>Select/clone/move/delete entity:</strong> Select all entities, or clone, move or delete an entity. (See <a class="reference internal" href="#actions"><span class="std std-ref">Select/clone/move/delete folder and entity</span></a> for details.)</p>
-</li>
-<li><p class="first"><strong>Create an entity:</strong> Buttons used to create a specific type of entity in the workspace. (For details, see <a class="reference internal" href="../part04/create_a_workbook.html"><span class="doc">Create a workbook</span></a>, <a class="reference internal" href="../part05/create_a_notebook.html"><span class="doc">Create a notebook</span></a>, and <a class="reference internal" href="../part06/06_02-create_a_workbench.html"><span class="doc">Create a workbench</span></a>, respectively.)</p>
-</li>
+<li><p><strong>Folder list:</strong> Displays folders that meet search criteria in the current location. Click one to enter that folder. (For details on individual folders, see <a class="reference internal" href="#folders"><span class="std std-ref">Folder items</span></a>)</p></li>
+<li><p><strong>Entity list:</strong> Displays entities that meet search or sorting criteria in the current location. Click an entity to enter its home. (For details on individual entities, see <a class="reference internal" href="#items"><span class="std std-ref">Entity items</span></a>)</p></li>
+<li><p><strong>Select/clone/move/delete entity:</strong> Select all entities, or clone, move or delete an entity. (See <a class="reference internal" href="#actions"><span class="std std-ref">Select/clone/move/delete folder and entity</span></a> for details.)</p></li>
+<li><p><strong>Create an entity:</strong> Buttons used to create a specific type of entity in the workspace. (For details, see <a class="reference internal" href="../part04/create_a_workbook.html"><span class="doc">Create a workbook</span></a>, <a class="reference internal" href="../part05/create_a_notebook.html"><span class="doc">Create a notebook</span></a>, and <a class="reference internal" href="../part06/06_02-create_a_workbench.html"><span class="doc">Create a workbench</span></a>, respectively.)</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -289,14 +261,10 @@
 <img alt="워크스페이스 폴더 항목" src="../../_images/workspace_entity_folder.en.png" />
 </div>
 <ul class="simple">
-<li><p class="first"><strong>Check box:</strong> Used to select the folder. You can clone, move or delete the selected folder.</p>
-</li>
-<li><p class="first"><strong>Name:</strong> Name of the folder.</p>
-</li>
-<li><p class="first"><strong>Edit:</strong> Click on it to modify the name of the folder. This button is displayed only when you hover the mouse over the folder item.</p>
-</li>
-<li><p class="first"><strong>Delete:</strong> Click on it to delete the folder. This button is displayed only when you hover the mouse over the folder item.</p>
-</li>
+<li><p><strong>Check box:</strong> Used to select the folder. You can clone, move or delete the selected folder.</p></li>
+<li><p><strong>Name:</strong> Name of the folder.</p></li>
+<li><p><strong>Edit:</strong> Click on it to modify the name of the folder. This button is displayed only when you hover the mouse over the folder item.</p></li>
+<li><p><strong>Delete:</strong> Click on it to delete the folder. This button is displayed only when you hover the mouse over the folder item.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -308,23 +276,16 @@
 <img alt="워크스페이스 개체 항목" src="../../_images/workspace_entity_object.en.png" />
 </div>
 <ul>
-<li><p class="first"><strong>Check box:</strong> Used to select the entity. You can clone, move or delete the selected entity.</p>
-</li>
-<li><p class="first"><strong>Entity type:</strong> Displays the type of the entity (workbook/notebook/workbench).</p>
-</li>
-<li><p class="first"><strong>Delete:</strong> Click on it to delete the entity. This button is displayed only when you hover the mouse over the entity item.</p>
-</li>
-<li><p class="first"><strong>Name:</strong> Name of the entity.</p>
-</li>
-<li><p class="first"><strong>Last updated:</strong> Displays when the entity was last updated.</p>
-</li>
-<li><p class="first"><strong>Number of data sources/dashboards:</strong> This is an exclusive area for the workbook type.</p>
+<li><p><strong>Check box:</strong> Used to select the entity. You can clone, move or delete the selected entity.</p></li>
+<li><p><strong>Entity type:</strong> Displays the type of the entity (workbook/notebook/workbench).</p></li>
+<li><p><strong>Delete:</strong> Click on it to delete the entity. This button is displayed only when you hover the mouse over the entity item.</p></li>
+<li><p><strong>Name:</strong> Name of the entity.</p></li>
+<li><p><strong>Last updated:</strong> Displays when the entity was last updated.</p></li>
+<li><p><strong>Number of data sources/dashboards:</strong> This is an exclusive area for the workbook type.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">The number next to the <img alt="icon_datasource" src="../../_images/icon_datasource.png" /> icon refers to how many data sources are connected to the workbook.</p>
-</li>
-<li><p class="first">The number next to the <img alt="icon_dashboard" src="../../_images/icon_dashboard.png" /> icon refers to how many dashboards are registered in the workbook.</p>
-</li>
+<li><p>The number next to the <img alt="icon_datasource" src="../../_images/icon_datasource.png" /> icon refers to how many data sources are connected to the workbook.</p></li>
+<li><p>The number next to the <img alt="icon_dashboard" src="../../_images/icon_dashboard.png" /> icon refers to how many dashboards are registered in the workbook.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -339,14 +300,10 @@
 <img alt="워크스페이스 개체 항목" src="../../_images/workspace_entity_folder_and_object_manipulation.en.png" />
 </div>
 <ul class="simple">
-<li><p class="first"><strong>Select all:</strong> Selects all items in the current folder and entity list.</p>
-</li>
-<li><p class="first"><strong>Clone workbook:</strong> This is exclusive for the workbook type. Click this button to clone the selected workbooks.</p>
-</li>
-<li><p class="first"><strong>Move selections:</strong> Moves the selected folders and entities. Workbooks can be moved to another workspace, and other types of items can be moved to another folder in the same workspace. However, it is impossible to move selections when workbooks and other types of entities are selected together.</p>
-</li>
-<li><p class="first"><strong>Delete:</strong> Deletes the selected folders and entities.</p>
-</li>
+<li><p><strong>Select all:</strong> Selects all items in the current folder and entity list.</p></li>
+<li><p><strong>Clone workbook:</strong> This is exclusive for the workbook type. Click this button to clone the selected workbooks.</p></li>
+<li><p><strong>Move selections:</strong> Moves the selected folders and entities. Workbooks can be moved to another workspace, and other types of items can be moved to another folder in the same workspace. However, it is impossible to move selections when workbooks and other types of entities are selected together.</p></li>
+<li><p><strong>Delete:</strong> Deletes the selected folders and entities.</p></li>
 </ul>
 </div></blockquote>
 </div>

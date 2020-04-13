@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>View/edit alarm rule details &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Alarm Rule &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,8 +35,10 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="next" title="View alarm details" href="../part05/index.html" />
-    <link rel="prev" title="Statistics" href="../part03/index.html" /> 
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Creating an Alarm Rule" href="create_alarm_rule.html" />
+    <link rel="prev" title="Viewing alarms" href="../part03/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -130,15 +122,18 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Statistics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">View/edit alarm rule details</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#alarm-rule-list">Alarm rule list</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#alarm-rule-details">Alarm rule details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Alarm Rule</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_alarm_rule.html">Creating an Alarm Rule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="view_alarm_rules.html">Viewing and modifying alarm rule details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_manager.html">Model Manager</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">Search</a></li>
 </ul>
 
             
@@ -184,13 +179,13 @@
     
       <li><a href="../../index.html">Docs</a> &raquo;</li>
         
-      <li>View/edit alarm rule details</li>
+      <li>Alarm Rule</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/anomaly/part04/index.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/anomaly/part04/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -204,73 +199,41 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>View/edit alarm rule details<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>The <strong>Alarm Rule</strong> tab menu displays and allows to edit the registered alarm rules. This menu also provides an overview of abnormal scores calculated using the selected prediction models.</p>
-<p>The alarm rule menu consists of the following two pages:</p>
+<h1>Alarm Rule<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Metatron Anomaly makes it easy for users to easily create and manage rules that trigger alarms in their data. Metatron Anomaly’s alarm rules have the following characteristics:</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="#alarm-rule-list"><span class="std std-ref">Alarm rule list</span></a></li>
-<li><a class="reference internal" href="#alarm-rule-details"><span class="std std-ref">Alarm rule details</span></a></li>
+<li><p>Machine learning based on unsupervised learning for all real-time data without error history</p></li>
+<li><p>Easy and fast alarm rule creation in 3-step</p></li>
+<li><p>Built-in statistical prediction model</p></li>
+<li><p>Automatic model learning and optimal model recommendation</p></li>
+<li><p>Supports model retraining when applied model accuracy decreases</p></li>
 </ul>
 </div></blockquote>
-<div class="section" id="alarm-rule-list">
-<span id="id2"></span><h2>Alarm rule list<a class="headerlink" href="#alarm-rule-list" title="Permalink to this headline">¶</a></h2>
-<p>The <strong>Alarm Rule</strong> tab presents a list of registered alarm rules.</p>
-<blockquote>
-<div><div class="figure align-center">
-<img alt="alarm rule list" src="../../_images/complete_alarm_rules_021.png" />
-</div>
-</div></blockquote>
-<p>The items displayed in the list are described below, and they can be used to filter or search for rules.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p class="first"><strong>Current Status:</strong> Monitoring results according to the rule</p>
+<p>The structure of this unit is as follows.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="create_alarm_rule.html">Creating an Alarm Rule</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_alarm_rule.html#select-datasource">Selecting Data Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_alarm_rule.html#select-columns">Selecting metrics to monitor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_alarm_rule.html#configure-training">Setting the training data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_alarm_rule.html#select-model">Choosing a Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_alarm_rule.html#alarm-rule-settings">Setting alarm rule conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_alarm_rule.html#complete-rule">Complete the Rule</a></li>
+</ul>
 </li>
-<li><p class="first"><strong>Alarm Rule Name:</strong> Name of the rule</p>
+<li class="toctree-l1"><a class="reference internal" href="view_alarm_rules.html">Viewing and modifying alarm rule details</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="view_alarm_rules.html#alarm-rule-list">Alarm Rule List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="view_alarm_rules.html#alarm-rule-details">Alarm Rule Details</a></li>
+</ul>
 </li>
-<li><p class="first"><strong>Data Source:</strong> Data source being monitored</p>
-</li>
-<li><p class="first"><strong>Measure:</strong> Measure column being monitored</p>
-</li>
-<li><p class="first"><strong>Alarm Interval:</strong> Intervals at which alarms are set off</p>
-</li>
-<li><p class="first"><strong>Condition:</strong> Number of alarm triggering conditions applied to the rule</p>
-</li>
-<li><p class="first"><strong>Alarm:</strong> Number of alarms triggered by the rule</p>
-</li>
-<li><p class="first"><strong>Running:</strong> Monitoring status of the rule</p>
-</li>
-<li><p class="first"><strong>Updated:</strong> When and who last updated the rule</p>
+<li class="toctree-l1"><a class="reference internal" href="model_manager.html">Model Manager</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="model_manager.html#model-accuracy">Model accuracy fluctuation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_manager.html#model-retraining">Model re-training and learning history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="model_manager.html#model-comparison">Comparison of models and application of new models</a></li>
+</ul>
 </li>
 </ul>
-</div></blockquote>
-</div>
-<div class="section" id="alarm-rule-details">
-<span id="id3"></span><h2>Alarm rule details<a class="headerlink" href="#alarm-rule-details" title="Permalink to this headline">¶</a></h2>
-<p>Select an alarm rule from the list to view detailed information and edit the settings. The left area of the page visualizes monitoring results, and the right presents settings of the alarm rule conditions.</p>
-<blockquote>
-<div><div class="figure align-center">
-<img alt="alarm rule detail" src="../../_images/alarm_rule_detail_01.png" />
-</div>
-</div></blockquote>
-<p>The top of the monitoring status area displays the monitoring period. Click <img alt="icon_period_edit" src="../../_images/icon_period_edit.png" /> to change the period.</p>
-<blockquote>
-<div><div class="figure align-center">
-<img alt="change visualize range" src="../../_images/alarm_rule_detail_02.png" />
-</div>
-</div></blockquote>
-<p>The current settings of the alarm rule can be modified under alarm rule condition settings. See <a class="reference internal" href="../part02/index.html#alarm-rule-settings"><span class="std std-ref">Set alarm rule conditions</span></a> for details.</p>
-<blockquote>
-<div><div class="figure align-center">
-<img alt="change alarm rule condition" src="../../_images/alarm_rule_detail_03.png" />
-</div>
-</div></blockquote>
-<p>Click <img alt="icon_alarm_history" src="../../_images/icon_alarm_history.png" /> on the right bar to switch the <strong>Conditions</strong> panel to the <strong>Alarm History</strong> panel, where a list of alarms triggered to date is displayed (click <img alt="icon_rule_settings_edit" src="../../_images/icon_rule_settings_edit.png" /> to revert to the <strong>Conditions</strong> panel).</p>
-<blockquote>
-<div><div class="figure align-center">
-<img alt="list alarm history" src="../../_images/alarm_rule_detail_04.png" />
-</div>
-</div></blockquote>
 </div>
 </div>
 
@@ -282,10 +245,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../part05/index.html" class="btn btn-neutral float-right" title="View alarm details" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="create_alarm_rule.html" class="btn btn-neutral float-right" title="Creating an Alarm Rule" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../part03/index.html" class="btn btn-neutral float-left" title="Statistics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../part03/index.html" class="btn btn-neutral float-left" title="Viewing alarms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

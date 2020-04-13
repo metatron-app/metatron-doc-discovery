@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>모델 매니저 &mdash; metatron discovery docs 0.4.3 문서</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="알고리즘" href="../part05/index.html" />
+    <link rel="prev" title="알람 룰 내역 열람·수정하기" href="view_alarm_rules.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html">
+          
+
+          
+            
+            <img src="../../_static/metatron-docs-logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.3
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+                  <!-- 현재 설정 언어가 한국어일 때 영어 링크 삽입 -->
+					 <!-- 하위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 최상위 페이지에서 영문 페이지로의 링크 -->
+					 <!-- 한글 pdf 링크 -->
+					<li><a class="lang_sel" href="../../en/index.html">VIEW IN ENGLISH</a></li>
+					<li><a class="lang_sel" href="">PDF 버전으로 보기</a></li>
+                 
+              </ul>
+              <p class="caption"><span class="caption-text">Metatron Discovery</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part00/index.html">디스커버리 퀵가이드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part01/index.html">Metatron Discovery 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part02/index.html">데이터 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part03/index.html">워크스페이스</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part04/index.html">워크북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part05/index.html">노트북</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part06/index.html">워크벤치</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part07/index.html">데이터 프리퍼레이션</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part08/index.html">계정 관리</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part09/index.html">데이터 탐색</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../discovery/part10/index.html">엔진 모니터링</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Workflow Integrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part01/index.html">Integrator 확장팩 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part02/index.html">워크플로우 리스트</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part03/index.html">워크플로우 에디터</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part04/index.html">모니터링</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../integrator/part05/index.html">Use Case</a></li>
+</ul>
+<p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part01/index.html">Metatron Anomaly 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part02/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part03/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">알람 룰</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_alarm_rule.html">알람 룰 만들기</a></li>
+<li class="toctree-l2"><a class="reference internal" href="view_alarm_rules.html">알람 룰 내역 열람·수정하기</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">모델 매니저</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#model-accuracy">모델 정확도 변동 추이</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#model-retraining">모델 재학습 및 학습 이력</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#model-comparison">모델 비교 및 신규 모델 적용</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part05/index.html">알고리즘</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part06/index.html">대시보드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part07/index.html">검색</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">metatron discovery docs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">알람 룰</a> &raquo;</li>
+        
+      <li>모델 매니저</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/anomaly/part04/model_manager.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>모델 매니저<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
+<p>시계열 데이터에 머신러닝 모델을 적용했을 때, 일반적으로 시간이 지나면 데이터 패턴이 변하고 모델의 정확도가 점차 하락하는 문제점이 발생합니다. 이 경우 데이터 사이언티스트들이 수동으로 신규 데이터를 트레이닝 셋으로 변경하여 모델을 재학습시켜 정확도를 높인 후 시스템에 재배포하는 과정을 거쳐야 합니다.</p>
+<p><strong>Metatron Anomaly</strong>는 데이터 사이언티스트가 아닌 사용자들도 쉽게 모델을 재학습할 수 있는 <strong>모델 매니저</strong> 기능을 지원합니다.</p>
+<p>모델 매니저는 다음의 기능들로 이루어집니다.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="#model-accuracy"><span class="std std-ref">모델 정확도 변동 추이</span></a></p></li>
+<li><p><a class="reference internal" href="#model-retraining"><span class="std std-ref">모델 재학습 및 학습 이력</span></a></p></li>
+<li><p><a class="reference internal" href="#model-comparison"><span class="std std-ref">모델 비교 및 신규 모델 적용</span></a></p></li>
+</ul>
+</div></blockquote>
+<p>생성된 알람 룰 상세 페이지 우측 메뉴의 <img alt="icon_model" src="../../_images/icon_model.png" /> 아이콘을 누르면 모델 매니저로 진입합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="model manager" src="../../_images/model_manager_01.png" />
+</div>
+</div></blockquote>
+<div class="section" id="model-accuracy">
+<span id="id2"></span><h2>모델 정확도 변동 추이<a class="headerlink" href="#model-accuracy" title="제목 주소">¶</a></h2>
+<p>상단에서는 모델 정확도가 가장 최근 학습했을 때보다 얼마나 증가하거나 떨어졌는지 보여주며, 그래프에 마우스 오버하면 기간에 따라서 정확도 점수가 변화하는 것을 수치로 보여줍니다. 하단에는 현재 적용된 모델의 정보 및 적용 시점이 표기됩니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/model_manager_02.png"><img alt="model accuracy" src="../../_images/model_manager_02.png" style="width: 464.0px; height: 288.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="model-retraining">
+<span id="id3"></span><h2>모델 재학습 및 학습 이력<a class="headerlink" href="#model-retraining" title="제목 주소">¶</a></h2>
+<p>만약 정확도가 원하는 수치보다 떨어졌을 경우 우측 상단의 <strong>Train</strong> 버튼을 눌러 재학습할 수 있습니다. 재학습 대상이 될 학습 데이터 범위와 알고리즘 종류를 선택하고 Train을 누르면 재학습을 시작합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/model_manager_04.png"><img alt="model retraining" src="../../_images/model_manager_04.png" style="width: 600.0px; height: 763.0px;" /></a>
+</div>
+</div></blockquote>
+<p>재학습이 시작되면 Training History에서 지금 시간으로 기록된 메뉴에서 학습 현황을 볼 수 있습니다. 또한 리스트에서 과거에 학습한 내역 또한 확인할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<a class="reference internal image-reference" href="../../_images/model_manager_03.png"><img alt="model history" src="../../_images/model_manager_03.png" style="width: 451.0px; height: 576.0px;" /></a>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="model-comparison">
+<span id="id4"></span><h2>모델 비교 및 신규 모델 적용<a class="headerlink" href="#model-comparison" title="제목 주소">¶</a></h2>
+<p>신규 모델 우측의 <img alt="icon_comparison" src="../../_images/icon_comparison.png" /> 아이콘을 누르면 기존에 적용된 모델과 신규 학습한 모델을 비교할 수 있습니다. 기 적용된 모델은 파란색, 신규로 선택한 모델은 분홍색으로 표시되어 그래프 내에서 예측값 및 abnormal score 값을 비교할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="compare ML models" src="../../_images/model_manager_05.png" />
+</div>
+</div></blockquote>
+<p>새롭게 학습시킨 모델을 룰에 적용하려면 우측의 <img alt="icon_ham" src="../../_images/icon_ham.png" /> 메뉴에서 <strong>Apply this training model</strong> 을 클릭합니다. 적용된 모델에는 <img alt="icon_applied" src="../../_images/icon_applied.png" /> 태그가 달립니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="apply new model" src="../../_images/model_manager_06.png" />
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../part05/index.html" class="btn btn-neutral float-right" title="알고리즘" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="view_alarm_rules.html" class="btn btn-neutral float-left" title="알람 룰 내역 열람·수정하기" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, metatron team
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

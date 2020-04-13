@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Use Case &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Use Case &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -46,7 +36,9 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
-    <link rel="next" title="Anomaly 확장팩 소개" href="../../anomaly/part01/index.html" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Metatron Anomaly 소개" href="../../anomaly/part01/index.html" />
     <link rel="prev" title="모니터링" href="../part04/index.html" /> 
 </head>
 
@@ -74,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -136,11 +128,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Metatron Anomaly 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">알람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알고리즘</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">대시보드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">검색</a></li>
 </ul>
 
             
@@ -192,7 +186,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/integrator/part05/index.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/integrator/part05/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -210,20 +204,20 @@
 <div class="section" id="id1">
 <h2>데이터 소스 적재 위임<a class="headerlink" href="#id1" title="제목 주소">¶</a></h2>
 <ul class="simple">
-<li>대용량의 데이터 적재 시 발생하는 시스템 부하를 방지하기 위해 background 처리</li>
+<li><p>대용량의 데이터 적재 시 발생하는 시스템 부하를 방지하기 위해 background 처리</p></li>
 </ul>
 </div>
 <div class="section" id="id2">
 <h2>워크벤치와 연계<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
 <ul class="simple">
-<li>특정 쿼리의 반복 실행</li>
-<li>오래 걸리는 쿼리의 위임</li>
+<li><p>특정 쿼리의 반복 실행</p></li>
+<li><p>오래 걸리는 쿼리의 위임</p></li>
 </ul>
 </div>
 <div class="section" id="id3">
 <h2>데이터 프리퍼레이션과 연계<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
 <ul class="simple">
-<li>Wrangled dataset 반복 사용</li>
+<li><p>Wrangled dataset 반복 사용</p></li>
 </ul>
 </div>
 </div>
@@ -236,7 +230,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../anomaly/part01/index.html" class="btn btn-neutral float-right" title="Anomaly 확장팩 소개" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../anomaly/part01/index.html" class="btn btn-neutral float-right" title="Metatron Anomaly 소개" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="../part04/index.html" class="btn btn-neutral float-left" title="모니터링" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>컬럼에 새로운 이름 부여하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>컬럼에 새로운 이름 부여하기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -46,6 +36,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="차트" href="manage_charts.html" />
     <link rel="prev" title="대시보드 프리젠테이션 하기" href="present_the_dashboard.html" /> 
 </head>
@@ -74,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -144,11 +136,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Metatron Anomaly 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">알람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알고리즘</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">대시보드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">검색</a></li>
 </ul>
 
             
@@ -204,7 +198,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part04/give_new_column_name(alias).txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part04/give_new_column_name(alias).rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -221,13 +215,13 @@
 <h1>컬럼에 새로운 이름 부여하기<a class="headerlink" href="#id1" title="제목 주소">¶</a></h1>
 <p>대시보드 편집모드의 데이터 소스 패널에서 컬럼명에 마우스를 올린 후, 우측의 항목을 클릭하면 해당 컬럼의 Alias 값을 확인할 수 있습니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/give_new_column_name_1.png" src="../../_images/give_new_column_name_1.png" />
 </div>
 </div></blockquote>
 <p>Alias 항목에 마우스를 올리면 새로운 컬럼명을 입력할 수 있는 창이 열리며, 입력 후 <strong>적용</strong>을 누르면 반영된 것을 확인할 수 있습니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/give_new_column_name_2.png" src="../../_images/give_new_column_name_2.png" />
 </div>
 </div></blockquote>

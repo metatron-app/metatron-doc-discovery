@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Function list &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Function list &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Create a data snapshot" href="create_a_datasnapshot.html" />
     <link rel="prev" title="Rule types" href="rule_kinds.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -201,11 +193,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -261,7 +255,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part07/function_list.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part07/function_list.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -280,80 +274,73 @@
 <p>This section describes each function in terms of the following.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Category</p>
-</li>
-<li><p class="first">Description</p>
-</li>
-<li><p class="first">Function interface</p>
-</li>
-<li><p class="first">Arguments</p>
-</li>
-<li><p class="first">Return type</p>
-</li>
-<li><p class="first">Example</p>
-</li>
-<li><p class="first">Remarks</p>
-</li>
+<li><p>Category</p></li>
+<li><p>Description</p></li>
+<li><p>Function interface</p></li>
+<li><p>Arguments</p></li>
+<li><p>Return type</p></li>
+<li><p>Example</p></li>
+<li><p>Remarks</p></li>
 </ul>
 </div></blockquote>
 <p>The following functions are currently supported by data preperation</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="#length">length</a></li>
-<li><a class="reference internal" href="#if">if</a></li>
-<li><a class="reference internal" href="#isnull">isnull</a></li>
-<li><a class="reference internal" href="#isnan">isnan</a></li>
-<li><a class="reference internal" href="#upper">upper</a></li>
-<li><a class="reference internal" href="#lower">lower</a></li>
-<li><a class="reference internal" href="#trim">trim</a></li>
-<li><a class="reference internal" href="#ltrim">ltrim</a></li>
-<li><a class="reference internal" href="#rtrim">rtrim</a></li>
-<li><a class="reference internal" href="#substring">substring</a></li>
-<li><a class="reference internal" href="#concat">concat</a></li>
-<li><a class="reference internal" href="#concat-ws">concat_ws</a></li>
-<li><a class="reference internal" href="#year">year</a></li>
-<li><a class="reference internal" href="#month">month</a></li>
-<li><a class="reference internal" href="#day">day</a></li>
-<li><a class="reference internal" href="#hour">hour</a></li>
-<li><a class="reference internal" href="#minute">minute</a></li>
-<li><a class="reference internal" href="#second">second</a></li>
-<li><a class="reference internal" href="#millisecond">millisecond</a></li>
-<li><a class="reference internal" href="#now">now</a></li>
-<li><a class="reference internal" href="#add-time">add_time</a></li>
-<li><a class="reference internal" href="#sum">sum</a></li>
-<li><a class="reference internal" href="#avg">avg</a></li>
-<li><a class="reference internal" href="#max">max</a></li>
-<li><a class="reference internal" href="#min">min</a></li>
-<li><a class="reference internal" href="#count">count</a></li>
-<li><a class="reference internal" href="#math-abs">math.abs</a></li>
-<li><a class="reference internal" href="#math-acos">math.acos</a></li>
-<li><a class="reference internal" href="#math-asin">math.asin</a></li>
-<li><a class="reference internal" href="#math-atan">math.atan</a></li>
-<li><a class="reference internal" href="#math-cbrt">math.cbrt</a></li>
-<li><a class="reference internal" href="#math-ceil">math.ceil</a></li>
-<li><a class="reference internal" href="#math-cos">math.cos</a></li>
-<li><a class="reference internal" href="#math-cosh">math.cosh</a></li>
-<li><a class="reference internal" href="#math-exp">math.exp</a></li>
-<li><a class="reference internal" href="#math-expm1">math.expm1</a></li>
-<li><a class="reference internal" href="#math-getexponent">math.getExponent</a></li>
-<li><a class="reference internal" href="#math-round">math.round</a></li>
-<li><a class="reference internal" href="#math-signum">math.signum</a></li>
-<li><a class="reference internal" href="#math-sin">math.sin</a></li>
-<li><a class="reference internal" href="#math-sinh">math.sinh</a></li>
-<li><a class="reference internal" href="#math-sqrt">math.sqrt</a></li>
-<li><a class="reference internal" href="#math-tan">math.tan</a></li>
-<li><a class="reference internal" href="#math-tanh">math.tanh</a></li>
-<li><a class="reference internal" href="#time-diff">time_diff</a></li>
-<li><a class="reference internal" href="#timestamp">timestamp</a></li>
-<li><a class="reference internal" href="#row-number">row_number</a></li>
-<li><a class="reference internal" href="#rolling-sum">rolling_sum</a></li>
-<li><a class="reference internal" href="#rolling-avg">rolling_avg</a></li>
-<li><a class="reference internal" href="#lag">lag</a></li>
-<li><a class="reference internal" href="#lead">lead</a></li>
-<li><a class="reference internal" href="#ismismatched">ismismatched</a></li>
-<li><a class="reference internal" href="#contains">contains</a></li>
-<li><a class="reference internal" href="#startswith">startswith</a></li>
-<li><a class="reference internal" href="#endswith">endswith</a></li>
+<li><p><a class="reference internal" href="#length">length</a></p></li>
+<li><p><a class="reference internal" href="#if">if</a></p></li>
+<li><p><a class="reference internal" href="#isnull">isnull</a></p></li>
+<li><p><a class="reference internal" href="#isnan">isnan</a></p></li>
+<li><p><a class="reference internal" href="#upper">upper</a></p></li>
+<li><p><a class="reference internal" href="#lower">lower</a></p></li>
+<li><p><a class="reference internal" href="#trim">trim</a></p></li>
+<li><p><a class="reference internal" href="#ltrim">ltrim</a></p></li>
+<li><p><a class="reference internal" href="#rtrim">rtrim</a></p></li>
+<li><p><a class="reference internal" href="#substring">substring</a></p></li>
+<li><p><a class="reference internal" href="#concat">concat</a></p></li>
+<li><p><a class="reference internal" href="#concat-ws">concat_ws</a></p></li>
+<li><p><a class="reference internal" href="#year">year</a></p></li>
+<li><p><a class="reference internal" href="#month">month</a></p></li>
+<li><p><a class="reference internal" href="#day">day</a></p></li>
+<li><p><a class="reference internal" href="#hour">hour</a></p></li>
+<li><p><a class="reference internal" href="#minute">minute</a></p></li>
+<li><p><a class="reference internal" href="#second">second</a></p></li>
+<li><p><a class="reference internal" href="#millisecond">millisecond</a></p></li>
+<li><p><a class="reference internal" href="#now">now</a></p></li>
+<li><p><a class="reference internal" href="#add-time">add_time</a></p></li>
+<li><p><a class="reference internal" href="#sum">sum</a></p></li>
+<li><p><a class="reference internal" href="#avg">avg</a></p></li>
+<li><p><a class="reference internal" href="#max">max</a></p></li>
+<li><p><a class="reference internal" href="#min">min</a></p></li>
+<li><p><a class="reference internal" href="#count">count</a></p></li>
+<li><p><a class="reference internal" href="#math-abs">math.abs</a></p></li>
+<li><p><a class="reference internal" href="#math-acos">math.acos</a></p></li>
+<li><p><a class="reference internal" href="#math-asin">math.asin</a></p></li>
+<li><p><a class="reference internal" href="#math-atan">math.atan</a></p></li>
+<li><p><a class="reference internal" href="#math-cbrt">math.cbrt</a></p></li>
+<li><p><a class="reference internal" href="#math-ceil">math.ceil</a></p></li>
+<li><p><a class="reference internal" href="#math-cos">math.cos</a></p></li>
+<li><p><a class="reference internal" href="#math-cosh">math.cosh</a></p></li>
+<li><p><a class="reference internal" href="#math-exp">math.exp</a></p></li>
+<li><p><a class="reference internal" href="#math-expm1">math.expm1</a></p></li>
+<li><p><a class="reference internal" href="#math-getexponent">math.getExponent</a></p></li>
+<li><p><a class="reference internal" href="#math-round">math.round</a></p></li>
+<li><p><a class="reference internal" href="#math-signum">math.signum</a></p></li>
+<li><p><a class="reference internal" href="#math-sin">math.sin</a></p></li>
+<li><p><a class="reference internal" href="#math-sinh">math.sinh</a></p></li>
+<li><p><a class="reference internal" href="#math-sqrt">math.sqrt</a></p></li>
+<li><p><a class="reference internal" href="#math-tan">math.tan</a></p></li>
+<li><p><a class="reference internal" href="#math-tanh">math.tanh</a></p></li>
+<li><p><a class="reference internal" href="#time-diff">time_diff</a></p></li>
+<li><p><a class="reference internal" href="#timestamp">timestamp</a></p></li>
+<li><p><a class="reference internal" href="#row-number">row_number</a></p></li>
+<li><p><a class="reference internal" href="#rolling-sum">rolling_sum</a></p></li>
+<li><p><a class="reference internal" href="#rolling-avg">rolling_avg</a></p></li>
+<li><p><a class="reference internal" href="#lag">lag</a></p></li>
+<li><p><a class="reference internal" href="#lead">lead</a></p></li>
+<li><p><a class="reference internal" href="#ismismatched">ismismatched</a></p></li>
+<li><p><a class="reference internal" href="#contains">contains</a></p></li>
+<li><p><a class="reference internal" href="#startswith">startswith</a></p></li>
+<li><p><a class="reference internal" href="#endswith">endswith</a></p></li>
 </ul>
 </div></blockquote>
 <p>Functions can be supplemented on an ongoing basis.</p>
@@ -362,39 +349,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the length of the input string</p>
-</li>
+<li><p>Returns the length of the input string</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>length(string_value)</li>
+<li><p>length(string_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">string_value: the string whose length you want to find.</p>
-</li>
+<li><p>string_value: the string whose length you want to find.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>length(first_name)</li>
+<li><p>length(first_name)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -403,53 +388,48 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Logical Function</li>
+<li><p>Logical Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Examine the conditional statement and return a value corresponding to TRUE or FALSE.</p>
-</li>
+<li><p>Examine the conditional statement and return a value corresponding to TRUE or FALSE.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>if(condition)</li>
-<li>if(condition, true_value, false_value)</li>
+<li><p>if(condition)</p></li>
+<li><p>if(condition, true_value, false_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">condition: The condition to check for true / false</p>
-</li>
-<li><p class="first">true_value: The value returned if the conditional statement is true.</p>
-</li>
-<li><p class="first">false_value: The value returned if the conditional statement is false.</p>
-</li>
+<li><p>condition: The condition to check for true / false</p></li>
+<li><p>true_value: The value returned if the conditional statement is true.</p></li>
+<li><p>false_value: The value returned if the conditional statement is false.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Any</li>
+<li><p>Any</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>if(gender==‘male’) : TRUE</li>
-<li>if(age&lt;18, ‘kid’, ‘adult’) : ‘adult’</li>
+<li><p>if(gender==‘male’) : TRUE</p></li>
+<li><p>if(age&lt;18, ‘kid’, ‘adult’) : ‘adult’</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">If true_value/false_value does not exist, it returns TURE or FALSE as a result of Boolean type.</p>
-</li>
-<li>ture_value와 false_value의 데이터 타입은 동일해야 합니다.</li>
+<li><p>If true_value/false_value does not exist, it returns TURE or FALSE as a result of Boolean type.</p></li>
+<li><p>ture_value와 false_value의 데이터 타입은 동일해야 합니다.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -458,39 +438,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Logical Function</li>
+<li><p>Logical Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Determines whether the value of the input column is null. Returns TRUE if null, or FALSE.</p>
-</li>
+<li><p>Determines whether the value of the input column is null. Returns TRUE if null, or FALSE.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>isnull(condition)</li>
+<li><p>isnull(condition)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">condition: The column to determine if null.</p>
-</li>
+<li><p>condition: The column to determine if null.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Boolean</li>
+<li><p>Boolean</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>isnull(telephone) : FALSE</li>
+<li><p>isnull(telephone) : FALSE</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -499,46 +477,43 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Logical Function</li>
+<li><p>Logical Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Determines if input value is NaN (Not-a-Number). Returns TRUE if NaN, FALSE otherwise.</p>
-</li>
+<li><p>Determines if input value is NaN (Not-a-Number). Returns TRUE if NaN, FALSE otherwise.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>isnan(condition)</li>
+<li><p>isnan(condition)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">condition: The column or formula for which to determine NaN.</p>
-</li>
+<li><p>condition: The column or formula for which to determine NaN.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Boolean</li>
+<li><p>Boolean</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>isnan(1000/ratio)</li>
+<li><p>isnan(1000/ratio)</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">The result of the condition must be a Double Value.</p>
-</li>
+<li><p>The result of the condition must be a Double Value.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -547,40 +522,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns all uppercase letters of the alphabet entered.</p>
-</li>
+<li><p>Returns all uppercase letters of the alphabet entered.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>upper(string_value)</li>
+<li><p>upper(string_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">string_value: The string to replace with an uppercase letter.</p>
-</li>
+<li><p>string_value: The string to replace with an uppercase letter.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>String</li>
+<li><p>String</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>upper(last_name)</li>
-<li>upper(‘Hello world’) : ’HELLO WORLD’</li>
+<li><p>upper(last_name)</p></li>
+<li><p>upper(‘Hello world’) : ’HELLO WORLD’</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -589,40 +562,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns all lowercase letters of the entered string.</p>
-</li>
+<li><p>Returns all lowercase letters of the entered string.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>lower(string_value)</li>
+<li><p>lower(string_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">string_value: the string you want to replace with lowercase.</p>
-</li>
+<li><p>string_value: the string you want to replace with lowercase.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>String</li>
+<li><p>String</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>lower(last_name)</li>
-<li>lower(‘Hello WORLD’) : ’hello world’</li>
+<li><p>lower(last_name)</p></li>
+<li><p>lower(‘Hello WORLD’) : ’hello world’</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -631,40 +602,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the spaces before and after the input string.</p>
-</li>
+<li><p>Returns the spaces before and after the input string.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>trim(string_value)</li>
+<li><p>trim(string_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">string_value: The string to remove whitespace from.</p>
-</li>
+<li><p>string_value: The string to remove whitespace from.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>String</li>
+<li><p>String</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>trim(comment)</li>
-<li>trim(‘&nbsp; . &nbsp; Hi! &nbsp; ‘) : ‘. &nbsp; Hi!’</li>
+<li><p>trim(comment)</p></li>
+<li><p>trim(‘  .   Hi!   ‘) : ‘.   Hi!’</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -673,40 +642,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Remove and return the space before the input string.</p>
-</li>
+<li><p>Remove and return the space before the input string.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>ltrim(string_value)</li>
+<li><p>ltrim(string_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">string_value: The string to remove whitespace from.</p>
-</li>
+<li><p>string_value: The string to remove whitespace from.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>String</li>
+<li><p>String</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>ltrim(comment)</li>
-<li>ltrim(‘&nbsp; . &nbsp; Hi! &nbsp; ‘) : ’. &nbsp; Hi! &nbsp; ‘</li>
+<li><p>ltrim(comment)</p></li>
+<li><p>ltrim(‘  .   Hi!   ‘) : ’.   Hi!   ‘</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -715,40 +682,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the space after the input string.</p>
-</li>
+<li><p>Returns the space after the input string.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>rtrim(string_value)</li>
+<li><p>rtrim(string_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">string_value: The string to remove whitespace from.</p>
-</li>
+<li><p>string_value: The string to remove whitespace from.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>String</li>
+<li><p>String</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>rtrim(comment)</li>
-<li>rtrim(‘&nbsp; . &nbsp; Hi! &nbsp; ‘) :  ‘&nbsp; . &nbsp; Hi!’</li>
+<li><p>rtrim(comment)</p></li>
+<li><p>rtrim(‘  .   Hi!   ‘) :  ‘  .   Hi!’</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -757,46 +722,42 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns part of the input string.</p>
-</li>
+<li><p>Returns part of the input string.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>substring(string_value, begin_index, offset)</li>
-<li>substring(string_value, begin_index)</li>
+<li><p>substring(string_value, begin_index, offset)</p></li>
+<li><p>substring(string_value, begin_index)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">string_value: The string to edit.</p>
-</li>
-<li><p class="first">begin_index: Start index of the part to extract from the target string. The beginning of the string is 0. If you enter a negative number, it goes back to the last character of the string.</p>
-</li>
-<li><p class="first">offset: The length of the string to extract from the target string. If not entered, extracts from begine_index to the end of the string.</p>
-</li>
+<li><p>string_value: The string to edit.</p></li>
+<li><p>begin_index: Start index of the part to extract from the target string. The beginning of the string is 0. If you enter a negative number, it goes back to the last character of the string.</p></li>
+<li><p>offset: The length of the string to extract from the target string. If not entered, extracts from begine_index to the end of the string.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>String</li>
+<li><p>String</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>substring(user_id, 0, 5)</li>
-<li>substring(‘hello world’, 1, 7) : ‘ello w’</li>
-<li>substring(&#8216;metatron&#8217;, -2) : &#8216;on&#8217;</li>
+<li><p>substring(user_id, 0, 5)</p></li>
+<li><p>substring(‘hello world’, 1, 7) : ‘ello w’</p></li>
+<li><p>substring(‘metatron’, -2) : ‘on’</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -805,40 +766,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li>입력된 복수의 문자열을 연결하여 반환합니다.</li>
+<li><p>입력된 복수의 문자열을 연결하여 반환합니다.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Concatenate and return multiple input strings.</p>
-</li>
+<li><p>Concatenate and return multiple input strings.</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">string_value (X): String to concatenate. You can enter multiple n items.</p>
-</li>
+<li><p>string_value (X): String to concatenate. You can enter multiple n items.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>String</li>
+<li><p>String</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>concat(first_name, ‘-‘, last_name) : ‘Jane-Doe’</li>
-<li>concat(‘1980’, ’02’) : ‘198002’</li>
+<li><p>concat(first_name, ‘-‘, last_name) : ‘Jane-Doe’</p></li>
+<li><p>concat(‘1980’, ’02’) : ‘198002’</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -847,42 +806,39 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Concatenates multiple input strings and returns a Separator between them.</p>
-</li>
+<li><p>Concatenates multiple input strings and returns a Separator between them.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>concat(separator, stirng_value1, string_value2)</li>
+<li><p>concat(separator, stirng_value1, string_value2)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">separator: Separator to insert between strings to be concatenated.</p>
-</li>
-<li><p class="first">string_value (X): String to concatenate. You can enter multiple n items.</p>
-</li>
+<li><p>separator: Separator to insert between strings to be concatenated.</p></li>
+<li><p>string_value (X): String to concatenate. You can enter multiple n items.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>String</li>
+<li><p>String</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>concat_ws(‘, ’, first_name, last_name) : ‘Jane, Doe’</li>
-<li>concat_ws(‘-‘, ‘010’, ‘1234’, ‘5678’) : ’010-1234-5678’</li>
+<li><p>concat_ws(‘, ’, first_name, last_name) : ‘Jane, Doe’</p></li>
+<li><p>concat_ws(‘-‘, ‘010’, ‘1234’, ‘5678’) : ’010-1234-5678’</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -891,38 +847,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns a value corresponding to the year from the entered Timestamp value.</p>
-</li>
+<li><p>Returns a value corresponding to the year from the entered Timestamp value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>year(timestamp_value)</li>
+<li><p>year(timestamp_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>timestamp_value: 연도를 추출하고자 하는 timestamp</li>
+<li><p>timestamp_value: 연도를 추출하고자 하는 timestamp</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>year(birthday)</li>
+<li><p>year(birthday)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -931,39 +886,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the value corresponding to the month in the entered Timestamp value.</p>
-</li>
+<li><p>Returns the value corresponding to the month in the entered Timestamp value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>month(timestamp_value)</li>
+<li><p>month(timestamp_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">timestamp_value: the timestamp from which you want to extract the month</p>
-</li>
+<li><p>timestamp_value: the timestamp from which you want to extract the month</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>month(birthday)</li>
+<li><p>month(birthday)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -972,39 +925,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns a value corresponding to day from an entered Timestamp value.</p>
-</li>
+<li><p>Returns a value corresponding to day from an entered Timestamp value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>day(timestamp_value)</li>
+<li><p>day(timestamp_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">timestamp_value: the timestamp from which you want to extract the day</p>
-</li>
+<li><p>timestamp_value: the timestamp from which you want to extract the day</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>day(birthday)</li>
+<li><p>day(birthday)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1013,39 +964,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns a value corresponding to a time from an entered Timestamp value.</p>
-</li>
+<li><p>Returns a value corresponding to a time from an entered Timestamp value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>hour(timestamp_value)</li>
+<li><p>hour(timestamp_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">timestamp_value: timestamp from which you want to extract time</p>
-</li>
+<li><p>timestamp_value: timestamp from which you want to extract time</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>hour(last_login)</li>
+<li><p>hour(last_login)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1054,39 +1003,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns a value corresponding to minutes from the entered Timestamp value.</p>
-</li>
+<li><p>Returns a value corresponding to minutes from the entered Timestamp value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>minute(timestamp_value)</li>
+<li><p>minute(timestamp_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">timestamp_value: the timestamp from which you want to extract minutes</p>
-</li>
+<li><p>timestamp_value: the timestamp from which you want to extract minutes</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>minute(last_login)</li>
+<li><p>minute(last_login)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1095,39 +1042,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the value corresponding to seconds from the entered Timestamp value.</p>
-</li>
+<li><p>Returns the value corresponding to seconds from the entered Timestamp value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>second(timestamp_value)</li>
+<li><p>second(timestamp_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">timestamp_value: the timestamp from which you want to extract seconds</p>
-</li>
+<li><p>timestamp_value: the timestamp from which you want to extract seconds</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>second(last_login)</li>
+<li><p>second(last_login)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1136,39 +1081,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the value corresponding to milliseconds (1/1000 second) from the entered Timestamp value.</p>
-</li>
+<li><p>Returns the value corresponding to milliseconds (1/1000 second) from the entered Timestamp value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>millisecond(timestamp_value)</li>
+<li><p>millisecond(timestamp_value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">timestamp_value: the timestamp from which you want to extract milliseconds</p>
-</li>
+<li><p>timestamp_value: the timestamp from which you want to extract milliseconds</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>millisecond(last_login)</li>
+<li><p>millisecond(last_login)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1177,47 +1120,45 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the current time based on the entered Timezone.</p>
-</li>
+<li><p>Returns the current time based on the entered Timezone.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>now()</li>
-<li>now(timezone)</li>
+<li><p>now()</p></li>
+<li><p>now(timezone)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>timzone: 현재시간을 구하고자 하는 Timezone의 fulll-name.</li>
+<li><p>timzone: 현재시간을 구하고자 하는 Timezone의 fulll-name.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>now()</li>
-<li>now(‘Asia/Seoul’)</li>
+<li><p>now()</p></li>
+<li><p>now(‘Asia/Seoul’)</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">If no Timezone value is entered, returns the time in UTC.</p>
-</li>
+<li><p>If no Timezone value is entered, returns the time in UTC.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1226,44 +1167,40 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the value added or subtracted from the input Timestamp value.</p>
-</li>
+<li><p>Returns the value added or subtracted from the input Timestamp value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>add_time(timestamp, delta, time_unit)</li>
+<li><p>add_time(timestamp, delta, time_unit)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">timestamp: the original timestamp value being targeted</p>
-</li>
-<li><p class="first">delta: the date / time value to add or subtract</p>
-</li>
-<li><p class="first">time_unit: The unit of date / time to add or subtract (in string). year, month, day, hour, minute, second, millisecond.</p>
-</li>
+<li><p>timestamp: the original timestamp value being targeted</p></li>
+<li><p>delta: the date / time value to add or subtract</p></li>
+<li><p>time_unit: The unit of date / time to add or subtract (in string). year, month, day, hour, minute, second, millisecond.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Integer</li>
+<li><p>Integer</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>add_time(end_date, 10, ‘day’)</li>
-<li>add_time(end_date, -1, ‘month’)</li>
+<li><p>add_time(end_date, 10, ‘day’)</p></li>
+<li><p>add_time(end_date, -1, ‘month’)</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1272,46 +1209,43 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Aggregation Function</li>
+<li><p>Aggregation Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the sum of the target values.</p>
-</li>
+<li><p>Returns the sum of the target values.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>sum(target_col)</li>
+<li><p>sum(target_col)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: Target column to sum</p>
-</li>
+<li><p>target_col: Target column to sum</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>sum(profit)</li>
+<li><p>sum(profit)</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available for aggregation and window rules.</p>
-</li>
+<li><p>Only available for aggregation and window rules.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1320,46 +1254,43 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Aggregation Function</li>
+<li><p>Aggregation Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the average of the target values.</p>
-</li>
+<li><p>Returns the average of the target values.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>avg(target_col)</li>
+<li><p>avg(target_col)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: Target column to average</p>
-</li>
+<li><p>target_col: Target column to average</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>avg(profit)</li>
+<li><p>avg(profit)</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available for aggregation and window rules.</p>
-</li>
+<li><p>Only available for aggregation and window rules.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1368,46 +1299,43 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Aggregation Function</li>
+<li><p>Aggregation Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the largest of the target values.</p>
-</li>
+<li><p>Returns the largest of the target values.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>max(target_col)</li>
+<li><p>max(target_col)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: Target column to get the maximum value</p>
-</li>
+<li><p>target_col: Target column to get the maximum value</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>max(profit)</li>
+<li><p>max(profit)</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available for aggregation and window rules.</p>
-</li>
+<li><p>Only available for aggregation and window rules.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1416,46 +1344,43 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Aggregation Function</li>
+<li><p>Aggregation Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the smallest of the target values.</p>
-</li>
+<li><p>Returns the smallest of the target values.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>min(target_col)</li>
+<li><p>min(target_col)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: Target column to get the minimum value</p>
-</li>
+<li><p>target_col: Target column to get the minimum value</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>min(profit)</li>
+<li><p>min(profit)</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available for aggregation and window rules.</p>
-</li>
+<li><p>Only available for aggregation and window rules.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1464,39 +1389,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Aggregation Function</li>
+<li><p>Aggregation Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the number of rows in the target.</p>
-</li>
+<li><p>Returns the number of rows in the target.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>count()</li>
+<li><p>count()</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>count()</li>
+<li><p>count()</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available for aggregation and window rules.</p>
-</li>
+<li><p>Only available for aggregation and window rules.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1505,39 +1428,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the absolute value of the entered value.</p>
-</li>
+<li><p>Returns the absolute value of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.abs(value)</li>
+<li><p>math.abs(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: A number whose absolute value you want to find.</p>
-</li>
+<li><p>value: A number whose absolute value you want to find.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.abs(-10) : 10</li>
+<li><p>math.abs(-10) : 10</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1546,39 +1467,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the arc cosine of the entered value.</p>
-</li>
+<li><p>Returns the arc cosine of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.acos(value)</li>
+<li><p>math.acos(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The cosine of which you want to find the arc cosine.</p>
-</li>
+<li><p>value: The cosine of which you want to find the arc cosine.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.acos(-1) : 3.141592653589793</li>
+<li><p>math.acos(-1) : 3.141592653589793</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1587,39 +1506,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the arc sine of the entered value.</p>
-</li>
+<li><p>Returns the arc sine of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.asin(value)</li>
+<li><p>math.asin(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The sine of which you want to find the arc sine, in the range -1 to 1.</p>
-</li>
+<li><p>value: The sine of which you want to find the arc sine, in the range -1 to 1.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.asin(-1) : -1.5707963267948966</li>
+<li><p>math.asin(-1) : -1.5707963267948966</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1628,39 +1545,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the arc sine of the entered value.</p>
-</li>
+<li><p>Returns the arc sine of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.atan(value)</li>
+<li><p>math.atan(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The sine of which you want to find the arc sine, in the range -1 to 1.</p>
-</li>
+<li><p>value: The sine of which you want to find the arc sine, in the range -1 to 1.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.asin(-1) : -1.5707963267948966</li>
+<li><p>math.asin(-1) : -1.5707963267948966</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1669,39 +1584,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the cube root of the entered value.</p>
-</li>
+<li><p>Returns the cube root of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.cbrt(value)</li>
+<li><p>math.cbrt(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The number whose cube root you want to find.</p>
-</li>
+<li><p>value: The number whose cube root you want to find.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.cbrt(5) : 1.709975946676697</li>
+<li><p>math.cbrt(5) : 1.709975946676697</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1710,39 +1623,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the value rounded up to be a multiple of day.</p>
-</li>
+<li><p>Returns the value rounded up to be a multiple of day.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.ceil(value)</li>
+<li><p>math.ceil(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The number you want to round to one&#8217;s place.</p>
-</li>
+<li><p>value: The number you want to round to one’s place.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.ceil(15.142) : 16</li>
+<li><p>math.ceil(15.142) : 16</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1751,39 +1662,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the cosine of the entered value.</p>
-</li>
+<li><p>Returns the cosine of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.cos(value)</li>
+<li><p>math.cos(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: the radian angle to get the cosine of</p>
-</li>
+<li><p>value: the radian angle to get the cosine of</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.cos(45) : 0.5253219888177297</li>
+<li><p>math.cos(45) : 0.5253219888177297</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1792,39 +1701,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the hyperbolic cosine of the entered value.</p>
-</li>
+<li><p>Returns the hyperbolic cosine of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.cosh(value)</li>
+<li><p>math.cosh(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The number whose hyperbolic cosine is to be obtained.</p>
-</li>
+<li><p>value: The number whose hyperbolic cosine is to be obtained.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.cosh(9) : COSH(9) =&gt; 4051.5420254925943</li>
+<li><p>math.cosh(9) : COSH(9) =&gt; 4051.5420254925943</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1833,39 +1740,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the natural logarithm of e raised to the power of the input value.</p>
-</li>
+<li><p>Returns the natural logarithm of e raised to the power of the input value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.exp(value)</li>
+<li><p>math.exp(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The number of times to want to log the natural logarithm e.</p>
-</li>
+<li><p>value: The number of times to want to log the natural logarithm e.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.exp(4) : 54.598150033144236</li>
+<li><p>math.exp(4) : 54.598150033144236</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1874,39 +1779,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the natural logarithm e, multiplied by the value entered, minus one.</p>
-</li>
+<li><p>Returns the natural logarithm e, multiplied by the value entered, minus one.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.expm1(value)</li>
+<li><p>math.expm1(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The number of times to want to log the natural logarithm e.</p>
-</li>
+<li><p>value: The number of times to want to log the natural logarithm e.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.expm1(4) : 53.598150033144236</li>
+<li><p>math.expm1(4) : 53.598150033144236</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1915,39 +1818,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the largest of exp values ​​that satisfy 2exp &lt;= N for the entered value N.</p>
-</li>
+<li><p>Returns the largest of exp values ​​that satisfy 2exp &lt;= N for the entered value N.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.getExponent(value)</li>
+<li><p>math.getExponent(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The number corresponding to N when looking for an exp value that satisfies 2exp &lt;= N.</p>
-</li>
+<li><p>value: The number corresponding to N when looking for an exp value that satisfies 2exp &lt;= N.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.getExponent(9) : 3</li>
+<li><p>math.getExponent(9) : 3</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1956,39 +1857,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the value rounded to the ones place.</p>
-</li>
+<li><p>Returns the value rounded to the ones place.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.round(value)</li>
+<li><p>math.round(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: the number to be rounded to</p>
-</li>
+<li><p>value: the number to be rounded to</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.round(14.2) : 14</li>
+<li><p>math.round(14.2) : 14</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -1997,46 +1896,43 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the sign of the entered value.</p>
-</li>
+<li><p>Returns the sign of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.signum(value)</li>
+<li><p>math.signum(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: the number to extract the sign of</p>
-</li>
+<li><p>value: the number to extract the sign of</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.signum(-24) : -1</li>
+<li><p>math.signum(-24) : -1</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">If the number entered is 1, it is 1, 0 is 0, and -1 if it is negative.</p>
-</li>
+<li><p>If the number entered is 1, it is 1, 0 is 0, and -1 if it is negative.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2045,39 +1941,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the sine of the entered value.</p>
-</li>
+<li><p>Returns the sine of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.sin(value)</li>
+<li><p>math.sin(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: the radian angle for which you want to find the sine</p>
-</li>
+<li><p>value: the radian angle for which you want to find the sine</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.sin(90) : 0.8939966636005579</li>
+<li><p>math.sin(90) : 0.8939966636005579</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2086,39 +1980,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the hyperbolic sine of the entered value.</p>
-</li>
+<li><p>Returns the hyperbolic sine of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.sinh(value)</li>
+<li><p>math.sinh(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: the number whose hyperbolic sine is to be obtained</p>
-</li>
+<li><p>value: the number whose hyperbolic sine is to be obtained</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.sinh(1) : 1.1752011936438014</li>
+<li><p>math.sinh(1) : 1.1752011936438014</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2127,39 +2019,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the square root of the entered value.</p>
-</li>
+<li><p>Returns the square root of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.sqrt(value)</li>
+<li><p>math.sqrt(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: the number whose square root you want to find</p>
-</li>
+<li><p>value: the number whose square root you want to find</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.sqrt(4) : 2</li>
+<li><p>math.sqrt(4) : 2</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2168,39 +2058,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the tangent of the entered value.</p>
-</li>
+<li><p>Returns the tangent of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.tan(value)</li>
+<li><p>math.tan(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: the radian angle for the tangent value</p>
-</li>
+<li><p>value: the radian angle for the tangent value</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.tan(10) : 0.6483608274590866</li>
+<li><p>math.tan(10) : 0.6483608274590866</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2209,39 +2097,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Math Function</li>
+<li><p>Math Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the hyperbolic tangent of the entered value.</p>
-</li>
+<li><p>Returns the hyperbolic tangent of the entered value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.tanh(value)</li>
+<li><p>math.tanh(value)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: The angle to get the hyperbolic tangent of.</p>
-</li>
+<li><p>value: The angle to get the hyperbolic tangent of.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>math.tanh(4) : 0.999329299739067</li>
+<li><p>math.tanh(4) : 0.999329299739067</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2250,47 +2136,44 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Calculates and returns the difference between two input Timestamp values ​​in milliseconds.</p>
-</li>
+<li><p>Calculates and returns the difference between two input Timestamp values ​​in milliseconds.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>time_diff(timestamp1, timestamp2)</li>
+<li><p>time_diff(timestamp1, timestamp2)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li>timestamp1:C = B - A 에서 A에 해당하는 시간 값.</li>
-<li><p class="first">timestamp1: C = B - A, the timestamp of B</p>
-</li>
+<li><p>timestamp1:C = B - A 에서 A에 해당하는 시간 값.</p></li>
+<li><p>timestamp1: C = B - A, the timestamp of B</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Double</li>
+<li><p>Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>time_diff(order_date, shipped_date)</li>
+<li><p>time_diff(order_date, shipped_date)</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">result value = timestamp2 - timestamp1</p>
-</li>
+<li><p>result value = timestamp2 - timestamp1</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2299,41 +2182,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp Function</li>
+<li><p>Timestamp Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Create a new Timestamp value.</p>
-</li>
+<li><p>Create a new Timestamp value.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>timestamp(value, format)</li>
+<li><p>timestamp(value, format)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">value: Date/Time value to create as timestamp value.</p>
-</li>
-<li><p class="first">format: The time format of the value value.</p>
-</li>
+<li><p>value: Date/Time value to create as timestamp value.</p></li>
+<li><p>format: The time format of the value value.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Timestamp</li>
+<li><p>Timestamp</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>timestamp(‘2011-01-01’, ‘yyyy-MM-dd’) : 2011-01-01T00:00:00.000Z</li>
+<li><p>timestamp(‘2011-01-01’, ‘yyyy-MM-dd’) : 2011-01-01T00:00:00.000Z</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2342,39 +2222,37 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Window Function</li>
+<li><p>Window Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Generates serial numbers of rows arranged in order in the partition.</p>
-</li>
+<li><p>Generates serial numbers of rows arranged in order in the partition.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>row_number()</li>
+<li><p>row_number()</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Long</li>
+<li><p>Long</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li>row_number()</li>
+<li><p>row_number()</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available with Window Rule.</p>
-</li>
+<li><p>Only available with Window Rule.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2383,51 +2261,45 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Window Function</li>
+<li><p>Window Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the sum of the values ​​of the specified number of rows before and after within the partition.</p>
-</li>
+<li><p>Returns the sum of the values ​​of the specified number of rows before and after within the partition.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>rolling_sum(target_col, before, after)</li>
+<li><p>rolling_sum(target_col, before, after)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: Target column name to sum.</p>
-</li>
-<li><p class="first">before: Number of preceding rows to sum.</p>
-</li>
-<li><p class="first">after: The number of trailing rows to sum.</p>
-</li>
+<li><p>target_col: Target column name to sum.</p></li>
+<li><p>before: Number of preceding rows to sum.</p></li>
+<li><p>after: The number of trailing rows to sum.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Long/Double</li>
+<li><p>Long/Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">rolling_sum (profit, 3, 3): Combines profits for a total of seven rows, including three rows before and after the same partition.</p>
-</li>
+<li><p>rolling_sum (profit, 3, 3): Combines profits for a total of seven rows, including three rows before and after the same partition.</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available with Window Rule.</p>
-</li>
+<li><p>Only available with Window Rule.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2436,51 +2308,45 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Window Function</li>
+<li><p>Window Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the average of the values ​​of the specified number of rows before and after in the partition.</p>
-</li>
+<li><p>Returns the average of the values ​​of the specified number of rows before and after in the partition.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>rolling_avg(target_col, before, after)</li>
+<li><p>rolling_avg(target_col, before, after)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: The target column name for which you want to average.</p>
-</li>
-<li><p class="first">before: The number of preceding rows to average.</p>
-</li>
-<li><p class="first">after: number of trailing rows to average.</p>
-</li>
+<li><p>target_col: The target column name for which you want to average.</p></li>
+<li><p>before: The number of preceding rows to average.</p></li>
+<li><p>after: number of trailing rows to average.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Long/Double</li>
+<li><p>Long/Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">rolling_avg (profit, 3, 3): average of 7 rows&#8217; profits including 3 rows before and after the same partition</p>
-</li>
+<li><p>rolling_avg (profit, 3, 3): average of 7 rows’ profits including 3 rows before and after the same partition</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available with Window Rule.</p>
-</li>
+<li><p>Only available with Window Rule.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2489,49 +2355,44 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Window Function</li>
+<li><p>Window Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the value of the row that is earlier than the specified number in the partition.</p>
-</li>
+<li><p>Returns the value of the row that is earlier than the specified number in the partition.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>lag(target_col, before)</li>
+<li><p>lag(target_col, before)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: Target column name.</p>
-</li>
-<li><p class="first">before: A number that specifies how far back to return the current row.</p>
-</li>
+<li><p>target_col: Target column name.</p></li>
+<li><p>before: A number that specifies how far back to return the current row.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Long/Double</li>
+<li><p>Long/Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">lag (profit, 2): Returns the profit value of the row above 2 lines in the same partition. If there is no value above line 2, it returns null.</p>
-</li>
+<li><p>lag (profit, 2): Returns the profit value of the row above 2 lines in the same partition. If there is no value above line 2, it returns null.</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available with Window Rule.</p>
-</li>
+<li><p>Only available with Window Rule.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2540,49 +2401,44 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Window Function</li>
+<li><p>Window Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns the value of Row after the specified number within the partition.</p>
-</li>
+<li><p>Returns the value of Row after the specified number within the partition.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>lead(target_col, after)</li>
+<li><p>lead(target_col, after)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: Target column name.</p>
-</li>
-<li><p class="first">after: A number that specifies how far behind the current row to return.</p>
-</li>
+<li><p>target_col: Target column name.</p></li>
+<li><p>after: A number that specifies how far behind the current row to return.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Long/Double</li>
+<li><p>Long/Double</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">lead (profit, 2): returns the profit value of a row below 2 lines in the same partition. If there is no value under line 2, it returns null.</p>
-</li>
+<li><p>lead (profit, 2): returns the profit value of a row below 2 lines in the same partition. If there is no value under line 2, it returns null.</p></li>
 </ul>
 </div></blockquote>
 <p>Remarks</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Only available with Window Rule.</p>
-</li>
+<li><p>Only available with Window Rule.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2591,42 +2447,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>Logical Function</li>
+<li><p>Logical Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns whether the Value of the specified column matches a specific Column Type.</p>
-</li>
+<li><p>Returns whether the Value of the specified column matches a specific Column Type.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>ismismatched(target_col, column_type)</li>
+<li><p>ismismatched(target_col, column_type)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: Column name to check type.</p>
-</li>
-<li><p class="first">column_type: Type to check for match. (Type as string) String, Boolean, Timestamp, Long, Double</p>
-</li>
+<li><p>target_col: Column name to check type.</p></li>
+<li><p>column_type: Type to check for match. (Type as string) String, Boolean, Timestamp, Long, Double</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Boolean</li>
+<li><p>Boolean</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">ismismatched (birth_date, timestamp): false if the value of the row is timestamp, true otherwise.</p>
-</li>
+<li><p>ismismatched (birth_date, timestamp): false if the value of the row is timestamp, true otherwise.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2635,42 +2487,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns whether the Value of the specified column contains a specific string.</p>
-</li>
+<li><p>Returns whether the Value of the specified column contains a specific string.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>contains(target_col, search_word)</li>
+<li><p>contains(target_col, search_word)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: The column name to search for a string.</p>
-</li>
-<li><p class="first">search_word: The string to search for in the column.</p>
-</li>
+<li><p>target_col: The column name to search for a string.</p></li>
+<li><p>search_word: The string to search for in the column.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Boolean</li>
+<li><p>Boolean</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">contains (name, &#8216;son&#8217;): True if name contains son. &#8216;Micheal Jackson&#8217;, &#8216;Son Heung Min&#8217;, etc.</p>
-</li>
+<li><p>contains (name, ‘son’): True if name contains son. ‘Micheal Jackson’, ‘Son Heung Min’, etc.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2679,42 +2527,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns whether the Value of the specified column starts with a specific string.</p>
-</li>
+<li><p>Returns whether the Value of the specified column starts with a specific string.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>startswith(target_col, search_word)</li>
+<li><p>startswith(target_col, search_word)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: The column name to search for a string.</p>
-</li>
-<li><p class="first">search_word: The string to search for in the column.</p>
-</li>
+<li><p>target_col: The column name to search for a string.</p></li>
+<li><p>search_word: The string to search for in the column.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Boolean</li>
+<li><p>Boolean</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">startswith (name, &#8216;kim&#8217;): True if name starts with &#8216;kim&#8217;. Kim Chul-soo, Kim Soo-ji, etc.</p>
-</li>
+<li><p>startswith (name, ‘kim’): True if name starts with ‘kim’. Kim Chul-soo, Kim Soo-ji, etc.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -2723,42 +2567,38 @@
 <p>Category</p>
 <blockquote>
 <div><ul class="simple">
-<li>String Function</li>
+<li><p>String Function</p></li>
 </ul>
 </div></blockquote>
 <p>Description</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Returns whether the Value of the specified column ends a specific string.</p>
-</li>
+<li><p>Returns whether the Value of the specified column ends a specific string.</p></li>
 </ul>
 </div></blockquote>
 <p>Function interface</p>
 <blockquote>
 <div><ul class="simple">
-<li>endswith(target_col, search_word)</li>
+<li><p>endswith(target_col, search_word)</p></li>
 </ul>
 </div></blockquote>
 <p>Arguments</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">target_col: The column name to search for a string.</p>
-</li>
-<li><p class="first">search_word: The string to search for in the column.</p>
-</li>
+<li><p>target_col: The column name to search for a string.</p></li>
+<li><p>search_word: The string to search for in the column.</p></li>
 </ul>
 </div></blockquote>
 <p>Return type</p>
 <blockquote>
 <div><ul class="simple">
-<li>Boolean</li>
+<li><p>Boolean</p></li>
 </ul>
 </div></blockquote>
 <p>Example</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">endswith (customer_code, &#8216;M&#8217;): True if customer_code ends with M &#8216;1340M&#8217;, &#8216;0020M&#8217;, etc.</p>
-</li>
+<li><p>endswith (customer_code, ‘M’): True if customer_code ends with M ‘1340M’, ‘0020M’, etc.</p></li>
 </ul>
 </div></blockquote>
 </div>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>워크플로우 실행 예약하기 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>워크플로우 실행 예약하기 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -46,6 +36,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="모니터링" href="../part04/index.html" />
     <link rel="prev" title="제어 흐름 노드" href="control_flow.html" /> 
 </head>
@@ -74,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -140,11 +132,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Metatron Anomaly 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">알람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알고리즘</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">대시보드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">검색</a></li>
 </ul>
 
             
@@ -198,7 +192,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/integrator/part03/scheduled_run.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/integrator/part03/scheduled_run.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -219,7 +213,7 @@
 <p>워크플로우 에디터 우측 하단의 실행 내역 표시 영역에서 <strong>Scheduled run</strong> 탭을 클릭하면, 아래와 같이 해당 워크플로우에 대해 등록된 예약 실행 리스트가 나타납니다.
 이 리스트에는 각 예약 실행 항목의 실행 현황이 표시되며, <img alt="exec" src="../../_images/icon_exec.png" /> 버튼을 누르면 해당 예약 건이 실행되고 <img alt="bin" src="../../_images/icon_bin2.png" /> 버튼을 누르면 삭제됩니다.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/schedule_list.png" src="../../_images/schedule_list.png" />
 </div>
 </div></blockquote>
@@ -228,22 +222,22 @@
 <h2>예약 실행 추가하기<a class="headerlink" href="#id3" title="제목 주소">¶</a></h2>
 <p>Scheduled run 영역에서 <strong>+ Create execution schedule</strong>을 클릭하면 다음과 같이 새 예약 실행을 생성하는 대화 상자가 열립니다. 아래 설명을 참조하여 각 필드 입력 후 <strong>생성</strong> 버튼을 클릭하십시오.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/create_schedule.png" src="../../_images/create_schedule.png" />
 </div>
 <ul class="simple">
-<li><strong>Name:</strong> 예약 실행의 이름을 입력합니다.</li>
-<li><strong>Description:</strong> 예약 실행에 대한 설명을 입력합니다.</li>
-<li><strong>Tags:</strong></li>
-<li><strong>Workflow:</strong> 예약 실행할 워크플로우를 선택합니다.</li>
-<li><strong>Period:</strong> 예약 실행될 기간의 시작과 끝을 설정합니다.</li>
-<li><strong>Frequency:</strong> 예약실행되는 기간 중 반복 주기를 설정합니다.</li>
-<li><strong>Concurrency:</strong></li>
-<li><strong>Timeout(min):</strong></li>
-<li><strong>Datasets:</strong></li>
-<li><strong>Configuration:</strong></li>
-<li><strong>Variables:</strong></li>
-<li><strong>Alert:</strong></li>
+<li><p><strong>Name:</strong> 예약 실행의 이름을 입력합니다.</p></li>
+<li><p><strong>Description:</strong> 예약 실행에 대한 설명을 입력합니다.</p></li>
+<li><p><strong>Tags:</strong></p></li>
+<li><p><strong>Workflow:</strong> 예약 실행할 워크플로우를 선택합니다.</p></li>
+<li><p><strong>Period:</strong> 예약 실행될 기간의 시작과 끝을 설정합니다.</p></li>
+<li><p><strong>Frequency:</strong> 예약실행되는 기간 중 반복 주기를 설정합니다.</p></li>
+<li><p><strong>Concurrency:</strong></p></li>
+<li><p><strong>Timeout(min):</strong></p></li>
+<li><p><strong>Datasets:</strong></p></li>
+<li><p><strong>Configuration:</strong></p></li>
+<li><p><strong>Variables:</strong></p></li>
+<li><p><strong>Alert:</strong></p></li>
 </ul>
 </div></blockquote>
 </div>

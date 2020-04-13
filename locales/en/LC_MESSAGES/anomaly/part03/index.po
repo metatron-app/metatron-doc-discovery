@@ -1,4 +1,3 @@
-﻿# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2019, metatron team
 # This file is distributed under the same license as the metatron discovery
 # docs package.
@@ -9,59 +8,284 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-29 12:55+0900\n"
+"POT-Creation-Date: 2020-04-07 00:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.8.0\n"
+
+# 2b550fa611264217903807812d66257b
+#: ../../anomaly/part03/index.rst:2
+msgid "알람 내역 열람하기"
+msgstr "Viewing alarms"
+
+# 07ee3f27bf52414f9e08c02d6b52d59b
+#: ../../anomaly/part03/index.rst:4
+msgid ""
+"**Alarm** 탭 메뉴에서는 지금까지 발생한 알람 내역을 확인할 수 있습니다. 알람의 전체적인 현황을 보여주는 "
+":ref:`Statistics` 페이지와는 다르게 이 메뉴에서는 보다 개별적인 알람들을 열람하고 탐색하는 데 최적화된 UI를 "
+"제공합니다."
+msgstr ""
+"In the ** Alarm ** tab menu, you can check the alarm history that has occurred so far. "
+"Unlike the: ref: `Statistics` page, which shows the overall status of the alarm, "
+"this menu provides an optimized UI for viewing and browsing more individual alarms."
+
+# b1ae69f69fd945e98c16d47e934556dd
+#: ../../anomaly/part03/index.rst:6
+msgid "이 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다."
+msgstr "This tab consists of the following two pages."
+
+# f97567b48f1d46ceae8a9bbf444d2782
+#: ../../anomaly/part03/index.rst:8
+msgid ":ref:`alarm_list`"
+msgstr ":ref:`alarm_list`"
+
+# 7008f5724109489ab0abd6f2844ef9cb
+#: ../../anomaly/part03/index.rst:9
+msgid ":ref:`alarm_details`"
+msgstr ":ref:`alarm_details`"
+
+# 52ead3ae1ee1450e9bcb63741c063d86
+#: ../../anomaly/part03/index.rst:14
+msgid "알람 리스트"
+msgstr "Alarm List"
+
+# 96bb114e37f94539af808e15c5f5d788
+#: ../../anomaly/part03/index.rst:16
+msgid ""
+"**Alarm** 탭으로 들어가면 현재까지 발생한 알람들을 열거하여 보여줍니다. 화면 상단에 있는 **Alarm rule** / "
+"**Timeline** 선택 박스를 이용하여, 알람 리스트를 알람 룰 기준으로 정렬할 수도 있고, 발생한 시간 기준으로 정렬할 수도"
+" 있습니다."
+msgstr ""
+"When entering the **Alarm** tab, the alarms that have occurred so far are listed and displayed."
+"Using the **Alarm rule** / **Timeline** selection box at the top of the "
+"screen, you can sort the alarm list by alarm rule or by the time that occurred."
+
+# ac4c936021cc47c082f4fd1d16d29759
+#: ../../anomaly/part03/index.rst:18
+msgid "**Alarm rule** (알람 룰 기준으로 정렬)"
+msgstr "**Alarm rule** (sort by alarm rule)"
+
+# bbeafabe8a49464384b534bcc2d6c4eb
+#: ../../anomaly/part03/index.rst:24
+msgid "**Timeline** (발생 시간 기준으로 정렬)"
+msgstr "**Timeline** (sort by occurrence time)"
+
+# 645b596b63b6465485ce64f11f1114db
+#: ../../anomaly/part03/index.rst:30
+msgid "카테고리 맨 끝에 있는 **+ Load more**\\를 클릭하면 해당 카테고리 내 더 많은 알람 항목을 보여줍니다."
+msgstr "Click **+ Load more**\\ at the end of a category to show more alarm entries in that category."
+
+# 076dce1d7fe04342a80be6baeadee8ef
+#: ../../anomaly/part03/index.rst:39
+msgid "알람 상세"
+msgstr "Alarm Details"
+
+# fab22b3db3d5403db7c11ac52f5662b7
+#: ../../anomaly/part03/index.rst:41
+msgid ""
+"알람 리스트에 열거된 항목 중 하나를 선택하면 해당 알람에 대한 상세 정보를 열람할 수 있습니다. 아래는 알람 상세 페이지의 각 "
+"영역별 설명입니다."
+msgstr "Select one of the items listed in the alarm list to view detailed information "
+"about the alarm. Below is the description of each area of the alarm detail page."
+
+# 3fec2f52271d4b8ebc5dec5ee148f36d
+#: ../../anomaly/part03/index.rst:44
+msgid "Summary"
+msgstr "Summary"
+
+# 3ab5ecb6bf604c39bb75dcf6ed3c2b45
+#: ../../anomaly/part03/index.rst:46
+msgid ""
+"이 영역에서는 해당 알람의 발생 현황을 보여줍니다. 정해진 주기에 따라 알람이 연속적으로 발생하면 1개의 알람 항목으로 계속 "
+"유지되며, 알람의 심각도(severity) 기준을 넘은 데이터 포인트 수가 함께 표기됩니다. 또한 알람을 확인한 후 처리 결과를 "
+"기록할 수 있도록 링크를 제공합니다. 내가 생성한 알람 룰이 아닌 경우 **Subscribe**을 눌러 해당 알람 받아볼 수 "
+"있습니다."
+msgstr ""
+"This area shows the occurrence status of the alarm. If an alarm occurs "
+"continuously according to a specified period, it is maintained as one alarm "
+"item, and the number of data points exceeding the severity level of the alarm "
+"is also displayed. After confirming, it provides a link to record the result "
+"of the processing. If it is not the alarm rule that I created, "
+"you can receive the alarm by pressing **Subscribe**."
+
+# f364a2fc74e94b0db3864cf9004f718b
+#: ../../anomaly/part03/index.rst:48
+msgid ""
+"아래 그림 예시에서는 알람이 2번 연속적으로 발생하였고(**Alarms**), 알람 확인 주기가 1분이기 때문에 2건의 알람이 총 "
+"120초 동안 지속된 것을 보여주고 있습니다.(**Elapsed Time**)."
+msgstr ""
+"The example below shows that the alarm occurred twice in a row (**Alarms**), "
+"and because the alarm check interval is 1 minute, two alarms lasted "
+"for a total of 120 seconds. (**Elapsed Time**). "
+
+# c49412c5f7374e02a17bfe0806530e41
+#: ../../anomaly/part03/index.rst:56
+msgid "Alarm History 영역"
+msgstr "Alarm History"
+
+# 8fc48e5656c34c1fbb0b7650ee66e12c
+#: ../../anomaly/part03/index.rst:58
+msgid "이 영역에서는 해당 알람에 적용된 알람 룰에 의해 발생한 알람의 이력을 보여줍니다."
+msgstr "This area shows the history of alarms generated by alarm rules applied to the alarm."
+
+# 6402fe39fc2f499eb98692c2e7be06af
+#: ../../anomaly/part03/index.rst:66
+msgid "Alarm Confirmation 탭"
+msgstr "Alarm Confirmation"
+
+# 58cac225ab924e8380bf135db5c1a2ba
+#: ../../anomaly/part03/index.rst:68
+msgid ""
+"우측 탭 첫번째 메뉴에서는 알람 확인 후 해당 알람 구독자 리스트를 확인하고(**Subscriber**) 알람을 확인하여 상태를 "
+"기록하고(**Alarm Confirm**) 작업자 기록을 남길 수 있는 커뮤니케이션 기능을 제공합니다."
+msgstr ""
+"The first menu on the right tab provides a communication function to check "
+"the alarm subscriber list after checking the alarm (**Subscriber**), "
+"check the alarm to record the status (**Alarm Confirm**), and leave a worker record."
+
+# bfbb15aa584647f2b4d41aa552f5f858
+#: ../../anomaly/part03/index.rst:70
+msgid "알람 확인 항목은 4가지로 구분됩니다."
+msgstr "There are four types of alarm confirmation items."
+
+# 039048a561bb4b95871069ccfd0d3620
+#: ../../anomaly/part03/index.rst:72
+msgid "**미처리** : 해당 알람에 대해 어떠한 조치도 취하지 않은 상태"
+msgstr "**Not Processed**: No action has been taken on the alarm"
+
+# 477dc965f337444491cda9866cea41db
+#: ../../anomaly/part03/index.rst:73
+msgid "**알림 중지** : 해당 알람을 사용자가 확인하여 더이상 알림(notification)을 받지 않는 상태"
+msgstr "**Stop notification**: The user acknowledges the alarm and no longer receives notification"
+
+# fa014bdea97749c498e5c5d94ad35e5a
+#: ../../anomaly/part03/index.rst:74
+msgid "**처리 완료** : 해당 알람을 확인하고 조치를 취한 상태로, 해당 알람에 관련된 tag을 기록할 수 있음"
+msgstr "**Processing completed**: After checking the alarm, the action is completed. Alarm related tags can be added"
+
+# 3f2348489e67459dbf59629d59d069e8
+#: ../../anomaly/part03/index.rst:75
+msgid "**오탐** : 이상 상태가 아닌데 발생한 알람"
+msgstr "**False Alarm**: An alarm that occurs when the condition is not abnormal"
+
+# 583845d1e7d443d788687858354b66ce
+#: ../../anomaly/part03/index.rst:82
+msgid ""
+"구독자(Subscriber)는 해당 알람에 관계된 유저를 아이디로 검색하여 추가할 수 있으며, 필요시 E-mail로 알람을 보내도록"
+" 설정할 수도 있습니다."
+msgstr ""
+"Subscribers can search and add users related to the alarm by ID, and can set "
+"the alarm to be sent by e-mail if necessary."
+
+# 27f7d11e6481480885ea1e8c86affe20
+#: ../../anomaly/part03/index.rst:92
+msgid "Alarm Rule 탭"
+msgstr "Alarm Rule"
+
+# fca91ed49da14856ac24235956ddab64
+#: ../../anomaly/part03/index.rst:94
+msgid "이 영역에서는 해당 알람의 심각도와 알람 발생 시각, 그리고 이 알람을 발생시킨 룰의 설정값 및 데이터 소스 관련 정보를 보여줍니다."
+msgstr "This area shows the severity of the alarm, the time the alarm occurred, and the settings of the rule that triggered the alarm and information related to the data source."
+
+# ae8c55d0ccc84de8843e97cdd24712e4
+#: ../../anomaly/part03/index.rst:103
+msgid "Chart View 탭"
+msgstr "Chart View"
+
+# 0e098bb4a8f64429a23499cf6f82dcd7
+#: ../../anomaly/part03/index.rst:105
+msgid ""
+"이 탭 영역에서는 해당 알람 구간 내에서 모니터링한 aggregate 데이터의 abnormal score 추이를 차트로 보여줍니다."
+" 여기서는 각 조건별 점수 한계값에 도달하여 상응하는 알람(``Critical``, ``Major``, ``Moderate``, "
+"``Low``)을 일으킨 발생 건도 보고해줍니다. 차트 산출 방식에 관해서는 :ref:`basic_principles` 항목을 "
+"참조하십시오."
+msgstr ""
+"This tab area shows the trend of abnormal scores of the aggregated data monitored within the corresponding alarm section."
+"The number of occurrences according to the alarm severity (``Critical``, ``Major``, ``Moderate``, "
+"``Low``) is also shown at the top of the chart. Please refer to: ref: `basic_principles` "
+"for how the chart is calculated."
+
+# 14106332f28a43d4ac7d35f948fd4518
+#: ../../anomaly/part03/index.rst:111
+msgid "**Total abnormal score:** 알람 룰에 포함된 모든 측정값 컬럼에 대한 abnormal score를 보여줍니다."
+msgstr "**Total abnormal score:** Shows abnormal score for all measure columns included in the alarm rule."
+
+# f18d874d055540a4a190c2e15e6e8c10
+#: ../../anomaly/part03/index.rst:112
+msgid "**Chart by measures:** 알람 룰에 포함된 각 개별 측정값 컬럼 데이터의 예측치와 실제치의 추이를 보여줍니다."
+msgstr "**Chart by measures:** Shows the trend between the predicted value and the actual value of each individual measure column data included in the alarm rule."
+
+# 5fc44d2e5de741f08473551f4d3fee3f
+#: ../../anomaly/part03/index.rst:115
+msgid "Table View 탭"
+msgstr "Table View"
+
+# a8a5f634b96749f88d02c3624bf46157
+#: ../../anomaly/part03/index.rst:117
+msgid "이 탭 영역에서는 각 알람 발생 건별로 데이터 실제치와 예측치, 그리고 abnormal score를 보여줍니다."
+msgstr "This area shows the actual and predicted data and abnormal score for each alarm occurrence."
 
 # 2a1282158b7045b2a57455ab2032c2c4
-#: ../../anomaly/part03/index.rst:4
-msgid "통계"
-msgstr "Statistics"
+#~ msgid "통계"
+#~ msgstr "Statistics"
 
 # 8e9092bff89c423bace3b570ac59b5ff
-#: ../../anomaly/part03/index.rst:6
-msgid ""
-"**Statistics** 탭 메뉴에서는 발생한 알람의 전반적인 통계를 보여줍니다. 이 페이지에서는 사용자가 지금까지 발생한 알람의"
-" 현황을 다각도로 파악할 수 있도록 중요도, 알람 발생 시기, 알람 룰 등의 다양한 기준으로 통계를 산출하여 제시합니다."
-msgstr "The **Statistics** tab menu displays general statistics regarding alarms. This page gives users a view of various statistics regarding alarms including their severity, occurrence time, and rules."
+#~ msgid ""
+#~ "**Statistics** 탭 메뉴에서는 발생한 알람의 전반적인 "
+#~ "통계를 보여줍니다. 이 페이지에서는 사용자가 지금까지 발생한"
+#~ " 알람의 현황을 다각도로 파악할 수 있도록 중요도,"
+#~ " 알람 발생 시기, 알람 룰 등의 다양한 "
+#~ "기준으로 통계를 산출하여 제시합니다."
+#~ msgstr ""
+#~ "The **Statistics** tab menu displays "
+#~ "general statistics regarding alarms. This "
+#~ "page gives users a view of various"
+#~ " statistics regarding alarms including "
+#~ "their severity, occurrence time, and "
+#~ "rules."
 
 # dcd043244aae4b6d9df977cb9d2a7b0e
-#: ../../anomaly/part03/index.rst:8
-msgid "페이지 기본 구성은 다음과 같습니다."
-msgstr "The page is comprised as follows:"
+#~ msgid "페이지 기본 구성은 다음과 같습니다."
+#~ msgstr "The page is comprised as follows:"
 
 # 56a8d0a55f284254b0829ce1a5a06a82
-#: ../../anomaly/part03/index.rst:14
-msgid "**Alarm Distribution by Severity:** 심각도별 알람 발생 비중을 보여줍니다."
-msgstr "**Alarm Distribution by Severity:** The distribution of alarms by severity is displayed."
+#~ msgid "**Alarm Distribution by Severity:** 심각도별 알람 발생 비중을 보여줍니다."
+#~ msgstr ""
+#~ "**Alarm Distribution by Severity:** The "
+#~ "distribution of alarms by severity is"
+#~ " displayed."
 
 # b5d1d0df6cc749abac139feaa1c7ed5c
-#: ../../anomaly/part03/index.rst:15
-msgid "**Alarm Count per Time:** 시간대별 알람 빈도를 보여줍니다."
-msgstr "**Alarm Count per Time:** The alarm frequency by time is displayed."
+#~ msgid "**Alarm Count per Time:** 시간대별 알람 빈도를 보여줍니다."
+#~ msgstr "**Alarm Count per Time:** The alarm frequency by time is displayed."
 
 # 0d3edc6e55fe458db9ca4a93dec00bf2
-#: ../../anomaly/part03/index.rst:16
-msgid "**Top 5 Subscribers:** 가장 많은 알람을 통보받은 사용자 5명을 보여줍니다."
-msgstr "**Top 5 Subscribers:** The top 5 subscribers who have been notified of the highest number of alarms are displayed."
+#~ msgid "**Top 5 Subscribers:** 가장 많은 알람을 통보받은 사용자 5명을 보여줍니다."
+#~ msgstr ""
+#~ "**Top 5 Subscribers:** The top 5 "
+#~ "subscribers who have been notified of"
+#~ " the highest number of alarms are "
+#~ "displayed."
 
 # b7c51f2807b94f32ada6c853c5237104
-#: ../../anomaly/part03/index.rst:17
-msgid "**Top 5 Alarm rules:** 가장 많은 알람을 일으킨 알람 룰 5개를 보여줍니다."
-msgstr "**Top 5 Alarm Rules:** The top 5 alarm rules that resulted in the highest number of alarms are displayed."
+#~ msgid "**Top 5 Alarm rules:** 가장 많은 알람을 일으킨 알람 룰 5개를 보여줍니다."
+#~ msgstr ""
+#~ "**Top 5 Alarm Rules:** The top 5"
+#~ " alarm rules that resulted in the "
+#~ "highest number of alarms are displayed."
 
 # 497a36d2e9fe4ca58a564d0251e3ed6c
-#: ../../anomaly/part03/index.rst:18
-msgid "**Latest Alarms:** 가장 최근에 발생한 알람들을 보여줍니다."
-msgstr "**Latest Alarms:** The most recent alarms are displayed."
+#~ msgid "**Latest Alarms:** 가장 최근에 발생한 알람들을 보여줍니다."
+#~ msgstr "**Latest Alarms:** The most recent alarms are displayed."
 
 # 5dc22cdcc15248d390bad58590d9204d
-#: ../../anomaly/part03/index.rst:20
-msgid "페이지 상단의 기간 설정 메뉴를 이용하면 통계를 산출하는 기준 기간을 변경할 수 있습니다."
-msgstr "The period used to generate statistics can be modified in the period menu on the top of the page."
+#~ msgid "페이지 상단의 기간 설정 메뉴를 이용하면 통계를 산출하는 기준 기간을 변경할 수 있습니다."
+#~ msgstr ""
+#~ "The period used to generate statistics"
+#~ " can be modified in the period "
+#~ "menu on the top of the page."
 

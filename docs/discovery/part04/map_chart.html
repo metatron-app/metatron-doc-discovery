@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>맵뷰와 공간 연산 &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>맵뷰와 공간 연산 &mdash; metatron discovery docs 0.4.3 문서</title>
   
 
   
@@ -20,22 +20,12 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'ko',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
         <script type="text/javascript" src="../../_static/translations.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -46,6 +36,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
     <link rel="next" title="필터" href="filters.html" />
     <link rel="prev" title="차트 스타일 속성" href="chart_style.html" /> 
 </head>
@@ -74,7 +66,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -150,11 +142,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Anomaly 확장팩 소개</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">알람 룰 만들기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">통계</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">얄람 룰 내역 열람·수정하기</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Metatron Anomaly 소개</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">통계</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">알람 내역 열람하기</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">알람 룰</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">알고리즘</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">대시보드</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">검색</a></li>
 </ul>
 
             
@@ -210,7 +204,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part04/map_chart.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part04/map_chart.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -232,20 +226,18 @@
 </div>
 </div></blockquote>
 <ul class="simple">
-<li><strong>위치 속성</strong> 의 차원값이 1개 이상 필요합니다.</li>
-<li>열/행/교차 선반이 아닌 <strong>맵 레이어 선반</strong> 에 데이터를 배치합니다.</li>
-<li><strong>레이어 별 스타일 속성</strong> 을 지정합니다.</li>
-<li><strong>공간 연산</strong> 이 가능합니다.</li>
+<li><p><strong>위치 속성</strong> 의 차원값이 1개 이상 필요합니다.</p></li>
+<li><p>열/행/교차 선반이 아닌 <strong>맵 레이어 선반</strong> 에 데이터를 배치합니다.</p></li>
+<li><p><strong>레이어 별 스타일 속성</strong> 을 지정합니다.</p></li>
+<li><p><strong>공간 연산</strong> 이 가능합니다.</p></li>
 </ul>
 <div class="section" id="id2">
 <h2>위치 속성의 차원값<a class="headerlink" href="#id2" title="제목 주소">¶</a></h2>
-<p>맵뷰를 사용하기 위해서는 <code class="docutils literal"><span class="pre">Point</span></code>, <code class="docutils literal"><span class="pre">LineString</span></code>, <code class="docutils literal"><span class="pre">Polygon</span></code> 과 같은 WKT Geometry 형식의 데이터로 이루어진 차원값(dimension) 칼럼을 레이어 선반에 올려야 합니다. 위치값의 종류는 크게 세 가지 종류가 있습니다.</p>
+<p>맵뷰를 사용하기 위해서는 <code class="docutils literal notranslate"><span class="pre">Point</span></code>, <code class="docutils literal notranslate"><span class="pre">LineString</span></code>, <code class="docutils literal notranslate"><span class="pre">Polygon</span></code> 과 같은 WKT Geometry 형식의 데이터로 이루어진 차원값(dimension) 칼럼을 레이어 선반에 올려야 합니다. 위치값의 종류는 크게 세 가지 종류가 있습니다.</p>
 <ul>
-<li><p class="first"><strong>Point:</strong> x, y로 이루어진 2D 좌표 지오메트리 타입입니다. GPS 데이터처럼 위도와 경도값이 있는 경우입니다.</p>
-</li>
-<li><p class="first"><strong>Line:</strong> 라인 좌표를 가진 지오메트리 타입입니다. WKT 형식으로 만들어진 LineString, MultiLineString 지오메트리를 지원합니다.</p>
-</li>
-<li><p class="first"><strong>Polygon</strong> : 도형 좌표를 가진 지오메트리 타입입니다. WKT 형식으로 만들어진 Polygon, MultiPolygon 지오메트리를 지원합니다.</p>
+<li><p><strong>Point:</strong> x, y로 이루어진 2D 좌표 지오메트리 타입입니다. GPS 데이터처럼 위도와 경도값이 있는 경우입니다.</p></li>
+<li><p><strong>Line:</strong> 라인 좌표를 가진 지오메트리 타입입니다. WKT 형식으로 만들어진 LineString, MultiLineString 지오메트리를 지원합니다.</p></li>
+<li><p><strong>Polygon</strong> : 도형 좌표를 가진 지오메트리 타입입니다. WKT 형식으로 만들어진 Polygon, MultiPolygon 지오메트리를 지원합니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="../../_images/map_01.jpg" src="../../_images/map_01.jpg" />
@@ -281,7 +273,7 @@
 </div></blockquote>
 <div class="section" id="id4">
 <h3>레이어 선반 추가<a class="headerlink" href="#id4" title="제목 주소">¶</a></h3>
-<p>레이어 선반 우측의 <code class="docutils literal"><span class="pre">+</span></code> 버튼을 누르면 첫번째 레이어 위에 또 하나의 레이어를 추가할 수 있습니다. 각각의 레이어는 서로 다른 데이터소스를 사용해야 하며, 하나의 레이어에 두 개 이상의 데이터소스의 칼럼을 배치할 수 없습니다. 현재 최대 2개의 레이어 선반을 지원합니다.</p>
+<p>레이어 선반 우측의 <code class="docutils literal notranslate"><span class="pre">+</span></code> 버튼을 누르면 첫번째 레이어 위에 또 하나의 레이어를 추가할 수 있습니다. 각각의 레이어는 서로 다른 데이터소스를 사용해야 하며, 하나의 레이어에 두 개 이상의 데이터소스의 칼럼을 배치할 수 없습니다. 현재 최대 2개의 레이어 선반을 지원합니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="../../_images/map_addlayer.jpg" src="../../_images/map_addlayer.jpg" />
@@ -300,9 +292,9 @@
 </div>
 </div></blockquote>
 <ul class="simple">
-<li>Open Street Map <strong>Light</strong> (기본값)</li>
-<li>Open Street Map <strong>Dark</strong></li>
-<li>Open Street Map <strong>Colored</strong></li>
+<li><p>Open Street Map <strong>Light</strong> (기본값)</p></li>
+<li><p>Open Street Map <strong>Dark</strong></p></li>
+<li><p>Open Street Map <strong>Colored</strong></p></li>
 </ul>
 </div>
 <div class="section" id="id7">
@@ -316,15 +308,15 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple">
-<li><strong>레이어 이름</strong>: 맵뷰의 범례 및 툴팁 설정시 나타나는 레이어 명칭을 설정합니다.</li>
-<li><strong>레이어 유형</strong>: 데이터 포인트를 지도에 나타내는 유형을 <code class="docutils literal"><span class="pre">포인트</span></code>/<code class="docutils literal"><span class="pre">히트맵</span></code>/<code class="docutils literal"><span class="pre">헥사곤</span></code>/<code class="docutils literal"><span class="pre">클러스터</span></code> 중 하나로 변경할 수 있습니다. 기본값은 포인트입니다.</li>
-<li><strong>포인트 유형</strong>: 레이어 유형이 <code class="docutils literal"><span class="pre">포인트</span></code> 인 경우 데이터 포인트의 모양을 변경할 수 있습니다. <code class="docutils literal"><span class="pre">원형</span></code>/<code class="docutils literal"><span class="pre">사각형</span></code>/<code class="docutils literal"><span class="pre">삼각형</span></code> 으로 표현 가능하며 기본값은 원형입니다. 클러스터 사용이 OFF 로 설정되어야 맵에 표현됩니다.</li>
-<li><strong>색상</strong>: 레이어 선반에 올린 문자 속성의 차원값이나 측정값으로 데이터 포인트의 색상을 구분하여 표현할 수 있습니다. 색상 기준이 없는 경우 팔레트에서 색상을 변경할 수 있습니다. 투명도를 %로 설정할 수 있습니다.</li>
-<li><strong>크기</strong>: 레이어 유형이 <code class="docutils literal"><span class="pre">포인트</span></code> 인 경우 레이어 선반에 올린 측정값을 기준으로 데이터 포인트의 크기를 구분하여 표현할 수 있습니다.</li>
-<li><strong>아웃라인</strong>: ON으로 설정시 각 데이터 포인트의 아웃라인을 그립니다. 기본값은 OFF이며 색상 및 굵기를 설정할 수 있습니다.</li>
-<li><strong>클러스터 범위</strong>: 레이어 유형이 <code class="docutils literal"><span class="pre">클러스터</span></code> 인 경우 클러스터링 범위를 %로 지정할 수 있습니다. 데이터 포인트가 많을수록 클러스터를 사용하는 것이 브라우저 성능에 유리합니다.</li>
-<li><strong>흐림효과</strong>: 레이어 유형이 <code class="docutils literal"><span class="pre">히트맵</span></code> 일 경우 히트맵의 흐림 효과를 조절할 수 있습니다. 기본값은 20%입니다.</li>
-<li><strong>반경값</strong>: 레이어 유형이 <code class="docutils literal"><span class="pre">히트맵</span></code> 또는 <code class="docutils literal"><span class="pre">헥사곤</span></code> 일 경우 표시 반경을 1부터 100사이의 값으로 조절할 수 있습니다.</li>
+<li><p><strong>레이어 이름</strong>: 맵뷰의 범례 및 툴팁 설정시 나타나는 레이어 명칭을 설정합니다.</p></li>
+<li><p><strong>레이어 유형</strong>: 데이터 포인트를 지도에 나타내는 유형을 <code class="docutils literal notranslate"><span class="pre">포인트</span></code>/<code class="docutils literal notranslate"><span class="pre">히트맵</span></code>/<code class="docutils literal notranslate"><span class="pre">헥사곤</span></code>/<code class="docutils literal notranslate"><span class="pre">클러스터</span></code> 중 하나로 변경할 수 있습니다. 기본값은 포인트입니다.</p></li>
+<li><p><strong>포인트 유형</strong>: 레이어 유형이 <code class="docutils literal notranslate"><span class="pre">포인트</span></code> 인 경우 데이터 포인트의 모양을 변경할 수 있습니다. <code class="docutils literal notranslate"><span class="pre">원형</span></code>/<code class="docutils literal notranslate"><span class="pre">사각형</span></code>/<code class="docutils literal notranslate"><span class="pre">삼각형</span></code> 으로 표현 가능하며 기본값은 원형입니다. 클러스터 사용이 OFF 로 설정되어야 맵에 표현됩니다.</p></li>
+<li><p><strong>색상</strong>: 레이어 선반에 올린 문자 속성의 차원값이나 측정값으로 데이터 포인트의 색상을 구분하여 표현할 수 있습니다. 색상 기준이 없는 경우 팔레트에서 색상을 변경할 수 있습니다. 투명도를 %로 설정할 수 있습니다.</p></li>
+<li><p><strong>크기</strong>: 레이어 유형이 <code class="docutils literal notranslate"><span class="pre">포인트</span></code> 인 경우 레이어 선반에 올린 측정값을 기준으로 데이터 포인트의 크기를 구분하여 표현할 수 있습니다.</p></li>
+<li><p><strong>아웃라인</strong>: ON으로 설정시 각 데이터 포인트의 아웃라인을 그립니다. 기본값은 OFF이며 색상 및 굵기를 설정할 수 있습니다.</p></li>
+<li><p><strong>클러스터 범위</strong>: 레이어 유형이 <code class="docutils literal notranslate"><span class="pre">클러스터</span></code> 인 경우 클러스터링 범위를 %로 지정할 수 있습니다. 데이터 포인트가 많을수록 클러스터를 사용하는 것이 브라우저 성능에 유리합니다.</p></li>
+<li><p><strong>흐림효과</strong>: 레이어 유형이 <code class="docutils literal notranslate"><span class="pre">히트맵</span></code> 일 경우 히트맵의 흐림 효과를 조절할 수 있습니다. 기본값은 20%입니다.</p></li>
+<li><p><strong>반경값</strong>: 레이어 유형이 <code class="docutils literal notranslate"><span class="pre">히트맵</span></code> 또는 <code class="docutils literal notranslate"><span class="pre">헥사곤</span></code> 일 경우 표시 반경을 1부터 100사이의 값으로 조절할 수 있습니다.</p></li>
 </ol>
 </div>
 <div class="section" id="line">
@@ -335,10 +327,10 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple">
-<li><strong>레이어 이름</strong>: 맵뷰의 범례 및 툴팁 설정시 나타나는 레이어 명칭을 설정합니다.</li>
-<li><strong>색상</strong>: 레이어 선반에 올린 문자 속성의 차원값이나 측정값으로 데이터 포인트의 색상을 구분하여 표현할 수 있습니다. 색상 기준이 없는 경우 팔레트에서 색상을 변경할 수 있습니다. 투명도를 %로 설정할 수 있습니다.</li>
-<li><strong>굵기</strong>: 라인의 굵기를 설정할 수 있습니다.</li>
-<li><strong>선 유형</strong>: 실선/점선/파선 중 하나를 선택합니다. 기본값은 실선입니다.</li>
+<li><p><strong>레이어 이름</strong>: 맵뷰의 범례 및 툴팁 설정시 나타나는 레이어 명칭을 설정합니다.</p></li>
+<li><p><strong>색상</strong>: 레이어 선반에 올린 문자 속성의 차원값이나 측정값으로 데이터 포인트의 색상을 구분하여 표현할 수 있습니다. 색상 기준이 없는 경우 팔레트에서 색상을 변경할 수 있습니다. 투명도를 %로 설정할 수 있습니다.</p></li>
+<li><p><strong>굵기</strong>: 라인의 굵기를 설정할 수 있습니다.</p></li>
+<li><p><strong>선 유형</strong>: 실선/점선/파선 중 하나를 선택합니다. 기본값은 실선입니다.</p></li>
 </ol>
 </div>
 <div class="section" id="polygon">
@@ -349,9 +341,9 @@
 </div>
 </div></blockquote>
 <ol class="arabic simple">
-<li><strong>레이어 이름</strong>: 맵뷰의 범례 및 툴팁 설정시 나타나는 레이어 명칭을 설정합니다.</li>
-<li><strong>색상</strong>: 레이어 선반에 올린 문자 속성의 차원값이나 측정값으로 데이터 포인트의 색상을 구분하여 표현할 수 있습니다. 색상 기준이 없는 경우 팔레트에서 색상을 변경할 수 있습니다. 투명도를 %로 설정할 수 있습니다.</li>
-<li><strong>아웃라인</strong>: ON으로 설정시 각 폴리곤의 아웃라인을 그립니다. 기본값은 OFF이며 색상 및 굵기를 설정할 수 있습니다.</li>
+<li><p><strong>레이어 이름</strong>: 맵뷰의 범례 및 툴팁 설정시 나타나는 레이어 명칭을 설정합니다.</p></li>
+<li><p><strong>색상</strong>: 레이어 선반에 올린 문자 속성의 차원값이나 측정값으로 데이터 포인트의 색상을 구분하여 표현할 수 있습니다. 색상 기준이 없는 경우 팔레트에서 색상을 변경할 수 있습니다. 투명도를 %로 설정할 수 있습니다.</p></li>
+<li><p><strong>아웃라인</strong>: ON으로 설정시 각 폴리곤의 아웃라인을 그립니다. 기본값은 OFF이며 색상 및 굵기를 설정할 수 있습니다.</p></li>
 </ol>
 </div>
 </div>
@@ -374,13 +366,13 @@
 </div>
 </div></blockquote>
 <ul class="simple">
-<li><strong>Within</strong>: 기준 레이어의 요소와 비교 레이어의 요소 사이 거리를 지정하여 거리 내에 존재하는 값을 반환합니다.</li>
-<li><strong>Intersection</strong>: 기준 레이어에서 비교 레이어와 겹치는 부분을 반환하는 방식입니다. Polygon &gt; Line &gt; Point의 순서로 더 큰 Geometry가 기준이 되는 경우, 결과 반환값이 달라질 수 있습니다.</li>
+<li><p><strong>Within</strong>: 기준 레이어의 요소와 비교 레이어의 요소 사이 거리를 지정하여 거리 내에 존재하는 값을 반환합니다.</p></li>
+<li><p><strong>Intersection</strong>: 기준 레이어에서 비교 레이어와 겹치는 부분을 반환하는 방식입니다. Polygon &gt; Line &gt; Point의 순서로 더 큰 Geometry가 기준이 되는 경우, 결과 반환값이 달라질 수 있습니다.</p></li>
 </ul>
 <p>각 연산식에서 추가적으로 설정할 수 있는 값은 아래와 같습니다.</p>
 <ul class="simple">
-<li><strong>근접 거리 입력(Buffer)</strong>: 기준 레이어와 비교 레이어 간에 비교할 거리를 숫자로 입력하도록 설정할 수 있습니다. 거리 단위를 미터 또는 킬로미터로 변경할 수 있습니다.</li>
-<li><strong>단계구분도 보기 (Choropleth map)</strong>: 연산 결과 레이어를 단계구분도 형태로 표시할 수 있습니다. 단계구분도의 색상 기준을 선택할 수 있으며 겹치는 데이터의 수(COUNT)를 기본으로 색상을 나눕니다. 만약 기준 레이어에 측정값이 있을 경우 해당 측정값을 기준으로 색상을 변경할 수 있습니다.</li>
+<li><p><strong>근접 거리 입력(Buffer)</strong>: 기준 레이어와 비교 레이어 간에 비교할 거리를 숫자로 입력하도록 설정할 수 있습니다. 거리 단위를 미터 또는 킬로미터로 변경할 수 있습니다.</p></li>
+<li><p><strong>단계구분도 보기 (Choropleth map)</strong>: 연산 결과 레이어를 단계구분도 형태로 표시할 수 있습니다. 단계구분도의 색상 기준을 선택할 수 있으며 겹치는 데이터의 수(COUNT)를 기본으로 색상을 나눕니다. 만약 기준 레이어에 측정값이 있을 경우 해당 측정값을 기준으로 색상을 변경할 수 있습니다.</p></li>
 </ul>
 </div>
 </div>

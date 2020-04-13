@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Action nodes &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Action nodes &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Control flow nodes" href="control_flow.html" />
     <link rel="prev" title="Workflow editor" href="index.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -149,11 +141,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -207,7 +201,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/integrator/part03/tasks.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/integrator/part03/tasks.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -225,18 +219,18 @@
 <p>Action nodes in Integrator define tasks involved in collecting, processing, and ingesting raw data in the Hadoop cluster. The supported Hadoop jobs and individual system tasks (Java, Shell, etc.) are as follows:</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="#sqoop">Sqoop</a></li>
-<li><a class="reference internal" href="#mr">MR</a></li>
-<li><a class="reference internal" href="#exec">EXEC</a></li>
-<li><a class="reference internal" href="#java">Java</a></li>
-<li><a class="reference internal" href="#hive-query">HIVE Query</a></li>
-<li><a class="reference internal" href="#ssh">SSH</a></li>
-<li><a class="reference internal" href="#spark">Spark</a></li>
-<li><a class="reference internal" href="#sub-workflow">Sub-Workflow</a></li>
-<li><a class="reference internal" href="#distcp">DistCp</a></li>
-<li><a class="reference internal" href="#hdfs">HDFS</a></li>
-<li><a class="reference internal" href="#done">Done</a></li>
-<li><a class="reference internal" href="#druid">Druid</a></li>
+<li><p><a class="reference internal" href="#sqoop">Sqoop</a></p></li>
+<li><p><a class="reference internal" href="#mr">MR</a></p></li>
+<li><p><a class="reference internal" href="#exec">EXEC</a></p></li>
+<li><p><a class="reference internal" href="#java">Java</a></p></li>
+<li><p><a class="reference internal" href="#hive-query">HIVE Query</a></p></li>
+<li><p><a class="reference internal" href="#ssh">SSH</a></p></li>
+<li><p><a class="reference internal" href="#spark">Spark</a></p></li>
+<li><p><a class="reference internal" href="#sub-workflow">Sub-Workflow</a></p></li>
+<li><p><a class="reference internal" href="#distcp">DistCp</a></p></li>
+<li><p><a class="reference internal" href="#hdfs">HDFS</a></p></li>
+<li><p><a class="reference internal" href="#done">Done</a></p></li>
+<li><p><a class="reference internal" href="#druid">Druid</a></p></li>
 </ul>
 </div></blockquote>
 <div class="section" id="sqoop">

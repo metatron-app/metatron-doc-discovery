@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Use a workbench &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Use a workbench &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Data Preparation" href="../part07/index.html" />
     <link rel="prev" title="Create a workbench" href="06_02-create_a_workbench.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -150,11 +142,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -208,7 +202,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part06/06_03-use_a_workbench.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part06/06_03-use_a_workbench.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -229,18 +223,12 @@
 <img alt="../../_images/workbench_basic.en.png" src="../../_images/workbench_basic.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p class="first">Basic information section (See <a class="reference internal" href="#workbench-use-1"><span class="std std-ref">Basic information section</span></a>)</p>
-</li>
-<li><p class="first">Schema and table section (See <a class="reference internal" href="#workbench-use-2"><span class="std std-ref">Schema and table section</span></a>)</p>
-</li>
-<li><p class="first">Query editor section (See <a class="reference internal" href="#workbench-use-3"><span class="std std-ref">Query editor section</span></a>)</p>
-</li>
-<li><p class="first">Query results section (See <a class="reference internal" href="#workbench-use-4"><span class="std std-ref">Query results section</span></a>)</p>
-</li>
-<li><p class="first">Extra tools section (<a class="reference internal" href="#workbench-use-5"><span class="std std-ref">Extra tools section</span></a>)</p>
-</li>
-<li><p class="first">Schema browser (<a class="reference internal" href="#workbench-use-6"><span class="std std-ref">Schema browser</span></a>)</p>
-</li>
+<li><p>Basic information section (See <a class="reference internal" href="#workbench-use-1"><span class="std std-ref">Basic information section</span></a>)</p></li>
+<li><p>Schema and table section (See <a class="reference internal" href="#workbench-use-2"><span class="std std-ref">Schema and table section</span></a>)</p></li>
+<li><p>Query editor section (See <a class="reference internal" href="#workbench-use-3"><span class="std std-ref">Query editor section</span></a>)</p></li>
+<li><p>Query results section (See <a class="reference internal" href="#workbench-use-4"><span class="std std-ref">Query results section</span></a>)</p></li>
+<li><p>Extra tools section (<a class="reference internal" href="#workbench-use-5"><span class="std std-ref">Extra tools section</span></a>)</p></li>
+<li><p>Schema browser (<a class="reference internal" href="#workbench-use-6"><span class="std std-ref">Schema browser</span></a>)</p></li>
 </ol>
 </div></blockquote>
 <div class="section" id="workbench-use-1">
@@ -251,12 +239,9 @@
 <img alt="../../_images/workbench_lnb_header.en.png" src="../../_images/workbench_lnb_header.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p class="first"><strong>Name:</strong> Name of the workbench. Click on it to change the workbench’s name.</p>
-</li>
-<li><p class="first"><strong>Data connection:</strong> Name of the data connection used by the workbench. Click the <img alt="icon_exclamation" src="../../_images/icon_exclamation.png" /> icon to view its details.</p>
-</li>
-<li><p class="first"><img alt="icon_folding" src="../../_images/icon_folding.png" /> : UI button to collapse or expand the panel.</p>
-</li>
+<li><p><strong>Name:</strong> Name of the workbench. Click on it to change the workbench’s name.</p></li>
+<li><p><strong>Data connection:</strong> Name of the data connection used by the workbench. Click the <img alt="icon_exclamation" src="../../_images/icon_exclamation.png" /> icon to view its details.</p></li>
+<li><p><img alt="icon_folding" src="../../_images/icon_folding.png" /> : UI button to collapse or expand the panel.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -268,16 +253,11 @@
 <img alt="../../_images/workbench_lnb.en.png" src="../../_images/workbench_lnb.en.png" />
 </div>
 <ol class="arabic simple">
-<li><p class="first"><strong>Database name:</strong> Displays the name of the selected database. By default, the first database of the data connection used by the workbench is selected. Click on it to list all databases included in the data connection. Select a database in the list to replace the currently selected database.</p>
-</li>
-<li><p class="first"><strong>Schema browser:</strong> A popup browser displaying the table list of the selected database, and information of all the columns and records in each table.</p>
-</li>
-<li><p class="first"><strong>Search table:</strong> Searches the list of the tables registered in the selected database by the name you type in.</p>
-</li>
-<li><p class="first"><strong>Table name:</strong> Select a table to automatically insert it in the query editor along with a <code class="docutils literal"><span class="pre">SELECT</span> <span class="pre">\*</span> <span class="pre">FROM</span> <span class="pre">{table</span> <span class="pre">name}</span></code> query.</p>
-</li>
-<li><p class="first"><strong>Column list:</strong> Displays all columns belonging to the table and their respective data types. Click a column name to automatically insert it in the query editor.</p>
-</li>
+<li><p><strong>Database name:</strong> Displays the name of the selected database. By default, the first database of the data connection used by the workbench is selected. Click on it to list all databases included in the data connection. Select a database in the list to replace the currently selected database.</p></li>
+<li><p><strong>Schema browser:</strong> A popup browser displaying the table list of the selected database, and information of all the columns and records in each table.</p></li>
+<li><p><strong>Search table:</strong> Searches the list of the tables registered in the selected database by the name you type in.</p></li>
+<li><p><strong>Table name:</strong> Select a table to automatically insert it in the query editor along with a <code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">\*</span> <span class="pre">FROM</span> <span class="pre">{table</span> <span class="pre">name}</span></code> query.</p></li>
+<li><p><strong>Column list:</strong> Displays all columns belonging to the table and their respective data types. Click a column name to automatically insert it in the query editor.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -289,30 +269,18 @@
 <img alt="../../_images/workbench_query_editor.png" src="../../_images/workbench_query_editor.png" />
 </div>
 <ol class="arabic simple">
-<li><p class="first"><img alt="icon_arrow" src="../../_images/icon_arrow.png" /> : Navigates to tabs of previous or subsequent queries when there are too many tabs. If tabs are not many, this button will not appear.</p>
-</li>
-<li><p class="first"><strong>Tab:</strong> You can run or store queries in separate tabs for more efficient management of them. Click the <img alt="icon_more" src="../../_images/icon_more3.png" /> button to edit the tab title or delete the tab.</p>
-</li>
-<li><p class="first"><img alt="icon_plus" src="../../_images/icon_plus1.png" /> : Click this button to add a new tab.</p>
-</li>
-<li><p class="first"><img alt="icon_full" src="../../_images/icon_full.png" /> : Click this button to minimize the query editor or maximize it to full screen.</p>
-</li>
-<li><p class="first"><strong>Query lines:</strong> Displays the numbering of the query code lines.</p>
-</li>
-<li><p class="first"><strong>Editor area:</strong> Write query statements in this area. You can run either single or multiple queries. Insert <code class="docutils literal"><span class="pre">;</span></code> at the end of each query statement to run them separately. Autocomplete is supported.</p>
-</li>
-<li><p class="first"><strong>Execute full:</strong> Execute all queries in the editor. (Shortcut: Ctrl + Enter)</p>
-</li>
-<li><p class="first"><strong>Execute partial:</strong> Executes only the query statement where the cursor is located, or execute queries selected by dragging the mouse. (Shortcut: Command + Enter)</p>
-</li>
-<li><p class="first"><strong>CLEAR SQL:</strong> Clears all query statements.</p>
-</li>
-<li><p class="first"><strong>SQL BEAUTIFIER:</strong> Re-words query statements using standard query syntax.</p>
-</li>
-<li><p class="first"><strong>Query History:</strong> Lists past queries executed in the query editor. If you select a query in the list, it will inserted in the query editor.</p>
-</li>
-<li><p class="first"><strong>Query Editor Shortcuts:</strong> Shows a list of shortcuts available in the query editor.</p>
-</li>
+<li><p><img alt="icon_arrow" src="../../_images/icon_arrow.png" /> : Navigates to tabs of previous or subsequent queries when there are too many tabs. If tabs are not many, this button will not appear.</p></li>
+<li><p><strong>Tab:</strong> You can run or store queries in separate tabs for more efficient management of them. Click the <img alt="icon_more" src="../../_images/icon_more3.png" /> button to edit the tab title or delete the tab.</p></li>
+<li><p><img alt="icon_plus" src="../../_images/icon_plus1.png" /> : Click this button to add a new tab.</p></li>
+<li><p><img alt="icon_full" src="../../_images/icon_full1.png" /> : Click this button to minimize the query editor or maximize it to full screen.</p></li>
+<li><p><strong>Query lines:</strong> Displays the numbering of the query code lines.</p></li>
+<li><p><strong>Editor area:</strong> Write query statements in this area. You can run either single or multiple queries. Insert <code class="docutils literal notranslate"><span class="pre">;</span></code> at the end of each query statement to run them separately. Autocomplete is supported.</p></li>
+<li><p><strong>Execute full:</strong> Execute all queries in the editor. (Shortcut: Ctrl + Enter)</p></li>
+<li><p><strong>Execute partial:</strong> Executes only the query statement where the cursor is located, or execute queries selected by dragging the mouse. (Shortcut: Command + Enter)</p></li>
+<li><p><strong>CLEAR SQL:</strong> Clears all query statements.</p></li>
+<li><p><strong>SQL BEAUTIFIER:</strong> Re-words query statements using standard query syntax.</p></li>
+<li><p><strong>Query History:</strong> Lists past queries executed in the query editor. If you select a query in the list, it will inserted in the query editor.</p></li>
+<li><p><strong>Query Editor Shortcuts:</strong> Shows a list of shortcuts available in the query editor.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -326,43 +294,33 @@
 <img alt="../../_images/workbench_query_result_ing.png" src="../../_images/workbench_query_result_ing.png" />
 </div>
 <ol class="arabic">
-<li><p class="first"><strong>Query result tabs:</strong> When multiple queries are executed, a different tab is created for each query to show its result. While a query’s execution is in progress, “Loading” is displayed in its tab title.</p>
-</li>
-<li><p class="first"><strong>Query log:</strong> Shows an execution log for the query. In the case of a Hive connection, a Hive job log is additionally displayed.</p>
-</li>
-<li><p class="first"><strong>Cancel:</strong> Cancels the execution of the query. The time taken for cancelation may vary with the DB type.</p>
-</li>
-<li><p class="first"><strong>Query execution phase:</strong> Shows the current phase of query execution. There are a total of five query execution phases.</p>
+<li><p><strong>Query result tabs:</strong> When multiple queries are executed, a different tab is created for each query to show its result. While a query’s execution is in progress, “Loading” is displayed in its tab title.</p></li>
+<li><p><strong>Query log:</strong> Shows an execution log for the query. In the case of a Hive connection, a Hive job log is additionally displayed.</p></li>
+<li><p><strong>Cancel:</strong> Cancels the execution of the query. The time taken for cancelation may vary with the DB type.</p></li>
+<li><p><strong>Query execution phase:</strong> Shows the current phase of query execution. There are a total of five query execution phases.</p>
 <blockquote>
 <div><ul class="simple">
-<li>Getting connection</li>
-<li>Creating statement</li>
-<li>Executing query</li>
-<li>Getting result set</li>
-<li>Done!</li>
+<li><p>Getting connection</p></li>
+<li><p>Creating statement</p></li>
+<li><p>Executing query</p></li>
+<li><p>Getting result set</p></li>
+<li><p>Done!</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>No. of the current query:</strong> Shows the number of the currently executed query when multiple queries are executed.</p>
-</li>
-<li><p class="first"><strong>Output/Result tabs:</strong> By clicking either tab, you can switch to the query log/result view.</p>
-</li>
-<li><p class="first"><strong>Query status:</strong> Shows the query’s status from among:</p>
+<li><p><strong>No. of the current query:</strong> Shows the number of the currently executed query when multiple queries are executed.</p></li>
+<li><p><strong>Output/Result tabs:</strong> By clicking either tab, you can switch to the query log/result view.</p></li>
+<li><p><strong>Query status:</strong> Shows the query’s status from among:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Running query</p>
-</li>
-<li><p class="first">Query execution failed..</p>
-</li>
-<li><p class="first">Query execution canceled..</p>
-</li>
+<li><p>Running query</p></li>
+<li><p>Query execution failed..</p></li>
+<li><p>Query execution canceled..</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>Query start time:</strong> Displays when the query execution started.</p>
-</li>
-<li><p class="first"><strong>Query running time:</strong> Displays how long it took to execute the query.</p>
-</li>
+<li><p><strong>Query start time:</strong> Displays when the query execution started.</p></li>
+<li><p><strong>Query running time:</strong> Displays how long it took to execute the query.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -373,30 +331,18 @@
 <img alt="../../_images/workbench_query_result_complete.png" src="../../_images/workbench_query_result_complete.png" />
 </div>
 <ol class="arabic simple">
-<li><p class="first"><strong>Query result tabs:</strong> When multiple queries are executed, a different tab is created for each query to show its result. While a query’s execution is in progress, “Loading” is displayed in its tab title.</p>
-</li>
-<li><p class="first"><strong>Data details:</strong> Shows a data table resulting from executing the query. You can copy this data output to the clipboard.</p>
-</li>
-<li><p class="first"><strong>Output/Result tabs:</strong> By clicking either tab, you can switch to the query log/result view.</p>
-</li>
-<li><p class="first"><strong>Search for column data:</strong> Searches for a column or value in the resulting table.</p>
-</li>
-<li><p class="first"><strong>Chart preview:</strong> Draws a virtual chart of the query results. This chart is only for visualization; it is not stored in the workspace. (See <a class="reference internal" href="../part04/manage_charts.html"><span class="doc">Chart</span></a> for how to handle it)</p>
-</li>
-<li><p class="first"><strong>Save as Data source:</strong> Stores the query results into a data source in the workspace. A dialog box will pop up to create a data source, and the resulting table is used instead of selecting a data connection and a table. Therefore, you will be immediately prompted to set the schema definition and ingestion cycle. (See <a class="reference internal" href="../part02/create_a_data_source.html"><span class="doc">Create a data source</span></a> for how to handle it)</p>
-</li>
-<li><p class="first"><strong>Export CSV file:</strong> Downloads the resulting table into a local file (CSV).</p>
-</li>
-<li><p class="first"><strong>Data page navigation:</strong> If the resulting data includes more than 1,000 rows, you can navigate the data pages using the Prev and Next buttons.</p>
-</li>
-<li><p class="first"><strong>Query start time:</strong> Displays when the query execution started.</p>
-</li>
-<li><p class="first"><strong>Query finish time:</strong> Displays when the query execution finished.</p>
-</li>
-<li><p class="first"><strong>Query running time:</strong> Displays how long it took to execute the query.</p>
-</li>
-<li><p class="first"><strong>Query data rows:</strong> Shows the number of rows of the resulting data and the current page number.</p>
-</li>
+<li><p><strong>Query result tabs:</strong> When multiple queries are executed, a different tab is created for each query to show its result. While a query’s execution is in progress, “Loading” is displayed in its tab title.</p></li>
+<li><p><strong>Data details:</strong> Shows a data table resulting from executing the query. You can copy this data output to the clipboard.</p></li>
+<li><p><strong>Output/Result tabs:</strong> By clicking either tab, you can switch to the query log/result view.</p></li>
+<li><p><strong>Search for column data:</strong> Searches for a column or value in the resulting table.</p></li>
+<li><p><strong>Chart preview:</strong> Draws a virtual chart of the query results. This chart is only for visualization; it is not stored in the workspace. (See <a class="reference internal" href="../part04/manage_charts.html"><span class="doc">Chart</span></a> for how to handle it)</p></li>
+<li><p><strong>Save as Data source:</strong> Stores the query results into a data source in the workspace. A dialog box will pop up to create a data source, and the resulting table is used instead of selecting a data connection and a table. Therefore, you will be immediately prompted to set the schema definition and ingestion cycle. (See <a class="reference internal" href="../part02/create_a_data_source.html"><span class="doc">Create a data source</span></a> for how to handle it)</p></li>
+<li><p><strong>Export CSV file:</strong> Downloads the resulting table into a local file (CSV).</p></li>
+<li><p><strong>Data page navigation:</strong> If the resulting data includes more than 1,000 rows, you can navigate the data pages using the Prev and Next buttons.</p></li>
+<li><p><strong>Query start time:</strong> Displays when the query execution started.</p></li>
+<li><p><strong>Query finish time:</strong> Displays when the query execution finished.</p></li>
+<li><p><strong>Query running time:</strong> Displays how long it took to execute the query.</p></li>
+<li><p><strong>Query data rows:</strong> Shows the number of rows of the resulting data and the current page number.</p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -406,10 +352,8 @@
 <p>The extra tools section provides useful tools for the workbench.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">Setting up global variables for repeatedly used statements (See <a class="reference internal" href="#global-variable"><span class="std std-ref">Setting up global variables</span></a>)</p>
-</li>
-<li><p class="first">Navigation to move to another workbench (See <a class="reference internal" href="#workbench-navigation"><span class="std std-ref">Workbench Navigation</span></a>)</p>
-</li>
+<li><p>Setting up global variables for repeatedly used statements (See <a class="reference internal" href="#global-variable"><span class="std std-ref">Setting up global variables</span></a>)</p></li>
+<li><p>Navigation to move to another workbench (See <a class="reference internal" href="#workbench-navigation"><span class="std std-ref">Workbench Navigation</span></a>)</p></li>
 </ul>
 </div></blockquote>
 <div class="section" id="global-variable">
@@ -417,17 +361,13 @@
 <p>If a certain type of statement is repeatedly used with a different value for each query run, set the variable element as a “global variable” for convenient use.</p>
 <blockquote>
 <div><div class="figure align-center">
-<a class="reference internal image-reference" href="../../_images/workbench_global_variable.en.png"><img alt="../../_images/workbench_global_variable.en.png" src="../../_images/workbench_global_variable.en.png" style="width: 255.5px; height: 141.4px;" /></a>
+<a class="reference internal image-reference" href="../../_images/workbench_global_variable.en.png"><img alt="../../_images/workbench_global_variable.en.png" src="../../_images/workbench_global_variable.en.png" style="width: 255.49999999999997px; height: 141.39999999999998px;" /></a>
 </div>
 <ul class="simple">
-<li><p class="first"><strong>Variable type:</strong> You can select either a calendar or text type.</p>
-</li>
-<li><p class="first"><strong>Add new variable:</strong> Select the variable type you want and click “Add new variable.” A new global variable will be added in the query editor.</p>
-</li>
-<li><p class="first"><strong>Name:</strong> Enter a name for the variable.</p>
-</li>
-<li><p class="first"><strong>Variable value:</strong> For a calendar variable, select a date; for a text variable, select a text value.</p>
-</li>
+<li><p><strong>Variable type:</strong> You can select either a calendar or text type.</p></li>
+<li><p><strong>Add new variable:</strong> Select the variable type you want and click “Add new variable.” A new global variable will be added in the query editor.</p></li>
+<li><p><strong>Name:</strong> Enter a name for the variable.</p></li>
+<li><p><strong>Variable value:</strong> For a calendar variable, select a date; for a text variable, select a text value.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -439,10 +379,8 @@
 <img alt="../../_images/workbench_navigation.en.png" src="../../_images/workbench_navigation.en.png" />
 </div>
 <ul class="simple">
-<li><p class="first"><strong>Search for workbench:</strong> Search for a workbench stored in the workspace.</p>
-</li>
-<li><p class="first"><strong>Workbench list:</strong> Displays all workbenches stored in the workspace. Click a workbench in the list to move to that workbench.</p>
-</li>
+<li><p><strong>Search for workbench:</strong> Search for a workbench stored in the workspace.</p></li>
+<li><p><strong>Workbench list:</strong> Displays all workbenches stored in the workspace. Click a workbench in the list to move to that workbench.</p></li>
 </ul>
 </div></blockquote>
 </div>
@@ -451,16 +389,13 @@
 <span id="id11"></span><h2>Schema browser<a class="headerlink" href="#workbench-use-6" title="Permalink to this headline">¶</a></h2>
 <p>Displays the table list of the selected database, and information of the columns and records in each table.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/workbench_schema_browser.en.png" src="../../_images/workbench_schema_browser.en.png" />
 </div>
 <ul class="simple">
-<li><p class="first"><strong>Column:</strong> Shows the names and data types of all columns of the selected table.</p>
-</li>
-<li><p class="first"><strong>Information:</strong> Displays attributes of the selected table.</p>
-</li>
-<li><p class="first"><strong>Data:</strong> Displays data of the selected table. A maximum of 50 rows can be viewed.</p>
-</li>
+<li><p><strong>Column:</strong> Shows the names and data types of all columns of the selected table.</p></li>
+<li><p><strong>Information:</strong> Displays attributes of the selected table.</p></li>
+<li><p><strong>Data:</strong> Displays data of the selected table. A maximum of 50 rows can be viewed.</p></li>
 </ul>
 </div></blockquote>
 </div>

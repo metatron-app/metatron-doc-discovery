@@ -8,177 +8,328 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-10 22:50+0900\n"
+"POT-Creation-Date: 2020-04-13 11:14+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.8.0\n"
 
-# 00c284f10c5e43eca8d36a9dc8a00c90
+# 08c23e7881c342498a8109f70a81f9ff
 #: ../../anomaly/part05/index.rst:2
-msgid "알람 내역 열람하기"
-msgstr "View alarm details"
+msgid "알고리즘"
+msgstr "Algorithm"
 
-# cf107fc072094c0b997c6359d2bac87a
-#: ../../anomaly/part05/index.rst:4
-msgid ""
-"**Alarm** 탭 메뉴에서는 지금까지 발생한 알람 내역을 확인할 수 있습니다. 알람의 전체적인 현황을 보여주는 "
-":ref:`Statistics` 페이지와는 다르게 이 메뉴에서는 보다 개별적인 알람들을 열람하고 탐색하는 데 최적화된 UI를 "
-"제공합니다."
-msgstr ""
-"The alarm history can be viewed in the **Alarm** tab menu. Unlike the "
-":ref:`Statistics` page, which gives an overview of alarm-related "
-"statistics, this menu is optimized for viewing and exploring individual "
-"alarms."
-
-# 7eae5d08794e4117935ba3848627cf41
+# 62edfefec30a4a318d1e435d9db507b9
 #: ../../anomaly/part05/index.rst:6
-msgid "이 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다."
-msgstr "This menu consists of the following two pages:"
+msgid ""
+"Metatron Anomaly는 머신러닝 알고리즘을 활용하여 시계열 데이터의 비정상 수치에 대해 알람을 발생시킵니다. 이러한 이상치"
+" 탐지 알고리즘은 학습 시 비정상 sample을 활용하는지 여부에 따라 두 가지로 나누어 집니다."
+msgstr ""
+
+# f37e1b742d6a44ffb2bf4521ef6f3470
+#: ../../anomaly/part05/index.rst:8
+msgid ""
+"**Supervised Anomaly Detection**\\: 정상/비정상 여부가 존재하는 학습 데이터 셋을 사용해서 이상치를 "
+"검출하는 지도학습 알고리즘. 정확도가 높으나 비정상 sample 취득에 시간과 비용 소모."
+msgstr ""
+
+# 49a73f5409d543a798a7165fa4c8aa1f
+#: ../../anomaly/part05/index.rst:9
+msgid ""
+"**Unsupervised Anomaly Detection**\\: 대부분의 데이터가 정상 sample이라는 가정으로, 데이터 셋에"
+" 비정상 여부가 존재하지 않더라도 이상치를 검출할 수 있는 비지도학습 알고리즘."
+msgstr ""
+
+# 0471165c9df14bb1b49515ba37bf5ec8
+#: ../../anomaly/part05/index.rst:11
+msgid ""
+"Metatron Anomaly는 일반적인 정상/비정상 데이터 label이 없는 모든 시계열 데이터에서도 이상 탐지가 가능하도록 "
+"Unsupervised 알고리즘 학습을 기본으로 제공합니다."
+msgstr ""
+
+# 6d12eeb822c04064a4233ed0eca83ee1
+#: ../../anomaly/part05/index.rst:13
+msgid ""
+"Metatron Anomaly에서는 이러한 알고리즘들을 관리하고 신규 알고리즘을 추가할 수 있는 **알고리즘 매니저** 기능을 "
+"제공합니다. 이는 다음의 세 페이지로 이루어집니다."
+msgstr ""
 
 # 89adab61f1644949be7b055e5c1570c4
-#: ../../anomaly/part05/index.rst:8
-msgid ":ref:`alarm_list`"
+#: ../../anomaly/part05/index.rst:15
+#, fuzzy
+msgid ":ref:`algorithm_list`"
 msgstr ":ref:`alarm_list`"
 
+# febcf060633d4fb78e133dc9071b63e0
+#: ../../anomaly/part05/index.rst:16
+msgid ":ref:`create_new_algorithm`"
+msgstr ""
+
 # 9f8fed78a8134d078a36bf7f3ffcb737
-#: ../../anomaly/part05/index.rst:9
-msgid ":ref:`alarm_details`"
+#: ../../anomaly/part05/index.rst:17
+#, fuzzy
+msgid ":ref:`algorithm_details`"
 msgstr ":ref:`alarm_details`"
 
 # 40c96677d02d47448634592f7b80ed06
-#: ../../anomaly/part05/index.rst:14
-msgid "알람 리스트"
-msgstr "Alarm list"
+#: ../../anomaly/part05/index.rst:22
+msgid "알고리즘 리스트"
+msgstr "Algorithm List"
 
-# 0f346c60393748de9b84f2d4a2d2511c
-#: ../../anomaly/part05/index.rst:16
-msgid ""
-"**Alarm** 탭으로 들어가면 현재까지 발생한 알람들을 열거하여 보여줍니다. 화면 상단에 있는 **Alarm rule** / "
-"**Timeline** 선택 박스를 이용하여, 알람 리스트를 알람 룰 기준으로 정렬할 수도 있고, 발생한 시간 기준으로 정렬할 수도"
-" 있습니다."
-msgstr ""
-"The **Alarm** tab displays the alarms triggered to date. Using the "
-"**Alarm rule** / **Timeline** toggle box on the top of the page, the "
-"alarms can be sorted by alarm rule or time triggered."
-
-# 029c3e08eec347b8a56bebfc50c8f74d
-#: ../../anomaly/part05/index.rst:18
-msgid "**Alarm rule** (알람 룰 기준으로 정렬)"
-msgstr "**Alarm rule** (sorted by alarm rule)"
-
-# 26878b00d423448e8ff4af3719f2f949
+# 9efe01fdef234ff0b53147093b2acc22
 #: ../../anomaly/part05/index.rst:24
-msgid "**Timeline** (발생 시간 기준으로 정렬)"
-msgstr "**Timeline** (sorted by time triggered)"
-
-# e4101921fc0a47f6a016b0118d61f30c
-#: ../../anomaly/part05/index.rst:30
-msgid "카테고리 맨 끝에 있는 **+ Load more**\\를 클릭하면 해당 카테고리 내 더 많은 알람 항목을 보여줍니다."
+msgid ""
+"Anomaly Detection 하위 메뉴 중 **Algorithm** 탭으로 들어가면 시스템 내에 구현된 알고리즘들이 리스트에 "
+"등록되어 있습니다."
 msgstr ""
-"Click **+ Load more** at the end of the category to view more alarm items"
-" in the same category."
+
+# 4bb9448d9fc44097bad4b8f10dbaa4ae
+#: ../../anomaly/part05/index.rst:31
+msgid "기본적으로 Metatron Anomaly는 아래의 7가지 통계 알고리즘들이 시스템에 구현되어 있습니다."
+msgstr ""
+
+# bc99130fd610458186e93f1367e9fbfe
+#: ../../anomaly/part05/index.rst:33
+msgid "Seasonal Median Model"
+msgstr ""
+
+# cd6a87e09b4b4d37b876fab1306f1616
+#: ../../anomaly/part05/index.rst:34
+msgid "Statistical Mean Model"
+msgstr ""
+
+# 5133ab90ef12490d9ebba61579d8bad4
+#: ../../anomaly/part05/index.rst:35
+msgid "Regression Forecast Model"
+msgstr ""
+
+# a83df643450e4b3d9c75a7fb7e0399a2
+#: ../../anomaly/part05/index.rst:36
+msgid "Naive Forecast Model"
+msgstr ""
+
+# 1f56f04710f94313b4aa6ff6aefc9be1
+#: ../../anomaly/part05/index.rst:37
+msgid "Simple Exponential Smoothing Forecast Model"
+msgstr ""
+
+# 5b01d9da7fe348ca841857a7e2294a1a
+#: ../../anomaly/part05/index.rst:38
+msgid "Triple Exponential Smoothing Forecast Model"
+msgstr ""
+
+# f020514b651a438d904808bf3eba3760
+#: ../../anomaly/part05/index.rst:39
+msgid "Long Triple Exponential Smoothing Forecast Model"
+msgstr ""
+
+# cc4d17cf8ac040a9aa8ae6fa8f7ae8dc
+#: ../../anomaly/part05/index.rst:44
+msgid "신규 알고리즘 생성"
+msgstr "Creating Own Algorithm"
+
+# 12f5be9a384d410c9b50e7de2cac9149
+#: ../../anomaly/part05/index.rst:46
+msgid "알고리즘 페이지 우측 상단의 **+ Algorithm** 버튼을 클릭하면 알고리즘 생성 작업을 시작합니다."
+msgstr ""
+
+# ed95fc0151d040978b9e043341e1f6ca
+#: ../../anomaly/part05/index.rst:52
+msgid ""
+"신규로 생성할 알고리즘의 이름, 설명을 입력합니다. 기본적으로 연동되는 작업 환경은 Jupyter Notebook이며,  "
+"Python 언어를 사용하실 수 있습니다."
+msgstr ""
 
 # acf6a85f176148d5bab695a0cf7da7ad
-#: ../../anomaly/part05/index.rst:39
-msgid "알람 상세"
-msgstr "Alarm details"
+#: ../../anomaly/part05/index.rst:61
+msgid "알고리즘 상세"
+msgstr "Algorithm Details"
+
+# 8b3d73e3ccc04b0a94f7db99afc2865c
+#: ../../anomaly/part05/index.rst:63
+msgid ""
+"신규 알고리즘을 생성하면 상세 페이지로 이동됩니다. **구분**\\에는 사용자가 직접 생성한 알고리즘이면 **확장**\\, 시스템에"
+" 기본 구현된 알고리즘이면 **기본**\\으로 구분됩니다."
+msgstr ""
+
+# 802af167797941fd9777829086ab0b7c
+#: ../../anomaly/part05/index.rst:65
+msgid ""
+"**Notebook** 옆의 |icon_link|\\를 누르면 신규 알고리즘을 구현할 수 있는 Jupyter Notebook "
+"환경으로 이동합니다. 기본 템플릿으로 linear regression 알고리즘이 구현되어 있으며, 사용자가 적절히 변형하여 신규 "
+"알고리즘을 구현할 수 있습니다."
+msgstr ""
+
+# 1af9b60439cc4e659a81b4fea77b7e00
+#: ../../anomaly/part05/index.rst:67
+msgid ""
+"구현된 알고리즘을 테스트하여 시스템에 적합한지 확인하여야 합니다. **Status**\\는 하단의 test 버튼을 눌렀을 때의 "
+"결과가 나타납니다. 버튼을 누르면 구현된 알고리즘이 시스템에 적합한지 내부적으로 테스트를 진행합니다. 결과값은 한번도 테스트한 적이"
+" 없으면 **N/A**\\, 실패하면 **Fail**\\, 성공하면 **Available**\\로 기록됩니다."
+msgstr ""
+
+# 00c284f10c5e43eca8d36a9dc8a00c90
+#~ msgid "알람 내역 열람하기"
+#~ msgstr "View alarm details"
+
+# cf107fc072094c0b997c6359d2bac87a
+#~ msgid ""
+#~ "**Alarm** 탭 메뉴에서는 지금까지 발생한 알람 내역을"
+#~ " 확인할 수 있습니다. 알람의 전체적인 현황을 보여주는"
+#~ " :ref:`Statistics` 페이지와는 다르게 이 메뉴에서는 "
+#~ "보다 개별적인 알람들을 열람하고 탐색하는 데 최적화된 "
+#~ "UI를 제공합니다."
+#~ msgstr ""
+#~ "The alarm history can be viewed in"
+#~ " the **Alarm** tab menu. Unlike the"
+#~ " :ref:`Statistics` page, which gives an "
+#~ "overview of alarm-related statistics, "
+#~ "this menu is optimized for viewing "
+#~ "and exploring individual alarms."
+
+# 7eae5d08794e4117935ba3848627cf41
+#~ msgid "이 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다."
+#~ msgstr "This menu consists of the following two pages:"
+
+# 0f346c60393748de9b84f2d4a2d2511c
+#~ msgid ""
+#~ "**Alarm** 탭으로 들어가면 현재까지 발생한 알람들을 "
+#~ "열거하여 보여줍니다. 화면 상단에 있는 **Alarm "
+#~ "rule** / **Timeline** 선택 박스를 이용하여, "
+#~ "알람 리스트를 알람 룰 기준으로 정렬할 수도 있고,"
+#~ " 발생한 시간 기준으로 정렬할 수도 있습니다."
+#~ msgstr ""
+#~ "The **Alarm** tab displays the alarms"
+#~ " triggered to date. Using the **Alarm"
+#~ " rule** / **Timeline** toggle box on"
+#~ " the top of the page, the "
+#~ "alarms can be sorted by alarm rule"
+#~ " or time triggered."
+
+# 029c3e08eec347b8a56bebfc50c8f74d
+#~ msgid "**Alarm rule** (알람 룰 기준으로 정렬)"
+#~ msgstr "**Alarm rule** (sorted by alarm rule)"
+
+# 26878b00d423448e8ff4af3719f2f949
+#~ msgid "**Timeline** (발생 시간 기준으로 정렬)"
+#~ msgstr "**Timeline** (sorted by time triggered)"
+
+# e4101921fc0a47f6a016b0118d61f30c
+#~ msgid "카테고리 맨 끝에 있는 **+ Load more**\\를 클릭하면 해당 카테고리 내 더 많은 알람 항목을 보여줍니다."
+#~ msgstr ""
+#~ "Click **+ Load more** at the end"
+#~ " of the category to view more "
+#~ "alarm items in the same category."
 
 # 6eb1caf18fd94734b0b494b09208968c
-#: ../../anomaly/part05/index.rst:41
-msgid ""
-"알람 리스트에 열거된 항목 중 하나를 선택하면 해당 알람에 대한 상세 정보를 열람할 수 있습니다. 아래는 알람 상세 페이지의 각 "
-"영역별 설명입니다."
-msgstr ""
-"Select an alarm item in list to view its detailed information. Each area "
-"in the alarm details page is described below:"
+#~ msgid ""
+#~ "알람 리스트에 열거된 항목 중 하나를 선택하면 해당"
+#~ " 알람에 대한 상세 정보를 열람할 수 있습니다. "
+#~ "아래는 알람 상세 페이지의 각 영역별 설명입니다."
+#~ msgstr ""
+#~ "Select an alarm item in list to"
+#~ " view its detailed information. Each "
+#~ "area in the alarm details page is"
+#~ " described below:"
 
 # fc138221aca34bd9ad7414c213e906b2
-#: ../../anomaly/part05/index.rst:44
-msgid "Alarm Info 영역"
-msgstr "Alarm Info area"
+#~ msgid "Alarm Info 영역"
+#~ msgstr "Alarm Info area"
 
 # 4d7cd7df33cd428487090ab70dd6e921
-#: ../../anomaly/part05/index.rst:46
-msgid "이 영역에서는 해당 알람의 심각도와 발생 시각, 그리고 이 알람을 발생시킨 룰의 설정값을 보여줍니다."
-msgstr ""
-"This area presents alarm severity, time of occurrence, and the settings "
-"of the causing rule."
+#~ msgid "이 영역에서는 해당 알람의 심각도와 발생 시각, 그리고 이 알람을 발생시킨 룰의 설정값을 보여줍니다."
+#~ msgstr ""
+#~ "This area presents alarm severity, time"
+#~ " of occurrence, and the settings of"
+#~ " the causing rule."
 
 # c20cec9536a446e2b850f71e0f311df4
-#: ../../anomaly/part05/index.rst:54
-msgid "알람 현황 일람 상자"
-msgstr "Alarm status boxes"
+#~ msgid "알람 현황 일람 상자"
+#~ msgstr "Alarm status boxes"
 
 # 459f2f365a5e4a06bb8fd53a329d3d6f
-#: ../../anomaly/part05/index.rst:56
-msgid ""
-"이 영역에서는 해당 알람의 발생 현황을 보여줍니다. 정해진 주기에 따라 알람이 연속적으로 발생하면 1개의 알람 항목으로 계속 "
-"유지됩니다. 아래 그림 예시에서는 알람이 4번의 주기 동안 연속적으로 발생하였고(**Alarms**), 주기가 1분이었기 때문에 "
-"4건의 알람이 총 4분 동안 지속된 것입니다(**Elapsed Time**)."
-msgstr ""
-"These boxes display occurrence details of the selected alarm item. If "
-"alarms are triggered continuously at the given intervals, the number of "
-"alarm items remains at 1. In the figure below, alarms were set off "
-"continuously over 4 intervals (**Alarms**). Since the alarm interval is 1"
-" minute, 4 alarms were triggered for a total of 4 minutes (**Elapsed "
-"Time**)."
+#~ msgid ""
+#~ "이 영역에서는 해당 알람의 발생 현황을 보여줍니다. "
+#~ "정해진 주기에 따라 알람이 연속적으로 발생하면 1개의 "
+#~ "알람 항목으로 계속 유지됩니다. 아래 그림 예시에서는 "
+#~ "알람이 4번의 주기 동안 연속적으로 발생하였고(**Alarms**),"
+#~ " 주기가 1분이었기 때문에 4건의 알람이 총 4분 "
+#~ "동안 지속된 것입니다(**Elapsed Time**)."
+#~ msgstr ""
+#~ "These boxes display occurrence details "
+#~ "of the selected alarm item. If "
+#~ "alarms are triggered continuously at the"
+#~ " given intervals, the number of alarm"
+#~ " items remains at 1. In the "
+#~ "figure below, alarms were set off "
+#~ "continuously over 4 intervals (**Alarms**)."
+#~ " Since the alarm interval is 1 "
+#~ "minute, 4 alarms were triggered for "
+#~ "a total of 4 minutes (**Elapsed "
+#~ "Time**)."
 
 # 907fb573c02141f6bcb94f6a60c0a298
-#: ../../anomaly/part05/index.rst:63
-msgid "Alarm History 영역"
-msgstr "Alarm History area"
+#~ msgid "Alarm History 영역"
+#~ msgstr "Alarm History area"
 
 # b717d73ebbc64c1b9ddbea3b99854d66
-#: ../../anomaly/part05/index.rst:65
-msgid "이 영역에서는 해당 알람에 적용된 알람 룰에 의해 발생한 알람의 이력을 보여줍니다."
-msgstr "This area presents the history of alarms triggered by the selected rule."
+#~ msgid "이 영역에서는 해당 알람에 적용된 알람 룰에 의해 발생한 알람의 이력을 보여줍니다."
+#~ msgstr ""
+#~ "This area presents the history of "
+#~ "alarms triggered by the selected rule."
 
 # d19ae94d6dd54836bf8ecb96b4f39375
-#: ../../anomaly/part05/index.rst:72
-msgid "Chart View 탭"
-msgstr "Chart View tab"
+#~ msgid "Chart View 탭"
+#~ msgstr "Chart View tab"
 
 # 4cae90ab3c994f4c8375ee79d0d93a29
-#: ../../anomaly/part05/index.rst:74
-msgid ""
-"이 탭 영역에서는 해당 알람 구간 내에서 모니터링한 aggregate 데이터의 abnormal score 추이를 차트로 보여줍니다."
-" 여기서는 각 조건별 점수 한계값에 도달하여 상응하는 알람(``Critical``, ``Major``, ``Moderate``, "
-"``Low``)을 일으킨 발생 건도 보고해줍니다. 차트 산출 방식에 관해서는 :ref:`basic_principles` 항목을 "
-"참조하십시오."
-msgstr ""
-"This tab presents a chart of the abnormal score for the monitored "
-"aggregate data falling under the alarm period. The chart includes alarms "
-"triggered from reaching score limits (``Critical``, ``Major``, "
-"``Moderate``, ``Low``). See :ref:`basic_principles` for details on chart "
-"generation."
+#~ msgid ""
+#~ "이 탭 영역에서는 해당 알람 구간 내에서 모니터링한"
+#~ " aggregate 데이터의 abnormal score 추이를 "
+#~ "차트로 보여줍니다. 여기서는 각 조건별 점수 한계값에 "
+#~ "도달하여 상응하는 알람(``Critical``, ``Major``, "
+#~ "``Moderate``, ``Low``)을 일으킨 발생 건도 "
+#~ "보고해줍니다. 차트 산출 방식에 관해서는 "
+#~ ":ref:`basic_principles` 항목을 참조하십시오."
+#~ msgstr ""
+#~ "This tab presents a chart of the"
+#~ " abnormal score for the monitored "
+#~ "aggregate data falling under the alarm"
+#~ " period. The chart includes alarms "
+#~ "triggered from reaching score limits "
+#~ "(``Critical``, ``Major``, ``Moderate``, ``Low``)."
+#~ " See :ref:`basic_principles` for details on"
+#~ " chart generation."
 
 # 046c1b37aa164565820a5a01f7aded2e
-#: ../../anomaly/part05/index.rst:80
-msgid "**Total abnormal score:** 알람 룰에 포함된 모든 측정값 컬럼에 대한 abnormal score를 보여줍니다."
-msgstr ""
-"**Total abnormal score:** Displays the abnormal score calculated for all "
-"measures included in alarm rules."
+#~ msgid ""
+#~ "**Total abnormal score:** 알람 룰에 포함된 "
+#~ "모든 측정값 컬럼에 대한 abnormal score를 "
+#~ "보여줍니다."
+#~ msgstr ""
+#~ "**Total abnormal score:** Displays the "
+#~ "abnormal score calculated for all "
+#~ "measures included in alarm rules."
 
 # e4644cc11cfd4eea8f58e8da475816f4
-#: ../../anomaly/part05/index.rst:81
-msgid "**Chart by measures:** 알람 룰에 포함된 각 개별 측정값 컬럼 데이터의 예측치와 실제치의 추이를 보여줍니다."
-msgstr ""
-"**Chart by measures:** Presents the trends of the predicted and actual "
-"values for each individual measure included in the alarm rule."
+#~ msgid "**Chart by measures:** 알람 룰에 포함된 각 개별 측정값 컬럼 데이터의 예측치와 실제치의 추이를 보여줍니다."
+#~ msgstr ""
+#~ "**Chart by measures:** Presents the "
+#~ "trends of the predicted and actual "
+#~ "values for each individual measure "
+#~ "included in the alarm rule."
 
 # e53e90db96d54128a469f4a1f153dfd7
-#: ../../anomaly/part05/index.rst:84
-msgid "Table View 탭"
-msgstr "Table View tab"
+#~ msgid "Table View 탭"
+#~ msgstr "Table View tab"
 
 # 3f13ec8cb43040e0b1ccef3bb292f856
-#: ../../anomaly/part05/index.rst:86
-msgid "이 탭 영역에서는 각 알람 발생 건별로 데이터 실제치와 예측치, 그리고 abnormal score를 보여줍니다."
-msgstr ""
-"The tab area presents the actual value, predicted value, and abnormal "
-"score for each alarm triggered."
+#~ msgid "이 탭 영역에서는 각 알람 발생 건별로 데이터 실제치와 예측치, 그리고 abnormal score를 보여줍니다."
+#~ msgstr ""
+#~ "The tab area presents the actual "
+#~ "value, predicted value, and abnormal "
+#~ "score for each alarm triggered."
 

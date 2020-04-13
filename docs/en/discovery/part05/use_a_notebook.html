@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Use a notebook &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Use a notebook &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Workbench" href="../part06/index.html" />
     <link rel="prev" title="Create a notebook" href="create_a_notebook.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -141,11 +133,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -199,7 +193,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part05/use_a_notebook.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part05/use_a_notebook.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -242,20 +236,16 @@
 <img alt="노트북 API 등록 팝업" src="../../_images/use_a_notebook_03.en.png" />
 </div>
 <ul>
-<li><p class="first"><strong>HTML</strong>: The results of running the notebook script are returned in HTML.</p>
-</li>
-<li><p class="first"><strong>JSON</strong>: The results of running the notebook script are returned in a custom JSON format. In this case, the <code class="docutils literal"><span class="pre">response.write(...)</span></code> function provided by Metatron Discovery will be used. The following is an example code for using the response.write function:</p>
+<li><p><strong>HTML</strong>: The results of running the notebook script are returned in HTML.</p></li>
+<li><p><strong>JSON</strong>: The results of running the notebook script are returned in a custom JSON format. In this case, the <code class="docutils literal notranslate"><span class="pre">response.write(...)</span></code> function provided by Metatron Discovery will be used. The following is an example code for using the response.write function:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p class="first">R-based notebook: <code class="docutils literal"><span class="pre">response.write(list(coefficient</span> <span class="pre">=</span> <span class="pre">2,</span> <span class="pre">intercept</span> <span class="pre">=</span> <span class="pre">0))</span></code></p>
-</li>
-<li><p class="first">Python-based notebook: <code class="docutils literal"><span class="pre">response.write({'coefficient'</span> <span class="pre">:</span> <span class="pre">2.5,</span> <span class="pre">'intercept'</span> <span class="pre">:</span> <span class="pre">0})</span></code></p>
-</li>
+<li><p>R-based notebook: <code class="docutils literal notranslate"><span class="pre">response.write(list(coefficient</span> <span class="pre">=</span> <span class="pre">2,</span> <span class="pre">intercept</span> <span class="pre">=</span> <span class="pre">0))</span></code></p></li>
+<li><p>Python-based notebook: <code class="docutils literal notranslate"><span class="pre">response.write({'coefficient'</span> <span class="pre">:</span> <span class="pre">2.5,</span> <span class="pre">'intercept'</span> <span class="pre">:</span> <span class="pre">0})</span></code></p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>None</strong>: Runs the notebook script but does not provide returns.</p>
-</li>
+<li><p><strong>None</strong>: Runs the notebook script but does not provide returns.</p></li>
 </ul>
 </div></blockquote>
 <p>Once you enter API information and click <strong>Done</strong>, the API is created to provide a REST API URL as shown below. Click <strong>Result</strong> to view the URL execution results in a popup window.</p>

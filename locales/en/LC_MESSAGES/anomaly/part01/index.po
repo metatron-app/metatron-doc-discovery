@@ -1,4 +1,3 @@
-﻿# SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2019, metatron team
 # This file is distributed under the same license as the metatron discovery
 # docs package.
@@ -9,26 +8,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-29 12:55+0900\n"
+"POT-Creation-Date: 2020-04-07 00:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.8.0\n"
 
-# 2dee5b0d446c4e7cbd55f5354443307e
+# fb19d64b1470466c80c11a9a448ab7ae
 #: ../../anomaly/part01/index.rst:2
-msgid "Anomaly 확장팩 소개"
-msgstr "Introduction of Anomaly Expansion Pack"
+msgid "Metatron Anomaly 소개"
+msgstr "Introduction of Metatron Anomaly"
 
 # eda90e34fe974eea990f8181a103b39c
 #: ../../anomaly/part01/index.rst:4
 msgid ""
 "이상 탐지 확장팩 Anomaly는 Machine Learning 예측 모델을 기반으로 데이터 흐름의 비정상적인 상황을 감지하여 "
 "사용자가 즉각적으로 확인할 수 있도록 도와주는 도구입니다."
-msgstr "The Anomaly Expansion Pack is a tool that detects abnormal data flow and immediately alerts users. For this detection, it uses prediction models built based on machine learning."
+msgstr ""
+"The Anomaly Expansion Pack is a tool that detects abnormal data flow and "
+"immediately alerts users. For this detection, it uses prediction models "
+"built based on machine learning."
 
 # fcbb78472b4c482e9fb5d55a5933124c
 #: ../../anomaly/part01/index.rst:9
@@ -38,7 +40,9 @@ msgstr "Basic principles"
 # 9c9b6b8fed664d4ba75305066237717a
 #: ../../anomaly/part01/index.rst:11
 msgid "아래 그림과 같이 Anomaly는 대상 데이터 소스의 집계값을 실시간으로 예측하고 실제 값을 모니터링합니다."
-msgstr "As shown below, Anomaly predicts an aggregate of the target data source in real time and monitors the actual value."
+msgstr ""
+"As shown below, Anomaly predicts an aggregate of the target data source "
+"in real time and monitors the actual value."
 
 # b5fdec39b29241b6a17ced18b0e11352
 #: ../../anomaly/part01/index.rst:17
@@ -46,19 +50,34 @@ msgid ""
 "여기서 **Predict**\\로 표시된 값은 머신러닝 기반으로 예측한 데이터 집계값이고, **Actual**\\로 표시된 값은 "
 "실제로 모니터링한 결과 값입니다. 아래 그림과 같이 두 값 간의 격차가 커질수록 **total abnormal score**\\가 "
 "증가하게 됩니다. 즉, 실제치가 예상치와 다르면 데이터 집계값이 그만큼 정상 범위를 벗어났다고 간주하는 것입니다."
-msgstr "Here, the value marked as **Predict** is the data aggregate predicted through machine learning, and the value marked as **Actual** is the actual monitored value. As shown below, the **total abnormal score** increases with the difference between the two values. That is, the data aggregate is considered as deviating from the normal range if the actual value is significantly different from the predicted value."
+msgstr ""
+"Here, the value marked as **Predict** is the data aggregate predicted "
+"through machine learning, and the value marked as **Actual** is the "
+"actual monitored value. As shown below, the **total abnormal score** "
+"increases with the difference between the two values. That is, the data "
+"aggregate is considered as deviating from the normal range if the actual "
+"value is significantly different from the predicted value."
 
-# 54f10ca4ae0341cba62bc45a1015064d
+# 9aaf7974b4fa4462aa87c779a0b39aa2
 #: ../../anomaly/part01/index.rst:23
 msgid ""
-"이 예시에서는 abnormal score가 10점에 도달하면 ``Moderate`` 알람을 발생시키고, 80점에 도달하면 "
-"``Critical`` 알람을 발생시키도록 설정되어 있습니다."
-msgstr "In this example, a ``Moderate`` alarm is triggered when the abnormal score reaches 10, and a ``Critical`` alarm when the score reaches 80."
+"이 예시에서는 abnormal score가 20점에 도달하면 ``Low`` 레벨의 알람을 발생시키고, 40점을 넘으면 "
+"``Moderate``, 60점을 넘으면        ``Major``, 80점을 넘으면 ``Critical`` 알람을 발생시키도록"
+" 설정되어 있습니다. traning data에 따르면 사용자들은 4월 6일 15시에 Critical 등급의 알람을 받았을 것이라고 "
+"예측할 수 있습니다."
+msgstr ""
+"In this example, it is set to generate a low level alarm when the abnormal score "
+"reaches 20 points, a moderate if it exceeds 40 points, a major alarm if it exceeds 60 "
+"points, and a critical level alarm if it exceeds 80 points. " According to the training "
+"data, It can be predicted that a critical class alarm was generated on April 6th at 3pm."
 
 # 9e18be78916846c4adea213ff57e2261
 #: ../../anomaly/part01/index.rst:25
-msgid "이렇게 발생하는 알람은 다양한 채널로 사용자에게 통보되어, 사용자는 데이터 이상 상황에 즉각 대처할 수 있습니다."
-msgstr "The alarms are reported through various channels to the user, so that immediate action can be taken in response to anomalies."
+msgid ""
+"이렇게 설정된 알람 룰은 데이터가 갱신되면서 알람을 발생시키고 다양한 채널로 사용자에게 통보됩니다. 따라서 관련 시스템 운영자 및 "
+"사용자들은 데이터 이상 상황에 즉각 대처할 수 있습니다."
+msgstr ""
+"The alarms are reported through various channels to the user, so that immediate action can be taken in response to anomalies."
 
 # 69bfa0e1bdd84b85891985bf8fc45f97
 #: ../../anomaly/part01/index.rst:28
@@ -70,60 +89,108 @@ msgstr "Key functions"
 msgid "Anomaly의 주요 기능은 다음과 같습니다."
 msgstr "The key functions of Anomaly are as follows:"
 
-# 0832cc844e5b4522ae648b671fe2298d
-#: ../../anomaly/part01/index.rst:32
-msgid "**Machine Learning**"
-msgstr "**Machine learning**"
-
 # a1e6bab9fcb74848b58737dc03d8acd4
-#: ../../anomaly/part01/index.rst:34
-msgid "머신러닝에 기반한 예측 모델이 자동으로 추천되어 사용자 편의 증대"
-msgstr "User convenience enhanced with automatic recommendation of a prediction model based on machine learning"
-
-# 5d504c19bfa54d4396f545702331e188
-#: ../../anomaly/part01/index.rst:36
-msgid "**Alarm & Report**"
-msgstr "**Alarms & reports**"
+#: ../../anomaly/part01/index.rst:32
+msgid "**Auto Machine Learning** : 머신러닝 기반 예측 모델을 자동으로 추천하여 사용자 편의성 증진"
+msgstr ""
+"User convenience enhanced with automatic recommendation of a prediction "
+"model based on machine learning"
 
 # 36165b3ab51e42cb8ee4f453659c0531
-#: ../../anomaly/part01/index.rst:38
-msgid "비정상적인 상황 발생 시 즉각 알람 발동 및 보고서 생성"
+#: ../../anomaly/part01/index.rst:34
+msgid "**Alarm & Report** : 비정상적인 상황 발생 시 즉각 알람 발생 및 보고서 생성 지원"
 msgstr "Immediate alarm triggering and report generation in case of anomaly"
 
-# 54ab319abbbe4cfabceb508578437ca3
-#: ../../anomaly/part01/index.rst:40
-msgid "**Analyze**"
-msgstr "**Analyze**"
+# 8697e277cfa1481ca58e3161f594af07
+#: ../../anomaly/part01/index.rst:36
+msgid "**Analyze** : 데이터 원천을 분석할 수 있는 실시간 대시보드 및 실시간 검색 기능 지원"
+msgstr "Support real-time dashboard and real-time search function to analyze data source"
 
-# 20c3c793de634c60a8041634372f83f1
-#: ../../anomaly/part01/index.rst:42
-msgid "데이터로 차트 생성하고 분석하는 서비스 메타트론 디스커버리와 연계 가능"
-msgstr "Chart generation and analysis service linkable with Metatron Discovery"
-
-# edcd676165054ecabad211541b18adfe
-#: ../../anomaly/part01/index.rst:44
-msgid "**Link with Learning System**"
-msgstr "**Linkage with learning system**"
-
-# c7154691ea4c4779a6792f31fdebfed9
-#: ../../anomaly/part01/index.rst:46
-msgid "새로운 분석을 적용할 수 있도록 외부 분석 시스템과의 연계를 지원"
-msgstr "New forms of analysis possible through linkage with external analytics systems"
+# d9e063b898d4496d91575d551b6a31b5
+#: ../../anomaly/part01/index.rst:38
+msgid "**Link with Learning System** : 신규 알고리즘 모델을 적용할 수 있도록 3rd-party 시스템 연계를 지원"
+msgstr "Support 3rd-party system linkage to apply new algorithm model"
 
 # 1ff8844b9d4644e9bf89d61a44410dcb
-#: ../../anomaly/part01/index.rst:49
+#: ../../anomaly/part01/index.rst:41
 msgid "구조"
 msgstr "Structure"
 
-# e162d87586e349e49a3928967745a38c
-#: ../../anomaly/part01/index.rst:51
-msgid "Anomaly의 메뉴 구성은 다음과 같습니다."
-msgstr "The menus in Anomaly are organized as follows:"
+# 93d63609fa3e45a7a7ec1757e4105991
+#: ../../anomaly/part01/index.rst:43
+msgid "Anomaly의 메뉴 구성은 다음과 같이 크게 **이상 탐지**\\와 **데이터 관제**\\ 두 개의 카테고리로 나누어 집니다."
+msgstr "Anomaly's menu is divided into two categories: **Anomaly Detection**\\ and **Data Management**\\."
+
+# 91c2db09fa044731ad06804ca762d6c4
+#: ../../anomaly/part01/index.rst:50
+msgid ""
+"**Anomaly Detection** 메뉴에서는 전반적인 이상 탐지 알람 통계(Statistics), 발생한 알람들의 "
+"정보(Alarm), 알람이 발생하는 규칙 설정(Alarm Rule), 신규 알고리즘 추가(Algorithm)를 지원합니다."
+msgstr ""
+"Under **Anomaly Detection** menu, features support overall anomaly detection statistics, alarm information, alarm rule setting, and new algorithm addition."
+
+# 5c933e1e36054af7ba2ea1842ca97c92
+#: ../../anomaly/part01/index.rst:52
+msgid ""
+"**Data Monitoring** 메뉴에서는 알람이 발생할 경우 데이터 소스 원천에 대해서 분석할 수 있도록 실시간 "
+"대시보드(Dashboard)와 원천을 쿼리할 수 있도록 하는 실시간 검색(Search) 기능을 제공합니다."
+msgstr ""
+"Under **Data Monitoring** menu, features provide a real-time "
+"dashboard and a search function that allows you to query the data source."
 
 # c9e690ee877e413187d2bff7956ebf01
-#: ../../anomaly/part01/index.rst:57
+#: ../../anomaly/part01/index.rst:54
 msgid ""
-"주요 메뉴 간 이동이 쉽고 세부 항목 간 참조 기능도 잘 구축되어 있어, 알람 룰 설정값과 발생한 알람 내역, 그리고 전반적인 알람"
-" 현황 간의 유기적인 파악이 용이합니다."
-msgstr "Users can easily navigate across menus, use references to detailed items, and gain organic understanding of alarms including their rule settings, past occurrences, and overall statistics."
+"주요 메뉴 간 이동이 간편하고 세부 항목 간 참조 기능이 구축되어 있어 발생한 알람 내역 및 설정된 알람 룰, 그리고 전반적인 알람"
+" 현황 간의 유기적인 파악이 용이합니다. 또한 알람 발생 시 동일한 시스템 내에서 원천을 탐색할 수 있는 기능도 있어서 원인 파악에"
+" 더욱 용이합니다."
+msgstr ""
+"Users can easily navigate across menus, use references to detailed items, "
+"and gain organic understanding of alarms including their rule settings, "
+"past occurrences, and overall statistics."
+
+# 2dee5b0d446c4e7cbd55f5354443307e
+#~ msgid "Anomaly 확장팩 소개"
+#~ msgstr "Introduction of Anomaly Expansion Pack"
+
+# 54f10ca4ae0341cba62bc45a1015064d
+#~ msgid ""
+#~ "이 예시에서는 abnormal score가 10점에 도달하면 "
+#~ "``Moderate`` 알람을 발생시키고, 80점에 도달하면 "
+#~ "``Critical`` 알람을 발생시키도록 설정되어 있습니다."
+#~ msgstr ""
+#~ "In this example, a ``Moderate`` alarm"
+#~ " is triggered when the abnormal score"
+#~ " reaches 10, and a ``Critical`` alarm"
+#~ " when the score reaches 80."
+
+# 0832cc844e5b4522ae648b671fe2298d
+#~ msgid "**Machine Learning**"
+#~ msgstr "**Machine learning**"
+
+# 5d504c19bfa54d4396f545702331e188
+#~ msgid "**Alarm & Report**"
+#~ msgstr "**Alarms & reports**"
+
+# 54ab319abbbe4cfabceb508578437ca3
+#~ msgid "**Analyze**"
+#~ msgstr "**Analyze**"
+
+# 20c3c793de634c60a8041634372f83f1
+#~ msgid "데이터로 차트 생성하고 분석하는 서비스 메타트론 디스커버리와 연계 가능"
+#~ msgstr "Chart generation and analysis service linkable with Metatron Discovery"
+
+# edcd676165054ecabad211541b18adfe
+#~ msgid "**Link with Learning System**"
+#~ msgstr "**Linkage with learning system**"
+
+# c7154691ea4c4779a6792f31fdebfed9
+#~ msgid "새로운 분석을 적용할 수 있도록 외부 분석 시스템과의 연계를 지원"
+#~ msgstr ""
+#~ "New forms of analysis possible through"
+#~ " linkage with external analytics systems"
+
+# e162d87586e349e49a3928967745a38c
+#~ msgid "Anomaly의 메뉴 구성은 다음과 같습니다."
+#~ msgstr "The menus in Anomaly are organized as follows:"
 

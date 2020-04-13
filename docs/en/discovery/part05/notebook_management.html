@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Manage notebook servers &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Manage notebook servers &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Register a notebook server" href="register_a_notebook_server.html" />
     <link rel="prev" title="Notebook" href="index.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -140,11 +132,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -198,7 +192,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part05/notebook_management.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part05/notebook_management.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -216,7 +210,7 @@
 <p>To enable the Notebook module, the <strong>administrator</strong> must connect to a “notebook server,”  which refers to a server that provides an external analytics tool.</p>
 <p>On the left-hand panel of the main screen, go to <span class="menuselection">MANAGEMENT ‣ Notebook ‣ Notebook Server</span> to register a new notebook server or view and edit registered notebook server.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/notebook_management0.en.png" src="../../_images/notebook_management0.en.png" />
 </div>
 </div></blockquote>
@@ -237,14 +231,10 @@
 <a class="reference internal image-reference" href="../../_images/notebook_management2.en.png"><img alt="../../_images/notebook_management2.en.png" src="../../_images/notebook_management2.en.png" style="width: 581.4px; height: 406.8px;" /></a>
 </div>
 <ul class="simple">
-<li><p class="first"><strong>Type:</strong> Select the external analytics tool installed in the notebook server to be registered. You can select either <strong>Jupyter</strong> or <strong>zeppelin</strong>.</p>
-</li>
-<li><p class="first"><strong>URL:</strong> Enter the URL of the notebook server to be registered. http://and https://are supported.</p>
-</li>
-<li><p class="first"><strong>Name:</strong> Enter a name for the notebook server to be registered.</p>
-</li>
-<li><p class="first"><strong>Description:</strong> Enter a description for the notebook server to be registered.</p>
-</li>
+<li><p><strong>Type:</strong> Select the external analytics tool installed in the notebook server to be registered. You can select either <strong>Jupyter</strong> or <strong>zeppelin</strong>.</p></li>
+<li><p><strong>URL:</strong> Enter the URL of the notebook server to be registered. http://and https://are supported.</p></li>
+<li><p><strong>Name:</strong> Enter a name for the notebook server to be registered.</p></li>
+<li><p><strong>Description:</strong> Enter a description for the notebook server to be registered.</p></li>
 </ul>
 </div></blockquote>
 </div>

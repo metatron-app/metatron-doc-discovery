@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Exploration &mdash; metatron discovery docs 0.4.2 documentation</title>
+  <title>Data Exploration &mdash; metatron discovery docs 0.4.3 documentation</title>
   
 
   
@@ -20,21 +20,11 @@
   <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
   
     
-      <script type="text/javascript">
-          var DOCUMENTATION_OPTIONS = {
-              URL_ROOT:'../../',
-              VERSION:'0.4.2',
-              LANGUAGE:'en',
-              COLLAPSE_INDEX:false,
-              FILE_SUFFIX:'.html',
-              HAS_SOURCE:  true,
-              SOURCELINK_SUFFIX: ''
-          };
-      </script>
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
         <script type="text/javascript" src="../../_static/jquery.js"></script>
         <script type="text/javascript" src="../../_static/underscore.js"></script>
         <script type="text/javascript" src="../../_static/doctools.js"></script>
-        <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
     
     <script type="text/javascript" src="../../_static/js/theme.js"></script>
 
@@ -45,6 +35,8 @@
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/layout.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Metadata Management" href="metadata.html" />
     <link rel="prev" title="Data Exploration" href="index.html" /> 
 </head>
@@ -73,7 +65,7 @@
             
             
               <div class="version">
-                0.4.2
+                0.4.3
               </div>
             
           
@@ -142,11 +134,13 @@
 </ul>
 <p class="caption"><span class="caption-text">EX-pack for Anomaly Detection</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Anomaly Expansion Pack</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Create an alarm rule</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">View/edit alarm rule details</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">View alarm details</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part01/index.html">Introduction of Metatron Anomaly</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part02/index.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part03/index.html">Viewing alarms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part04/index.html">Alarm Rule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part05/index.html">Algorithm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part06/index.html">Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../anomaly/part07/index.html">Search</a></li>
 </ul>
 
             
@@ -200,7 +194,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/discovery/part09/dataexploration.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/discovery/part09/dataexploration.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -217,7 +211,7 @@
 <h1>Data Exploration<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>The aim of providing data exploration feature is to enable easy data search wherever the data is located at, and for visualizing the found data.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/exploration.png" src="../../_images/exploration.png" />
 </div>
 </div></blockquote>
@@ -225,7 +219,7 @@
 <h2>Data Exploration Overview<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>At the Overview, you can manage data of the current source DB, StagingDB(Slave DB) - provided by Metatron Discovery - and the data in the Engine(Druid).</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/exploration01.png" src="../../_images/exploration01.png" />
 </div>
 </div></blockquote>
@@ -234,46 +228,46 @@
 <h2>Data Exploration Detail View<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>With Data Exploration, you can find the data you want fast.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/exploration_detail.png" src="../../_images/exploration_detail.png" />
 </div>
 </div></blockquote>
 <p>Data information is provided with 3 main sections: Overview, Column Scheme, Sample Data. According to each data types, workbook(for Datasource type), workbench(for DB type) action button is enabled.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/exploration_detail01.png" src="../../_images/exploration_detail01.png" />
 </div>
 </div></blockquote>
-<p>Sample data list displays up to 100 rows. If you are authorized, you can view more and download via &#8216;Management &gt; Exploration&#8217;. If you have &#8216;Edit data&#8217; button on the top right of the detail view it means that you are authorized. The button leads you to &#8216;Management &gt; Exploration&#8217;.</p>
+<p>Sample data list displays up to 100 rows. If you are authorized, you can view more and download via ‘Management &gt; Exploration’. If you have ‘Edit data’ button on the top right of the detail view it means that you are authorized. The button leads you to ‘Management &gt; Exploration’.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/exploration_detail02.png" src="../../_images/exploration_detail02.png" />
 </div>
 </div></blockquote>
 <p>When you jump to other menu, an alert like below appears.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/popup.png" src="../../_images/popup.png" />
 </div>
 </div></blockquote>
-<p>The second below image is the view when proceeded to &#8216;Management &gt; Exploration&#8217;. Here, you can view more meta information in detail and manage them as the administrator.</p>
+<p>The second below image is the view when proceeded to ‘Management &gt; Exploration’. Here, you can view more meta information in detail and manage them as the administrator.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/exploration_detail03.png" src="../../_images/exploration_detail03.png" />
 </div>
-<div class="figure">
+<div class="figure align-default">
 <img alt="../../_images/metadata.png" src="../../_images/metadata.png" />
 </div>
 </div></blockquote>
 <p>Find data fast with search and filter features such as catalog and tag.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/search.png" src="../../_images/search.png" />
 </div>
 </div></blockquote>
 <p>In Metatron Discovery, you can manage data with catalogs. Classify catalogs according to classifications such as groups, and use the catalogs to fast search data.</p>
 <blockquote>
-<div><div class="figure">
+<div><div class="figure align-default">
 <img alt="../../_images/catalog.png" src="../../_images/catalog.png" />
 </div>
 </div></blockquote>

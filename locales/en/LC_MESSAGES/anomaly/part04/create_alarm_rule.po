@@ -1,0 +1,347 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, metatron team
+# This file is distributed under the same license as the metatron discovery
+# docs package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: metatron discovery docs 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-14 00:07+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+# f073f325a14a41e0831ddb685e1165b6
+#: ../../anomaly/part04/create_alarm_rule.rst:2
+msgid "알람 룰 만들기"
+msgstr "Creating an Alarm Rule"
+
+# e9b17b38b0734a289ce418517572cb57
+#: ../../anomaly/part04/create_alarm_rule.rst:10
+msgid "Anomaly는 다음의 절차를 순차적으로 수행하도록 안내하여 사용자가 원하는 알람 룰을 쉽게 생성할 수 있도록 지원해줍니다."
+msgstr ""
+"Anomaly guides users through the following procedures in order to help "
+"users easily create the desired alarm rules."
+
+# 3e303524430f4547ab48d60743def95b
+#: ../../anomaly/part04/create_alarm_rule.rst:12
+msgid ":ref:`select_datasource`"
+msgstr ""
+
+# 672e159bf0704caa812f0a9f0a5132b2
+#: ../../anomaly/part04/create_alarm_rule.rst:13
+msgid ":ref:`select_columns`"
+msgstr ""
+
+# b3e22171990740d09b7e59d5ddc65c7c
+#: ../../anomaly/part04/create_alarm_rule.rst:14
+msgid ":ref:`configure_training`"
+msgstr ""
+
+# 1607d34b5b574505b9e1553810faafe2
+#: ../../anomaly/part04/create_alarm_rule.rst:15
+msgid ":ref:`select_model`"
+msgstr ""
+
+# 2feef2bbbf494fa69261aafddf9dcd4b
+#: ../../anomaly/part04/create_alarm_rule.rst:16
+msgid ":ref:`alarm_rule_settings`"
+msgstr ""
+
+# 995dff489865422fa153c77634b4ebdb
+#: ../../anomaly/part04/create_alarm_rule.rst:17
+msgid ":ref:`complete_rule`"
+msgstr ""
+
+# 37ef5633234b466c8d5603a32f838b7a
+#: ../../anomaly/part04/create_alarm_rule.rst:22
+msgid "데이터 소스 선정"
+msgstr "Selecting Data Source"
+
+# 03dcad9896914437933c3db0eaaa8154
+#: ../../anomaly/part04/create_alarm_rule.rst:24
+msgid "알람 룰을 생성하기 위해서는 가장 먼저 모니터링할 데이터 소스를 선정해야 합니다."
+msgstr "To create an alarm rule, you must first set up a data source to monitor."
+
+# f31953fc1a57481c8bfda337eec890e0
+#: ../../anomaly/part04/create_alarm_rule.rst:26
+msgid "Alarm Rule 우측 상단에 있는 **Create Alarm Rule** 버튼을 클릭합니다."
+msgstr ""
+"Click the **Create Alarm Rule** button at the top right of the Alarm Rule"
+" page."
+
+# 042fc4b033bc4aa8863c2ea15b5ad4f7
+#: ../../anomaly/part04/create_alarm_rule.rst:32
+msgid "모니터링하고자 하는 데이터 소스를 선택합니다."
+msgstr "Select the data source you want to monitor."
+
+# 8c587eb7cccc4b5b8727342f5be8b651
+#: ../../anomaly/part04/create_alarm_rule.rst:41
+msgid "모니터링할 지표 선택하기"
+msgstr "Selecting metrics to monitor"
+
+# 944979abdf904998a2e53d90c51b112f
+#: ../../anomaly/part04/create_alarm_rule.rst:43
+msgid ""
+"데이터 소스를 선택하면 다음 화면으로 넘어가면서 좌측에 **Data** 패널이 열립니다. 이 패널을 이용하여 아래와 같이 모니터링할"
+" 지표를 선택하십시오."
+msgstr ""
+"Selecting a data source will take you to the next screen and the **Data**"
+" panel on the left will open. Use this panel to select metrics to monitor"
+" as shown below."
+
+# efff584db54e4187a13fccd18da18b02
+#: ../../anomaly/part04/create_alarm_rule.rst:45
+msgid ""
+"**Measure** 영역에서 알람을 설정하고자 하는 측정값 컬럼을 선택합니다. 클릭한 측정값 컬럼은 Aggregate 선반에 "
+"자동으로 옮겨집니다."
+msgstr ""
+"In the **Measure** area, select the measure column you want to monitor. "
+"The clicked measure column is automatically moved to the aggregation "
+"shelf."
+
+# a88c2d6153c242d0874fb006a607a39e
+#: ../../anomaly/part04/create_alarm_rule.rst:51
+msgid ""
+"필요할 경우 기존 컬럼에 수식을 적용하여 사용자 컬럼을 새로 만들 수도 있습니다. **Measure** 영역의 우측 상단에서 "
+"|icon_custom_column| 버튼을 클릭하여 대화 상자를 열고 사용자 컬럼을 설정하십시오."
+msgstr ""
+"If necessary, you can create a new user column by applying a formula to "
+"an existing column. In the upper right corner of the **Measure** area, "
+"Click the |icon_custom_column| button to open a dialog box and set up a "
+"custom column."
+
+# 5f37ff07e2e64cbfa2562718d5cf2431
+#: ../../anomaly/part04/create_alarm_rule.rst:57
+msgid "Aggregate 선반에 올려진 각 컬럼의 aggregate 타입 항목을 클릭하여 원하는 타입을 선택합니다."
+msgstr ""
+"You can change the aggregation method of each column on the shelf. The "
+"default is SUM."
+
+# de55da47bf8c4f98a01653f43c3e9dc3
+#: ../../anomaly/part04/create_alarm_rule.rst:63
+msgid ""
+"필요할 경우 차원값 컬럼을 기준으로 aggregate 데이터를 분할할 수 있습니다. **Dimension** 영역에서 분할의 "
+"기준으로 삼을 측정값 컬럼에 마우스 커서를 오버한 후 |icon_split| 버튼을 클릭하세요. split 가능한 개수는 최대 "
+"10개이며, dimension 값이 10개 이상이라면 임의의 값 10개가 선택됩니다."
+msgstr ""
+"You can split aggregated data based on dimension value columns. In the "
+"**Dimension** area, move the mouse cursor over the measure column to be "
+"used as the basis for division, and then click the |icon_split| button. "
+"The maximum number of splits is 10, and if the dimension value is 10 or "
+"more, 10 random values are selected."
+
+# 21d765ab652840bca6fc5549cd4d043a
+#: ../../anomaly/part04/create_alarm_rule.rst:69
+msgid ""
+"필요할 경우 차원값 컬럼을 기준으로 aggregate 데이터를 필터링할 수 있습니다. **Dimension** 영역에서 필터를 "
+"설정할 측정값 컬럼에 마우스 커서를 오버한 후 |icon_ano_filter| 버튼을 클릭하세요. 그 후 아래 화면처럼 모니터링이 "
+"필요한 특정 범주를 선택하세요."
+msgstr ""
+"If necessary, you can filter aggregate data based on dimension value "
+"columns. In the **Dimension** area, move the mouse cursor over the "
+"measure column to set the filter, and click the |icon_ano_filter| button."
+" Then select the specific category you need to monitor as shown below."
+
+# 2a8cc944a4324724a8d5438947e0f4ec
+#: ../../anomaly/part04/create_alarm_rule.rst:78
+msgid "트레이닝 기간 설정하기"
+msgstr "Setting the training data"
+
+# 0009317fb0eb4d09a42093109046f281
+#: ../../anomaly/part04/create_alarm_rule.rst:80
+msgid ""
+"모니터링할 지표 선택을 마쳤으면, **Training interval** 패널에서 예측 모델 트레이닝에 사용할 데이터 범위를 선택할"
+" 수 있습니다."
+msgstr ""
+"When you finished selecting metrics to monitor, now you can select the "
+"data range to use for training the predictive model in the **Training "
+"Interval** panel."
+
+# f6d048b4633e4fdb93f2b4ee313b0dc4
+#: ../../anomaly/part04/create_alarm_rule.rst:82
+#, fuzzy
+msgid "모델을 트레이닝시키는 데 사용할 데이터 세트의 주기를 **Granularity** 선택란에서 선택합니다."
+msgstr ""
+"In the **Granularity** check box, select the period of the data set to "
+"use to train the model."
+
+# 7a08a3fd53c9490d809f6f46fea97005
+#: ../../anomaly/part04/create_alarm_rule.rst:88
+msgid "모델을 트레이닝시키는 데 사용할 데이터 세트의 기간 범위를 설정합니다."
+msgstr "Set the range of periods in the dataset to use for training the model."
+
+# 084bd62a49294856abf8276b1a02498b
+# df5b9d2d2359440990e8e8c858ce9f06
+#: ../../anomaly/part04/create_alarm_rule.rst:94
+#: ../../anomaly/part04/create_alarm_rule.rst:153
+msgid "모든 설정을 마쳤으면 **Next**\\를 클릭합니다."
+msgstr "When all settings are complete, click **Next**\\."
+
+# 61ed801deee4404a8e254e98683fd45b
+#: ../../anomaly/part04/create_alarm_rule.rst:99
+msgid "모델 선택하기"
+msgstr "Choosing a Model"
+
+# 8da006ab1f0946de9d507bdafa564d66
+#: ../../anomaly/part04/create_alarm_rule.rst:101
+msgid ""
+"이제 **Model** 패널로 넘어가서 어떠한 예측 모델을 사용할지 선택합니다. Anomaly는 주어진 트레이닝 데이터 세트를 "
+"이용하여 각각의 모델을 트레이닝시킨 후 그 결과를 산출해줍니다. 아래 두 방법 중 하나를 통해 적합한 예측 모델을 선택하십시오."
+msgstr ""
+"Now go to the **Model** panel and choose which prediction model to use. "
+"Metatron Anomaly trains each model using a given set of training data and"
+" produces the results. Choose a suitable prediction model through one of "
+"the two methods below."
+
+# 058b51cceb194ab8aa0eea7aa14601ad
+#: ../../anomaly/part04/create_alarm_rule.rst:103
+msgid "기본적으로 우측에 표시되는 정확도 점수(100점 만점)가 가장 높은 모델이 **Recommend** 표시와 함께 자동 선택됩니다."
+msgstr ""
+"By default, the model with the highest accuracy score (out of 100) "
+"displayed on the right is automatically selected with a **Recommend** "
+"mark."
+
+# c447f8761338443ea65fbf3f771bcc87
+#: ../../anomaly/part04/create_alarm_rule.rst:109
+msgid "각 모델 항목 위에 마우스 커서를 오버하면 나타나는 상세 정보를 확인하여 가장 적합한 예측 모델을 직접 선택할 수 있습니다."
+msgstr ""
+"By hovering the mouse cursor over each model item, you can see the "
+"details that appear and choose the best prediction model yourself."
+
+# 75f5a28d73ed479ca7ade44de4438146
+#: ../../anomaly/part04/create_alarm_rule.rst:118
+msgid "알람 룰 조건 설정하기"
+msgstr "Setting alarm rule conditions"
+
+# 53b57a63682c4732bb0f61052dda6248
+#: ../../anomaly/part04/create_alarm_rule.rst:120
+msgid "사용할 예측 모델을 선택하였으면, **Condition** 패널에서 알람이 발생하는 조건을 설정할 수 있습니다."
+msgstr ""
+"After selecting the predictive model to use, now you need to set the "
+"conditions for the alarm to occur in the **Condition** panel."
+
+# 5203178712a042869c72ba4cc11e7991
+#: ../../anomaly/part04/create_alarm_rule.rst:122
+msgid ""
+"**Subscribers** 항목의 우측에 있는 |icon_info| 버튼을 클릭하여 대화 상자를 연 후, 알람 발생 시 통보를 "
+"받는 대상과 방법을 설정합니다."
+msgstr ""
+"Click |icon_info| to the right of the **Subscribers** to open a dialog "
+"box, and set the target and method to be notified when an alarm occurs."
+
+# 897f4fb7b46a40f986afef6d0eb1ba70
+#: ../../anomaly/part04/create_alarm_rule.rst:128
+msgid "아래 각 항목의 설명을 참고하여 알람이 발동되는 시기를 설정합니다."
+msgstr ""
+"Set the time when the alarm is triggered by referring to the description "
+"of each item below."
+
+# 348ab347a6e44be38079fbfe7a595da0
+#: ../../anomaly/part04/create_alarm_rule.rst:134
+msgid "**Alarm Start:** 알람을 개시할 때를 설정합니다. 이 설정값에 해당하는 시간 이후부터 알람이 개시됩니다."
+msgstr ""
+"**Alarm Start:** Set when to start an alarm. The alarm starts after the "
+"time corresponding to this setting value."
+
+# e7b18f4330d645d1bd3ea6c2b9b8f702
+#: ../../anomaly/part04/create_alarm_rule.rst:135
+msgid "**Alarm Interval:** 알람의 조건이 충족되었을 때 알람을 발생시키는 주기를 설정합니다."
+msgstr ""
+"**Alarm Interval:** Set the interval to generate an alarm when the "
+"condition of the alarm is met."
+
+# fbc3dea7adb14b4097b922f406e4fe8f
+#: ../../anomaly/part04/create_alarm_rule.rst:137
+msgid ""
+"**Scoring Method**\\는 dimension에 따라 split된 여러 개의 measue 값에서 abnormal "
+"socre를 계산하는 방식을 결정합니다. 기본값은 모든 measure의 abnormal score의 평균값(Average)으로 "
+"계산하며, 최대값(Maximum) 또는 최소값(Minimum)으로 변경할 수 있습니다."
+msgstr ""
+"**Scoring Method**\\ determines how abnormal socres are calculated from "
+"multiple measue values split by dimension. The default value is "
+"calculated as the average of the abnormal scores of all measures, and can"
+" be changed to the maximum or the minimum."
+
+# e70dff9ffc054b9b9d72fae4f2ae084a
+#: ../../anomaly/part04/create_alarm_rule.rst:143
+msgid ""
+"아래 각 항목의 설명을 참고하여 모니터링 대상 데이터의 abnormal score에 따른 알람 발동 조건을 설정합니다. 기본적으로 "
+"하나의 조건이 주어지며, **+ Add Condition** 버튼을 클릭하면 조건을 추가할 수 있습니다."
+msgstr ""
+"Set the alarm trigger conditions according to the abnormal score of "
+"monitored data with reference to the description of the following items. "
+"By default, one ``Majot`` level condition is given and you can set more "
+"conditions with **+ Add Condition** button."
+
+# a326179533594afd9428ef122f594223
+#: ../../anomaly/part04/create_alarm_rule.rst:149
+msgid "**Severity:** 주어진 조건에 해당하는 알람의 심각도를 설정합니다."
+msgstr "**Severity:** Set the severity of the alarm for a given condition."
+
+# 396b8f421c054128a81e542148ed423f
+#: ../../anomaly/part04/create_alarm_rule.rst:150
+msgid "**Threshold:** abnormal score가 이 설정값을 초과하면 데이터 이상 상태로 간주됩니다."
+msgstr ""
+"**Threshold:** If the abnormal score exceeds this setting, the data is "
+"considered abnormal."
+
+# 492942908d7445e3ba28d61678b20cbb
+#: ../../anomaly/part04/create_alarm_rule.rst:151
+msgid ""
+"**Frequency:** abnormal score가 한계값을 초과하는 빈도가 어떠할 때 알람을 발생시킬지 결정합니다. 예를 "
+"들어, \"3 within 5 minute\"로 설정한 경우에는 abnormal score가 5분 안에 3회 이상 한계값을 초과하면"
+" 알람이 발생합니다."
+msgstr ""
+"**Frequency:** Determines how often an alarm is triggered when the "
+"frequency of abnormal scores exceeds the threshold. For example, if it is"
+" set to \"3 within 5 minute \", an alarm is generated if the abnormal "
+"score exceeds the limit value more than 3 times within 5 minutes."
+
+# 7e14a1145f114ca7ba276c33b3ab3cc3
+#: ../../anomaly/part04/create_alarm_rule.rst:158
+msgid "알람 룰 완성하기"
+msgstr "Complete the Rule"
+
+# 5a814da7fcb0463984a08c47c9d93b7d
+#: ../../anomaly/part04/create_alarm_rule.rst:160
+msgid "알람 룰 설정이 끝났으면 아래와 같이 알람 룰 만들기 절차를 마무리합니다."
+msgstr ""
+"After all the settings you've done, finish the process of creating the "
+"alarm rule as shown below."
+
+# 1e6265e246e54d80985d3a0ca58d04f5
+#: ../../anomaly/part04/create_alarm_rule.rst:162
+msgid "알람 룰의 이름과 설명을 기입한 후 **Done** 버튼을 클릭합니다."
+msgstr ""
+"Enter the name and description of the alarm rule and click the **Done** "
+"button."
+
+# 6affad3c769a4dc7bc39cbb1041efc00
+#: ../../anomaly/part04/create_alarm_rule.rst:168
+msgid "생성된 알람 룰은 알람 룰 리스트의 최상단에 노출되며 실행 중인 상태(Running)로 나타납니다."
+msgstr ""
+"The created alarm rule is exposed at the top of the alarm rule list, and "
+"is immediately changed to the running state."
+
+# 54cd6bf5a7054693818eeffd6624e4dc
+#~ msgid "아래와 같이 알람 룰 만들기 절차를 시작하십시오."
+#~ msgstr "Start the procedure for creating an alarm rule as shown below."
+
+# 744bc5a6e79848c486987adb01d1dbdc
+#~ msgid ""
+#~ "**Scoring Method**는 dimension에 따라 split된 "
+#~ "여러 개의 measue 값에서 abnormal socre를 "
+#~ "계산하는 방식을 결정합니다. 기본값은 모든 measure의 "
+#~ "abnormal score의 평균값(Average)으로 계산하며, "
+#~ "최대값(Maximum) 또는 최소값(Minimum)으로 변경할 수 "
+#~ "있습니다."
+#~ msgstr ""
+
