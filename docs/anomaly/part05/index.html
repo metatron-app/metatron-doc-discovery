@@ -207,7 +207,7 @@
 <li><p><strong>Unsupervised Anomaly Detection</strong>: 대부분의 데이터가 정상 sample이라는 가정으로, 데이터 셋에 비정상 여부가 존재하지 않더라도 이상치를 검출할 수 있는 비지도학습 알고리즘.</p></li>
 </ul>
 <p>Metatron Anomaly는 일반적인 정상/비정상 데이터 label이 없는 모든 시계열 데이터에서도 이상 탐지가 가능하도록 Unsupervised 알고리즘 학습을 기본으로 제공합니다.</p>
-<p>Metatron Anomaly에서는 이러한 알고리즘들을 관리하고 신규 알고리즘을 추가할 수 있는 <strong>알고리즘 매니저</strong> 기능을 제공합니다. 이는 다음의 세 페이지로 이루어집니다.</p>
+<p>Metatron Anomaly에서는 이러한 알고리즘들을 관리하고 신규 알고리즘을 추가할 수 있는 <strong>알고리즘 매니저</strong>기능을 제공합니다. 알고리즘 매니저는 다음 세 페이지로 이루어집니다.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference internal" href="#algorithm-list"><span class="std std-ref">알고리즘 리스트</span></a></p></li>
@@ -217,13 +217,13 @@
 </div></blockquote>
 <div class="section" id="algorithm-list">
 <span id="id2"></span><h2>알고리즘 리스트<a class="headerlink" href="#algorithm-list" title="제목 주소">¶</a></h2>
-<p>Anomaly Detection 하위 메뉴 중 <strong>Algorithm</strong> 탭으로 들어가면 시스템 내에 구현된 알고리즘들이 리스트에 등록되어 있습니다.</p>
+<p>Anomaly Detection 하위 메뉴 중 <strong>Algorithm</strong> 탭으로 들어가면 모델 학습에 사용 가능한 알고리즘을 리스트에서 확인할 수 있습니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="algorithm manager" src="../../_images/algorithm_01.png" />
 </div>
 </div></blockquote>
-<p>기본적으로 Metatron Anomaly는 아래의 7가지 통계 알고리즘들이 시스템에 구현되어 있습니다.</p>
+<p>기본적으로 Metatron Anomaly는 아래의 7가지 통계 알고리즘들을 시스템에 내장하고 있습니다.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Seasonal Median Model</p></li>
@@ -238,13 +238,13 @@
 </div>
 <div class="section" id="create-new-algorithm">
 <span id="id3"></span><h2>신규 알고리즘 생성<a class="headerlink" href="#create-new-algorithm" title="제목 주소">¶</a></h2>
-<p>알고리즘 페이지 우측 상단의 <strong>+ Algorithm</strong> 버튼을 클릭하면 알고리즘 생성 작업을 시작합니다.</p>
+<p>알고리즘 페이지 우측 상단의 <strong>+ Algorithm</strong> 버튼을 클릭하면 신규 알고리즘을 추가할 수 있습니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="new algorithm" src="../../_images/algorithm_02.png" />
 </div>
 </div></blockquote>
-<p>신규로 생성할 알고리즘의 이름, 설명을 입력합니다. 기본적으로 연동되는 작업 환경은 Jupyter Notebook이며,  Python 언어를 사용하실 수 있습니다.</p>
+<p>신규로 생성할 알고리즘의 이름, 설명을 입력합니다. 알고리즘 생성에 기본적으로 사용 가능한 작업 환경은 Jupyter Notebook이며, Python 언어를 사용할 수 있습니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="new algorithm" src="../../_images/algorithm_03.png" />
@@ -253,9 +253,9 @@
 </div>
 <div class="section" id="algorithm-details">
 <span id="id4"></span><h2>알고리즘 상세<a class="headerlink" href="#algorithm-details" title="제목 주소">¶</a></h2>
-<p>신규 알고리즘을 생성하면 상세 페이지로 이동됩니다. <strong>구분</strong>에는 사용자가 직접 생성한 알고리즘이면 <strong>확장</strong>, 시스템에 기본 구현된 알고리즘이면 <strong>기본</strong>으로 구분됩니다.</p>
+<p>신규 알고리즘을 생성하면 상세 페이지로 이동합니다. <strong>구분</strong>에는 사용자가 직접 생성한 알고리즘이면 확장, 시스템에 기본 구현된 알고리즘이면 기본으로 표시됩니다.</p>
 <p><strong>Notebook</strong> 옆의 <img alt="icon_link" src="../../_images/icon_link.png" />를 누르면 신규 알고리즘을 구현할 수 있는 Jupyter Notebook 환경으로 이동합니다. 기본 템플릿으로 linear regression 알고리즘이 구현되어 있으며, 사용자가 적절히 변형하여 신규 알고리즘을 구현할 수 있습니다.</p>
-<p>구현된 알고리즘을 테스트하여 시스템에 적합한지 확인하여야 합니다. <strong>Status</strong>는 하단의 test 버튼을 눌렀을 때의 결과가 나타납니다. 버튼을 누르면 구현된 알고리즘이 시스템에 적합한지 내부적으로 테스트를 진행합니다. 결과값은 한번도 테스트한 적이 없으면 <strong>N/A</strong>, 실패하면 <strong>Fail</strong>, 성공하면 <strong>Available</strong>로 기록됩니다.</p>
+<p>구현된 알고리즘을 테스트하여 시스템에 적합한지 확인하여야 합니다. 하단의 Test 버튼을 누르면 구현된 알고리즘이 시스템에 적합한지 내부적으로 테스트를 진행합니다. <strong>Status</strong>에 그 결과가 나타납니다. 테스트 결과는 한번도 테스트한 적이 없으면 <strong>N/A</strong>, 실패하면 <strong>Fail</strong>, 성공하면 <strong>Available</strong>로 기록됩니다.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="new algorithm" src="../../_images/algorithm_04.png" />
