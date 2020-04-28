@@ -22,9 +22,9 @@ from sphinx_rtd_theme import __version__
 
 # -- Project information -----------------------------------------------------
 
-project = 'metatron discovery docs'
-copyright = '2019, metatron team'
-author = 'metatron team'
+project = 'Metatron User Manual'
+copyright = '2020, SK Telecom'
+author = 'Team Data Platform Dev.'
 
 # The short X.Y version
 version = __version__

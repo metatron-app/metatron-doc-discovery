@@ -6,9 +6,9 @@
 .. |icon_applied| image:: /_static/img/anomaly/part04/icon_applied.png
 .. |icon_comparison| image:: /_static/img/anomaly/part04/icon_comparison.png
 
-시계열 데이터에 머신러닝 모델을 적용했을 때, 일반적으로 시간이 지나면 데이터 패턴이 변하고 모델의 정확도가 점차 하락하는 문제점이 발생합니다. 이 경우 데이터 사이언티스트들이 수동으로 신규 데이터를 트레이닝 셋으로 변경하여 모델을 재학습시켜 정확도를 높인 후 시스템에 재배포하는 과정을 거쳐야 합니다.
+시계열 데이터에 머신러닝 모델을 적용했을 때, 일반적으로 시간이 지나면 데이터 패턴이 변하고 모델의 정확도가 점차 하락하는 문제점이 발생합니다. 이 경우 데이터 과학자들은 데이터 관리자에게 요청하여 신규 데이터를 가져온 다음 직접 모델을 재학습시켜 일정 수준 이상의 정확도를 확보하면 시스템에 재배포하는 과정을 거쳐야 합니다. 이 과정은 때로는 수 개월까지 소요될 수 있습니다.
 
-**Metatron Anomaly**\는 데이터 사이언티스트가 아닌 사용자들도 쉽게 모델을 재학습할 수 있는 **모델 매니저** 기능을 지원합니다.
+**Metatron Anomaly**\는 데이터 과학자, 데이터 관리자가 아닌 일반 사용자들도 쉽게 모델을 재학습할 수 있는 **모델 매니저** 기능을 지원합니다.
 
 모델 매니저는 다음의 기능들로 이루어집니다.
 
@@ -59,14 +59,14 @@
 모델 비교 및 신규 모델 적용
 ==============================
 
-신규 모델 우측의 |icon_comparison| 아이콘을 누르면 기존에 적용된 모델과 신규 학습한 모델을 비교할 수 있습니다. 기 적용된 모델은 파란색, 신규로 선택한 모델은 분홍색으로 표시되어 그래프 내에서 예측값 및 abnormal score 값을 비교할 수 있습니다.
+신규 모델 우측의 |icon_comparison| 아이콘을 누르면 기존에 적용된 모델과 신규 학습한 모델을 비교할 수 있습니다. 기 적용된 모델은 파란색, 신규로 선택한 모델은 분홍색으로 표시되어 그래프 상에서 두 모델의 예측값과 Abnormal Score 값을 비교할 수 있습니다.
 
 		.. figure:: /_static/img/anomaly/part04/model_manager_05.png
 		   :align: center
 		   :alt: compare ML models
 
 
-새롭게 학습시킨 모델을 룰에 적용하려면 우측의 |icon_ham| 메뉴에서 **Apply this training model** 을 클릭합니다. 적용된 모델에는 |icon_applied| 태그가 달립니다.
+새롭게 학습시킨 모델을 룰에 적용하려면 우측의 |icon_ham| 메뉴에서 **Apply this training model** 을 클릭합니다. 적용된 모델에는 |icon_applied| 태그가 표시됩니다.
 
 		.. figure:: /_static/img/anomaly/part04/model_manager_06.png
 		   :align: center
