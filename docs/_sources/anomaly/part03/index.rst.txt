@@ -109,7 +109,7 @@ Alarm Rule 탭
 	   :scale: 50%
 
 
-Chart View 탭
+View by Chart 탭
 ``````````````````````````````````````````````````
 
 이 탭 영역에서는 해당 알람 구간에서 모니터링한 데이터의 Abnormal Score 를 그래프로 보여줍니다. 각 조건별 점수 임계치(Threshold)에 상응하는 알람(``Critical``, ``Major``, ``Moderate``, ``Low``) 별로 발생된 알람의 건수를 확인할 수 있습니다. 차트 산출 방식에 관해서는 :ref:`basic_principles` 항목을 참조하십시오.
@@ -121,7 +121,7 @@ Chart View 탭
 	* **Total abnormal score:** 알람 룰에 포함된 모든 측정값 컬럼에 대한 Abnormal Score를 보여줍니다.
 	* **Chart by measures:** 알람 룰에 포함된 각 개별 측정값 컬럼 데이터의 예측치와 실제치의 추이를 보여줍니다.
 
-Table View 탭
+View by Table 탭
 ``````````````````````````````````````````````````
 
 이 탭 영역에서는 각 알람 발생 건별로 데이터 실제치와 예측치, 그리고 Abnormal Score를 표 형식으로 나열합니다.
