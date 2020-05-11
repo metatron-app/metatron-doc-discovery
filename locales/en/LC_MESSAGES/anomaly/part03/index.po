@@ -20,7 +20,7 @@ msgstr ""
 # 2b550fa611264217903807812d66257b
 #: ../../anomaly/part03/index.rst:2
 msgid "알람 내역 열람하기"
-msgstr "Viewing alarms"
+msgstr "Alarm"
 
 # 07ee3f27bf52414f9e08c02d6b52d59b
 #: ../../anomaly/part03/index.rst:4
@@ -29,7 +29,7 @@ msgid ""
 ":ref:`Statistics` 페이지와는 다르게 이 메뉴에서는 보다 개별적인 알람들을 열람하고 탐색하는 데 최적화된 UI를 "
 "제공합니다."
 msgstr ""
-"In the ** Alarm ** tab menu, you can check the alarm history that has "
+"In the **Alarm** tab menu, you can check the alarm history that has "
 "occurred so far. Unlike the: ref: `Statistics` page, which shows the "
 "overall status of the alarm, this menu provides an optimized UI for "
 "viewing and browsing more individual alarms."
