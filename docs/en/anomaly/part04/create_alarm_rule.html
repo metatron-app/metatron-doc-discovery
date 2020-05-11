@@ -127,8 +127,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Viewing alarms</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Alarm Rule</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Creating an Alarm Rule</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#select-datasource">Selecting Data Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#select-columns">Selecting metrics to monitor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#select-datasource">Select Data Source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#select-columns">Select metrics to monitor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#configure-training">Setting the training data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#select-model">Choosing a Model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#alarm-rule-settings">Setting alarm rule conditions</a></li>
@@ -213,8 +213,8 @@
 <p>Anomaly guides users through the following procedures in order to help users easily create the desired alarm rules.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference internal" href="#select-datasource"><span class="std std-ref">Selecting Data Source</span></a></p></li>
-<li><p><a class="reference internal" href="#select-columns"><span class="std std-ref">Selecting metrics to monitor</span></a></p></li>
+<li><p><a class="reference internal" href="#select-datasource"><span class="std std-ref">Select Data Source</span></a></p></li>
+<li><p><a class="reference internal" href="#select-columns"><span class="std std-ref">Select metrics to monitor</span></a></p></li>
 <li><p><a class="reference internal" href="#configure-training"><span class="std std-ref">Setting the training data</span></a></p></li>
 <li><p><a class="reference internal" href="#select-model"><span class="std std-ref">Choosing a Model</span></a></p></li>
 <li><p><a class="reference internal" href="#alarm-rule-settings"><span class="std std-ref">Setting alarm rule conditions</span></a></p></li>
@@ -222,7 +222,7 @@
 </ul>
 </div></blockquote>
 <div class="section" id="select-datasource">
-<span id="id2"></span><h2>Selecting Data Source<a class="headerlink" href="#select-datasource" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Select Data Source<a class="headerlink" href="#select-datasource" title="Permalink to this headline">¶</a></h2>
 <p>To create an alarm rule, you must first set up a data source to monitor.</p>
 <blockquote>
 <div><ol class="arabic">
@@ -244,39 +244,39 @@
 </div></blockquote>
 </div>
 <div class="section" id="select-columns">
-<span id="id3"></span><h2>Selecting metrics to monitor<a class="headerlink" href="#select-columns" title="Permalink to this headline">¶</a></h2>
-<p>데이터 소스를 선택하면 다음 화면으로 넘어가면서 좌측에 <strong>Data</strong> 패널이 열립니다. 이 패널에서 아래와 같이 모니터링할 지표를 선택할 수 있습니다.</p>
+<span id="id3"></span><h2>Select metrics to monitor<a class="headerlink" href="#select-columns" title="Permalink to this headline">¶</a></h2>
+<p>Selecting a data source will take you to the next screen and the <strong>Data</strong> panel on the left will open. Use this panel to select metrics to monitor as shown below.</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p><strong>Measure 선택</strong>: <strong>Measure</strong> 영역에서 알람을 설정하고자 하는 측정값 컬럼을 선택합니다. 클릭한 측정값 컬럼은 Aggregate 선반에 자동으로 옮겨집니다.</p>
+<li><p><strong>Select Measures</strong>: In the <strong>Measure</strong> tab area, select the column you want to monitor. The clicked measure column is automatically moved to the aggregation shelf.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="select measure" src="../../_images/choose_metrics_select_measure_01.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>사용자 컬럼 추가</strong>: 필요한 경우 기존 컬럼에 수식을 적용하여 새로운 컬럼을 만들 수도 있습니다. <strong>Measure</strong> 영역의 우측 상단에서 <img alt="icon_custom_column" src="../../_images/icon_custom_column.png" /> 버튼을 클릭하여 대화 상자를 열고 직접 새로운 컬럼을 만들어 보세요.</p>
+<li><p><strong>Add User-defined column</strong>: If necessary, you can create a new user column by applying a formula to an existing column. In the upper right corner of the <strong>Measure</strong> area, Click the <img alt="icon_custom_column" src="../../_images/icon_custom_column.png" /> button to open a dialog box and set up a custom column.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="make custem measure rule" src="../../_images/choose_metrics_select_measure_02.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>Measure 집계 방식 변경</strong>: Aggregate 선반에 올려진 각 컬럼을 클릭하여 원하는 집계 방식을 선택합니다. 기본값은 SUM으로 지정되어 있습니다.</p>
+<li><p><strong>Change measure aggregation method</strong>: Select the desired aggregation method by clicking on each column placed on the Aggregate shelf. The default is SUM.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="select aggregation type" src="../../_images/choose_metrics_select_measure_03.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>Split</strong>: 필요할 경우 차원값 컬럼을 기준으로 aggregate 데이터를 분할할 수 있습니다. <strong>Dimension</strong> 영역에서 분할의 기준으로 삼을 측정값 컬럼에 마우스 커서를 오버한 후 <img alt="icon_split" src="../../_images/icon_split.png" /> 버튼을 클릭하세요. split 가능한 개수는 최대 10개이며, dimension 값이 10개 이상이라면 임의의 값 10개가 선택됩니다.</p>
+<li><p><strong>Split</strong>: You can split aggregated data based on dimension value columns. In the <strong>Dimension</strong> area, move the mouse cursor over the measure column to be used as the basis for division, and then click the <img alt="icon_split" src="../../_images/icon_split.png" /> button. The maximum number of splits is 10, and if the dimension value is 10 or more, 10 random values are selected.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="splite measure by dimension" src="../../_images/choose_metrics_select_measure_04.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>Dimension 값으로 필터링</strong>: 필요할 경우 차원값(Dimension) 컬럼을 기준으로 데이터를 필터링할 수 있습니다. <strong>Dimension</strong> 영역에서 필터를 설정할 측정값 컬럼에 마우스 커서를 오버한 후 <img alt="icon_ano_filter" src="../../_images/icon_ano_filter.png" /> 버튼을 클릭하세요. 그 후 아래 화면처럼 모니터링이 필요한 특정 범주를 선택하세요.</p>
+<li><p><strong>Filtering by Dimension value</strong>: You can filter aggregate data based on dimension value columns. In the <strong>Dimension</strong> area, move the mouse cursor over the measure column to set the filter, and click the <img alt="icon_ano_filter" src="../../_images/icon_ano_filter.png" /> button. Then select the specific category you need to monitor as shown below.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="select filter value" src="../../_images/choose_metrics_add_filter_01.png" />
@@ -288,17 +288,17 @@
 </div>
 <div class="section" id="configure-training">
 <span id="id4"></span><h2>Setting the training data<a class="headerlink" href="#configure-training" title="Permalink to this headline">¶</a></h2>
-<p>모니터링할 지표 선택을 마쳤으면 <strong>Training interval</strong> 패널에서 예측 모델 트레이닝에 사용할 데이터 범위를 지정할 수 있습니다.</p>
+<p>When you finished selecting metrics to monitor, now you can select the data range to use for training the predictive model in the <strong>Training Interval</strong> panel.</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>모델 학습에 사용할 데이터의 기본 시간 단위를 <strong>Granularity</strong> 메뉴에서 결정할 수 있습니다. 그래프를 보면서 데이터의 패턴을 가장 잘 보여주는 형태의 단위를 선택합니다.</p>
+<li><p><strong>Granularity</strong> can determine the default unit of time for data to be used for model training. While looking at the graph, choose the unit that best shows the pattern of the data.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="select granularity" src="../../_images/choose_metrics_select_training_interval_01.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>모델 학습에 사용할 데이터의 범위를 설정합니다. 위에 설정한 기본 Granularity보다 같거나 큰 단위로 학습할 데이터 범위를 입력할 수 있습니다.</p>
+<li><p>Set the range of data to use for training the model. You can enter a range of data to train in units equal to or greater than the default granularity set earlier.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="select specific time" src="../../_images/choose_metrics_select_training_interval_02.png" />
@@ -311,17 +311,17 @@
 </div>
 <div class="section" id="select-model">
 <span id="id5"></span><h2>Choosing a Model<a class="headerlink" href="#select-model" title="Permalink to this headline">¶</a></h2>
-<p>이제 <strong>Model</strong> 패널로 넘어가서 어떤 예측 모델을 사용할지 선택합니다. Anomaly는 앞서 설정한 학습 데이터 기간으로 각각의 모델을 트레이닝시킨 후 정확도를 계산합니다. 아래 두 방법 중 하나를 통해 적합한 예측 모델을 선택할 수 있습니다.</p>
+<p>Now go to the <strong>Model</strong> panel and choose which prediction model to use. Metatron Anomaly trains each model using a given set of training data and produces the results. Choose a suitable prediction model through one of the two methods below.</p>
 <blockquote>
 <div><ul>
-<li><p><strong>추천 모델 사용</strong>: 기본적으로 우측에 표시되는 정확도 점수(100점 만점)가 가장 높은 모델이 <strong>Recommend</strong> 태그와 함께 자동 선택됩니다.</p>
+<li><p><strong>Use recommended model</strong>: By default, the model with the highest accuracy score (out of 100) displayed on the right is automatically selected with a <strong>Recommend</strong> mark.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="auto training model" src="../../_images/choose_model_01.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>비교 후 직접 선택</strong>: 각 모델을 선택하면 예측값과 Abnormal Score를 그래프에서 볼 수 있습니다. 가장 적합하다고 생각되는 모델을 직접 선택할 수 있습니다. 모델명 우측 아이콘에 마우스를 오버하면 해당 모델이 학습된 상세 값을 볼 수 있습니다.</p>
+<li><p><strong>Select yourself after comparison</strong>: If you select each model, you can see the predicted value and Abnormal Score in the graph. You can select the model that you think is most suitable. When you mouse-hover the icon to the right of the model name, you can see the detail learning values.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="model details" src="../../_images/choose_model_02.png" />
@@ -336,40 +336,40 @@
 <p>After selecting the predictive model to use, now you need to set the conditions for the alarm to occur in the <strong>Condition</strong> panel.</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p><strong>Subscribers</strong> 항목의 우측에 있는 <img alt="icon_info" src="../../_images/icon_info.png" /> 버튼을 클릭하여 대화 상자를 연 후, 알람 발생 시 통보 받는 대상과 통보 방식을 설정합니다.</p>
+<li><p>Click <img alt="icon_info" src="../../_images/icon_info.png" /> to the right of the <strong>Subscribers</strong> to open a dialog box, and set the target and method to be notified when an alarm occurs.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="set alarm noti detail" src="../../_images/set_alarm_rules_01.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>아래 각 항목의 설명을 참고하여 알람 발생 조건을 설정합니다.</p>
+<li><p>Set the time when the alarm is triggered by referring to the description of each item below.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="set alarm interval" src="../../_images/set_alarm_rules_02.png" />
 </div>
 <ul class="simple">
-<li><p><strong>Alarm Start:</strong> 알람 조건 검사를 시작할 순간을 설정합니다. 이 설정값에 해당하는 시간 이후부터 알람 발생을 검사합니다.</p></li>
-<li><p><strong>Alarm Interval:</strong> 알람 발생 조건을 검사하는 주기를 설정합니다.</p></li>
+<li><p><strong>Alarm Start:</strong> Set when to start an alarm. The alarm starts after the time corresponding to this setting value.</p></li>
+<li><p><strong>Alarm Interval:</strong> Set the interval to generate an alarm when the condition of the alarm is met.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p><strong>Scoring Method</strong>는 여러 개의 측정값(Measure)에서 Abnormal Score를 계산하는 방식을 결정합니다. 기본값은 각 측정값에서 계산된 Abnormal Score들의 평균값(Average)으로 계산하며, 최대값(Maximum) 또는 최소값(Minimum)으로 변경할 수 있습니다.</p>
+<li><p><strong>Scoring Method</strong>determines how abnormal socres are calculated from multiple measue values split by dimension. The default value is calculated as the average of the abnormal scores of all measures, and can be changed to the maximum or the minimum.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="set scoring method" src="../../_images/set_alarm_rules_03.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>Set the alarm trigger conditions according to the abnormal score of monitored data with reference to the description of the following items. By default, one <code class="docutils literal notranslate"><span class="pre">Majot</span></code> level condition is given and you can set more conditions with <strong>+ Add Condition</strong> button.</p>
+<li><p>Set the alarm trigger conditions according to the abnormal score of monitored data with reference to the description of the following items. By default, one <code class="docutils literal notranslate"><span class="pre">Major</span></code> level condition is given and you can set more conditions with <strong>+ Add Condition</strong> button.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="set alarm condition" src="../../_images/set_alarm_rules_04.png" />
 </div>
 <ul class="simple">
 <li><p><strong>Severity:</strong> Set the severity of the alarm for a given condition.</p></li>
-<li><p><strong>Threshold:</strong> Abnormal Score가 이 설정값을 초과하면 데이터 이상 상태로 간주됩니다.</p></li>
-<li><p><strong>Frequency:</strong> Abnormal Score가 한계값을 초과하는 빈도가 어떠할 때 알람을 발생시킬지 결정합니다. 예를 들어, “3 within 5 minute”로 설정한 경우에는 abnormal score가 5분 안에 3회 이상 한계값을 초과하면 알람이 발생합니다.</p></li>
+<li><p><strong>Threshold:</strong> If the abnormal score exceeds this setting, the data is considered abnormal.</p></li>
+<li><p><strong>Frequency:</strong> Determines how often an alarm is triggered when the frequency of abnormal scores exceeds the threshold. For example, if it is set to “3 within 5 minute “, an alarm is generated if the abnormal score exceeds the limit value more than 3 times within 5 minutes.</p></li>
 </ul>
 </div></blockquote>
 </li>

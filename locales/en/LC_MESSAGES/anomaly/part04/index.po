@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: metatron discovery docs 0.4.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-14 00:07+0900\n"
+"POT-Creation-Date: 2020-05-11 16:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,11 @@ msgstr "Alarm Rule"
 # 7d7b0f9630d54eada2eec9ae2c07f4a1
 #: ../../anomaly/part04/index.rst:4
 msgid ""
-"Metatron Anomaly는 사용자가 직접 데이터에서 알람이 발생하는 규칙(Rule)을 쉽게 생성하고 관리할 수 있도록 "
-"지원합니다. Anomaly의 알람 룰은 다음과 같은 특징이 있습니다."
+"Metatron Anomaly는 사용자가 직접 데이터에서 이상을 탐지하는 규칙을 쉽게 생성하고 관리할 수 있도록 지원합니다. "
+"Anomaly의 알람 룰은 다음과 같은 특징이 있습니다."
 msgstr ""
 "Metatron Anomaly makes it easy for users to easily create and manage "
-"rules that trigger alarms in their data. Metatron Anomaly's alarm rules "
+"rules that trigger alarms in their time-series data. Metatron Anomaly's alarm rules "
 "have the following characteristics:"
 
 # 1400de97878e492fb5bbcac2c20900ad
@@ -56,8 +56,8 @@ msgstr "Automatic model learning and optimal model recommendation"
 
 # 4ecf437bb16c40e9b36ddcc5c5b34eee
 #: ../../anomaly/part04/index.rst:11
-msgid "적용된 모델 정확도 하락 시 모델 재학습(retraining) 지원"
-msgstr "Supports model retraining when applied model accuracy decreases"
+msgid "적용된 모델 정확도 하락 시 모델 재학습(re-learning) 지원"
+msgstr "Supports model re-learning when applied model accuracy decreases"
 
 # b9eef8dad67d488b8cd7d1a6ebfad133
 #: ../../anomaly/part04/index.rst:13

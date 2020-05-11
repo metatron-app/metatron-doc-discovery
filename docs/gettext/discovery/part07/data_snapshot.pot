@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, SK Telecom
+# This file is distributed under the same license as the Metatron User Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Metatron User Manual 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-11 16:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part07/data_snapshot.rst:2
+# 185187c0697e4219b984d0d085d56595
+msgid "데이터 스냅샷 결과 이용하기"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:4
+# 7f610ed8384a4688bccd7111c0d36030
+msgid "데이터플로우를 통해 생성된 **데이터 스냅샷**\\은 다음과 같이 활용할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:6
+# 6dcc49f01b07471a88a6eabcbeb45414
+msgid ":ref:`snapshot_result_check`"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:7
+# d31e93609da04be4967aaeaad869a9f4
+msgid ":ref:`snapshot_into_druid`"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:8
+# 19b809186d2d451eba548e0273f4ed86
+msgid ":ref:`snapshot_into_csv`"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:13
+# 6b95e8557fcf4135a7c439930ef21b3f
+msgid "데이터 스냅샷 결과 확인하기"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:15
+# 9caf5c5350e045cd8e1bc0dd36e167ad
+msgid "스냅샷의 생성 단계는 다음과 같은 3가지 경우로 분류됩니다."
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:17
+# e0240f859f5c49088c803c5e160f8e2a
+msgid "**성공** = SUCCEEDED"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:18
+# 3e7c67d30ceb4b389ee1dcc8f586c1db
+msgid "**실패** = FAILED"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:19
+# 6065e53ba6c3400d947c5354d8812a7a
+msgid "**처리중** = INITIALIZING, RUNNING, WRITING, TABLE_CREATING, CANCELING"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:21
+# aa38b6705d264d1faabbfb08c55bfc62
+msgid "스냅샷의 상세한 처리 결과는 다음 2가지 경로를 통해 확인할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:23
+# ef2b77e6f02e41538ff6a686d893b067
+msgid "**MANAGEMENT** > **데이터 프리퍼레이션** > **데이터 스냅샷**\\의 스냅샷 목록을 통해서 확인"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:27
+# f77be26847e5433388b0de3dc862be47
+msgid "**데이터플로우**\\의 :doc:`룰 편집 <edit_rules>` 화면 우측에서 **스냅샷(#)** 탭을 클릭"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:31
+# 33c6cc2033f34d9da280bb99d0b118d7
+msgid "생성에 성공한 스냅샷의 상세 보기 화면으로 들어가면, 데이터의 유효성 비율, 생성된 스냅샷의 그리드 등을 확인할 수 있고, 스냅샷 결과를 :ref:`CSV 파일로 다운로드 <snapshot_into_csv>`\\할 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:35
+# aa211bcbe76d4a748734a3b4eda0a11d
+msgid "유효한 데이터가 생성되지 못한 스냅샷의 상세 보기 화면으로 들어가면, 실패를 발생시킨 예외의 로그가 표시됩니다."
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:42
+# 1c02081e6d194c49b1a3f9608c911be9
+msgid "Metatron 엔진으로 적재하기"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:44
+# 076c3748993c4db8a37d905cd94ca4ec
+msgid "(개발예정)"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:49
+# 6c50e38beb374a53973f45b891ceb821
+msgid "CSV파일로 다운로드 받기"
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:51
+# 23fb0a09da504440a006dbca24d673ec
+msgid "생성에 성공한 스냅샷의 상세 보기에서는 **CSV로 다운로드**\\가 가능합니다."
+msgstr ""
+
+#: ../../discovery/part07/data_snapshot.rst:55
+# 8dc873d1b12d41c6a04036c2517ec473
+msgid "다운로드한 파일은 표준 CSV 형식으로, 'comma'로 구분되고 'new line'으로 개행합니다."
+msgstr ""
+

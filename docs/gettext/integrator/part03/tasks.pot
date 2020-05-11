@@ -1,0 +1,208 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, SK Telecom
+# This file is distributed under the same license as the Metatron User Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Metatron User Manual 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-11 16:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../integrator/part03/tasks.rst:4
+# aff4cbb5577c45699da8351aa06f7fb8
+msgid "액션 노드"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:6
+# a7f623e9d3894fef91e399e943e76b84
+msgid "Integrator의 액션 노드들(action nodes)은 원천 데이터를 Hadoop 클러스터에서 수집·가공·적재하기 위한 각각의 연산처리 작업을 정의합니다. 아래와 같이 여러 가지 Hadoop 작업과 몇몇 추가적인 개별 시스템 작업(Java, Shell 등)을 지원합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:9
+# 9fb5e4b37fa541fb9a41f31393b9cdd7
+msgid "`Sqoop`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:10
+# ede7834c3eac464bb22ee3e489dfbb86
+msgid "`MR`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:11
+# 4cad5ac2444c423fbb003da4cf252417
+msgid "`EXEC`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:12
+# 30d16cc689784ca89305fc15da27877a
+msgid "`Java`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:13
+# 5ebaf913ff494ee28c0ab023bc2f196b
+msgid "`HIVE Query`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:14
+# dddeb2a45eef4c3bbb8b3b64a3a1cb63
+msgid "`SSH`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:15
+# 9f7341759dac4805b015a71e0da926f9
+msgid "`Spark`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:16
+# b7a2aeb922044d9184688e282038bf16
+msgid "`Sub-Workflow`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:17
+# 9d4d0d2adebf444aabab9ac2d04a7f61
+msgid "`DistCp`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:18
+# 952318eab0964ac189f559247be4aaaa
+msgid "`HDFS`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:19
+# e1f3aff2ada44471a7e7294def735fa4
+msgid "`Done`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:20
+# 3d3bd7f63beb4f8b801629c4945bb746
+msgid "`Druid`_"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:23
+# f2c19bda915c4d8b8945f7975ea4d3d1
+msgid "Sqoop"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:25
+# 0a4070232ccf4efbba301ab1890b787c
+msgid "RDB 상의 데이터를 가져오거나 간단한 쿼리를 실행할 수 있는 task 입니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:28
+# 3684e17af70a4d05839f6b212726ffc0
+msgid "MR"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:30
+# cccdbefce4254705b36c0c8a019f20e0
+msgid "Local에 있는 jar를 실행하는 데 사용합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:33
+# 851b296541a74f2aad04ede3e5a72130
+msgid "EXEC"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:35
+# 1d2cdfff67a048eeabaf35c8449086e2
+msgid "Python, shell 등 로컬에 있는 파일을 실행하는데 사용합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:38
+# 721ce554deeb4257a865c595848b7555
+msgid "Java"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:40
+# a32d41e909bb4004af8fe8fcdb673c0b
+msgid "Java Task는 Java Class를 실행하고자 할 때 사용합니다. (단, main 함수가 구현되어 있어야 합니다.)"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:44
+# dee37d7be9964d6f8a3154ca11d58b45
+msgid "HIVE Query"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:46
+# d83493b00568467bbc3c34511bb3af23
+msgid "Hive 쿼리를 실행할 때 사용합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:49
+# ea3ff58bad9b46a1a9e6fa67fb18607b
+msgid "SSH"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:51
+# bd26faca63a84cc49c2525b2c7d893a6
+msgid "원격지(remote)에 있는 명령어를 실행할 때 사용합니다. 다만, remote 서버는 SSH password-less login 설정이 되어 있어야 합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:55
+# 4ec6fc6914a7416b909ac9b13c02b52d
+msgid "Spark"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:57
+# fcb88f0ebb0742f98063ac14535fd7d5
+msgid "SPARK를 실행하는데 사용합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:60
+# 9f6feaa1b8fb4e309183f09104295191
+msgid "Sub-Workflow"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:62
+# 2db59b18a7ec4efc8a6547a011de4cb5
+msgid "기존 만들어진 Workflow와 연계 시 사용됩니다. 여러개의 Workflow 를 묶어서 실행하고자 할 때 각각의 Workflow 를 Task 로 정의합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:66
+# 3c394c43283743e6b13af9aef0380b6b
+msgid "DistCp"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:68
+# bc59ee793f34412f806b8776a9ec95f3
+msgid "Source Hadoop Cluster 에서 Target Hadoop Cluster에 파일 복사시 사용합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:71
+# 5f8c502241a04af8ba3d6ea78cf1e465
+msgid "HDFS"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:73
+# 82755803df2f4061afbb9c8f4f01b494
+msgid "Hadoop File 관리시 사용합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:76
+# e6bf910eecce4867b612118c2316461e
+msgid "Done"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:78
+# 9a5f5704865c4ec7a3dbec9021b39471
+msgid "완료시 Done 파일을 생성합니다."
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:81
+# 06eda70f3e8f4b04ac323a5d68668781
+msgid "Druid"
+msgstr ""
+
+#: ../../integrator/part03/tasks.rst:83
+# 4845f8531dca48849506ecd92779d5c7
+msgid "Druid 엔진에 데이터 증분적재하기 위해 사용합니다."
+msgstr ""
+

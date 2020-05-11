@@ -53,7 +53,7 @@ Metatron Anomaly는 머신러닝 모델을 활용한 이상 탐지 기능과 별
 				   :align: center
 				   :alt: Dashboard	
 	
-	#. 상단의 |icon_update| 를 누르면 대시보드를 정해진 시간마다 갱신합니다. 기본적으로는 10초마다 업데이트하며 갱신 주기는 20초 또는 30초로 변경할 수 있습니다.
+	#. 상단의 |icon_update| 를 누르면 대시보드를 정해진 시간마다 갱신합니다. 기본적으로는 10초마다 업데이트하며 갱신 주기는 3초, 20초 또는 30초로 변경할 수 있습니다.
 
 			.. figure:: /_static/img/anomaly/part06/dashboard_05.png
 				   :align: center

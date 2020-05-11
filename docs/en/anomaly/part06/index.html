@@ -128,10 +128,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../part04/index.html">Alarm Rule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../part05/index.html">Algorithm</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Dashboard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">Selecting Data Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">Select Data Source</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">Real-time Dashboard</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id4">Chart</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id5">차트 변경</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Chart Change</a></li>
 </ul>
 </li>
 </ul>
@@ -203,22 +203,22 @@
             
   <div class="section" id="id1">
 <h1>Dashboard<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Metatron Anomaly는 머신러닝 모델을 활용한 이상 탐지 기능과 별도로 데이터 소스 자체에 대한 모니터링 기능을 제공합니다. 알람이 발생한 후에 원인을 찾기 위해서 활용하거나, 어떤 측정값(measure)에 어떤 차원값(dimension)을 대상으로 알람 룰을 생성할지 확인하기 위해서도 활용할 수 있습니다.</p>
-<p>그 중 대시보드는 Data Monitoring의 하위 메뉴로, 정해진 차트 몇 가지로 빠르게 데이터 소스에 대한 현황을 파악할 수 있도록 만들어진 기능입니다.</p>
+<p>Metatron Anomaly provides monitoring of the data source itself, in addition to anomaly detection using a machine learning model. It can be used to find the cause after an alarm has occurred, or it can be used to check what measure and dimension to create an alarm rule for.</p>
+<p>Among them, the dashboard is a sub-menu of Data Monitoring, and it is a function created to quickly grasp the status of the data source with a few of the established charts.</p>
 <blockquote>
 <div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/dashboard_lnb.png"><img alt="Metatron Anomaly LNB" src="../../_images/dashboard_lnb.png" style="width: 257.0px; height: 413.0px;" /></a>
 </div>
 </div></blockquote>
 <div class="section" id="id2">
-<h2>Selecting Data Source<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>가장 먼저 모니터링할 데이터 소스를 선택해야 합니다. 대시보드에 처음으로 진입하면 데이터소스를 선택하는 버튼이 다음과 같이 나타납니다.</p>
+<h2>Select Data Source<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>First of all, you need to select the data source you want to monitor. You can see the button like below when entering the dashboard menu.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Datasource dashbaord" src="../../_images/dashboard_01.png" />
 </div>
 </div></blockquote>
-<p>버튼을 클릭 후 모니터링할 데이터 소스를 선택합니다.</p>
+<p>Search and select data source after clicking the button.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Select Datasource" src="../../_images/select_datasource.png" />
@@ -227,31 +227,31 @@
 </div>
 <div class="section" id="id3">
 <h2>Real-time Dashboard<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>데이터 소스를 선택하면 즉시 주요 측정 값 4개에 대한 차트들로 이루어진 대시보드가 만들어집니다. 이 대시보드는 사용자가 다른 메뉴로 이동 후에 다시 돌아와도 그대로 유지됩니다.</p>
+<p>As soon as you select a data source, a dashboard is created with charts for four key measurements. This dashboard is retained even if the user navigates back to another screen and then returns.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Dashboard" src="../../_images/dashboard_02.png" />
 </div>
 <ol class="arabic">
-<li><p>대시보드의 상단에는 데이터소스의 정보를 보여줍니다. 모니터링 하고자 하는 데이터 소스를 변경하려면 데이터 소스 이름 우측의 <img alt="icon_edit" src="../../_images/icon_edit.png" /> 을 누릅니다.</p>
+<li><p>Also you can see the information of the data source at the top of the dashboard. Click <img alt="icon_edit" src="../../_images/icon_edit.png" /> if you want to change the data source to monitor.</p>
 <blockquote>
 <div></div></blockquote>
 </li>
-<li><p>만약 데이터 소스 선택 후 어떤 차트도 그려지지 않는다면 우측 drop-down 메뉴에서 모니터링 대상 기간을 확인하세요. 이 대시보드는 지속적으로 업데이트 되는 데이터 소스를 모니터링 하는 것을 권장합니다. 정적인 데이터 소스에 대한 대시보드는 Metatron Discovery를 활용해보세요.</p>
+<li><p>If no chart is drawn after selecting the data source, check the period to be monitored in the menu on the right-top. This dashboard assumes that you are monitoring data sources that are constantly updated.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Dashboard" src="../../_images/dashboard_04.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>상단의 <img alt="icon_update" src="../../_images/icon_update.png" /> 를 누르면 대시보드를 정해진 시간마다 갱신합니다. 기본적으로는 10초마다 업데이트하며 갱신 주기는 20초 또는 30초로 변경할 수 있습니다.</p>
+<li><p>Click <img alt="icon_update" src="../../_images/icon_update.png" /> at the top to auto-update the dashboard at a fixed time. By default, it is updated every 10 seconds, and the update cycle can be changed to 3 seconds, 20 seconds, or 30 seconds.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Dashboard" src="../../_images/dashboard_05.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p><img alt="icon_full" src="../../_images/icon_full.png" /> 을 누르면 전체화면 모드로 전환됩니다. 전체화면 모드에서 다시 <img alt="icon_full" src="../../_images/icon_full.png" /> 을 누르면 본 화면으로 돌아옵니다.</p>
+<li><p>Click <img alt="icon_full" src="../../_images/icon_full.png" /> to switch to full screen mode. Press <img alt="icon_full" src="../../_images/icon_full.png" /> again in fullscreen mode to return to the normal screen.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Dashboard" src="../../_images/dashboard_06.png" />
@@ -263,38 +263,38 @@
 </div>
 <div class="section" id="id4">
 <h2>Chart<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>대시보드에는 선정된 데이터 소스에서 임의의 측정값(measure) 4개에 대한 11개의 차트가 자동으로 그려집니다.</p>
+<p>The dashboard automatically draws 11 charts for 4 random measures from selected data source.</p>
 <blockquote>
 <div><ul>
-<li><p><strong>측정값(measure) KPI 차트</strong> : 개별 측정값 4개에 대해 현재값 및 평균 값에 대한 KPI 차트입니다.</p>
+<li><p><strong>4 KPI charts for measures</strong> : KPI charts for current and average values for 4 individual measures</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Chart" src="../../_images/chart_01.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>차원값(dimension) 별 측정값 라인 차트</strong> : 임의로 선택된 차원값 1개에 대해 개별 측정값 4개에 대한 라인 차트를 그립니다.</p>
+<li><p><strong>4 Line charts by 1 demension</strong> : Line charts for 4 individual measures for 1 randomly selected dimension value.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Chart" src="../../_images/chart_02.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>데이터 수집 현황</strong> : 24시간 동안 몇 개의 데이터 레코드가 수집되었는지 기록한 막대 차트입니다.</p>
+<li><p><strong>Data collection status</strong> : A bar chart that records how many data records were collected over a 24-hour period.</p>
 <blockquote>
 <div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/chart_03.png"><img alt="Chart" src="../../_images/chart_03.png" style="width: 1011.0px; height: 243.0px;" /></a>
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>데이터 수집 지연 시간</strong> : 가장 최근 데이터가 수집된 시간과 현재 시간과의 차이로 수집 지연 시간을 나타낸 차트입니다.</p>
+<li><p><strong>Data collection delay time</strong> : A chart showing the collection delay time as the difference between the time when the most recent data was collected and the current time.</p>
 <blockquote>
 <div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/chart_04.png"><img alt="Chart" src="../../_images/chart_04.png" style="width: 256.0px; height: 241.0px;" /></a>
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>알람 발생 분포</strong> : 해당 데이터 소스로 발생한 알람들을 심각도 별로 나누어 개수를 나타내는 파이 차트입니다.</p>
+<li><p><strong>Alarm occurrence distribution</strong> : A pie chart showing the alarms generated by the data source by severity.</p>
 <blockquote>
 <div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/chart_05.png"><img alt="Chart" src="../../_images/chart_05.png" style="width: 255.0px; height: 241.0px;" /></a>
@@ -304,29 +304,29 @@
 </ul>
 </div></blockquote>
 <div class="section" id="id5">
-<h3>차트 변경<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<p>각 차트들은 우측의 <img alt="icon_more" src="../../_images/icon_more.png" /> 버튼을 누르면 정보를 변경할 수 있습니다.</p>
+<h3>Chart Change<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Each chart can be changed by clicking the <img alt="icon_more" src="../../_images/icon_more.png" /> button on the right.</p>
 <blockquote>
 <div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/chart_06.png"><img alt="Metatron Anomaly Chart" src="../../_images/chart_06.png" style="width: 760.0px; height: 358.0px;" /></a>
 </div>
 <ol class="arabic">
-<li><p><strong>차트 정보 수정</strong> : 차트의 이름을 변경하거나 설명을 추가할 수 있습니다.</p>
+<li><p><strong>Modify chart information</strong> : You can rename the chart or add a description.</p>
 <blockquote>
 <div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/chart_edit_01.png"><img alt="Chart" src="../../_images/chart_edit_01.png" style="width: 600.0px; height: 756.0px;" /></a>
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>차트 데이터 변경</strong> : 차트에 그려지는 측정값 또는 차원값을 변경할 수 있습니다.</p>
+<li><p><strong>Change chart data</strong> : You can change the measure or dimension value to be displayed on the chart.</p>
 <blockquote>
 <div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/chart_edit_02.png"><img alt="Chart" src="../../_images/chart_edit_02.png" style="width: 601.0px; height: 759.0px;" /></a>
 </div>
 </div></blockquote>
 </li>
-<li><p><strong>차트 새로고침</strong> : 해당 차트에 대해 최신 데이터로 업데이트 합니다.</p></li>
-<li><p><strong>차트 초기화</strong> : 최초 설정된 측정값 및 차원값으로 그려진 차트로 초기화합니다.</p></li>
+<li><p><strong>Refresh chart</strong> : Update to the latest data for the individual chart.</p></li>
+<li><p><strong>Initialize chart</strong> : Initializes the chart drawn with the first set measure and dimension values.</p></li>
 </ol>
 </div></blockquote>
 </div>

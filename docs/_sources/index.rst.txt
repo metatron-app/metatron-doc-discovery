@@ -10,6 +10,7 @@ Metatron Discovery
 -----------------------------------------------
 
 .. toctree::
+	:maxdepth: 2
 	:caption: Metatron Discovery
 
 	/discovery/part00/index
@@ -28,6 +29,7 @@ EX-pack for Workflow Integrator
 -----------------------------------------------
 
 .. toctree::
+	:maxdepth: 2
 	:caption: EX-pack for Workflow Integrator
 
 	/integrator/part01/index
@@ -40,6 +42,7 @@ EX-pack for Anomaly Detection
 -----------------------------------------------
 
 .. toctree::
+	:maxdepth: 2
 	:caption: EX-pack for Anomaly Detection
 
 	/anomaly/part01/index

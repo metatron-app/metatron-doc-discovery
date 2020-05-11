@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, SK Telecom
+# This file is distributed under the same license as the Metatron User Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Metatron User Manual 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-11 16:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../discovery/part07/edit_rules.rst:2
+# 3bc8dcd0a03641829084944ce64f1c54
+msgid "룰 편집"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:3
+# f9ea16aadbe847d68fd38628dd9e1116
+msgid "데이터 프리퍼레이션에서 가장 핵심적인 작업은 데이터를 변형(주로 정제)하는 룰(rule)을 만들어내는 것입니다. 이 변형 룰과 입출력 명세를 합쳐서 우리는 실제 데이터에 적용하거나, 또 비슷한 다른 데이터에 적용하거나, 이런 작업들을 스케쥴링합니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:6
+# d43aee25fda9483b82d4d487a282e0c8
+msgid "이제 룰을 만들고, 결과를 확인하고, 룰을 다시 변경하거나 삭제하는 일에 대한 설명을 하겠습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:8
+# ee1c99a79a0c4facb25afc87164f9c02
+msgid "먼저 룰 편집 화면의 구성은 다음과 같습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:12
+# c23e712aeedf4e2cb524ebf5894d53ea
+msgid "컬럼 타입, 이름, 메뉴 버튼"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:13
+# 4029269f8c274616b576d5a4a492149d
+msgid "룰 간편 생성을 위한 메뉴"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:14
+# 70230dcfc7a743f5837f1ffae4e246c1
+msgid "적용된 룰 리스트 및 중간 삽입 버튼 (룰 사이에 마우스를 갖다대면 나옴)"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:15
+# dfe405b91d9f4be09cd58296166a1c6e
+msgid "Undo, redo가 가능한 경우 활성화"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:16
+# 6eb3fd64ea5542e3ac6a761214b26b53
+msgid "룰 세부 내용 입력 패널"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:17
+# 9e43f7268df341ada59b7b79456fd544
+msgid "컬럼 값 분포 및 distinct count, type mismatch 또는 null value 관련 정보 등"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:20
+# 49c06c1fb8bb4c188a91606e8685204c
+msgid "룰 생성하기"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:23
+# 2a5a3e8771a24e79813a3ceac51ba6b0
+msgid "컬럼 헤더 메뉴를 이용하는 방법"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:27
+# 07ea65a4632a441f843c89e3e0bac496
+msgid "컬럼 헤더를 클릭해서 대상 컬럼을 고릅니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:29
+# 2e1e35108d30414d8702f297abb16ac6
+msgid "기능 키를 이용해서 다수의 컬럼을 고를 수 있습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:30
+# e66b1824833747eca36285592cf00b45
+msgid "OS에 따라 ^ 또는 ⌘ 키를 누른 채 클릭을 하면 해당 컬럼이 선택/해제됩니다. (토글)"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:31
+# 4349c677d03b463fbebfa18fed85dec2
+msgid "Shift 키를 누른 채 클릭을 하면 범위가 선택됩니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:35
+# 0f57923b966c4227911cfce20f1bebdb
+msgid "선택된 컬럼 중 하나의 헤더에서 |header_menu| 아이콘을 클릭해서 헤더 메뉴를 연 후, 변환 명령을 선택합니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:37
+# 7de24df479c94074bd09e626a6c0cad1
+msgid "이 중에서 **drop**, **settype** 등은 즉시 실행됩니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:41
+# e3fe08f3be2c46b0bcea55040df2aa27
+msgid "추가 입력이 필요한 경우, 하단 명령 입력 패널을 통해 내용을 입력한 후 **추가** 버튼을 누릅니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:45
+# eea1e99922314fd5abef76e450ba8e89
+msgid "몇몇 룰의 경우에는 분포도 막대를 선택해서 명령을 수행할 수도 있습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:47
+# 49eeca03e96b4956806673d0aaee8ad4
+msgid "분포도의 막대를 클릭하면 해당 범위를 조건으로 필터링 등을 실시할 수 있습니다(토글)."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:48
+# 4d96cfee72fc4c78a644bcf1f93cb241
+msgid "Type mismatch, null value 그래프를 클릭해서 해당 값들에 대해 조건을 걸 수도 있습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:53
+# 1f67dcfc8ba940a19dfe07639fe2cf51
+msgid "하단 명령 입력 패널을 이용하는 방법"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:55
+# dbb838826713450cb6506874cb2c59a6
+msgid "화면 하단 명령 입력 패널에서 변환 룰(커맨드)을 선택합니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:59
+# 436fe0c9b49241e49ba6bdf727310afa
+msgid "추가 입력이 필요한 경우 내용을 더 입력한 후 **추가** 버튼을 누릅니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:61
+# 4bb0a05a0ea441c09408d495b1aab918
+msgid "대상 컬럼을 고르는 입력 패널이 있지만, 이 경우에도 컬럼 헤더를 클릭해서 컬럼을 지정할 수도 있습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:66
+# c9afdc3b5f7d4207883f1ced7cf0ca8f
+msgid "룰 리스트 중간에 삽입하는 방법"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:68
+# bc88fa80e6a844d9ac827b31c8436d4f
+msgid "화면 우측의 변환 룰 리스트에서 새 룰을 삽입하고자 하는 룰 경계에 마우스를 갖다대면 **+ 룰 추가** 버튼이 생깁니다. 이 버튼을 누르십시오."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:72
+# dedce153d4964eb2b52556190fec8f36
+msgid "화면 하단 명령 입력 패널에서 변환 룰(커맨드)를 선택하고 추가 내용을 입력한 후, **추가** 버튼을 누릅니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:74
+# 005ae7bba052412b84bf4ceea663e490
+msgid "이렇게 룰을 중간에 삽입하면, 삽입된 위치 이후의 모든 룰이 영향을 받습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:75
+# f8ac3cec3f07485286fc152236b61a50
+msgid "이 때 정상적으로 수행될 수 없는 룰이 생기면, 빨간 색으로 표시되고 해당 스텝은 이전 스텝의 결과를 그대로 갖게 됩니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:80
+# 34307af26aa148aea907a0dd02f31e91
+msgid "생성된 룰 편집하기"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:88
+# 6f51dd4ff4b747bca5117028e06af217
+msgid "룰 수정"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:90
+# 9b93bb8f9e634312b57f03e199a6dd53
+msgid "화면 우측의 변환 룰 리스트에서 수정하고자 하는 룰 위에 마우스를 갖다대면 |edit| 버튼이 생깁니다. 이 버튼을 누르십시오."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:94
+# 73e4002cb95c461abca4aaa32bb2dd77
+msgid "화면 하단 명령 입력 패널에서 변환 룰 내용을 수정한 후, **완료** 버튼을 누릅니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:96
+# cff5aff251c5453eabe712fdd2f1efb1
+msgid "룰이 수정되면 그 이후의 모든 룰이 영향을 받습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:101
+# 529cea1a69024a9a8140dec972b668b7
+msgid "룰 삭제"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:102
+# d89701fb98874b49904df6375d329ffb
+msgid "화면 우측의 변환 룰 리스트에서 삭제하고자 하는 룰 위에 마우스를 갖다대면 |delete| 버튼이 생깁니다. 이 버튼을 누르십시오."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:104
+# 3efc1d677159417db687631ebd0430af
+msgid "선택한 룰이 제거되면 그 이후 모든 룰이 모두 영향을 받습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:110
+# 4b6b02127ba74ba1be5e3331e44b7fc5
+msgid "undo 및 redo"
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:112
+# c14dd27b721540ab979426173aaeb13b
+msgid "화면 우측의 변환 룰 리스트 상단에는 **undo** 및 **redo** 동작을 수행할 수 있는 아이콘이 있습니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:116
+# 451911f5e9bb4d59bc5042443bcacda6
+msgid "어떤 명령 수행 후, 직전의 상태로 되돌리고자 할 때엔 |undo| 버튼을 클릭하십시오."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:118
+# df6d9f3d4cf640a8aed6c439e8d92062
+msgid "데이터셋에 대한 변형(룰 생성, 수정, 삭제 모두 포함)이 직전의 상태로 되돌아갑니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:119
+# fb645750522d47b7bc53f24e6ab94b04
+msgid "해당 변형의 영향을 받은 다른 모든 룰도 직전의 상태가 됩니다."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:121
+# 35e1e1be9df3480f937e1146d0aedc0d
+msgid "다시 그 명령을 수행하고자 할 때엔 |redo| 버튼을 클릭하십시오."
+msgstr ""
+
+#: ../../discovery/part07/edit_rules.rst:123
+# fe3c2e90227747c1a96b3518685102b8
+msgid "해당 명령을 그대로 다시 수행하는 것보다는 |redo|\\를 이용하는 것이 더 빠릅니다. 그 결과가 메모리에 저장되어있기 때문입니다."
+msgstr ""
+

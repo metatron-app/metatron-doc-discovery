@@ -202,466 +202,70 @@
 <li class="toctree-l1"><a class="reference internal" href="discovery/part00/index.html">Discovery Quick Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part00/step1.html">Step 1. Create a data source</a></li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part00/step2.html">Step 2. Create a workbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part00/step3.html">Step 3. Organize a dashboard</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part00/step3.html#id1">Creating a key performance indicator chart</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part00/step3.html#id2">Creating a line chart</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part00/step3.html">Step 3. Organize a dashboard</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part01/index.html">Introduction of Metatron Discovery</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part01/overview.html">Overview of Metatron Discovery</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/overview.html#bi">4th-generation BI solution</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/overview.html#big-olap">Built on Big OLAP</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/overview.html#id1">Architecture of Metatron Discovery</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part01/structure.html">Components of Metatron Discovery</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/structure.html#id1">Data Preparation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/structure.html#id2">Data Storage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/structure.html#id3">Data analysis and visualization</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/structure.html#id4">Workspace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/structure.html#id5">Workbook, dashboard, chart</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/structure.html#id6">Notebook</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/structure.html#id7">Workbench</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/structure.html#id8">Data Monitoring</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/structure.html#id9">User permission and account administration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/structure.html#id10">Login/Logout</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part01/engine.html">Metatron engine: Druid</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/druid_background.html">Background of Druid development</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/druid_features.html">Druid features</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_features.html#id1">Data table components</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_features.html#ingestion">Data ingestion</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_features.html#roll-up">Data roll-up</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_features.html#sharding">Data sharding</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_features.html#id2">Data storage format and indexing</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_features.html#id3">Columnar storage and indexing</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_features.html#id4">Indices for filtering data</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_features.html#id5">Query languages</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/druid_nodes.html">Druid cluster architecture</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_nodes.html#real-time">Real-time nodes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_nodes.html#historical">Historical nodes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_nodes.html#broker">Broker nodes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_nodes.html#coordinator">Coordinator nodes</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_nodes.html#external-dependencies">External dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_nodes.html#high-availability">High availability characteristics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_nodes.html#extensionability">Architecture extensibility</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/druid_tests.html">Druid performance assessments</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_tests.html#id1">Self-assessment by Druid developers</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_tests.html#query-latency">Query latency</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_tests.html#ingestion-latency">Ingestion latency</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_tests.html#sk-druid">Druid performance assessment by SK Telecom</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_tests.html#id3">Query latency test</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_tests.html#id4">Ingestion latency test</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_tests.html#druid-3">Druid assessments by third parties</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_tests.html#outlier-druid">Druid assessment by Outlyer</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_tests.html#db-engines-druid">Druid assessment by DB-Engines</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_tests.html#apache-spark">Comparison with Apache Spark</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_tests.html#id9">Apache Spark characteristics</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_tests.html#id10">Dataset, queries, performance results</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_tests.html#id11">Implications</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part01/druid_to_metatron.html">Metatron powered by Druid</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_to_metatron.html#id1">Metatron development background and Druid integration</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_to_metatron.html#metatron">Metatron as a big data analytics solution</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_to_metatron.html#druid">Why the Druid engine</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_to_metatron.html#id2">Druid engine integration</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part01/druid_to_metatron.html#id3">Druid functions reinforced in Metatron</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_to_metatron.html#id4">Limitations of the open-source Druid</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part01/druid_to_metatron.html#id5">Druid functions reinforced in Metatron</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part01/overview.html">Overview of Metatron Discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part01/structure.html">Components of Metatron Discovery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part01/engine.html">Metatron engine: Druid</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part02/index.html">Data Management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part02/data_source.html">Data Source</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/dimension_and_measures.html">“Dimensions” and “Measures”</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/manage_data_sources.html">Data source management home</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/data_source_detail_view.html">Data source details</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part02/data_source_detail_view.html#id2">Common top area</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part02/data_source_detail_view.html#id3">Data information area</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part02/data_source_detail_view.html#id4">Change data schema</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part02/data_source_detail_view.html#id5">Analyze data statistics</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/create_a_data_source.html">Create a data source</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part02/create_a_data_source.html#create-datasource-from-file">Create a data source from a file</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part02/create_a_data_source.html#db">Create a data source from a database</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part02/create_a_data_source.html#stagingdb">Create a data source from a staging database</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part02/create_a_data_source.html#metatron">Add a data source with the Metatron engine</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part02/data_connection.html">Data Connection</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/data_connection.html#id2">Data connection management home</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/data_connection.html#create-data-connection">Create a data connection</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part02/data_monitoring.html">Data Monitoring</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/data_monitoring.html#id2">Log Statistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part02/data_monitoring.html#id3">Job Log</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part02/data_monitoring.html#id4">Query details</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part02/data_source.html">Data Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part02/data_connection.html">Data Connection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part02/data_monitoring.html">Data Monitoring</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part03/index.html">Workspace</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part03/workspace_management.html">Workspace home</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part03/workspace_management.html#id2">Composition of the workspace home</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part03/workspace_management.html#folders">Folder items</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part03/workspace_management.html#items">Entity items</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part03/workspace_management.html#actions">Select/clone/move/delete folder and entity</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part03/shared_workspace.html">Shared workspace</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part03/shared_workspace.html#shared-workspace-list">Shared workspace list</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part03/shared_workspace.html#shared-workspace-creation">Create a shared workspace</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part03/shared_workspace.html#shared-workspace-permission">Set access permissions for a shared workspace</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part03/shared_workspace.html#permission-schema-setup">Set permission schema</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part03/shared_workspace.html#permission-schema-view">View permission schema</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part03/shared_workspace.html#id7">Change permission schema</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part03/shared_workspace.html#shared-members-setup">Set shared members &amp; groups</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part03/workspace_management.html">Workspace home</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part03/shared_workspace.html">Shared workspace</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part04/index.html">Workbook</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part04/create_a_workbook.html">Create a workbook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part04/manage_dashboards.html">Dashboard</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/create_a_dashboard.html">Create a dashboard</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/change_dashboard_layout_and_size.html">Change dashboard size and layout</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/change_dashboard_layout_and_size.html#id2">Dashboard widget arrangement settings</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/change_dashboard_layout_and_size.html#id3">Chart widget panel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/change_dashboard_layout_and_size.html#id4">Text widget panel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/change_dashboard_layout_and_size.html#id5">Layout panel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/change_dashboard_layout_and_size.html#id6">Data source panel</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/display_a_data_source.html">Check data sources in a dashboard</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/display_a_data_source.html#id2">Data grid tab</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/display_a_data_source.html#id3">Column details tab</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/display_a_data_source.html#id4">Dashboard data information tab</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/present_the_dashboard.html">Presentation with a dashboard</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/give_new_column_name(alias).html">Renaming columns</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part04/manage_charts.html">Chart</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/composition_of_the_data_column_list.html">Data column list</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/composition_of_the_data_column_list.html#id2">Structure of the data column list</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/composition_of_the_data_column_list.html#id3">Add a custom column</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/pivoting.html">Draw a chart (pivoting)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/pivoting.html#id1">What is pivoting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/pivoting.html#id2">Column/row/cross shelves</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/chart_types.html">Select a chart type</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/chart_style.html">Chart style attributes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/chart_style.html#id2">Chart style settings menu</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/chart_style.html#id3">Common settings for each chart type</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/map_chart.html">Map view and spatial operations</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/map_chart.html#id2">Location dimensions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/map_chart.html#id3">Map layer shelves</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part04/map_chart.html#id4">Add layer shelf</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/map_chart.html#id5">Style properties of map view layer</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part04/map_chart.html#id6">Common setting</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part04/map_chart.html#id7">Layer settings</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="discovery/part04/map_chart.html#point">Layer properties of point type</a></li>
-<li class="toctree-l6"><a class="reference internal" href="discovery/part04/map_chart.html#line">Layer properties of line type</a></li>
-<li class="toctree-l6"><a class="reference internal" href="discovery/part04/map_chart.html#polygon">Layer properties of polygon type</a></li>
-</ul>
-</li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part04/map_chart.html#id8">Legend settings</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/map_chart.html#id9">Spatial analysis</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part04/filters.html">Filter</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/chart_filter.html">Chart filters</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/chart_filter.html#id2">Automatically included filters</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/chart_filter.html#id3">Chart filter panel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part04/chart_filter.html#id4">Chart filter dialog box</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part04/chart_filter.html#id5">Dimension filtering</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part04/chart_filter.html#id6">Timestamp column filter settings</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part04/chart_filter.html#id7">Measure filtering</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part04/global_filter.html">Global filters</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part04/manage_dashboards.html">Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part04/manage_charts.html">Chart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part04/filters.html">Filter</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part05/index.html">Notebook</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part05/notebook_management.html">Manage notebook servers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part05/notebook_management.html#id2">Notebook server list</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part05/notebook_management.html#id3">Add a notebook server</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part05/notebook_management.html">Manage notebook servers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part05/register_a_notebook_server.html">Register a notebook server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part05/create_a_notebook.html">Create a notebook</a></li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part05/use_a_notebook.html">Use a notebook</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part05/use_a_notebook.html#id2">Detailed notebook page</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part05/use_a_notebook.html#id3">Notebook coding</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part05/use_a_notebook.html#api">Register a notebook API</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part05/use_a_notebook.html">Use a notebook</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part06/index.html">Workbench</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part06/06_02-create_a_workbench.html">Create a workbench</a></li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html">Use a workbench</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#workbench-use-1">Basic information section</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#workbench-use-2">Schema and table section</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#workbench-use-3">Query editor section</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#workbench-use-4">Query results section</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#id6">During query execution</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#id7">After query execution</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#workbench-use-5">Extra tools section</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#global-variable">Setting up global variables</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#workbench-navigation">Workbench Navigation</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html#workbench-use-6">Schema browser</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part06/06_03-use_a_workbench.html">Use a workbench</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part07/index.html">Data Preparation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part07/installation_detailed.html">Install Guide Detailed</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#id2">1. Install requirements</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#hadoop">2. Install Hadoop</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#mysql">3. Install MySQL</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#hive">4. Install Hive</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#druid">5. Install Druid</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#metatron">6. Install Metatron</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/installation_detailed.html#preptool">7. Install Preptool</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part07/docker_migration.html">Docker Migration Guide</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#id1">1. Stop Metatron Service</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#id2">2. Backup Metadata Store</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#id3">3. Backup configuration files and run scripts.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#id4">4. Backup uploaded file datasets, data snapshots.</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#docker-instance">5. Remove old docker instance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#id5">6. Run new docker instance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#id6">7. Restore Metadata Store</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#id7">8. Restore configrations, run scripts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#id8">9. Restore file datasets and snapshots</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/docker_migration.html#id9">10. Start New Metatron Service</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part07/create_a_dataset.html">Create a dataset</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/create_a_dataset.html#create-a-dataset-of-file">Create a dataset from a file</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/create_a_dataset.html#create-a-dataset-of-database">Create a dataset from a database</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/create_a_dataset.html#staging-db">Create a dataset from staging DB</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part07/manage_dataflow.html">Manage a dataflow</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/add_datasets.html">Add a dataset</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/add_datasets.html#dataflow-creation-first">Adding a dataset after creating an empty dataflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/add_datasets.html#dataflow-from-dataset">Creating a dataflow in the dataset details page</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/edit_rules.html">Edit rules</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/edit_rules.html#id2">Create a rule</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part07/edit_rules.html#id3">Using the column header menu</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part07/edit_rules.html#id4">Using the command input panel</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part07/edit_rules.html#id5">Inserting into a rule list</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/edit_rules.html#id6">Edit a created rule</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part07/edit_rules.html#id7">Editing a rule</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part07/edit_rules.html#id8">Deleting a rule</a></li>
-<li class="toctree-l5"><a class="reference internal" href="discovery/part07/edit_rules.html#undo-redo">Undo and redo</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/rule_kinds.html">Rule types</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#drop">drop</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#header">header</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#settype">settype</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#setformat">setformat</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#rename">rename</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#keep">keep</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#delete">delete</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#replace">replace</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#set">set</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#derive">derive</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#split">split</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#merge">merge</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#extract">extract</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#countpattern">countpattern</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#nest">nest</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#unnest">unnest</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#flatten">flatten</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#aggregate">aggregate</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#pivot">pivot</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#unpivot">unpivot</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#join">join</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#union">union</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/rule_kinds.html#window">window</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/function_list.html">Function list</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#length">length</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#if">if</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#isnull">isnull</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#isnan">isnan</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#upper">upper</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#lower">lower</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#trim">trim</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#ltrim">ltrim</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#rtrim">rtrim</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#substring">substring</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#concat">concat</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#concat-ws">concat_ws</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#year">year</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#month">month</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#day">day</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#hour">hour</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#minute">minute</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#second">second</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#millisecond">millisecond</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#now">now</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#add-time">add_time</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#sum">sum</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#avg">avg</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#max">max</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#min">min</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#count">count</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-abs">math.abs</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-acos">math.acos</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-asin">math.asin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-atan">math.atan</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-cbrt">math.cbrt</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-ceil">math.ceil</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-cos">math.cos</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-cosh">math.cosh</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-exp">math.exp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-expm1">math.expm1</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-getexponent">math.getExponent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-round">math.round</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-signum">math.signum</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-sin">math.sin</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-sinh">math.sinh</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-sqrt">math.sqrt</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-tan">math.tan</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#math-tanh">math.tanh</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#time-diff">time_diff</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#timestamp">timestamp</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#row-number">row_number</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#rolling-sum">rolling_sum</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#rolling-avg">rolling_avg</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#lag">lag</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#lead">lead</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#ismismatched">ismismatched</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#contains">contains</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#startswith">startswith</a></li>
-<li class="toctree-l4"><a class="reference internal" href="discovery/part07/function_list.html#endswith">endswith</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/create_a_datasnapshot.html">Create a data snapshot</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part07/data_snapshot.html">Use data snapshot results</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/data_snapshot.html#snapshot-result-check">Check the data snapshot results</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/data_snapshot.html#metatron">Ingest into the Metatron engine</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part07/data_snapshot.html#csv">Download as a CSV file</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part07/installation_detailed.html">Install Guide Detailed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part07/docker_migration.html">Docker Migration Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part07/create_a_dataset.html">Create a dataset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part07/manage_dataflow.html">Manage a dataflow</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part07/data_snapshot.html">Use data snapshot results</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part08/index.html">Account management</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part08/membership_approval.html">Membership Approval</a></li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part08/members.html">Members</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part08/members.html#id2">Members home</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part08/members.html#id3">View and edit member information</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part08/members.html#user-registration">Register a member</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part08/groups.html">Groups</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part08/groups.html#id2">Groups home</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part08/groups.html#id3">View and edit group information</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part08/groups.html#id4">Register a group</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part08/members.html">Members</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part08/groups.html">Groups</a></li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part08/permissions.html">Discovery Permissions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part09/index.html">Data Exploration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part09/dataexploration.html">Data Exploration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part09/dataexploration.html#id2">Data Exploration Overview</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part09/dataexploration.html#id3">Data Exploration Detail View</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part09/dataexploration.html#favorite-data">Favorite Data view</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part09/dataexploration.html#data-creator">Data Creator view</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part09/dataexploration.html">Data Exploration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part09/metadata.html">Metadata Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part09/columndictionary.html">Column Dictionary</a></li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part09/codetable.html">Code Table</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="discovery/part10/index.html">Engine Monitoring</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part10/overview.html">Overview</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part10/overview.html#druid-setting-configuration">Druid Setting Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part10/overview.html#historical">Historical Usage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part10/overview.html#cluster">Cluster Total Usage</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part10/overview.html#id1">Historical Usage</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="discovery/part10/ingestion.html">Ingestion</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part10/ingestion.html#tasks">Tasks</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part10/ingestion.html#supervisors">Supervisors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="discovery/part10/ingestion.html#middlemanagers">MiddleManagers</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part10/overview.html">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="discovery/part10/ingestion.html">Ingestion</a></li>
 <li class="toctree-l2"><a class="reference internal" href="discovery/part10/query.html">Query</a></li>
 </ul>
 </li>
@@ -676,34 +280,9 @@
 <li class="toctree-l1"><a class="reference internal" href="integrator/part01/index.html">Introduction of Integrator Expansion Pack</a></li>
 <li class="toctree-l1"><a class="reference internal" href="integrator/part02/index.html">Workflow list</a></li>
 <li class="toctree-l1"><a class="reference internal" href="integrator/part03/index.html">Workflow editor</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="integrator/part03/tasks.html">Action nodes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#sqoop">Sqoop</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#mr">MR</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#exec">EXEC</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#java">Java</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#hive-query">HIVE Query</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#ssh">SSH</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#spark">Spark</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#sub-workflow">Sub-Workflow</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#distcp">DistCp</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#hdfs">HDFS</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#done">Done</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/tasks.html#druid">Druid</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="integrator/part03/control_flow.html">Control flow nodes</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/control_flow.html#start">Start</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/control_flow.html#end">End</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/control_flow.html#decision">Decision</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/control_flow.html#fork">Fork</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/control_flow.html#join">Join</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="integrator/part03/scheduled_run.html">Schedule a workflow run</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/scheduled_run.html#id2">List of scheduled runs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="integrator/part03/scheduled_run.html#id3">Add a scheduled run</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="integrator/part03/tasks.html">Action nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator/part03/control_flow.html">Control flow nodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator/part03/scheduled_run.html">Schedule a workflow run</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="integrator/part04/index.html">Monitoring</a></li>
@@ -730,62 +309,30 @@
 <li class="toctree-l1"><a class="reference internal" href="anomaly/part02/index.html">Statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anomaly/part03/index.html">Viewing alarms</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="anomaly/part03/index.html#alarm-list">Alarm List</a></li>
-<li class="toctree-l2"><a class="reference internal" href="anomaly/part03/index.html#alarm-details">Alarm Details</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part03/index.html#summary">Summary</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part03/index.html#alarm-history">Alarm History</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part03/index.html#alarm-confirmation">Alarm Confirmation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part03/index.html#alarm-rule">Alarm Rule</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part03/index.html#view-by-chart">View by Chart 탭</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part03/index.html#view-by-table">View by Table 탭</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="anomaly/part03/index.html#alarm-details">Alarm Details</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="anomaly/part04/index.html">Alarm Rule</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="anomaly/part04/create_alarm_rule.html">Creating an Alarm Rule</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/create_alarm_rule.html#select-datasource">Selecting Data Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/create_alarm_rule.html#select-columns">Selecting metrics to monitor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/create_alarm_rule.html#configure-training">Setting the training data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/create_alarm_rule.html#select-model">Choosing a Model</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/create_alarm_rule.html#alarm-rule-settings">Setting alarm rule conditions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/create_alarm_rule.html#complete-rule">Complete the Rule</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="anomaly/part04/view_alarm_rules.html">Viewing and modifying alarm rule details</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/view_alarm_rules.html#alarm-rule-list">Alarm Rule List</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/view_alarm_rules.html#alarm-rule-details">Alarm Rule Details</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="anomaly/part04/model_manager.html">Model Manager</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/model_manager.html#model-accuracy">Model accuracy fluctuation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/model_manager.html#model-retraining">Model re-training and learning history</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part04/model_manager.html#model-comparison">Comparison of models and application of new models</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="anomaly/part04/create_alarm_rule.html">Creating an Alarm Rule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anomaly/part04/view_alarm_rules.html">Viewing and modifying alarm rule details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anomaly/part04/model_manager.html">Model Manager</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="anomaly/part05/index.html">Algorithm</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="anomaly/part05/index.html#algorithm-list">Algorithm List</a></li>
-<li class="toctree-l2"><a class="reference internal" href="anomaly/part05/index.html#create-new-algorithm">Creating Own Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anomaly/part05/index.html#create-new-algorithm">Creating New Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="anomaly/part05/index.html#algorithm-details">Algorithm Details</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="anomaly/part06/index.html">Dashboard</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="anomaly/part06/index.html#id2">Selecting Data Source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="anomaly/part06/index.html#id2">Select Data Source</a></li>
 <li class="toctree-l2"><a class="reference internal" href="anomaly/part06/index.html#id3">Real-time Dashboard</a></li>
-<li class="toctree-l2"><a class="reference internal" href="anomaly/part06/index.html#id4">Chart</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part06/index.html#id5">차트 변경</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="anomaly/part06/index.html#id4">Chart</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="anomaly/part07/index.html">Search</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="anomaly/part07/index.html#id2">Selecting Data Source</a></li>
-<li class="toctree-l2"><a class="reference internal" href="anomaly/part07/index.html#id3">Choosing Fields &amp; Conditions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part07/index.html#id4">필드 선택</a></li>
-<li class="toctree-l3"><a class="reference internal" href="anomaly/part07/index.html#id5">조건 설정</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="anomaly/part07/index.html#id3">Choosing Fields &amp; Conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="anomaly/part07/index.html#id6">Search Result</a></li>
 </ul>
 </li>

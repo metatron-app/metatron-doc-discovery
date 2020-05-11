@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, SK Telecom
+# This file is distributed under the same license as the Metatron User Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Metatron User Manual 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-11 16:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../anomaly/part04/index.rst:2
+# 0414d5870fab4de5b5b3475a5d125dd9
+msgid "알람 룰"
+msgstr ""
+
+#: ../../anomaly/part04/index.rst:4
+# dc7983685cc745fc953a2ecdbc655ede
+msgid "Metatron Anomaly는 사용자가 직접 데이터에서 이상을 탐지하는 규칙을 쉽게 생성하고 관리할 수 있도록 지원합니다. Anomaly의 알람 룰은 다음과 같은 특징이 있습니다."
+msgstr ""
+
+#: ../../anomaly/part04/index.rst:7
+# 7320b509fcdd4e3cbfe1dc020e9743e1
+msgid "오류 이력 없는 모든 실시간 데이터에 대한 비지도 학습 기반의 머신러닝 지원"
+msgstr ""
+
+#: ../../anomaly/part04/index.rst:8
+# 51ff48e4ef2e48de874bc450e75ed6cc
+msgid "3 step으로 이루어진 쉽고 빠른 알람 룰 생성"
+msgstr ""
+
+#: ../../anomaly/part04/index.rst:9
+# bc23dbf2373345cf9062b85180a3c846
+msgid "통계 기반의 7종 예측 모델 기본 제공"
+msgstr ""
+
+#: ../../anomaly/part04/index.rst:10
+# 448e8ec0a64d4644ba4dff2bbc7d618a
+msgid "모델 자동 학습 및 최적의 모델 추천"
+msgstr ""
+
+#: ../../anomaly/part04/index.rst:11
+# fd8d90e685a44554baa213b95f96cf58
+msgid "적용된 모델 정확도 하락 시 모델 재학습(re-learning) 지원"
+msgstr ""
+
+#: ../../anomaly/part04/index.rst:13
+# b5ac7589f2404e51a926ba3d135f54ac
+msgid "본 단원의 구성은 아래와 같습니다."
+msgstr ""
+

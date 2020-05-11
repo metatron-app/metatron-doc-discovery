@@ -130,8 +130,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Search</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id2">Selecting Data Source</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">Choosing Fields &amp; Conditions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id4">필드 선택</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">조건 설정</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Select fields</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Condition setting</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#id6">Search Result</a></li>
@@ -203,22 +203,22 @@
             
   <div class="section" id="id1">
 <h1>Search<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>일반적으로는 이상치를 검출하는 시스템과 데이터를 조회하는 시스템이 별도로 존재하여 이상 탐지 직후 원인을 찾기 위해 데이터를 조회하려면 또 다른 시스템에 접근해야만 합니다. Metatron Anomaly는 이상 탐지 알람을 받은 직후 동일한 시스템 내에서 사용자가 선정한 데이터 소스에 대해 다양한 조건으로 조회할 수 있는 기능을 제공합니다.</p>
+<p>In general, there is a system for detecting outliers and a system for querying data, so you need to access another system to search for data to find the cause immediately after anomaly detection. Metatron Anomaly provides the ability to query various data sources selected by the user within the same system immediately after receiving an anomaly detection alarm.</p>
 <div class="section" id="id2">
 <h2>Selecting Data Source<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>검색 화면에 초기 접근 시 가장 먼저 데이터 소스를 선택해야 합니다. 선택한 데이터 소스는 다른 데이터 소스로 변경하기 전에는 다른 화면으로 이동해도 계속 유지됩니다.</p>
+<p>When you first access the search menu, you must first select a data source. The selected data source is retained even if you navigate to a different screen until you change to a different data source.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Metatron Anomaly Search" src="../../_images/search_01.png" />
 </div>
 </div></blockquote>
-<p>하단의 데이터소스 선택 버튼을 누르면 데이터 소스 선택 창으로 이동합니다.</p>
+<p>Click the data source <strong>select</strong> button at the bottom.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Metatron Anomaly Search" src="../../_images/select_datasource1.png" />
 </div>
 </div></blockquote>
-<p>데이터 소스가 선택되면 기본적으로 전체 필드에 대한 결과 값이 조회됩니다. 조회 기간은 데이터 소스 수집 시간 단위에 따라 기본값이 다르게 설정되어 있습니다.</p>
+<p>When a data source is selected, the result values for the entire field are queried by default. The query period is set differently depending on the data source collection time unit.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Metatron Anomaly Search" src="../../_images/search_02.png" />
@@ -228,21 +228,21 @@
 <div class="section" id="id3">
 <h2>Choosing Fields &amp; Conditions<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id4">
-<h3>필드 선택<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>각 필드 값 우측에는 측정값(measure)의 경우 값의 범위를, 차원값(dimension)의 경우 값의 개수를 보여줍니다. 검색을 원하는 필드를 선택하여 적용을 누르면 해당하는 필드 값에 대해서만 조회할 수 있습니다.</p>
+<h3>Select fields<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>To the right of each field value is the range of values for a measure and the number of values for a dimension. If you select the field you want to search and click Apply, you can search only for the corresponding field value.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Metatron Anomaly Search" src="../../_images/search_03.png" />
 </div>
 </div></blockquote>
-<p>필드명 우측의 숫자는 컬럼의 카니널리티(cardinality)를 의미합니다.</p>
+<p>The number to the right of the field name means the range of each column value or the number of eigenvalues.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>컬럼이 <strong>Measure</strong> 라면 우측의 숫자는 해당 컬럼의 최소값부터 최대값의 범위를 의미합니다.</p></li>
-<li><p>컬럼이 <strong>Dimension</strong> 이면 우측의 숫자는 해당 컬럼이 가지는 고유값의 수를 의미합니다.</p></li>
+<li><p>If the column is <strong>Measure</strong>, the number on the right means the range of the minimum value to the maximum value of the column.</p></li>
+<li><p>If the column is <strong>Dimension</strong>, the number on the right means the number of eigenvalues of the column.</p></li>
 </ul>
 </div></blockquote>
-<p>카디널리티를 클릭하면 해당 컬럼에 대해 빠르게 필터링할 수 있으며, 추가된 필터는 <strong>조건설정</strong> 탭에서 확인할 수 있습니다.</p>
+<p>If you click the number to the right of the field name, you can quickly filter for the column, and the added filter can be checked in the <strong>condition setting tab</strong>.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Metatron Anomaly Search" src="../../_images/search_filtering.png" />
@@ -250,51 +250,51 @@
 </div></blockquote>
 </div>
 <div class="section" id="id5">
-<h3>조건 설정<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<p>조건 설정 탭으로 이동하면 각 필드에 대한 검색 조건을 상세히 설정할 수 있습니다. 데이터 조회 질의문을 작성하지 못하는 시스템 운영자 및 현업 사용자들도 손쉽게 복잡한 조건을 설정하여 데이터를 조회할 수 있도록 UI를 제공하고 있습니다.</p>
+<h3>Condition setting<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>You can set the search condition for each field in detail by using condition setting tab. We provide a easy UI that enables system operators and business users who cannot write data inquiry query to easily set complex conditions to search data.</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p>개별 필드값에 대한 조건식들은 서로 and / or 관계를 설정할 수 있으며, 상단의 그룹 추가를 통해 그룹 간에도 and / or 관계를 설정할 수 있습니다.</p>
+<li><p>Conditional expressions for individual field values can set up an and / or relationship with each other, and by adding a group at the top, you can also set up an and / or relationship between groups.</p>
 <blockquote>
 <div><div class="figure align-center">
 <img alt="Metatron Anomaly Search" src="../../_images/search_04.png" />
 </div>
 </div></blockquote>
 </li>
-<li><p>측정값 필드 조건식에 제공되는 비교 연산자는 다음 6가지입니다.</p>
+<li><p>There are six comparison operators provided for measure field conditional expressions:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>=(같음)</p></li>
-<li><p>&lt; (작음)</p></li>
-<li><p>≤ (작거나 같음)</p></li>
-<li><p>≥ (크거나 같음)</p></li>
-<li><p>~ (사잇값)</p></li>
+<li><p>=(equals)</p></li>
+<li><p>&lt; (less than)</p></li>
+<li><p>≤ (less than or equal to)</p></li>
+<li><p>≥ (greater than or equal to)</p></li>
+<li><p>~ (between)</p></li>
 </ul>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/measure_search.png"><img alt="Metatron Anomaly Search" src="../../_images/measure_search.png" style="width: 402.0px; height: 601.0px;" /></a>
 </div>
 </div></blockquote>
-<p>측정값에 대한 조건값 입력창에 커서가 입력되면 최소값과 최대값이 툴팁으로 조회됩니다. 해당 값을 참조하여. 조건식을 입력할 수 있습니다.</p>
+<p>When the cursor is entered in the condition input field for the measure value, the minimum and maximum values are displayed as a tooltip. You can enter the conditional expression by referring to the corresponding value.</p>
 <blockquote>
 <div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/measure_search_02.png"><img alt="Metatron Anomaly Search" src="../../_images/measure_search_02.png" style="width: 389.0px; height: 145.0px;" /></a>
 </div>
 </div></blockquote>
 </li>
-<li><p>차원값 필드 조건식에 제공되는 연산자는 다음 4가지입니다.</p>
+<li><p>There are four operators provided for dimension value field conditional expressions:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>시작</p></li>
-<li><p>포함</p></li>
-<li><p>시작 단어</p></li>
-<li><p>종료 단어</p></li>
+<li><p>Start from</p></li>
+<li><p>Inclusion</p></li>
+<li><p>Start word</p></li>
+<li><p>End word</p></li>
 </ul>
 <div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/dimension_search.png"><img alt="Metatron Anomaly Search" src="../../_images/dimension_search.png" style="width: 402.0px; height: 601.0px;" /></a>
 </div>
 </div></blockquote>
 </li>
-<li><p>모든 검색 이력들은 <img alt="icon_history" src="../../_images/icon_history.png" /> 을 눌러 해당 데이터 소스에 대한 조회할 수 있습니다. 각 검색 이력에 대해 검색 시간, 조건 등을 조회할 수 있으며 우측의 적용을 누르면 동일한 조건으로 데이터를 조회합니다.</p>
+<li><p>All search histories can be searched for the data source by clicking <img alt="icon_history" src="../../_images/icon_history.png" />. Search time, search condition, etc. can be inquired for each search history, and clicking Apply on the right will inquire data with the same conditions.</p>
 <blockquote>
 <div><div class="figure align-center">
 <a class="reference internal image-reference" href="../../_images/search_history.png"><img alt="Metatron Anomaly Search" src="../../_images/search_history.png" style="width: 402.0px; height: 601.0px;" /></a>
@@ -312,11 +312,11 @@
 <img alt="Metatron Anomaly Search" src="../../_images/search_result_01.png" />
 </div>
 <ol class="arabic simple">
-<li><p><strong>조회 기간 설정</strong>: 검색 결과 창 상단에는 조회 대상이 되는 데이터 기간을 설정할 수 있습니다. 현재 시간 대비 상대적인 기간을 drop-down 메뉴에서 선택하거나, 특정 시간 범위를 지정하여 조회할 수 있습니다.</p></li>
-<li><p><strong>검색 결과 실시간 갱신</strong>: 우측의 <img alt="icon_reset" src="../../_images/icon_reset.png" /> 버튼을 누르면 10초 간격으로 검색 결과를 업데이트하여 신규로 들어오는 데이터에 대해 조회를 지원합니다. 갱신 주기는 30초 또는 60초로 변경 가능하며, 다시 <a href="#id7"><span class="problematic" id="id8">|</span></a>icon_reset|을 누르면 갱신을 중지할 수 있습니다.</p></li>
-<li><p><strong>엑셀파일 다운로드</strong>: <img alt="icon_download" src="../../_images/icon_download.png" />를 누르면 현재 조회 결과를 엑셀파일(.xls)로 다운로드 합니다.</p></li>
-<li><p><strong>히스토그램</strong>: 막대 차트는 데이터가 저장된 시간 단위 별로 데이터 개수를 count한 히스토그램(histogram)입니다.</p></li>
-<li><p><strong>리스트 항목 노출 개수 변경</strong>: 한번에 조회되는 데이터 레코드 수는 최대 1000개이며, 한 화면에 보여줄 레코드 수를 하단의 drop-down 메뉴에서 15개, 30개, 또는 50개로 변경할 수 있습니다.</p></li>
+<li><p><strong>Set inquiry period</strong>: You can set the data range to be searched at the top of the search result window. You can select the time period relative to the current time from the drop-down menu or specify a time range.</p></li>
+<li><p><strong>Auto update of search results</strong>: If you click the <img alt="icon_reset" src="../../_images/icon_reset.png" /> button on the right, the search results are updated at 10 second intervals to support inquiries for new incoming data. The update cycle can be changed to 3 seconds, 30 seconds or 60 seconds, and clicking <img alt="icon_reset" src="../../_images/icon_reset.png" /> again can stop the update.</p></li>
+<li><p><strong>Download Excel file</strong>: If you click <img alt="icon_download" src="../../_images/icon_download.png" />, Excel type file(.xls) is downloaded on your local PC.</p></li>
+<li><p><strong>Histogram</strong> : This is a bar chart that measures the number of data per unit of time the data is stored.</p></li>
+<li><p><strong>Change the number of a list item</strong> : The maximum number of data records to be viewed at one time is 1000, and the number of records to be displayed on one page can be changed to 15, 30, or 50 in the drop-down menu at the bottom.</p></li>
 </ol>
 </div></blockquote>
 </div>

@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2020, SK Telecom
+# This file is distributed under the same license as the Metatron User Manual package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Metatron User Manual 0.4.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-11 16:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../integrator/part01/index.rst:2
+# 2b26d431e40643c9be0290e212e59890
+msgid "Integrator 확장팩 소개"
+msgstr ""
+
+#: ../../integrator/part01/index.rst:4
+# cba7c5b152f84ca581e00d363caecdb4
+msgid "Integrator 확장팩은 Hadoop 워크플로우 관리 시스템인 Apache Oozie를 조작하기 쉬운 GUI로 구현하고, 워크플로우를 거쳐 적재된 데이터를 Metatron Discovery에 바로 사용할 수 있도록 지원하는 모듈입니다. 이를 통해 사용자는 반복적으로 수행해야 할 Hadoop 작업 루틴을 간편하게 설계·구축하고 실행 주기를 설정하여, Metatron Discovery 작업에 필요한 데이터를 주기적으로 확보할 수 있습니다."
+msgstr ""
+
+#: ../../integrator/part01/index.rst:6
+# f88c950faa904d278494d47553176bbd
+msgid "Integrator 확장팩의 주요 특징은 다음과 같습니다."
+msgstr ""
+
+#: ../../integrator/part01/index.rst:8
+# 15fa3adbbaad41908e5486ee893f7e4a
+msgid "**워크플로우 편집과 예약을 동시에**"
+msgstr ""
+
+#: ../../integrator/part01/index.rst:10
+# 9c92a1bf13a249098cf8dc90b8db402b
+msgid "직관적인 차트 에디터를 이용하여 워크플로우를 손쉽게 생성하고 실행을 예약할 수 있습니다."
+msgstr ""
+
+#: ../../integrator/part01/index.rst:13
+# 9ba4e1fd672844ee95680d68bd329a2f
+msgid "**여러 클러스터를 한번에 관리**"
+msgstr ""
+
+#: ../../integrator/part01/index.rst:15
+# 0b59c2aae7b14d109a471e31a42d1a81
+msgid "워크플로우 내 작업 노드별로 원천 데이터의 출처와 가공 후 적재할 테이블을 자유롭게 지정할 수 있어, 여러 클러스터를 한번에 관리할 수 있습니다."
+msgstr ""
+
+#: ../../integrator/part01/index.rst:18
+# 700de5ca441544349d0fd9c53754d227
+msgid "**워크플로우 공유**"
+msgstr ""
+
+#: ../../integrator/part01/index.rst:20
+# 41da7d5f6d8a4daeb7c617981a00c369
+msgid "구축된 워크플로우는 조직 내 여러 사람이 함께 공유하고 관리할 수 있습니다."
+msgstr ""
+
+#: ../../integrator/part01/index.rst:23
+# 598e0f5b9a5c4b35b0c615f0fc05eb44
+msgid "**알람 및 보고서**"
+msgstr ""
+
+#: ../../integrator/part01/index.rst:25
+# c3467bd570a840809293e977e19c43e5
+msgid "예약된 워크플로우 실행 결과는 SMS, 이메일, 메신저 등 다양한 채털을 통해 보고받을 수 있습니다."
+msgstr ""
+
