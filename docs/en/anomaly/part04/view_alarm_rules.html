@@ -130,6 +130,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Viewing and modifying alarm rule details</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#alarm-rule-list">Alarm Rule List</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#alarm-rule-details">Alarm Rule Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#alarm-rule-group">알람룰 그룹 및 복수 알람룰 관리</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="model_manager.html">Model Manager</a></li>
@@ -207,11 +208,11 @@
   <div class="section" id="id1">
 <h1>Viewing and modifying alarm rule details<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p><strong>Alarm Rule</strong> tab menu allows you to view and modify registered alarm rules. In addition, in this menu, you can easily grasp the status of data abnormal scores calculated according to the selected prediction model.</p>
-<p>The alarm rule menu consists of the following two pages.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference internal" href="#alarm-rule-list"><span class="std std-ref">Alarm Rule List</span></a></p></li>
 <li><p><a class="reference internal" href="#alarm-rule-details"><span class="std std-ref">Alarm Rule Details</span></a></p></li>
+<li><p><a class="reference internal" href="#alarm-rule-group"><span class="std std-ref">알람룰 그룹 및 복수 알람룰 관리</span></a></p></li>
 </ul>
 </div></blockquote>
 <div class="section" id="alarm-rule-list">
@@ -290,6 +291,28 @@
 <div><div class="figure align-center">
 <img alt="list alarm history" src="../../_images/alarm_rule_detail_04.png" />
 </div>
+</div></blockquote>
+</div>
+<div class="section" id="alarm-rule-group">
+<span id="id4"></span><h2>알람룰 그룹 및 복수 알람룰 관리<a class="headerlink" href="#alarm-rule-group" title="Permalink to this headline">¶</a></h2>
+<p>메타트론 어노말리에는 복수개의 알람룰을 함께 그룹핑할 수 있는 알람룰 그룹이 존재합니다. 알람룰 리스트 상에서 폴더 아이콘으로 표시되며 클릭하면 해당 룰 그룹에 속한 알람 룰들의 리스트로 이동합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="alarm rule group" src="../../_images/alarm_rule_group.png" />
+</div>
+</div></blockquote>
+<p>알람룰 그룹에 룰을 이동하거나 복수의 알람룰들의 조건 변경, 재학습을 위해서는 룰 이름 앞의 체크박스 선택 후 우측 상단의 메뉴에서 각 액션을 선택하여 진행합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="edit multiple alarm rules" src="../../_images/alarm_rules_edit.png" />
+</div>
+<ul class="simple">
+<li><p><strong>Cretae New Group</strong>: 새로운 알람룰 그룹을 생성합니다. 이름과 설명을 입력하면 즉시 룰그룹이 생성됩니다.</p></li>
+<li><p><strong>Set Alarm Rule Condition</strong>: 선택된 복수의 알람룰의 조건을 동시에 변경합니다.</p></li>
+<li><p><strong>Move Alarm Rule Condition</strong>: 선택된 알람룰들을 루트에서 특정 룰그룹으로, 또는 룰그룹에서 루트로 이동합니다.</p></li>
+<li><p><strong>Alarm Rule Retraining</strong>: 선택된 복수의 알람룰들을 동시에 재학습합니다. 이때 모델은 추천 모델로 자동 선택됩니다.</p></li>
+<li><p><strong>Delete Group and Alarm Rule</strong>: 선택된 알람룰 및 룰그룹을 삭제합니다.</p></li>
+</ul>
 </div></blockquote>
 </div>
 </div>

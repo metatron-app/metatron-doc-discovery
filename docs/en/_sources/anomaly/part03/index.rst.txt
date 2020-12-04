@@ -17,21 +17,17 @@
 
 * **Alarm rule** (알람 룰 기준으로 정렬)
 
-	.. figure:: /_static/img/anomaly/part03/alarm_list_01.png
+	.. figure:: /_static/img/anomaly/part03/alarm_list_01_1.jpg
 	   :align: center
 	   :alt: alarm list
 
 * **Timeline** (발생 시간 기준으로 정렬)
 
-	.. figure:: /_static/img/anomaly/part03/alarm_list_03.png
+	.. figure:: /_static/img/anomaly/part03/alarm_list_02_1.jpg
 	   :align: center
 	   :alt: timeline type display
 
 카테고리 맨 끝에 있는 **+ Load more**\를 클릭하면 해당 카테고리 내 더 많은 알람 항목을 보여줍니다.
-
-	.. figure:: /_static/img/anomaly/part03/alarm_list_02.png
-	   :align: center
-	   :alt: alarm list show more
 
 .. _alarm_details:
 

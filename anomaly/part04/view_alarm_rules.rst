@@ -8,10 +8,9 @@
 
 **Alarm Rule** 탭 메뉴에서는 등록된 알람 룰을 열람·수정할 수 있습니다. 또한 이 메뉴에서는 선택한 예측 모델에 따라 산출되고 있는 데이터 abnormal score 현황도 쉽게 파악할 수 있습니다.
 
-알람 룰 메뉴는 다음의 두 가지 페이지로 구성되어 있습니다.
-
 	* :ref:`alarm_rule_list`
 	* :ref:`alarm_rule_details`
+	* :ref:`alarm_rule_group`
 
 .. _alarm_rule_list:
 
@@ -92,4 +91,25 @@ Subscribers 우측 아이콘을 누르면 해당 알람 룰의 구독자를 추�
 	   :align: center
 	   :alt: list alarm history
 
+.. _alarm_rule_group:
 
+알람룰 그룹 및 복수 알람룰 관리
+========================================
+
+메타트론 어노말리에는 복수개의 알람룰을 함께 그룹핑할 수 있는 알람룰 그룹이 존재합니다. 알람룰 리스트 상에서 폴더 아이콘으로 표시되며 클릭하면 해당 룰 그룹에 속한 알람 룰들의 리스트로 이동합니다.
+
+	.. figure:: /_static/img/anomaly/part04/alarm_rule_group.png
+	   :align: center
+	   :alt: alarm rule group
+
+알람룰 그룹에 룰을 이동하거나 복수의 알람룰들의 조건 변경, 재학습을 위해서는 룰 이름 앞의 체크박스 선택 후 우측 상단의 메뉴에서 각 액션을 선택하여 진행합니다.
+
+	.. figure:: /_static/img/anomaly/part04/alarm_rules_edit.png
+	   :align: center
+	   :alt: edit multiple alarm rules
+
+	* **Cretae New Group**\: 새로운 알람룰 그룹을 생성합니다. 이름과 설명을 입력하면 즉시 룰그룹이 생성됩니다.
+	* **Set Alarm Rule Condition**: 선택된 복수의 알람룰의 조건을 동시에 변경합니다.
+	* **Move Alarm Rule Condition**: 선택된 알람룰들을 루트에서 특정 룰그룹으로, 또는 룰그룹에서 루트로 이동합니다.
+	* **Alarm Rule Retraining**: 선택된 복수의 알람룰들을 동시에 재학습합니다. 이때 모델은 추천 모델로 자동 선택됩니다.
+	* **Delete Group and Alarm Rule**: 선택된 알람룰 및 룰그룹을 삭제합니다.

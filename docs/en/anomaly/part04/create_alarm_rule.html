@@ -127,12 +127,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../part03/index.html">Alarm</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Alarm Rule</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Creating an Alarm Rule</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#select-datasource">Select Data Source</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#select-columns">Select metrics to monitor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#configure-training">Setting the training data</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#select-model">Choosing a Model</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#alarm-rule-settings">Setting alarm rule conditions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#complete-rule">Complete the Rule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#single-alarm-rule">알람 룰 생성</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#select-datasource">Select Data Source</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#select-columns">Select metrics to monitor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configure-training">Setting the training data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#select-model">Choosing a Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#alarm-rule-settings">Setting alarm rule conditions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#complete-rule">Complete the Rule</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#multi-alarm-rule">복수 알람 룰 생성</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">복수 알람 룰 생성 진입</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="view_alarm_rules.html">Viewing and modifying alarm rule details</a></li>
@@ -210,6 +217,9 @@
             
   <div class="section" id="id1">
 <h1>Creating an Alarm Rule<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Metatron Anomaly는 가장 기본이 되는 단일 알람 룰 생성과 다량의 룰을 한번에 생성할 수 있는 복수 알람 룰 생성 기능을 지원합니다.</p>
+<div class="section" id="single-alarm-rule">
+<span id="id2"></span><h2>알람 룰 생성<a class="headerlink" href="#single-alarm-rule" title="Permalink to this headline">¶</a></h2>
 <p>Anomaly guides users through the following procedures in order to help users easily create the desired alarm rules.</p>
 <blockquote>
 <div><ul class="simple">
@@ -222,7 +232,7 @@
 </ul>
 </div></blockquote>
 <div class="section" id="select-datasource">
-<span id="id2"></span><h2>Select Data Source<a class="headerlink" href="#select-datasource" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h3>Select Data Source<a class="headerlink" href="#select-datasource" title="Permalink to this headline">¶</a></h3>
 <p>To create an alarm rule, you must first set up a data source to monitor.</p>
 <blockquote>
 <div><ol class="arabic">
@@ -244,7 +254,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="select-columns">
-<span id="id3"></span><h2>Select metrics to monitor<a class="headerlink" href="#select-columns" title="Permalink to this headline">¶</a></h2>
+<span id="id4"></span><h3>Select metrics to monitor<a class="headerlink" href="#select-columns" title="Permalink to this headline">¶</a></h3>
 <p>Selecting a data source will take you to the next screen and the <strong>Data</strong> panel on the left will open. Use this panel to select metrics to monitor as shown below.</p>
 <blockquote>
 <div><ol class="arabic">
@@ -287,7 +297,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="configure-training">
-<span id="id4"></span><h2>Setting the training data<a class="headerlink" href="#configure-training" title="Permalink to this headline">¶</a></h2>
+<span id="id5"></span><h3>Setting the training data<a class="headerlink" href="#configure-training" title="Permalink to this headline">¶</a></h3>
 <p>When you finished selecting metrics to monitor, now you can select the data range to use for training the predictive model in the <strong>Training Interval</strong> panel.</p>
 <blockquote>
 <div><ol class="arabic">
@@ -310,7 +320,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="select-model">
-<span id="id5"></span><h2>Choosing a Model<a class="headerlink" href="#select-model" title="Permalink to this headline">¶</a></h2>
+<span id="id6"></span><h3>Choosing a Model<a class="headerlink" href="#select-model" title="Permalink to this headline">¶</a></h3>
 <p>Now go to the <strong>Model</strong> panel and choose which prediction model to use. Metatron Anomaly trains each model using a given set of training data and produces the results. Choose a suitable prediction model through one of the two methods below.</p>
 <blockquote>
 <div><ul>
@@ -326,13 +336,30 @@
 <div><div class="figure align-center">
 <img alt="model details" src="../../_images/choose_model_02.png" />
 </div>
+<ul>
+<li><p><strong>Multivariate 모델 선택</strong>: 룰 생성 2단계에서 1개의 measure 및 1개의 dimension으로 split했다면 다변량 모델 중 Multivariate Mean Model을 사용할 수 있습니다. (추후 다양한 모델 추가 예정) 해당 모델은 각 dimension value에 대한 measure 값들의 중앙값을 계산하는 모델로, anomaly score 계산 시 복수개의 변수를 동시에 참조한다는 점이 장점입니다.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../../_images/multivariate_model.jpg" src="../../_images/multivariate_model.jpg" />
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">align</dt>
+<dd class="field-odd"><p>center</p>
+</dd>
+<dt class="field-even">alt</dt>
+<dd class="field-even"><p>multivariate model</p>
+</dd>
+</dl>
+</div></blockquote>
+</li>
+</ul>
 </div></blockquote>
 </li>
 </ul>
 </div></blockquote>
 </div>
 <div class="section" id="alarm-rule-settings">
-<span id="id6"></span><h2>Setting alarm rule conditions<a class="headerlink" href="#alarm-rule-settings" title="Permalink to this headline">¶</a></h2>
+<span id="id7"></span><h3>Setting alarm rule conditions<a class="headerlink" href="#alarm-rule-settings" title="Permalink to this headline">¶</a></h3>
 <p>After selecting the predictive model to use, now you need to set the conditions for the alarm to occur in the <strong>Condition</strong> panel.</p>
 <blockquote>
 <div><ol class="arabic">
@@ -378,7 +405,7 @@
 </div></blockquote>
 </div>
 <div class="section" id="complete-rule">
-<span id="id7"></span><h2>Complete the Rule<a class="headerlink" href="#complete-rule" title="Permalink to this headline">¶</a></h2>
+<span id="id8"></span><h3>Complete the Rule<a class="headerlink" href="#complete-rule" title="Permalink to this headline">¶</a></h3>
 <p>After all the settings you’ve done, finish the process of creating the alarm rule as shown below.</p>
 <blockquote>
 <div><ol class="arabic">
@@ -398,6 +425,51 @@
 </li>
 </ol>
 </div></blockquote>
+</div>
+</div>
+<div class="section" id="multi-alarm-rule">
+<span id="id9"></span><h2>복수 알람 룰 생성<a class="headerlink" href="#multi-alarm-rule" title="Permalink to this headline">¶</a></h2>
+<p>메타트론 어노말리는 시스템 운영자들이 대량의 장비를 관제하는 경우를 위해 동시에 다량의 알람 룰을 생성하는 기능을 제공합니다. 이 때에는 threshold 와 같은 알람 발생 조건을 일일이 설정하지 않고 최대 200개까지의 알람 룰을 생성할 수 있습니다.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>해당 기능은 운영 환경에 따라 시스템에 과부하를 줄 수 있으므로 알람 룰에 대한 이해와 시스템 상황에 대한 판단이 가능한 사용자만 이용하도록 권고하고 있습니다.</p>
+</div>
+</div></blockquote>
+<div class="section" id="id10">
+<h3>복수 알람 룰 생성 진입<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>단일 알람 룰 생성이 기본이며, 상황에 따라 복수 알람 룰을 생성해야 할 때는 step 2에서 <img alt="icon_multirule" src="../../_images/icon_multirule.png" /> 을 클릭하면 진행여부를 묻는 팝업과 함께 복수 알람 룰 생성을 시작할 수 있습니다. 이때 해당 버튼을 다시 누르면 단일 알람 룰 생성으로 복귀합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create multi rule" src="../../_images/create_multi_rule_01.png" />
+</div>
+</div></blockquote>
+<p>기본적으로 한번에 생성할 수 있는 알람 룰은 최대 200개이며, 필터를 이용해 생성 조건을 변경할 수 있습니다.
+또한 알람 룰 생성 시 기준을 변경할 수 있는데, 각 measure 및 dimension 값을 전체 분리하는 <strong>전체분리</strong>, split된 dimension을 기준으로 룰을 묶는 <strong>차원값 기준</strong>, 선택한 meaure 기준으로 룰을 묶는 <strong>측정값 기준</strong>생성 방식을 선택할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create multi rule" src="../../_images/create_multi_rule_02.png" />
+</div>
+</div></blockquote>
+<p>다음을 누르고 3step으로 넘어가면 룰을 학습하기 시작합니다. 리스트의 첫 번째 룰을 학습하여 추천된 모델로 자동으로 선택하며, 필요시 우측 Model 탭을 눌러 변경할 수 있습니다. 학습이 완료된 룰의 이상치 스코어가 어떻게 계산되었는지 상세 차트를 보려면 <img alt="icon_rule_detail" src="../../_images/icon_rule_detail.png" /> 버튼을 눌러서 확인할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create multi rule" src="../../_images/create_multi_rule_03.png" />
+</div>
+</div></blockquote>
+<p>이 때 리스트의 첫번째 이외의 룰들은 다음 스텝에서 자동으로 추천 모델로 선택되며, 만약 수동 조정이 필요하다면 체크박스로 룰들을 선택한 후 Model 탭 하단에서 Train을 눌러 수동학습 후 모델 및 세부 threshold 조건을 수정할 수 있습니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create multi rule" src="../../_images/create_multi_rule_04.png" />
+</div>
+</div></blockquote>
+<p>최종적으로 알람룰 이름의 prefix 값이 될 알람 그룹의 이름을 작성하여 복수 알람 룰 생성을 마무리 합니다. 알람 그룹명과 룰 이름들의 prefix값을 다르게 지정하고 싶다면 하단의 prefix 텍스트 필드에 값을 입력합니다.</p>
+<blockquote>
+<div><div class="figure align-center">
+<img alt="create multi rule" src="../../_images/create_multi_rule_05.png" />
+</div>
+</div></blockquote>
+</div>
 </div>
 </div>
 

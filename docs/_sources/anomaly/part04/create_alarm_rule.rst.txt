@@ -6,6 +6,15 @@
 .. |icon_ano_filter| image:: /_static/img/anomaly/part04/icon_ano_filter.png
 .. |icon_custom_column| image:: /_static/img/anomaly/part04/icon_custom_column.png
 .. |icon_info| image:: /_static/img/anomaly/part04/icon_info.png
+.. |icon_multirule| image:: /_static/img/anomaly/part04/icon_multirule.png
+.. |icon_rule_detail| image:: /_static/img/anomaly/part04/icon_rule_detail.png
+
+Metatron Anomaly는 가장 기본이 되는 단일 알람 룰 생성과 다량의 룰을 한번에 생성할 수 있는 복수 알람 룰 생성 기능을 지원합니다.
+
+.. _single_alarm_rule:
+
+알람 룰 생성
+*******************************************************
 
 Anomaly는 다음의 절차를 순차적으로 수행하도록 안내하여 사용자가 원하는 알람 룰을 쉽게 생성할 수 있도록 지원해줍니다.
 
@@ -112,6 +121,12 @@ Anomaly는 다음의 절차를 순차적으로 수행하도록 안내하여 사�
 		   :align: center
 		   :alt: model details
 
+		* **Multivariate 모델 선택**\: 룰 생성 2단계에서 1개의 measure 및 1개의 dimension으로 split했다면 다변량 모델 중 Multivariate Mean Model을 사용할 수 있습니다. (추후 다양한 모델 추가 예정) 해당 모델은 각 dimension value에 대한 measure 값들의 중앙값을 계산하는 모델로, anomaly score 계산 시 복수개의 변수를 동시에 참조한다는 점이 장점입니다.
+
+			.. figure:: /_static/img/anomaly/part04/multivariate_model.jpg
+			:align: center
+			:alt: multivariate model
+
 .. _alarm_rule_settings:
 	
 알람 룰 조건 설정하기
@@ -170,3 +185,49 @@ Anomaly는 다음의 절차를 순차적으로 수행하도록 안내하여 사�
 		.. figure:: /_static/img/anomaly/part04/complete_alarm_rules_02.png
 		   :align: center
 		   :alt: alarm rule list
+
+
+.. _multi_alarm_rule:
+
+복수 알람 룰 생성
+*******************************************************
+
+메타트론 어노말리는 시스템 운영자들이 대량의 장비를 관제하는 경우를 위해 동시에 다량의 알람 룰을 생성하는 기능을 제공합니다. 이 때에는 threshold 와 같은 알람 발생 조건을 일일이 설정하지 않고 최대 200개까지의 알람 룰을 생성할 수 있습니다.
+
+	.. note::
+			해당 기능은 운영 환경에 따라 시스템에 과부하를 줄 수 있으므로 알람 룰에 대한 이해와 시스템 상황에 대한 판단이 가능한 사용자만 이용하도록 권고하고 있습니다.
+
+복수 알람 룰 생성 진입
+========================================================
+
+단일 알람 룰 생성이 기본이며, 상황에 따라 복수 알람 룰을 생성해야 할 때는 step 2에서 |icon_multirule| 을 클릭하면 진행여부를 묻는 팝업과 함께 복수 알람 룰 생성을 시작할 수 있습니다. 이때 해당 버튼을 다시 누르면 단일 알람 룰 생성으로 복귀합니다.
+
+	.. figure:: /_static/img/anomaly/part04/create_multi_rule_01.png
+	   :align: center
+	   :alt: create multi rule
+
+기본적으로 한번에 생성할 수 있는 알람 룰은 최대 200개이며, 필터를 이용해 생성 조건을 변경할 수 있습니다.
+또한 알람 룰 생성 시 기준을 변경할 수 있는데, 각 measure 및 dimension 값을 전체 분리하는 **전체분리**\, split된 dimension을 기준으로 룰을 묶는 **차원값 기준**\, 선택한 meaure 기준으로 룰을 묶는 **측정값 기준**\생성 방식을 선택할 수 있습니다.
+
+	.. figure:: /_static/img/anomaly/part04/create_multi_rule_02.png
+	   :align: center
+	   :alt: create multi rule
+
+다음을 누르고 3step으로 넘어가면 룰을 학습하기 시작합니다. 리스트의 첫 번째 룰을 학습하여 추천된 모델로 자동으로 선택하며, 필요시 우측 Model 탭을 눌러 변경할 수 있습니다. 학습이 완료된 룰의 이상치 스코어가 어떻게 계산되었는지 상세 차트를 보려면 |icon_rule_detail| 버튼을 눌러서 확인할 수 있습니다. 
+
+	.. figure:: /_static/img/anomaly/part04/create_multi_rule_03.png
+	   :align: center
+	   :alt: create multi rule
+
+이 때 리스트의 첫번째 이외의 룰들은 다음 스텝에서 자동으로 추천 모델로 선택되며, 만약 수동 조정이 필요하다면 체크박스로 룰들을 선택한 후 Model 탭 하단에서 Train을 눌러 수동학습 후 모델 및 세부 threshold 조건을 수정할 수 있습니다. 
+
+	.. figure:: /_static/img/anomaly/part04/create_multi_rule_04.png
+	   :align: center
+	   :alt: create multi rule
+
+최종적으로 알람룰 이름의 prefix 값이 될 알람 그룹의 이름을 작성하여 복수 알람 룰 생성을 마무리 합니다. 알람 그룹명과 룰 이름들의 prefix값을 다르게 지정하고 싶다면 하단의 prefix 텍스트 필드에 값을 입력합니다.
+
+	.. figure:: /_static/img/anomaly/part04/create_multi_rule_05.png
+	   :align: center
+	   :alt: create multi rule
+
